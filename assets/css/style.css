@@ -844,3 +844,17 @@ html.sb-collapsed .collapse-ic { transform: rotate(180deg); }
   .app { padding-top: var(--s-3); }
 }
 html.sb-collapsed .sb-tools .icon-btn { width: 100%; flex: none; height: 44px; }
+
+/* ---- Sidebar tool buttons (theme / collapse): clear hover + press feedback ---- */
+.sb-tools .icon-btn { position: relative; overflow: hidden; color: var(--ink); cursor: pointer;
+  transition: background-color .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease), box-shadow .2s var(--ease), color .2s var(--ease); }
+.sb-tools .icon-btn:hover { background: var(--lav); border-color: var(--lav); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 18px rgba(169, 151, 247, .35); }
+.sb-tools .icon-btn:active { transform: translateY(0) scale(.94); box-shadow: none; }
+.sb-tools .icon-btn:focus-visible { outline: 2px solid var(--lav); outline-offset: 2px; }
+.sb-tools .icon-btn svg { transition: transform .35s var(--ease); }
+#themeBtn:hover svg { transform: rotate(28deg) scale(1.12); }
+html[data-theme="dark"] #themeBtn:hover .theme-ic-sun svg { transform: rotate(90deg) scale(1.12); }
+#collapseBtn:hover .collapse-ic svg { transform: scale(1.12); }
+html:not(.sb-collapsed) #collapseBtn:hover .collapse-ic { transform: translateX(-2px); }
+html.sb-collapsed #collapseBtn:hover .collapse-ic { transform: rotate(180deg) translateX(-2px); }
+@media (prefers-reduced-motion: reduce) { .sb-tools .icon-btn:hover { transform: none; } }
