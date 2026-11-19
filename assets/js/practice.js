@@ -89,7 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <h3>Answer hidden</h3><p style="margin:0;opacity:.85;max-width:320px">Give it your best shot, check your score, then reveal the full answer cards.</p>
       </div>`;
     const u = new URL(location); u.searchParams.set('id', r.id); history.replaceState(null, '', u);
-    (prod ? $('#aOther') : $('#aName')).focus({ preventScroll: true });
+    // never pop the on-screen keyboard on touch / small screens; keep autofocus for desktop typing
+    if (!matchMedia('(pointer: coarse), (max-width: 760px)').matches) (prod ? $('#aOther') : $('#aName')).focus({ preventScroll: true });
   }
   const next = () => show(choose());
 

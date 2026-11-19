@@ -843,7 +843,7 @@ html.sb-collapsed .collapse-ic { transform: rotate(180deg); }
   .sb-tools .icon-btn { width: 44px; height: 44px; border: 1px solid var(--line); box-shadow: var(--shadow); }
   .app { padding-top: var(--s-3); }
 }
-html.sb-collapsed .sb-tools .icon-btn { width: 100%; flex: none; height: 44px; }
+@media (min-width: 1101px) { html.sb-collapsed .sb-tools .icon-btn { width: 100%; flex: none; height: 44px; } }
 
 /* ---- Sidebar tool buttons (theme / collapse): clear hover + press feedback ---- */
 .sb-tools .icon-btn { position: relative; overflow: hidden; color: var(--ink); cursor: pointer;
@@ -858,3 +858,22 @@ html[data-theme="dark"] #themeBtn:hover .theme-ic-sun svg { transform: rotate(90
 html:not(.sb-collapsed) #collapseBtn:hover .collapse-ic { transform: translateX(-2px); }
 html.sb-collapsed #collapseBtn:hover .collapse-ic { transform: rotate(180deg) translateX(-2px); }
 @media (prefers-reduced-motion: reduce) { .sb-tools .icon-btn:hover { transform: none; } }
+
+/* ---- Dark dropdowns: selected option stays readable (was dark text on a dark hover bg) ---- */
+html[data-theme="dark"] .cselect-opt.sel, html[data-theme="dark"] .cselect-opt.sel:hover, html[data-theme="dark"] .cselect-opt.sel.hl { background: var(--lav); color: #fff !important; }
+html[data-theme="dark"] .cselect-opt.sel .tick { color: #fff; }
+/* ---- Mobile theme toggle: a perfect circle ---- */
+@media (max-width: 760px) {
+  .sb-tools .icon-btn { flex: none; width: 44px; height: 44px; min-width: 44px; padding: 0; border-radius: 50%; }
+  html.sb-collapsed .sb-tools .icon-btn { width: 44px; }
+}
+
+/* ---- Practice head: the question-style tabs must wrap on small screens (caused sideways scroll) ---- */
+#qPanel .panel-head, #freeMode .panel-head { flex-wrap: wrap; }
+#askTabs { margin-left: auto; }
+@media (max-width: 760px) {
+  #askTabs { order: 3; flex: 1 1 100%; width: 100%; margin-left: 0; }
+  #askTabs .tab { flex: 1; }
+  #freeMode .panel-head h2 { margin-right: auto; }
+  html, body { overflow-x: hidden; }
+}
