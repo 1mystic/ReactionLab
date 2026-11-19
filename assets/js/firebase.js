@@ -1,18 +1,14 @@
 /* Firebase bootstrap: modular web SDK from the official CDN (no build step).
-   The web config below is public by design; access is enforced by Firestore security rules (firestore.rules). */
+   The web config is not committed: it is generated into firebase-config.js (git-ignored) at deploy time.
+   Access control is enforced by Firestore security rules (firestore.rules) and the API key's referrer restriction. */
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
 import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, onAuthStateChanged, signOut as fbSignOut }
   from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
 import { getFirestore, doc, getDoc, setDoc } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
+/* Generated from the git-ignored .env by tools/write-firebase-config.mjs (never committed) */
+import { firebaseConfig } from './firebase-config.js';
 
-const app = initializeApp({
-  apiKey: 'REDACTED_API_KEY',
-  authDomain: 'reactionlab-25f61.firebaseapp.com',
-  projectId: 'reactionlab-25f61',
-  storageBucket: 'reactionlab-25f61.firebasestorage.app',
-  messagingSenderId: 'REDACTED_SENDER_ID',
-  appId: 'REDACTED_APP_ID'
-});
+const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 const ref = (path) => doc(db, ...path.split('/'));

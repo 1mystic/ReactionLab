@@ -43,6 +43,8 @@ firebase deploy --only hosting            # site
 firebase deploy --only firestore          # security rules + indexes
 ```
 
+**Firebase web config is not in git.** Put the web config from the Firebase console (Project settings > Your apps) in a local, git-ignored `.env`; `tools/write-firebase-config.mjs` turns it into `assets/js/firebase-config.js` (also git-ignored) before every hosting deploy, or run `npm run config` for local dev. See `assets/js/firebase-config.example.js`. Restrict the web API key to your domains in Google Cloud console > APIs & Services > Credentials.
+
 `firebase.json` serves the repo root, ignores tooling and raw data (`tools/`, `data/parts/`, `data/goc/`, docs), sends `no-cache` for HTML/JS/CSS so a deploy never mixes old and new files, and uses `404.html` as the custom error page.
 
 ## Data
