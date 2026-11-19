@@ -638,3 +638,12 @@ html.loading .main > :not(.topbar) { opacity: 0; }
   .card, .note-card { padding: var(--s-4); }
   .equation-box { padding: var(--s-5) var(--s-3); }
 }
+
+/* ---- Start button: distinct sky-teal accent ---- */
+.btn.start { background: #7fd6e6; border-color: #7fd6e6; color: #0b2f38; font-weight: 600; box-shadow: 0 6px 16px rgba(127,214,230,.35); }
+.btn.start:hover { background: #6acbdd; }
+/* ---- Multi-select chapter chips ---- */
+.chapter-chips { margin-top: var(--s-3); }
+.chapter-chips .chip { height: 36px; padding: 0 var(--s-3); font-size: 13px; gap: var(--s-2); }
+.chapter-chips .chip.active .cat-dot { box-shadow: 0 0 0 2px #fff; }
+@media (max-width: 760px) { .chapter-chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: var(--s-1); scrollbar-width: none; } .chapter-chips .chip { flex: none; } }

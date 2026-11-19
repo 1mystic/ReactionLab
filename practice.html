@@ -27,11 +27,11 @@
             <button class="tab" data-mode="free">Identify (free text)</button>
             <button class="tab" data-mode="mcq">MCQ quiz</button>
           </div>
-          <select class="select" id="fCategory" style="flex:1;min-width:180px"></select>
           <select class="select" id="fExam"><option value="all">Both exams</option><option>JEE Main</option><option>JEE Advanced</option></select>
           <select class="select" id="fDiff"><option value="all">Any difficulty</option><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select>
           <span class="small muted" id="poolInfo"></span>
         </div>
+        <div class="chips chapter-chips" id="fCategory" aria-label="Chapters (select one or more)"></div>
       </section>
 
       <!-- ============ FREE-TEXT MODE ============ -->
@@ -85,7 +85,7 @@
             <button class="chip active" data-t="reagent">Pick the reagent</button>
             <button class="chip active" data-t="product">Predict the product</button>
           </div>
-          <button class="btn dark" id="startQuiz"></button>
+          <button class="btn start" id="startQuiz"></button>
         </section>
         <section class="panel hidden" id="mcqRun"></section>
       </div>

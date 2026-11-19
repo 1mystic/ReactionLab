@@ -462,7 +462,7 @@
 
   /* ================= Shared filter helpers ================= */
   RL.filterPool = (pool, f = {}) => pool.filter((r) =>
-    (!f.category || f.category === 'all' || r.category === f.category) &&
+    (!f.category || f.category === 'all' || (Array.isArray(f.category) ? !f.category.length || f.category.includes(r.category) : r.category === f.category)) &&
     (!f.exam || f.exam === 'all' || (r.exam || []).includes(f.exam)) &&
     (!f.difficulty || f.difficulty === 'all' || r.difficulty === f.difficulty) &&
     (!f.kind || f.kind === 'all' || r.kind === f.kind));

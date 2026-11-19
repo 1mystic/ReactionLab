@@ -4,13 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
   let mode = params.get('mode') === 'mcq' ? 'mcq' : 'free';
   RL.layout(mode === 'mcq' ? 'mcq' : 'practice', mode === 'mcq' ? 'MCQ Quiz' : 'Practice');
 
-  const filters = { category: params.get('category') || 'all', exam: 'all', difficulty: 'all' };
-  $('#fCategory').innerHTML = RL.optionList(RL.CATEGORIES, filters.category, 'All chapters');
+  const filters = { category: params.get('category') && RL.CATEGORIES.includes(params.get('category')) ? [params.get('category')] : [], exam: 'all', difficulty: 'all' };
+  /* multi-select chapter chips (empty selection = all chapters) */
+  const renderCats = () => {
+    $('#fCategory').innerHTML = `<button type="button" class="chip ${filters.category.length ? '' : 'active'}" data-c="">All chapters</button>` +
+      RL.CATEGORIES.map((c) => `<button type="button" class="chip ${filters.category.includes(c) ? 'active' : ''}" data-c="${esc(c)}"><span class="cat-dot" style="background:${RL.CAT_COLORS[c] || '#ccc'}"></span>${esc(c)}</button>`).join('');
+  };
+  $('#fCategory').addEventListener('click', (e) => {
+    const b = e.target.closest('.chip'); if (!b) return;
+    const c = b.dataset.c;
+    if (!c) filters.category = [];
+    else filters.category = filters.category.includes(c) ? filters.category.filter((x) => x !== c) : [...filters.category, c];
+    renderCats(); updatePoolInfo(); if (mode === 'free') next();
+  });
   const pool = () => RL.filterPool(RL.reactions({ include: 'active' }), filters);
   const updatePoolInfo = () => ($('#poolInfo').textContent = `${pool().length} reactions in pool`);
-  [['#fCategory', 'category'], ['#fExam', 'exam'], ['#fDiff', 'difficulty']].forEach(([s, k]) =>
+  [['#fExam', 'exam'], ['#fDiff', 'difficulty']].forEach(([s, k]) =>
     $(s).addEventListener('change', (e) => { filters[k] = e.target.value; updatePoolInfo(); if (mode === 'free') next(); }));
-  updatePoolInfo();
+  renderCats(); updatePoolInfo();
 
   /* ---------------- Mode switching ---------------- */
   function setMode(m) {
