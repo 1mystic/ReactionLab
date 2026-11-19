@@ -1,0 +1,1359 @@
+[
+ {
+  "id": "goc-x-001",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carboxylic acids",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{HCOOH}$",
+   "$\\ce{C6H5COOH}$",
+   "$\\ce{CH3COOH}$",
+   "$\\ce{(CH3)3CCOOH}$"
+  ],
+  "explanation": "pKa: HCOOH 3.75, C6H5COOH 4.20, CH3COOH 4.76, (CH3)3CCOOH 5.05. Alkyl groups (+I) destabilise the carboxylate, while the sp2 phenyl is mildly electron withdrawing relative to alkyl.",
+  "concepts": [
+   "+I effect",
+   "carboxylate stability"
+  ],
+  "trap": "Benzoic acid is stronger than acetic acid even though phenyl is conjugated; the sp2 carbon is more electronegative than sp3."
+ },
+ {
+  "id": "goc-x-002",
+  "topic": "Acidity",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the acidity of ethanol and ethanethiol",
+  "options": [
+   "A: $\\ce{CH3CH2SH}$ is more acidic",
+   "B: $\\ce{CH3CH2OH}$ is more acidic",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "pKa of CH3CH2SH is about 10.6 versus about 16 for CH3CH2OH. The S-H bond is weaker and the large thiolate disperses charge better.",
+  "concepts": [
+   "bond strength",
+   "size of anion"
+  ],
+  "trap": "Electronegativity alone (O > S) is not the deciding factor down a group."
+ },
+ {
+  "id": "goc-x-003",
+  "topic": "Acidity",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which of the following is the strongest acid?",
+  "options": [
+   "$\\ce{HCOOH}$",
+   "$\\ce{CH3COOH}$",
+   "$\\ce{C6H5COOH}$",
+   "$\\ce{2,4,6-(O2N)3C6H2-OH}$"
+  ],
+  "answer": 3,
+  "explanation": "Picric acid has pKa about 0.4 (three nitro groups, strong -M and -I stabilise the phenoxide), stronger than formic acid (pKa 3.75), benzoic acid (4.20) and acetic acid (4.76).",
+  "concepts": [
+   "-M effect",
+   "phenoxide stability"
+  ],
+  "trap": "Phenols are normally weaker than carboxylic acids; picric acid is the classic exception."
+ },
+ {
+  "id": "goc-x-004",
+  "topic": "Acidity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which hydrogen is the most acidic in ethyl acetoacetate, $\\ce{CH3COCH2COOC2H5}$?",
+  "options": [
+   "Hydrogens of the CH3 attached to the ketone C=O",
+   "Hydrogens of the CH2 between the two carbonyl groups",
+   "Hydrogens of the $\\ce{OCH2}$ group",
+   "Hydrogens of the terminal CH3 of the ethyl group"
+  ],
+  "answer": 1,
+  "explanation": "The CH2 hydrogens between the two carbonyl groups (pKa about 11) give an enolate delocalised over both C=O groups. Methyl hydrogens next to a single C=O have pKa about 19 to 20.",
+  "concepts": [
+   "active methylene",
+   "enolate resonance"
+  ]
+ },
+ {
+  "id": "goc-x-005",
+  "topic": "Acidity",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the acidity of benzoic acid and cyclohexanecarboxylic acid",
+  "options": [
+   "A: Benzoic acid is more acidic",
+   "B: Cyclohexanecarboxylic acid is more acidic",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "pKa of benzoic acid is 4.20 and of cyclohexanecarboxylic acid is 4.90. The sp2 carbon of the phenyl ring is more electronegative than the sp3 carbon, so it has a net -I effect on COO-.",
+  "concepts": [
+   "hybridisation",
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-x-006",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the hydrogen halides in aqueous solution",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "HI",
+   "HBr",
+   "HCl",
+   "HF"
+  ],
+  "explanation": "pKa approximately: HI -10, HBr -9, HCl -7, HF 3.2. The H-X bond strength falls sharply down the group (and HF is also strongly H-bonded), which outweighs electronegativity.",
+  "concepts": [
+   "bond strength",
+   "periodic trend"
+  ],
+  "trap": "Electronegativity of the halogen would give the opposite order."
+ },
+ {
+  "id": "goc-x-007",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following nitrogen compounds",
+  "criterion": "decreasing order of basic strength in water",
+  "items": [
+   "$\\ce{CH3NH2}$",
+   "$\\ce{NH3}$",
+   "$\\ce{H2N-NH2}$",
+   "$\\ce{NH2OH}$"
+  ],
+  "explanation": "pKaH in water: CH3NH2 10.6, NH3 9.25, N2H4 8.1, NH2OH 6.0. Electron donating methyl raises basicity, while the electronegative N or O attached to nitrogen withdraws electrons.",
+  "concepts": [
+   "+I effect",
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-x-008",
+  "topic": "Basicity",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which is the stronger base: imidazole or pyridine?",
+  "options": [
+   "A: Imidazole",
+   "B: Pyridine",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "pKaH of imidazole is 6.95 and of pyridine is 5.23. Protonation of the pyridine-like N of imidazole gives a symmetrical amidinium-type cation stabilised by resonance between both nitrogens.",
+  "concepts": [
+   "conjugate acid stability",
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-x-009",
+  "topic": "Basicity",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which of the following is the strongest base?",
+  "options": [
+   "Aniline",
+   "Benzylamine",
+   "Cyclohexylamine",
+   "Acetamide"
+  ],
+  "answer": 2,
+  "explanation": "Cyclohexylamine is an alkylamine with a localised, available lone pair (pKaH about 10.6). Benzylamine is about 9.3, aniline about 4.6 and acetamide is essentially non-basic.",
+  "concepts": [
+   "lone pair availability",
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-x-010",
+  "topic": "Basicity",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "question": "Amides are protonated mainly at which atom, and why?",
+  "options": [
+   "Nitrogen, because it carries the lone pair",
+   "Oxygen, because the resulting cation is resonance stabilised",
+   "The alpha carbon, giving an enol",
+   "Nitrogen and oxygen equally"
+  ],
+  "answer": 1,
+  "explanation": "Protonation on oxygen gives a cation in which the positive charge is delocalised over O, C and N (the nitrogen lone pair is used), whereas N protonation would lose amide resonance. Amide pKaH is about -0.5.",
+  "concepts": [
+   "amide resonance",
+   "conjugate acid stability"
+  ],
+  "trap": "Amides are far less basic than amines because the N lone pair is delocalised."
+ },
+ {
+  "id": "goc-x-011",
+  "topic": "Carbocation stability",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If one methyl group of the isopropyl cation $\\ce{(CH3)2CH+}$ is replaced by a $\\ce{-CF3}$ group, the stability of the cation",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "CF3 has a very strong -I effect and intensifies the positive charge on the adjacent carbon; it also cannot hyperconjugate as CH3 does.",
+  "concepts": [
+   "-I effect",
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-x-012",
+  "topic": "Carbocation stability",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two primary-type cations",
+  "options": [
+   "A: $\\ce{CH2=CH+}$",
+   "B: $\\ce{CH3CH2+}$",
+   "Both equal"
+  ],
+  "answer": 1,
+  "explanation": "The vinyl cation has its positive charge on an sp carbon (50% s character, more electronegative) and is much less stable (gas-phase heat of formation about 266 vs 219 kcal/mol for ethyl).",
+  "concepts": [
+   "hybridisation",
+   "carbocation stability"
+  ]
+ },
+ {
+  "id": "goc-x-013",
+  "topic": "Carbocation stability",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which of the following carbocations has no lone pair or pi bond on or next to the cationic carbon?",
+  "options": [
+   "$\\ce{C6H5CH2+}$",
+   "$\\ce{CH2=CH-CH2+}$",
+   "$\\ce{(CH3)3C+}$",
+   "$\\ce{CH3OCH2+}$"
+  ],
+  "answer": 2,
+  "explanation": "The tert-butyl cation has nine alpha C-H bonds for hyperconjugation and three methyl groups; benzyl and allyl are stabilised by pi resonance, and CH3OCH2+ by the oxygen lone pair.",
+  "concepts": [
+   "hyperconjugation",
+   "+I effect"
+  ]
+ },
+ {
+  "id": "goc-x-014",
+  "topic": "Carbanion stability",
+  "type": "compare",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two carbanions",
+  "options": [
+   "A: Cyclopropyl carbanion",
+   "B: $\\ce{(CH3)2CH^-}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "The cyclopropyl carbanion has a lone pair in an orbital of higher s character (about sp2.3, due to ring strain), so it is more stable than the isopropyl carbanion (sp3, +I from two methyls).",
+  "concepts": [
+   "s character",
+   "ring strain"
+  ]
+ },
+ {
+  "id": "goc-x-015",
+  "topic": "Carbanion stability",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If one hydrogen of the methyl carbanion $\\ce{CH3^-}$ is replaced by a cyano group (giving $\\ce{NC-CH2^-}$), the stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "The cyano group withdraws electrons by -I and -M effects and delocalises the negative charge onto nitrogen.",
+  "concepts": [
+   "-M effect",
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-x-016",
+  "topic": "Carbanion stability",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "In propyne, $\\ce{CH3-C#C-H}$, the most acidic hydrogen is",
+  "options": [
+   "Hydrogens of the methyl group",
+   "The acetylenic hydrogen",
+   "All hydrogens equally",
+   "None, propyne is not acidic"
+  ],
+  "answer": 1,
+  "explanation": "The acetylenic H (pKa about 25) gives a carbanion on an sp carbon with 50% s character; methyl hydrogens (pKa about 40 or more) are far less acidic.",
+  "concepts": [
+   "hybridisation",
+   "s character"
+  ]
+ },
+ {
+  "id": "goc-x-017",
+  "topic": "Free radical stability",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Free radical bromination of 2-methylbutane with Br2 and light gives mainly",
+  "options": [
+   "1-Bromo-2-methylbutane",
+   "2-Bromo-2-methylbutane",
+   "2-Bromo-3-methylbutane",
+   "1-Bromo-3-methylbutane"
+  ],
+  "answer": 1,
+  "explanation": "Bromine is highly selective (relative rates about 1600 : 82 : 1 for 3 : 2 : 1 C-H), so the tertiary radical pathway wins, giving 2-bromo-2-methylbutane.",
+  "concepts": [
+   "radical stability",
+   "selectivity"
+  ]
+ },
+ {
+  "id": "goc-x-018",
+  "topic": "Free radical stability",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which halogenation is more selective toward tertiary C-H bonds?",
+  "options": [
+   "A: Chlorination",
+   "B: Bromination",
+   "Both equal"
+  ],
+  "answer": 1,
+  "explanation": "Bromination has an endothermic, late transition state (Hammond postulate) that resembles the radical, so differences in radical stability show strongly. Chlorination (about 5 : 3.8 : 1) is much less selective.",
+  "concepts": [
+   "Hammond postulate",
+   "radical halogenation"
+  ],
+  "trap": "The more reactive halogen is the less selective one."
+ },
+ {
+  "id": "goc-x-019",
+  "topic": "Free radical stability",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If a methyl group is introduced at the terminal carbon of the allyl radical (giving $\\ce{CH3-CH=CH-CH2.}$), the stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "The extra alkyl group adds hyperconjugation and +I donation to the delocalised radical, so it is more stable than allyl.",
+  "concepts": [
+   "hyperconjugation",
+   "allyl radical"
+  ]
+ },
+ {
+  "id": "goc-x-020",
+  "topic": "Alkene stability",
+  "type": "compare",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two isomeric cyclooctenes",
+  "options": [
+   "A: cis-Cyclooctene",
+   "B: trans-Cyclooctene",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Cis-cyclooctene is more stable; the trans isomer has a highly twisted double bond with about 16 kcal/mol of extra strain.",
+  "concepts": [
+   "ring strain",
+   "cis-trans stability"
+  ],
+  "trap": "trans is more stable than cis only in acyclic alkenes and large rings."
+ },
+ {
+  "id": "goc-x-021",
+  "topic": "Alkene stability",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Compare the stability of the two alkenes",
+  "options": [
+   "A: 2-Methylbut-2-ene",
+   "B: 2-Methylbut-1-ene",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Both have the same formula; the trisubstituted alkene has more hyperconjugating alpha C-H bonds and is more stable (Zaitsev's rule).",
+  "concepts": [
+   "Zaitsev rule",
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-x-022",
+  "topic": "Resonance & hyperconjugation",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "The number of hyperconjugative (no-bond) structures of the ethyl cation $\\ce{CH3-CH2+}$ is",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "6"
+  ],
+  "answer": 2,
+  "explanation": "Only the three alpha C-H bonds of the CH3 group can hyperconjugate with the empty p orbital.",
+  "concepts": [
+   "hyperconjugation",
+   "alpha hydrogens"
+  ]
+ },
+ {
+  "id": "goc-x-023",
+  "topic": "Resonance & hyperconjugation",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carbon-oxygen bonds",
+  "criterion": "decreasing bond length",
+  "items": [
+   "C-O in $\\ce{CH3OH}$",
+   "C-O in $\\ce{C6H5OH}$",
+   "C-O in $\\ce{CH3COO-}$",
+   "C=O in $\\ce{CH3COCH3}$"
+  ],
+  "explanation": "C-O bond lengths: CH3OH 1.43 A, phenol 1.36 A (partial double bond character), acetate 1.26 A (bond order 1.5), acetone C=O 1.21 A.",
+  "concepts": [
+   "bond order",
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-x-024",
+  "topic": "Resonance & hyperconjugation",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the C-N bond lengths in aniline and cyclohexylamine",
+  "options": [
+   "A: $\\ce{C6H5-NH2}$ has the shorter C-N bond",
+   "B: Cyclohexylamine has the shorter C-N bond",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Aniline's C-N bond (about 1.40 A) is shorter because of sp2 carbon and partial double bond character from nitrogen lone pair delocalisation; cyclohexylamine is about 1.47 A.",
+  "concepts": [
+   "+M effect",
+   "bond length"
+  ]
+ },
+ {
+  "id": "goc-x-025",
+  "topic": "Resonance & hyperconjugation",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "In the acetate ion, the two carbon-oxygen bonds are",
+  "options": [
+   "One single bond and one double bond, in rapid interconversion",
+   "Identical and intermediate between single and double",
+   "Both pure single bonds",
+   "Both pure double bonds"
+  ],
+  "answer": 1,
+  "explanation": "Resonance between two equivalent structures makes both C-O bonds identical, with bond order 1.5 (about 1.26 A).",
+  "concepts": [
+   "resonance hybrid",
+   "bond order"
+  ],
+  "trap": "Resonance structures do not interconvert; the real structure is a single hybrid."
+ },
+ {
+  "id": "goc-x-026",
+  "topic": "Inductive effect",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following substituted acetic acids",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{O2N-CH2-COOH}$",
+   "$\\ce{NC-CH2-COOH}$",
+   "$\\ce{CH3O-CH2-COOH}$",
+   "$\\ce{CH3-COOH}$"
+  ],
+  "explanation": "pKa: O2NCH2COOH 1.68, NCCH2COOH 2.47, CH3OCH2COOH 3.57, CH3COOH 4.76. The stronger the -I effect of the substituent, the more stable the carboxylate.",
+  "concepts": [
+   "-I effect",
+   "carboxylate stability"
+  ]
+ },
+ {
+  "id": "goc-x-027",
+  "topic": "Inductive effect",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the acidity of propiolic acid and acrylic acid",
+  "options": [
+   "A: $\\ce{HC#C-COOH}$ is more acidic",
+   "B: $\\ce{CH2=CH-COOH}$ is more acidic",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "pKa: propiolic acid 1.89, acrylic acid 4.25. The sp carbon is more electronegative (50% s character) and exerts a stronger -I effect on the COO- group.",
+  "concepts": [
+   "hybridisation",
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-x-028",
+  "topic": "Inductive effect",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If one hydrogen of the methyl group of acetic acid is replaced by a $\\ce{-N+(CH3)3}$ group, the acid strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "The positively charged ammonium group has a very strong -I effect that stabilises the carboxylate (pKa about 1.8 vs 4.76).",
+  "concepts": [
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-x-029",
+  "topic": "Aromaticity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "The number of pi electrons delocalised over the ring of furan is",
+  "options": [
+   "4",
+   "6",
+   "8",
+   "10"
+  ],
+  "answer": 1,
+  "explanation": "Each of the two C=C contributes 2 electrons and one lone pair on oxygen (in a p orbital) contributes 2, giving 6 pi electrons, which satisfies Huckel's rule.",
+  "concepts": [
+   "Huckel rule",
+   "heteroatom lone pair"
+  ]
+ },
+ {
+  "id": "goc-x-030",
+  "topic": "Aromaticity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If pyrrole is protonated on its nitrogen atom, its aromaticity",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "The nitrogen lone pair is part of the aromatic sextet; using it to bond a proton removes it from the pi system and destroys aromaticity.",
+  "concepts": [
+   "lone pair in sextet",
+   "aromatic stability"
+  ],
+  "trap": "Pyrrole protonates on carbon (C2), not nitrogen, for the same reason."
+ },
+ {
+  "id": "goc-x-031",
+  "topic": "Aromaticity",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "question": "Which carbon-carbon bond is the shortest in naphthalene?",
+  "options": [
+   "C1-C2",
+   "C2-C3",
+   "C1-C8a",
+   "C4a-C8a"
+  ],
+  "answer": 0,
+  "explanation": "C1-C2 has the highest double bond character (about 1.37 A) because it is a double bond in the most important resonance structures; C2-C3 and C1-C8a are about 1.42 A.",
+  "concepts": [
+   "bond fixation",
+   "resonance"
+  ],
+  "trap": "Naphthalene bonds are not all equal, unlike benzene."
+ },
+ {
+  "id": "goc-x-032",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the para-substituted benzoic acids",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{p-O2N-C6H4-COOH}$",
+   "$\\ce{p-Cl-C6H4-COOH}$",
+   "$\\ce{C6H5-COOH}$",
+   "$\\ce{p-CH3O-C6H4-COOH}$"
+  ],
+  "explanation": "pKa: p-NO2 3.44, p-Cl 3.98, H 4.20, p-OCH3 4.47. Electron withdrawing groups stabilise the carboxylate and +M or +I groups destabilise it.",
+  "concepts": [
+   "Hammett effect",
+   "-M effect"
+  ]
+ },
+ {
+  "id": "goc-x-033",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "compare",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "question": "Compare the acidity of the two cresols",
+  "options": [
+   "A: m-Cresol is more acidic",
+   "B: p-Cresol is more acidic",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "pKa: m-cresol 10.09, p-cresol 10.26. A para methyl group donates by +I and hyperconjugation directly toward the phenoxide oxygen, destabilising it; at meta only a weak +I effect operates.",
+  "concepts": [
+   "+I effect",
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-x-034",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If a cyano group is introduced at the para position of benzoic acid, the acid strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "CN is -I and -M, so it stabilises the carboxylate (pKa 3.55 vs 4.20).",
+  "concepts": [
+   "-M effect",
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-x-035",
+  "topic": "Tautomerism & enol content",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Phenol exists almost entirely as the hydroxy (enol) tautomer, not the cyclohexadienone keto form, because",
+  "options": [
+   "the keto form is more strained",
+   "the keto form would destroy the aromatic ring",
+   "a C=O bond is weaker than a C=C bond",
+   "phenol has no alpha hydrogen"
+  ],
+  "answer": 1,
+  "explanation": "The keto form would lose the aromatic stabilisation energy of the benzene ring, which outweighs the usual preference for C=O over C=C.",
+  "concepts": [
+   "aromaticity",
+   "keto-enol tautomerism"
+  ]
+ },
+ {
+  "id": "goc-x-036",
+  "topic": "Tautomerism & enol content",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the enol content of the two compounds",
+  "options": [
+   "A: Ethyl acetoacetate",
+   "B: Diethyl malonate",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Ethyl acetoacetate has about 8% enol (neat), diethyl malonate well under 1%. The ketone carbonyl is a better acceptor for conjugation and H-bonding than an ester carbonyl (whose C=O is already stabilised by resonance with OR).",
+  "concepts": [
+   "enol stabilisation",
+   "conjugation"
+  ]
+ },
+ {
+  "id": "goc-x-037",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following compounds of similar molar mass",
+  "criterion": "decreasing boiling point",
+  "items": [
+   "$\\ce{CH3COOH}$",
+   "$\\ce{CH3CH2CH2OH}$",
+   "$\\ce{CH3CH2CHO}$",
+   "$\\ce{CH3CH2CH2CH3}$"
+  ],
+  "explanation": "Boiling points: CH3COOH 118 C (dimer), propan-1-ol 97 C, propanal 49 C, butane about -1 C. Strong hydrogen bonding and dimerisation raise bp; dipole interactions come next; the nonpolar alkane is lowest.",
+  "concepts": [
+   "hydrogen bonding",
+   "dipole-dipole forces"
+  ]
+ },
+ {
+  "id": "goc-x-038",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Compare the boiling points of the two C5H12 isomers",
+  "options": [
+   "A: n-Pentane is higher",
+   "B: Neopentane is higher",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "n-Pentane (36 C) has a larger surface area and stronger London forces than the compact neopentane (9.5 C).",
+  "concepts": [
+   "van der Waals forces",
+   "branching"
+  ]
+ },
+ {
+  "id": "goc-x-039",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the melting points of o-dichlorobenzene and p-dichlorobenzene",
+  "options": [
+   "A: p-Dichlorobenzene is higher",
+   "B: o-Dichlorobenzene is higher",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "p-Dichlorobenzene (53 C) is symmetrical and packs better in the crystal than the ortho isomer (-17 C); boiling points are nearly the same.",
+  "concepts": [
+   "crystal packing",
+   "symmetry"
+  ]
+ },
+ {
+  "id": "goc-x-040",
+  "topic": "Nucleophilicity",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Compare the nucleophilicity of the two oxygen anions (same solvent, same site)",
+  "options": [
+   "A: $\\ce{CH3O-}$",
+   "B: $\\ce{CH3COO-}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Methoxide is much more nucleophilic: acetate's charge is delocalised over two oxygens (conjugate acid pKa 4.76 vs about 15.5 for methanol).",
+  "concepts": [
+   "charge delocalisation",
+   "basicity"
+  ]
+ },
+ {
+  "id": "goc-x-041",
+  "topic": "Nucleophilicity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following is a strong base but a poor nucleophile because of steric hindrance?",
+  "options": [
+   "$\\ce{CH3O-}$",
+   "$\\ce{CH3CH2O-}$",
+   "$\\ce{(CH3)3CO-}$",
+   "$\\ce{I-}$"
+  ],
+  "answer": 2,
+  "explanation": "The bulky tert-butoxide removes a proton readily but cannot easily approach a carbon centre, so it favours elimination over SN2.",
+  "concepts": [
+   "steric hindrance",
+   "base vs nucleophile"
+  ]
+ },
+ {
+  "id": "goc-x-042",
+  "topic": "Nucleophilicity",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If HO- is converted into H2O as the attacking species (same atom), the nucleophilicity",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "Neutral water has no negative charge and no available extra lone-pair density, and is a much weaker nucleophile than hydroxide.",
+  "concepts": [
+   "charge",
+   "nucleophilicity trend"
+  ]
+ },
+ {
+  "id": "goc-x-043",
+  "topic": "Leaving group ability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following anions",
+  "criterion": "decreasing leaving group ability",
+  "items": [
+   "$\\ce{CF3COO-}$",
+   "$\\ce{CH3COO-}$",
+   "$\\ce{C6H5O-}$",
+   "$\\ce{CH3O-}$"
+  ],
+  "explanation": "Order follows the acidity of the conjugate acids: CF3COOH (pKa 0.5), CH3COOH (4.76), C6H5OH (10), CH3OH (15.5). Weaker bases are better leaving groups.",
+  "concepts": [
+   "conjugate acid pKa",
+   "weak base"
+  ]
+ },
+ {
+  "id": "goc-x-044",
+  "topic": "Leaving group ability",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "A chiral secondary alcohol is treated with p-toluenesulfonyl chloride and pyridine to give the tosylate. The configuration at the carbinol carbon",
+  "options": [
+   "is inverted",
+   "is retained",
+   "is racemised",
+   "is converted to the opposite enantiomer only in water"
+  ],
+  "answer": 1,
+  "explanation": "The C-O bond of the alcohol is not broken during tosylation (O attacks S), so the stereocentre keeps its configuration; the tosylate is simply a much better leaving group.",
+  "concepts": [
+   "tosylate",
+   "stereochemistry"
+  ]
+ },
+ {
+  "id": "goc-x-045",
+  "topic": "Leaving group ability",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which of the following is the poorest leaving group?",
+  "options": [
+   "$\\ce{I-}$",
+   "$\\ce{Cl-}$",
+   "$\\ce{F-}$",
+   "$\\ce{NH2-}$"
+  ],
+  "answer": 3,
+  "explanation": "NH2- is the conjugate base of NH3 (pKa about 38), a very strong base, so it is a very poor leaving group, whereas I-, Cl- and F- are weak bases.",
+  "concepts": [
+   "conjugate acid pKa",
+   "basicity"
+  ]
+ },
+ {
+  "id": "goc-x-046",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If the methyl group of acetone is replaced by a phenyl group (giving acetophenone), the reactivity toward nucleophilic addition",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "The phenyl ring conjugates with C=O by resonance, reducing its partial positive charge, and adds steric bulk and loss of conjugation upon addition.",
+  "concepts": [
+   "conjugation",
+   "nucleophilic addition"
+  ]
+ },
+ {
+  "id": "goc-x-047",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Compare the reactivity toward nucleophilic addition",
+  "options": [
+   "A: Benzaldehyde is more reactive",
+   "B: Acetophenone is more reactive",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Benzaldehyde is an aldehyde (one H, less steric hindrance, more positive carbon) while acetophenone is a ketone with two electron donating groups.",
+  "concepts": [
+   "aldehyde vs ketone",
+   "steric hindrance"
+  ]
+ },
+ {
+  "id": "goc-x-048",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which carbonyl compound is the least reactive toward nucleophilic addition?",
+  "options": [
+   "HCHO",
+   "$\\ce{CH3CHO}$",
+   "$\\ce{CH3COCH3}$",
+   "$\\ce{(CH3)3C-CO-C(CH3)3}$"
+  ],
+  "answer": 3,
+  "explanation": "Two bulky tert-butyl groups block approach to the carbonyl carbon and donate electrons (+I), while HCHO is the most reactive.",
+  "concepts": [
+   "steric hindrance",
+   "+I effect"
+  ]
+ },
+ {
+  "id": "goc-x-049",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following alkyl bromides",
+  "criterion": "decreasing SN2 reactivity",
+  "items": [
+   "$\\ce{CH3CH2Br}$",
+   "$\\ce{CH3CH2CH2Br}$",
+   "$\\ce{(CH3)2CHCH2Br}$",
+   "$\\ce{(CH3)3CCH2Br}$"
+  ],
+  "explanation": "Relative SN2 rates: ethyl 1, n-propyl 0.4, isobutyl 0.03, neopentyl about 0.00001. Branching at the beta carbon hinders backside attack.",
+  "concepts": [
+   "SN2",
+   "steric hindrance"
+  ],
+  "trap": "All four are primary halides; beta-branching still matters a lot."
+ },
+ {
+  "id": "goc-x-050",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "compare",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "question": "Which undergoes the faster E2 reaction with a strong base (the ring fixed in a chair by the tert-butyl group)?",
+  "options": [
+   "A: cis-1-Bromo-4-tert-butylcyclohexane",
+   "B: trans-1-Bromo-4-tert-butylcyclohexane",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "E2 needs an anti-periplanar H and Br, i.e. Br axial. In the cis-isomer (tBu equatorial) Br is axial, so it eliminates faster; in the trans isomer Br is equatorial and the ring must flip.",
+  "concepts": [
+   "anti-periplanar",
+   "conformation"
+  ]
+ },
+ {
+  "id": "goc-x-051",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "(S)-2-Bromobutane reacts with concentrated NaOH in an SN2 reaction. The product is",
+  "options": [
+   "(S)-Butan-2-ol",
+   "(R)-Butan-2-ol",
+   "Racemic butan-2-ol",
+   "But-2-ene only"
+  ],
+  "answer": 1,
+  "explanation": "SN2 proceeds with inversion (Walden inversion), and the CIP priorities (X > C2H5 > CH3 > H) are the same for Br and OH, so the product is (R)-butan-2-ol.",
+  "concepts": [
+   "SN2",
+   "stereochemistry"
+  ]
+ },
+ {
+  "id": "goc-x-052",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If the concentration of nucleophile is doubled in the SN1 hydrolysis of tert-butyl bromide, the rate",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 2,
+  "explanation": "The SN1 rate depends only on the substrate (rate-determining ionisation), so it is independent of nucleophile concentration.",
+  "concepts": [
+   "SN1 kinetics",
+   "rate law"
+  ]
+ },
+ {
+  "id": "goc-x-053",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "question": "Heating $\\ce{CH3CH2CH(CH3)N+(CH3)3 OH-}$ (Hofmann elimination) gives mainly",
+  "options": [
+   "But-1-ene",
+   "cis-But-2-ene",
+   "trans-But-2-ene",
+   "Butan-2-ol"
+  ],
+  "answer": 0,
+  "explanation": "The bulky leaving group (NMe3) and the E2 transition state with carbanion-like character favour removal of the most accessible and most acidic H, giving the least substituted alkene (Hofmann rule), but-1-ene.",
+  "concepts": [
+   "Hofmann rule",
+   "E2"
+  ],
+  "trap": "Zaitsev's rule applies to halides, not to quaternary ammonium hydroxides."
+ },
+ {
+  "id": "goc-x-054",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which is more reactive in an SN1 solvolysis?",
+  "options": [
+   "A: tert-Butyl bromide",
+   "B: 1-Bromobicyclo[2.2.1]heptane",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "A bridgehead carbocation cannot become planar, so 1-bromobicyclo[2.2.1]heptane is extremely unreactive in SN1 compared with tert-butyl bromide.",
+  "concepts": [
+   "carbocation planarity",
+   "Bredt's rule"
+  ]
+ },
+ {
+  "id": "goc-x-055",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Mononitration of m-xylene gives mainly",
+  "options": [
+   "2-Nitro-1,3-dimethylbenzene",
+   "4-Nitro-1,3-dimethylbenzene",
+   "5-Nitro-1,3-dimethylbenzene",
+   "An equal mixture of all three"
+  ],
+  "answer": 1,
+  "explanation": "Position 4 is activated (ortho to one CH3 and para to the other) and is not hindered; position 2 (between two methyl groups) is sterically blocked, and position 5 is meta to both.",
+  "concepts": [
+   "directing effects",
+   "steric hindrance"
+  ]
+ },
+ {
+  "id": "goc-x-056",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If the amino group of aniline is protonated to $\\ce{C6H5NH3+}$ (strongly acidic medium), the reactivity of the ring toward electrophilic substitution",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "The -NH3+ group has no lone pair for +M donation and strongly withdraws by -I, so the ring is deactivated and meta directing.",
+  "concepts": [
+   "deactivation",
+   "anilinium ion"
+  ],
+  "trap": "Direct nitration of aniline gives substantial meta product for this reason."
+ },
+ {
+  "id": "goc-x-057",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Sulphonation of naphthalene at 160 C gives mainly",
+  "options": [
+   "1-Naphthalenesulfonic acid because it forms faster",
+   "2-Naphthalenesulfonic acid because it is the more stable isomer",
+   "An equal mixture of 1- and 2-isomers",
+   "Naphthalene-1,2-disulfonic acid"
+  ],
+  "answer": 1,
+  "explanation": "Sulphonation is reversible. At 80 C the 1-isomer forms faster (kinetic), but at 160 C the 2-isomer, which lacks peri steric strain, accumulates (thermodynamic control).",
+  "concepts": [
+   "kinetic vs thermodynamic control",
+   "peri strain"
+  ]
+ },
+ {
+  "id": "goc-x-058",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following aromatic compounds",
+  "criterion": "decreasing reactivity toward electrophilic substitution",
+  "items": [
+   "Pyrrole",
+   "Furan",
+   "Thiophene",
+   "Benzene"
+  ],
+  "explanation": "Rate of EAS: pyrrole > furan > thiophene > benzene. The heteroatom lone pair is donated into the ring, and the donation is best for N, then O, then S, so benzene is least reactive.",
+  "concepts": [
+   "pi-excessive heterocycles",
+   "EAS"
+  ]
+ },
+ {
+  "id": "goc-x-059",
+  "topic": "Rearrangements & migratory aptitude",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "3,3-Dimethylbutan-2-ol with concentrated HBr gives mainly",
+  "options": [
+   "2-Bromo-3,3-dimethylbutane",
+   "2-Bromo-2,3-dimethylbutane",
+   "1-Bromo-3,3-dimethylbutane",
+   "3,3-Dimethylbut-1-ene"
+  ],
+  "answer": 1,
+  "explanation": "The secondary cation undergoes a 1,2-methyl shift to the more stable tertiary cation, which is captured by Br-, giving 2-bromo-2,3-dimethylbutane.",
+  "concepts": [
+   "Wagner-Meerwein",
+   "1,2-methyl shift"
+  ]
+ },
+ {
+  "id": "goc-x-060",
+  "topic": "Rearrangements & migratory aptitude",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "The secondary carbocation $\\ce{(CH3)2CH-CH+-CH3}$ rearranges by a 1,2-hydride shift to",
+  "options": [
+   "$\\ce{(CH3)2C+-CH2CH3}$",
+   "$\\ce{(CH3)2CH-CH2-CH2+}$",
+   "It does not rearrange"
+  ],
+  "answer": 0,
+  "explanation": "The hydride from the tertiary carbon moves to the cationic carbon, forming the more stable tertiary carbocation.",
+  "concepts": [
+   "hydride shift",
+   "carbocation stability"
+  ]
+ },
+ {
+  "id": "goc-x-061",
+  "topic": "Rearrangements & migratory aptitude",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "question": "In the Beckmann rearrangement of (E)-acetophenone oxime (OH anti to phenyl), the product is",
+  "options": [
+   "N-Methylbenzamide",
+   "N-Phenylacetamide (acetanilide)",
+   "Benzamide",
+   "Phenyl acetate"
+  ],
+  "answer": 1,
+  "explanation": "The group anti to the leaving OH migrates to nitrogen; here phenyl migrates, so the amide is N-phenylacetamide (acetanilide).",
+  "concepts": [
+   "Beckmann rearrangement",
+   "anti migration"
+  ],
+  "trap": "Migration depends on geometry (anti), not on migratory aptitude."
+ }
+]

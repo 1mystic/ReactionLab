@@ -1,0 +1,1319 @@
+[
+ {
+  "id": "fischer-glycosidation",
+  "name": "Fischer Glycosidation",
+  "aliases": [
+   "Glycoside formation",
+   "Acetal formation of sugars"
+  ],
+  "category": "Biomolecules",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H12O6 (D-glucose) + CH3OH",
+  "reagents": "dry HCl (gas)",
+  "conditions": "Methanol as solvent and reagent, room temperature",
+  "products": "C6H11O5(OCH3) (methyl glucoside) + H2O",
+  "catalyst": "H+ (acid catalyst)",
+  "reagentKeywords": [
+   "dry HCl",
+   "methanol",
+   "CH3OH",
+   "acid catalyst"
+  ],
+  "productName": "Methyl alpha/beta-D-glucopyranoside",
+  "summary": "The hemiacetal OH (anomeric C-1 OH) of a cyclic sugar is converted into an acetal (glycoside) by an alcohol under dry acid catalysis.",
+  "mechanism": "Protonation of the anomeric OH and loss of water gives an oxocarbenium ion, which is attacked by methanol to give alpha and beta methyl glycosides.",
+  "keyPoints": [
+   "Only the anomeric OH reacts; other OH groups remain free",
+   "Glycosides do not show mutarotation",
+   "Glycosides do not reduce Fehling or Tollens reagent since no free hemiacetal exists",
+   "Hydrolysed back by dilute aqueous acid"
+  ],
+  "whenUsed": "Protection of the anomeric centre; preparation of glycosides and the study of ring size.",
+  "applications": [
+   "Preparation of methyl glycosides",
+   "Protecting the anomeric position",
+   "Structure elucidation of sugars"
+  ],
+  "examples": [
+   {
+    "eq": "C6H12O6 + CH3OH ->[\\text{dry HCl}] C6H11O5(OCH3) + H2O",
+    "note": "Methyl glucoside"
+   }
+  ],
+  "jeeTips": "Methyl glucoside is non-reducing and shows no mutarotation: a favourite JEE point. Compare with the free sugar, which gives both.",
+  "reference": "",
+  "tags": [
+   "glycoside",
+   "acetal",
+   "carbohydrate"
+  ]
+ },
+ {
+  "id": "haworth-ring-closure-glucose",
+  "name": "Haworth Ring Closure of D-Glucose",
+  "aliases": [
+   "Pyranose formation",
+   "Cyclic hemiacetal formation of glucose"
+  ],
+  "category": "Biomolecules",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "HOCH2(CHOH)4CHO (open-chain D-glucose)",
+  "reagents": "Intramolecular attack of the C-5 OH on the C-1 CHO (aqueous medium)",
+  "conditions": "Water, room temperature, equilibrium",
+  "products": "Six-membered cyclic hemiacetal (alpha-D-glucopyranose + beta-D-glucopyranose)",
+  "catalyst": "Traces of acid or base",
+  "reagentKeywords": [
+   "C5-OH",
+   "hemiacetal",
+   "intramolecular",
+   "aqueous solution"
+  ],
+  "productName": "Alpha- and beta-D-glucopyranose",
+  "summary": "The C-5 hydroxyl adds to the aldehyde carbon to give a six-membered pyranose ring, creating a new stereocentre at C-1 (the anomeric carbon).",
+  "mechanism": "Nucleophilic addition of the C-5 OH to the C=O gives a cyclic hemiacetal; the two epimers at C-1 are the alpha and beta anomers, which interconvert through the open chain.",
+  "keyPoints": [
+   "Ring contains five C and one O",
+   "Alpha anomer: C-1 OH trans to CH2OH in the Haworth drawing (down); beta anomer: up",
+   "Only about 0.02 percent is open-chain, which explains why glucose does not give NaHSO3 or Schiff's tests",
+   "Anomers differ in specific rotation: +111 degrees (alpha), +19.2 degrees (beta)"
+  ],
+  "whenUsed": "Explains the cyclic structure, mutarotation and the lack of some aldehyde tests in glucose.",
+  "applications": [
+   "Structure of glucose",
+   "Anomer chemistry",
+   "Explaining glycoside formation"
+  ],
+  "examples": [
+   {
+    "eq": "HOCH2(CHOH)4CHO <=> alpha-D-glucopyranose",
+    "note": "Ring closure (schematic)"
+   }
+  ],
+  "jeeTips": "Glucose does not react with NaHSO3 and does not give Schiff's test because the free CHO is largely absent. Anomers differ only at C-1.",
+  "reference": "",
+  "tags": [
+   "pyranose",
+   "hemiacetal",
+   "anomer",
+   "carbohydrate"
+  ]
+ },
+ {
+  "id": "haworth-methylation-glucose",
+  "name": "Haworth Methylation of Glucose",
+  "aliases": [
+   "Exhaustive methylation of glucose",
+   "Methylation to determine ring size"
+  ],
+  "category": "Biomolecules",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H12O6 (glucose, 5 OH groups)",
+  "reagents": "(CH3)2SO4 / NaOH",
+  "conditions": "Excess reagent, aqueous alkali",
+  "products": "Pentamethyl ether C6H7O(OCH3)5",
+  "catalyst": "NaOH",
+  "reagentKeywords": [
+   "dimethyl sulphate",
+   "(CH3)2SO4",
+   "NaOH",
+   "methylation"
+  ],
+  "productName": "Penta-O-methylglucopyranoside",
+  "summary": "All free OH groups of the glucose ring are converted to OCH3 groups; hydrolysis of the methylated glycoside then locates the ring oxygen position.",
+  "mechanism": "Alkoxide formed by NaOH attacks the methyl group of dimethyl sulphate in an SN2 step; each of the OH groups is methylated in turn.",
+  "keyPoints": [
+   "Five OCH3 groups confirm five OH groups in the sugar",
+   "Methylation followed by acid hydrolysis gives 2,3,4,6-tetra-O-methylglucose, proving the pyranose ring",
+   "Ring oxygen is not methylated",
+   "CH3I / Ag2O (Purdie) is an alternative reagent"
+  ],
+  "whenUsed": "Structure elucidation of carbohydrates and ring-size determination.",
+  "applications": [
+   "Ring size determination",
+   "Structural analysis of polysaccharides"
+  ],
+  "examples": [
+   {
+    "eq": "C6H12O6 + 5 (CH3)2SO4 + 5 NaOH -> C6H7O(OCH3)5 + 5 CH3OSO3Na + 5 H2O",
+    "note": "Schematic, ring form"
+   }
+  ],
+  "jeeTips": "Do not confuse with acetylation: acetic anhydride also gives a pentaester, both prove five OH groups.",
+  "reference": "",
+  "tags": [
+   "methylation",
+   "ring size",
+   "carbohydrate"
+  ]
+ },
+ {
+  "id": "sanger-n-terminal-analysis",
+  "name": "Sanger's Method for N-Terminal Residue",
+  "aliases": [
+   "Sanger's reagent reaction",
+   "DNP method"
+  ],
+  "category": "Biomolecules",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "H2N-CHR-CO-NH-R' (peptide with free NH2 end)",
+  "reagents": "1-Fluoro-2,4-dinitrobenzene (FDNB)",
+  "conditions": "Mild alkaline medium (NaHCO3), then acid hydrolysis",
+  "products": "DNP-NH-CHR-COOH (2,4-dinitrophenyl amino acid, yellow) + other amino acids",
+  "catalyst": "Mild base",
+  "reagentKeywords": [
+   "FDNB",
+   "Sanger's reagent",
+   "2,4-dinitrofluorobenzene",
+   "1-fluoro-2,4-dinitrobenzene"
+  ],
+  "productName": "N-(2,4-Dinitrophenyl) amino acid",
+  "summary": "The free alpha-NH2 of the N-terminal residue displaces fluoride from FDNB by nucleophilic aromatic substitution; acid hydrolysis then releases the labelled N-terminal amino acid.",
+  "mechanism": "The amine adds to the electron-poor ring (activated by two NO2 groups) to form a Meisenheimer intermediate, then F- is lost (SNAr).",
+  "keyPoints": [
+   "Labels only the N-terminal amino acid",
+   "Peptide bonds are broken by acid hydrolysis but the DNP-N bond survives",
+   "DNP-amino acid is yellow and identified by chromatography",
+   "Edman's reagent is the later, more convenient method"
+  ],
+  "whenUsed": "Sequencing of peptides and proteins (first sequencing of insulin).",
+  "applications": [
+   "Insulin sequencing",
+   "N-terminal identification"
+  ],
+  "examples": [
+   {
+    "eq": "H2N-CHR-COOH + F-C6H3(NO2)2 -> (O2N)2C6H3-NH-CHR-COOH + HF",
+    "note": "DNP amino acid"
+   }
+  ],
+  "jeeTips": "Nucleophilic aromatic substitution, not SN2: the two nitro groups ortho and para to F activate the ring.",
+  "reference": "",
+  "tags": [
+   "peptide sequencing",
+   "SNAr",
+   "N-terminal"
+  ]
+ },
+ {
+  "id": "edman-degradation",
+  "name": "Edman Degradation",
+  "aliases": [
+   "Edman's method",
+   "PITC sequencing"
+  ],
+  "category": "Biomolecules",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "H2N-CHR-CO-NH-R' (peptide)",
+  "reagents": "Phenyl isothiocyanate (PhNCS)",
+  "conditions": "Mild base, then anhydrous acid (CF3COOH)",
+  "products": "Phenylthiohydantoin (PTH) of the N-terminal amino acid + shortened peptide",
+  "catalyst": "Base, then acid",
+  "reagentKeywords": [
+   "phenyl isothiocyanate",
+   "PITC",
+   "PhNCS",
+   "Edman's reagent"
+  ],
+  "productName": "Phenylthiohydantoin (PTH) amino acid",
+  "summary": "Phenyl isothiocyanate couples to the N-terminal NH2; acid cleaves only the first residue as a cyclic thiazolinone that rearranges to PTH, leaving the rest of the peptide intact.",
+  "mechanism": "NH2 adds to N=C=S to give a phenylthiocarbamoyl peptide; acid-promoted attack of S on the first carbonyl cleaves the terminal residue as thiazolinone, which isomerises to PTH.",
+  "keyPoints": [
+   "Removes one residue at a time from the N-terminus",
+   "The remaining peptide can be subjected to repeated cycles",
+   "Advantage over Sanger's method: peptide is not destroyed"
+  ],
+  "whenUsed": "Stepwise amino acid sequencing of peptides.",
+  "applications": [
+   "Automated protein sequencers",
+   "Peptide sequencing"
+  ],
+  "examples": [
+   {
+    "eq": "PhN=C=S + H2N-CHR-CO-NH-R' -> PhNH-CS-NH-CHR-CO-NH-R'",
+    "note": "Coupling step"
+   }
+  ],
+  "jeeTips": "Contrast with Sanger: Edman cleaves just one residue and leaves the chain; Sanger hydrolyses the whole peptide.",
+  "reference": "",
+  "tags": [
+   "sequencing",
+   "peptide",
+   "isothiocyanate"
+  ]
+ },
+ {
+  "id": "van-slyke-amino-nitrogen",
+  "name": "Van Slyke Amino Nitrogen Reaction",
+  "aliases": [
+   "Amino acid nitrous acid reaction",
+   "Van Slyke determination"
+  ],
+  "category": "Biomolecules",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "H2N-CH2-COOH (glycine)",
+  "reagents": "NaNO2 / HCl (HNO2)",
+  "conditions": "273-278 K (aqueous)",
+  "products": "HO-CH2-COOH + N2 + H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "HNO2",
+   "NaNO2",
+   "HCl",
+   "nitrous acid",
+   "NaNO2/HCl"
+  ],
+  "productName": "Hydroxy acid (glycolic acid) and nitrogen gas",
+  "summary": "The primary amino group of an alpha-amino acid reacts with nitrous acid to give the hydroxy acid with quantitative evolution of nitrogen.",
+  "mechanism": "The amine is diazotised to an aliphatic diazonium ion, which is unstable and is replaced by water with loss of N2.",
+  "keyPoints": [
+   "Quantitative evolution of N2 measures free NH2 groups",
+   "Proline (a secondary amine) does not release N2",
+   "Aliphatic diazonium salts decompose even at low temperature",
+   "Product retains the carbon skeleton"
+  ],
+  "whenUsed": "Estimation of free amino groups in amino acids and proteins.",
+  "applications": [
+   "Amino nitrogen estimation",
+   "Preparation of hydroxy acids"
+  ],
+  "examples": [
+   {
+    "eq": "H2N-CH2-COOH + HNO2 -> HO-CH2-COOH + N2 + H2O",
+    "note": "Glycine to glycolic acid"
+   },
+   {
+    "eq": "CH3CH(NH2)COOH + HNO2 -> CH3CH(OH)COOH + N2 + H2O",
+    "note": "Alanine to lactic acid"
+   }
+  ],
+  "jeeTips": "Primary aliphatic amines give N2 and alcohols; aromatic amines give stable diazonium salts at 0-5 degrees C.",
+  "reference": "",
+  "tags": [
+   "nitrous acid",
+   "amino acid",
+   "N2 evolution"
+  ]
+ },
+ {
+  "id": "esterification-amino-acid",
+  "name": "Esterification of an Amino Acid",
+  "aliases": [
+   "Amino acid ester formation"
+  ],
+  "category": "Biomolecules",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "H2N-CH2-COOH + C2H5OH",
+  "reagents": "dry HCl gas",
+  "conditions": "Reflux in ethanol",
+  "products": "H3N+-CH2-COOC2H5 Cl- + H2O",
+  "catalyst": "H+",
+  "reagentKeywords": [
+   "dry HCl",
+   "ethanol",
+   "C2H5OH",
+   "acid catalyst"
+  ],
+  "productName": "Glycine ethyl ester hydrochloride",
+  "summary": "The -COOH group of an amino acid forms an ester with an alcohol in the presence of dry HCl; the amino group is protonated and the ester is isolated as its hydrochloride.",
+  "mechanism": "Protonated carboxylic acid is attacked by ethanol (Fischer esterification); the NH2 is simultaneously protonated, which protects it.",
+  "keyPoints": [
+   "Shows the carboxylic acid character of amino acids",
+   "Free ester is obtained by treating the hydrochloride with a base",
+   "Used to protect COOH in peptide synthesis"
+  ],
+  "whenUsed": "Protection of the carboxyl terminus in peptide synthesis.",
+  "applications": [
+   "Peptide synthesis",
+   "Preparation of amino acid derivatives"
+  ],
+  "examples": [
+   {
+    "eq": "H2N-CH2-COOH + C2H5OH ->[\\text{dry HCl}] H3N+-CH2-COOC2H5 + Cl- + H2O",
+    "note": "Glycine ethyl ester hydrochloride"
+   }
+  ],
+  "jeeTips": "The amino group is not acylated here; it simply forms the ammonium salt under acidic conditions.",
+  "reference": "",
+  "tags": [
+   "amino acid",
+   "ester",
+   "carboxyl group"
+  ]
+ },
+ {
+  "id": "n-acylation-amino-acid",
+  "name": "N-Acylation of an Amino Acid",
+  "aliases": [
+   "Amino acid acetylation",
+   "Protection of NH2"
+  ],
+  "category": "Biomolecules",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "H2N-CH2-COOH (glycine)",
+  "reagents": "CH3COCl or (CH3CO)2O",
+  "conditions": "Base (pyridine or NaOH)",
+  "products": "CH3CONH-CH2-COOH (N-acetylglycine) + HCl",
+  "catalyst": "Pyridine",
+  "reagentKeywords": [
+   "acetyl chloride",
+   "acetic anhydride",
+   "CH3COCl",
+   "(CH3CO)2O",
+   "pyridine",
+   "base"
+  ],
+  "productName": "N-Acetylglycine",
+  "summary": "The nucleophilic amino group of an amino acid is acylated by an acyl chloride or anhydride to give an amide, leaving the carboxyl group intact.",
+  "mechanism": "Nucleophilic acyl substitution: the NH2 attacks the carbonyl, a tetrahedral intermediate forms and chloride is lost; base removes HCl.",
+  "keyPoints": [
+   "Amino group behaves as a typical primary amine",
+   "Used to protect NH2 during peptide coupling",
+   "The acylation is an acyl transfer, similar to amide formation"
+  ],
+  "whenUsed": "Protecting the N-terminus in peptide synthesis.",
+  "applications": [
+   "N-protection in peptide synthesis",
+   "Preparation of N-acetyl amino acids"
+  ],
+  "examples": [
+   {
+    "eq": "H2N-CH2-COOH + CH3COCl ->[\\text{pyridine}] CH3CONH-CH2-COOH + HCl",
+    "note": "N-Acetylglycine"
+   }
+  ],
+  "jeeTips": "Amino acid can be acylated at NH2 and esterified at COOH: remember both functional groups are reactive.",
+  "reference": "",
+  "tags": [
+   "amino acid",
+   "acylation",
+   "protection"
+  ]
+ },
+ {
+  "id": "amino-acid-decarboxylation",
+  "name": "Decarboxylation of an alpha-Amino Acid",
+  "aliases": [
+   "Decarboxylation of amino acids"
+  ],
+  "category": "Biomolecules",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "H2N-CHR-COOH",
+  "reagents": "Ba(OH)2",
+  "conditions": "Heat",
+  "products": "H2N-CH2R + BaCO3 (CO2 absorbed)",
+  "catalyst": "Ba(OH)2",
+  "reagentKeywords": [
+   "Ba(OH)2",
+   "barium hydroxide",
+   "heat",
+   "\\Delta"
+  ],
+  "productName": "Primary amine (one carbon less)",
+  "summary": "Heating an alpha-amino acid with barium hydroxide (or with a specific decarboxylase enzyme) removes CO2 and gives the corresponding primary amine.",
+  "mechanism": "The carboxylate loses CO2 with stabilisation of the resulting carbanion by the adjacent ammonium or amino group; the barium salt traps CO2 as BaCO3.",
+  "keyPoints": [
+   "Product is an amine with one carbon less",
+   "Histidine gives histamine; lysine gives cadaverine; tyrosine gives tyramine",
+   "Enzymatic version uses pyridoxal phosphate"
+  ],
+  "whenUsed": "Biosynthesis of biogenic amines and a lab degradation of amino acids.",
+  "applications": [
+   "Histamine formation",
+   "Biogenic amine synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "H2N-CH2-COOH ->[Ba(OH)2][\\Delta] CH3NH2 + CO2",
+    "note": "Glycine to methylamine"
+   },
+   {
+    "eq": "CH3CH(NH2)COOH ->[Ba(OH)2][\\Delta] CH3CH2NH2 + CO2",
+    "note": "Alanine to ethylamine"
+   }
+  ],
+  "jeeTips": "Decarboxylation of glycine gives methylamine, alanine gives ethylamine.",
+  "reference": "",
+  "tags": [
+   "amino acid",
+   "decarboxylation",
+   "amine"
+  ]
+ },
+ {
+  "id": "hydride-reduction-glucose",
+  "name": "Carbonyl Reduction of an Aldose",
+  "aliases": [
+   "Sugar alcohol formation",
+   "Alditol formation"
+  ],
+  "category": "Biomolecules",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "HOCH2(CHOH)4CHO (D-glucose)",
+  "reagents": "NaBH4",
+  "conditions": "Aqueous or alcoholic solution",
+  "products": "HOCH2(CHOH)4CH2OH (hexahydric alcohol)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NaBH4",
+   "sodium borohydride",
+   "H2/Ni",
+   "Na-Hg",
+   "reducing agent"
+  ],
+  "productName": "D-Glucitol (sorbitol)",
+  "summary": "The aldehyde group of the open-chain sugar is reduced to a primary alcohol to give a polyhydroxy alcohol (alditol).",
+  "mechanism": "Hydride from BH4- adds to the carbonyl carbon of the open-chain aldehyde form; protonation of the alkoxide gives the CH2OH group.",
+  "keyPoints": [
+   "Reduces only C=O; other OH groups unchanged",
+   "D-Fructose gives a mixture of sorbitol and mannitol because a new stereocentre arises",
+   "Catalytic hydrogenation (H2/Ni) gives the same product"
+  ],
+  "whenUsed": "Industrial production of sorbitol, used as a sweetener and humectant.",
+  "applications": [
+   "Sorbitol manufacture",
+   "Sugar alcohols"
+  ],
+  "examples": [
+   {
+    "eq": "HOCH2(CHOH)4CHO + H2 ->[Ni] HOCH2(CHOH)4CH2OH",
+    "note": "Catalytic hydrogenation"
+   }
+  ],
+  "jeeTips": "Glucose to sorbitol keeps six carbons; this is different from HI reduction which gives n-hexane.",
+  "reference": "",
+  "tags": [
+   "alditol",
+   "reduction",
+   "carbohydrate"
+  ]
+ },
+ {
+  "id": "cystine-disulphide-formation",
+  "name": "Disulphide Bridge Formation from Cysteine",
+  "aliases": [
+   "Cysteine to cystine oxidation"
+  ],
+  "category": "Biomolecules",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "2 HS-CH2-CH(NH2)COOH (cysteine)",
+  "reagents": "mild oxidant (O2 or I2)",
+  "conditions": "Neutral to slightly alkaline solution",
+  "products": "HOOC-CH(NH2)-CH2-S-S-CH2-CH(NH2)COOH (cystine) + 2 H",
+  "catalyst": "mild oxidising agent",
+  "reagentKeywords": [
+   "O2",
+   "I2",
+   "oxidation",
+   "mild oxidant"
+  ],
+  "productName": "Cystine",
+  "summary": "Two thiol groups are oxidised to a disulphide linkage; in proteins the same reaction creates S-S bridges that stabilise tertiary structure.",
+  "mechanism": "Thiol oxidises to thiyl radical or sulphenic species that couple to form S-S; reduction reverses the process.",
+  "keyPoints": [
+   "S-S bridges stabilise tertiary and quaternary structure (insulin, keratin)",
+   "Reduction with thiols breaks the bridges",
+   "Basis of hair perming: reduction then re-oxidation"
+  ],
+  "whenUsed": "Explains protein folding and the permanent wave treatment of hair.",
+  "applications": [
+   "Protein structure",
+   "Hair treatment"
+  ],
+  "examples": [
+   {
+    "eq": "2 HS-CH2-CH(NH2)COOH ->[\\text{[O]}] HOOC-CH(NH2)-CH2-S-S-CH2-CH(NH2)COOH + 2 H",
+    "note": "Cystine formation (schematic)"
+   }
+  ],
+  "jeeTips": "Only cysteine can form disulphide links; methionine has a thioether and cannot.",
+  "reference": "",
+  "tags": [
+   "disulphide",
+   "cysteine",
+   "protein structure"
+  ]
+ },
+ {
+  "id": "ascorbic-acid-oxidation",
+  "name": "Oxidation of Vitamin C",
+  "aliases": [
+   "Ascorbic acid iodometric reaction"
+  ],
+  "category": "Biomolecules",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H8O6 (ascorbic acid, vitamin C)",
+  "reagents": "I2 (iodine) solution",
+  "conditions": "Aqueous, room temperature",
+  "products": "C6H6O6 (dehydroascorbic acid) + 2 HI",
+  "catalyst": "",
+  "reagentKeywords": [
+   "I2",
+   "iodine",
+   "iodine titration",
+   "oxidant"
+  ],
+  "productName": "Dehydroascorbic acid",
+  "summary": "The enediol group of ascorbic acid is easily oxidised to a diketone, dehydroascorbic acid. Iodine is decolourised in the process.",
+  "mechanism": "The enediol loses two electrons and two protons to the oxidant, forming adjacent C=O groups.",
+  "keyPoints": [
+   "Vitamin C is a strong reducing agent",
+   "Water-soluble vitamin; not stored in the body",
+   "Deficiency causes scurvy",
+   "Reaction is the basis of iodometric estimation of vitamin C"
+  ],
+  "whenUsed": "Estimation of vitamin C in fruit juices and tablets.",
+  "applications": [
+   "Vitamin C titration",
+   "Antioxidant chemistry"
+  ],
+  "examples": [
+   {
+    "eq": "C6H8O6 + I2 -> C6H6O6 + 2HI",
+    "note": "Dehydroascorbic acid"
+   }
+  ],
+  "jeeTips": "Vitamin C: water soluble, antiscorbutic, reducing agent. Vitamins A, D, E, K are fat soluble.",
+  "reference": "",
+  "tags": [
+   "vitamin",
+   "ascorbic acid",
+   "oxidation"
+  ]
+ },
+ {
+  "id": "cellulose-nitration",
+  "name": "Nitration of Cellulose",
+  "aliases": [
+   "Guncotton formation",
+   "Cellulose nitrate"
+  ],
+  "category": "Biomolecules",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "[C6H7O2(OH)3]n (cellulose)",
+  "reagents": "conc. HNO3 / conc. H2SO4",
+  "conditions": "Low temperature",
+  "products": "[C6H7O2(ONO2)3]n + 3n H2O",
+  "catalyst": "H2SO4 (dehydrating agent)",
+  "reagentKeywords": [
+   "conc. HNO3",
+   "conc. H2SO4",
+   "nitrating mixture",
+   "HNO3",
+   "H2SO4"
+  ],
+  "productName": "Cellulose trinitrate (guncotton)",
+  "summary": "The three free OH groups per glucose unit in cellulose are esterified with nitric acid, giving a nitrate ester that is explosive when fully nitrated.",
+  "mechanism": "H2SO4 protonates HNO3 giving NO2+, which reacts with the alcoholic OH groups of cellulose to give O-NO2 esters (nitrate esters, not nitro compounds).",
+  "keyPoints": [
+   "Fully nitrated product: guncotton (smokeless powder)",
+   "Partially nitrated product (di-nitrate): pyroxylin, used for celluloid and lacquers",
+   "It is an ester (C-O-N), not a nitro compound (C-N)"
+  ],
+  "whenUsed": "Manufacture of explosives, lacquers and celluloid.",
+  "applications": [
+   "Guncotton",
+   "Celluloid",
+   "Smokeless powder"
+  ],
+  "examples": [
+   {
+    "eq": "[C6H7O2(OH)3]n + 3n HNO3 ->[\\text{conc. H2SO4}] [C6H7O2(ONO2)3]n + 3n H2O",
+    "note": "Guncotton"
+   }
+  ],
+  "jeeTips": "Cellulose has three free OH per glucose unit, so the trinitrate is the maximum.",
+  "reference": "",
+  "tags": [
+   "cellulose",
+   "nitrate ester",
+   "explosive"
+  ]
+ },
+ {
+  "id": "nylon-2-nylon-6",
+  "name": "Nylon-2-Nylon-6 Synthesis",
+  "aliases": [
+   "Biodegradable copolyamide"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "H2N-CH2-COOH + H2N-(CH2)5-COOH",
+  "reagents": "glycine and 6-aminohexanoic acid",
+  "conditions": "Heat, condensation polymerisation",
+  "products": "[-NH-CH2-CO-NH-(CH2)5-CO-]n + n H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "glycine",
+   "6-aminohexanoic acid",
+   "aminocaproic acid",
+   "condensation"
+  ],
+  "productName": "Nylon-2-nylon-6",
+  "summary": "An alternating copolymer of glycine and amino caproic acid joined through amide bonds; it is biodegradable.",
+  "mechanism": "Amino and carboxyl groups of the two monomers condense with loss of water to build a polyamide chain.",
+  "keyPoints": [
+   "Alternating polyamide copolymer",
+   "Biodegradable because amide bonds resemble peptide links",
+   "Uses a natural amino acid (glycine)"
+  ],
+  "whenUsed": "Biodegradable polymer for packaging and medical uses.",
+  "applications": [
+   "Biodegradable polymer",
+   "Packaging"
+  ],
+  "examples": [
+   {
+    "eq": "n H2N-CH2-COOH + n H2N-(CH2)5-COOH -> [-NH-CH2-CO-NH-(CH2)5-CO-]n + 2n H2O",
+    "note": "Condensation"
+   }
+  ],
+  "jeeTips": "Nylon-2-nylon-6 and PHBV are the two standard biodegradable polymers in NCERT.",
+  "reference": "",
+  "tags": [
+   "polyamide",
+   "biodegradable",
+   "copolymer"
+  ]
+ },
+ {
+  "id": "natural-rubber-polyisoprene",
+  "name": "Addition Polymerisation of 2-Methylbuta-1,3-diene",
+  "aliases": [
+   "Isoprene polymerisation",
+   "Polyisoprene formation"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "n CH2=C(CH3)-CH=CH2",
+  "reagents": "Free radical initiator or Ziegler-Natta catalyst",
+  "conditions": "Heat, pressure",
+  "products": "[-CH2-C(CH3)=CH-CH2-]n",
+  "catalyst": "Ziegler-Natta catalyst",
+  "reagentKeywords": [
+   "peroxide",
+   "Ziegler-Natta",
+   "initiator",
+   "TiCl4",
+   "free radical"
+  ],
+  "productName": "cis-1,4-Polyisoprene (natural rubber)",
+  "summary": "1,4-Addition of isoprene units gives a polymer with a C=C in each repeat unit, as found in natural rubber.",
+  "mechanism": "The initiator adds to one end of the diene; the allylic radical formed propagates through 1,4-addition, leaving the double bond in the chain.",
+  "keyPoints": [
+   "Natural rubber is cis-1,4-polyisoprene",
+   "Gutta-percha is the trans isomer",
+   "Soft and elastic but sticky; improved by vulcanisation",
+   "Residual double bonds make it reactive to O2 and ozone"
+  ],
+  "whenUsed": "Synthetic and natural rubber manufacture.",
+  "applications": [
+   "Rubber products",
+   "Tyres"
+  ],
+  "examples": [
+   {
+    "eq": "n CH2=C(CH3)-CH=CH2 -> [-CH2-C(CH3)=CH-CH2-]n",
+    "note": "1,4-Polyisoprene"
+   }
+  ],
+  "jeeTips": "Isoprene is 2-methylbuta-1,3-diene; cis gives rubber, trans gives gutta-percha.",
+  "reference": "",
+  "tags": [
+   "rubber",
+   "addition polymer",
+   "diene"
+  ]
+ },
+ {
+  "id": "polypropylene-ziegler-natta",
+  "name": "Chain-Growth Polymerisation of Propene",
+  "aliases": [
+   "Polypropylene synthesis",
+   "Polypropene"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "n CH2=CH-CH3",
+  "reagents": "Ziegler-Natta catalyst, TiCl4 / Al(C2H5)3",
+  "conditions": "Low pressure, 333-353 K",
+  "products": "[-CH2-CH(CH3)-]n",
+  "catalyst": "TiCl4 + Al(C2H5)3",
+  "reagentKeywords": [
+   "Ziegler-Natta",
+   "TiCl4",
+   "Al(C2H5)3",
+   "triethylaluminium"
+  ],
+  "productName": "Isotactic polypropylene",
+  "summary": "Coordination polymerisation of propene on a Ziegler-Natta catalyst gives stereoregular isotactic polypropylene with high crystallinity.",
+  "mechanism": "Propene coordinates to the Ti centre and inserts into the Ti-C bond, repeatedly extending the chain with stereocontrol.",
+  "keyPoints": [
+   "Catalyst yields isotactic chains (methyl groups on one side)",
+   "Higher melting and stronger than polythene",
+   "Used for ropes, bottles, fibres and carpets"
+  ],
+  "whenUsed": "Packaging, textile fibres and automotive parts.",
+  "applications": [
+   "Ropes",
+   "Crates",
+   "Carpets"
+  ],
+  "examples": [
+   {
+    "eq": "n CH2=CH-CH3 ->[\\text{Ziegler-Natta}] [-CH2-CH(CH3)-]n",
+    "note": "Polypropene"
+   }
+  ],
+  "jeeTips": "Ziegler-Natta catalyst controls tacticity: isotactic, syndiotactic or atactic.",
+  "reference": "",
+  "tags": [
+   "Ziegler-Natta",
+   "polyolefin",
+   "tacticity"
+  ]
+ },
+ {
+  "id": "polyvinyl-acetate-polymerisation",
+  "name": "Addition Polymerisation of Vinyl Ethanoate",
+  "aliases": [
+   "PVAc formation",
+   "Polyvinyl acetate"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "n CH2=CH-OCOCH3",
+  "reagents": "Benzoyl peroxide (free radical initiator)",
+  "conditions": "Heat",
+  "products": "[-CH2-CH(OCOCH3)-]n",
+  "catalyst": "Peroxide initiator",
+  "reagentKeywords": [
+   "benzoyl peroxide",
+   "peroxide",
+   "free radical",
+   "initiator"
+  ],
+  "productName": "Polyvinyl acetate (PVAc)",
+  "summary": "Free-radical addition polymerisation of vinyl acetate gives an amorphous thermoplastic used in adhesives and paints.",
+  "mechanism": "Initiator radical adds to the C=C to form a new radical that adds to further monomers in a chain growth process.",
+  "keyPoints": [
+   "Addition polymer with an ester side group",
+   "Amorphous, soft, tacky",
+   "Hydrolysis gives polyvinyl alcohol"
+  ],
+  "whenUsed": "White glue, paints and chewing gum base.",
+  "applications": [
+   "Adhesives",
+   "Paints"
+  ],
+  "examples": [
+   {
+    "eq": "n CH2=CH-OCOCH3 ->[\\text{peroxide}] [-CH2-CH(OCOCH3)-]n",
+    "note": "PVAc"
+   }
+  ],
+  "jeeTips": "PVAc is the parent of polyvinyl alcohol, which cannot be made from vinyl alcohol (unstable).",
+  "reference": "",
+  "tags": [
+   "addition polymer",
+   "free radical",
+   "adhesive"
+  ]
+ },
+ {
+  "id": "pva-from-pvac-hydrolysis",
+  "name": "Polymer Analogous Conversion of Polyvinyl Acetate",
+  "aliases": [
+   "PVA preparation",
+   "Polyvinyl alcohol formation"
+  ],
+  "category": "Polymers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "[-CH2-CH(OCOCH3)-]n",
+  "reagents": "NaOH / H2O (alkaline hydrolysis)",
+  "conditions": "Aqueous or methanolic alkali, warm",
+  "products": "[-CH2-CH(OH)-]n + n CH3COONa",
+  "catalyst": "NaOH",
+  "reagentKeywords": [
+   "NaOH",
+   "hydrolysis",
+   "alkali",
+   "H2O"
+  ],
+  "productName": "Polyvinyl alcohol (PVA)",
+  "summary": "The ester groups of polyvinyl acetate are hydrolysed, giving a hydroxyl-bearing polymer. This is the only practical route since the monomer (vinyl alcohol) tautomerises to acetaldehyde.",
+  "mechanism": "Hydroxide attacks the ester carbonyl; acetate leaves and the polymer alkoxide is protonated, giving the polymeric alcohol.",
+  "keyPoints": [
+   "Vinyl alcohol is unstable (keto-enol tautomerism to CH3CHO)",
+   "PVA is water soluble because of many OH groups",
+   "Used for films and as an adhesive"
+  ],
+  "whenUsed": "Manufacture of PVA for films, fibres and adhesives.",
+  "applications": [
+   "Water-soluble films",
+   "Textile sizing"
+  ],
+  "examples": [
+   {
+    "eq": "[-CH2-CH(OCOCH3)-]n + n NaOH -> [-CH2-CH(OH)-]n + n CH3COONa",
+    "note": "Hydrolysis"
+   }
+  ],
+  "jeeTips": "A polymer made via polymer analogous reaction, not by directly polymerising the monomer.",
+  "reference": "",
+  "tags": [
+   "PVA",
+   "hydrolysis",
+   "polymer analogous reaction"
+  ]
+ },
+ {
+  "id": "urea-formaldehyde-resin",
+  "name": "Condensation of Urea with Methanal",
+  "aliases": [
+   "Urea-formaldehyde polymer",
+   "UF resin"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "n H2N-CO-NH2 + n HCHO",
+  "reagents": "HCHO (methanal), acid or base catalyst",
+  "conditions": "Heat",
+  "products": "[-NH-CO-NH-CH2-]n + n H2O",
+  "catalyst": "H+ or OH-",
+  "reagentKeywords": [
+   "HCHO",
+   "formaldehyde",
+   "methanal",
+   "acid catalyst",
+   "condensation"
+  ],
+  "productName": "Urea-formaldehyde resin",
+  "summary": "Urea reacts with methanal to form methylol ureas which condense into a cross-linked thermosetting polymer.",
+  "mechanism": "NH2 groups add to HCHO giving N-CH2OH (methylol) groups, which then lose water with other NH groups to form CH2 bridges.",
+  "keyPoints": [
+   "Thermosetting plastic",
+   "Hard, colourless, resists heat",
+   "Condensation polymer with loss of H2O"
+  ],
+  "whenUsed": "Plywood adhesive, electrical fittings and moulded articles.",
+  "applications": [
+   "Adhesives",
+   "Electrical fittings"
+  ],
+  "examples": [
+   {
+    "eq": "n H2N-CO-NH2 + n HCHO -> [-NH-CO-NH-CH2-]n + n H2O",
+    "note": "Simplified linear unit"
+   }
+  ],
+  "jeeTips": "Compare with Bakelite (phenol) and melamine resin (melamine + HCHO); all are thermosets.",
+  "reference": "",
+  "tags": [
+   "thermoset",
+   "condensation polymer",
+   "formaldehyde"
+  ]
+ },
+ {
+  "id": "polycarbonate-synthesis",
+  "name": "Step-Growth Polymerisation of Bisphenol A",
+  "aliases": [
+   "Polycarbonate formation",
+   "Lexan synthesis"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "n HO-C6H4-C(CH3)2-C6H4-OH (bisphenol A)",
+  "reagents": "diphenyl carbonate (or phosgene)",
+  "conditions": "Heat, vacuum (to remove phenol)",
+  "products": "[-O-C6H4-C(CH3)2-C6H4-O-CO-]n + 2n C6H5OH",
+  "catalyst": "Basic catalyst",
+  "reagentKeywords": [
+   "diphenyl carbonate",
+   "phosgene",
+   "COCl2",
+   "transesterification"
+  ],
+  "productName": "Polycarbonate (Lexan)",
+  "summary": "Bisphenol A and a carbonic acid derivative condense to form a polyester of carbonic acid. Phenol (or HCl with phosgene) is released.",
+  "mechanism": "Phenoxide attacks the carbonate carbonyl and displaces phenoxide; repetition builds the polymer chain.",
+  "keyPoints": [
+   "Transparent, tough, high impact strength",
+   "Condensation polymer",
+   "Formed by transesterification with diphenyl carbonate"
+  ],
+  "whenUsed": "CDs and DVDs, safety glasses and bullet-resistant glazing.",
+  "applications": [
+   "Optical discs",
+   "Safety glasses"
+  ],
+  "examples": [
+   {
+    "eq": "n HO-C6H4-C(CH3)2-C6H4-OH + n C6H5O-CO-OC6H5 -> [-O-C6H4-C(CH3)2-C6H4-O-CO-]n + 2n C6H5OH",
+    "note": "Melt process"
+   }
+  ],
+  "jeeTips": "Bisphenol A itself is made from phenol and acetone.",
+  "reference": "",
+  "tags": [
+   "polyester",
+   "condensation polymer",
+   "engineering plastic"
+  ]
+ },
+ {
+  "id": "kevlar-aramid-synthesis",
+  "name": "Condensation of an Aromatic Diamine with a Diacid Chloride",
+  "aliases": [
+   "Aramid fibre formation",
+   "Kevlar synthesis"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "n H2N-C6H4-NH2 (1,4-diaminobenzene) + n ClCO-C6H4-COCl (terephthaloyl chloride)",
+  "reagents": "terephthaloyl chloride, 1,4-diaminobenzene",
+  "conditions": "Low temperature, amide solvent (NMP)",
+  "products": "[-NH-C6H4-NH-CO-C6H4-CO-]n + 2n HCl",
+  "catalyst": "",
+  "reagentKeywords": [
+   "terephthaloyl chloride",
+   "1,4-phenylenediamine",
+   "p-phenylenediamine",
+   "terephthaloyl dichloride"
+  ],
+  "productName": "Poly(p-phenylene terephthalamide), Kevlar",
+  "summary": "Each NH2 acylation by the acyl chloride forms an amide link, producing a rigid-rod aromatic polyamide of exceptional strength.",
+  "mechanism": "Nucleophilic acyl substitution repeated at both ends of both monomers with loss of HCl.",
+  "keyPoints": [
+   "Aromatic polyamide (aramid)",
+   "Rigid rods with extensive hydrogen bonding",
+   "Strength to weight ratio higher than steel",
+   "Condensation polymer"
+  ],
+  "whenUsed": "Bullet-proof vests, ropes, tyre reinforcement.",
+  "applications": [
+   "Body armour",
+   "Aerospace materials"
+  ],
+  "examples": [
+   {
+    "eq": "n H2N-C6H4-NH2 + n ClCO-C6H4-COCl -> [-NH-C6H4-NH-CO-C6H4-CO-]n + 2n HCl",
+    "note": "Para-linked aramid"
+   }
+  ],
+  "jeeTips": "Nomex is the meta-linked analogue. Both are aramids, not aliphatic nylons.",
+  "reference": "",
+  "tags": [
+   "aramid",
+   "polyamide",
+   "condensation polymer"
+  ]
+ },
+ {
+  "id": "polylactic-acid-condensation",
+  "name": "Polycondensation of 2-Hydroxypropanoic Acid",
+  "aliases": [
+   "PLA formation",
+   "Polylactide synthesis"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "n CH3CH(OH)COOH",
+  "reagents": "Sn(II) octoate catalyst (or acid catalyst)",
+  "conditions": "Heat, vacuum (remove water)",
+  "products": "[-O-CH(CH3)-CO-]n + n H2O",
+  "catalyst": "Sn(II) salt",
+  "reagentKeywords": [
+   "heat",
+   "Sn catalyst",
+   "polycondensation",
+   "acid"
+  ],
+  "productName": "Polylactic acid (PLA)",
+  "summary": "Lactic acid forms ester links between its OH and COOH groups, building a biodegradable aliphatic polyester.",
+  "mechanism": "Esterification between the OH of one monomer and COOH of another occurs repeatedly with loss of water.",
+  "keyPoints": [
+   "Biodegradable polyester",
+   "Made from renewable sources such as corn starch",
+   "Used in surgical sutures and packaging"
+  ],
+  "whenUsed": "Biodegradable plastics and medical implants.",
+  "applications": [
+   "Absorbable sutures",
+   "Food packaging"
+  ],
+  "examples": [
+   {
+    "eq": "n CH3CH(OH)COOH -> [-O-CH(CH3)-CO-]n + n H2O",
+    "note": "Polycondensation"
+   }
+  ],
+  "jeeTips": "PLA, PHBV and nylon-2-nylon-6 are the typical biodegradable polymers.",
+  "reference": "",
+  "tags": [
+   "polyester",
+   "biodegradable",
+   "condensation"
+  ]
+ },
+ {
+  "id": "novolac-formation",
+  "name": "Linear Phenol-Methanal Condensation Polymer",
+  "aliases": [
+   "Novolac resin",
+   "Linear phenol-formaldehyde polymer"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5OH (excess) + HCHO",
+  "reagents": "HCHO, acid catalyst",
+  "conditions": "Heat, phenol in excess (mole ratio above 1)",
+  "products": "Linear novolac chain [-C6H3(OH)-CH2-]n + H2O",
+  "catalyst": "H+",
+  "reagentKeywords": [
+   "HCHO",
+   "acid",
+   "H+",
+   "excess phenol"
+  ],
+  "productName": "Novolac",
+  "summary": "With excess phenol and an acid catalyst, hydroxymethylphenol condenses to give a linear, fusible polymer called novolac. Heating with more HCHO or hexamine cross-links it to Bakelite.",
+  "mechanism": "Acid-catalysed electrophilic substitution at ortho/para positions with HCHO, followed by condensation giving CH2 bridges.",
+  "keyPoints": [
+   "Linear and soluble, not cross-linked",
+   "Cross-linking with hexamine gives Bakelite",
+   "Opposite regime: excess HCHO and base give resol"
+  ],
+  "whenUsed": "Intermediate for Bakelite and moulding powders.",
+  "applications": [
+   "Hard moulded articles",
+   "Adhesives"
+  ],
+  "examples": [
+   {
+    "eq": "n C6H5OH + n HCHO ->[H+] [-C6H3(OH)-CH2-]n + n H2O",
+    "note": "Schematic"
+   }
+  ],
+  "jeeTips": "Novolac needs a hardener (hexamine); resol cures on heating without one.",
+  "reference": "",
+  "tags": [
+   "phenolic resin",
+   "novolac",
+   "condensation polymer"
+  ]
+ },
+ {
+  "id": "cellulose-acetylation-fibre",
+  "name": "Semisynthetic Fibre from Cellulose Pulp",
+  "aliases": [
+   "Cellulose acetate formation",
+   "Acetate rayon"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "[C6H7O2(OH)3]n",
+  "reagents": "acetic anhydride, H2SO4 (catalyst)",
+  "conditions": "Acetic acid solvent, 298-303 K",
+  "products": "[C6H7O2(OCOCH3)3]n + 3n CH3COOH",
+  "catalyst": "H2SO4",
+  "reagentKeywords": [
+   "acetic anhydride",
+   "(CH3CO)2O",
+   "H2SO4",
+   "acetylation"
+  ],
+  "productName": "Cellulose triacetate",
+  "summary": "Free OH groups of cellulose are esterified with acetic anhydride; the ester is dissolved and spun into fibre or cast as film.",
+  "mechanism": "Acid-catalysed nucleophilic acyl substitution at each OH of the glucose unit.",
+  "keyPoints": [
+   "Semi-synthetic polymer",
+   "Fibre known as acetate rayon",
+   "Soluble in organic solvents unlike cellulose"
+  ],
+  "whenUsed": "Textile fibres, photographic film and cigarette filters.",
+  "applications": [
+   "Acetate fabrics",
+   "Film base"
+  ],
+  "examples": [
+   {
+    "eq": "[C6H7O2(OH)3]n + 3n (CH3CO)2O -> [C6H7O2(OCOCH3)3]n + 3n CH3COOH",
+    "note": "Triacetate"
+   }
+  ],
+  "jeeTips": "Rayon (viscose) is regenerated cellulose; cellulose acetate is a true ester.",
+  "reference": "",
+  "tags": [
+   "cellulose",
+   "semisynthetic",
+   "ester"
+  ]
+ },
+ {
+  "id": "sodium-initiated-butadiene-polymerisation",
+  "name": "Anionic Polymerisation of Buta-1,3-diene",
+  "aliases": [
+   "Buna rubber",
+   "Polybutadiene formation"
+  ],
+  "category": "Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "n CH2=CH-CH=CH2",
+  "reagents": "metallic sodium (initiator)",
+  "conditions": "Heat",
+  "products": "[-CH2-CH=CH-CH2-]n",
+  "catalyst": "Na",
+  "reagentKeywords": [
+   "sodium",
+   "Na",
+   "anionic initiator",
+   "Buna"
+  ],
+  "productName": "Polybutadiene (Buna rubber)",
+  "summary": "Sodium acts as an initiator for anionic chain polymerisation of 1,3-butadiene, giving a rubber-like polymer through 1,4-addition.",
+  "mechanism": "Electron transfer from Na to the diene gives a radical anion that adds to further monomer units; the product chain retains C=C bonds.",
+  "keyPoints": [
+   "Name Buna comes from Butadiene and Natrium (sodium)",
+   "Buna-S and Buna-N are copolymers with styrene and acrylonitrile",
+   "Residual double bonds permit vulcanisation"
+  ],
+  "whenUsed": "Early synthetic rubber.",
+  "applications": [
+   "Synthetic rubber"
+  ],
+  "examples": [
+   {
+    "eq": "n CH2=CH-CH=CH2 ->[Na] [-CH2-CH=CH-CH2-]n",
+    "note": "1,4-Polybutadiene"
+   }
+  ],
+  "jeeTips": "Distinguish Buna (homopolymer), Buna-S (with styrene) and Buna-N (with acrylonitrile).",
+  "reference": "",
+  "tags": [
+   "rubber",
+   "diene",
+   "anionic"
+  ]
+ }
+]
