@@ -41,6 +41,9 @@
     book: p('<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/>'),
     atom: p('<circle cx="12" cy="12" r="1.6"/><ellipse cx="12" cy="12" rx="10" ry="4.2"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)"/>'),
     gear: p('<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/>'),
+    sun: p('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'),
+    moon: p('<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>'),
+    collapse: p('<rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16M15 10l-2 2 2 2"/>'),
     chev: p('<path d="m6 9 6 6 6-6"/>'),
     link: p('<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>'),
     logo: '<svg viewBox="0 0 32 32" fill="currentColor"><path d="M12 3h8v2h-1.5v7.2l7.8 12.6A3.4 3.4 0 0 1 23.4 30H8.6a3.4 3.4 0 0 1-2.9-5.2l7.8-12.6V5H12zm-1.7 17h11.4l-3.7-6h-4z"/></svg>'
@@ -74,7 +77,7 @@
      Today: browser localStorage. Later: swap in a Firebase (Auth + Firestore) adapter
      exposing the same load()/save()/clear() interface; nothing else needs to change. */
   const KEY = 'reactionlab.v1';
-  RL.STORAGE_KEYS = [KEY, 'rl.view'];
+  RL.STORAGE_KEYS = [KEY, 'rl.view', 'rl.ask'];
   RL.storage = {
     kind: 'localStorage',
     load() { try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch { return {}; } },
@@ -389,7 +392,7 @@
   /* ================= Reaction detail (reveal cards) ================= */
   RL.list = (items) => items && items.length ? `<ul class="clean">${items.map((i) => `<li>${RL.rich(i)}</li>`).join('')}</ul>` : '<span class="muted">-</span>';
   RL.metaPills = (r) => `
-    <span class="pill" style="background:${RL.CAT_COLORS[r.category]}33;color:#222">${RL.esc(r.category)}</span>
+    <span class="pill" style="background:${RL.CAT_COLORS[r.category]}33;color:var(--ink)">${RL.esc(r.category)}</span>
     <span class="pill gray">${RL.esc(r.kind)}</span>
     ${(r.exam || []).map((e) => `<span class="pill ${e.includes('Adv') ? 'lav' : 'green'}">${RL.esc(e)}</span>`).join('')}
     <span class="pill ${r.difficulty === 'hard' ? 'red' : r.difficulty === 'easy' ? 'green' : 'amber'}">${RL.esc(r.difficulty)}</span>`;
@@ -450,6 +453,20 @@
   RL.fitAll = (root = document) => requestAnimationFrame(() => root.querySelectorAll('.eq-fit').forEach(RL.fit));
   window.addEventListener('resize', RL.debounce(() => RL.fitAll(), 150));
 
+  /* ================= Theme + sidebar state ================= */
+  RL.theme = () => document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+  RL.setTheme = (t) => {
+    document.documentElement.dataset.theme = t; try { localStorage.setItem('rl.theme', t); } catch (e) { /* private mode */ }
+    const m = document.querySelector('meta[name="theme-color"]'); if (m) m.content = t === 'dark' ? '#0f1110' : '#d8ddd4';
+  };
+  RL.sidebarCollapsed = () => document.documentElement.classList.contains('sb-collapsed');
+  RL.setSidebar = (collapsed) => {
+    document.documentElement.classList.toggle('sb-collapsed', collapsed);
+    try { localStorage.setItem('rl.sb', collapsed ? '1' : '0'); } catch (e) { /* private mode */ }
+    const b = RL.$('#collapseBtn'); if (b) { b.title = collapsed ? 'Expand sidebar' : 'Collapse sidebar'; b.setAttribute('aria-label', b.title); }
+    setTimeout(() => RL.fitAll(), 320);
+  };
+
   /* ================= Layout ================= */
   RL.layout = (active, title) => {
     const counts = { bank: RL.reactions({ include: 'visible' }).length, custom: RL.state.custom.length };
@@ -463,24 +480,24 @@
     if (fresh) { aside = document.createElement('aside'); aside.className = 'sidebar'; }
     aside.innerHTML = `
       <a class="brand" href="index.html"><div class="brand-logo">${RL.icon.logo}</div><span>ReactionLab</span></a>
-      ${nav.map(([href, ic, label, key, badge]) => `<a class="nav-link ${key === active ? 'active' : ''}" href="${href}">${RL.icon[ic]}<span>${label}</span>${badge ? `<span class="badge">${badge}</span>` : ''}</a>`).join('')}
+      ${nav.map(([href, ic, label, key, badge]) => `<a class="nav-link ${key === active ? 'active' : ''}" href="${href}" title="${label.replace(/&/g, '&amp;')}">${RL.icon[ic]}<span>${label}</span>${badge ? `<span class="badge">${badge}</span>` : ''}</a>`).join('')}
       <div class="nav-spacer"></div>
-      <a class="nav-link nav-secondary" href="https://www.organic-chemistry.org/namedreactions/" target="_blank" rel="noopener">${RL.icon.book}<span>Reference site</span></a>`;
+      <a class="nav-link nav-secondary" href="https://www.organic-chemistry.org/namedreactions/" target="_blank" rel="noopener" title="Reference site">${RL.icon.book}<span>Reference site</span></a>
+      <div class="sb-foot">
+        <a class="sb-user" href="settings.html" title="Profile &amp; filters">
+          <span class="avatar">${RL.esc(((RL.state.name || 'Student')[0] || 'S').toUpperCase())}</span>
+          <span class="sb-user-meta"><b>${RL.esc(RL.state.name || 'Student')}</b><small>${RL.esc(RL.visibleExams().join(' · ').replace('JEE Main · JEE Advanced', 'JEE Main · Advanced') || 'No exam selected')}</small></span>
+        </a>
+        <div class="sb-tools">
+          <button type="button" class="icon-btn" id="themeBtn" title="Switch theme" aria-label="Switch theme"><span class="theme-ic-moon">${RL.icon.moon}</span><span class="theme-ic-sun">${RL.icon.sun}</span></button>
+          <button type="button" class="icon-btn" id="collapseBtn" title="Collapse sidebar" aria-label="Collapse sidebar"><span class="collapse-ic" style="display:grid">${RL.icon.collapse}</span></button>
+        </div>
+      </div>`;
+    RL.$('#themeBtn', aside).onclick = () => RL.setTheme(RL.theme() === 'dark' ? 'light' : 'dark');
+    RL.$('#collapseBtn', aside).onclick = () => RL.setSidebar(!RL.sidebarCollapsed());
+    RL.$('#collapseBtn', aside).title = RL.sidebarCollapsed() ? 'Expand sidebar' : 'Collapse sidebar';
     if (fresh) RL.$('.app').prepend(aside);
     setTimeout(() => { RL.enhanceSelects(); RL.fitAll(); requestAnimationFrame(() => document.documentElement.classList.remove('loading')); }, 0);
-    const top = RL.$('#topbar');
-    if (top) {
-      const nm = RL.state.name || 'Student';
-      top.className = 'topbar';
-      top.innerHTML = `
-        <a class="icon-btn dark" href="bank.html" title="Search the bank">${RL.icon.search}</a>
-        <a class="icon-btn lav" href="practice.html" title="Random reaction">${RL.icon.shuffle}</a>
-        <div class="title">${title || ''}</div>
-        <a class="profile-pill" title="Profile &amp; content filters" href="settings.html" id="profile">
-          <div class="avatar">${RL.esc((nm[0] || 'S').toUpperCase())}</div>
-          <div class="meta"><div>${RL.esc(nm)}</div><small>${RL.esc(RL.visibleExams().join(' · ').replace('JEE Main · JEE Advanced', 'JEE Main · Advanced') || 'No exam selected')}</small></div>
-        </a>`;
-    }
   };
 
   /* ================= Custom select (theme-aligned dropdowns) ================= */

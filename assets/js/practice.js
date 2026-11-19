@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $('#hintBtn').onclick = () => {
     if (!cur) return; hints++;
     const h = [];
-    if (hints >= 1) h.push(`<span class="pill" style="background:${RL.CAT_COLORS[cur.category]}55;color:#222">${esc(cur.category)}</span> <span class="pill gray">${esc(cur.kind)}</span>`);
+    if (hints >= 1) h.push(`<span class="pill" style="background:${RL.CAT_COLORS[cur.category]}55;color:var(--ink)">${esc(cur.category)}</span> <span class="pill gray">${esc(cur.kind)}</span>`);
     if (ask === 'product') {
       if (hints >= 2) h.push(`Reaction: <b>${esc(cur.name)}</b>`);
       if (hints >= 3) { const pn = cur.productName || ''; h.push(pn ? `Product name starts with <b>“${esc(pn.slice(0, 3))}…”</b>` : 'Product has ' + cur.products.split(' + ').length + ' species'); }
