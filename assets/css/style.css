@@ -955,3 +955,4 @@ html[data-theme="dark"] .cselect-opt.sel .tick { color: #fff; }
 .acct-meta { display: flex; flex-direction: column; min-width: 0; margin-right: auto; }
 .acct-meta b { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .acct-meta span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.err-actions { flex-wrap: wrap; } .err-actions .btn { min-width: 0; flex: 1 1 140px; }

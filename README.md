@@ -2,7 +2,8 @@
 
 A fully static study site for organic chemistry reactions in Class 11–12 (NCERT), JEE Main, JEE Advanced and IISER IAT.
 
-- **Dashboard** (`index.html`): stats, reaction of the day, chapter progress, recent attempts.
+- **Sign-in** (`index.html`): minimal landing page with Google sign-in (Firebase Auth). Every app page requires sign-in.
+- **Dashboard** (`dashboard.html`): stats, reaction of the day, chapter progress, recent attempts.
 - **Practice** (`practice.html`): one click gives a random reaction with its reagent hidden. Type the name, reagent/catalyst and product. A fuzzy similarity score grades the answer (50% name, 35% reagent, 15% product/info). Hints cost 10 points each. **Reveal** shows answer cards: name, reagents, equation, mechanism, key points, when/where used, applications, examples and JEE tips.
 - **MCQ quiz** (`practice.html?mode=mcq`): randomised 5–30 question quizzes. Question types are name-the-reaction, which-reaction (reagent hidden), pick-the-reagent and predict-the-product. Wrong options are look-alikes taken from the same chapter.
 - **GOC Concept Lab** (`goc.html`): JEE-style General Organic Chemistry questions in four types:
@@ -30,7 +31,18 @@ No build step. Libraries (KaTeX + mhchem, Fuse.js, Plus Jakarta Sans) are vendor
 python3 -m http.server 8080   # then open http://localhost:8080
 ```
 
-Opening `index.html` directly from disk also works. It deploys as-is to GitHub Pages, Netlify, Vercel or Firebase Hosting.
+Google sign-in needs an http(s) origin that is authorised in Firebase Auth (`localhost`, `reactionlab-25f61.web.app`, `reactionlab-25f61.firebaseapp.com`), so serve locally over http instead of opening files from disk.
+
+## Deploy (Firebase Hosting + Firestore)
+
+Live site: https://reactionlab-25f61.web.app
+
+```bash
+firebase deploy --only hosting            # site
+firebase deploy --only firestore          # security rules + indexes
+```
+
+`firebase.json` serves the repo root, ignores tooling and raw data (`tools/`, `data/parts/`, `data/goc/`, docs), sends `no-cache` for HTML/JS/CSS so a deploy never mixes old and new files, and uses `404.html` as the custom error page.
 
 ## Data
 
@@ -52,12 +64,23 @@ To fold user-added reactions back into the main bank: Edit & Upload → Saved da
 
 ## Storage
 
-User data (attempts, custom reactions, edits, archive/blacklist) lives in `localStorage` under `reactionlab.v1`. All access goes through the `RL.storage` adapter in `assets/js/core.js` (`load`, `save`, `clear`). A Firebase Auth + Firestore adapter with the same interface can replace it later without touching page code.
+User data is saved per Google account in Firestore (free Spark plan), by `assets/js/cloud.js`:
+
+| Document | Contents |
+|---|---|
+| `users/{uid}` | account info, name, content filters, archive/blacklist |
+| `users/{uid}/data/progress` | practice attempts, GOC attempts |
+| `users/{uid}/data/content` | custom reactions, edits to built-in reactions |
+
+A per-account copy in `localStorage` keeps pages instant and usable offline; changes are written to Firestore a few seconds after they happen (and on page hide), and unsynced offline changes are pushed on the next visit. Progress made before the first sign-in on a browser is moved into the account once. `firestore.rules` lets each user read and write only their own documents, with schema and size checks. Pages start through `RL.boot(fn)`, which waits for the signed-in user's data.
 
 ## Structure
 
 ```
-index.html  practice.html  goc.html  bank.html  edit.html
+index.html (sign-in)  dashboard.html  practice.html  goc.html  bank.html  edit.html  settings.html  404.html
+assets/js/firebase.js       Firebase SDK setup (Auth + Firestore), small `fb` wrapper
+assets/js/cloud.js          sign-in gate + Firestore sync      ·   assets/js/landing.js (sign-in page)
+firebase.json  firestore.rules  firestore.indexes.json  .firebaserc
 assets/css/style.css        design system + responsive layout
 assets/js/core.js           store, data access, chem rendering, similarity scoring, MCQ generator, layout
 assets/js/{home,practice,goc,goc-gen,bank,edit}.js
