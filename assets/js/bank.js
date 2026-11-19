@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#results').innerHTML = `<div class="rows bank-list">
         <div class="rows-head"><span>Reaction</span><span class="hide-sm">Reagent</span><span class="hide-sm">Chapter</span><span class="hide-sm">Type</span><span>Exam</span></div>
         ${list.map((r) => `<div class="row ${RL.status(r.id) === 'archived' ? 'archived' : ''}" style="background:var(--panel)" data-id="${esc(r.id)}" tabindex="0">
-          <b style="font-weight:500">${esc(r.name)}</b><span class="hide-sm eq-inline small">${r.reagents ? RL.ce(r.reagents) : '—'}</span>
+          <b style="font-weight:500">${esc(r.name)}</b><span class="hide-sm eq-inline small">${r.reagents ? RL.ce(r.reagents) : '-'}</span>
           <span class="hide-sm small"><span class="cat-dot" style="background:${RL.CAT_COLORS[r.category]}"></span> ${esc(r.category)}</span>
           <span class="hide-sm small muted">${esc(r.kind)}</span>
           <span>${(r.exam || []).map((e) => `<span class="pill ${e.includes('Adv') ? 'lav' : 'green'}">${e.includes('Adv') ? 'Adv' : 'Main'}</span>`).join(' ')}</span></div>`).join('')}</div>`;

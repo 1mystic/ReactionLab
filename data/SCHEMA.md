@@ -59,7 +59,7 @@ Remember: inside JSON every backslash must be doubled (`"$\\ce{CH3CHO}$"`).
 
 ## mhchem tips (KaTeX)
 - Arrow with reagent above / condition below: `A ->[reagent][condition] B`
-- Text inside: `->[\text{dry ether}]` — plain words also OK in `\ce{}` but wrap multi-word phrases in `\text{}`
+- Text inside: `->[\text{dry ether}]` - plain words also OK in `\ce{}` but wrap multi-word phrases in `\text{}`
 - Charges: `Ar-N2+ Cl-`, `OH-`, `Na+`. Bonds: `CH2=CH2`, `HC#CH` (triple), single bond `-`.
 - Benzene ring: write `C6H5-` or `Ph-` (no drawings).
 - Heat: `\Delta`. Degrees: `473 K` or `\pu{200 ^\circ C}`.

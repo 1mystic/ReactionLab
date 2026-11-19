@@ -1,4 +1,4 @@
-# ReactionLab — JEE Organic Reaction Bank
+# ReactionLab - JEE Organic Reaction Bank
 
 A fully static study site for organic chemistry reactions in Class 11–12 (NCERT), JEE Main, JEE Advanced and IISER IAT.
 

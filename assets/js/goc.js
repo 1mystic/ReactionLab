@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sess = { right: 0, wrong: 0, score: 0, n: 0, streak: 0 };
   function updateSession() {
     const pct = sess.n ? Math.round((100 * sess.score) / sess.n) : 0;
-    $('#sPct').textContent = sess.n ? pct + '%' : '—';
+    $('#sPct').textContent = sess.n ? pct + '%' : '-';
     $('#sCount').textContent = `${sess.n} answered`;
     $('#sRight').textContent = sess.right; $('#sWrong').textContent = sess.wrong; $('#sStreak').textContent = sess.streak;
     $('#sRing').style.setProperty('--p', pct);

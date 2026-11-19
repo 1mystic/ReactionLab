@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const s = RL.stats();
   const tiles = [
     ['Reactions in bank', all.length, 'green'], ['Reactions practised', s.seen, 'white'],
-    ['Average score', s.attempts ? s.avg + '%' : '—', 'lav'], ['Day streak', s.streak + (s.streak === 1 ? ' day' : ' days'), 'white']
+    ['Average score', s.attempts ? s.avg + '%' : '-', 'lav'], ['Day streak', s.streak + (s.streak === 1 ? ' day' : ' days'), 'white']
   ];
   $('#stats').innerHTML = tiles.map(([l, v, c]) => `<div class="note-card ${c}" style="min-height:0;padding:22px"><div class="stat"><span class="small" style="opacity:.75">${l}</span><b>${v}</b></div></div>`).join('');
 
-  // reaction of the day — deterministic by date
+  // reaction of the day - deterministic by date
   const day = Math.floor(Date.now() / 864e5);
   const r = pool.length ? pool[(day * 7919) % pool.length] : null;
   $('#rotd').innerHTML = r ? `
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // recent attempts
   const recent = RL.state.attempts.slice(-6).reverse();
-  if (!recent.length) $('#recent').innerHTML = '<p class="muted" style="margin:0">No attempts yet — <a href="practice.html" style="text-decoration:underline">start your first drill</a>.</p>';
+  if (!recent.length) $('#recent').innerHTML = '<p class="muted" style="margin:0">No attempts yet - <a href="practice.html" style="text-decoration:underline">start your first drill</a>.</p>';
   else $('#recent').innerHTML = `<div class="rows-head" style="grid-template-columns:2fr 1.5fr 1fr 1fr"><span>Reaction</span><span class="hide-sm">Chapter</span><span>Mode</span><span>Score</span></div>` +
     recent.map((a) => { const x = RL.byId(a.id); if (!x) return ''; const [, c] = RL.verdict(a.score);
       return `<div class="row rc" style="grid-template-columns:2fr 1.5fr 1fr 1fr;background:var(--panel)"><b style="font-weight:500">${esc(x.name)}</b><span class="muted hide-sm">${esc(x.category)}</span><span class="pill gray hide-sm" style="justify-self:start">${a.mode === 'mcq' ? 'MCQ' : 'Free text'}</span><span class="pill ${c}" style="justify-self:start">${a.score}%</span></div>`; }).join('');

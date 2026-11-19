@@ -1,4 +1,4 @@
-/* ReactionLab core — shared by every page. No build step; works from file:// or any static host. */
+/* ReactionLab core - shared by every page. No build step; works from file:// or any static host. */
 (function () {
   'use strict';
   const RL = (window.RL = {});
@@ -69,7 +69,7 @@
   };
 
   /* ================= Store (localStorage) ================= */
-  /* Storage adapter — every read/write of user data goes through RL.storage.
+  /* Storage adapter - every read/write of user data goes through RL.storage.
      Today: browser localStorage. Later: swap in a Firebase (Auth + Firestore) adapter
      exposing the same load()/save()/clear() interface; nothing else needs to change. */
   const KEY = 'reactionlab.v1';
@@ -85,7 +85,7 @@
   RL.blankState = blank;
   RL.state = Object.assign(blank(), RL.storage.load());
   if (!Array.isArray(RL.state.goc)) RL.state.goc = [];
-  RL.save = () => { try { RL.storage.save(RL.state); } catch (e) { RL.toast('Storage full — export your data & remove large images'); } };
+  RL.save = () => { try { RL.storage.save(RL.state); } catch (e) { RL.toast('Storage full - export your data & remove large images'); } };
   RL.exportState = () => JSON.stringify({ app: 'ReactionLab', version: 1, exportedAt: new Date().toISOString(), data: RL.state }, null, 2);
   /** mode: 'replace' | 'merge' */
   RL.importState = (json, mode = 'merge') => {
@@ -260,7 +260,7 @@
     const total = Math.round(100 * (0.5 * nameAny + 0.35 * reagentRes.score + 0.15 * otherRes.score));
     return { total, name: nameAny, reagent: reagentRes, other: otherRes };
   };
-  RL.verdict = (t) => t >= 85 ? ['Excellent!', 'green'] : t >= 65 ? ['Good — almost there', 'green'] : t >= 40 ? ['Partially correct', 'amber'] : ['Needs revision', 'red'];
+  RL.verdict = (t) => t >= 85 ? ['Excellent!', 'green'] : t >= 65 ? ['Good - almost there', 'green'] : t >= 40 ? ['Partially correct', 'amber'] : ['Needs revision', 'red'];
 
   /* ================= Attempts / stats ================= */
   RL.logAttempt = (id, score, mode = 'free') => {
@@ -309,7 +309,7 @@
   RL.makeQuiz = (pool, n = 10) => RL.shuffle(pool).slice(0, n).map((r) => RL.makeMCQ(r, pool));
 
   /* ================= Reaction detail (reveal cards) ================= */
-  RL.list = (items) => items && items.length ? `<ul class="clean">${items.map((i) => `<li>${RL.rich(i)}</li>`).join('')}</ul>` : '<span class="muted">—</span>';
+  RL.list = (items) => items && items.length ? `<ul class="clean">${items.map((i) => `<li>${RL.rich(i)}</li>`).join('')}</ul>` : '<span class="muted">-</span>';
   RL.metaPills = (r) => `
     <span class="pill" style="background:${RL.CAT_COLORS[r.category]}33;color:#222">${RL.esc(r.category)}</span>
     <span class="pill gray">${RL.esc(r.kind)}</span>
@@ -325,7 +325,7 @@
       </div>
       <div class="note-card lav reveal-anim">
         <span class="small" style="opacity:.8">Reagents · Catalyst · Conditions</span>
-        <div class="wrap-chem" style="font-size:1.15em">${r.reagents ? RL.ceWrap(r.reagents) : '—'}</div>
+        <div class="wrap-chem" style="font-size:1.15em">${r.reagents ? RL.ceWrap(r.reagents) : '-'}</div>
         ${r.conditions ? `<div class="wrap-chem small" style="margin-top:-6px;opacity:.9">${RL.ceWrap(r.conditions)}</div>` : ''}
         ${r.catalyst ? `<div class="small"><b>Catalyst:</b> ${RL.rich(r.catalyst)}</div>` : ''}
         ${r.productName ? `<div class="foot"><b>Product:</b> ${RL.rich(r.productName)}</div>` : ''}
@@ -333,12 +333,12 @@
       <div class="card span2 reveal-anim"><div class="small muted" style="margin-bottom:6px">Full equation</div><div class="eq-inline eq-fit">${RL.equation(r)}</div>
         ${r.image ? `<img src="${RL.esc(r.image)}" alt="" style="max-width:100%;border-radius:14px;margin-top:10px">` : ''}</div>
       ${full ? `
-      <div class="card reveal-anim"><h3 style="margin-bottom:8px">Mechanism</h3><div>${RL.rich(r.mechanism) || '<span class="muted">—</span>'}</div></div>
+      <div class="card reveal-anim"><h3 style="margin-bottom:8px">Mechanism</h3><div>${RL.rich(r.mechanism) || '<span class="muted">-</span>'}</div></div>
       <div class="card reveal-anim"><h3 style="margin-bottom:8px">Key points</h3>${RL.list(r.keyPoints)}</div>
-      <div class="card reveal-anim"><h3 style="margin-bottom:8px">When & where used</h3><div>${RL.rich(r.whenUsed) || '—'}</div></div>
+      <div class="card reveal-anim"><h3 style="margin-bottom:8px">When & where used</h3><div>${RL.rich(r.whenUsed) || '-'}</div></div>
       <div class="card reveal-anim"><h3 style="margin-bottom:8px">Applications</h3>${RL.list(r.applications)}</div>
       <div class="card span2 reveal-anim"><h3 style="margin-bottom:8px">Examples</h3>
-        ${r.examples.length ? r.examples.map((e) => `<div class="eq-inline">${RL.ce(e.eq)}</div>${e.note ? `<div class="small muted" style="margin-bottom:8px">${RL.rich(e.note)}</div>` : ''}`).join('') : '<span class="muted">—</span>'}</div>
+        ${r.examples.length ? r.examples.map((e) => `<div class="eq-inline">${RL.ce(e.eq)}</div>${e.note ? `<div class="small muted" style="margin-bottom:8px">${RL.rich(e.note)}</div>` : ''}`).join('') : '<span class="muted">-</span>'}</div>
       ${r.jeeTips ? `<div class="note-card amber span2 reveal-anim" style="min-height:0"><h3>JEE tip</h3><div>${RL.rich(r.jeeTips)}</div></div>` : ''}
       <div class="span2 chips reveal-anim" style="align-items:center">${RL.metaPills(r)}
         ${(r.tags || []).map((t) => `<span class="pill gray">#${RL.esc(t)}</span>`).join('')}
@@ -470,7 +470,7 @@
 
   /* ================= LLM import prompt ================= */
   RL.LLM_PROMPT = () => `You are a chemistry data formatter. I will give you organic reactions as an image, PDF page, handwritten notes, or text.
-Convert EVERY reaction you see into a JSON array that follows the schema below EXACTLY. Output ONLY the JSON array in a single \`\`\`json code block — no commentary.
+Convert EVERY reaction you see into a JSON array that follows the schema below EXACTLY. Output ONLY the JSON array in a single \`\`\`json code block - no commentary.
 
 SCHEMA (one object per reaction):
 {

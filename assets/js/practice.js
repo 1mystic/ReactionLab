@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const h = [];
     if (hints >= 1) h.push(`<span class="pill" style="background:${RL.CAT_COLORS[cur.category]}55;color:#222">${esc(cur.category)}</span> <span class="pill gray">${esc(cur.kind)}</span>`);
     if (hints >= 2) h.push(`Name starts with <b>“${esc(cur.name.slice(0, 3))}…”</b> (${cur.name.split(/\s+/).length} word${cur.name.split(/\s+/).length > 1 ? 's' : ''})`);
-    if (hints >= 3) h.push(`Reagent: ${cur.reagents ? RL.ce(cur.reagents) : '—'}`);
+    if (hints >= 3) h.push(`Reagent: ${cur.reagents ? RL.ce(cur.reagents) : '-'}`);
     $('#hintBox').innerHTML = h.map((x) => `<div style="margin:6px 0">${x}</div>`).join('') + `<div class="muted small">Each hint costs 10 points.</div>`;
     if (hints >= 3) $('#hintBtn').disabled = true;
     $('#hintBtn').innerHTML = `${icon.bulb} Hint ${Math.min(hints + 1, 3)}/3`;
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const r = RL.byId(q.id);
     $('#qFeedback').innerHTML = `
       <div class="card" style="background:${ok ? 'var(--green-soft)' : 'var(--red-soft)'};border:0">
-        <h3>${ok ? '✓ Correct' : '✗ Not quite'} — ${esc(r.name)}</h3>
+        <h3>${ok ? '✓ Correct' : '✗ Not quite'} - ${esc(r.name)}</h3>
         <div class="eq-inline">${RL.equation(r)}</div>
         <div class="small" style="margin-top:6px">${RL.rich(r.summary)}</div>
       </div>

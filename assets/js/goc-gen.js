@@ -1,4 +1,4 @@
-/* GOC question generator — produces unlimited "effect", "compare" and "order" questions from
+/* GOC question generator - produces unlimited "effect", "compare" and "order" questions from
    experimental aqueous pKa data (25 °C, standard literature values) and a curated qualitative table.
    Only differences large enough to be textbook-unambiguous are used. */
 (function () {
@@ -17,7 +17,7 @@
   };
   const POS = { o: 'ortho', m: 'meta', p: 'para' };
 
-  // pKa values. For anilines: pKa of the conjugate acid (anilinium) — higher pKa = stronger base.
+  // pKa values. For anilines: pKa of the conjugate acid (anilinium) - higher pKa = stronger base.
   const SYSTEMS = {
     phenol: {
       title: 'phenol', parentF: 'C6H5-OH', grp: 'OH', prop: 'acidic strength', more: 'more acidic', kind: 'acid', topic: 'Acidity',
@@ -41,7 +41,7 @@
         CH3: { o: 4.44, m: 4.73, p: 5.08 }, OCH3: { m: 4.23, p: 5.34 }, NH2: { m: 4.88, p: 6.08 } }
     }
   };
-  // strength: acids — lower pKa stronger; bases (anilinium pKa) — higher stronger
+  // strength: acids - lower pKa stronger; bases (anilinium pKa) - higher stronger
   const strength = (sys, pKa) => (SYSTEMS[sys].kind === 'acid' ? -pKa : pKa);
 
   function reason(sys, s, p, up) {
@@ -49,7 +49,7 @@
     let why;
     if (p === 'o' && sys === 'benzoic') why = '<b>Ortho effect</b>: an ortho group twists –COOH out of the ring plane (steric inhibition of resonance), so almost every ortho-substituted benzoic acid is stronger than benzoic acid' + (s === 'OH' ? ', and o-OH also H-bonds to the carboxylate' : '') + '.';
     else if (p === 'o' && sys === 'aniline') why = '<b>Ortho effect</b>: steric hindrance to protonation and to solvation of the anilinium ion makes ortho-substituted anilines weaker bases' + (X.I < 0 ? ', reinforced by the −I effect' : '') + '.';
-    else if (p === 'm' && X.M !== 0) why = `At the <b>meta</b> position the resonance effect of ${X.label} cannot reach the reacting centre — only its <b>${X.I < 0 ? '−I' : '+I'}</b> effect operates.`;
+    else if (p === 'm' && X.M !== 0) why = `At the <b>meta</b> position the resonance effect of ${X.label} cannot reach the reacting centre - only its <b>${X.I < 0 ? '−I' : '+I'}</b> effect operates.`;
     else if (p === 'm') why = `At the meta position ${X.label} acts through its inductive/hyperconjugative effect only.`;
     else why = `At the <b>${pos}</b> position ${X.label} is ${X.desc}; ${X.M !== 0 ? 'its resonance effect reaches the reacting centre directly.' : 'it acts through induction and hyperconjugation.'}`;
     const eff = S.kind === 'acid'
@@ -73,7 +73,7 @@
       options: ['Increases', 'Decreases', 'Remains nearly the same'], answer: up ? 0 : 1,
       explanation: `${reason(sys, e.s, e.p, up)} (${pk(sys)}: ${S.title} ${S.parent} → ${nameOf(sys, e.s, e.p)} ${e.v})`,
       concepts: [SUB[e.s].M ? (SUB[e.s].M > 0 ? '+M effect' : '−M effect') : 'hyperconjugation', SUB[e.s].I > 0 ? '+I effect' : '−I effect', ...(e.p === 'o' && sys !== 'phenol' ? ['ortho effect'] : [])],
-      trap: (e.s === 'OCH3' || e.s === 'OH') && e.p === 'm' ? 'meta-OCH₃/OH act as electron-WITHDRAWING (−I only) — opposite of their para behaviour.' : ''
+      trap: (e.s === 'OCH3' || e.s === 'OH') && e.p === 'm' ? 'meta-OCH₃/OH act as electron-WITHDRAWING (−I only) - opposite of their para behaviour.' : ''
     };
   }
   function compareQ(sys) {
