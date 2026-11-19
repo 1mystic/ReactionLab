@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+RL.boot(() => {
   const { $, $$, esc, icon } = RL;
   RL.layout('bank', 'Reaction Bank');
   const params = new URLSearchParams(location.search);

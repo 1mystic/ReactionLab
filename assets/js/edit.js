@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+RL.boot(() => {
   const { $, $$, esc, icon } = RL;
   RL.layout('edit', 'Edit & Upload');
   $$('.sicon').forEach((e) => (e.innerHTML = icon.search));
@@ -227,9 +227,10 @@ document.addEventListener('DOMContentLoaded', () => {
   $('#clrAttempts').onclick = () => { if (confirm('Delete all practice history (reactions + GOC)?')) { RL.state.attempts = []; RL.state.goc = []; RL.save(); renderData(); RL.toast('History cleared'); } };
   $('#clrLists').onclick = () => { if (confirm('Un-archive and un-blacklist everything?')) { RL.state.archived = []; RL.state.blacklisted = []; RL.save(); renderData(); RL.toast('Lists reset'); } };
   $('#clrAll').onclick = () => {
-    if (!confirm('Delete ALL ReactionLab data stored in this browser (history, custom reactions, edits, lists)? This cannot be undone.')) return;
+    if (!confirm('Delete ALL your ReactionLab data (history, custom reactions, edits, lists) from your account and this browser? This cannot be undone.')) return;
     if (prompt('Type DELETE to confirm') !== 'DELETE') return RL.toast('Cancelled');
-    RL.storage.clear(); RL.state = RL.blankState(); RL.toast('All local data deleted'); setTimeout(() => location.reload(), 600);
+    RL.cloud.reset().then(() => { RL.toast('All your data was deleted'); setTimeout(() => location.reload(), 600); })
+      .catch(() => RL.toast('Could not reach the cloud. Check your connection and try again.'));
   };
 
   /* ---------------- init ---------------- */

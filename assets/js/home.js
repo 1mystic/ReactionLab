@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+RL.boot(() => {
   const { $, esc, icon } = RL;
   RL.layout('home', 'Dashboard');
   const pool = RL.reactions({ include: 'active' });

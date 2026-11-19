@@ -78,17 +78,38 @@
      exposing the same load()/save()/clear() interface; nothing else needs to change. */
   const KEY = 'reactionlab.v1';
   RL.STORAGE_KEYS = [KEY, 'rl.view', 'rl.ask'];
+  /* Cloud sync hooks. cloud.js (Firebase Auth + Firestore) fills these in; the app works from the local cache until then. */
+  RL.cloud = { user: null, status: 'idle', onSave() {}, flush: async () => {}, reset: async () => {}, signOut: async () => {}, listeners: [],
+    onStatus(fn) { RL.cloud.listeners.push(fn); fn(RL.cloud.status); },
+    setStatus(s) { RL.cloud.status = s; RL.cloud.listeners.forEach((fn) => fn(s)); } };
+  /* Pages call RL.boot(fn): runs after the DOM is ready AND the signed-in user's data has been loaded. */
+  RL.cloudReady = new Promise((res) => { RL._cloudDone = res; });
+  setTimeout(() => RL._cloudDone(), 12000); // never leave a blank page if Firebase is unreachable
+  RL.boot = (fn) => {
+    const go = () => RL.cloudReady.then(fn);
+    document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', go) : go();
+  };
+  let cacheKey = KEY; // switched to a per-account key once the user is known (cloud.js)
   RL.storage = {
-    kind: 'localStorage',
-    load() { try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch { return {}; } },
-    save(state) { localStorage.setItem(KEY, JSON.stringify(state)); },
-    clear() { RL.STORAGE_KEYS.forEach((k) => localStorage.removeItem(k)); },
-    bytes() { return new Blob([localStorage.getItem(KEY) || '']).size; }
+    kind: 'Firebase (cloud) + local cache',
+    key: () => cacheKey,
+    useKey(k) { cacheKey = k; },
+    load() { try { return JSON.parse(localStorage.getItem(cacheKey) || '{}'); } catch { return {}; } },
+    save(state) { localStorage.setItem(cacheKey, JSON.stringify(state)); RL.cloud.onSave(); },
+    clear() { RL.STORAGE_KEYS.forEach((k) => localStorage.removeItem(k)); localStorage.removeItem(cacheKey); },
+    bytes() { return new Blob([localStorage.getItem(cacheKey) || '']).size; }
   };
   const blankPrefs = () => ({ exams: [], categories: [], kinds: [], difficulties: [], tags: [], gocTopics: [] });
   const blank = () => ({ archived: [], blacklisted: [], custom: [], edits: {}, attempts: [], goc: [], name: '', prefs: blankPrefs() });
   RL.blankPrefs = blankPrefs;
   RL.blankState = blank;
+  RL.replaceState = (obj) => {
+    Object.keys(RL.state).forEach((k) => delete RL.state[k]);
+    Object.assign(RL.state, blank(), obj || {});
+    if (!Array.isArray(RL.state.goc)) RL.state.goc = [];
+    RL.prefs(); RL._ver++;
+    return RL.state;
+  };
   RL.state = Object.assign(blank(), RL.storage.load());
   if (!Array.isArray(RL.state.goc)) RL.state.goc = [];
   /* ---- Profile filters: content the user has permanently hidden site-wide ---- */
@@ -472,7 +493,7 @@
   RL.layout = (active, title) => {
     const counts = { bank: RL.reactions({ include: 'visible' }).length, custom: RL.state.custom.length };
     const nav = [
-      ['index.html', 'home', 'Dashboard', 'home'], ['practice.html', 'flask', 'Practice', 'practice'],
+      ['dashboard.html', 'home', 'Dashboard', 'home'], ['practice.html', 'flask', 'Practice', 'practice'],
       ['practice.html?mode=mcq', 'quiz', 'MCQ Quiz', 'mcq'], ['goc.html', 'atom', 'GOC Concepts', 'goc'], ['bank.html', 'grid', 'Reaction Bank', 'bank', counts.bank],
       ['edit.html', 'edit', 'Edit & Upload', 'edit', counts.custom || null],
       ['settings.html', 'gear', 'Profile & filters', 'settings', RL.prefsActive() ? 'on' : null]
@@ -480,7 +501,7 @@
     let aside = RL.$('aside.sidebar'); const fresh = !aside;
     if (fresh) { aside = document.createElement('aside'); aside.className = 'sidebar'; }
     aside.innerHTML = `
-      <a class="brand" href="index.html"><div class="brand-logo">${RL.icon.logo}</div><span>ReactionLab</span></a>
+      <a class="brand" href="dashboard.html"><div class="brand-logo">${RL.icon.logo}</div><span>ReactionLab</span></a>
       ${nav.map(([href, ic, label, key, badge]) => `<a class="nav-link ${key === active ? 'active' : ''}" href="${href}" title="${label.replace(/&/g, '&amp;')}">${RL.icon[ic]}<span>${label}</span>${badge ? `<span class="badge">${badge}</span>` : ''}</a>`).join('')}
       <div class="nav-spacer"></div>
       <a class="nav-link nav-secondary" href="https://www.organic-chemistry.org/namedreactions/" target="_blank" rel="noopener" title="Reference site">${RL.icon.book}<span>Reference site</span></a>

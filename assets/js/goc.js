@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+RL.boot(() => {
   const { $, $$, esc, icon } = RL;
   RL.layout('goc', 'GOC Concept Lab');
   const ALL_TOPICS = ['Carbocation stability', 'Carbanion stability', 'Free radical stability', 'Alkene stability', 'Resonance & hyperconjugation',

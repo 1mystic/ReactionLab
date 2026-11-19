@@ -1,5 +1,5 @@
 /* Profile & content filters: permanently hide exams, chapters, types, difficulties, tags and GOC topics site-wide */
-document.addEventListener('DOMContentLoaded', () => {
+RL.boot(() => {
   const { $, $$, esc, icon } = RL;
   const PAGE = ['settings', 'Profile & filters'];
   RL.layout(...PAGE);
@@ -87,6 +87,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const syncTheme = () => $$('#themeTabs .tab').forEach((t) => t.classList.toggle('active', t.dataset.theme === RL.theme()));
   $$('#themeTabs .tab').forEach((t) => (t.onclick = () => { RL.setTheme(t.dataset.theme); syncTheme(); }));
   syncTheme();
+
+  /* account + sync status */
+  const u = RL.cloud.user;
+  if (u) {
+    $('#acctName').textContent = u.displayName || 'Signed in'; $('#acctEmail').textContent = u.email || '';
+    const av = $('#acctAvatar');
+    if (u.photoURL) av.innerHTML = `<img src="${esc(u.photoURL)}" alt="" referrerpolicy="no-referrer">`; else av.textContent = (u.displayName || 'S')[0].toUpperCase();
+  }
+  const SYNC = { synced: ['green', 'Saved to cloud'], syncing: ['amber', 'Saving…'], offline: ['gray', 'Offline, saved on this device'], error: ['red', 'Sync failed, will retry'], idle: ['gray', 'Connecting…'] };
+  RL.cloud.onStatus((st) => { const [c, t] = SYNC[st] || SYNC.idle; $('#syncPill').className = `pill ${c}`; $('#syncPill').textContent = t; });
+  $('#signOutBtn').onclick = () => { $('#signOutBtn').disabled = true; RL.cloud.signOut(); };
 
   const nameIn = $('#pName');
   nameIn.value = RL.state.name || '';

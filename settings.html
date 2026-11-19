@@ -6,13 +6,14 @@
   <meta name="theme-color" content="#0f1110">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <title>Profile &amp; filters - ReactionLab</title>
-  <script>try{var d=document.documentElement,t=localStorage.getItem('rl.theme')||'dark';d.dataset.theme=t;if(localStorage.getItem('rl.sb')==='1')d.classList.add('sb-collapsed')}catch(e){}document.documentElement.classList.add('loading');setTimeout(function(){document.documentElement.classList.remove('loading')},1200)</script>
-  <link rel="stylesheet" href="assets/css/style.css?v=202611191205">
-  <script defer src="data/reactions.js?v=202611191205"></script>
-  <script defer src="data/goc.js?v=202611191205"></script>
-  <script defer src="assets/js/core.js?v=202611191205"></script>
-  <script defer src="assets/js/goc-gen.js?v=202611191205"></script>
-  <script defer src="assets/js/settings.js?v=202611191205"></script>
+  <script>try{var d=document.documentElement,t=localStorage.getItem('rl.theme')||'dark';d.dataset.theme=t;if(localStorage.getItem('rl.sb')==='1')d.classList.add('sb-collapsed')}catch(e){}document.documentElement.classList.add('loading');setTimeout(function(){document.documentElement.classList.remove('loading')},12000)</script>
+  <link rel="stylesheet" href="assets/css/style.css?v=202611191734">
+  <script defer src="data/reactions.js?v=202611191734"></script>
+  <script defer src="data/goc.js?v=202611191734"></script>
+  <script defer src="assets/js/core.js?v=202611191734"></script>
+  <script type="module" src="assets/js/cloud.js?v=202611191734"></script>
+  <script defer src="assets/js/goc-gen.js?v=202611191734"></script>
+  <script defer src="assets/js/settings.js?v=202611191734"></script>
 </head>
 <body>
   <div class="app">
@@ -29,6 +30,15 @@
           <div class="set-summary" id="summary"></div>
         </div>
         <p class="small muted" style="margin:var(--s-4) 0 0">Anything you switch off below is removed from <b>every</b> page: practice, MCQ quizzes, the GOC lab, the reaction bank, the dashboard and Edit &amp; Upload, including newly imported reactions. Nothing is deleted, so you can switch it back on here at any time.</p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><h2>Account</h2><span class="pill gray" id="syncPill">Connecting…</span></div>
+        <div class="acct">
+          <span class="avatar acct-avatar" id="acctAvatar">S</span>
+          <div class="acct-meta"><b id="acctName">Signed in</b><span class="small muted" id="acctEmail"></span></div>
+          <button class="btn sm" id="signOutBtn" type="button">Sign out</button>
+        </div>
       </section>
 
       <section class="panel">

@@ -1,0 +1,146 @@
+rules_version = '2';
+
+// ===============================================================
+// Assumed Data Model
+// ===============================================================
+//
+// Every document is private to one signed-in user (Firebase Auth, Google sign-in).
+// The client only uses getDoc / setDoc on these three documents. There are no queries.
+//
+// Document: users/{uid}                    (written with setDoc merge)
+//   - name: string (optional, 0..60 chars) - display name chosen in the app
+//   - prefs: map (optional) - content filters, keys: exams, categories, kinds,
+//            difficulties, tags, gocTopics; each a list (<= 300 items)
+//   - archived: list (optional, <= 2000) - reaction ids hidden from practice
+//   - blacklisted: list (optional, <= 2000) - reaction ids hidden everywhere
+//   - account: map (optional) - { displayName: string|null (<=120), email: string|null
+//              (must equal the auth token email when set), photoURL: string|null (https URL),
+//              lastLoginAt: number (ms) }
+//   - createdAt: number (optional, ms) - IMMUTABLE once set
+//   - updatedAt: number (optional, ms)
+//
+// Document: users/{uid}/data/progress      (written with setDoc full replace)
+//   - attempts: list (required, <= 2000) - practice attempts {id, score, mode, ts}
+//   - goc: list (required, <= 3000) - GOC attempts {id, topic, score, ts}
+//   - updatedAt: number (required, ms)
+//
+// Document: users/{uid}/data/content       (written with setDoc full replace)
+//   - custom: list (required, <= 1000) - the user's own reaction records
+//   - edits: map (required, <= 1000 keys) - reaction id -> overridden fields
+//   - updatedAt: number (required, ms)
+//
+// Notes / limits:
+//   - Rules cannot loop over list items, so list ELEMENTS are not type-checked;
+//     containers are type- and size-checked, and Firestore caps documents at 1 MiB.
+//   - No document ever stores a role or permission; ownership comes only from the path.
+// ===============================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---------- Helper functions ----------
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    function data() {
+      return request.resource.data;
+    }
+    function hasOnlyAllowedFields(fields) {
+      return data().keys().hasOnly(fields);
+    }
+    function hasRequiredFields(fields) {
+      return data().keys().hasAll(fields);
+    }
+    function isValidList(value, maxSize) {
+      return value is list && value.size() <= maxSize;
+    }
+    function optionalList(field, maxSize) {
+      return !(field in data()) || isValidList(data()[field], maxSize);
+    }
+    function isMillis(value) {
+      // a plausible epoch-milliseconds number (2020-01-01 .. 2100-01-01)
+      return value is number && value > 1577836800000 && value < 4102444800000;
+    }
+    function optionalMillis(field) {
+      return !(field in data()) || isMillis(data()[field]);
+    }
+    function isNullOrString(value, maxLen) {
+      return value == null || (value is string && value.size() <= maxLen);
+    }
+    function isValidUrl(url) {
+      return url is string && url.size() <= 2048 && url.matches('^https://.*');
+    }
+
+    // ---------- Domain validators (used on BOTH create and update) ----------
+    function isValidPrefs(p) {
+      return p is map
+        && p.keys().hasOnly(['exams', 'categories', 'kinds', 'difficulties', 'tags', 'gocTopics'])
+        && (!('exams' in p) || isValidList(p.exams, 10))
+        && (!('categories' in p) || isValidList(p.categories, 50))
+        && (!('kinds' in p) || isValidList(p.kinds, 50))
+        && (!('difficulties' in p) || isValidList(p.difficulties, 10))
+        && (!('tags' in p) || isValidList(p.tags, 300))
+        && (!('gocTopics' in p) || isValidList(p.gocTopics, 50));
+    }
+    function isValidAccount(a) {
+      return a is map
+        && a.keys().hasOnly(['displayName', 'email', 'photoURL', 'lastLoginAt'])
+        && (!('displayName' in a) || isNullOrString(a.displayName, 120))
+        && (!('email' in a) || a.email == null || a.email == '' || a.email == request.auth.token.email)
+        && (!('photoURL' in a) || a.photoURL == null || a.photoURL == '' || isValidUrl(a.photoURL))
+        && (!('lastLoginAt' in a) || isMillis(a.lastLoginAt));
+    }
+    function isValidProfile() {
+      return hasOnlyAllowedFields(['name', 'prefs', 'archived', 'blacklisted', 'account', 'createdAt', 'updatedAt'])
+        && (!('name' in data()) || isNullOrString(data().name, 60))
+        && (!('prefs' in data()) || isValidPrefs(data().prefs))
+        && optionalList('archived', 2000)
+        && optionalList('blacklisted', 2000)
+        && (!('account' in data()) || isValidAccount(data().account))
+        && optionalMillis('createdAt')
+        && optionalMillis('updatedAt');
+    }
+    function createdAtUnchanged() {
+      // createdAt can be set once (first write may not include it), never changed afterwards
+      return !('createdAt' in resource.data) || data().createdAt == resource.data.createdAt;
+    }
+    function isValidProgress() {
+      return hasOnlyAllowedFields(['attempts', 'goc', 'updatedAt'])
+        && hasRequiredFields(['attempts', 'goc', 'updatedAt'])
+        && isValidList(data().attempts, 2000)
+        && isValidList(data().goc, 3000)
+        && isMillis(data().updatedAt);
+    }
+    function isValidContent() {
+      return hasOnlyAllowedFields(['custom', 'edits', 'updatedAt'])
+        && hasRequiredFields(['custom', 'edits', 'updatedAt'])
+        && isValidList(data().custom, 1000)
+        && data().edits is map && data().edits.size() <= 1000
+        && isMillis(data().updatedAt);
+    }
+
+    // ---------- Rules ----------
+    match /users/{uid} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && isValidProfile();
+      allow update: if isOwner(uid) && isValidProfile() && createdAtUnchanged();
+      allow delete: if false;
+
+      match /data/{part} {
+        allow read: if isOwner(uid) && part in ['progress', 'content'];
+        allow create, update: if isOwner(uid) && (
+          (part == 'progress' && isValidProgress()) ||
+          (part == 'content' && isValidContent()));
+        allow delete: if false;
+      }
+    }
+
+    // Default deny: nothing else is readable or writable from clients.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

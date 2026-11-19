@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+RL.boot(() => {
   const { $, $$, esc, icon } = RL;
   const params = new URLSearchParams(location.search);
   let mode = params.get('mode') === 'mcq' ? 'mcq' : 'free';
