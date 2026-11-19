@@ -10,6 +10,7 @@
   <script defer src="assets/vendor/katex/katex.min.js"></script>
   <script defer src="assets/vendor/katex/mhchem.min.js"></script>
   <script defer src="assets/vendor/fuse.min.js"></script>
+  <script>document.documentElement.classList.add('loading');setTimeout(function(){document.documentElement.classList.remove('loading')},1200)</script>
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="data/reactions.js"></script>
   <script defer src="assets/js/core.js"></script>
@@ -17,8 +18,9 @@
 </head>
 <body>
   <div class="app">
+    <aside class="sidebar" aria-label="Main navigation"></aside>
     <main class="main">
-      <div id="topbar"></div>
+      <header id="topbar" class="topbar"></header>
       <section class="panel soft" style="padding:16px 20px">
         <div class="tabs" id="tabs" style="max-width:100%">
           <button class="tab active" data-tab="manage">Manage bank</button>
@@ -97,7 +99,7 @@
             <h3>Step 1 · Convert your material with any LLM</h3>
             <p style="margin:0;opacity:.9">Have a photo of notes, a PDF page or a list of reactions? Copy this prompt into ChatGPT, Claude, Gemini etc., attach your image/text, and it will return JSON in exactly the format this site needs.</p>
             <textarea class="textarea mono" id="llmPrompt" readonly style="min-height:240px;background:rgba(255,255,255,.95);color:#222;margin-top:6px"></textarea>
-            <div class="chips"><button class="btn" id="copyPrompt"></button><button class="btn" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.5)" id="dlTemplate">Download empty template</button></div>
+            <div class="chips"><button class="btn" id="copyPrompt"></button><button class="btn ghost" id="dlTemplate">Download empty template</button></div>
           </div>
           <div class="card">
             <h3>Step 2 · Paste or upload the JSON</h3>

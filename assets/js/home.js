@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // floating equations in hero
   const sample = RL.shuffle(pool.filter((r) => r.reagents && (r.reactants + r.products).length < 60)).slice(0, 3);
-  $('#heroEqs').innerHTML = sample.map((r) => `<div class="eq-float"><div class="small" style="opacity:.7;margin-bottom:6px">${esc(r.name)}</div>${RL.equation(r, 'none', false)}</div>`).join('');
+  $('#heroEqs').innerHTML = sample.map((r) => `<div class="eq-float"><div class="small" style="opacity:.7;margin-bottom:6px">${esc(r.name)}</div><div class="eq-fit">${RL.equation(r, 'none', false)}</div></div>`).join('');
 
   // stats
   const s = RL.stats();
@@ -25,10 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="chips" style="margin-bottom:14px">${RL.metaPills(r)}</div>
     <h3 style="font-size:24px;margin-bottom:8px">${esc(r.name)}</h3>
     <p class="muted" style="margin:0 0 16px">${RL.rich(r.summary)}</p>
-    <div class="equation-box" style="min-height:120px">${RL.equation(r)}</div>
+    <div class="equation-box eq-fit" style="min-height:120px">${RL.equation(r)}</div>
     <div class="chips" style="margin-top:16px"><button class="btn dark" id="rotdOpen">${icon.eye} Full card</button><a class="btn" href="practice.html?id=${encodeURIComponent(r.id)}">${icon.flask} Practise it</a></div>`
     : '<p class="muted">No reactions loaded.</p>';
   if (r) $('#rotdOpen').onclick = () => RL.openReaction(r);
+  RL.fitAll();
 
   // chapters
   const counts = {}; all.forEach((x) => (counts[x.category] = (counts[x.category] || 0) + 1));

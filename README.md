@@ -5,6 +5,13 @@ A fully static study site for organic chemistry reactions in Class 11–12 (NCER
 - **Dashboard** (`index.html`): stats, reaction of the day, chapter progress, recent attempts.
 - **Practice** (`practice.html`): one click gives a random reaction with its reagent hidden. Type the name, reagent/catalyst and product. A fuzzy similarity score grades the answer (50% name, 35% reagent, 15% product/info). Hints cost 10 points each. **Reveal** shows answer cards: name, reagents, equation, mechanism, key points, when/where used, applications, examples and JEE tips.
 - **MCQ quiz** (`practice.html?mode=mcq`): randomised 5–30 question quizzes. Question types are name-the-reaction, which-reaction (reagent hidden), pick-the-reagent and predict-the-product. Wrong options are look-alikes taken from the same chapter.
+- **GOC Concept Lab** (`goc.html`): JEE-style General Organic Chemistry questions in four types:
+  - **Arrange in order**: tap items into order; partial credit for correctly ordered pairs
+  - **Compare**: pick the stronger or more stable species
+  - **Effect of substituent**: adding X at o/m/p, does acidity/basicity/stability go up or down?
+  - **Single-correct MCQ**
+
+  Topics: carbocation/carbanion/radical/alkene stability, resonance, hyperconjugation, inductive effect, aromaticity, acidity, basicity, o/m/p substituent effects, tautomerism, physical properties, nucleophilicity, leaving groups, carbonyl reactivity, SN1/SN2/E1/E2, EAS and migratory aptitude. 194 curated questions, plus unlimited **generated** questions built from experimental pKa data (substituted phenols, benzoic acids, anilinium ions) and a textbook table for benzyl cations/anions. Practice and timed-quiz modes; topic accuracy is tracked.
 - **Reaction bank** (`bank.html`): grid, list or chapter-stack views. Fuzzy search (Fuse.js) plus chapter, type, exam and difficulty filters.
 - **Edit & Upload** (`edit.html`):
   - archive or blacklist reactions
@@ -37,6 +44,8 @@ npm install          # installs katex, used to validate every equation
 npm run build:data   # validates schema + renders every mhchem string, then writes data/reactions.js
 ```
 
+GOC questions live in `data/goc/*.json` (format in [`data/goc/SCHEMA.md`](data/goc/SCHEMA.md)). Build them with `npm run build:goc`, which writes `data/goc.js`. The pKa-driven generator is `assets/js/goc-gen.js`.
+
 There are currently 290 reactions across 9 chapters. Records tagged `potential` are beyond-syllabus reactions that could plausibly appear in future papers. Records tagged `NCERT` / `IAT` mark syllabus relevance.
 
 To fold user-added reactions back into the main bank: Edit & Upload → Saved data → **Custom reactions only**, save the file into `data/parts/`, then run `npm run build:data`.
@@ -48,11 +57,13 @@ User data (attempts, custom reactions, edits, archive/blacklist) lives in `local
 ## Structure
 
 ```
-index.html  practice.html  bank.html  edit.html
+index.html  practice.html  goc.html  bank.html  edit.html
 assets/css/style.css        design system + responsive layout
 assets/js/core.js           store, data access, chem rendering, similarity scoring, MCQ generator, layout
-assets/js/{home,practice,bank,edit}.js
+assets/js/{home,practice,goc,goc-gen,bank,edit}.js
 assets/vendor/              katex, mhchem, fuse.js, fonts
 data/parts/*.json           reaction sources   ·   data/reactions.js (generated)
-tools/build-data.mjs        validator + bundler
+data/goc/*.json             GOC questions      ·   data/goc.js (generated)
+tools/build-data.mjs        reaction validator + bundler
+tools/build-goc.mjs         GOC validator + bundler
 ```

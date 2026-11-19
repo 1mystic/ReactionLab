@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
   <script defer src="assets/vendor/katex/katex.min.js"></script>
   <script defer src="assets/vendor/katex/mhchem.min.js"></script>
+  <script>document.documentElement.classList.add('loading');setTimeout(function(){document.documentElement.classList.remove('loading')},1200)</script>
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="data/reactions.js"></script>
   <script defer src="assets/js/core.js"></script>
@@ -16,8 +17,9 @@
 </head>
 <body>
   <div class="app">
+    <aside class="sidebar" aria-label="Main navigation"></aside>
     <main class="main">
-      <div id="topbar"></div>
+      <header id="topbar" class="topbar"></header>
 
       <section class="panel soft" style="padding:16px 20px">
         <div class="filter-bar">
@@ -40,11 +42,15 @@
             <button class="btn sm" id="hintBtn"></button>
             <button class="icon-btn dark" id="nextBtn" title="Next random reaction (N)"></button>
           </div>
-          <div class="small muted" style="margin-bottom:10px" id="qPrompt"></div>
-          <div class="equation-box" id="qEq"></div>
-          <div id="hintBox" class="small" style="margin-top:12px"></div>
-
-          <form id="answerForm" class="grid" style="margin-top:22px;gap:14px" autocomplete="off">
+          <div class="q-layout">
+            <div class="q-left">
+            <div class="small muted" style="margin-bottom:10px" id="qPrompt"></div>
+            <div class="equation-box eq-fit" id="qEq"></div>
+            <div id="hintBox" class="small" style="margin-top:12px"></div>
+            <div id="scoreBox" style="margin-top:18px"></div>
+            </div>
+            <div class="q-right">
+          <form id="answerForm" class="grid" style="gap:14px" autocomplete="off">
             <div class="field"><label for="aName">Reaction name</label><input class="input" id="aName" placeholder="e.g. Aldol condensation"></div>
             <div class="field"><label for="aReagent">Reagent / catalyst / conditions</label><input class="input" id="aReagent" placeholder="e.g. dil. NaOH, heat"></div>
             <div class="field"><label for="aOther">Product &amp; other important info <span class="muted">(optional)</span></label><textarea class="textarea" id="aOther" placeholder="e.g. β-hydroxy aldehyde; needs α-hydrogen…"></textarea></div>
@@ -54,7 +60,8 @@
               <span class="small muted" style="align-self:center"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> check · <kbd>R</kbd> reveal · <kbd>N</kbd> next</span>
             </div>
           </form>
-          <div id="scoreBox" style="margin-top:20px"></div>
+            </div>
+          </div>
         </section>
 
         <section class="panel" id="answerPanel">

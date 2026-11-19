@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const s = RL.state;
     $('#storeKind').textContent = `Storage: ${RL.storage.kind}`;
     const kb = (RL.storage.bytes() / 1024).toFixed(1);
-    const tiles = [['Practice attempts', s.attempts.length], ['Custom reactions', s.custom.length], ['Edited reactions', Object.keys(s.edits).length],
+    const tiles = [['Reaction attempts', s.attempts.length], ['GOC attempts', (s.goc || []).length], ['Custom reactions', s.custom.length], ['Edited reactions', Object.keys(s.edits).length],
       ['Archived', s.archived.length], ['Blacklisted', s.blacklisted.length], ['Size', kb + ' KB']];
     $('#dataStats').innerHTML = tiles.map(([l, v]) => `<div class="card" style="background:var(--panel);border:0"><div class="small muted">${l}</div><div style="font-size:26px;font-weight:700">${v}</div></div>`).join('');
   }
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   $('#impMerge').onchange = importFile('merge');
   $('#impReplace').onchange = importFile('replace');
-  $('#clrAttempts').onclick = () => { if (confirm('Delete all practice history?')) { RL.state.attempts = []; RL.save(); renderData(); RL.toast('History cleared'); } };
+  $('#clrAttempts').onclick = () => { if (confirm('Delete all practice history (reactions + GOC)?')) { RL.state.attempts = []; RL.state.goc = []; RL.save(); renderData(); RL.toast('History cleared'); } };
   $('#clrLists').onclick = () => { if (confirm('Un-archive and un-blacklist everything?')) { RL.state.archived = []; RL.state.blacklisted = []; RL.save(); renderData(); RL.toast('Lists reset'); } };
   $('#clrAll').onclick = () => {
     if (!confirm('Delete ALL ReactionLab data stored in this browser (history, custom reactions, edits, lists)? This cannot be undone.')) return;

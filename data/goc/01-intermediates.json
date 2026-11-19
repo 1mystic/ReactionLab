@@ -1,0 +1,1594 @@
+[
+ {
+  "id": "goc-int-cat-001",
+  "topic": "Carbocation stability",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carbocations",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{(CH3)3C+}$",
+   "$\\ce{(CH3)2CH+}$",
+   "$\\ce{CH3CH2+}$",
+   "$\\ce{CH3+}$"
+  ],
+  "explanation": "3° > 2° > 1° > methyl: more α-hydrogens (hyperconjugation) and more +I alkyl groups disperse the positive charge.",
+  "concepts": [
+   "hyperconjugation",
+   "+I effect"
+  ]
+ },
+ {
+  "id": "goc-int-cat-002",
+  "topic": "Carbocation stability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carbocations",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{C6H5-CH2+}$",
+   "$\\ce{CH2=CH-CH2+}$",
+   "$\\ce{CH3CH2+}$",
+   "$\\ce{CH2=CH+}$"
+  ],
+  "explanation": "Benzyl and allyl cations are resonance stabilised (benzyl more, as the charge is delocalised over the ring); the ethyl cation has only hyperconjugation; the vinyl cation has the positive charge on an sp carbon in an empty sp^2-like orbital orthogonal to the π bond, so it is very unstable.",
+  "concepts": [
+   "resonance",
+   "hybridisation"
+  ],
+  "trap": "Vinyl and phenyl cations are NOT stabilised by the adjacent π system: the empty orbital is in the plane, perpendicular to the π cloud."
+ },
+ {
+  "id": "goc-int-cat-003",
+  "topic": "Carbocation stability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carbocations",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{(C6H5)3C+}$",
+   "$\\ce{(C6H5)2CH+}$",
+   "$\\ce{C6H5CH2+}$",
+   "$\\ce{CH3CH2+}$"
+  ],
+  "explanation": "Each phenyl group delocalises the charge into its ring: $\\ce{(C6H5)3C+}$ (trityl) > $\\ce{(C6H5)2CH+}$ > $\\ce{C6H5CH2+}$ > a simple 1° alkyl cation.",
+  "concepts": [
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-int-cat-004",
+  "topic": "Carbocation stability",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following para-substituted benzyl cations $\\ce{p-X-C6H4-CH2+}$",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{p-CH3O-C6H4-CH2+}$",
+   "$\\ce{p-CH3-C6H4-CH2+}$",
+   "$\\ce{C6H5-CH2+}$",
+   "$\\ce{p-O2N-C6H4-CH2+}$"
+  ],
+  "explanation": "+M of OCH3 is strongest (extra oxonium-type resonance structure), CH3 is +I/hyperconjugative, H is the reference, and NO2 (-M, -I) destabilises the cation most.",
+  "concepts": [
+   "+M effect",
+   "-M effect",
+   "substituent effects"
+  ]
+ },
+ {
+  "id": "goc-int-cat-005",
+  "topic": "Carbocation stability",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carbocations",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{CH3-O-CH2+}$",
+   "$\\ce{(CH3)3C+}$",
+   "$\\ce{(CH3)2CH+}$",
+   "$\\ce{CH3CH2+}$"
+  ],
+  "explanation": "The oxygen lone pair of $\\ce{CH3OCH2+}$ donates into the empty p orbital (+M, octet-complete oxonium resonance form), making it more stable than the 3° cation; the rest follow 3° > 2° > 1°.",
+  "concepts": [
+   "+M effect",
+   "hyperconjugation"
+  ],
+  "trap": "An electronegative O attached to C+ looks destabilising (-I), but lone-pair donation (+M) outweighs it."
+ },
+ {
+  "id": "goc-int-cat-006",
+  "topic": "Carbocation stability",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If an $\\ce{-OCH3}$ group is introduced at the para position of the benzyl cation $\\ce{C6H5CH2+}$, its stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "The para OCH3 lone pair is conjugated with the cationic centre through the ring (+M), giving an extra resonance structure with a C=O+ -type oxonium bond.",
+  "concepts": [
+   "+M effect"
+  ]
+ },
+ {
+  "id": "goc-int-cat-007",
+  "topic": "Carbocation stability",
+  "type": "effect",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If an $\\ce{-OCH3}$ group is introduced at the meta position of the benzyl cation $\\ce{C6H5CH2+}$, its stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "At the meta position the OCH3 cannot conjugate with the benzylic carbon (the charge is delocalised only to ortho and para positions); only its -I effect operates, so the cation is slightly destabilised.",
+  "concepts": [
+   "-I effect",
+   "resonance",
+   "meta position"
+  ],
+  "trap": "Students assume OCH3 always stabilises a cation; +M acts only from ortho/para positions."
+ },
+ {
+  "id": "goc-int-cat-008",
+  "topic": "Carbocation stability",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a $\\ce{-NO2}$ group is introduced at the para position of the benzyl cation $\\ce{C6H5CH2+}$, its stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "NO2 withdraws electrons by -I and -M; it intensifies the positive charge and destabilises the cation.",
+  "concepts": [
+   "-M effect",
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-int-cat-009",
+  "topic": "Carbocation stability",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two carbocations",
+  "options": [
+   "$\\ce{p-CH3O-C6H4-CH2+}$ is more stable",
+   "$\\ce{m-CH3O-C6H4-CH2+}$ is more stable",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "In the p-methoxybenzyl cation the OCH3 lone pair delocalises the charge (+M); in the meta isomer only -I operates.",
+  "concepts": [
+   "+M effect",
+   "positional effect"
+  ]
+ },
+ {
+  "id": "goc-int-cat-010",
+  "topic": "Carbocation stability",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two carbocations",
+  "options": [
+   "A: $\\ce{C6H5CH2+}$",
+   "B: $\\ce{C6H5CH2CH2+}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Benzyl cation is stabilised by resonance with the ring; in $\\ce{C6H5CH2CH2+}$ the ring is insulated by a CH2 group, so it is only a 1° alkyl cation (it also tends to rearrange).",
+  "concepts": [
+   "resonance",
+   "conjugation"
+  ]
+ },
+ {
+  "id": "goc-int-cat-011",
+  "topic": "Carbocation stability",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following carbocations is the most stable?",
+  "options": [
+   "$\\ce{CH3CH2+}$",
+   "$\\ce{(CH3)2CH+}$",
+   "Cyclopropylmethyl cation",
+   "$\\ce{CH2=CH+}$"
+  ],
+  "answer": 2,
+  "explanation": "The cyclopropylmethyl cation is exceptionally stabilised by the 'bent' (banana) σ bonds of the cyclopropane ring overlapping with the empty p orbital (σ-conjugation, dancing resonance); it is more stable than a 3° alkyl or even a benzyl cation.",
+  "concepts": [
+   "cyclopropylmethyl cation",
+   "σ-π conjugation"
+  ],
+  "trap": "Cyclopropylcarbinyl cation beats 2° and often 3° and benzyl cations; the ring strain/bent bonds give it π-like character."
+ },
+ {
+  "id": "goc-int-cat-012",
+  "topic": "Carbocation stability",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following carbocations is aromatic and exceptionally stable?",
+  "options": [
+   "Cyclopentadienyl cation",
+   "Cycloheptatrienyl (tropylium) cation",
+   "Cyclopropyl cation",
+   "Cyclooctatetraenyl cation"
+  ],
+  "answer": 1,
+  "explanation": "The tropylium (cycloheptatrienyl) cation is planar, cyclic, fully conjugated with 6 π electrons (4n+2, n=1); it is stable enough to be isolated as a salt (e.g. tropylium bromide).",
+  "concepts": [
+   "tropylium",
+   "Hückel rule"
+  ]
+ },
+ {
+  "id": "goc-int-an-001",
+  "topic": "Carbanion stability",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carbanions",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{HC#C^-}$",
+   "$\\ce{CH2=CH^-}$",
+   "$\\ce{CH3CH2^-}$"
+  ],
+  "explanation": "Greater s-character holds the lone pair closer to the nucleus and stabilises the negative charge: sp > sp² > sp³.",
+  "concepts": [
+   "hybridisation",
+   "s-character"
+  ]
+ },
+ {
+  "id": "goc-int-an-002",
+  "topic": "Carbanion stability",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carbanions",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{CH3^-}$",
+   "$\\ce{CH3CH2^-}$",
+   "$\\ce{(CH3)2CH^-}$",
+   "$\\ce{(CH3)3C^-}$"
+  ],
+  "explanation": "Alkyl groups (+I) intensify the negative charge, so stability falls from methyl to 3°.",
+  "concepts": [
+   "+I effect"
+  ],
+  "trap": "This is the reverse of carbocation order."
+ },
+ {
+  "id": "goc-int-an-003",
+  "topic": "Carbanion stability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carbanions",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{(C6H5)3C^-}$",
+   "$\\ce{(C6H5)2CH^-}$",
+   "$\\ce{C6H5CH2^-}$",
+   "$\\ce{CH3CH2^-}$"
+  ],
+  "explanation": "Each phenyl group delocalises the negative charge: trityl > diphenylmethyl > benzyl > ethyl (pKa of the conjugate acids ~31, ~32, ~41, ~50).",
+  "concepts": [
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-int-an-004",
+  "topic": "Carbanion stability",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carbanions (conjugate bases of the carbon acids)",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{^-CH2NO2}$",
+   "$\\ce{^-CH2COCH3}$",
+   "$\\ce{^-CH2CN}$",
+   "$\\ce{CH3CH2^-}$"
+  ],
+  "explanation": "Stability follows the acidity of the parent C-H: nitromethane (pKa ~10) > acetone (~19) > acetonitrile (~25) > ethane (~50).",
+  "concepts": [
+   "resonance",
+   "pKa",
+   "-M effect"
+  ]
+ },
+ {
+  "id": "goc-int-an-005",
+  "topic": "Carbanion stability",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carbanions",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "Cyclopentadienyl anion",
+   "Indenyl anion",
+   "Fluorenyl anion",
+   "$\\ce{(C6H5)3C^-}$"
+  ],
+  "explanation": "Stability follows the pKa of the parent hydrocarbon: cyclopentadiene ~16 (aromatic anion) < indene ~20 < fluorene ~23 < triphenylmethane ~31.",
+  "concepts": [
+   "aromaticity",
+   "pKa"
+  ]
+ },
+ {
+  "id": "goc-int-an-006",
+  "topic": "Carbanion stability",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a $\\ce{-NO2}$ group is introduced at the para position of the benzyl carbanion $\\ce{C6H5CH2^-}$, its stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "NO2 withdraws electrons (-I, -M) and the charge is delocalised onto the nitro oxygens via the ring.",
+  "concepts": [
+   "-M effect"
+  ]
+ },
+ {
+  "id": "goc-int-an-007",
+  "topic": "Carbanion stability",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a methyl group replaces one H on the carbanionic carbon of $\\ce{CH3^-}$, giving $\\ce{CH3CH2^-}$, its stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "The +I methyl group pushes electron density onto the already electron-rich carbon, increasing charge density and decreasing stability.",
+  "concepts": [
+   "+I effect"
+  ]
+ },
+ {
+  "id": "goc-int-an-008",
+  "topic": "Carbanion stability",
+  "type": "effect",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If an $\\ce{-OCH3}$ group is introduced at the para position of the benzyl carbanion $\\ce{C6H5CH2^-}$, its stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "The +M lone pair pushes electron density towards the carbanionic centre (ring positions bearing the negative charge), destabilising the anion.",
+  "concepts": [
+   "+M effect"
+  ],
+  "trap": "+M groups stabilise cations but destabilise anions."
+ },
+ {
+  "id": "goc-int-an-009",
+  "topic": "Carbanion stability",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two carbanions",
+  "options": [
+   "A: Cyclopentadienyl anion",
+   "B: Cycloheptatrienyl anion",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Cycloheptatrienyl anion would have 8 π electrons (antiaromatic if planar); the cyclopentadienyl anion has 6π (aromatic). Corresponding acids: cyclopentadiene pKa ~16, cycloheptatriene ~36.",
+  "concepts": [
+   "aromaticity",
+   "pKa"
+  ]
+ },
+ {
+  "id": "goc-int-an-010",
+  "topic": "Carbanion stability",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two carbanions",
+  "options": [
+   "A: $\\ce{HC#C^-}$",
+   "B: $\\ce{CH3CH2^-}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "The sp carbanion (50% s) holds its lone pair closer to the nucleus than the sp³ carbanion (25% s).",
+  "concepts": [
+   "s-character"
+  ]
+ },
+ {
+  "id": "goc-int-an-011",
+  "topic": "Carbanion stability",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Cyclopentadiene (pKa ~16) is far more acidic than cyclohepta-1,3,5-triene (pKa ~36) because",
+  "options": [
+   "Cyclopentadiene has more α-H atoms",
+   "Its conjugate base is aromatic",
+   "Its conjugate base is antiaromatic",
+   "It has less ring strain than cycloheptatriene"
+  ],
+  "answer": 1,
+  "explanation": "Loss of H+ from cyclopentadiene gives an aromatic cyclopentadienyl anion (6π, planar, cyclic); the cycloheptatrienyl anion has 8π and would be antiaromatic.",
+  "concepts": [
+   "aromaticity",
+   "acidity"
+  ]
+ },
+ {
+  "id": "goc-int-rad-001",
+  "topic": "Free radical stability",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following free radicals",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{(CH3)3C.}$",
+   "$\\ce{(CH3)2CH.}$",
+   "$\\ce{CH3CH2.}$",
+   "$\\ce{CH2=CH.}$"
+  ],
+  "explanation": "3° > 2° > 1° > methyl (hyperconjugation with α C-H bonds, +I); vinyl radical is least stable among alkyl-type due to sp character of the radical centre in σ orbital.",
+  "concepts": [
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-int-rad-002",
+  "topic": "Free radical stability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following free radicals",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{CH2=CH-CH2.}$",
+   "$\\ce{(CH3)3C.}$",
+   "$\\ce{(CH3)2CH.}$",
+   "$\\ce{CH3CH2.}$"
+  ],
+  "explanation": "Allyl radical is resonance stabilised and more stable than 3° alkyl, which in turn > 2° > 1°.",
+  "concepts": [
+   "resonance",
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-int-rad-003",
+  "topic": "Free radical stability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following radicals",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "$\\ce{(C6H5)3C.}$",
+   "$\\ce{(C6H5)2CH.}$",
+   "$\\ce{C6H5CH2.}$",
+   "$\\ce{CH3.}$"
+  ],
+  "explanation": "Each phenyl group delocalises the unpaired electron; $\\ce{(C6H5)3C.}$ (Gomberg's trityl radical) is so stable it exists in solution.",
+  "concepts": [
+   "resonance",
+   "trityl radical"
+  ]
+ },
+ {
+  "id": "goc-int-rad-004",
+  "topic": "Free radical stability",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following C-H bonds",
+  "criterion": "decreasing C-H bond dissociation energy",
+  "items": [
+   "$\\ce{CH2=CH-H}$",
+   "$\\ce{CH3-H}$",
+   "$\\ce{(CH3)3C-H}$",
+   "$\\ce{CH2=CH-CH2-H}$"
+  ],
+  "explanation": "Weaker C-H bond means more stable radical formed: vinyl C-H (~111 kcal/mol) > methane (~105) > 3° C-H (~96) > allylic C-H (~88).",
+  "concepts": [
+   "bond dissociation energy",
+   "radical stability"
+  ],
+  "trap": "BDE order is the reverse of radical stability order."
+ },
+ {
+  "id": "goc-int-rad-005",
+  "topic": "Free radical stability",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a methyl group replaces one H on the radical carbon of the ethyl radical $\\ce{CH3CH2.}$, forming isopropyl radical, its stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "More α-C-H bonds for hyperconjugation: 2° > 1°.",
+  "concepts": [
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-int-rad-006",
+  "topic": "Free radical stability",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a phenyl group replaces one H of the methyl radical $\\ce{CH3.}$, forming benzyl radical, its stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "The unpaired electron is delocalised over ortho and para positions of the ring.",
+  "concepts": [
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-int-rad-007",
+  "topic": "Free radical stability",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two radicals",
+  "options": [
+   "A: $\\ce{C6H5CH2.}$",
+   "B: $\\ce{CH3CH2CH2.}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Benzyl radical is resonance stabilised (BDE of benzylic C-H ~90 kcal/mol); the 1° alkyl is not (~101).",
+  "concepts": [
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-int-rad-008",
+  "topic": "Free radical stability",
+  "type": "compare",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two radicals",
+  "options": [
+   "A: $\\ce{C6H5CH2.}$",
+   "B: $\\ce{C6H5.}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "In the phenyl radical the unpaired electron is in an sp² σ orbital in the plane of the ring, orthogonal to the π system and not delocalised; the benzyl radical is delocalised.",
+  "concepts": [
+   "resonance",
+   "orbital overlap"
+  ],
+  "trap": "Phenyl radical is not resonance stabilised."
+ },
+ {
+  "id": "goc-int-rad-009",
+  "topic": "Free radical stability",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following radicals is stable enough to be observed in solution?",
+  "options": [
+   "$\\ce{CH3.}$",
+   "$\\ce{CH3CH2.}$",
+   "$\\ce{(C6H5)3C.}$",
+   "$\\ce{CH2=CH.}$"
+  ],
+  "answer": 2,
+  "explanation": "Gomberg (1900) observed triphenylmethyl radical, stabilised by delocalisation over three rings and steric protection from dimerisation.",
+  "concepts": [
+   "trityl radical",
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-int-rad-010",
+  "topic": "Free radical stability",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Propene reacts with NBS (or Br2 at high T and low concentration) to give allylic bromide because",
+  "options": [
+   "Vinylic C-H bonds are weaker than allylic C-H bonds",
+   "Allyl radical is resonance stabilised",
+   "Allyl cation is formed first",
+   "Br adds to the double bond reversibly"
+  ],
+  "answer": 1,
+  "explanation": "Abstraction of an allylic H gives the resonance stabilised allyl radical, which is far more stable than vinylic or 1° radicals.",
+  "concepts": [
+   "allylic radical",
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-int-alk-001",
+  "topic": "Alkene stability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following alkenes",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "2,3-Dimethylbut-2-ene",
+   "2-Methylbut-2-ene",
+   "trans-But-2-ene",
+   "But-1-ene",
+   "Ethene"
+  ],
+  "explanation": "More alkyl groups on the C=C carbons (hyperconjugation; sp²-sp³ C-C bonds) means a more stable alkene: tetra > tri > di (trans) > mono > ethene.",
+  "concepts": [
+   "Zaitsev",
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-int-alk-002",
+  "topic": "Alkene stability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following alkenes",
+  "criterion": "decreasing heat of hydrogenation",
+  "items": [
+   "Ethene",
+   "But-1-ene",
+   "cis-But-2-ene",
+   "trans-But-2-ene"
+  ],
+  "explanation": "Heat of hydrogenation is larger for less stable alkenes: ethene (32.8) > but-1-ene (30.3) > cis-but-2-ene (28.6) > trans-but-2-ene (27.6 kcal/mol).",
+  "concepts": [
+   "heat of hydrogenation"
+  ]
+ },
+ {
+  "id": "goc-int-alk-003",
+  "topic": "Alkene stability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following dienes (C5H8)",
+  "criterion": "decreasing order of stability",
+  "items": [
+   "Penta-1,3-diene",
+   "Penta-1,4-diene",
+   "Penta-1,2-diene"
+  ],
+  "explanation": "Conjugated dienes are stabilised by delocalisation (heat of hydrogenation ~54 vs ~60 kcal/mol); cumulated dienes are the least stable (~70).",
+  "concepts": [
+   "conjugation",
+   "heat of hydrogenation"
+  ]
+ },
+ {
+  "id": "goc-int-alk-004",
+  "topic": "Alkene stability",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If an alkyl group is introduced at a sp² carbon of ethene, the stability of the alkene",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "Alkyl substituents stabilise C=C through hyperconjugation and by bonding an sp² carbon to an sp³ carbon (stronger C-C bond).",
+  "concepts": [
+   "hyperconjugation",
+   "Zaitsev"
+  ]
+ },
+ {
+  "id": "goc-int-alk-005",
+  "topic": "Alkene stability",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a phenyl group is introduced at a sp² carbon of propene, giving 1-phenylpropene (conjugated), the stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "Conjugation of the C=C with the aromatic ring lowers the heat of hydrogenation.",
+  "concepts": [
+   "conjugation"
+  ]
+ },
+ {
+  "id": "goc-int-alk-006",
+  "topic": "Alkene stability",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two alkenes",
+  "options": [
+   "A: cis-But-2-ene",
+   "B: trans-But-2-ene",
+   "Both equal"
+  ],
+  "answer": 1,
+  "explanation": "In cis-but-2-ene the two methyls are on the same side (steric strain ~1 kcal/mol); trans is more stable.",
+  "concepts": [
+   "steric strain",
+   "heat of hydrogenation"
+  ]
+ },
+ {
+  "id": "goc-int-alk-007",
+  "topic": "Alkene stability",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the heat of hydrogenation of the two compounds",
+  "options": [
+   "A: Buta-1,3-diene (per mol)",
+   "B: Twice the heat of hydrogenation of but-1-ene",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Hydrogenation of 1,3-butadiene releases less than twice that of 1-butene because of delocalisation energy (~3.5 kcal/mol): 57 vs ~60.",
+  "concepts": [
+   "conjugation"
+  ]
+ },
+ {
+  "id": "goc-int-alk-008",
+  "topic": "Alkene stability",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following alkenes is highly unstable and cannot be isolated at room temperature (Bredt's rule)?",
+  "options": [
+   "Bicyclo[2.2.1]hept-2-ene (norbornene)",
+   "Bicyclo[2.2.1]hept-1-ene",
+   "Cyclohexene",
+   "Bicyclo[2.2.2]oct-2-ene"
+  ],
+  "answer": 1,
+  "explanation": "Bredt's rule: a double bond cannot be placed at a bridgehead of a small bicyclic system because the p orbitals cannot overlap in a planar manner (the strain in bicyclo[2.2.1]hept-1-ene is prohibitive). Norbornene has the double bond at C2=C3, not at the bridgehead.",
+  "concepts": [
+   "Bredt's rule"
+  ],
+  "trap": "Cyclohexene, norbornene (hept-2-ene) are fine; the bridgehead alkene in the bicyclo[2.2.1] system is the violating one."
+ },
+ {
+  "id": "goc-int-alk-009",
+  "topic": "Alkene stability",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following alkenes is the most stable?",
+  "options": [
+   "Pent-1-ene",
+   "cis-Pent-2-ene",
+   "trans-Pent-2-ene",
+   "2-Methylbut-2-ene"
+  ],
+  "answer": 3,
+  "explanation": "Trisubstituted alkene 2-methylbut-2-ene has most hyperconjugative interactions of the choices.",
+  "concepts": [
+   "Zaitsev",
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-int-res-001",
+  "topic": "Resonance & hyperconjugation",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "The number of hyperconjugative structures possible for propene $\\ce{CH3-CH=CH2}$ is",
+  "options": [
+   "1",
+   "3",
+   "6",
+   "9"
+  ],
+  "answer": 1,
+  "explanation": "Only the three α-C-H bonds of the CH3 group can hyperconjugate: 3 no-bond structures.",
+  "concepts": [
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-int-res-002",
+  "topic": "Resonance & hyperconjugation",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "The number of hyperconjugative structures of the tert-butyl cation $\\ce{(CH3)3C+}$ is",
+  "options": [
+   "3",
+   "6",
+   "9",
+   "12"
+  ],
+  "answer": 2,
+  "explanation": "Three methyl groups × three α C-H bonds = 9.",
+  "concepts": [
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-int-res-003",
+  "topic": "Resonance & hyperconjugation",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following shows NO resonance?",
+  "options": [
+   "$\\ce{CH2=CH-Cl}$",
+   "$\\ce{CH2=CH-CH2-Cl}$",
+   "$\\ce{C6H5-Cl}$",
+   "$\\ce{CH2=CH-CH=CH2}$"
+  ],
+  "answer": 1,
+  "explanation": "In $\\ce{CH2=CH-CH2-Cl}$ the Cl is separated from the C=C by an sp³ carbon; the lone pair and π bond are not conjugated.",
+  "concepts": [
+   "conjugation",
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-int-res-004",
+  "topic": "Resonance & hyperconjugation",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following alkenes",
+  "criterion": "decreasing number of hyperconjugative structures",
+  "items": [
+   "2,3-Dimethylbut-2-ene",
+   "2-Methylbut-2-ene",
+   "2-Methylpropene",
+   "Propene"
+  ],
+  "explanation": "Number of α-hydrogens: tetramethylethylene (12), 2-methylbut-2-ene (9), 2-methylpropene (6), propene (3).",
+  "concepts": [
+   "hyperconjugation",
+   "α-hydrogen count"
+  ]
+ },
+ {
+  "id": "goc-int-res-005",
+  "topic": "Resonance & hyperconjugation",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following alkyl groups (as substituents $\\ce{R-C6H4-X}$ in reactions studied by Baker and Nathan)",
+  "criterion": "decreasing hyperconjugation (Baker–Nathan order)",
+  "items": [
+   "$\\ce{CH3-}$",
+   "$\\ce{CH3CH2-}$",
+   "$\\ce{(CH3)2CH-}$",
+   "$\\ce{(CH3)3C-}$"
+  ],
+  "explanation": "Baker–Nathan effect: the order of electron release by hyperconjugation is CH3 > CH3CH2 > (CH3)2CH > (CH3)3C, which follows the number of α-H, contrary to the +I order.",
+  "concepts": [
+   "Baker-Nathan effect",
+   "hyperconjugation"
+  ],
+  "trap": "The +I order is exactly the opposite: tert-butyl > isopropyl > ethyl > methyl."
+ },
+ {
+  "id": "goc-int-res-006",
+  "topic": "Resonance & hyperconjugation",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following aromatic hydrocarbons",
+  "criterion": "decreasing total resonance energy",
+  "items": [
+   "Phenanthrene",
+   "Anthracene",
+   "Naphthalene",
+   "Benzene"
+  ],
+  "explanation": "Total resonance energies: phenanthrene ≈ 92, anthracene ≈ 84, naphthalene ≈ 61, benzene ≈ 36 kcal/mol.",
+  "concepts": [
+   "resonance energy"
+  ],
+  "trap": "Per ring, benzene has more resonance energy than anthracene."
+ },
+ {
+  "id": "goc-int-res-007",
+  "topic": "Resonance & hyperconjugation",
+  "type": "effect",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If two methyl groups are introduced at both ortho positions of N,N-dimethylaniline, the +M effect of the $\\ce{-N(CH3)2}$ group on the ring",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "The bulky ortho methyl groups twist the NMe2 group out of the plane of the ring so the N lone pair cannot overlap with the π system (steric inhibition of resonance).",
+  "concepts": [
+   "steric inhibition of resonance"
+  ]
+ },
+ {
+  "id": "goc-int-res-008",
+  "topic": "Resonance & hyperconjugation",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the C-Cl bond length in the two compounds",
+  "options": [
+   "A: $\\ce{C6H5-Cl}$ is longer",
+   "B: $\\ce{CH3CH2-Cl}$ is longer",
+   "Both equal"
+  ],
+  "answer": 1,
+  "explanation": "Partial double-bond character from lone pair delocalisation (and sp² C) shortens C-Cl in chlorobenzene (1.70 Å) compared with chloroethane (1.77 Å).",
+  "concepts": [
+   "resonance",
+   "bond length"
+  ]
+ },
+ {
+  "id": "goc-int-res-009",
+  "topic": "Resonance & hyperconjugation",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which statement about resonance is correct?",
+  "options": [
+   "Resonance structures are in rapid equilibrium",
+   "Resonance hybrid is more stable than any single contributing structure",
+   "Atoms change their positions between resonance structures",
+   "Resonance energy is the energy of the least stable canonical form"
+  ],
+  "answer": 1,
+  "explanation": "Resonance structures differ only in electron distribution; the actual molecule is a hybrid more stable than any contributing structure.",
+  "concepts": [
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-int-ind-001",
+  "topic": "Inductive effect",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following groups",
+  "criterion": "decreasing -I effect",
+  "items": [
+   "$\\ce{-NO2}$",
+   "$\\ce{-CN}$",
+   "$\\ce{-F}$",
+   "$\\ce{-Cl}$",
+   "$\\ce{-Br}$"
+  ],
+  "explanation": "σI: NO2 (0.65) > CN (0.57) > F (0.52) > Cl (0.47) > Br (0.45).",
+  "concepts": [
+   "-I effect",
+   "electronegativity"
+  ]
+ },
+ {
+  "id": "goc-int-ind-002",
+  "topic": "Inductive effect",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following alkyl groups",
+  "criterion": "decreasing +I effect",
+  "items": [
+   "$\\ce{(CH3)3C-}$",
+   "$\\ce{(CH3)2CH-}$",
+   "$\\ce{CH3CH2-}$",
+   "$\\ce{CH3-}$"
+  ],
+  "explanation": "+I effect increases with the number of alkyl groups on the attached carbon: tert-butyl > isopropyl > ethyl > methyl.",
+  "concepts": [
+   "+I effect"
+  ],
+  "trap": "Contrast with Baker–Nathan (hyperconjugation) order."
+ },
+ {
+  "id": "goc-int-ind-003",
+  "topic": "Inductive effect",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carboxylic acids",
+  "criterion": "decreasing acid strength",
+  "items": [
+   "$\\ce{FCH2COOH}$",
+   "$\\ce{ClCH2COOH}$",
+   "$\\ce{BrCH2COOH}$",
+   "$\\ce{ICH2COOH}$",
+   "$\\ce{CH3COOH}$"
+  ],
+  "explanation": "Greater -I of the halogen on the α-carbon stabilises the carboxylate: pKa FCH2COOH 2.66 < ClCH2COOH 2.86 < BrCH2COOH 2.90 < ICH2COOH 3.17 < CH3COOH 4.76.",
+  "concepts": [
+   "-I effect",
+   "acidity"
+  ]
+ },
+ {
+  "id": "goc-int-ind-004",
+  "topic": "Inductive effect",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following carboxylic acids",
+  "criterion": "decreasing acid strength",
+  "items": [
+   "$\\ce{Cl3C-COOH}$",
+   "$\\ce{Cl2CH-COOH}$",
+   "$\\ce{ClCH2-COOH}$",
+   "$\\ce{CH3-COOH}$"
+  ],
+  "explanation": "More Cl atoms mean more -I: pKa 0.65 (Cl3C), 1.29, 2.86, 4.76.",
+  "concepts": [
+   "-I effect",
+   "acidity"
+  ]
+ },
+ {
+  "id": "goc-int-ind-005",
+  "topic": "Inductive effect",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following groups",
+  "criterion": "decreasing -I effect",
+  "items": [
+   "$\\ce{-C#CH}$",
+   "$\\ce{-CH=CH2}$",
+   "$\\ce{-CH2CH3}$"
+  ],
+  "explanation": "-I effect depends on the s-character of the carbon bonded to the rest: sp (-C≡CH) > sp² (-CH=CH2) > sp³ (-CH2CH3).",
+  "concepts": [
+   "s-character",
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-int-ind-006",
+  "topic": "Inductive effect",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If the chlorine atom of 2-chlorobutanoic acid is shifted to the C-4 position (4-chlorobutanoic acid), the acid strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "The inductive effect falls rapidly with distance along the carbon chain; pKa: 2-chloro 2.84, 3-chloro 4.06, 4-chloro 4.52.",
+  "concepts": [
+   "distance dependence"
+  ]
+ },
+ {
+  "id": "goc-int-ind-007",
+  "topic": "Inductive effect",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "When one H of acetic acid is replaced by a methyl group (propanoic acid), the acid strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "The +I methyl increases electron density on the carboxylate, destabilising it (pKa 4.76 → 4.87).",
+  "concepts": [
+   "+I effect"
+  ]
+ },
+ {
+  "id": "goc-int-ind-008",
+  "topic": "Inductive effect",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the acid strengths",
+  "options": [
+   "A: $\\ce{CF3COOH}$",
+   "B: $\\ce{CCl3COOH}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Fluorine is more electronegative than chlorine, so CF3COOH (pKa 0.23) is stronger than CCl3COOH (0.65).",
+  "concepts": [
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-int-ind-009",
+  "topic": "Inductive effect",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following is the strongest acid?",
+  "options": [
+   "$\\ce{CH3COOH}$",
+   "$\\ce{ClCH2COOH}$",
+   "$\\ce{Cl2CHCOOH}$",
+   "$\\ce{FCH2COOH}$"
+  ],
+  "answer": 2,
+  "explanation": "Two Cl on the α-carbon (pKa 1.29) beats one F (2.66).",
+  "concepts": [
+   "-I effect",
+   "acidity"
+  ]
+ },
+ {
+  "id": "goc-int-aro-001",
+  "topic": "Aromaticity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following is aromatic?",
+  "options": [
+   "Cyclopropenyl cation",
+   "Cyclopentadienyl cation",
+   "Cycloheptatrienyl anion",
+   "Cyclooctatetraene"
+  ],
+  "answer": 0,
+  "explanation": "The cyclopropenyl cation is planar, cyclic, fully conjugated with 2π electrons (4n+2, n=0). Cyclopentadienyl cation (4π) is antiaromatic; cycloheptatrienyl anion (8π) is antiaromatic; COT is non-planar and non-aromatic.",
+  "concepts": [
+   "Hückel rule"
+  ]
+ },
+ {
+  "id": "goc-int-aro-002",
+  "topic": "Aromaticity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following is antiaromatic?",
+  "options": [
+   "Benzene",
+   "Cyclobutadiene",
+   "Cyclooctatetraene",
+   "Cyclopentadienyl anion"
+  ],
+  "answer": 1,
+  "explanation": "Cyclobutadiene is planar, cyclic, conjugated with 4π electrons (4n), hence antiaromatic.",
+  "concepts": [
+   "Hückel rule",
+   "antiaromaticity"
+  ],
+  "trap": "Cyclooctatetraene is non-aromatic (tub-shaped), not antiaromatic."
+ },
+ {
+  "id": "goc-int-aro-003",
+  "topic": "Aromaticity",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Azulene, a blue bicyclic hydrocarbon (fused five- and seven-membered rings), is",
+  "options": [
+   "Antiaromatic",
+   "Aromatic with 10π electrons",
+   "Non-aromatic",
+   "Aromatic with 12π electrons"
+  ],
+  "answer": 1,
+  "explanation": "Azulene has 10 π electrons (4n+2, n=2) in a planar bicyclic system and is aromatic; its dipole moment (~1.0 D) arises from the polarised form of cyclopentadienyl anion fused with tropylium cation.",
+  "concepts": [
+   "Hückel rule",
+   "non-benzenoid aromatic"
+  ]
+ },
+ {
+  "id": "goc-int-aro-004",
+  "topic": "Aromaticity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following annulenes is aromatic?",
+  "options": [
+   "[4]Annulene",
+   "[8]Annulene",
+   "[16]Annulene",
+   "[18]Annulene"
+  ],
+  "answer": 3,
+  "explanation": "[18]Annulene has 18 π electrons (4n+2, n=4), is planar and diatropic. [4] and [8] are antiaromatic/non-planar; [16] has 4n π.",
+  "concepts": [
+   "Hückel rule",
+   "annulenes"
+  ]
+ },
+ {
+  "id": "goc-int-aro-005",
+  "topic": "Aromaticity",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which of the following is NOT aromatic?",
+  "options": [
+   "Benzene",
+   "Pyridine",
+   "Cyclopentadiene",
+   "Tropylium cation"
+  ],
+  "answer": 2,
+  "explanation": "Cyclopentadiene has an sp³ CH2 in the ring, so conjugation is not continuous.",
+  "concepts": [
+   "Hückel rule",
+   "continuous conjugation"
+  ]
+ },
+ {
+  "id": "goc-int-aro-006",
+  "topic": "Aromaticity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following five-membered heterocycles with benzene",
+  "criterion": "decreasing aromatic character",
+  "items": [
+   "Benzene",
+   "Thiophene",
+   "Pyrrole",
+   "Furan"
+  ],
+  "explanation": "Resonance energy (kcal/mol): benzene 36 > thiophene 29 > pyrrole 21 > furan 16; the lower the electronegativity of the heteroatom the better its lone pair delocalises.",
+  "concepts": [
+   "resonance energy",
+   "heteroatom electronegativity"
+  ]
+ },
+ {
+  "id": "goc-int-aro-007",
+  "topic": "Aromaticity",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following C7H7 species",
+  "criterion": "decreasing stability",
+  "items": [
+   "Cycloheptatrienyl cation",
+   "Cycloheptatrienyl radical",
+   "Cycloheptatrienyl anion"
+  ],
+  "explanation": "Cation has 6π (aromatic), radical 7π (non-aromatic), anion 8π (antiaromatic if planar).",
+  "concepts": [
+   "Hückel rule"
+  ]
+ },
+ {
+  "id": "goc-int-aro-008",
+  "topic": "Aromaticity",
+  "type": "effect",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If two electrons are added to cyclooctatetraene (COT) forming $\\ce{C8H8^2-}$, the stability",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "The dianion is planar with 10π electrons (4n+2) so it is aromatic; COT itself is non-planar with 8π.",
+  "concepts": [
+   "Hückel rule"
+  ]
+ },
+ {
+  "id": "goc-int-aro-009",
+  "topic": "Aromaticity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If one CH of benzene is replaced by N (pyridine), its aromaticity",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 2,
+  "explanation": "The N contributes one π electron, as does each CH; the lone pair is in an sp² orbital in the plane, so the sextet is unchanged.",
+  "concepts": [
+   "Hückel rule",
+   "heterocycles"
+  ]
+ },
+ {
+  "id": "goc-int-aro-010",
+  "topic": "Aromaticity",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Compare the stability of the two ions",
+  "options": [
+   "A: Cyclopentadienyl anion",
+   "B: Cyclopentadienyl cation",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Cyclopentadienyl anion is aromatic (6π); cyclopentadienyl cation is antiaromatic (4π).",
+  "concepts": [
+   "Hückel rule"
+  ]
+ },
+ {
+  "id": "goc-int-aro-011",
+  "topic": "Aromaticity",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "In pyrrole and pyridine, which nitrogen lone pair is part of the aromatic sextet?",
+  "options": [
+   "A: Pyrrole",
+   "B: Pyridine",
+   "Both"
+  ],
+  "answer": 0,
+  "explanation": "In pyrrole the N lone pair is in a p orbital and contributes 2π electrons; in pyridine it lies in an sp² orbital in the plane of the ring.",
+  "concepts": [
+   "lone pair",
+   "heterocycles"
+  ]
+ }
+]

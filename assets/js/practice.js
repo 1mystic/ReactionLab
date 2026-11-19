@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ? 'Identify this reaction, the <b>hidden reagent / catalyst</b>, and anything else you know.'
       : 'Identify this reaction / test and its key reagents & observations.';
     $('#qEq').innerHTML = RL.equation(r, mask);
+    RL.fitAll();
     $('#hintBox').innerHTML = '';
     $('#hintBtn').innerHTML = `${icon.bulb} Hint`; $('#hintBtn').disabled = false;
     $('#scoreBox').innerHTML = '';
@@ -112,8 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!checked && !revealed) { RL.logAttempt(cur.id, 0, 'free'); sessionN++; updateSession(); }
     revealed = true;
     $('#answerBox').innerHTML = RL.detailHTML(cur);
+    RL.fitAll();
     $('#revealBtn').disabled = true;
-    if (window.innerWidth < 1100) $('#answerPanel').scrollIntoView({ behavior: 'smooth' });
+    $('#answerPanel').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   $('#revealBtn').onclick = reveal;
 
@@ -156,10 +158,11 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="pill gray">${{ name: 'Name it', nameFromReagent: 'Which reaction', reagent: 'Reagent', product: 'Product' }[q.type]}</span>
         <button class="btn sm" id="quitQuiz">End quiz</button></div>
       <p style="font-size:17px;margin-top:-6px">${q.stem}</p>
-      <div class="equation-box" style="margin-bottom:18px">${q.prompt}</div>
+      <div class="equation-box eq-fit" style="margin-bottom:18px">${q.prompt}</div>
       <div class="options">${q.options.map((o, i) => `<button class="option" data-i="${i}"><span class="letter">${'ABCD'[i]}</span><span>${o.html}</span></button>`).join('')}</div>
       <div id="qFeedback" style="margin-top:16px"></div>`;
     $$('.option').forEach((b) => (b.onclick = () => answer(+b.dataset.i)));
+    RL.fitAll();
     $('#quitQuiz').onclick = finish;
   }
   function answer(i) {

@@ -39,6 +39,8 @@
     layout: p('<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>'),
     arrow: p('<path d="M5 12h14M13 6l6 6-6 6"/>'),
     book: p('<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/>'),
+    atom: p('<circle cx="12" cy="12" r="1.6"/><ellipse cx="12" cy="12" rx="10" ry="4.2"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)"/>'),
+    chev: p('<path d="m6 9 6 6 6-6"/>'),
     link: p('<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>'),
     logo: '<svg viewBox="0 0 32 32" fill="currentColor"><path d="M12 3h8v2h-1.5v7.2l7.8 12.6A3.4 3.4 0 0 1 23.4 30H8.6a3.4 3.4 0 0 1-2.9-5.2l7.8-12.6V5H12zm-1.7 17h11.4l-3.7-6h-4z"/></svg>'
   };
@@ -79,16 +81,17 @@
     clear() { RL.STORAGE_KEYS.forEach((k) => localStorage.removeItem(k)); },
     bytes() { return new Blob([localStorage.getItem(KEY) || '']).size; }
   };
-  const blank = () => ({ archived: [], blacklisted: [], custom: [], edits: {}, attempts: [], name: '' });
+  const blank = () => ({ archived: [], blacklisted: [], custom: [], edits: {}, attempts: [], goc: [], name: '' });
   RL.blankState = blank;
   RL.state = Object.assign(blank(), RL.storage.load());
+  if (!Array.isArray(RL.state.goc)) RL.state.goc = [];
   RL.save = () => { try { RL.storage.save(RL.state); } catch (e) { RL.toast('Storage full — export your data & remove large images'); } };
   RL.exportState = () => JSON.stringify({ app: 'ReactionLab', version: 1, exportedAt: new Date().toISOString(), data: RL.state }, null, 2);
   /** mode: 'replace' | 'merge' */
   RL.importState = (json, mode = 'merge') => {
     const obj = typeof json === 'string' ? JSON.parse(json) : json;
     const d = obj && obj.data ? obj.data : obj;
-    if (!d || typeof d !== 'object' || !['archived', 'blacklisted', 'custom', 'edits', 'attempts'].some((k) => k in d)) throw new Error('Not a ReactionLab backup file');
+    if (!d || typeof d !== 'object' || !['archived', 'blacklisted', 'custom', 'edits', 'attempts', 'goc'].some((k) => k in d)) throw new Error('Not a ReactionLab backup file');
     if (mode === 'replace') RL.state = Object.assign(blank(), d);
     else {
       const s = RL.state, u = (a, b) => [...new Set([...(a || []), ...(b || [])])];
@@ -97,6 +100,7 @@
       s.edits = Object.assign({}, s.edits, d.edits || {});
       const seen = new Set(s.attempts.map((a) => a.id + a.ts)); (d.attempts || []).forEach((a) => { if (!seen.has(a.id + a.ts)) s.attempts.push(a); });
       s.attempts.sort((a, b) => a.ts - b.ts); if (!s.name && d.name) s.name = d.name;
+      s.goc = s.goc || []; const gs = new Set(s.goc.map((a) => a.id + a.ts)); (d.goc || []).forEach((a) => { if (!gs.has(a.id + a.ts)) s.goc.push(a); });
     }
     RL.save();
   };
@@ -184,6 +188,8 @@
     if (charge && syms.length === 1 && /\d$/.test(f) && !/\d/.test(charge[0])) { const d = f.match(/\d+$/)[0]; f = f.slice(0, -d.length); charge = d + charge; }
     return f.replace(/(\d+)/g, '<sub>$1</sub>') + (charge ? `<sup>${charge}</sup>` : '');
   });
+  /** Same as rich() but for trusted, app-generated text that may contain <b>/<i> markup */
+  RL.richTrusted = (text) => String(text || '').split(/(\$[^$]+\$)/g).map((part) => (/^\$[^$]+\$$/.test(part) ? RL.tex(part.slice(1, -1)) : RL.chemify(part))).join('');
   RL.rich = (text) => {
     if (!text) return '';
     return String(text).split(/(\$[^$]+\$)/g).map((part) => (/^\$[^$]+\$$/.test(part) ? RL.tex(part.slice(1, -1)) : RL.chemify(RL.esc(part)))).join('');
@@ -324,7 +330,7 @@
         ${r.catalyst ? `<div class="small"><b>Catalyst:</b> ${RL.rich(r.catalyst)}</div>` : ''}
         ${r.productName ? `<div class="foot"><b>Product:</b> ${RL.rich(r.productName)}</div>` : ''}
       </div>
-      <div class="card span2 reveal-anim"><div class="small muted" style="margin-bottom:6px">Full equation</div><div class="eq-inline">${RL.equation(r)}</div>
+      <div class="card span2 reveal-anim"><div class="small muted" style="margin-bottom:6px">Full equation</div><div class="eq-inline eq-fit">${RL.equation(r)}</div>
         ${r.image ? `<img src="${RL.esc(r.image)}" alt="" style="max-width:100%;border-radius:14px;margin-top:10px">` : ''}</div>
       ${full ? `
       <div class="card reveal-anim"><h3 style="margin-bottom:8px">Mechanism</h3><div>${RL.rich(r.mechanism) || '<span class="muted">—</span>'}</div></div>
@@ -345,7 +351,7 @@
     const close = () => { bd.remove(); document.removeEventListener('keydown', esc); onClose && onClose(); };
     const esc = (e) => { if (e.key === 'Escape') close(); };
     bd.addEventListener('click', (e) => { if (e.target === bd || e.target.closest('[data-close]')) close(); });
-    document.addEventListener('keydown', esc); document.body.appendChild(bd);
+    document.addEventListener('keydown', esc); document.body.appendChild(bd); RL.fitAll(bd);
     return { el: bd, close };
   };
   RL.openReaction = (r) => RL.modal(`
@@ -354,21 +360,35 @@
       <button class="icon-btn" data-close aria-label="Close">${RL.icon.x}</button></div>
     ${RL.detailHTML(r)}`);
 
+  /* ================= Fit long equations: shrink (down to 60%) before resorting to scroll ================= */
+  RL.fit = (el) => {
+    const k = el.querySelector('.katex-display > .katex, .katex'); if (!k) return;
+    k.style.fontSize = '';
+    const cs = getComputedStyle(el);
+    const avail = el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 4;
+    const w = k.scrollWidth;
+    if (avail > 0 && w > avail) k.style.fontSize = Math.max(0.6, avail / w) * 100 + '%';
+  };
+  RL.fitAll = (root = document) => requestAnimationFrame(() => root.querySelectorAll('.eq-fit').forEach(RL.fit));
+  window.addEventListener('resize', RL.debounce(() => RL.fitAll(), 150));
+
   /* ================= Layout ================= */
   RL.layout = (active, title) => {
     const counts = { bank: RL.reactions({ include: 'visible' }).length, custom: RL.state.custom.length };
     const nav = [
       ['index.html', 'home', 'Dashboard', 'home'], ['practice.html', 'flask', 'Practice', 'practice'],
-      ['practice.html?mode=mcq', 'quiz', 'MCQ Quiz', 'mcq'], ['bank.html', 'grid', 'Reaction Bank', 'bank', counts.bank],
+      ['practice.html?mode=mcq', 'quiz', 'MCQ Quiz', 'mcq'], ['goc.html', 'atom', 'GOC Concepts', 'goc'], ['bank.html', 'grid', 'Reaction Bank', 'bank', counts.bank],
       ['edit.html', 'edit', 'Edit & Upload', 'edit', counts.custom || null]
     ];
-    const aside = document.createElement('aside'); aside.className = 'sidebar';
+    let aside = RL.$('aside.sidebar'); const fresh = !aside;
+    if (fresh) { aside = document.createElement('aside'); aside.className = 'sidebar'; }
     aside.innerHTML = `
       <a class="brand" href="index.html"><div class="brand-logo">${RL.icon.logo}</div><span>ReactionLab</span></a>
       ${nav.map(([href, ic, label, key, badge]) => `<a class="nav-link ${key === active ? 'active' : ''}" href="${href}">${RL.icon[ic]}<span>${label}</span>${badge ? `<span class="badge">${badge}</span>` : ''}</a>`).join('')}
       <div class="nav-spacer"></div>
       <a class="nav-link nav-secondary" href="https://www.organic-chemistry.org/namedreactions/" target="_blank" rel="noopener">${RL.icon.book}<span>Reference site</span></a>`;
-    const app = RL.$('.app'); app.prepend(aside);
+    if (fresh) RL.$('.app').prepend(aside);
+    setTimeout(() => { RL.enhanceSelects(); RL.fitAll(); requestAnimationFrame(() => document.documentElement.classList.remove('loading')); }, 0);
     const top = RL.$('#topbar');
     if (top) {
       const nm = RL.state.name || 'Student';
@@ -384,6 +404,61 @@
       RL.$('#profile').onclick = () => { const n = prompt('Your name:', RL.state.name || ''); if (n !== null) { RL.state.name = n.trim(); RL.save(); location.reload(); } };
     }
   };
+
+  /* ================= Custom select (theme-aligned dropdowns) ================= */
+  const valueDesc = Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype, 'value');
+  RL.enhanceSelect = (sel) => {
+    if (sel._cs) return sel._cs.refresh();
+    const wrap = document.createElement('div'); wrap.className = 'cselect';
+    if (sel.style.flex || sel.id === 'fCategory' || sel.id === 'fTopic') wrap.classList.add('grow');
+    sel.parentNode.insertBefore(wrap, sel); wrap.appendChild(sel);
+    const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'cselect-btn';
+    btn.setAttribute('aria-haspopup', 'listbox'); btn.setAttribute('aria-expanded', 'false');
+    const menu = document.createElement('div'); menu.className = 'cselect-menu'; menu.setAttribute('role', 'listbox');
+    wrap.append(btn, menu); sel.tabIndex = -1;
+    let hl = -1;
+    const opts = () => [...sel.options];
+    const refresh = () => {
+      const o = sel.options[sel.selectedIndex];
+      btn.innerHTML = `<span class="lbl">${RL.esc(o ? o.textContent : '')}</span>${RL.icon.chev}`;
+      menu.innerHTML = opts().map((op, i) => `<button type="button" role="option" class="cselect-opt ${i === sel.selectedIndex ? 'sel' : ''}" data-i="${i}" aria-selected="${i === sel.selectedIndex}">
+        <span class="tick">${RL.icon.check}</span><span>${RL.esc(op.textContent)}</span></button>`).join('');
+    };
+    const close = () => { wrap.classList.remove('open', 'up', 'right'); btn.setAttribute('aria-expanded', 'false'); };
+    const open = () => {
+      document.querySelectorAll('.cselect.open').forEach((w) => w !== wrap && w.classList.remove('open'));
+      refresh(); wrap.classList.add('open'); btn.setAttribute('aria-expanded', 'true');
+      const r = btn.getBoundingClientRect();
+      if (innerHeight - r.bottom < 260 && r.top > innerHeight - r.bottom) wrap.classList.add('up');
+      if (r.left + menu.offsetWidth > innerWidth - 12) wrap.classList.add('right');
+      hl = sel.selectedIndex; mark(); const cur = menu.children[hl]; cur && cur.scrollIntoView({ block: 'nearest' });
+    };
+    const choose = (i) => {
+      if (i !== sel.selectedIndex) { sel.selectedIndex = i; sel.dispatchEvent(new Event('change', { bubbles: true })); sel.dispatchEvent(new Event('input', { bubbles: true })); }
+      refresh(); close(); btn.focus();
+    };
+    const mark = () => [...menu.children].forEach((c, i) => c.classList.toggle('hl', i === hl));
+    btn.onclick = () => (wrap.classList.contains('open') ? close() : open());
+    menu.onclick = (e) => { const b = e.target.closest('.cselect-opt'); if (b) choose(+b.dataset.i); };
+    btn.onkeydown = (e) => {
+      const n = sel.options.length; const isOpen = wrap.classList.contains('open');
+      if (['ArrowDown', 'ArrowUp'].includes(e.key)) {
+        e.preventDefault(); if (!isOpen) return open();
+        hl = (hl + (e.key === 'ArrowDown' ? 1 : -1) + n) % n; mark(); menu.children[hl].scrollIntoView({ block: 'nearest' });
+      } else if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); isOpen && hl >= 0 ? choose(hl) : open(); }
+      else if (e.key === 'Escape' || e.key === 'Tab') close();
+      else if (e.key.length === 1 && isOpen) { const k = opts().findIndex((o) => o.textContent.trim().toLowerCase().startsWith(e.key.toLowerCase())); if (k >= 0) { hl = k; mark(); menu.children[k].scrollIntoView({ block: 'nearest' }); } }
+    };
+    document.addEventListener('click', (e) => { if (!e.composedPath().includes(wrap)) close(); });
+    // keep label in sync with programmatic changes
+    Object.defineProperty(sel, 'value', { configurable: true, get() { return valueDesc.get.call(this); }, set(v) { valueDesc.set.call(this, v); refresh(); } });
+    sel.addEventListener('change', refresh);
+    new MutationObserver(refresh).observe(sel, { childList: true, subtree: true });
+    if (sel.form) sel.form.addEventListener('reset', () => setTimeout(refresh));
+    sel._cs = { refresh, open, close };
+    refresh();
+  };
+  RL.enhanceSelects = (root = document) => root.querySelectorAll('select.select').forEach(RL.enhanceSelect);
 
   /* ================= Shared filter helpers ================= */
   RL.filterPool = (pool, f = {}) => pool.filter((r) =>

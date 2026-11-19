@@ -1,0 +1,1328 @@
+[
+ {
+  "id": "goc-rx-001",
+  "topic": "Nucleophilicity",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Arrange the halide ions as nucleophiles in a polar protic solvent (water/ethanol).",
+  "criterion": "decreasing order of nucleophilicity",
+  "items": [
+   "$\\ce{I-}$",
+   "$\\ce{Br-}$",
+   "$\\ce{Cl-}$",
+   "$\\ce{F-}$"
+  ],
+  "explanation": "Small anions such as F- are strongly H-bonded (solvated) in protic solvents, which lowers their reactivity; large, polarisable I- is least solvated.",
+  "concepts": [
+   "solvation",
+   "polarisability"
+  ],
+  "trap": "Do not follow basicity (F- is the strongest base) in protic solvents."
+ },
+ {
+  "id": "goc-rx-002",
+  "topic": "Nucleophilicity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the halide ions in order of nucleophilicity in a polar aprotic solvent (DMF/DMSO).",
+  "criterion": "decreasing order of nucleophilicity",
+  "items": [
+   "$\\ce{F-}$",
+   "$\\ce{Cl-}$",
+   "$\\ce{Br-}$",
+   "$\\ce{I-}$"
+  ],
+  "explanation": "Aprotic solvents do not H-bond to anions, so the 'naked' anions follow basicity: F- > Cl- > Br- > I-.",
+  "concepts": [
+   "polar aprotic solvent",
+   "basicity"
+  ],
+  "trap": "The order is exactly reversed relative to protic solvents."
+ },
+ {
+  "id": "goc-rx-003",
+  "topic": "Nucleophilicity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the oxygen nucleophiles (same attacking atom, no steric effect).",
+  "criterion": "decreasing order of nucleophilicity",
+  "items": [
+   "$\\ce{CH3CH2O-}$",
+   "$\\ce{HO-}$",
+   "$\\ce{C6H5O-}$",
+   "$\\ce{CH3COO-}$"
+  ],
+  "explanation": "For the same attacking atom, nucleophilicity parallels basicity: conjugate-acid pKa EtOH 16 > H2O 15.7 > PhOH 10 > AcOH 4.8; delocalised anions are weaker.",
+  "concepts": [
+   "basicity",
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-rx-004",
+  "topic": "Nucleophilicity",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Arrange the nucleophiles across the second period.",
+  "criterion": "decreasing order of nucleophilicity",
+  "items": [
+   "$\\ce{CH3-}$",
+   "$\\ce{NH2-}$",
+   "$\\ce{HO-}$",
+   "$\\ce{F-}$"
+  ],
+  "explanation": "Across a period nucleophilicity falls with increasing electronegativity (and decreasing basicity).",
+  "concepts": [
+   "electronegativity",
+   "basicity"
+  ]
+ },
+ {
+  "id": "goc-rx-005",
+  "topic": "Nucleophilicity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the sulfur/oxygen nucleophiles in a protic solvent.",
+  "criterion": "decreasing order of nucleophilicity",
+  "items": [
+   "$\\ce{CH3S-}$",
+   "$\\ce{CH3O-}$",
+   "$\\ce{CH3OH}$"
+  ],
+  "explanation": "RS- is large, polarisable and weakly solvated, so it beats RO- in protic media; anions beat the neutral alcohol.",
+  "concepts": [
+   "polarisability",
+   "charge"
+  ],
+  "trap": "RO- is the stronger base, but RS- is the better nucleophile."
+ },
+ {
+  "id": "goc-rx-006",
+  "topic": "Leaving group ability",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Arrange the halide ions as leaving groups.",
+  "criterion": "decreasing order of leaving group ability",
+  "items": [
+   "$\\ce{I-}$",
+   "$\\ce{Br-}$",
+   "$\\ce{Cl-}$",
+   "$\\ce{F-}$"
+  ],
+  "explanation": "Better leaving group = weaker base (more stable anion): HI is the strongest acid, HF the weakest.",
+  "concepts": [
+   "conjugate acid strength"
+  ]
+ },
+ {
+  "id": "goc-rx-007",
+  "topic": "Leaving group ability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the leaving groups.",
+  "criterion": "decreasing order of leaving group ability",
+  "items": [
+   "$\\ce{CF3SO3-}$",
+   "$\\ce{p-CH3C6H4SO3-}$",
+   "$\\ce{I-}$",
+   "$\\ce{Cl-}$"
+  ],
+  "explanation": "Sulfonates delocalise the negative charge over three oxygens: triflate (CF3 makes it best) > tosylate > I- > Cl-.",
+  "concepts": [
+   "sulfonates",
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-rx-008",
+  "topic": "Leaving group ability",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the groups as leaving groups.",
+  "criterion": "decreasing order of leaving group ability",
+  "items": [
+   "$\\ce{p-CH3C6H4SO3-}$",
+   "$\\ce{Cl-}$",
+   "$\\ce{HO-}$",
+   "$\\ce{NH2-}$"
+  ],
+  "explanation": "Weaker the base, better the leaving group: resonance-stabilised TsO- > Cl- > HO- > NH2-.",
+  "concepts": [
+   "leaving group",
+   "basicity"
+  ]
+ },
+ {
+  "id": "goc-rx-009",
+  "topic": "Leaving group ability",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the leaving groups.",
+  "criterion": "decreasing order of leaving group ability",
+  "items": [
+   "$\\ce{I-}$",
+   "$\\ce{H2O}$",
+   "$\\ce{HO-}$",
+   "$\\ce{NH2-}$"
+  ],
+  "explanation": "I- (HI strongest acid) > H2O (leaves from protonated alcohol) > HO- > NH2-.",
+  "concepts": [
+   "protonation of -OH",
+   "basicity"
+  ],
+  "trap": "OH- is a very poor leaving group; protonation to H2O makes it a good one."
+ },
+ {
+  "id": "goc-rx-010",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Arrange the alkyl bromides in SN2 reactivity.",
+  "criterion": "decreasing order of SN2 rate",
+  "items": [
+   "$\\ce{CH3Br}$",
+   "$\\ce{CH3CH2Br}$",
+   "$\\ce{(CH3)2CHBr}$",
+   "$\\ce{(CH3)3CBr}$"
+  ],
+  "explanation": "SN2 rate falls as steric hindrance at the carbon rises: methyl > 1° > 2° >> 3°.",
+  "concepts": [
+   "steric hindrance",
+   "SN2"
+  ]
+ },
+ {
+  "id": "goc-rx-011",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the halides in SN2 reactivity.",
+  "criterion": "decreasing order of SN2 rate",
+  "items": [
+   "$\\ce{CH2=CH-CH2Br}$",
+   "$\\ce{CH3CH2Br}$",
+   "$\\ce{(CH3)2CHBr}$",
+   "$\\ce{(CH3)3C-CH2Br}$"
+  ],
+  "explanation": "Allyl halide is activated by the adjacent pi system in the TS; ethyl is 1°; isopropyl is hindered; neopentyl is extremely slow because of the bulky beta tert-butyl group.",
+  "concepts": [
+   "allylic activation",
+   "neopentyl"
+  ],
+  "trap": "Neopentyl (1°) is slower than 2° isopropyl in SN2."
+ },
+ {
+  "id": "goc-rx-012",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the chlorides in SN1 reactivity.",
+  "criterion": "decreasing order of SN1 rate",
+  "items": [
+   "$\\ce{(C6H5)3C-Cl}$",
+   "$\\ce{(C6H5)2CH-Cl}$",
+   "$\\ce{C6H5CH2Cl}$",
+   "$\\ce{CH3Cl}$"
+  ],
+  "explanation": "SN1 rate follows carbocation stability: trityl > diphenylmethyl > benzyl >> methyl.",
+  "concepts": [
+   "carbocation stability",
+   "SN1"
+  ]
+ },
+ {
+  "id": "goc-rx-013",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the solvents for the SN1 solvolysis of tert-butyl bromide.",
+  "criterion": "decreasing order of rate",
+  "items": [
+   "$\\ce{H2O}$",
+   "$\\ce{CH3OH}$",
+   "$\\ce{CH3CH2OH}$",
+   "$\\ce{CH3COCH3}$"
+  ],
+  "explanation": "SN1 rate rises with solvent polarity/ionising power (high dielectric constant, H-bond stabilisation of ions): water > methanol > ethanol > acetone.",
+  "concepts": [
+   "solvent polarity",
+   "ionising power"
+  ]
+ },
+ {
+  "id": "goc-rx-014",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the alkyl bromides in E2 reactivity with alcoholic KOH.",
+  "criterion": "decreasing order of E2 rate",
+  "items": [
+   "$\\ce{(CH3)3CBr}$",
+   "$\\ce{(CH3)2CHBr}$",
+   "$\\ce{CH3CH2CH2Br}$"
+  ],
+  "explanation": "E2 (and E1) rate increases with alkyl substitution: 3° > 2° > 1°, because more beta-H and more substituted alkene TS.",
+  "concepts": [
+   "E2",
+   "Saytzeff"
+  ],
+  "trap": "Unlike SN2, elimination is fastest for 3° halides."
+ },
+ {
+  "id": "goc-rx-015",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Arrange the carbonyl compounds toward nucleophilic addition.",
+  "criterion": "decreasing order of reactivity",
+  "items": [
+   "$\\ce{HCHO}$",
+   "$\\ce{CH3CHO}$",
+   "$\\ce{CH3COCH3}$",
+   "$\\ce{C6H5COCH3}$"
+  ],
+  "explanation": "Fewer/smaller, non-donating groups give less steric hindrance and a more electrophilic carbon: HCHO > CH3CHO > acetone > acetophenone (aryl resonance and bulk).",
+  "concepts": [
+   "steric hindrance",
+   "+I effect"
+  ]
+ },
+ {
+  "id": "goc-rx-016",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Arrange the acid derivatives toward nucleophilic acyl substitution.",
+  "criterion": "decreasing order of reactivity",
+  "items": [
+   "$\\ce{CH3COCl}$",
+   "$\\ce{(CH3CO)2O}$",
+   "$\\ce{CH3COOC2H5}$",
+   "$\\ce{CH3CONH2}$"
+  ],
+  "explanation": "Reactivity decreases with increasing +R donation from the substituent and poorer leaving group: Cl > OCOR > OR > NH2.",
+  "concepts": [
+   "resonance",
+   "leaving group"
+  ]
+ },
+ {
+  "id": "goc-rx-017",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the benzaldehydes toward nucleophilic addition.",
+  "criterion": "decreasing order of reactivity",
+  "items": [
+   "$\\ce{p-O2N-C6H4-CHO}$",
+   "$\\ce{C6H5CHO}$",
+   "$\\ce{p-CH3-C6H4-CHO}$",
+   "$\\ce{p-CH3O-C6H4-CHO}$"
+  ],
+  "explanation": "EWG (-NO2) increases the carbonyl carbon's positive charge; EDG (+I of CH3, +R of OCH3) decrease it.",
+  "concepts": [
+   "EWG/EDG",
+   "nucleophilic addition"
+  ]
+ },
+ {
+  "id": "goc-rx-018",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the carbonyl compounds by extent of hydration (electrophilicity).",
+  "criterion": "decreasing order of electrophilicity",
+  "items": [
+   "$\\ce{Cl3C-CHO}$",
+   "$\\ce{HCHO}$",
+   "$\\ce{CH3CHO}$",
+   "$\\ce{CH3COCH3}$"
+  ],
+  "explanation": "Three -I chlorines make chloral extremely electrophilic (stable hydrate); then HCHO > CH3CHO > ketone.",
+  "concepts": [
+   "-I effect",
+   "hydration"
+  ]
+ },
+ {
+  "id": "goc-rx-019",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Arrange the compounds toward nitration (EAS).",
+  "criterion": "decreasing order of reactivity",
+  "items": [
+   "$\\ce{C6H5OH}$",
+   "$\\ce{C6H5CH3}$",
+   "$\\ce{C6H6}$",
+   "$\\ce{C6H5Cl}$",
+   "$\\ce{C6H5NO2}$"
+  ],
+  "explanation": "-OH (strong +R) > -CH3 (+I, hyperconjugation) > H > -Cl (-I > +R, deactivating) > -NO2 (strong -R, -I).",
+  "concepts": [
+   "activating groups",
+   "deactivating groups"
+  ],
+  "trap": "Chlorine deactivates the ring yet directs o/p."
+ },
+ {
+  "id": "goc-rx-020",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the compounds toward electrophilic substitution.",
+  "criterion": "decreasing order of reactivity",
+  "items": [
+   "$\\ce{C6H5OCH3}$",
+   "$\\ce{C6H5CH3}$",
+   "$\\ce{C6H5COCH3}$",
+   "$\\ce{C6H5NO2}$"
+  ],
+  "explanation": "OCH3 (+R) > CH3 (+I) > COCH3 (-R, -I) > NO2 (stronger deactivator).",
+  "concepts": [
+   "activating groups",
+   "deactivating groups"
+  ]
+ },
+ {
+  "id": "goc-rx-021",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the methylbenzenes toward nitration.",
+  "criterion": "decreasing order of reactivity",
+  "items": [
+   "$\\ce{1,3,5-(CH3)3C6H3}$",
+   "$\\ce{1,3-(CH3)2C6H4}$",
+   "$\\ce{C6H5CH3}$",
+   "$\\ce{C6H6}$"
+  ],
+  "explanation": "Each methyl group adds electron density to the ring through +I and hyperconjugation, raising the rate.",
+  "concepts": [
+   "+I effect",
+   "hyperconjugation"
+  ]
+ },
+ {
+  "id": "goc-rx-022",
+  "topic": "Rearrangements & migratory aptitude",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the groups in order of migratory aptitude in the pinacol rearrangement.",
+  "criterion": "decreasing migratory aptitude",
+  "items": [
+   "$\\ce{p-CH3O-C6H4}$",
+   "$\\ce{C6H5}$",
+   "$\\ce{p-O2N-C6H4}$",
+   "$\\ce{CH3}$"
+  ],
+  "explanation": "Groups that best stabilise positive charge in the bridged TS migrate best: electron-rich aryl > phenyl > electron-poor aryl > methyl.",
+  "concepts": [
+   "migratory aptitude",
+   "pinacol rearrangement"
+  ],
+  "trap": "Aryl groups migrate better than alkyl groups, even p-nitrophenyl over methyl."
+ },
+ {
+  "id": "goc-rx-023",
+  "topic": "Rearrangements & migratory aptitude",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the groups in order of migratory aptitude in the Baeyer-Villiger oxidation.",
+  "criterion": "decreasing migratory aptitude",
+  "items": [
+   "$\\ce{(CH3)3C}$",
+   "$\\ce{(CH3)2CH}$",
+   "$\\ce{C6H5}$",
+   "$\\ce{CH3}$"
+  ],
+  "explanation": "Group that can better bear partial positive charge migrates: 3° > 2° > phenyl > 1° > methyl.",
+  "concepts": [
+   "Baeyer-Villiger",
+   "migratory aptitude"
+  ]
+ },
+ {
+  "id": "goc-rx-024",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the halides in SN2 reactivity.",
+  "criterion": "decreasing order of SN2 rate",
+  "items": [
+   "$\\ce{C6H5CO-CH2Br}$",
+   "$\\ce{CH3CH2Br}$",
+   "$\\ce{(CH3)2CHBr}$"
+  ],
+  "explanation": "An alpha-carbonyl group stabilises the SN2 TS (orbital overlap), making alpha-halo ketones very reactive; then 1° > 2°.",
+  "concepts": [
+   "alpha-halo ketone",
+   "SN2"
+  ]
+ },
+ {
+  "id": "goc-rx-025",
+  "topic": "Nucleophilicity",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If the solvent is changed from ethanol (protic) to DMF (polar aprotic), what happens to the nucleophilicity of F-?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "Aprotic solvents do not H-bond to the anion, so it is unsolvated and far more reactive.",
+  "concepts": [
+   "solvation"
+  ],
+  "trap": "Students remember I- as best nucleophile and forget the solvent dependence."
+ },
+ {
+  "id": "goc-rx-026",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If the solvent for the reaction of CH3CH2Br with NaN3 is changed from ethanol to DMSO, what happens to the SN2 rate?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "DMSO solvates cations but not anions, leaving a highly reactive N3-.",
+  "concepts": [
+   "polar aprotic",
+   "SN2"
+  ]
+ },
+ {
+  "id": "goc-rx-027",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If the solvent for the solvolysis of (CH3)3CCl is changed from acetone to water, what happens to the SN1 rate?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "Polar protic water stabilises the carbocation and Cl- in the ionisation TS.",
+  "concepts": [
+   "solvent polarity",
+   "SN1"
+  ]
+ },
+ {
+  "id": "goc-rx-028",
+  "topic": "Nucleophilicity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If CH3O- is replaced by (CH3)3CO- as the attacking species in an SN2 reaction, what happens to the nucleophilicity (not basicity)?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "Bulky t-BuO- cannot approach the carbon readily; it is a strong base but a poor nucleophile, hence it favours E2.",
+  "concepts": [
+   "steric hindrance",
+   "basicity vs nucleophilicity"
+  ],
+  "trap": "Basicity stays high while nucleophilicity drops."
+ },
+ {
+  "id": "goc-rx-029",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a nitro group is introduced para to the chlorine of chlorobenzene, what happens to the rate of nucleophilic aromatic substitution by HO-?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "p-NO2 stabilises the Meisenheimer carbanion intermediate by -R and -I effects.",
+  "concepts": [
+   "SNAr",
+   "Meisenheimer complex"
+  ],
+  "trap": "Chlorobenzene itself is inert to HO- under mild conditions."
+ },
+ {
+  "id": "goc-rx-030",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If an -OCH3 group is introduced at the para position of benzaldehyde, what happens to the reactivity of the carbonyl toward nucleophiles?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "The +R effect of OCH3 delocalises into the C=O, lowering the electrophilicity of the carbonyl carbon.",
+  "concepts": [
+   "+R effect",
+   "carbonyl reactivity"
+  ]
+ },
+ {
+  "id": "goc-rx-031",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If two hydrogens of the alpha-carbon of acetaldehyde are replaced by chlorine (Cl2CH-CHO), what happens to the reactivity of C=O toward nucleophilic addition?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "-I effect of chlorine increases the positive charge on the carbonyl carbon.",
+  "concepts": [
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-rx-032",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If a nitro group is introduced into benzene (giving nitrobenzene), what happens to the rate of further nitration?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "-NO2 withdraws electrons by -R and -I effects and deactivates the ring.",
+  "concepts": [
+   "deactivating group"
+  ]
+ },
+ {
+  "id": "goc-rx-033",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a p-OCH3 group is introduced into benzyl chloride, what happens to the SN1 rate?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "+R of OCH3 strongly stabilises the benzylic carbocation.",
+  "concepts": [
+   "carbocation stability",
+   "+R effect"
+  ]
+ },
+ {
+  "id": "goc-rx-034",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If the primary alkyl bromide CH3CH2CH2Br is changed to neopentyl bromide, what happens to the SN2 rate?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "Bulky tert-butyl group at the beta-carbon blocks the backside attack.",
+  "concepts": [
+   "steric hindrance"
+  ],
+  "trap": "It is a 1° halide but behaves as nearly inert in SN2."
+ },
+ {
+  "id": "goc-rx-035",
+  "topic": "Leaving group ability",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If the -OH of an alcohol is protonated by a strong acid, what happens to its leaving group ability?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "The leaving group changes from HO- (strong base) to H2O (weak base, good LG).",
+  "concepts": [
+   "protonation of -OH"
+  ]
+ },
+ {
+  "id": "goc-rx-036",
+  "topic": "Leaving group ability",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If Br in an alkyl halide is replaced by I, what happens to the rate of nucleophilic substitution?",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "I- is a weaker base and more polarisable; C-I bond is weaker.",
+  "concepts": [
+   "leaving group"
+  ]
+ },
+ {
+  "id": "goc-rx-037",
+  "topic": "Nucleophilicity",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which is the better nucleophile in water?",
+  "options": [
+   "A: $\\ce{I-}$",
+   "B: $\\ce{F-}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "F- is strongly H-bond solvated in protic solvent; I- is large and polarisable.",
+  "concepts": [
+   "solvation"
+  ]
+ },
+ {
+  "id": "goc-rx-038",
+  "topic": "Nucleophilicity",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which is the better nucleophile in DMF?",
+  "options": [
+   "A: $\\ce{Cl-}$",
+   "B: $\\ce{I-}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Without H-bonding, nucleophilicity parallels basicity: Cl- > I-.",
+  "concepts": [
+   "polar aprotic solvent"
+  ],
+  "trap": "Order reverses from that in protic solvents."
+ },
+ {
+  "id": "goc-rx-039",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which undergoes SN2 faster with I- in acetone?",
+  "options": [
+   "A: $\\ce{CH3CH2CH2Br}$",
+   "B: $\\ce{(CH3)2CHCH2Br}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Branching at the beta-carbon hinders backside attack.",
+  "concepts": [
+   "steric hindrance"
+  ]
+ },
+ {
+  "id": "goc-rx-040",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which undergoes SN1 faster?",
+  "options": [
+   "A: $\\ce{C6H5CH2Cl}$",
+   "B: $\\ce{C6H5CH2CH2Cl}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Benzyl cation is resonance stabilised; 2-phenylethyl cation (1°) is not.",
+  "concepts": [
+   "carbocation stability"
+  ]
+ },
+ {
+  "id": "goc-rx-041",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which reacts faster with aqueous NaOH (substitution)?",
+  "options": [
+   "A: $\\ce{C6H5Cl}$",
+   "B: $\\ce{C6H5CH2Cl}$",
+   "Both equal"
+  ],
+  "answer": 1,
+  "explanation": "Aryl C-Cl carries partial double bond character (sp2, resonance) and is inert; benzylic is highly reactive.",
+  "concepts": [
+   "aryl halide"
+  ],
+  "trap": "Aryl and vinyl halides do not undergo SN1/SN2 readily."
+ },
+ {
+  "id": "goc-rx-042",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which undergoes SN1/SN2 substitution more readily?",
+  "options": [
+   "A: $\\ce{CH2=CH-Cl}$",
+   "B: $\\ce{CH2=CH-CH2Cl}$",
+   "Both equal"
+  ],
+  "answer": 1,
+  "explanation": "Vinyl chloride has a stronger C-Cl bond (sp2, resonance); allyl chloride gives a resonance-stabilised cation/TS.",
+  "concepts": [
+   "vinyl halide",
+   "allylic halide"
+  ]
+ },
+ {
+  "id": "goc-rx-043",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which is more reactive toward nucleophilic addition?",
+  "options": [
+   "A: $\\ce{CH3CHO}$",
+   "B: $\\ce{CH3COCH3}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Aldehydes have less steric hindrance and only one +I group.",
+  "concepts": [
+   "steric hindrance"
+  ]
+ },
+ {
+  "id": "goc-rx-044",
+  "topic": "Electrophilicity & carbonyl reactivity",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which is more reactive toward hydrolysis?",
+  "options": [
+   "A: $\\ce{CH3COCl}$",
+   "B: $\\ce{CH3COOC2H5}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Cl- is a far better leaving group and Cl has weak +R donation.",
+  "concepts": [
+   "acid derivatives"
+  ]
+ },
+ {
+  "id": "goc-rx-045",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which undergoes nitration faster?",
+  "options": [
+   "A: $\\ce{C6H5CH3}$",
+   "B: $\\ce{C6H5Cl}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "CH3 activates the ring; Cl deactivates (-I > +R).",
+  "concepts": [
+   "activating vs deactivating"
+  ]
+ },
+ {
+  "id": "goc-rx-046",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which undergoes nucleophilic substitution by HO- faster?",
+  "options": [
+   "A: $\\ce{2,4-dinitrochlorobenzene}$",
+   "B: $\\ce{chlorobenzene}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "o- and p-NO2 groups stabilise the Meisenheimer intermediate.",
+  "concepts": [
+   "SNAr"
+  ]
+ },
+ {
+  "id": "goc-rx-047",
+  "topic": "Leaving group ability",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which has the faster SN2 rate with a given nucleophile?",
+  "options": [
+   "A: $\\ce{CH3I}$",
+   "B: $\\ce{CH3F}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "I- is a far better leaving group than F-.",
+  "concepts": [
+   "leaving group"
+  ],
+  "trap": "C-F is the strongest bond to carbon."
+ },
+ {
+  "id": "goc-rx-048",
+  "topic": "Rearrangements & migratory aptitude",
+  "type": "compare",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "In the Baeyer-Villiger oxidation of tert-butyl methyl ketone, which group migrates?",
+  "options": [
+   "A: $\\ce{(CH3)3C}$",
+   "B: $\\ce{CH3}$",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "3° alkyl migrates in preference to methyl, giving tert-butyl acetate.",
+  "concepts": [
+   "migratory aptitude"
+  ]
+ },
+ {
+  "id": "goc-rx-049",
+  "topic": "Nucleophilicity",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Ethyl bromide is treated with AgCN. The major product is:",
+  "options": [
+   "$\\ce{CH3CH2CN}$",
+   "$\\ce{CH3CH2NC}$",
+   "$\\ce{CH3CH2CH2NH2}$",
+   "$\\ce{CH3CH2NH2}$"
+  ],
+  "answer": 1,
+  "explanation": "AgCN is covalent; lone pair on N attacks (CN- ambident), giving isocyanide. KCN (ionic) gives nitrile.",
+  "concepts": [
+   "ambident nucleophile"
+  ],
+  "trap": "KCN gives nitrile; AgCN gives isonitrile."
+ },
+ {
+  "id": "goc-rx-050",
+  "topic": "Nucleophilicity",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Ethyl bromide is treated with AgNO2. The major product is:",
+  "options": [
+   "$\\ce{CH3CH2-ONO}$",
+   "$\\ce{CH3CH2-NO2}$",
+   "$\\ce{CH3CH2OH}$",
+   "$\\ce{CH2=CH2}$"
+  ],
+  "answer": 1,
+  "explanation": "AgNO2 (covalent) reacts through N giving nitroalkane; NaNO2 (ionic) gives nitrite ester via O.",
+  "concepts": [
+   "ambident nucleophile"
+  ]
+ },
+ {
+  "id": "goc-rx-051",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "2-Bromo-2-methylbutane with C2H5ONa/C2H5OH gives mainly:",
+  "options": [
+   "2-methylbut-2-ene",
+   "2-methylbut-1-ene",
+   "3-methylbutan-2-ol",
+   "2-ethoxy-2-methylbutane"
+  ],
+  "answer": 0,
+  "explanation": "Small base: Saytzeff (more substituted alkene) product dominates.",
+  "concepts": [
+   "Saytzeff rule",
+   "E2"
+  ]
+ },
+ {
+  "id": "goc-rx-052",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "2-Bromo-2-methylbutane with (CH3)3COK gives mainly:",
+  "options": [
+   "2-methylbut-2-ene",
+   "2-methylbut-1-ene",
+   "2-methylbutan-2-ol",
+   "2-tert-butoxy-2-methylbutane"
+  ],
+  "answer": 1,
+  "explanation": "Bulky base abstracts the more accessible, less hindered H giving Hofmann (less substituted) product.",
+  "concepts": [
+   "Hofmann",
+   "bulky base"
+  ],
+  "trap": "Bulky base reverses regioselectivity."
+ },
+ {
+  "id": "goc-rx-053",
+  "topic": "SN1/SN2/E1/E2 reactivity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "tert-Butyl bromide with sodium ethoxide in ethanol gives mainly:",
+  "options": [
+   "tert-butyl ethyl ether",
+   "isobutene",
+   "isobutane",
+   "tert-butyl alcohol"
+  ],
+  "answer": 1,
+  "explanation": "3° halide with a strong base undergoes E2; SN2 is blocked by sterics.",
+  "concepts": [
+   "E2 vs SN2"
+  ],
+  "trap": "Williamson ether synthesis fails with 3° halides."
+ },
+ {
+  "id": "goc-rx-054",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Halogens are deactivating yet ortho/para directing in EAS because:",
+  "options": [
+   "+R effect outweighs -I for orientation, but -I outweighs +R for reactivity",
+   "-I effect directs o/p and +R deactivates",
+   "They have no lone pairs",
+   "They are only hyperconjugating"
+  ],
+  "answer": 0,
+  "explanation": "Net electron withdrawal (-I) lowers the rate; +R lone pair donation stabilises o/p sigma-complexes.",
+  "concepts": [
+   "-I vs +R"
+  ]
+ },
+ {
+  "id": "goc-rx-055",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Friedel-Crafts alkylation fails with nitrobenzene because:",
+  "options": [
+   "the ring is strongly deactivated",
+   "nitrobenzene is a solid",
+   "AlCl3 is insoluble",
+   "nitro is an o/p director"
+  ],
+  "answer": 0,
+  "explanation": "Strongly deactivated rings (and rings with NH2) do not undergo Friedel-Crafts reactions.",
+  "concepts": [
+   "deactivating groups"
+  ]
+ },
+ {
+  "id": "goc-rx-056",
+  "topic": "Rearrangements & migratory aptitude",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Pinacol, (CH3)2C(OH)-C(OH)(CH3)2, on heating with H2SO4 gives:",
+  "options": [
+   "3,3-dimethylbutan-2-one (pinacolone)",
+   "2,3-dimethylbut-2-ene",
+   "2,3-dimethylbuta-1,3-diene",
+   "2,2-dimethylbutanal"
+  ],
+  "answer": 0,
+  "explanation": "Protonation, loss of water, methyl shift and deprotonation give pinacolone.",
+  "concepts": [
+   "pinacol rearrangement"
+  ]
+ },
+ {
+  "id": "goc-rx-057",
+  "topic": "Rearrangements & migratory aptitude",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "The cyclobutylmethyl carbocation rearranges mainly to:",
+  "options": [
+   "cyclopentyl cation (ring expansion)",
+   "cyclopropylethyl cation",
+   "tert-butyl cation",
+   "cyclobutyl cation"
+  ],
+  "answer": 0,
+  "explanation": "Ring expansion relieves strain and converts a 1° cation to 2°.",
+  "concepts": [
+   "ring expansion",
+   "carbocation rearrangement"
+  ]
+ },
+ {
+  "id": "goc-rx-058",
+  "topic": "Rearrangements & migratory aptitude",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Neopentyl alcohol on treatment with HBr gives mainly:",
+  "options": [
+   "neopentyl bromide",
+   "2-bromo-2-methylbutane",
+   "1-bromo-2-methylbutane",
+   "3-bromo-2-methylbutane"
+  ],
+  "answer": 1,
+  "explanation": "1° cation formation is accompanied by methyl shift giving 3° cation.",
+  "concepts": [
+   "methyl shift"
+  ],
+  "trap": "Direct SN2 on neopentyl is too slow."
+ },
+ {
+  "id": "goc-rx-059",
+  "topic": "Rearrangements & migratory aptitude",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Acetophenone with a peracid (Baeyer-Villiger) gives mainly:",
+  "options": [
+   "phenyl acetate",
+   "methyl benzoate",
+   "benzoic acid",
+   "benzyl acetate"
+  ],
+  "answer": 0,
+  "explanation": "Phenyl migrates in preference to methyl, giving an ester C6H5-O-CO-CH3.",
+  "concepts": [
+   "Baeyer-Villiger"
+  ]
+ },
+ {
+  "id": "goc-rx-060",
+  "topic": "Electrophilic aromatic substitution",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "In nucleophilic aromatic substitution of 2,4-dinitrohalobenzenes with HO-, the order of reactivity of halogens is:",
+  "options": [
+   "F > Cl > Br > I",
+   "I > Br > Cl > F",
+   "Cl > F > Br > I",
+   "all equal"
+  ],
+  "answer": 0,
+  "explanation": "The slow step is nucleophilic attack to give the Meisenheimer complex; strongly electronegative F accelerates it.",
+  "concepts": [
+   "SNAr",
+   "rate determining step"
+  ],
+  "trap": "This is opposite to the order of leaving group ability in SN1/SN2."
+ }
+]

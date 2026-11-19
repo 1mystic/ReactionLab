@@ -6,6 +6,7 @@
   "scripts": {
     "build:data": "node tools/build-data.mjs",
     "check:data": "node tools/build-data.mjs --check-only",
+    "build:goc": "node tools/build-goc.mjs",
     "serve": "python3 -m http.server 8080"
   },
   "devDependencies": {

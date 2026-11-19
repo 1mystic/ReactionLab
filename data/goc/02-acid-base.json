@@ -1,0 +1,1401 @@
+[
+ {
+  "id": "goc-ab-001",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Arrange the haloacetic acids",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{FCH2COOH}$",
+   "$\\ce{ClCH2COOH}$",
+   "$\\ce{BrCH2COOH}$",
+   "$\\ce{ICH2COOH}$",
+   "$\\ce{CH3COOH}$"
+  ],
+  "explanation": "pKa: FCH2COOH 2.66 < ClCH2COOH 2.86 < BrCH2COOH 2.90 < ICH2COOH 3.18 < CH3COOH 4.76. -I effect falls F > Cl > Br > I.",
+  "concepts": [
+   "-I effect",
+   "haloacetic acids"
+  ],
+  "trap": "Do not use size/polarisability of the halogen; only the -I effect matters here."
+ },
+ {
+  "id": "goc-ab-002",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Arrange the chloroacetic acids",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{Cl3C-COOH}$",
+   "$\\ce{Cl2CH-COOH}$",
+   "$\\ce{ClCH2-COOH}$",
+   "$\\ce{CH3-COOH}$"
+  ],
+  "explanation": "pKa: 0.65 < 1.29 < 2.86 < 4.76. Each extra Cl adds -I effect and stabilises the carboxylate.",
+  "concepts": [
+   "-I effect",
+   "additive inductive effect"
+  ]
+ },
+ {
+  "id": "goc-ab-003",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the chlorobutanoic acids",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{CH3CH2CH(Cl)COOH}$",
+   "$\\ce{CH3CH(Cl)CH2COOH}$",
+   "$\\ce{ClCH2CH2CH2COOH}$",
+   "$\\ce{CH3CH2CH2COOH}$"
+  ],
+  "explanation": "pKa: 2-Cl 2.84 < 3-Cl 4.06 < 4-Cl 4.52 < butanoic 4.82. The -I effect decays rapidly with distance from COOH.",
+  "concepts": [
+   "distance dependence of -I"
+  ],
+  "trap": "The 4-chloro acid is still stronger than butanoic acid, only slightly."
+ },
+ {
+  "id": "goc-ab-004",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{CH3COOH}$",
+   "$\\ce{C6H5OH}$",
+   "$\\ce{H2O}$",
+   "$\\ce{CH3CH2OH}$",
+   "$\\ce{HC#CH}$"
+  ],
+  "explanation": "Approx. pKa: CH3COOH 4.8, phenol 10, H2O 15.7, EtOH 16, HC≡CH 25. Carboxylate and phenoxide are resonance stabilised; alkoxide is destabilised by +I of R; sp carbanion is stabilised by 50% s-character.",
+  "concepts": [
+   "resonance",
+   "+I effect",
+   "hybridisation"
+  ],
+  "trap": "Water is more acidic than ethanol; alkyl groups destabilise the alkoxide."
+ },
+ {
+  "id": "goc-ab-005",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the alcohols in solution",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{CH3OH}$",
+   "$\\ce{CH3CH2OH}$",
+   "$\\ce{(CH3)2CHOH}$",
+   "$\\ce{(CH3)3COH}$"
+  ],
+  "explanation": "pKa: 15.5, 16, 17, 18. +I of alkyl groups intensifies negative charge on O and alkoxide is less solvated when bulky.",
+  "concepts": [
+   "+I effect",
+   "solvation"
+  ],
+  "trap": "In the gas phase the order reverses because polarisable alkyl groups stabilise the anion."
+ },
+ {
+  "id": "goc-ab-006",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the phenols",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{2,4,6-(O2N)3C6H2-OH}$",
+   "$\\ce{2,4-(O2N)2C6H3-OH}$",
+   "$\\ce{p-O2N-C6H4-OH}$",
+   "$\\ce{C6H5-OH}$"
+  ],
+  "explanation": "pKa: picric acid 0.4, 2,4-dinitrophenol 4.1, p-nitrophenol 7.15, phenol 10. Each NO2 at o/p gives -I and -R stabilisation of the phenoxide.",
+  "concepts": [
+   "-R effect",
+   "nitrophenols"
+  ],
+  "trap": "Picric acid is as strong as a mineral acid; it dissolves in NaHCO3."
+ },
+ {
+  "id": "goc-ab-007",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the benzoic acids",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{o-O2N-C6H4-COOH}$",
+   "$\\ce{C6H5-COOH}$",
+   "$\\ce{p-H3C-C6H4-COOH}$",
+   "$\\ce{p-H3CO-C6H4-COOH}$"
+  ],
+  "explanation": "pKa: o-nitro 2.17 < benzoic 4.20 < p-methyl 4.34 < p-methoxy 4.47. Ortho effect strengthens o-nitro acid; +I/+R groups weaken acid.",
+  "concepts": [
+   "ortho effect",
+   "+R effect"
+  ]
+ },
+ {
+  "id": "goc-ab-008",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the carbon acids (acidity of the most acidic C–H)",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{CH3COCH2COCH3}$",
+   "$\\ce{CH3COCH2COOC2H5}$",
+   "$\\ce{CH2(COOC2H5)2}$",
+   "$\\ce{CH3COCH3}$"
+  ],
+  "explanation": "pKa: acetylacetone 9, ethyl acetoacetate 10.7, diethyl malonate 13, acetone 19. Two C=O groups stabilise the enolate; ketone C=O is a better acceptor than ester C=O (ester carbonyl is donated by OR).",
+  "concepts": [
+   "1,3-dicarbonyl",
+   "enolate stabilisation"
+  ]
+ },
+ {
+  "id": "goc-ab-009",
+  "topic": "Acidity",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following C–H acids",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{CH3NO2}$",
+   "$\\ce{CH3COCH3}$",
+   "$\\ce{HC#CH}$",
+   "$\\ce{CH3CH3}$"
+  ],
+  "explanation": "pKa: nitromethane 10, acetone 19, ethyne 25, ethane 50. Nitronate and enolate are resonance stabilised (NO2 better); sp carbanion is stabilised by s-character.",
+  "concepts": [
+   "resonance",
+   "hybridisation"
+  ]
+ },
+ {
+  "id": "goc-ab-010",
+  "topic": "Acidity",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If a nitro group is introduced at the para position of phenol, the acidic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "p-Nitrophenol (pKa 7.15) is stronger than phenol (10). The -R and -I effects of NO2 stabilise the phenoxide ion.",
+  "concepts": [
+   "-R effect"
+  ]
+ },
+ {
+  "id": "goc-ab-011",
+  "topic": "Acidity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a methoxy group is introduced at the meta position of benzoic acid, the acidic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "m-Methoxybenzoic acid pKa 4.09 < benzoic acid 4.20. At meta, +R does not operate, so only -I of OMe acts and strengthens the acid.",
+  "concepts": [
+   "m-OCH3",
+   "-I effect"
+  ],
+  "trap": "p-OCH3 weakens the acid (4.47) because +R wins at para."
+ },
+ {
+  "id": "goc-ab-012",
+  "topic": "Acidity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a methoxy group is introduced at the para position of benzoic acid, the acidic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "p-Methoxybenzoic acid pKa 4.47 > 4.20. +R of OMe at para outweighs -I and destabilises the carboxylate.",
+  "concepts": [
+   "+R effect",
+   "p-OCH3"
+  ]
+ },
+ {
+  "id": "goc-ab-013",
+  "topic": "Acidity",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If a methyl group is introduced at the alpha carbon of acetic acid (giving propanoic acid), the acidic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "+I effect of CH3 destabilises the carboxylate; pKa rises 4.76 to 4.87.",
+  "concepts": [
+   "+I effect"
+  ]
+ },
+ {
+  "id": "goc-ab-014",
+  "topic": "Acidity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a nitro group is introduced at the meta position of phenol, the acidic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "m-Nitrophenol (8.4) is stronger than phenol (10) through -I only; it is weaker than the para isomer (7.15) because -R is absent.",
+  "concepts": [
+   "-I effect",
+   "meta position"
+  ]
+ },
+ {
+  "id": "goc-ab-015",
+  "topic": "Acidity",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which is the stronger first acid (pKa1): maleic acid or fumaric acid?",
+  "options": [
+   "A: Maleic acid (cis)",
+   "B: Fumaric acid (trans)",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "pKa1: maleic 1.9, fumaric 3.0, since the maleate monoanion is stabilised by intramolecular H-bond. For the second step fumaric is stronger (pKa2 4.4 vs 6.1).",
+  "concepts": [
+   "intramolecular H-bond",
+   "cis/trans acids"
+  ],
+  "trap": "Ranking reverses for the second dissociation."
+ },
+ {
+  "id": "goc-ab-016",
+  "topic": "Acidity",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Compare the acidity of phenol and cyclohexanol",
+  "options": [
+   "A: Phenol",
+   "B: Cyclohexanol",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Phenol pKa 10 vs cyclohexanol ~16-18; phenoxide is resonance stabilised, cyclohexoxide is not.",
+  "concepts": [
+   "resonance stabilisation"
+  ]
+ },
+ {
+  "id": "goc-ab-017",
+  "topic": "Acidity",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which of the following dissolves in aqueous NaOH but not in aqueous NaHCO3?",
+  "options": [
+   "$\\ce{C6H5COOH}$",
+   "$\\ce{C6H5OH}$",
+   "$\\ce{2,4,6-(O2N)3C6H2OH}$",
+   "$\\ce{CH3COOH}$"
+  ],
+  "answer": 1,
+  "explanation": "NaHCO3 reacts only with acids stronger than H2CO3 (pKa 6.4). Phenol (pKa 10) is weaker; carboxylic acids and picric acid (0.4) are stronger.",
+  "concepts": [
+   "pKa comparison",
+   "phenol vs carbonic acid"
+  ],
+  "trap": "Picric acid dissolves in NaHCO3."
+ },
+ {
+  "id": "goc-ab-018",
+  "topic": "Acidity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Among the following hydrocarbons, the most acidic is",
+  "options": [
+   "Cyclopentane",
+   "Cyclopentadiene",
+   "Cycloheptatriene",
+   "Cyclohexane"
+  ],
+  "answer": 1,
+  "explanation": "Cyclopentadiene (pKa 16) gives the aromatic cyclopentadienyl anion (6 pi electrons). Cycloheptatriene gives an antiaromatic-leaning, non-planar anion (pKa 36).",
+  "concepts": [
+   "aromatic anion",
+   "cyclopentadiene"
+  ]
+ },
+ {
+  "id": "goc-ab-019",
+  "topic": "Acidity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which is the strongest acid?",
+  "options": [
+   "$\\ce{C6H5COOH}$",
+   "$\\ce{o-O2N-C6H4COOH}$",
+   "$\\ce{m-O2N-C6H4COOH}$",
+   "$\\ce{p-O2N-C6H4COOH}$"
+  ],
+  "answer": 1,
+  "explanation": "Ortho effect: any ortho substituent twists COOH out of the ring plane, removing its resonance with the ring, increasing acidity. pKa: ortho 2.17, meta 3.45, para 3.44, H 4.20.",
+  "concepts": [
+   "ortho effect",
+   "SIR"
+  ],
+  "trap": "Ortho-substituted benzoic acids are stronger than benzoic acid regardless of whether the group is donating or withdrawing."
+ },
+ {
+  "id": "goc-ab-020",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following (aqueous solution)",
+  "criterion": "decreasing order of basic strength in aqueous solution",
+  "items": [
+   "$\\ce{(CH3)2NH}$",
+   "$\\ce{CH3NH2}$",
+   "$\\ce{(CH3)3N}$",
+   "$\\ce{NH3}$"
+  ],
+  "explanation": "pKa of conjugate acids: 10.73, 10.62, 9.80, 9.25. +I effect, offset by poorer solvation of the 3° ammonium ion.",
+  "concepts": [
+   "+I vs solvation",
+   "amine basicity"
+  ],
+  "trap": "For methyl amines, 2° > 1° > 3° > NH3."
+ },
+ {
+  "id": "goc-ab-021",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following ethylamines (aqueous solution)",
+  "criterion": "decreasing order of basic strength in aqueous solution",
+  "items": [
+   "$\\ce{(C2H5)2NH}$",
+   "$\\ce{(C2H5)3N}$",
+   "$\\ce{C2H5NH2}$",
+   "$\\ce{NH3}$"
+  ],
+  "explanation": "pKa of conjugate acids: 11.09, 10.75, 10.65, 9.25. Bulkier ethyl groups keep 3° in between: 2° > 3° > 1° > NH3.",
+  "concepts": [
+   "+I vs solvation"
+  ],
+  "trap": "The ethyl order differs from the methyl order (3° > 1° here)."
+ },
+ {
+  "id": "goc-ab-022",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the methylamines in the gas phase",
+  "criterion": "decreasing order of basic strength",
+  "items": [
+   "$\\ce{(CH3)3N}$",
+   "$\\ce{(CH3)2NH}$",
+   "$\\ce{CH3NH2}$",
+   "$\\ce{NH3}$"
+  ],
+  "explanation": "Without solvation, only +I/polarisability of alkyl groups acts: 3° > 2° > 1° > NH3.",
+  "concepts": [
+   "gas-phase basicity",
+   "solvation"
+  ]
+ },
+ {
+  "id": "goc-ab-023",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Arrange the following",
+  "criterion": "decreasing order of basic strength",
+  "items": [
+   "$\\ce{CH3NH2}$",
+   "$\\ce{NH3}$",
+   "$\\ce{C6H5NH2}$",
+   "$\\ce{(C6H5)2NH}$"
+  ],
+  "explanation": "pKaH: 10.6, 9.25, 4.6, 0.8. N lone pair in aniline is delocalised into the ring; diphenylamine delocalises into two rings.",
+  "concepts": [
+   "resonance",
+   "aromatic amines"
+  ]
+ },
+ {
+  "id": "goc-ab-024",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the anilines",
+  "criterion": "decreasing order of basic strength",
+  "items": [
+   "$\\ce{p-H3C-C6H4-NH2}$",
+   "$\\ce{C6H5-NH2}$",
+   "$\\ce{p-Cl-C6H4-NH2}$",
+   "$\\ce{p-O2N-C6H4-NH2}$"
+  ],
+  "explanation": "pKaH: 5.1, 4.6, 4.0, 1.0. +I/hyperconjugation of CH3 increases electron density at N; Cl is -I; NO2 is -I and -R.",
+  "concepts": [
+   "substituent effects"
+  ]
+ },
+ {
+  "id": "goc-ab-025",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following nitrogen bases",
+  "criterion": "decreasing order of basic strength",
+  "items": [
+   "piperidine",
+   "pyridine",
+   "aniline",
+   "pyrrole"
+  ],
+  "explanation": "pKaH: piperidine 11.1 (sp3 N), pyridine 5.2 (sp2 N), aniline 4.6, pyrrole -3.8. Pyrrole's lone pair is part of the aromatic sextet.",
+  "concepts": [
+   "hybridisation",
+   "aromatic lone pair"
+  ]
+ },
+ {
+  "id": "goc-ab-026",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following",
+  "criterion": "decreasing order of basic strength",
+  "items": [
+   "$\\ce{CH3CH2NH2}$",
+   "$\\ce{CH3CH=NH}$",
+   "$\\ce{CH3C#N}$"
+  ],
+  "explanation": "Basicity falls with increasing s-character of the N lone pair orbital: sp3 > sp2 > sp.",
+  "concepts": [
+   "hybridisation"
+  ]
+ },
+ {
+  "id": "goc-ab-027",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the pyridines",
+  "criterion": "decreasing order of basic strength",
+  "items": [
+   "4-(dimethylamino)pyridine (DMAP)",
+   "4-aminopyridine",
+   "pyridine",
+   "4-nitropyridine"
+  ],
+  "explanation": "pKaH: DMAP 9.6, 4-aminopyridine 9.2, pyridine 5.2, 4-nitropyridine 1.6. The +R NR2 group delocalises into the ring N; NO2 withdraws.",
+  "concepts": [
+   "+R effect",
+   "DMAP"
+  ]
+ },
+ {
+  "id": "goc-ab-028",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following",
+  "criterion": "decreasing order of basic strength",
+  "items": [
+   "guanidine",
+   "$\\ce{CH3NH2}$",
+   "pyridine",
+   "$\\ce{CH3CONH2}$"
+  ],
+  "explanation": "pKaH: guanidine 13.6, methylamine 10.6, pyridine 5.2, acetamide about -0.5. Guanidinium is a symmetric, resonance-stabilised cation.",
+  "concepts": [
+   "guanidine",
+   "amide"
+  ]
+ },
+ {
+  "id": "goc-ab-029",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the following anions",
+  "criterion": "decreasing order of basic strength",
+  "items": [
+   "$\\ce{(CH3)3CO-}$",
+   "$\\ce{CH3CH2O-}$",
+   "$\\ce{C6H5O-}$",
+   "$\\ce{CH3COO-}$"
+  ],
+  "explanation": "Basicity follows the pKa of the conjugate acid: t-BuOH 18, EtOH 16, PhOH 10, AcOH 4.8.",
+  "concepts": [
+   "conjugate acid pKa"
+  ]
+ },
+ {
+  "id": "goc-ab-030",
+  "topic": "Basicity",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the nitroanilines",
+  "criterion": "decreasing order of basic strength",
+  "items": [
+   "$\\ce{C6H5NH2}$",
+   "$\\ce{m-O2N-C6H4NH2}$",
+   "$\\ce{p-O2N-C6H4NH2}$",
+   "$\\ce{o-O2N-C6H4NH2}$"
+  ],
+  "explanation": "pKaH: aniline 4.6, m-nitro 2.5, p-nitro 1.0, o-nitro -0.3. At meta only -I acts; at p/o -R also acts; ortho adds proximity and H-bonding to the neutral amine.",
+  "concepts": [
+   "-R effect",
+   "ortho effect"
+  ]
+ },
+ {
+  "id": "goc-ab-031",
+  "topic": "Basicity",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If a nitro group is introduced at the para position of aniline, the basic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "pKaH falls from 4.6 to 1.0. NO2 withdraws by -I and -R, reducing availability of the N lone pair.",
+  "concepts": [
+   "-R effect"
+  ]
+ },
+ {
+  "id": "goc-ab-032",
+  "topic": "Basicity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a methoxy group is introduced at the para position of aniline, the basic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "p-Anisidine pKaH 5.34 > 4.6. +R of OMe at para increases electron density on N.",
+  "concepts": [
+   "+R effect"
+  ]
+ },
+ {
+  "id": "goc-ab-033",
+  "topic": "Basicity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a methyl group is introduced at the ortho position of aniline, the basic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "o-Toluidine pKaH 4.4 < aniline 4.6, whereas p-toluidine is 5.1. Ortho effect: steric hindrance to solvation/protonation of NH3+ lowers basicity for essentially every ortho group.",
+  "concepts": [
+   "ortho effect"
+  ],
+  "trap": "Despite +I of CH3, the ortho isomer is weaker than aniline."
+ },
+ {
+  "id": "goc-ab-034",
+  "topic": "Basicity",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If the nitrogen of aniline is acetylated (giving acetanilide), the basic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "N lone pair is delocalised into the C=O as well as the ring; acetanilide is essentially non-basic.",
+  "concepts": [
+   "amide resonance"
+  ]
+ },
+ {
+  "id": "goc-ab-035",
+  "topic": "Basicity",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If a fluorine atom is introduced at the beta carbon of ethylamine (giving 2-fluoroethylamine), the basic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "-I effect of F reduces electron density on N; pKaH ~9.0 vs 10.65.",
+  "concepts": [
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-ab-036",
+  "topic": "Basicity",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which is more basic: pyridine or pyrrole?",
+  "options": [
+   "A: Pyridine",
+   "B: Pyrrole",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Pyridine's sp2 lone pair lies in the plane and is free; in pyrrole the lone pair is part of the aromatic sextet and protonation destroys aromaticity.",
+  "concepts": [
+   "aromatic lone pair"
+  ]
+ },
+ {
+  "id": "goc-ab-037",
+  "topic": "Basicity",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which is more basic: piperidine or pyridine?",
+  "options": [
+   "A: Piperidine",
+   "B: Pyridine",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "sp3 lone pair (pKaH 11.1) vs sp2 lone pair (5.2); higher s-character holds lone pair tighter.",
+  "concepts": [
+   "hybridisation"
+  ]
+ },
+ {
+  "id": "goc-ab-038",
+  "topic": "Basicity",
+  "type": "compare",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which is the stronger base: 1,8-bis(dimethylamino)naphthalene (proton sponge) or N,N-dimethylaniline?",
+  "options": [
+   "A: Proton sponge",
+   "B: N,N-dimethylaniline",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "pKaH 12.1 vs 5.1. In the sponge, NMe2 groups are held close, so lone-pair repulsion and strain are relieved on protonation, and the cation is stabilised by a strong N-H...N bond.",
+  "concepts": [
+   "proton sponge",
+   "strain relief"
+  ]
+ },
+ {
+  "id": "goc-ab-039",
+  "topic": "Basicity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Guanidine is a very strong organic base (pKaH ~13.6) because",
+  "options": [
+   "its N atoms are sp3 hybridised",
+   "its conjugate acid is stabilised by delocalisation of the positive charge over three N atoms",
+   "the central carbon is sp3",
+   "it forms intramolecular H-bond"
+  ],
+  "answer": 1,
+  "explanation": "Protonation at imine N gives the guanidinium ion, a symmetrical, resonance-stabilised cation with Y-delocalisation.",
+  "concepts": [
+   "guanidine",
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-ab-040",
+  "topic": "Basicity",
+  "type": "mcq",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "The exceptional basicity of proton sponge (pKaH ~12) is due to",
+  "options": [
+   "+I effect of two methyl groups only",
+   "release of steric strain between NMe2 groups and strong intramolecular N-H...N hydrogen bond in conjugate acid",
+   "extended aromaticity",
+   "strong solvation of the ion"
+  ],
+  "answer": 1,
+  "explanation": "Peri NMe2 groups repel in the neutral form (lone pairs, twisted); protonation relieves this and forms a short H-bond.",
+  "concepts": [
+   "proton sponge"
+  ]
+ },
+ {
+  "id": "goc-ab-041",
+  "topic": "Basicity",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "In the gas phase the most basic of the methylamines is",
+  "options": [
+   "$\\ce{NH3}$",
+   "$\\ce{CH3NH2}$",
+   "$\\ce{(CH3)2NH}$",
+   "$\\ce{(CH3)3N}$"
+  ],
+  "answer": 3,
+  "explanation": "Without solvation, each CH3 group stabilises the ammonium ion by +I and polarisation, so 3° > 2° > 1° > NH3. In water 3° falls below 2°/1° because its ion is less H-bonded.",
+  "concepts": [
+   "gas phase vs aqueous"
+  ]
+ },
+ {
+  "id": "goc-ab-042",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the chlorophenols and phenol",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{o-Cl-C6H4OH}$",
+   "$\\ce{m-Cl-C6H4OH}$",
+   "$\\ce{p-Cl-C6H4OH}$",
+   "$\\ce{C6H5OH}$"
+  ],
+  "explanation": "pKa: o 8.5, m 9.1, p 9.4, phenol 10.0. -I dominates and decays with distance; +R at o/p reduces the effect slightly at para.",
+  "concepts": [
+   "-I vs +R",
+   "halogens"
+  ],
+  "trap": "Halogens: -I wins overall, so all are stronger than phenol."
+ },
+ {
+  "id": "goc-ab-043",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the hydroxybenzoic acids and benzoic acid",
+  "criterion": "decreasing order of acidic strength",
+  "items": [
+   "$\\ce{o-HO-C6H4COOH}$",
+   "$\\ce{m-HO-C6H4COOH}$",
+   "$\\ce{C6H5COOH}$",
+   "$\\ce{p-HO-C6H4COOH}$"
+  ],
+  "explanation": "pKa: ortho 2.98, meta 4.08, benzoic 4.20, para 4.58. Ortho: H-bond and ortho effect; meta: -I only; para: +R dominates.",
+  "concepts": [
+   "ortho effect",
+   "+R vs -I"
+  ]
+ },
+ {
+  "id": "goc-ab-044",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which is the stronger acid: m-methoxybenzoic acid or p-methoxybenzoic acid?",
+  "options": [
+   "A: meta isomer",
+   "B: para isomer",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "pKa 4.09 vs 4.47. Meta: -I only; para: +R opposes -I.",
+  "concepts": [
+   "m-OCH3 vs p-OCH3"
+  ]
+ },
+ {
+  "id": "goc-ab-045",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which is the stronger acid: p-nitrophenol or m-nitrophenol?",
+  "options": [
+   "A: p-nitrophenol",
+   "B: m-nitrophenol",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "pKa 7.15 vs 8.4. At para, NO2 exerts both -I and -R; at meta only -I.",
+  "concepts": [
+   "-R effect",
+   "nitrophenols"
+  ]
+ },
+ {
+  "id": "goc-ab-046",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "compare",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which is the stronger acid: 4-nitrophenol or 3,5-dimethyl-4-nitrophenol?",
+  "options": [
+   "A: 4-nitrophenol",
+   "B: 3,5-dimethyl-4-nitrophenol",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "pKa 7.15 vs 8.25. Two flanking methyls twist the NO2 out of the plane (steric inhibition of resonance), cancelling its -R effect.",
+  "concepts": [
+   "steric inhibition of resonance"
+  ],
+  "trap": "The methyls are meta to OH, yet the SIR effect weakens the acid."
+ },
+ {
+  "id": "goc-ab-047",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If any substituent (e.g. CH3) is introduced at the ortho position of benzoic acid, the acidic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "Ortho effect: o-toluic acid pKa 3.91 < benzoic 4.20. Steric twisting of COOH out of the ring plane reduces its resonance with the ring and raises acidity.",
+  "concepts": [
+   "ortho effect"
+  ],
+  "trap": "Applies even to electron-donating ortho groups."
+ },
+ {
+  "id": "goc-ab-048",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If a nitro group is introduced at the meta position of benzoic acid, the acidic strength",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "m-Nitrobenzoic acid pKa 3.45 < 4.20. -I effect stabilises the carboxylate.",
+  "concepts": [
+   "-I effect"
+  ]
+ },
+ {
+  "id": "goc-ab-049",
+  "topic": "Substituent effects (o/m/p)",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "p-Hydroxybenzoic acid is a weaker acid than benzoic acid because",
+  "options": [
+   "-I effect of OH at para dominates",
+   "+R effect of OH at para outweighs its -I effect",
+   "ortho effect",
+   "intramolecular H-bonding in the anion"
+  ],
+  "answer": 1,
+  "explanation": "At para, +R dominates (pKa 4.58 vs 4.20); at meta, only -I acts (4.08).",
+  "concepts": [
+   "+R effect"
+  ]
+ },
+ {
+  "id": "goc-ab-050",
+  "topic": "Tautomerism & enol content",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which has the higher enol content: acetylacetone or ethyl acetoacetate?",
+  "options": [
+   "A: Acetylacetone",
+   "B: Ethyl acetoacetate",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "About 80% vs 8% (neat liquid). Ketone C=O is a stronger H-bond acceptor and conjugates better than ester C=O.",
+  "concepts": [
+   "enol content"
+  ]
+ },
+ {
+  "id": "goc-ab-051",
+  "topic": "Tautomerism & enol content",
+  "type": "compare",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "In water, which has the higher enol content: cyclohexane-1,3-dione or acetylacetone?",
+  "options": [
+   "A: Cyclohexane-1,3-dione",
+   "B: Acetylacetone",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Cyclohexane-1,3-dione is predominantly enolic in polar solvents (enol is polar and strongly H-bonded to water); the ring holds the diketone s-cis (unfavourable dipoles), so the enol is preferred. Acetylacetone is only about 15% enol in water.",
+  "concepts": [
+   "solvent effect",
+   "1,3-diketone"
+  ],
+  "trap": "Acetylacetone's own enol content is highest in non-polar solvents because of the chelated cis-enol."
+ },
+ {
+  "id": "goc-ab-052",
+  "topic": "Tautomerism & enol content",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If the solvent is changed from hexane to water for acetylacetone, its enol content",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 1,
+  "explanation": "Intramolecular H-bond in the enol is strongest in non-polar solvents (~92% enol in hexane); water H-bonds to the keto C=O and the more polar diketo form, so enol content drops to ~15%.",
+  "concepts": [
+   "solvent effect",
+   "chelation"
+  ]
+ },
+ {
+  "id": "goc-ab-053",
+  "topic": "Tautomerism & enol content",
+  "type": "effect",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "If a second carbonyl group is introduced at the beta position of acetone (giving acetylacetone), the enol content",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "Enol content rises from about 10^-4 % to ~80% through conjugation and intramolecular H-bonding.",
+  "concepts": [
+   "1,3-dicarbonyl"
+  ]
+ },
+ {
+  "id": "goc-ab-054",
+  "topic": "Tautomerism & enol content",
+  "type": "mcq",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which of the following does NOT show keto-enol tautomerism?",
+  "options": [
+   "Acetone",
+   "Acetaldehyde",
+   "Benzophenone",
+   "Cyclohexanone"
+  ],
+  "answer": 2,
+  "explanation": "Benzophenone has no alpha-hydrogen on a carbon adjacent to the carbonyl.",
+  "concepts": [
+   "alpha-hydrogen"
+  ]
+ },
+ {
+  "id": "goc-ab-055",
+  "topic": "Tautomerism & enol content",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "The high enol content of acetylacetone is attributed to",
+  "options": [
+   "only the +I effect of CH3",
+   "conjugation and a strong intramolecular hydrogen bond (six-membered chelate ring)",
+   "only steric effect",
+   "dimerisation"
+  ],
+  "answer": 1,
+  "explanation": "The cis-enol forms a conjugated six-membered ring with O-H...O chelation.",
+  "concepts": [
+   "chelation",
+   "conjugation"
+  ]
+ },
+ {
+  "id": "goc-ab-056",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "order",
+  "difficulty": "hard",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the methyl halides",
+  "criterion": "decreasing order of dipole moment",
+  "items": [
+   "$\\ce{CH3Cl}$",
+   "$\\ce{CH3F}$",
+   "$\\ce{CH3Br}$",
+   "$\\ce{CH3I}$"
+  ],
+  "explanation": "mu: CH3Cl 1.87 D, CH3F 1.85, CH3Br 1.81, CH3I 1.62. Dipole = charge x distance: F is most electronegative but C-F bond is short.",
+  "concepts": [
+   "dipole moment"
+  ],
+  "trap": "CH3F does not have the highest dipole moment."
+ },
+ {
+  "id": "goc-ab-057",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "order",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Arrange the carbon-carbon bonds",
+  "criterion": "decreasing order of bond length",
+  "items": [
+   "C-C in ethane",
+   "C-C (single) in buta-1,3-diene",
+   "C-C in benzene",
+   "C=C in ethene"
+  ],
+  "explanation": "1.54, 1.47, 1.39, 1.34 angstrom. The central bond of butadiene has partial double-bond character (sp2-sp2).",
+  "concepts": [
+   "resonance",
+   "bond length"
+  ]
+ },
+ {
+  "id": "goc-ab-058",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which has the higher boiling point: o-nitrophenol or p-nitrophenol?",
+  "options": [
+   "A: o-nitrophenol",
+   "B: p-nitrophenol",
+   "Both equal"
+  ],
+  "answer": 1,
+  "explanation": "bp: ortho 216, para 279 degC. Ortho has intramolecular H-bond (chelation), so it is steam volatile; para has intermolecular H-bonds.",
+  "concepts": [
+   "intramolecular H-bond",
+   "steam volatility"
+  ],
+  "trap": "Ortho is the one that steam distils."
+ },
+ {
+  "id": "goc-ab-059",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "compare",
+  "difficulty": "easy",
+  "exam": [
+   "JEE Main"
+  ],
+  "question": "Which has the larger dipole moment: cis-1,2-dichloroethene or trans-1,2-dichloroethene?",
+  "options": [
+   "A: cis",
+   "B: trans",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "Cis: bond dipoles add (1.9 D); trans: they cancel (0 D).",
+  "concepts": [
+   "symmetry",
+   "dipole moment"
+  ]
+ },
+ {
+  "id": "goc-ab-060",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "compare",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "Which has the higher boiling point: cis-but-2-ene or trans-but-2-ene?",
+  "options": [
+   "A: cis",
+   "B: trans",
+   "Both equal"
+  ],
+  "answer": 0,
+  "explanation": "bp: cis 3.7, trans 0.9 degC. Cis has a net dipole; trans packs better into the crystal and has the higher melting point.",
+  "concepts": [
+   "dipole moment",
+   "bp vs mp"
+  ],
+  "trap": "Melting point trend is opposite (trans higher)."
+ },
+ {
+  "id": "goc-ab-061",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "o-Nitrophenol is steam volatile and has a lower boiling point than its isomers because",
+  "options": [
+   "it has a higher molar mass",
+   "it has intramolecular hydrogen bonding",
+   "it has no dipole moment",
+   "it is a stronger acid"
+  ],
+  "answer": 1,
+  "explanation": "Chelation between OH and NO2 prevents intermolecular association.",
+  "concepts": [
+   "intramolecular H-bond"
+  ]
+ },
+ {
+  "id": "goc-ab-062",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "mcq",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "In benzene, all C-C bond lengths are 1.39 angstrom, intermediate between",
+  "options": [
+   "1.54 and 1.20",
+   "1.54 and 1.34",
+   "1.47 and 1.20",
+   "1.34 and 1.20"
+  ],
+  "answer": 1,
+  "explanation": "Resonance gives bond order 1.5: between C-C single (1.54) and C=C (1.34).",
+  "concepts": [
+   "resonance"
+  ]
+ },
+ {
+  "id": "goc-ab-063",
+  "topic": "Physical properties (bp, dipole, bond length)",
+  "type": "effect",
+  "difficulty": "medium",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "question": "If the nitro group of nitrophenol is moved from the para to the ortho position, the volatility",
+  "options": [
+   "Increases",
+   "Decreases",
+   "Remains nearly the same"
+  ],
+  "answer": 0,
+  "explanation": "Ortho has intramolecular H-bonding; para has intermolecular H-bonding, so ortho is more volatile.",
+  "concepts": [
+   "intramolecular H-bond"
+  ]
+ }
+]
