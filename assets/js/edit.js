@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     $('#statusChips').innerHTML = Object.entries(groups).map(([k, v]) => `<button class="chip ${mStatus === k ? 'active' : ''}" data-s="${k}">${k[0].toUpperCase() + k.slice(1)} <span class="count">${v.length}</span></button>`).join('');
     $$('#statusChips .chip').forEach((c) => (c.onclick = () => { mStatus = c.dataset.s; renderManage(); }));
+    const nHidden = RL.reactions({ include: 'all', ignorePrefs: true }).length - all.length;
+    $('#prefsNote').innerHTML = nHidden ? `${nHidden} reaction${nHidden === 1 ? ' is' : 's are'} hidden by your <a href="settings.html" style="text-decoration:underline">Profile &amp; filters</a> and not listed here.` : '';
     const q = RL.norm($('#mq').value);
     const list = groups[mStatus].filter((r) => !q || RL.norm(r.name + ' ' + r.aliases.join(' ') + ' ' + r.category).includes(q));
     $('#manageList').innerHTML = list.length ? list.map((r) => {
@@ -57,8 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ================= ADD / EDIT ================= */
   const form = $('#rForm');
-  form.category.innerHTML = RL.CATEGORIES.map((c) => `<option>${esc(c)}</option>`).join('');
-  form.kind.innerHTML = RL.KINDS.map((c) => `<option>${esc(c)}</option>`).join('');
+  form.category.innerHTML = RL.visibleCategories().map((c) => `<option>${esc(c)}</option>`).join('');
+  form.kind.innerHTML = RL.visibleKinds().map((c) => `<option>${esc(c)}</option>`).join('');
+  RL.prunePrefOptions(form.exam, 'exam'); RL.prunePrefOptions(form.difficulty, 'difficulty');
   let editing = null; // id being edited
   const semi = (v) => v.split(/[;\n]+/).map((x) => x.trim()).filter(Boolean);
   const lines = (v) => v.split('\n').map((x) => x.trim()).filter(Boolean);
@@ -129,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
       RL.state.custom.push(r); RL.toast('Reaction added to your bank');
     }
     RL.save(); loadForm(null); setTab('manage');
+    if (RL.hiddenByPrefs(r)) RL.toast('Saved, but it is hidden by your Profile & filters');
   };
 
   /* ================= IMPORT ================= */
@@ -162,8 +166,9 @@ document.addEventListener('DOMContentLoaded', () => {
       r.examples = (r.examples || []).filter((x) => x && x.eq).map((x) => ({ eq: String(x.eq), note: x.note || '' }));
       const bad = r.examples.filter((x) => !texOK(x.eq)).length; if (bad) issues.push(`${bad} example(s) won't render`);
       if (!r.summary) r.summary = r.name;
-      const dup = RL.byId(r.id) || RL.reactions({ include: 'all' }).find((x) => RL.norm(x.name) === RL.norm(r.name));
-      return { r, issues, dup, include: !dup && !issues.some((i) => i.startsWith('missing')) };
+      const dup = RL.byId(r.id) || RL.reactions({ include: 'all', ignorePrefs: true }).find((x) => RL.norm(x.name) === RL.norm(r.name));
+      const hidden = RL.hiddenByPrefs(r);
+      return { r, issues, dup, hidden, include: !dup && !hidden && !issues.some((i) => i.startsWith('missing')) };
     });
     renderStage();
   }
@@ -174,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <label class="row" style="grid-template-columns:auto 1fr;background:var(--panel);cursor:pointer">
           <input type="checkbox" data-i="${i}" ${s.include ? 'checked' : ''} style="width:18px;height:18px;accent-color:#141414">
           <div style="min-width:0"><b style="font-weight:500">${esc(s.r.name || '(no name)')}</b> <span class="small muted">· ${esc(s.r.category)}</span>
-            ${s.dup ? ` <span class="pill amber">already in bank: ${esc(s.dup.name)}</span>` : ''}
+            ${s.dup ? ` <span class="pill amber">already in bank: ${esc(s.dup.name)}</span>` : ''}${s.hidden ? ' <span class="pill gray" title="Matches content you hid in Profile &amp; filters">hidden by your filters</span>' : ''}
             ${s.issues.map((x) => ` <span class="pill red">${esc(x)}</span>`).join('')}
             <div class="eq-inline small">${s.r.reactants ? RL.equation(s.r, 'none', false) : ''}</div></div>
         </label>`).join('')}</div>

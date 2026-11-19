@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#d8ddd4">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>Profile &amp; filters - ReactionLab</title>
+  <script>document.documentElement.classList.add('loading');setTimeout(function(){document.documentElement.classList.remove('loading')},1200)</script>
+  <link rel="stylesheet" href="assets/css/style.css?v=202611191124">
+  <script defer src="data/reactions.js?v=202611191124"></script>
+  <script defer src="data/goc.js?v=202611191124"></script>
+  <script defer src="assets/js/core.js?v=202611191124"></script>
+  <script defer src="assets/js/goc-gen.js?v=202611191124"></script>
+  <script defer src="assets/js/settings.js?v=202611191124"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" aria-label="Main navigation"></aside>
+    <main class="main">
+      <header id="topbar" class="topbar"></header>
+
+      <section class="panel">
+        <div class="panel-head"><h2>Profile</h2><button class="btn sm" id="resetAll">Reset all filters</button></div>
+        <div class="grid set-profile">
+          <div class="field">
+            <label for="pName">Your name</label>
+            <input class="input" id="pName" maxlength="40" placeholder="Student" autocomplete="off">
+          </div>
+          <div class="set-summary" id="summary"></div>
+        </div>
+        <p class="small muted" style="margin:var(--s-4) 0 0">Anything you switch off below is removed from <b>every</b> page: practice, MCQ quizzes, the GOC lab, the reaction bank, the dashboard and Edit &amp; Upload, including newly imported reactions. Nothing is deleted, so you can switch it back on here at any time.</p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><h2>Exams</h2><span class="small muted">A reaction stays visible while at least one of its exams is on</span></div>
+        <div class="chips set-chips" id="sExams"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><h2>Chapters</h2><span class="small muted">Tap to switch off</span></div>
+        <div class="chips set-chips" id="sCats"></div>
+      </section>
+
+      <div class="grid set-two">
+        <section class="panel">
+          <div class="panel-head"><h2>Reaction types</h2></div>
+          <div class="chips set-chips" id="sKinds"></div>
+        </section>
+        <section class="panel">
+          <div class="panel-head"><h2>Difficulty</h2><span class="small muted">Also applies to GOC questions</span></div>
+          <div class="chips set-chips" id="sDiff"></div>
+        </section>
+      </div>
+
+      <section class="panel">
+        <div class="panel-head"><h2>Tags</h2><span class="small muted">Hide every reaction carrying a tag</span></div>
+        <label class="search-box set-tag-search"><span id="tIcon" style="width:20px;display:grid"></span><input id="tagQ" type="search" placeholder="Search tags, e.g. polymer, NCERT, rearrangement"></label>
+        <div class="small muted set-label">Hidden tags</div>
+        <div class="chips set-chips" id="sTagsHidden"></div>
+        <div class="small muted set-label">All tags</div>
+        <div class="chips set-chips" id="sTags"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><h2>GOC topics</h2><span class="small muted">Concept Lab questions</span></div>
+        <div class="chips set-chips" id="sGoc"></div>
+      </section>
+
+      <section class="panel soft">
+        <div class="panel-head"><h2>Individual problems</h2></div>
+        <p class="muted" style="margin:0 0 var(--s-4)" id="blInfo"></p>
+        <a class="btn" href="edit.html#manage">Manage single reactions</a>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

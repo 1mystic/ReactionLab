@@ -40,6 +40,7 @@
     arrow: p('<path d="M5 12h14M13 6l6 6-6 6"/>'),
     book: p('<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/>'),
     atom: p('<circle cx="12" cy="12" r="1.6"/><ellipse cx="12" cy="12" rx="10" ry="4.2"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)"/>'),
+    gear: p('<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/>'),
     chev: p('<path d="m6 9 6 6 6-6"/>'),
     link: p('<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>'),
     logo: '<svg viewBox="0 0 32 32" fill="currentColor"><path d="M12 3h8v2h-1.5v7.2l7.8 12.6A3.4 3.4 0 0 1 23.4 30H8.6a3.4 3.4 0 0 1-2.9-5.2l7.8-12.6V5H12zm-1.7 17h11.4l-3.7-6h-4z"/></svg>'
@@ -81,11 +82,47 @@
     clear() { RL.STORAGE_KEYS.forEach((k) => localStorage.removeItem(k)); },
     bytes() { return new Blob([localStorage.getItem(KEY) || '']).size; }
   };
-  const blank = () => ({ archived: [], blacklisted: [], custom: [], edits: {}, attempts: [], goc: [], name: '' });
+  const blankPrefs = () => ({ exams: [], categories: [], kinds: [], difficulties: [], tags: [], gocTopics: [] });
+  const blank = () => ({ archived: [], blacklisted: [], custom: [], edits: {}, attempts: [], goc: [], name: '', prefs: blankPrefs() });
+  RL.blankPrefs = blankPrefs;
   RL.blankState = blank;
   RL.state = Object.assign(blank(), RL.storage.load());
   if (!Array.isArray(RL.state.goc)) RL.state.goc = [];
-  RL.save = () => { try { RL.storage.save(RL.state); } catch (e) { RL.toast('Storage full - export your data & remove large images'); } };
+  /* ---- Profile filters: content the user has permanently hidden site-wide ---- */
+  RL.EXAMS = ['JEE Main', 'JEE Advanced'];
+  RL.DIFFICULTIES = ['easy', 'medium', 'hard'];
+  RL.prefs = () => {
+    const p = RL.state.prefs && typeof RL.state.prefs === 'object' ? RL.state.prefs : {};
+    const out = blankPrefs(); Object.keys(out).forEach((k) => { if (Array.isArray(p[k])) out[k] = p[k].filter((x) => typeof x === 'string'); });
+    return (RL.state.prefs = out);
+  };
+  RL.prefs();
+  const lc = (a) => new Set(a.map((x) => String(x).toLowerCase()));
+  /** true when every exam the item belongs to has been hidden */
+  const examHidden = (exam, P) => { const e = Array.isArray(exam) && exam.length ? exam : RL.EXAMS; return P.exams.length > 0 && e.every((x) => P.exams.includes(x)); };
+  RL.hiddenByPrefs = (r, P = RL.prefs()) => {
+    if (!r) return true;
+    if (P.categories.includes(r.category) || P.kinds.includes(r.kind) || P.difficulties.includes(r.difficulty) || examHidden(r.exam, P)) return true;
+    if (P.tags.length) { const ht = lc(P.tags); if ((r.tags || []).some((t) => ht.has(String(t).toLowerCase()))) return true; }
+    return false;
+  };
+  RL.gocHiddenByPrefs = (q, P = RL.prefs()) => !q || P.gocTopics.includes(q.topic) || P.difficulties.includes(q.difficulty) || examHidden(q.exam, P);
+  RL.visibleCategories = () => RL.CATEGORIES.filter((c) => !RL.prefs().categories.includes(c));
+  RL.visibleKinds = () => RL.KINDS.filter((c) => !RL.prefs().kinds.includes(c));
+  RL.visibleExams = () => RL.EXAMS.filter((c) => !RL.prefs().exams.includes(c));
+  RL.prefsActive = () => Object.values(RL.prefs()).some((a) => a.length > 0);
+  /** Remove <option>s of a filter <select> that point at hidden values ('exam' | 'difficulty' | 'kind' | 'category') */
+  RL.prunePrefOptions = (sel, kind) => {
+    if (!sel) return; const P = RL.prefs();
+    const hidden = { exam: P.exams, difficulty: P.difficulties, kind: P.kinds, category: P.categories }[kind] || [];
+    [...sel.options].forEach((o) => {
+      const vals = String(o.value).split(',').map((x) => x.trim()).filter(Boolean);
+      if (o.value !== 'all' && vals.length && vals.every((v) => hidden.includes(v))) o.remove();
+    });
+    if (kind === 'exam' && P.exams.length) { const all = [...sel.options].find((o) => o.value === 'all'); if (all) all.textContent = 'All my exams'; }
+  };
+  RL._ver = 0; // bumped on every save; invalidates the reactions cache
+  RL.save = () => { RL._ver++; try { RL.storage.save(RL.state); } catch (e) { RL.toast('Storage full - export your data & remove large images'); } };
   RL.exportState = () => JSON.stringify({ app: 'ReactionLab', version: 1, exportedAt: new Date().toISOString(), data: RL.state }, null, 2);
   /** mode: 'replace' | 'merge' */
   RL.importState = (json, mode = 'merge') => {
@@ -100,6 +137,7 @@
       s.edits = Object.assign({}, s.edits, d.edits || {});
       const seen = new Set(s.attempts.map((a) => a.id + a.ts)); (d.attempts || []).forEach((a) => { if (!seen.has(a.id + a.ts)) s.attempts.push(a); });
       s.attempts.sort((a, b) => a.ts - b.ts); if (!s.name && d.name) s.name = d.name;
+      if (d.prefs && !RL.prefsActive()) s.prefs = d.prefs;
       s.goc = s.goc || []; const gs = new Set(s.goc.map((a) => a.id + a.ts)); (d.goc || []).forEach((a) => { if (!gs.has(a.id + a.ts)) s.goc.push(a); });
     }
     RL.save();
@@ -133,16 +171,27 @@
     return (map.find(([k]) => s.includes(k)) || [, 'Hydrocarbons'])[1];
   };
   /** All reactions = built-in (with user edits applied) + custom. opts.include: 'active' | 'visible' | 'all' */
-  RL.reactions = (opts = {}) => {
-    const include = opts.include || 'visible';
+  /* normalised built-in + custom list, rebuilt only when state changes (RL.save) */
+  let _base = null, _baseVer = -1, _byId = null;
+  const baseList = () => {
+    if (_base && _baseVer === RL._ver && RL.state === _baseState) return _base;
     const builtIn = (window.REACTIONS || []).map((r) => RL.normalizeRecord(Object.assign({}, r, RL.state.edits[r.id] || {}, { _builtin: true })));
     const custom = RL.state.custom.map((r) => RL.normalizeRecord(Object.assign({}, r, { _custom: true })));
-    const all = builtIn.concat(custom);
+    _base = builtIn.concat(custom); _baseVer = RL._ver; _baseState = RL.state; _byId = new Map(_base.map((r) => [r.id, r]));
+    return _base;
+  };
+  let _baseState = null;
+  RL.reactions = (opts = {}) => {
+    const include = opts.include || 'visible';
+    let all = baseList().slice();
+    if (!opts.ignorePrefs) { const P = RL.prefs(); all = all.filter((r) => !RL.hiddenByPrefs(r, P)); }
     if (include === 'all') return all;
     if (include === 'active') return all.filter((r) => RL.status(r.id) === 'active');
     return all.filter((r) => RL.status(r.id) !== 'blacklisted');
   };
-  RL.byId = (id) => RL.reactions({ include: 'all' }).find((r) => r.id === id);
+  /** Lookup by id ignores profile filters (ids must stay unique); use RL.isShown to respect them */
+  RL.byId = (id) => { baseList(); return _byId.get(id); };
+  RL.isShown = (id) => { const r = RL.byId(id); return !!r && RL.status(id) !== 'blacklisted' && !RL.hiddenByPrefs(r); };
 
   /* ================= Chemistry rendering (KaTeX + mhchem) ================= */
   RL.tex = (src, display = false) => {
@@ -278,7 +327,7 @@
   /** weakest reactions by average score (min 1 attempt) */
   RL.weakest = (n = 5) => {
     const m = new Map(); for (const x of RL.state.attempts) { const v = m.get(x.id) || [0, 0]; v[0] += x.score; v[1]++; m.set(x.id, v); }
-    return [...m].map(([id, [s, c]]) => ({ id, avg: Math.round(s / c), count: c })).filter((x) => RL.byId(x.id)).sort((a, b) => a.avg - b.avg).slice(0, n);
+    return [...m].map(([id, [s, c]]) => ({ id, avg: Math.round(s / c), count: c })).filter((x) => RL.isShown(x.id)).sort((a, b) => a.avg - b.avg).slice(0, n);
   };
 
   /* ================= MCQ generator ================= */
@@ -386,6 +435,7 @@
       <a class="brand" href="index.html"><div class="brand-logo">${RL.icon.logo}</div><span>ReactionLab</span></a>
       ${nav.map(([href, ic, label, key, badge]) => `<a class="nav-link ${key === active ? 'active' : ''}" href="${href}">${RL.icon[ic]}<span>${label}</span>${badge ? `<span class="badge">${badge}</span>` : ''}</a>`).join('')}
       <div class="nav-spacer"></div>
+      <a class="nav-link ${active === 'settings' ? 'active' : ''}" href="settings.html">${RL.icon.gear}<span>Profile &amp; filters</span>${RL.prefsActive() ? '<span class="badge" title="Profile filters active">on</span>' : ''}</a>
       <a class="nav-link nav-secondary" href="https://www.organic-chemistry.org/namedreactions/" target="_blank" rel="noopener">${RL.icon.book}<span>Reference site</span></a>`;
     if (fresh) RL.$('.app').prepend(aside);
     setTimeout(() => { RL.enhanceSelects(); RL.fitAll(); requestAnimationFrame(() => document.documentElement.classList.remove('loading')); }, 0);
@@ -397,11 +447,10 @@
         <a class="icon-btn dark" href="bank.html" title="Search the bank">${RL.icon.search}</a>
         <a class="icon-btn lav" href="practice.html" title="Random reaction">${RL.icon.shuffle}</a>
         <div class="title">${title || ''}</div>
-        <div class="profile-pill" title="Click to set your name" style="cursor:pointer" id="profile">
-          <div class="avatar">${RL.esc(nm[0].toUpperCase())}</div>
-          <div class="meta"><div>${RL.esc(nm)}</div><small>JEE Main · Advanced</small></div>
-        </div>`;
-      RL.$('#profile').onclick = () => { const n = prompt('Your name:', RL.state.name || ''); if (n !== null) { RL.state.name = n.trim(); RL.save(); location.reload(); } };
+        <a class="profile-pill" title="Profile &amp; content filters" href="settings.html" id="profile">
+          <div class="avatar">${RL.esc((nm[0] || 'S').toUpperCase())}</div>
+          <div class="meta"><div>${RL.esc(nm)}</div><small>${RL.esc(RL.visibleExams().join(' · ').replace('JEE Main · JEE Advanced', 'JEE Main · Advanced') || 'No exam selected')}</small></div>
+        </a>`;
     }
   };
 

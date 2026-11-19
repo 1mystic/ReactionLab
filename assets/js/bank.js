@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const [g, l, s] = $$('#viewTabs .tab'); g.innerHTML = icon.layout; l.innerHTML = icon.list; s.innerHTML = icon.book;
   $$('#viewTabs .tab').forEach((t) => { t.querySelector('svg').style.cssText = 'width:18px;height:18px;vertical-align:middle'; });
   $('#practiceFiltered').innerHTML = `${icon.flask} Practise these`;
-  $('#fKind').innerHTML = RL.optionList(RL.KINDS, 'all', 'All types');
+  $('#fKind').innerHTML = RL.optionList(RL.visibleKinds(), 'all', 'All types');
+  RL.prunePrefOptions($('#fExam'), 'exam'); RL.prunePrefOptions($('#fDiff'), 'difficulty');
+  if (f.category !== 'all' && !RL.visibleCategories().includes(f.category)) f.category = 'all';
   $('#q').value = f.q;
 
   let data = [], fuse = null;
@@ -68,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const list = filtered();
     $('#countLbl').textContent = `· ${list.length}`;
     $$('#viewTabs .tab').forEach((t) => t.classList.toggle('active', t.dataset.v === f.view));
-    if (!list.length) { $('#results').innerHTML = '<div class="card" style="text-align:center;padding:50px"><h3>No reactions found</h3><p class="muted">Try a different search or clear filters.</p></div>'; return; }
+    if (!list.length) { $('#results').innerHTML = '<div class="card" style="text-align:center;padding:50px"><h3>No reactions found</h3><p class="muted">Try a different search or clear filters.' + (RL.prefsActive() ? ' Some content is hidden in <a href="settings.html" style="text-decoration:underline">Profile &amp; filters</a>.' : '') + '</p></div>'; return; }
     if (f.view === 'grid') $('#results').innerHTML = `<div class="bank-grid">${list.map(card).join('')}</div>`;
     else if (f.view === 'stack') {
       const groups = RL.CATEGORIES.map((c) => [c, list.filter((r) => r.category === c)]).filter(([, a]) => a.length);

@@ -11,10 +11,10 @@
   <script defer src="assets/vendor/katex/mhchem.min.js"></script>
   <script defer src="assets/vendor/fuse.min.js"></script>
   <script>document.documentElement.classList.add('loading');setTimeout(function(){document.documentElement.classList.remove('loading')},1200)</script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="data/reactions.js"></script>
-  <script defer src="assets/js/core.js"></script>
-  <script defer src="assets/js/edit.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=202611191124">
+  <script defer src="data/reactions.js?v=202611191124"></script>
+  <script defer src="assets/js/core.js?v=202611191124"></script>
+  <script defer src="assets/js/edit.js?v=202611191124"></script>
 </head>
 <body>
   <div class="app">
@@ -37,6 +37,7 @@
           <label class="search-box"><span class="sicon" style="width:20px;display:grid"></span><input id="mq" type="search" placeholder="Filter reactions…"></label>
         </div>
         <div class="chips" id="statusChips" style="margin-bottom:16px"></div>
+        <p class="small muted" id="prefsNote" style="margin:-4px 0 12px"></p>
         <p class="small muted" style="margin-top:0"><b>Archive</b> = hidden from practice &amp; quizzes but still listed (dimmed) in the bank. <b>Blacklist</b> = hidden everywhere except here.</p>
         <div class="rows" id="manageList"></div>
       </section>

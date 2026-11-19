@@ -1,16 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   const { $, $$, esc, icon } = RL;
   RL.layout('goc', 'GOC Concept Lab');
-  const TOPICS = ['Carbocation stability', 'Carbanion stability', 'Free radical stability', 'Alkene stability', 'Resonance & hyperconjugation',
+  const ALL_TOPICS = ['Carbocation stability', 'Carbanion stability', 'Free radical stability', 'Alkene stability', 'Resonance & hyperconjugation',
     'Inductive effect', 'Aromaticity', 'Acidity', 'Basicity', 'Substituent effects (o/m/p)', 'Tautomerism & enol content',
     'Physical properties (bp, dipole, bond length)', 'Nucleophilicity', 'Leaving group ability', 'Electrophilicity & carbonyl reactivity',
     'SN1/SN2/E1/E2 reactivity', 'Electrophilic aromatic substitution', 'Rearrangements & migratory aptitude'];
-  const curated = (window.GOC_QUESTIONS || []).filter((q) => !RL.state.blacklisted.includes(q.id));
+  // profile filters: hidden topics / exams / difficulties never appear
+  const TOPICS = ALL_TOPICS.filter((t) => !RL.prefs().gocTopics.includes(t));
+  const GEN_TOPICS = RL.GOC_GEN_TOPICS.filter((t) => TOPICS.includes(t));
+  const curated = (window.GOC_QUESTIONS || []).filter((q) => !RL.state.blacklisted.includes(q.id) && !RL.gocHiddenByPrefs(q));
+  RL.prunePrefOptions($('#fDiff'), 'difficulty');
   const params = new URLSearchParams(location.search);
-  const f = { topic: params.get('topic') || 'all', type: 'all', difficulty: 'all', source: 'both' };
+  const f = { topic: TOPICS.includes(params.get('topic')) ? params.get('topic') : 'all', type: 'all', difficulty: 'all', source: 'both' };
   const counts = {}; curated.forEach((q) => (counts[q.topic] = (counts[q.topic] || 0) + 1));
   $('#fTopic').innerHTML = `<option value="all">All topics (${curated.length} curated + generated)</option>` +
-    TOPICS.map((t) => `<option value="${esc(t)}" ${t === f.topic ? 'selected' : ''}>${esc(t)} (${counts[t] || 0}${RL.GOC_GEN_TOPICS.includes(t) ? ' + ∞' : ''})</option>`).join('');
+    TOPICS.map((t) => `<option value="${esc(t)}" ${t === f.topic ? 'selected' : ''}>${esc(t)} (${counts[t] || 0}${GEN_TOPICS.includes(t) ? ' + ∞' : ''})</option>`).join('');
   $('#nextBtn').innerHTML = icon.shuffle;
 
   // trusted (generated) text may contain <b>; curated text is escaped
@@ -20,12 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const recent = [];
   function pick() {
     const pool = curated.filter((q) => (f.topic === 'all' || q.topic === f.topic) && (f.type === 'all' || q.type === f.type) && (f.difficulty === 'all' || q.difficulty === f.difficulty));
-    const genOK = f.source !== 'curated' && (f.topic === 'all' || RL.GOC_GEN_TOPICS.includes(f.topic)) && (f.type === 'all' || ['order', 'compare', 'effect'].includes(f.type));
+    const genOK = f.source !== 'curated' && GEN_TOPICS.length > 0 && (f.topic === 'all' || GEN_TOPICS.includes(f.topic)) && (f.type === 'all' || ['order', 'compare', 'effect'].includes(f.type));
     const useGen = genOK && (f.source === 'generated' || !pool.length || Math.random() < 0.3);
     if (useGen) {
       for (let i = 0; i < 30; i++) {
         const g = RL.generateGOC(f.topic === 'all' ? null : f.topic);
-        if (g && (f.type === 'all' || g.type === f.type) && (f.difficulty === 'all' || g.difficulty === f.difficulty) && !recent.includes(g.id)) return g;
+        if (g && !RL.gocHiddenByPrefs(g) && (f.type === 'all' || g.type === f.type) && (f.difficulty === 'all' || g.difficulty === f.difficulty) && !recent.includes(g.id)) return g;
       }
     }
     if (f.source === 'generated' && !genOK) return null;
@@ -46,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   function renderTopicStats() {
     const m = {}; (RL.state.goc || []).forEach((a) => { const v = (m[a.topic] = m[a.topic] || [0, 0]); v[0] += a.score; v[1]++; });
-    const rows = Object.entries(m).map(([t, [s, c]]) => [t, Math.round((100 * s) / c), c]).sort((a, b) => a[1] - b[1]);
+    const rows = Object.entries(m).filter(([t]) => TOPICS.includes(t)).map(([t, [s, c]]) => [t, Math.round((100 * s) / c), c]).sort((a, b) => a[1] - b[1]);
     $('#topicStats').innerHTML = rows.length ? rows.slice(0, 8).map(([t, p, c]) => `
       <button class="row" style="grid-template-columns:1fr 70px 40px;background:var(--panel);min-height:52px;text-align:left;border:0;cursor:pointer;font:inherit" data-t="${esc(t)}" title="Practise this topic">
         <span class="small" style="font-weight:500">${esc(t)}</span><span class="bar thin"><span style="width:${p}%"></span></span><span class="small muted" style="text-align:right">${p}%</span></button>`).join('')

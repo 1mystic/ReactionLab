@@ -3,11 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
   RL.layout('home', 'Dashboard');
   const pool = RL.reactions({ include: 'active' });
   const all = RL.reactions({ include: 'visible' });
-  $('#heroCount').textContent = `· ${all.length} reactions`;
+  $("#heroCount").textContent = `${all.length} reactions · ${RL.visibleCategories().length} chapters · GOC lab`;
+  // reflect profile filters in static copy
+  const ex = RL.visibleExams();
+  if ($('#heroPill')) $('#heroPill').textContent = `${(ex.length ? ex : RL.EXAMS).join(' · ')} · Organic`;
+  if ($('#bankCount')) $('#bankCount').textContent = `${all.length} reactions`;
   $('#rotdBtn').innerHTML = icon.shuffle;
 
   // floating equations in hero
-  const sample = RL.shuffle(pool.filter((r) => r.reagents && (r.reactants + r.products).length < 60)).slice(0, 3);
+  const sample = RL.shuffle(pool.filter((r) => r.reagents && (r.reactants + r.products + r.reagents).length < 52)).slice(0, 2);
   $('#heroEqs').innerHTML = sample.map((r) => `<div class="eq-float"><div class="small" style="opacity:.7;margin-bottom:6px">${esc(r.name)}</div><div class="eq-fit">${RL.equation(r, 'none', false)}</div></div>`).join('');
 
   // stats
@@ -48,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (weak.length) $('#weakFoot').innerHTML = 'Focus: ' + weak.map((w) => esc(RL.byId(w.id).name)).join(' · ');
 
   // recent attempts
-  const recent = RL.state.attempts.slice(-6).reverse();
+  const recent = RL.state.attempts.filter((a) => RL.isShown(a.id)).slice(-6).reverse();
   if (!recent.length) $('#recent').innerHTML = '<p class="muted" style="margin:0">No attempts yet - <a href="practice.html" style="text-decoration:underline">start your first drill</a>.</p>';
   else $('#recent').innerHTML = `<div class="rows-head" style="grid-template-columns:2fr 1.5fr 1fr 1fr"><span>Reaction</span><span class="hide-sm">Chapter</span><span>Mode</span><span>Score</span></div>` +
     recent.map((a) => { const x = RL.byId(a.id); if (!x) return ''; const [, c] = RL.verdict(a.score);

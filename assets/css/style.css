@@ -578,25 +578,25 @@ html.loading .main > :not(.topbar) { opacity: 0; }
 @keyframes slide-in { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: none; } }
 @keyframes drop-in { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
 @keyframes float-in { from { opacity: 0; transform: translateY(18px) scale(.97); } to { opacity: 1; transform: none; } }
-.sidebar { animation: slide-in .5s var(--ease) both; }
-.topbar { animation: drop-in .45s var(--ease) both; }
-.main > section, .main > .grid, .main > .panel { animation: rise .55s var(--ease) both; }
+.sidebar { animation: slide-in .5s var(--ease) backwards; }
+.topbar { animation: drop-in .45s var(--ease) backwards; }
+.main > section, .main > .grid, .main > .panel { animation: rise .55s var(--ease) backwards; }
 .main > :nth-child(3) { animation-delay: .06s; }
 .main > :nth-child(4) { animation-delay: .12s; }
 .main > :nth-child(5) { animation-delay: .18s; }
 .main > :nth-child(6) { animation-delay: .24s; }
 .main > :nth-child(n+7) { animation-delay: .3s; }
-.hero h1, .hero p, .hero .pill, .hero .chips { animation: rise .6s var(--ease) both; }
+.hero h1, .hero p, .hero .pill, .hero .chips { animation: rise .6s var(--ease) backwards; }
 .hero .pill { animation-delay: .1s; } .hero h1 { animation-delay: .18s; }
 .hero p { animation-delay: .26s; } .hero .chips { animation-delay: .34s; }
-.hero .eq-float { animation: float-in .6s var(--ease) both; }
+.hero .eq-float { animation: float-in .6s var(--ease) backwards; }
 .hero .eq-float:nth-child(1) { animation-delay: .3s; } .hero .eq-float:nth-child(2) { animation-delay: .4s; }
 .hero .eq-float:nth-child(3) { animation-delay: .5s; } .hero .eq-float:nth-child(4) { animation-delay: .6s; }
-.stats-grid > *, .how-grid > *, .bank-grid > *, .quick-grid > * { animation: rise .5s var(--ease) both; }
+.stats-grid > *, .how-grid > *, .bank-grid > :nth-child(-n+12), .quick-grid > * { animation: rise .5s var(--ease) backwards; }
 .stats-grid > :nth-child(2), .how-grid > :nth-child(2), .quick-grid > :nth-child(2) { animation-delay: .06s; }
 .stats-grid > :nth-child(3), .how-grid > :nth-child(3), .quick-grid > :nth-child(3) { animation-delay: .12s; }
 .stats-grid > :nth-child(4), .how-grid > :nth-child(4), .quick-grid > :nth-child(4) { animation-delay: .18s; }
-.bank-grid > :nth-child(n+9) { animation-delay: .2s; }
+.bank-grid > :nth-child(n+7) { animation-delay: .12s; }
 .note-card, .r-card, .btn, .chip, .nav-link { transition: transform .2s var(--ease), box-shadow .2s var(--ease), background .15s, border-color .15s, opacity .15s; }
 .btn:hover { transform: translateY(-1px); }
 @media (prefers-reduced-motion: reduce) {
@@ -629,7 +629,7 @@ html.loading .main > :not(.topbar) { opacity: 0; }
   .main { gap: var(--s-3); }
   .grid { gap: var(--s-3); }
   .sidebar { top: auto !important; height: auto !important; bottom: max(var(--s-3), env(safe-area-inset-bottom)); left: var(--s-3); right: var(--s-3); padding: var(--s-2);
-    border-radius: var(--radius-xl); animation: rise .5s var(--ease) both; }
+    border-radius: var(--radius-xl); animation: rise .5s var(--ease) backwards; }
   .nav-link { padding: var(--s-3); min-height: 48px; border-radius: var(--radius-md); }
   .panel { padding: var(--s-4); border-radius: var(--radius-lg); }
   .hero { padding: var(--s-5) var(--s-4); border-radius: var(--radius-lg); }
@@ -647,3 +647,46 @@ html.loading .main > :not(.topbar) { opacity: 0; }
 .chapter-chips .chip { height: 36px; padding: 0 var(--s-3); font-size: 13px; gap: var(--s-2); }
 .chapter-chips .chip.active .cat-dot { box-shadow: 0 0 0 2px #fff; }
 @media (max-width: 760px) { .chapter-chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: var(--s-1); scrollbar-width: none; } .chapter-chips .chip { flex: none; } }
+
+/* ---- Open dropdowns always above neighbouring sections ---- */
+.main > *:has(.cselect.open), .panel:has(.cselect.open), .card:has(.cselect.open) { position: relative; z-index: 30; }
+.cselect.open { z-index: 61; }
+.modal .cselect-menu { z-index: 70; }
+
+/* ---- Hero: calm, two-column, generous whitespace ---- */
+.hero { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: var(--s-6); align-items: center; }
+.hero .pill { margin-bottom: var(--s-5); }
+.hero h1 { font-size: clamp(32px, 3.6vw, 52px); }
+.hero p { margin: var(--s-4) 0 var(--s-5); font-size: 17px; max-width: 440px; }
+.hero-meta { margin-top: var(--s-4); color: #9ea19b; letter-spacing: .01em; }
+.hero-eqs { display: flex; flex-direction: column; gap: var(--s-3); }
+.hero .hero-eqs .eq-float { margin: 0 !important; background: #1d1d1d; border-color: #2a2a2a; color: #fff; padding: var(--s-5); }
+.hero .hero-eqs .eq-float:nth-child(2) { background: #1d1d1d; border-color: #2a2a2a; color: #fff; }
+.hero .hero-eqs .eq-float:first-child { border-color: rgba(166, 240, 160, .35); }
+@media (max-width: 1100px) { .hero { grid-template-columns: 1fr; gap: var(--s-5); } }
+@media (max-width: 760px) {
+  .hero p { font-size: 15px; }
+  .hero .hero-eqs .eq-float:nth-child(n+2) { display: none; }
+  .hero .chips .btn { flex: 1 1 0; }
+}
+
+/* ---- Profile & filters page ---- */
+.set-profile { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: var(--s-5); }
+.set-summary { display: flex; align-items: center; gap: var(--s-4); }
+.set-summary .score-ring { width: 104px; height: 104px; } .set-summary .score-ring > div { width: 82px; height: 82px; }
+.set-summary .score-ring b { font-size: 24px; }
+.set-two { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.set-chips { gap: var(--s-2); }
+.set-chip { gap: var(--s-2); }
+.set-chip svg { width: 14px; height: 14px; }
+.set-chip.off { background: transparent; color: var(--muted); border-style: dashed; }
+.set-chip.off > span:first-of-type, .set-chip.off > span:nth-of-type(2):not(.count) { text-decoration: line-through; }
+.set-chip.off .cat-dot { opacity: .35; }
+.set-label { margin: var(--s-4) 0 var(--s-2); font-weight: 500; }
+.set-tag-search { max-width: 520px; margin-bottom: var(--s-2); }
+@media (max-width: 1100px) { .set-two { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .set-profile { grid-template-columns: 1fr; } }
+@media (max-width: 760px) {
+  .sidebar { gap: var(--s-1); }
+  .sidebar .nav-link { flex: 1 1 0; min-width: 0; padding: var(--s-3) 0; justify-content: center; }
+}
