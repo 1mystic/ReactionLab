@@ -1,0 +1,362 @@
+[
+  {
+    "id": "chain-ethanol-to-ethyl-ethanoate",
+    "title": "Ethanol to ethyl ethanoate",
+    "chapters": ["Alcohols, Phenols & Ethers", "Carboxylic Acids & Derivatives"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "CH3CH2OH",
+    "startName": "ethanol",
+    "steps": [
+      {
+        "reagent": "K2Cr2O7, H2SO4",
+        "conditions": "heat",
+        "product": "CH3COOH",
+        "productName": "ethanoic acid",
+        "distractors": ["CH3CHO", "CH3CH2OCH2CH3", "CH2=CH2"],
+        "reaction": "Oxidation of a primary alcohol",
+        "explanation": "Acidified dichromate oxidises ethanol all the way to the acid. The intermediate $\\ce{CH3CHO}$ is oxidised further under these conditions, so it is not isolated."
+      },
+      {
+        "reagent": "CH3CH2OH, conc. H2SO4",
+        "conditions": "heat",
+        "product": "CH3COOCH2CH3",
+        "productName": "ethyl ethanoate",
+        "distractors": ["CH3COONa", "CH3CH2OCH2CH3", "CH3CONH2"],
+        "reaction": "Fischer esterification",
+        "explanation": "The acid catalyses the reaction of the carboxylic acid with ethanol to give the ester and water. $\\ce{CH3COONa}$ would form only with a base, and the ether $\\ce{CH3CH2OCH2CH3}$ is a dehydration product of ethanol alone."
+      }
+    ],
+    "tags": ["oxidation", "esterification"]
+  },
+  {
+    "id": "chain-ethene-to-ethanal",
+    "title": "Ethene to ethanal",
+    "chapters": ["Hydrocarbons", "Alcohols, Phenols & Ethers", "Aldehydes & Ketones"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "CH2=CH2",
+    "startName": "ethene",
+    "steps": [
+      {
+        "reagent": "H2O, H3PO4",
+        "conditions": "573 K, 60-70 atm",
+        "product": "CH3CH2OH",
+        "productName": "ethanol",
+        "distractors": ["CH3CH2Cl", "CH3CH3", "CH3CH2OCH2CH3"],
+        "reaction": "Acid-catalysed hydration of an alkene",
+        "explanation": "Ethene adds water across its double bond in the presence of phosphoric acid, giving ethanol. Hydrogen chloride would instead give chloroethane, $\\ce{CH3CH2Cl}$."
+      },
+      {
+        "reagent": "PCC, CH2Cl2",
+        "conditions": "",
+        "product": "CH3CHO",
+        "productName": "ethanal",
+        "distractors": ["CH3COOH", "CH3CH2Cl", "CH3CH2OCH2CH3"],
+        "reaction": "Mild oxidation of a primary alcohol",
+        "explanation": "PCC is a mild oxidant that stops at the aldehyde. $\\ce{K2Cr2O7}$ in acid would over-oxidise the product to $\\ce{CH3COOH}$."
+      }
+    ],
+    "tags": ["hydration", "oxidation", "PCC"]
+  },
+  {
+    "id": "chain-methyl-bromide-to-ethanamine",
+    "title": "Methyl bromide to ethanamine",
+    "chapters": ["Haloalkanes & Haloarenes", "Amines & Diazonium Salts"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "CH3Br",
+    "startName": "methyl bromide",
+    "steps": [
+      {
+        "reagent": "KCN, ethanol",
+        "conditions": "heat",
+        "product": "CH3CN",
+        "productName": "methyl cyanide",
+        "distractors": ["CH3NC", "CH3OH", "CH3OCH3"],
+        "reaction": "Nucleophilic substitution with cyanide ion",
+        "explanation": "The cyanide ion attacks through carbon, so the nitrile $\\ce{CH3CN}$ forms. Silver cyanide would instead give the isocyanide $\\ce{CH3NC}$. Aqueous alkali would give methanol."
+      },
+      {
+        "reagent": "LiAlH4, then H2O",
+        "conditions": "",
+        "product": "CH3CH2NH2",
+        "productName": "ethanamine",
+        "distractors": ["CH3COOH", "CH3CH2OH", "CH3CH2NHCH2CH3"],
+        "reaction": "Reduction of a nitrile",
+        "explanation": "$\\ce{LiAlH4}$ reduces the nitrile group to $\\ce{-CH2NH2}$, which adds one carbon to the chain. Acid or base hydrolysis would give the carboxylic acid instead."
+      }
+    ],
+    "tags": ["SN2", "nitrile", "reduction"]
+  },
+  {
+    "id": "chain-benzene-to-aniline",
+    "title": "Benzene to aniline",
+    "chapters": ["Aromatic Compounds", "Amines & Diazonium Salts"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "C6H6",
+    "startName": "benzene",
+    "steps": [
+      {
+        "reagent": "conc. HNO3, conc. H2SO4",
+        "conditions": "323-333 K",
+        "product": "C6H5NO2",
+        "productName": "nitrobenzene",
+        "distractors": ["C6H5SO3H", "C6H4(NO2)2", "C6H5NO"],
+        "reaction": "Electrophilic nitration",
+        "explanation": "The nitronium ion $\\ce{NO2+}$ substitutes a ring hydrogen. Keeping the temperature below 333 K limits dinitration, and sulfonation needs fuming sulfuric acid."
+      },
+      {
+        "reagent": "Sn, conc. HCl, then NaOH",
+        "conditions": "",
+        "product": "C6H5NH2",
+        "productName": "aniline",
+        "distractors": ["C6H5NHOH", "C6H5NO2", "C6H11NH2"],
+        "reaction": "Reduction of a nitro group",
+        "explanation": "Tin and hydrochloric acid reduce $\\ce{-NO2}$ to $\\ce{-NH2}$. Sodium hydroxide then liberates the free amine from its anilinium salt. $\\ce{C6H5NHOH}$ is only an intermediate of partial reduction."
+      }
+    ],
+    "tags": ["nitration", "reduction"]
+  },
+  {
+    "id": "chain-aniline-to-phenol-via-diazonium",
+    "title": "Aniline to phenol via a diazonium salt",
+    "chapters": ["Amines & Diazonium Salts", "Alcohols, Phenols & Ethers"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "C6H5NH2",
+    "startName": "aniline",
+    "steps": [
+      {
+        "reagent": "NaNO2, HCl",
+        "conditions": "273-278 K",
+        "product": "C6H5N2Cl",
+        "productName": "benzenediazonium chloride",
+        "distractors": ["C6H5OH", "C6H5N=NC6H5", "C6H5NO2"],
+        "reaction": "Diazotisation",
+        "explanation": "Nitrous acid, generated in situ at low temperature, converts the primary aromatic amine into the diazonium salt $\\ce{C6H5N2+Cl-}$. The low temperature is needed because the salt is unstable."
+      },
+      {
+        "reagent": "H2O",
+        "conditions": "warm",
+        "product": "C6H5OH",
+        "productName": "phenol",
+        "distractors": ["C6H6", "C6H5Cl", "C6H5NH2"],
+        "reaction": "Hydrolysis of a diazonium salt",
+        "explanation": "Warming the aqueous diazonium salt expels $\\ce{N2}$ and the ring carbon bears an $\\ce{-OH}$ group. $\\ce{CuCl}$ would give chlorobenzene instead (Sandmeyer), and hypophosphorous acid would give benzene."
+      }
+    ],
+    "tags": ["diazotisation", "Sandmeyer"]
+  },
+  {
+    "id": "chain-acetic-acid-to-acetamide",
+    "title": "Ethanoic acid to ethanamide",
+    "chapters": ["Carboxylic Acids & Derivatives"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "CH3COOH",
+    "startName": "ethanoic acid",
+    "steps": [
+      {
+        "reagent": "PCl5",
+        "conditions": "",
+        "product": "CH3COCl",
+        "productName": "ethanoyl chloride",
+        "distractors": ["ClCH2COOH", "(CH3CO)2O", "CH3COONa"],
+        "reaction": "Formation of an acyl chloride",
+        "explanation": "$\\ce{PCl5}$ replaces the $\\ce{-OH}$ of the acid with chlorine. Chlorination at the alpha carbon needs $\\ce{Cl2}$ with red phosphorus (Hell-Volhard-Zelinsky)."
+      },
+      {
+        "reagent": "NH3 (excess)",
+        "conditions": "",
+        "product": "CH3CONH2",
+        "productName": "ethanamide",
+        "distractors": ["CH3COONH4", "CH3CH2NH2", "CH3CN"],
+        "reaction": "Ammonolysis of an acyl chloride",
+        "explanation": "Ammonia attacks the acyl carbon and displaces chloride to give the amide. Ammonium ethanoate, $\\ce{CH3COONH4}$, forms only when ammonia simply neutralises the acid."
+      }
+    ],
+    "tags": ["acyl chloride", "amide"]
+  },
+  {
+    "id": "chain-propanone-to-propene",
+    "title": "Propanone to propene",
+    "chapters": ["Aldehydes & Ketones", "Alcohols, Phenols & Ethers", "Hydrocarbons"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "CH3COCH3",
+    "startName": "propanone",
+    "steps": [
+      {
+        "reagent": "NaBH4, then H3O+",
+        "conditions": "",
+        "product": "CH3CH(OH)CH3",
+        "productName": "propan-2-ol",
+        "distractors": ["CH3CH2CH2OH", "(CH3)3COH", "CH3CH2COOH"],
+        "reaction": "Reduction of a ketone",
+        "explanation": "Sodium borohydride reduces the carbonyl group of a ketone to a secondary alcohol. A primary alcohol such as $\\ce{CH3CH2CH2OH}$ would require an aldehyde as the starting material."
+      },
+      {
+        "reagent": "conc. H2SO4",
+        "conditions": "443 K",
+        "product": "CH3CH=CH2",
+        "productName": "propene",
+        "distractors": ["CH3CH2CH3", "CH3CH2CHO", "(CH3)2CHOCH(CH3)2"],
+        "reaction": "Dehydration of an alcohol",
+        "explanation": "Heating with concentrated acid eliminates water to give the alkene. At lower temperatures the ether $\\ce{(CH3)2CHOCH(CH3)2}$ forms instead, and propane would need reduction, not acid."
+      }
+    ],
+    "tags": ["reduction", "dehydration"]
+  },
+  {
+    "id": "chain-benzoic-acid-to-benzamide",
+    "title": "Benzoic acid to benzamide",
+    "chapters": ["Carboxylic Acids & Derivatives", "Aromatic Compounds"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "C6H5COOH",
+    "startName": "benzoic acid",
+    "steps": [
+      {
+        "reagent": "SOCl2",
+        "conditions": "",
+        "product": "C6H5COCl",
+        "productName": "benzoyl chloride",
+        "distractors": ["C6H5CH2Cl", "C6H5COOCOC6H5", "C6H5CO2Na"],
+        "reaction": "Formation of an acyl chloride",
+        "explanation": "Thionyl chloride converts the carboxylic acid into the acyl chloride, with $\\ce{SO2}$ and $\\ce{HCl}$ escaping as gases. Benzyl chloride would need a side-chain reaction."
+      },
+      {
+        "reagent": "NH3 (excess)",
+        "conditions": "",
+        "product": "C6H5CONH2",
+        "productName": "benzamide",
+        "distractors": ["C6H5CH2NH2", "C6H5COONH4", "C6H5CN"],
+        "reaction": "Ammonolysis of an acyl chloride",
+        "explanation": "Ammonia displaces chloride from the acyl chloride to form the amide. Reduction would give benzylamine, and dehydration of the amide would give benzonitrile."
+      }
+    ],
+    "tags": ["acyl chloride", "amide"]
+  },
+  {
+    "id": "chain-chlorobenzene-to-tribromophenol",
+    "title": "Chlorobenzene to 2,4,6-tribromophenol",
+    "chapters": ["Haloalkanes & Haloarenes", "Alcohols, Phenols & Ethers", "Aromatic Compounds"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "C6H5Cl",
+    "startName": "chlorobenzene",
+    "steps": [
+      {
+        "reagent": "NaOH, 623 K, 300 atm, then H3O+",
+        "conditions": "",
+        "product": "C6H5OH",
+        "productName": "phenol",
+        "distractors": ["C6H5ONa", "C6H6", "C6H5NH2"],
+        "reaction": "Dow process",
+        "explanation": "The aryl chloride is unreactive, so drastic conditions are needed. The initial product is sodium phenoxide $\\ce{C6H5ONa}$, which is acidified to give phenol."
+      },
+      {
+        "reagent": "Br2 water",
+        "conditions": "room temperature",
+        "product": "C6H2Br3OH",
+        "productName": "2,4,6-tribromophenol",
+        "distractors": ["C6H4BrOH", "C6H3Br2OH", "C6H5OH"],
+        "reaction": "Electrophilic bromination of an activated ring",
+        "explanation": "The $\\ce{-OH}$ group activates the ring at the ortho and para positions, so bromine water substitutes all three free positions without any catalyst."
+      }
+    ],
+    "tags": ["Dow process", "bromination"]
+  },
+  {
+    "id": "chain-glucose-to-ethene",
+    "title": "Glucose to ethene",
+    "chapters": ["Biomolecules", "Alcohols, Phenols & Ethers", "Hydrocarbons"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "C6H12O6",
+    "startName": "glucose",
+    "steps": [
+      {
+        "reagent": "yeast (zymase)",
+        "conditions": "303-311 K, anaerobic",
+        "product": "CH3CH2OH",
+        "productName": "ethanol",
+        "distractors": ["CH3CH(OH)COOH", "CH3COOH", "CH3CHO"],
+        "reaction": "Fermentation",
+        "explanation": "Zymase enzymes in yeast convert glucose to ethanol and $\\ce{CO2}$ under anaerobic conditions. Lactic acid is the product of a different fermentation, in muscle and certain bacteria."
+      },
+      {
+        "reagent": "conc. H2SO4",
+        "conditions": "443 K",
+        "product": "CH2=CH2",
+        "productName": "ethene",
+        "distractors": ["CH3CH2OCH2CH3", "CH3CHO", "CH3CH2OSO3H"],
+        "reaction": "Dehydration of an alcohol",
+        "explanation": "Hot concentrated sulfuric acid removes water from ethanol to form the alkene. At about 413 K the ether $\\ce{C2H5OC2H5}$ forms instead."
+      }
+    ],
+    "tags": ["fermentation", "dehydration"]
+  },
+  {
+    "id": "chain-ethyne-to-chlorobenzene",
+    "title": "Ethyne to chlorobenzene",
+    "chapters": ["Hydrocarbons", "Aromatic Compounds", "Haloalkanes & Haloarenes"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "HC#CH",
+    "startName": "ethyne",
+    "steps": [
+      {
+        "reagent": "red hot iron tube",
+        "conditions": "873 K",
+        "product": "C6H6",
+        "productName": "benzene",
+        "distractors": ["C6H12", "C2H6", "CH2=CHCl"],
+        "reaction": "Cyclic polymerisation of an alkyne",
+        "explanation": "Three molecules of ethyne trimerise over hot iron to give benzene. Hydrogenation of ethyne would instead give ethane."
+      },
+      {
+        "reagent": "Cl2, FeCl3",
+        "conditions": "",
+        "product": "C6H5Cl",
+        "productName": "chlorobenzene",
+        "distractors": ["C6H5CH2Cl", "C6H4Cl2", "C6H6Cl6"],
+        "reaction": "Electrophilic chlorination of the ring",
+        "explanation": "$\\ce{FeCl3}$ polarises chlorine so that the ring is substituted. Light would favour side-chain chlorination, and excess chlorine gives dichlorobenzene."
+      }
+    ],
+    "tags": ["trimerisation", "halogenation"]
+  },
+  {
+    "id": "chain-acetic-acid-to-methane",
+    "title": "Ethanoic acid to methane",
+    "chapters": ["Carboxylic Acids & Derivatives", "Hydrocarbons"],
+    "exam": ["JEE Main", "JEE Advanced"],
+    "difficulty": "easy",
+    "start": "CH3COOH",
+    "startName": "ethanoic acid",
+    "steps": [
+      {
+        "reagent": "NaOH",
+        "conditions": "",
+        "product": "CH3COONa",
+        "productName": "sodium ethanoate",
+        "distractors": ["CH3COOCH3", "CH3CH2COONa", "CH3COOCH2CH3"],
+        "reaction": "Neutralisation",
+        "explanation": "Ethanoic acid is neutralised by sodium hydroxide to its sodium salt, which is the substrate for decarboxylation in the next step."
+      },
+      {
+        "reagent": "soda lime (NaOH + CaO)",
+        "conditions": "heat",
+        "product": "CH4",
+        "productName": "methane",
+        "distractors": ["C2H6", "CH3OH", "CH3COOH"],
+        "reaction": "Decarboxylation of a sodium carboxylate",
+        "explanation": "Heating the sodium salt with soda lime removes the carboxyl group as carbonate and gives the simplest alkane. Electrolysis of the same salt (Kolbe) would give ethane instead."
+      }
+    ],
+    "tags": ["decarboxylation", "soda lime"]
+  }
+]

@@ -956,3 +956,16 @@ html[data-theme="dark"] .cselect-opt.sel .tick { color: #fff; }
 .acct-meta b { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .acct-meta span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .err-actions { flex-wrap: wrap; } .err-actions .btn { min-width: 0; flex: 1 1 140px; }
+
+/* ---- Reaction chains ---- */
+.chain-trail { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2); padding: var(--s-4); margin-bottom: var(--s-4);
+  background: var(--panel); border-radius: var(--radius-lg); overflow-x: auto; }
+.chain-node { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 40px; padding: var(--s-2) var(--s-3);
+  border-radius: var(--radius-sm); background: var(--surface); border: 1.5px solid var(--line); font-size: .95em; animation: pop .3s var(--ease) backwards; }
+.chain-node.start { border-color: var(--line-2); }
+.chain-node.cur { border-style: dashed; border-color: var(--lav); color: var(--lav); font-weight: 700; }
+.chain-node.ok { border-color: #5fbf59; background: var(--green-soft); }
+.chain-node.bad { border-color: #e5776a; background: var(--red-soft); }
+.chain-arrow { display: inline-flex; align-items: center; font-size: .85em; color: var(--ink-2); max-width: 100%; }
+.chain-q { margin: 0 0 var(--s-3); font-size: 16px; line-height: 1.6; }
+@media (max-width: 760px) { .chain-trail { padding: var(--s-3); } .chain-node { min-height: 36px; padding: var(--s-1) var(--s-2); } }

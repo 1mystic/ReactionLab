@@ -6,6 +6,7 @@ A fully static study site for organic chemistry reactions in Class 11–12 (NCER
 - **Dashboard** (`dashboard.html`): stats, reaction of the day, chapter progress, recent attempts.
 - **Practice** (`practice.html`): one click gives a random reaction with its reagent hidden. Type the name, reagent/catalyst and product. A fuzzy similarity score grades the answer (50% name, 35% reagent, 15% product/info). Hints cost 10 points each. **Reveal** shows answer cards: name, reagents, equation, mechanism, key points, when/where used, applications, examples and JEE tips.
 - **MCQ quiz** (`practice.html?mode=mcq`): randomised 5–30 question quizzes. Question types are name-the-reaction, which-reaction (reagent hidden), pick-the-reagent and predict-the-product. Wrong options are look-alikes taken from the same chapter.
+- **Reaction chains** (`practice.html?mode=chain`): multi-step questions. Start from a compound, apply reagent X, pick the product, then treat that product with reagent Y, and so on (2 to 5 steps, 4 options each). Sources in `data/chains/*.json` (format in [`data/chains/SCHEMA.md`](data/chains/SCHEMA.md)), built with `node tools/build-chains.mjs` into `data/chains.js`.
 - **GOC Concept Lab** (`goc.html`): JEE-style General Organic Chemistry questions in four types:
   - **Arrange in order**: tap items into order; partial credit for correctly ordered pairs
   - **Compare**: pick the stronger or more stable species

@@ -131,6 +131,7 @@
     if (P.tags.length) { const ht = lc(P.tags); if ((r.tags || []).some((t) => ht.has(String(t).toLowerCase()))) return true; }
     return false;
   };
+  RL.chainHiddenByPrefs = (c, P = RL.prefs()) => !c || (c.chapters || []).some((x) => P.categories.includes(x)) || P.difficulties.includes(c.difficulty) || examHidden(c.exam, P);
   RL.gocHiddenByPrefs = (q, P = RL.prefs()) => !q || P.gocTopics.includes(q.topic) || P.difficulties.includes(q.difficulty) || examHidden(q.exam, P);
   RL.visibleCategories = () => RL.CATEGORIES.filter((c) => !RL.prefs().categories.includes(c));
   RL.visibleKinds = () => RL.KINDS.filter((c) => !RL.prefs().kinds.includes(c));
@@ -355,7 +356,7 @@
     RL.save();
   };
   RL.stats = () => {
-    const a = RL.state.attempts; const seen = new Set(a.map((x) => x.id));
+    const a = RL.state.attempts.filter((x) => x.mode !== 'chain'); const seen = new Set(a.map((x) => x.id));
     const avg = a.length ? Math.round(a.reduce((s, x) => s + x.score, 0) / a.length) : 0;
     const day = 864e5; const days = new Set(a.map((x) => Math.floor(x.ts / day)));
     let streak = 0; let d = Math.floor(Date.now() / day); while (days.has(d)) { streak++; d--; }

@@ -1,7 +1,7 @@
 RL.boot(() => {
   const { $, $$, esc, icon } = RL;
   const params = new URLSearchParams(location.search);
-  let mode = params.get('mode') === 'mcq' ? 'mcq' : 'free';
+  let mode = ['mcq', 'chain'].includes(params.get('mode')) ? params.get('mode') : 'free';
   RL.layout(mode === 'mcq' ? 'mcq' : 'practice', mode === 'mcq' ? 'MCQ Quiz' : 'Practice');
 
   const qc = params.get('category');
@@ -17,16 +17,17 @@ RL.boot(() => {
     const c = b.dataset.c;
     if (!c) filters.category = [];
     else filters.category = filters.category.includes(c) ? filters.category.filter((x) => x !== c) : [...filters.category, c];
-    renderCats(); updatePoolInfo(); if (mode === 'free') next();
+    renderCats(); updatePoolInfo(); if (mode === 'free') next(); if (mode === 'chain') newChain();
   });
   // empty chapter selection means all chapters; send 'all' so the filter never depends on array support
   const pool = () => RL.filterPool(RL.reactions({ include: 'active' }), { ...filters, category: filters.category.length ? filters.category : 'all' });
   const updatePoolInfo = () => {
+    if (mode === 'chain') { const c = chainPool().length; $('#poolInfo').textContent = `${c} chain${c === 1 ? '' : 's'} in pool`; return; }
     const n = pool().length;
     $('#poolInfo').innerHTML = n ? `${n} reactions in pool` : (RL.prefsActive() ? 'No reactions match. Some content is hidden in <a href="settings.html" style="text-decoration:underline">Profile &amp; filters</a>' : 'No reactions match these filters');
   };
   [['#fExam', 'exam'], ['#fDiff', 'difficulty']].forEach(([s, k]) =>
-    $(s).addEventListener('change', (e) => { filters[k] = e.target.value; updatePoolInfo(); if (mode === 'free') next(); }));
+    $(s).addEventListener('change', (e) => { filters[k] = e.target.value; updatePoolInfo(); if (mode === 'free') next(); if (mode === 'chain') newChain(); }));
   renderCats(); updatePoolInfo();
 
   /* ---------------- Mode switching ---------------- */
@@ -35,8 +36,12 @@ RL.boot(() => {
     $$('#modeTabs .tab').forEach((t) => t.classList.toggle('active', t.dataset.mode === m));
     $('#freeMode').classList.toggle('hidden', m !== 'free');
     $('#mcqMode').classList.toggle('hidden', m !== 'mcq');
+    $('#chainMode').classList.toggle('hidden', m !== 'chain');
+    if (m === 'chain' && !chain) newChain();
+    if (m === 'free' && !cur) show(choose());
     $$('.nav-link').forEach((a) => a.classList.toggle('active', a.getAttribute('href') === (m === 'mcq' ? 'practice.html?mode=mcq' : 'practice.html')));
-    const u = new URL(location); m === 'mcq' ? u.searchParams.set('mode', 'mcq') : u.searchParams.delete('mode'); history.replaceState(null, '', u);
+    const u = new URL(location); m !== 'free' ? u.searchParams.set('mode', m) : u.searchParams.delete('mode'); if (m !== 'free') u.searchParams.delete('id'); history.replaceState(null, '', u);
+    updatePoolInfo();
   }
   $$('#modeTabs .tab').forEach((t) => (t.onclick = () => setMode(t.dataset.mode)));
 
@@ -255,9 +260,96 @@ RL.boot(() => {
     if ('ABCD1234'.includes(k) && k.length === 1) { const i = 'ABCD'.includes(k) ? 'ABCD'.indexOf(k) : +k - 1; const b = $$('.option')[i]; if (b && !b.disabled) b.click(); }
   });
 
+  /* ================= REACTION CHAINS (multi-step) ================= */
+  function chainPool() { return (window.CHAINS || []).filter((c) => !RL.chainHiddenByPrefs(c)
+    && (!filters.category.length || c.chapters.some((x) => filters.category.includes(x)))
+    && (filters.exam === 'all' || (c.exam && c.exam.length ? c.exam : RL.EXAMS).includes(filters.exam))
+    && (filters.difficulty === 'all' || c.difficulty === filters.difficulty)); }
+  let chain = null, ci = 0, cAns = [], cOpts = [], cPicked = null;
+  const cRecent = [];
+  const node = (formula, cls = '') => `<span class="chain-node ${cls}">${formula === null ? '?' : RL.ce(formula)}</span>`;
+  const arrow = (s) => `<span class="chain-arrow">${RL.ce(`->[${s.reagent}]${s.conditions ? `[${s.conditions}]` : ''}`)}</span>`;
+  function chainTrail() {
+    // revealed part of the chain: start -> B -> C -> ? (current step)
+    let h = node(chain.start, 'start');
+    for (let i = 0; i <= Math.min(ci, chain.steps.length - 1); i++) {
+      const s = chain.steps[i], done = i < ci || (i === ci && cPicked !== null);
+      h += arrow(s) + node(done ? s.product : null, done ? (cAns[i] ? 'ok' : 'bad') : 'cur');
+    }
+    return `<div class="chain-trail">${h}</div>`;
+  }
+  function newChain() {
+    const p = chainPool();
+    if (!p.length) {
+      $('#chainPanel').innerHTML = `<div class="panel-head"><h2>Reaction chains</h2></div><p class="muted">No chains match these filters${RL.prefsActive() ? ' (some content is hidden in <a href="settings.html" style="text-decoration:underline">Profile &amp; filters</a>)' : ''}.</p>`;
+      return;
+    }
+    const fresh = p.filter((c) => !cRecent.includes(c.id));
+    chain = RL.pick(fresh.length ? fresh : p);
+    cRecent.push(chain.id); if (cRecent.length > Math.max(0, Math.min(20, p.length - 1))) cRecent.shift();
+    ci = 0; cAns = []; cPicked = null;
+    cOpts = chain.steps.map((s) => RL.shuffle([s.product, ...s.distractors]));
+    renderChain();
+  }
+  function renderChain() {
+    const s = chain.steps[ci], n = chain.steps.length, sub = ci === 0 ? chain.start : chain.steps[ci - 1].product;
+    const answered = cPicked !== null, ok = answered && cOpts[ci][cPicked] === s.product;
+    const subName = ci === 0 ? chain.startName : chain.steps[ci - 1].productName;
+    $('#chainPanel').innerHTML = `
+      <div class="quiz-progress" style="margin-bottom:var(--s-5)">${chain.steps.map((_, i) => `<span class="${i < cAns.length ? (cAns[i] ? 'ok' : 'bad') : i === ci ? 'cur' : ''}"></span>`).join('')}</div>
+      <div class="panel-head">
+        <h2>Step ${ci + 1} <span class="muted" style="font-size:18px">/ ${n}</span></h2>
+        <span class="pill gray">${esc(chain.difficulty)}</span>
+        <button class="icon-btn dark" id="chainNew" title="New chain (N)">${icon.shuffle}</button>
+      </div>
+      <div class="chips" style="margin:calc(-1 * var(--s-3)) 0 var(--s-4)">${chain.chapters.map((c) => `<span class="pill" style="background:${RL.CAT_COLORS[c]}33;color:var(--ink)">${esc(c)}</span>`).join('')}</div>
+      ${chainTrail()}
+      <p class="chain-q">${ci === 0 ? `Start with <b>${esc(subName)}</b>.` : `Take the product of step ${ci} (${esc(subName)}).`} Treat it with the reagent shown. <b>What is obtained?</b></p>
+      <div class="equation-box eq-fit">${RL.ce(`${sub} ->[${s.reagent}]${s.conditions ? `[${s.conditions}]` : ''} $\\text{ ? }$`, true)}</div>
+      <div class="options" style="margin-top:var(--s-4)">${cOpts[ci].map((o, i) => {
+        const cls = !answered ? '' : o === s.product ? 'correct' : i === cPicked ? 'wrong' : '';
+        return `<button class="option ${cls}" data-i="${i}" ${answered ? 'disabled' : ''}><span class="letter">${'ABCD'[i]}</span><span>${RL.ceWrap(o)}</span></button>`;
+      }).join('')}</div>
+      ${answered ? `
+        <div class="note-card ${ok ? 'green' : 'amber'}" style="min-height:0;margin-top:var(--s-4)">
+          <h3>${ok ? '✓ Correct' : '✗ Not quite'}: ${esc(s.productName)}</h3>
+          <div><b>${esc(s.reaction)}.</b> ${RL.rich(s.explanation)}</div>
+          <div class="chips" style="margin-top:var(--s-2)"><button class="btn dark" id="chainNext">${ci + 1 < n ? `Next step ${icon.arrow}` : 'See result'}</button></div>
+        </div>` : '<p class="small muted" style="margin-top:var(--s-3)"><kbd>1</kbd>-<kbd>4</kbd> answer · <kbd>N</kbd> new chain</p>'}`;
+    $$('#chainPanel .option').forEach((b) => (b.onclick = () => { cPicked = +b.dataset.i; cAns[ci] = cOpts[ci][cPicked] === s.product; renderChain(); }));
+    $('#chainNew').onclick = newChain;
+    const nx = $('#chainNext'); if (nx) { nx.onclick = () => { if (ci + 1 < n) { ci++; cPicked = null; renderChain(); } else chainResult(); }; nx.focus({ preventScroll: true }); }
+    RL.fitAll($('#chainPanel'));
+  }
+  function chainResult() {
+    const right = cAns.filter(Boolean).length, n = chain.steps.length, pct = Math.round((100 * right) / n);
+    RL.logAttempt(chain.id, pct, 'chain');
+    const [label, color] = RL.verdict(pct);
+    let prev = chain.start;
+    const lines = chain.steps.map((s, i) => { const line = `<div class="row" style="grid-template-columns:28px 1fr;background:var(--panel)"><span class="pill ${cAns[i] ? 'green' : 'red'}">${i + 1}</span><div class="eq-inline">${RL.ce(`${prev} ->[${s.reagent}]${s.conditions ? `[${s.conditions}]` : ''} ${s.product}`)}<div class="small muted">${esc(s.reaction)}</div></div></div>`; prev = s.product; return line; }).join('');
+    $('#chainPanel').innerHTML = `
+      <div class="panel-head"><h2>${esc(chain.title)}</h2><span class="pill ${color}">${label}</span></div>
+      <div class="card" style="display:flex;gap:var(--s-5);align-items:center;flex-wrap:wrap;background:var(--panel);border:0;margin-bottom:var(--s-4)">
+        <div class="score-ring" style="--ring:${color === 'green' ? '#5fbf59' : color === 'amber' ? '#e8b33c' : '#e5776a'}" id="cRing"><div><div><b>${right}/${n}</b><div class="small muted">steps</div></div></div></div>
+        <div style="flex:1;min-width:200px"><h3>${pct}% of the chain correct</h3><p class="muted" style="margin:var(--s-2) 0 0">Every step is listed below with its reaction.</p></div>
+      </div>
+      <div class="rows">${lines}</div>
+      <div class="chips" style="margin-top:var(--s-4)"><button class="btn start" id="chainAgain">${icon.shuffle} New chain</button><button class="btn" id="chainRetry">Retry this chain</button></div>`;
+    requestAnimationFrame(() => requestAnimationFrame(() => $('#cRing').style.setProperty('--p', pct)));
+    $('#chainAgain').onclick = newChain;
+    $('#chainRetry').onclick = () => { ci = 0; cAns = []; cPicked = null; cOpts = chain.steps.map((s) => RL.shuffle([s.product, ...s.distractors])); renderChain(); };
+    RL.fitAll($('#chainPanel'));
+  }
+  document.addEventListener('keydown', (e) => {
+    if (mode !== 'chain' || $('.modal-backdrop') || /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) return;
+    const k = e.key.toUpperCase();
+    if (k === 'N' && !e.ctrlKey && !e.metaKey) { newChain(); return; }
+    if ('ABCD1234'.includes(k) && k.length === 1) { const i = 'ABCD'.includes(k) ? 'ABCD'.indexOf(k) : +k - 1; const b = $$('#chainPanel .option')[i]; if (b && !b.disabled) b.click(); }
+  });
+
   /* ---------------- init ---------------- */
   setMode(mode);
   const startId = params.get('id');
   const start = startId && RL.byId(startId);
-  show(start || choose());
+  if (mode === 'free') show(start || choose());
 });

@@ -1,0 +1,990 @@
+[
+ {
+  "id": "chain-aniline-to-iodobenzene",
+  "title": "Aniline to iodobenzene via diazonium salt",
+  "chapters": [
+   "Amines & Diazonium Salts"
+  ],
+  "exam": [
+   "JEE Main"
+  ],
+  "difficulty": "easy",
+  "start": "C6H5NH2",
+  "startName": "aniline",
+  "steps": [
+   {
+    "reagent": "NaNO2, HCl",
+    "conditions": "273 K",
+    "product": "C6H5N2^+Cl^-",
+    "productName": "benzenediazonium chloride",
+    "distractors": [
+     "C6H5NO2",
+     "C6H5OH",
+     "C6H5NHNH2"
+    ],
+    "reaction": "Diazotisation",
+    "explanation": "Primary aromatic amines react with nitrous acid (from $\\ce{NaNO2}$ and $\\ce{HCl}$) at 273-278 K to give stable arenediazonium salts."
+   },
+   {
+    "reagent": "KI",
+    "conditions": "",
+    "product": "C6H5I",
+    "productName": "iodobenzene",
+    "distractors": [
+     "C6H5OH",
+     "C6H5Cl",
+     "C6H6"
+    ],
+    "reaction": "Diazonium replacement by iodide",
+    "explanation": "Iodide displaces $\\ce{N2}$ directly, with no copper catalyst needed; $\\ce{H3PO2}$ would give benzene and warm water would give phenol."
+   }
+  ],
+  "tags": [
+   "diazonium",
+   "iodination"
+  ]
+ },
+ {
+  "id": "chain-ethanamide-to-methyl-isocyanide",
+  "title": "Ethanamide to methyl isocyanide",
+  "chapters": [
+   "Amines & Diazonium Salts",
+   "Carboxylic Acids & Derivatives"
+  ],
+  "exam": [
+   "JEE Main"
+  ],
+  "difficulty": "easy",
+  "start": "CH3CONH2",
+  "startName": "ethanamide",
+  "steps": [
+   {
+    "reagent": "Br2, NaOH",
+    "conditions": "heat",
+    "product": "CH3NH2",
+    "productName": "methanamine",
+    "distractors": [
+     "CH3CH2NH2",
+     "CH3COONH4",
+     "CH3CN"
+    ],
+    "reaction": "Degradation of amide (one carbon lost)",
+    "explanation": "The amide loses its carbonyl carbon as carbonate, so the amine has one carbon fewer than the amide."
+   },
+   {
+    "reagent": "CHCl3, KOH (alc.)",
+    "conditions": "heat",
+    "product": "CH3NC",
+    "productName": "methyl isocyanide",
+    "distractors": [
+     "CH3CN",
+     "CH3NHCH3",
+     "CH3NHCHO"
+    ],
+    "reaction": "Test for primary amines",
+    "explanation": "Only primary amines react with chloroform and alcoholic KOH to give foul-smelling isocyanides."
+   }
+  ],
+  "tags": [
+   "hofmann",
+   "carbylamine"
+  ]
+ },
+ {
+  "id": "chain-nitrobenzene-to-benzonitrile",
+  "title": "Nitrobenzene to benzonitrile",
+  "chapters": [
+   "Amines & Diazonium Salts",
+   "Aromatic Compounds"
+  ],
+  "exam": [
+   "JEE Main"
+  ],
+  "difficulty": "easy",
+  "start": "C6H5NO2",
+  "startName": "nitrobenzene",
+  "steps": [
+   {
+    "reagent": "Sn, HCl",
+    "conditions": "",
+    "product": "C6H5NH2",
+    "productName": "aniline",
+    "distractors": [
+     "C6H5N=NC6H5",
+     "C6H5NHOH",
+     "C6H5NHCOCH3"
+    ],
+    "reaction": "Reduction of nitro group",
+    "explanation": "Sn with $\\ce{HCl}$ fully reduces the nitro group to the amine (via the hydroxylamine stage)."
+   },
+   {
+    "reagent": "NaNO2, HCl",
+    "conditions": "273 K",
+    "product": "C6H5N2^+Cl^-",
+    "productName": "benzenediazonium chloride",
+    "distractors": [
+     "C6H5OH",
+     "C6H5NO2",
+     "C6H5NHNO"
+    ],
+    "reaction": "Diazotisation",
+    "explanation": "Cold nitrous acid converts the primary amine into the diazonium salt."
+   },
+   {
+    "reagent": "CuCN",
+    "conditions": "heat",
+    "product": "C6H5CN",
+    "productName": "benzonitrile",
+    "distractors": [
+     "C6H5NC",
+     "C6H5OH",
+     "C6H5COOH"
+    ],
+    "reaction": "Diazonium replacement by cyanide",
+    "explanation": "Cuprous cyanide replaces $\\ce{N2+}$ by $\\ce{CN}$ and gives the nitrile, not the isocyanide or the phenol."
+   }
+  ],
+  "tags": [
+   "diazonium",
+   "nitrile"
+  ]
+ },
+ {
+  "id": "chain-phthalimide-to-ethylamine",
+  "title": "Phthalimide to ethylamine",
+  "chapters": [
+   "Amines & Diazonium Salts"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "start": "C6H4(CO)2NH",
+  "startName": "phthalimide",
+  "steps": [
+   {
+    "reagent": "KOH",
+    "conditions": "ethanol",
+    "product": "C6H4(CO)2NK",
+    "productName": "potassium phthalimide",
+    "distractors": [
+     "C6H4(COOK)2",
+     "C6H4(COOH)2",
+     "C6H4(CO)2O"
+    ],
+    "reaction": "Deprotonation of imide N-H",
+    "explanation": "The imide N-H is acidic because of the two flanking carbonyls, so KOH forms the nitrogen anion salt without opening the ring."
+   },
+   {
+    "reagent": "CH3CH2Br",
+    "conditions": "",
+    "product": "C6H4(CO)2NCH2CH3",
+    "productName": "N-ethylphthalimide",
+    "distractors": [
+     "C6H4(CO)2NH",
+     "CH3CH2NH2",
+     "C6H4(COOCH2CH3)2"
+    ],
+    "reaction": "Nucleophilic substitution (SN2)",
+    "explanation": "The phthalimide anion attacks the primary alkyl halide through nitrogen."
+   },
+   {
+    "reagent": "NaOH (aq)",
+    "conditions": "heat",
+    "product": "CH3CH2NH2",
+    "productName": "ethanamine",
+    "distractors": [
+     "(CH3CH2)2NH",
+     "CH3CH2OH",
+     "(CH3CH2)3N"
+    ],
+    "reaction": "Hydrolysis of N-alkylphthalimide",
+    "explanation": "Hydrolysis frees the pure primary amine; over-alkylation to secondary and tertiary amines is not possible in this route."
+   }
+  ],
+  "tags": [
+   "gabriel",
+   "primary amine"
+  ]
+ },
+ {
+  "id": "chain-aniline-to-p-bromoaniline",
+  "title": "Aniline to p-bromoaniline",
+  "chapters": [
+   "Amines & Diazonium Salts",
+   "Aromatic Compounds"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "start": "C6H5NH2",
+  "startName": "aniline",
+  "steps": [
+   {
+    "reagent": "(CH3CO)2O",
+    "conditions": "pyridine",
+    "product": "C6H5NHCOCH3",
+    "productName": "acetanilide",
+    "distractors": [
+     "C6H5N(COCH3)2",
+     "C6H5NH3^+Cl^-",
+     "C6H5COCH3"
+    ],
+    "reaction": "Acetylation of amine",
+    "explanation": "Acetylation converts the strongly activating amino group into a moderately activating amide."
+   },
+   {
+    "reagent": "Br2",
+    "conditions": "CH3COOH",
+    "product": "p-BrC6H4NHCOCH3",
+    "productName": "p-bromoacetanilide",
+    "distractors": [
+     "2,4,6-Br3C6H2NHCOCH3",
+     "o-BrC6H4NHCOCH3",
+     "m-BrC6H4NHCOCH3"
+    ],
+    "reaction": "Electrophilic bromination",
+    "explanation": "The acetamido group is o,p-directing and the bulky group favours the para product over the ortho one."
+   },
+   {
+    "reagent": "H3O+",
+    "conditions": "heat",
+    "product": "p-BrC6H4NH2",
+    "productName": "p-bromoaniline",
+    "distractors": [
+     "2,4,6-Br3C6H2NH2",
+     "C6H5NH2",
+     "p-BrC6H4OH"
+    ],
+    "reaction": "Hydrolysis of amide",
+    "explanation": "Acid hydrolysis removes the acetyl protecting group and releases the free amine."
+   }
+  ],
+  "tags": [
+   "protection",
+   "bromination"
+  ]
+ },
+ {
+  "id": "chain-nitrobenzene-to-azo-dye",
+  "title": "Nitrobenzene to p-hydroxyazobenzene",
+  "chapters": [
+   "Amines & Diazonium Salts",
+   "Aromatic Compounds"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "start": "C6H5NO2",
+  "startName": "nitrobenzene",
+  "steps": [
+   {
+    "reagent": "Sn, HCl",
+    "conditions": "",
+    "product": "C6H5NH2",
+    "productName": "aniline",
+    "distractors": [
+     "C6H5N=NC6H5",
+     "C6H5NHOH",
+     "C6H5NHCH3"
+    ],
+    "reaction": "Reduction of nitro group",
+    "explanation": "Metal-acid reduction takes the nitro group all the way to the amine."
+   },
+   {
+    "reagent": "NaNO2, HCl",
+    "conditions": "273 K",
+    "product": "C6H5N2^+Cl^-",
+    "productName": "benzenediazonium chloride",
+    "distractors": [
+     "C6H5OH",
+     "C6H5Cl",
+     "C6H5NO2"
+    ],
+    "reaction": "Diazotisation",
+    "explanation": "Cold nitrous acid forms the diazonium salt."
+   },
+   {
+    "reagent": "C6H5OH",
+    "conditions": "NaOH (aq), 273-278 K",
+    "product": "p-HOC6H4N=NC6H5",
+    "productName": "p-hydroxyazobenzene",
+    "distractors": [
+     "o-HOC6H4N=NC6H5",
+     "C6H5OC6H5",
+     "C6H5OH"
+    ],
+    "reaction": "Azo coupling",
+    "explanation": "The phenoxide ring is strongly activated and the diazonium ion attacks its para position; the ortho isomer is minor."
+   }
+  ],
+  "tags": [
+   "azo dye",
+   "coupling"
+  ]
+ },
+ {
+  "id": "chain-aniline-to-fluorobenzene",
+  "title": "Aniline to fluorobenzene",
+  "chapters": [
+   "Amines & Diazonium Salts",
+   "Haloalkanes & Haloarenes"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "start": "C6H5NH2",
+  "startName": "aniline",
+  "steps": [
+   {
+    "reagent": "NaNO2, HCl",
+    "conditions": "273 K",
+    "product": "C6H5N2^+Cl^-",
+    "productName": "benzenediazonium chloride",
+    "distractors": [
+     "C6H5OH",
+     "C6H5NO2",
+     "C6H5NHNO"
+    ],
+    "reaction": "Diazotisation",
+    "explanation": "Cold nitrous acid converts aniline to the diazonium salt."
+   },
+   {
+    "reagent": "HBF4",
+    "conditions": "",
+    "product": "C6H5N2^+BF4^-",
+    "productName": "benzenediazonium tetrafluoroborate",
+    "distractors": [
+     "C6H5F",
+     "C6H5BF2",
+     "C6H5OH"
+    ],
+    "reaction": "Precipitation of fluoroborate salt",
+    "explanation": "The tetrafluoroborate is insoluble and isolable; fluorine is introduced only on heating it."
+   },
+   {
+    "reagent": "heat",
+    "conditions": "dry solid",
+    "product": "C6H5F",
+    "productName": "fluorobenzene",
+    "distractors": [
+     "C6H5Cl",
+     "C6H5OH",
+     "C6H6"
+    ],
+    "reaction": "Thermal decomposition of diazonium fluoroborate",
+    "explanation": "The salt decomposes to the aryl fluoride, $\\ce{BF3}$ and $\\ce{N2}$."
+   }
+  ],
+  "tags": [
+   "diazonium",
+   "fluorination"
+  ]
+ },
+ {
+  "id": "chain-benzoic-acid-to-aniline",
+  "title": "Benzoic acid to aniline",
+  "chapters": [
+   "Carboxylic Acids & Derivatives",
+   "Amines & Diazonium Salts"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "start": "C6H5COOH",
+  "startName": "benzoic acid",
+  "steps": [
+   {
+    "reagent": "SOCl2",
+    "conditions": "",
+    "product": "C6H5COCl",
+    "productName": "benzoyl chloride",
+    "distractors": [
+     "C6H5CHO",
+     "C6H5CH2OH",
+     "(C6H5CO)2O"
+    ],
+    "reaction": "Acid chloride formation",
+    "explanation": "Thionyl chloride swaps the OH of the acid for chlorine, releasing $\\ce{SO2}$ and $\\ce{HCl}$."
+   },
+   {
+    "reagent": "NH3 (excess)",
+    "conditions": "",
+    "product": "C6H5CONH2",
+    "productName": "benzamide",
+    "distractors": [
+     "C6H5COONH4",
+     "C6H5CN",
+     "C6H5CH2NH2"
+    ],
+    "reaction": "Ammonolysis",
+    "explanation": "Ammonia attacks the acyl chloride to give the amide."
+   },
+   {
+    "reagent": "Br2, NaOH",
+    "conditions": "heat",
+    "product": "C6H5NH2",
+    "productName": "aniline",
+    "distractors": [
+     "C6H5CH2NH2",
+     "C6H5OH",
+     "C6H5CN"
+    ],
+    "reaction": "Degradation of amide (one carbon lost)",
+    "explanation": "The carbonyl carbon is lost as carbonate, so the amine is attached directly to the ring."
+   }
+  ],
+  "tags": [
+   "hofmann",
+   "amide"
+  ]
+ },
+ {
+  "id": "chain-tribromoaniline-to-tribromobenzene",
+  "title": "Aniline to 1,3,5-tribromobenzene",
+  "chapters": [
+   "Amines & Diazonium Salts",
+   "Aromatic Compounds"
+  ],
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "start": "C6H5NH2",
+  "startName": "aniline",
+  "steps": [
+   {
+    "reagent": "Br2 (aq)",
+    "conditions": "",
+    "product": "2,4,6-Br3C6H2NH2",
+    "productName": "2,4,6-tribromoaniline",
+    "distractors": [
+     "p-BrC6H4NH2",
+     "o-BrC6H4NH2",
+     "m-BrC6H4NH2"
+    ],
+    "reaction": "Electrophilic bromination",
+    "explanation": "With no protection the amino group activates all three o,p positions so bromine water gives the tribromo product, not a monobromide."
+   },
+   {
+    "reagent": "NaNO2, HCl",
+    "conditions": "273 K",
+    "product": "2,4,6-Br3C6H2N2^+Cl^-",
+    "productName": "2,4,6-tribromobenzenediazonium chloride",
+    "distractors": [
+     "2,4,6-Br3C6H2OH",
+     "2,4,6-Br3C6H2NO2",
+     "1,3,5-Br3C6H3"
+    ],
+    "reaction": "Diazotisation",
+    "explanation": "The amine is diazotised without disturbing the three bromines."
+   },
+   {
+    "reagent": "H3PO2",
+    "conditions": "H2O",
+    "product": "1,3,5-Br3C6H3",
+    "productName": "1,3,5-tribromobenzene",
+    "distractors": [
+     "2,4,6-Br3C6H2OH",
+     "2,4,6-Br3C6H2Cl",
+     "C6H6"
+    ],
+    "reaction": "Reductive removal of diazonium group",
+    "explanation": "Hypophosphorous acid replaces $\\ce{N2+}$ by H, leaving bromines meta to each other."
+   }
+  ],
+  "tags": [
+   "deamination",
+   "diazonium",
+   "meta"
+  ]
+ },
+ {
+  "id": "chain-benzene-to-m-bromobenzonitrile",
+  "title": "Benzene to m-bromobenzonitrile",
+  "chapters": [
+   "Aromatic Compounds",
+   "Amines & Diazonium Salts"
+  ],
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "start": "C6H6",
+  "startName": "benzene",
+  "steps": [
+   {
+    "reagent": "HNO3 (conc.), H2SO4 (conc.)",
+    "conditions": "330 K",
+    "product": "C6H5NO2",
+    "productName": "nitrobenzene",
+    "distractors": [
+     "C6H5NH2",
+     "m-O2NC6H4NO2",
+     "C6H5SO3H"
+    ],
+    "reaction": "Electrophilic nitration",
+    "explanation": "The nitronium ion substitutes one hydrogen; low temperature avoids dinitration."
+   },
+   {
+    "reagent": "Br2, FeBr3",
+    "conditions": "heat",
+    "product": "m-BrC6H4NO2",
+    "productName": "m-bromonitrobenzene",
+    "distractors": [
+     "p-BrC6H4NO2",
+     "o-BrC6H4NO2",
+     "C6H5Br"
+    ],
+    "reaction": "Electrophilic bromination",
+    "explanation": "Bromination must follow nitration: the nitro group is a meta director, so the order decides the isomer."
+   },
+   {
+    "reagent": "Sn, HCl",
+    "conditions": "",
+    "product": "m-BrC6H4NH2",
+    "productName": "m-bromoaniline",
+    "distractors": [
+     "m-BrC6H4NHOH",
+     "C6H5NH2",
+     "m-BrC6H4N=NC6H4Br-m"
+    ],
+    "reaction": "Reduction of nitro group",
+    "explanation": "Sn/HCl reduces the nitro group while the aryl bromide is untouched."
+   },
+   {
+    "reagent": "NaNO2, HCl",
+    "conditions": "273 K",
+    "product": "m-BrC6H4N2^+Cl^-",
+    "productName": "m-bromobenzenediazonium chloride",
+    "distractors": [
+     "m-BrC6H4OH",
+     "m-BrC6H4NO2",
+     "C6H5N2^+Cl^-"
+    ],
+    "reaction": "Diazotisation",
+    "explanation": "Cold nitrous acid converts the amine to the diazonium salt with bromine position retained."
+   },
+   {
+    "reagent": "CuCN",
+    "conditions": "",
+    "product": "m-BrC6H4CN",
+    "productName": "m-bromobenzonitrile",
+    "distractors": [
+     "m-BrC6H4OH",
+     "m-BrC6H4NC",
+     "m-BrC6H4COOH"
+    ],
+    "reaction": "Diazonium replacement by cyanide",
+    "explanation": "Cuprous cyanide replaces $\\ce{N2+}$ by $\\ce{CN}$ and the meta relationship is preserved."
+   }
+  ],
+  "tags": [
+   "directing groups",
+   "diazonium"
+  ]
+ },
+ {
+  "id": "chain-benzene-to-1-phenylbut-1-ene",
+  "title": "Benzene to 1-phenylbut-1-ene",
+  "chapters": [
+   "Aromatic Compounds",
+   "Hydrocarbons",
+   "Haloalkanes & Haloarenes"
+  ],
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "start": "C6H6",
+  "startName": "benzene",
+  "steps": [
+   {
+    "reagent": "CH3CH2CH2COCl",
+    "conditions": "AlCl3 (anhydrous)",
+    "product": "C6H5COCH2CH2CH3",
+    "productName": "1-phenylbutan-1-one",
+    "distractors": [
+     "C6H5CH(CH3)CH2CH3",
+     "C6H5CH2CH2CH2CH3",
+     "C6H5C(CH3)3"
+    ],
+    "reaction": "Friedel-Crafts acylation",
+    "explanation": "The acylium ion does not rearrange, so the straight-chain skeleton is kept."
+   },
+   {
+    "reagent": "Zn(Hg), HCl (conc.)",
+    "conditions": "heat",
+    "product": "C6H5CH2CH2CH2CH3",
+    "productName": "n-butylbenzene",
+    "distractors": [
+     "C6H5CH(CH3)CH2CH3",
+     "C6H5CH(OH)CH2CH2CH3",
+     "C6H5C(CH3)3"
+    ],
+    "reaction": "Clemmensen reduction",
+    "explanation": "This gives n-butylbenzene, whereas direct alkylation with butyl chloride would give the rearranged sec-butylbenzene."
+   },
+   {
+    "reagent": "NBS",
+    "conditions": "light",
+    "product": "C6H5CHBrCH2CH2CH3",
+    "productName": "1-bromo-1-phenylbutane",
+    "distractors": [
+     "p-BrC6H4CH2CH2CH2CH3",
+     "C6H5CH2CH2CH2CH2Br",
+     "C6H5CH2CHBrCH2CH3"
+    ],
+    "reaction": "Benzylic bromination",
+    "explanation": "The radical forms at the benzylic carbon because it is stabilised by the ring."
+   },
+   {
+    "reagent": "KOH (alc.)",
+    "conditions": "heat",
+    "product": "C6H5CH=CHCH2CH3",
+    "productName": "1-phenylbut-1-ene",
+    "distractors": [
+     "C6H5CH2CH=CHCH3",
+     "C6H5CH(OH)CH2CH2CH3",
+     "C6H5CH2CH2CH=CH2"
+    ],
+    "reaction": "Dehydrohalogenation (E2)",
+    "explanation": "The major alkene is the conjugated one with the double bond next to the ring; aqueous KOH would give the alcohol."
+   }
+  ],
+  "tags": [
+   "friedel-crafts",
+   "clemmensen",
+   "NBS"
+  ]
+ },
+ {
+  "id": "chain-cyclohexanone-to-keto-aldehyde",
+  "title": "Cyclohexanone to 1-acetylcyclopentene",
+  "chapters": [
+   "Aldehydes & Ketones",
+   "Hydrocarbons"
+  ],
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "start": "C6H10O",
+  "startName": "cyclohexanone",
+  "steps": [
+   {
+    "reagent": "CH3MgBr, then H3O+",
+    "conditions": "",
+    "product": "1-CH3C6H10OH",
+    "productName": "1-methylcyclohexanol",
+    "distractors": [
+     "C6H11OH",
+     "1-CH3C6H10Br",
+     "1-CH3C6H9"
+    ],
+    "reaction": "Grignard addition",
+    "explanation": "The carbon nucleophile adds to the carbonyl and acid work-up gives the tertiary alcohol."
+   },
+   {
+    "reagent": "H2SO4 (conc.)",
+    "conditions": "heat",
+    "product": "1-CH3C6H9",
+    "productName": "1-methylcyclohexene",
+    "distractors": [
+     "methylenecyclohexane",
+     "C6H10",
+     "CH3C6H11"
+    ],
+    "reaction": "Dehydration of alcohol",
+    "explanation": "Zaitsev elimination gives the more substituted, endocyclic alkene."
+   },
+   {
+    "reagent": "O3, then Zn, H2O",
+    "conditions": "",
+    "product": "CH3CO(CH2)4CHO",
+    "productName": "6-oxoheptanal",
+    "distractors": [
+     "HOOC(CH2)4COCH3",
+     "HOOC(CH2)4COOH",
+     "CH3CO(CH2)4CH2OH"
+    ],
+    "reaction": "Reductive ozonolysis",
+    "explanation": "The ring is cleaved at the double bond; the zinc work-up stops at the carbonyl stage with no over-oxidation to acids."
+   },
+   {
+    "reagent": "NaOH (aq)",
+    "conditions": "heat",
+    "product": "C5H7COCH3",
+    "productName": "1-acetylcyclopentene",
+    "distractors": [
+     "cyclohept-2-enone",
+     "3-methylcyclohex-2-enone",
+     "C5H8(COCH3)OH"
+    ],
+    "reaction": "Intramolecular aldol condensation",
+    "explanation": "The alpha carbon next to the ketone chain attacks the aldehyde to give a five-membered ring, which is favoured over the seven-membered ring; loss of water gives the enone."
+   }
+  ],
+  "tags": [
+   "grignard",
+   "ozonolysis",
+   "aldol"
+  ]
+ },
+ {
+  "id": "chain-bromoethane-to-ethanamine",
+  "title": "Bromoethane to ethanamine via chain extension and shortening",
+  "chapters": [
+   "Haloalkanes & Haloarenes",
+   "Carboxylic Acids & Derivatives",
+   "Amines & Diazonium Salts"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "start": "CH3CH2Br",
+  "startName": "bromoethane",
+  "steps": [
+   {
+    "reagent": "KCN",
+    "conditions": "ethanol, heat",
+    "product": "CH3CH2CN",
+    "productName": "propanenitrile",
+    "distractors": [
+     "CH3CH2NC",
+     "CH3CH2OH",
+     "CH2=CH2"
+    ],
+    "reaction": "Nucleophilic substitution (SN2)",
+    "explanation": "Ionic KCN attacks through carbon to give the nitrile; covalent AgCN would give the isocyanide."
+   },
+   {
+    "reagent": "H3O+",
+    "conditions": "heat",
+    "product": "CH3CH2COOH",
+    "productName": "propanoic acid",
+    "distractors": [
+     "CH3CH2CONH2",
+     "CH3COOH",
+     "CH3CH2CH2NH2"
+    ],
+    "reaction": "Hydrolysis of nitrile",
+    "explanation": "Complete acid hydrolysis goes through the amide to the carboxylic acid."
+   },
+   {
+    "reagent": "SOCl2",
+    "conditions": "",
+    "product": "CH3CH2COCl",
+    "productName": "propanoyl chloride",
+    "distractors": [
+     "(CH3CH2CO)2O",
+     "CH3CH2Cl",
+     "CH3CH2CHO"
+    ],
+    "reaction": "Acid chloride formation",
+    "explanation": "Thionyl chloride gives the acid chloride with gaseous by-products."
+   },
+   {
+    "reagent": "NH3 (excess)",
+    "conditions": "",
+    "product": "CH3CH2CONH2",
+    "productName": "propanamide",
+    "distractors": [
+     "CH3CH2COONH4",
+     "CH3CH2CN",
+     "CH3CH2CH2NH2"
+    ],
+    "reaction": "Ammonolysis",
+    "explanation": "Ammonia attacks the acyl chloride to give the primary amide."
+   },
+   {
+    "reagent": "Br2, NaOH",
+    "conditions": "heat",
+    "product": "CH3CH2NH2",
+    "productName": "ethanamine",
+    "distractors": [
+     "CH3CH2CH2NH2",
+     "CH3NH2",
+     "CH3CH2OH"
+    ],
+    "reaction": "Degradation of amide (one carbon lost)",
+    "explanation": "The amine has one carbon fewer than the amide, so the sequence returns to a two-carbon amine."
+   }
+  ],
+  "tags": [
+   "nitrile",
+   "hofmann",
+   "step up step down"
+  ]
+ },
+ {
+  "id": "chain-benzene-to-m-bromobenzoic-acid",
+  "title": "Benzene to m-bromobenzoic acid by acylation route",
+  "chapters": [
+   "Aromatic Compounds",
+   "Aldehydes & Ketones",
+   "Carboxylic Acids & Derivatives"
+  ],
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "start": "C6H6",
+  "startName": "benzene",
+  "steps": [
+   {
+    "reagent": "CH3COCl",
+    "conditions": "AlCl3 (anhydrous)",
+    "product": "C6H5COCH3",
+    "productName": "acetophenone",
+    "distractors": [
+     "C6H5CH2CH3",
+     "C6H5CH(OH)CH3",
+     "C6H5Cl"
+    ],
+    "reaction": "Friedel-Crafts acylation",
+    "explanation": "The acylium ion substitutes the ring and gives the aryl ketone."
+   },
+   {
+    "reagent": "Br2, FeBr3",
+    "conditions": "",
+    "product": "m-BrC6H4COCH3",
+    "productName": "m-bromoacetophenone",
+    "distractors": [
+     "p-BrC6H4COCH3",
+     "o-BrC6H4COCH3",
+     "C6H5COCH2Br"
+    ],
+    "reaction": "Electrophilic bromination",
+    "explanation": "The acyl group is deactivating and meta directing, and the Lewis acid directs substitution to the ring."
+   },
+   {
+    "reagent": "NH2NH2, KOH",
+    "conditions": "glycol, 453 K",
+    "product": "m-BrC6H4CH2CH3",
+    "productName": "m-bromoethylbenzene",
+    "distractors": [
+     "m-BrC6H4CH(OH)CH3",
+     "C6H5CH2CH3",
+     "m-BrC6H4C(CH3)=NNH2"
+    ],
+    "reaction": "Reduction of C=O to CH2",
+    "explanation": "The basic conditions leave the aryl halide intact and reduce the ketone to a methylene group."
+   },
+   {
+    "reagent": "KMnO4, KOH, heat; then H3O+",
+    "conditions": "",
+    "product": "m-BrC6H4COOH",
+    "productName": "m-bromobenzoic acid",
+    "distractors": [
+     "m-BrC6H4CHO",
+     "C6H5COOH",
+     "m-BrC6H4CH(OH)CH3"
+    ],
+    "reaction": "Side-chain oxidation",
+    "explanation": "Any alkyl chain with a benzylic hydrogen is oxidised all the way to the carboxylic acid."
+   }
+  ],
+  "tags": [
+   "wolff-kishner",
+   "directing groups"
+  ]
+ },
+ {
+  "id": "chain-aniline-to-p-bromonitrobenzene",
+  "title": "Aniline to p-bromonitrobenzene",
+  "chapters": [
+   "Amines & Diazonium Salts",
+   "Aromatic Compounds"
+  ],
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "start": "C6H5NH2",
+  "startName": "aniline",
+  "steps": [
+   {
+    "reagent": "(CH3CO)2O",
+    "conditions": "pyridine",
+    "product": "C6H5NHCOCH3",
+    "productName": "acetanilide",
+    "distractors": [
+     "C6H5N(COCH3)2",
+     "C6H5NH3^+Cl^-",
+     "C6H5COCH3"
+    ],
+    "reaction": "Acetylation of amine",
+    "explanation": "Protection prevents oxidation and protonation of the amine during nitration."
+   },
+   {
+    "reagent": "HNO3, H2SO4",
+    "conditions": "288 K",
+    "product": "p-O2NC6H4NHCOCH3",
+    "productName": "p-nitroacetanilide",
+    "distractors": [
+     "m-O2NC6H4NHCOCH3",
+     "o-O2NC6H4NHCOCH3",
+     "C6H5NHCOCH3"
+    ],
+    "reaction": "Electrophilic nitration",
+    "explanation": "The acetamido group is o,p directing and the para isomer is the major product; direct nitration of aniline gives much meta product via the anilinium ion."
+   },
+   {
+    "reagent": "H3O+",
+    "conditions": "heat",
+    "product": "p-O2NC6H4NH2",
+    "productName": "p-nitroaniline",
+    "distractors": [
+     "m-O2NC6H4NH2",
+     "p-H2NC6H4NH2",
+     "p-O2NC6H4OH"
+    ],
+    "reaction": "Hydrolysis of amide",
+    "explanation": "Acid hydrolysis removes the acetyl group and leaves the nitro group untouched."
+   },
+   {
+    "reagent": "NaNO2, HCl",
+    "conditions": "273 K",
+    "product": "p-O2NC6H4N2^+Cl^-",
+    "productName": "p-nitrobenzenediazonium chloride",
+    "distractors": [
+     "p-O2NC6H4OH",
+     "p-O2NC6H4Cl",
+     "C6H5N2^+Cl^-"
+    ],
+    "reaction": "Diazotisation",
+    "explanation": "The weakly basic amine is still diazotised at low temperature."
+   },
+   {
+    "reagent": "CuBr, HBr",
+    "conditions": "",
+    "product": "p-BrC6H4NO2",
+    "productName": "p-bromonitrobenzene",
+    "distractors": [
+     "p-O2NC6H4OH",
+     "m-BrC6H4NO2",
+     "C6H5Br"
+    ],
+    "reaction": "Diazonium replacement by bromide",
+    "explanation": "Cuprous bromide replaces $\\ce{N2+}$ by Br, leaving the para relationship unchanged."
+   }
+  ],
+  "tags": [
+   "protection",
+   "diazonium",
+   "nitration"
+  ]
+ }
+]

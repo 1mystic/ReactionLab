@@ -1,0 +1,929 @@
+[
+  {
+    "id": "chain-propene-to-2-bromopropane",
+    "title": "Propene to 2-bromopropane via the anti-Markovnikov route",
+    "chapters": [
+      "Hydrocarbons",
+      "Haloalkanes & Haloarenes"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "easy",
+    "start": "CH3CH=CH2",
+    "startName": "propene",
+    "steps": [
+      {
+        "reagent": "HBr, ROOR",
+        "conditions": "",
+        "product": "CH3CH2CH2Br",
+        "productName": "1-bromopropane",
+        "distractors": [
+          "CH3CHBrCH3",
+          "CH3CHBrCH2Br",
+          "CH3CH2CH3"
+        ],
+        "reaction": "Peroxide effect (free radical addition)",
+        "explanation": "In the presence of peroxide, HBr adds by a radical path so Br ends up on the less substituted carbon (anti-Markovnikov)."
+      },
+      {
+        "reagent": "alc. KOH",
+        "conditions": "heat",
+        "product": "CH3CH=CH2",
+        "productName": "propene",
+        "distractors": [
+          "CH3CH2CH2OH",
+          "CH3CH2CH3",
+          "CH3CHBrCH3"
+        ],
+        "reaction": "Dehydrohalogenation (E2)",
+        "explanation": "Alcoholic KOH removes HBr to regenerate the alkene, whereas aqueous KOH would substitute to give an alcohol."
+      },
+      {
+        "reagent": "HBr",
+        "conditions": "",
+        "product": "CH3CHBrCH3",
+        "productName": "2-bromopropane",
+        "distractors": [
+          "CH3CH2CH2Br",
+          "CH3CHBrCH2Br",
+          "CH3CH(OH)CH3"
+        ],
+        "reaction": "Markovnikov addition",
+        "explanation": "Without peroxide, H adds to the carbon bearing more hydrogens and Br goes to the secondary carbon via the more stable carbocation."
+      }
+    ],
+    "tags": [
+      "markovnikov",
+      "peroxide effect",
+      "elimination"
+    ]
+  },
+  {
+    "id": "chain-benzene-to-benzoyl-chloride",
+    "title": "Benzene to benzoyl chloride",
+    "chapters": [
+      "Aromatic Compounds",
+      "Carboxylic Acids & Derivatives"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "easy",
+    "start": "C6H6",
+    "startName": "benzene",
+    "steps": [
+      {
+        "reagent": "CH3Cl, AlCl3",
+        "conditions": "",
+        "product": "C6H5CH3",
+        "productName": "methylbenzene",
+        "distractors": [
+          "C6H5CH2Cl",
+          "C6H5Cl",
+          "1,4-(CH3)2C6H4"
+        ],
+        "reaction": "Friedel-Crafts alkylation",
+        "explanation": "AlCl3 generates the methyl carbocation equivalent which attacks the ring; the side chain is not chlorinated because no radical conditions are used."
+      },
+      {
+        "reagent": "KMnO4, KOH, heat, then H3O+",
+        "conditions": "",
+        "product": "C6H5COOH",
+        "productName": "benzoic acid",
+        "distractors": [
+          "C6H5CHO",
+          "C6H5CH2OH",
+          "C6H11COOH"
+        ],
+        "reaction": "Side chain oxidation",
+        "explanation": "A benzylic carbon bearing at least one hydrogen is oxidised completely to the carboxylic acid by hot alkaline permanganate, and the ring survives."
+      },
+      {
+        "reagent": "SOCl2",
+        "conditions": "",
+        "product": "C6H5COCl",
+        "productName": "benzoyl chloride",
+        "distractors": [
+          "C6H5CH2Cl",
+          "C6H5Cl",
+          "C6H5CHO"
+        ],
+        "reaction": "Conversion of acid to acyl chloride",
+        "explanation": "Thionyl chloride replaces the OH of the acid with Cl, giving $\\ce{SO2}$ and $\\ce{HCl}$ as gaseous by-products."
+      }
+    ],
+    "tags": [
+      "friedel-crafts",
+      "side-chain oxidation"
+    ]
+  },
+  {
+    "id": "chain-ethyne-to-propene",
+    "title": "Ethyne to propene",
+    "chapters": [
+      "Hydrocarbons"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "easy",
+    "start": "CH≡CH",
+    "startName": "ethyne",
+    "steps": [
+      {
+        "reagent": "NaNH2",
+        "conditions": "liq. NH3",
+        "product": "HC≡CNa",
+        "productName": "sodium ethynide",
+        "distractors": [
+          "CH2=CH2",
+          "NaC≡CNa",
+          "CH3CH3"
+        ],
+        "reaction": "Acidic nature of terminal alkyne",
+        "explanation": "The sp C-H of ethyne is acidic enough for the strong base amide to remove one proton, giving the acetylide."
+      },
+      {
+        "reagent": "CH3Br",
+        "conditions": "",
+        "product": "CH3C≡CH",
+        "productName": "propyne",
+        "distractors": [
+          "CH3C≡CCH3",
+          "CH3CH=CH2",
+          "CH2=C=CH2"
+        ],
+        "reaction": "Alkylation of acetylide (SN2)",
+        "explanation": "The acetylide attacks the primary alkyl halide in an SN2 step, extending the carbon chain by one carbon."
+      },
+      {
+        "reagent": "H2, Lindlar catalyst",
+        "conditions": "",
+        "product": "CH3CH=CH2",
+        "productName": "propene",
+        "distractors": [
+          "CH3CH2CH3",
+          "CH3COCH3",
+          "CH3CHBrCH3"
+        ],
+        "reaction": "Partial hydrogenation of an alkyne",
+        "explanation": "A poisoned palladium catalyst stops at the alkene stage, whereas Pd/C would give the alkane."
+      }
+    ],
+    "tags": [
+      "acetylide",
+      "alkyne"
+    ]
+  },
+  {
+    "id": "chain-toluene-to-benzaldehyde",
+    "title": "Toluene to benzaldehyde",
+    "chapters": [
+      "Aromatic Compounds",
+      "Haloalkanes & Haloarenes",
+      "Aldehydes & Ketones"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "easy",
+    "start": "C6H5CH3",
+    "startName": "toluene",
+    "steps": [
+      {
+        "reagent": "Cl2",
+        "conditions": "hv",
+        "product": "C6H5CH2Cl",
+        "productName": "benzyl chloride",
+        "distractors": [
+          "2-ClC6H4CH3",
+          "4-ClC6H4CH3",
+          "C6H5CHCl2"
+        ],
+        "reaction": "Free radical side chain halogenation",
+        "explanation": "Light promotes radical substitution on the benzylic carbon; ring chlorination needs a Lewis acid such as $\\ce{FeCl3}$ and gives o/p products instead."
+      },
+      {
+        "reagent": "KOH(aq)",
+        "conditions": "heat",
+        "product": "C6H5CH2OH",
+        "productName": "benzyl alcohol",
+        "distractors": [
+          "C6H5CHO",
+          "C6H5OH",
+          "C6H5COOH"
+        ],
+        "reaction": "Nucleophilic substitution (SN1/SN2)",
+        "explanation": "The benzylic halide is reactive and is hydrolysed by aqueous KOH to the alcohol; the aryl C-Cl in chlorobenzene would not react like this."
+      },
+      {
+        "reagent": "PCC",
+        "conditions": "CH2Cl2",
+        "product": "C6H5CHO",
+        "productName": "benzaldehyde",
+        "distractors": [
+          "C6H5COOH",
+          "C6H5CH3",
+          "C6H5CHCl2"
+        ],
+        "reaction": "Mild oxidation of primary alcohol",
+        "explanation": "PCC stops at the aldehyde stage, while $\\ce{KMnO4}$ would carry the oxidation on to benzoic acid."
+      }
+    ],
+    "tags": [
+      "benzylic",
+      "oxidation"
+    ]
+  },
+  {
+    "id": "chain-bromobenzene-to-m-nitrobenzoic-acid",
+    "title": "Bromobenzene to 3-nitrobenzoic acid",
+    "chapters": [
+      "Haloalkanes & Haloarenes",
+      "Aromatic Compounds",
+      "Carboxylic Acids & Derivatives"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "medium",
+    "start": "C6H5Br",
+    "startName": "bromobenzene",
+    "steps": [
+      {
+        "reagent": "Mg",
+        "conditions": "dry ether",
+        "product": "C6H5MgBr",
+        "productName": "phenylmagnesium bromide",
+        "distractors": [
+          "C6H6",
+          "C6H5C6H5",
+          "C6H5OMgBr"
+        ],
+        "reaction": "Grignard reagent formation",
+        "explanation": "Magnesium inserts into the aryl C-Br bond in dry ether; any moisture would protonate it to benzene."
+      },
+      {
+        "reagent": "CO2, then H3O+",
+        "conditions": "",
+        "product": "C6H5COOH",
+        "productName": "benzoic acid",
+        "distractors": [
+          "C6H5CHO",
+          "C6H5CH2OH",
+          "C6H6"
+        ],
+        "reaction": "Carboxylation of Grignard reagent",
+        "explanation": "The carbanion carbon attacks $\\ce{CO2}$ to give a carboxylate, which is protonated on acid work-up."
+      },
+      {
+        "reagent": "conc. HNO3, conc. H2SO4",
+        "conditions": "heat",
+        "product": "3-O2NC6H4COOH",
+        "productName": "3-nitrobenzoic acid",
+        "distractors": [
+          "4-O2NC6H4COOH",
+          "2-O2NC6H4COOH",
+          "3,5-(O2N)2C6H3COOH"
+        ],
+        "reaction": "Nitration of a deactivated ring",
+        "explanation": "The COOH group is electron withdrawing and meta directing, and the ring is deactivated so only one nitro group enters."
+      }
+    ],
+    "tags": [
+      "grignard",
+      "meta directing"
+    ]
+  },
+  {
+    "id": "chain-1-butene-to-ethanal",
+    "title": "1-Butene to ethanal",
+    "chapters": [
+      "Hydrocarbons",
+      "Haloalkanes & Haloarenes",
+      "Aldehydes & Ketones"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "medium",
+    "start": "CH2=CHCH2CH3",
+    "startName": "but-1-ene",
+    "steps": [
+      {
+        "reagent": "HBr",
+        "conditions": "",
+        "product": "CH3CHBrCH2CH3",
+        "productName": "2-bromobutane",
+        "distractors": [
+          "CH3CH2CH2CH2Br",
+          "CH3CH(OH)CH2CH3",
+          "CH3CH2CHBrCH2Br"
+        ],
+        "reaction": "Markovnikov addition",
+        "explanation": "Without peroxide, Br adds to the more substituted carbon through the secondary carbocation."
+      },
+      {
+        "reagent": "alc. KOH",
+        "conditions": "heat",
+        "product": "CH3CH=CHCH3",
+        "productName": "but-2-ene",
+        "distractors": [
+          "CH2=CHCH2CH3",
+          "CH3CH(OH)CH2CH3",
+          "CH3CH2CH2CH3"
+        ],
+        "reaction": "Saytzeff elimination",
+        "explanation": "The more substituted (more stable) alkene is the major product of E2 dehydrohalogenation, so but-2-ene beats but-1-ene."
+      },
+      {
+        "reagent": "O3, then Zn, H2O",
+        "conditions": "",
+        "product": "CH3CHO",
+        "productName": "ethanal",
+        "distractors": [
+          "CH3COOH",
+          "CH3CH2OH",
+          "CH3CH2CHO"
+        ],
+        "reaction": "Reductive ozonolysis",
+        "explanation": "The double bond is cleaved symmetrically to two ethanal molecules; Zn prevents over-oxidation to the acid, which an oxidative work-up with $\\ce{H2O2}$ would give."
+      }
+    ],
+    "tags": [
+      "saytzeff",
+      "ozonolysis"
+    ]
+  },
+  {
+    "id": "chain-benzene-to-alpha-methylstyrene",
+    "title": "Benzene to 2-phenylpropene",
+    "chapters": [
+      "Aromatic Compounds",
+      "Hydrocarbons",
+      "Haloalkanes & Haloarenes"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "medium",
+    "start": "C6H6",
+    "startName": "benzene",
+    "steps": [
+      {
+        "reagent": "CH3CH2CH2Cl, AlCl3",
+        "conditions": "",
+        "product": "C6H5CH(CH3)2",
+        "productName": "isopropylbenzene (cumene)",
+        "distractors": [
+          "C6H5CH2CH2CH3",
+          "1,4-[(CH3)2CH]2C6H4",
+          "C6H5Cl"
+        ],
+        "reaction": "Friedel-Crafts alkylation with rearrangement",
+        "explanation": "The primary carbocation from 1-chloropropane rearranges by a hydride shift to the more stable secondary one, so the isopropyl product forms."
+      },
+      {
+        "reagent": "Br2",
+        "conditions": "hv",
+        "product": "C6H5C(CH3)2Br",
+        "productName": "2-bromo-2-phenylpropane",
+        "distractors": [
+          "4-BrC6H4CH(CH3)2",
+          "2-BrC6H4CH(CH3)2",
+          "C6H5CH(CH3)CH2Br"
+        ],
+        "reaction": "Benzylic free radical bromination",
+        "explanation": "Radical conditions attack the weakest C-H bond, the tertiary benzylic one, rather than the ring."
+      },
+      {
+        "reagent": "alc. KOH",
+        "conditions": "heat",
+        "product": "C6H5C(CH3)=CH2",
+        "productName": "2-phenylpropene",
+        "distractors": [
+          "C6H5C(CH3)2OH",
+          "C6H5CH(CH3)2",
+          "C6H5C(CH3)2OC2H5"
+        ],
+        "reaction": "Dehydrohalogenation",
+        "explanation": "Tertiary halides undergo elimination with alcoholic KOH; aqueous KOH would favour substitution to the alcohol."
+      }
+    ],
+    "tags": [
+      "friedel-crafts",
+      "rearrangement",
+      "benzylic"
+    ]
+  },
+  {
+    "id": "chain-benzene-to-m-bromoaniline",
+    "title": "Benzene to 3-bromoaniline",
+    "chapters": [
+      "Aromatic Compounds",
+      "Amines & Diazonium Salts"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "medium",
+    "start": "C6H6",
+    "startName": "benzene",
+    "steps": [
+      {
+        "reagent": "conc. HNO3, conc. H2SO4",
+        "conditions": "330 K",
+        "product": "C6H5NO2",
+        "productName": "nitrobenzene",
+        "distractors": [
+          "C6H5NH2",
+          "1,3-(O2N)2C6H4",
+          "C6H5SO3H"
+        ],
+        "reaction": "Nitration",
+        "explanation": "The nitronium ion is the electrophile; at this temperature only a mono nitro compound forms."
+      },
+      {
+        "reagent": "Br2, FeBr3",
+        "conditions": "",
+        "product": "3-BrC6H4NO2",
+        "productName": "1-bromo-3-nitrobenzene",
+        "distractors": [
+          "4-BrC6H4NO2",
+          "2-BrC6H4NO2",
+          "C6H5Br"
+        ],
+        "reaction": "Halogenation of deactivated ring",
+        "explanation": "The nitro group is meta directing, so bromine enters the meta position."
+      },
+      {
+        "reagent": "Sn, conc. HCl",
+        "conditions": "",
+        "product": "3-BrC6H4NH2",
+        "productName": "3-bromoaniline",
+        "distractors": [
+          "3-BrC6H4NHOH",
+          "4-BrC6H4NH2",
+          "C6H5NH2"
+        ],
+        "reaction": "Reduction of nitro group",
+        "explanation": "Sn/HCl reduces the nitro group fully to the amine without touching the aryl C-Br bond."
+      }
+    ],
+    "tags": [
+      "nitration",
+      "meta directing",
+      "reduction"
+    ]
+  },
+  {
+    "id": "chain-benzene-to-2-4-6-tribromophenol",
+    "title": "Benzene to 2,4,6-tribromophenol",
+    "chapters": [
+      "Aromatic Compounds",
+      "Haloalkanes & Haloarenes",
+      "Alcohols, Phenols & Ethers"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "medium",
+    "start": "C6H6",
+    "startName": "benzene",
+    "steps": [
+      {
+        "reagent": "Cl2, FeCl3",
+        "conditions": "dark",
+        "product": "C6H5Cl",
+        "productName": "chlorobenzene",
+        "distractors": [
+          "1,4-C6H4Cl2",
+          "C6H6Cl6",
+          "1,3-C6H4Cl2"
+        ],
+        "reaction": "Electrophilic halogenation",
+        "explanation": "A Lewis acid generates the electrophile and gives mono substitution; under UV light benzene would instead add chlorine to give $\\ce{C6H6Cl6}$."
+      },
+      {
+        "reagent": "NaOH, then H3O+",
+        "conditions": "623 K, 300 atm",
+        "product": "C6H5OH",
+        "productName": "phenol",
+        "distractors": [
+          "C6H5ONa",
+          "C6H6",
+          "C6H5OC6H5"
+        ],
+        "reaction": "Hydrolysis of an unreactive aryl halide",
+        "explanation": "The C-Cl bond has partial double bond character, so only very forcing conditions replace Cl by OH; acidification frees the phenol from its sodium salt."
+      },
+      {
+        "reagent": "Br2(aq)",
+        "conditions": "",
+        "product": "2,4,6-Br3C6H2OH",
+        "productName": "2,4,6-tribromophenol",
+        "distractors": [
+          "4-BrC6H4OH",
+          "2-BrC6H4OH",
+          "3-BrC6H4OH"
+        ],
+        "reaction": "Halogenation of a highly activated ring",
+        "explanation": "The OH group strongly activates the ortho and para positions, so bromine water gives the tribromo product as a white precipitate, whereas $\\ce{Br2}$ in $\\ce{CS2}$ at low temperature gives mono products."
+      }
+    ],
+    "tags": [
+      "dow process",
+      "phenol"
+    ]
+  },
+  {
+    "id": "chain-propene-to-propanone-via-propyne",
+    "title": "Propene to propanone",
+    "chapters": [
+      "Hydrocarbons",
+      "Haloalkanes & Haloarenes",
+      "Aldehydes & Ketones"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "medium",
+    "start": "CH3CH=CH2",
+    "startName": "propene",
+    "steps": [
+      {
+        "reagent": "Br2",
+        "conditions": "CCl4",
+        "product": "CH3CHBrCH2Br",
+        "productName": "1,2-dibromopropane",
+        "distractors": [
+          "CH2BrCH2CH2Br",
+          "CH3CHBrCH3",
+          "CH3CH2CH2Br"
+        ],
+        "reaction": "Halogen addition across C=C",
+        "explanation": "Bromine in an inert solvent adds anti across the double bond to give the vicinal dibromide."
+      },
+      {
+        "reagent": "NaNH2 (excess), then H2O",
+        "conditions": "heat",
+        "product": "CH3C≡CH",
+        "productName": "propyne",
+        "distractors": [
+          "CH2=C=CH2",
+          "CH2=C(Br)CH3",
+          "CH3CH=CH2"
+        ],
+        "reaction": "Double dehydrohalogenation",
+        "explanation": "A vicinal dibromide loses two molecules of HBr with strong base to give the alkyne; the terminal alkyne is regained after the aqueous quench."
+      },
+      {
+        "reagent": "HgSO4, dil. H2SO4",
+        "conditions": "",
+        "product": "CH3COCH3",
+        "productName": "propanone",
+        "distractors": [
+          "CH3CH2CHO",
+          "CH3CH(OH)CH3",
+          "CH3COOH"
+        ],
+        "reaction": "Kucherov hydration (Markovnikov)",
+        "explanation": "Water adds Markovnikov to the terminal alkyne; the enol so formed tautomerises to the methyl ketone, not an aldehyde."
+      }
+    ],
+    "tags": [
+      "alkyne",
+      "hydration",
+      "vicinal dihalide"
+    ]
+  },
+  {
+    "id": "chain-ethyne-to-m-bromoethylbenzene",
+    "title": "Ethyne to 3-bromoethylbenzene",
+    "chapters": [
+      "Hydrocarbons",
+      "Aromatic Compounds",
+      "Aldehydes & Ketones"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "medium",
+    "start": "CH≡CH",
+    "startName": "ethyne",
+    "steps": [
+      {
+        "reagent": "Red hot iron tube",
+        "conditions": "873 K",
+        "product": "C6H6",
+        "productName": "benzene",
+        "distractors": [
+          "C6H12",
+          "CH2=CHCH=CH2",
+          "C6H5CH3"
+        ],
+        "reaction": "Cyclic trimerisation",
+        "explanation": "Three molecules of ethyne trimerise on passing through a red hot tube to give benzene."
+      },
+      {
+        "reagent": "CH3COCl, AlCl3",
+        "conditions": "",
+        "product": "C6H5COCH3",
+        "productName": "acetophenone",
+        "distractors": [
+          "C6H5CH2CH3",
+          "C6H5CH(Cl)CH3",
+          "C6H5OCOCH3"
+        ],
+        "reaction": "Friedel-Crafts acylation",
+        "explanation": "The acylium ion attacks the ring, installing a ketone group."
+      },
+      {
+        "reagent": "Br2, FeBr3",
+        "conditions": "",
+        "product": "3-BrC6H4COCH3",
+        "productName": "3-bromoacetophenone",
+        "distractors": [
+          "4-BrC6H4COCH3",
+          "2-BrC6H4COCH3",
+          "C6H5COCH2Br"
+        ],
+        "reaction": "Halogenation of deactivated ring",
+        "explanation": "The acetyl group is meta directing, and with a Lewis acid the ring (not the alpha carbon) is brominated."
+      },
+      {
+        "reagent": "Zn-Hg, conc. HCl",
+        "conditions": "heat",
+        "product": "3-BrC6H4CH2CH3",
+        "productName": "1-bromo-3-ethylbenzene",
+        "distractors": [
+          "3-BrC6H4CH(OH)CH3",
+          "3-BrC6H4COOH",
+          "3-BrC6H4CH=CH2"
+        ],
+        "reaction": "Clemmensen reduction",
+        "explanation": "Zn-Hg/HCl reduces the C=O to CH2 and leaves the ring bromine untouched."
+      }
+    ],
+    "tags": [
+      "friedel-crafts",
+      "clemmensen",
+      "trimerisation"
+    ]
+  },
+  {
+    "id": "chain-3-methylbut-1-ene-to-3-methylbutan-2-ol",
+    "title": "3-Methylbut-1-ene to 3-methylbutan-2-ol",
+    "chapters": [
+      "Hydrocarbons",
+      "Haloalkanes & Haloarenes",
+      "Alcohols, Phenols & Ethers"
+    ],
+    "exam": [
+      "JEE Advanced"
+    ],
+    "difficulty": "hard",
+    "start": "CH2=CHCH(CH3)2",
+    "startName": "3-methylbut-1-ene",
+    "steps": [
+      {
+        "reagent": "HBr",
+        "conditions": "",
+        "product": "(CH3)2CBrCH2CH3",
+        "productName": "2-bromo-2-methylbutane",
+        "distractors": [
+          "(CH3)2CHCHBrCH3",
+          "(CH3)2CHCH2CH2Br",
+          "(CH3)2CHCH(OH)CH3"
+        ],
+        "reaction": "Markovnikov addition with 1,2-hydride shift",
+        "explanation": "The secondary carbocation rearranges by a hydride shift to the more stable tertiary one before bromide attacks."
+      },
+      {
+        "reagent": "alc. KOH",
+        "conditions": "heat",
+        "product": "(CH3)2C=CHCH3",
+        "productName": "2-methylbut-2-ene",
+        "distractors": [
+          "CH2=C(CH3)CH2CH3",
+          "(CH3)2CHCH=CH2",
+          "(CH3)2C(OH)CH2CH3"
+        ],
+        "reaction": "Saytzeff elimination",
+        "explanation": "The most substituted, trisubstituted alkene is the major product of E2 elimination."
+      },
+      {
+        "reagent": "BH3-THF, then H2O2, NaOH",
+        "conditions": "",
+        "product": "(CH3)2CHCH(OH)CH3",
+        "productName": "3-methylbutan-2-ol",
+        "distractors": [
+          "(CH3)2C(OH)CH2CH3",
+          "(CH3)2CHCH2CH2OH",
+          "(CH3)2CHCOCH3"
+        ],
+        "reaction": "Hydroboration-oxidation",
+        "explanation": "Boron goes to the less hindered carbon, so OH ends up on the less substituted carbon, the reverse of acid-catalysed hydration which gives the tertiary alcohol."
+      }
+    ],
+    "tags": [
+      "rearrangement",
+      "hydroboration",
+      "saytzeff"
+    ]
+  },
+  {
+    "id": "chain-ethylbenzene-to-2-phenylethyl-bromide",
+    "title": "Ethylbenzene to 2-phenylethyl bromide",
+    "chapters": [
+      "Aromatic Compounds",
+      "Hydrocarbons",
+      "Haloalkanes & Haloarenes"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "hard",
+    "start": "C6H5CH2CH3",
+    "startName": "ethylbenzene",
+    "steps": [
+      {
+        "reagent": "Br2",
+        "conditions": "hv",
+        "product": "C6H5CHBrCH3",
+        "productName": "(1-bromoethyl)benzene",
+        "distractors": [
+          "C6H5CH2CH2Br",
+          "4-BrC6H4CH2CH3",
+          "2-BrC6H4CH2CH3"
+        ],
+        "reaction": "Benzylic radical bromination",
+        "explanation": "The benzylic radical is resonance stabilised, so radical bromination occurs at the benzylic carbon and not at the ring or the terminal CH3."
+      },
+      {
+        "reagent": "alc. KOH",
+        "conditions": "heat",
+        "product": "C6H5CH=CH2",
+        "productName": "styrene",
+        "distractors": [
+          "C6H5CH(OH)CH3",
+          "C6H5CH2CH3",
+          "C6H5CH2CH2OH"
+        ],
+        "reaction": "Dehydrohalogenation",
+        "explanation": "Elimination gives the conjugated alkene, styrene."
+      },
+      {
+        "reagent": "HBr, ROOR",
+        "conditions": "",
+        "product": "C6H5CH2CH2Br",
+        "productName": "(2-bromoethyl)benzene",
+        "distractors": [
+          "C6H5CHBrCH3",
+          "C6H5CHBrCH2Br",
+          "C6H5CH2CH3"
+        ],
+        "reaction": "Peroxide effect (anti-Markovnikov)",
+        "explanation": "The bromine radical adds to the terminal carbon to give the stable benzylic radical, so Br ends on the terminal carbon, unlike ionic addition which gives $\\ce{C6H5CHBrCH3}$."
+      }
+    ],
+    "tags": [
+      "peroxide effect",
+      "benzylic",
+      "styrene"
+    ]
+  },
+  {
+    "id": "chain-chlorobenzene-to-2-4-dinitrophenol",
+    "title": "Chlorobenzene to 2,4-dinitrophenol",
+    "chapters": [
+      "Haloalkanes & Haloarenes",
+      "Aromatic Compounds",
+      "Alcohols, Phenols & Ethers"
+    ],
+    "exam": [
+      "JEE Main",
+      "JEE Advanced"
+    ],
+    "difficulty": "hard",
+    "start": "C6H5Cl",
+    "startName": "chlorobenzene",
+    "steps": [
+      {
+        "reagent": "conc. HNO3, conc. H2SO4",
+        "conditions": "",
+        "product": "4-ClC6H4NO2",
+        "productName": "1-chloro-4-nitrobenzene",
+        "distractors": [
+          "3-ClC6H4NO2",
+          "2,4-(O2N)2C6H3Cl",
+          "C6H5NO2"
+        ],
+        "reaction": "Nitration of haloarene",
+        "explanation": "Chlorine deactivates the ring but is ortho/para directing, and the para isomer is the major product."
+      },
+      {
+        "reagent": "conc. HNO3, conc. H2SO4",
+        "conditions": "heat",
+        "product": "2,4-(O2N)2C6H3Cl",
+        "productName": "1-chloro-2,4-dinitrobenzene",
+        "distractors": [
+          "3,4-(O2N)2C6H3Cl",
+          "3,5-(O2N)2C6H3Cl",
+          "2,4,6-(O2N)3C6H2Cl"
+        ],
+        "reaction": "Second nitration, directing effects agree",
+        "explanation": "Cl directs ortho and the existing NO2 directs meta, so the incoming group enters ortho to Cl, which is also meta to the nitro group."
+      },
+      {
+        "reagent": "NaOH(aq), then H3O+",
+        "conditions": "368 K",
+        "product": "2,4-(O2N)2C6H3OH",
+        "productName": "2,4-dinitrophenol",
+        "distractors": [
+          "2,4-(O2N)2C6H3ONa",
+          "3,5-(O2N)2C6H3OH",
+          "2,4,6-(O2N)3C6H2OH"
+        ],
+        "reaction": "Nucleophilic aromatic substitution",
+        "explanation": "Nitro groups ortho and para to Cl stabilise the Meisenheimer intermediate, so hydroxide displaces Cl under mild conditions."
+      }
+    ],
+    "tags": [
+      "SNAr",
+      "nitration"
+    ]
+  },
+  {
+    "id": "chain-propyne-to-meso-2-3-dibromobutane",
+    "title": "Propyne to meso-2,3-dibromobutane",
+    "chapters": [
+      "Hydrocarbons"
+    ],
+    "exam": [
+      "JEE Advanced"
+    ],
+    "difficulty": "hard",
+    "start": "CH3C≡CH",
+    "startName": "propyne",
+    "steps": [
+      {
+        "reagent": "NaNH2, then CH3I",
+        "conditions": "liq. NH3",
+        "product": "CH3C≡CCH3",
+        "productName": "but-2-yne",
+        "distractors": [
+          "CH3CH2C≡CH",
+          "CH3CH=CHCH3",
+          "CH3CH2CH2CH3"
+        ],
+        "reaction": "Acetylide alkylation",
+        "explanation": "The terminal proton is removed and the acetylide is methylated by SN2 to form the internal alkyne."
+      },
+      {
+        "reagent": "Na",
+        "conditions": "liq. NH3",
+        "product": "(E)-CH3CH=CHCH3",
+        "productName": "trans-but-2-ene",
+        "distractors": [
+          "(Z)-CH3CH=CHCH3",
+          "CH3CH2CH2CH3",
+          "CH2=CHCH2CH3"
+        ],
+        "reaction": "Dissolving metal reduction (anti addition of H2)",
+        "explanation": "Na in liquid ammonia gives the trans alkene, while H2 over Lindlar catalyst would give the cis isomer."
+      },
+      {
+        "reagent": "Br2",
+        "conditions": "CCl4",
+        "product": "\\text{meso-}CH3CHBrCHBrCH3",
+        "productName": "meso-2,3-dibromobutane",
+        "distractors": [
+          "\\text{dl-}CH3CHBrCHBrCH3",
+          "CH3CH2CHBrCH2Br",
+          "CH3CH2CBr2CH3"
+        ],
+        "reaction": "Anti addition of halogen",
+        "explanation": "Bromine adds anti through a bromonium ion, and anti addition to the trans alkene gives the meso compound, whereas the cis alkene would give the racemic pair."
+      }
+    ],
+    "tags": [
+      "stereochemistry",
+      "anti addition",
+      "alkyne"
+    ]
+  }
+]
