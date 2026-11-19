@@ -427,7 +427,8 @@
     const nav = [
       ['index.html', 'home', 'Dashboard', 'home'], ['practice.html', 'flask', 'Practice', 'practice'],
       ['practice.html?mode=mcq', 'quiz', 'MCQ Quiz', 'mcq'], ['goc.html', 'atom', 'GOC Concepts', 'goc'], ['bank.html', 'grid', 'Reaction Bank', 'bank', counts.bank],
-      ['edit.html', 'edit', 'Edit & Upload', 'edit', counts.custom || null]
+      ['edit.html', 'edit', 'Edit & Upload', 'edit', counts.custom || null],
+      ['settings.html', 'gear', 'Profile & filters', 'settings', RL.prefsActive() ? 'on' : null]
     ];
     let aside = RL.$('aside.sidebar'); const fresh = !aside;
     if (fresh) { aside = document.createElement('aside'); aside.className = 'sidebar'; }
@@ -435,7 +436,6 @@
       <a class="brand" href="index.html"><div class="brand-logo">${RL.icon.logo}</div><span>ReactionLab</span></a>
       ${nav.map(([href, ic, label, key, badge]) => `<a class="nav-link ${key === active ? 'active' : ''}" href="${href}">${RL.icon[ic]}<span>${label}</span>${badge ? `<span class="badge">${badge}</span>` : ''}</a>`).join('')}
       <div class="nav-spacer"></div>
-      <a class="nav-link ${active === 'settings' ? 'active' : ''}" href="settings.html">${RL.icon.gear}<span>Profile &amp; filters</span>${RL.prefsActive() ? '<span class="badge" title="Profile filters active">on</span>' : ''}</a>
       <a class="nav-link nav-secondary" href="https://www.organic-chemistry.org/namedreactions/" target="_blank" rel="noopener">${RL.icon.book}<span>Reference site</span></a>`;
     if (fresh) RL.$('.app').prepend(aside);
     setTimeout(() => { RL.enhanceSelects(); RL.fitAll(); requestAnimationFrame(() => document.documentElement.classList.remove('loading')); }, 0);

@@ -690,3 +690,53 @@ html.loading .main > :not(.topbar) { opacity: 0; }
   .sidebar { gap: var(--s-1); }
   .sidebar .nav-link { flex: 1 1 0; min-width: 0; padding: var(--s-3) 0; justify-content: center; }
 }
+
+/* =========================================================
+   v4: consistency pass (nav, home layout, kbd, hero symmetry)
+   ========================================================= */
+/* keyboard keys: always dark text on a light key, in any card or colour */
+kbd { color: var(--ink) !important; background: #fff; border: 1px solid #d9dbd6; border-bottom-width: 2px; font-weight: 600; padding: 1px 6px; line-height: 1.4; }
+
+/* sidebar: seven items fit without truncating labels */
+.nav-link { min-height: 48px; }
+.nav-link span:not(.badge) { flex: 1; min-width: 0; }
+@media (min-width: 1101px) and (max-width: 1280px) {
+  .app { grid-template-columns: 264px minmax(0, 1fr); }
+  .nav-link { padding: var(--s-3); gap: var(--s-3); }
+  .sidebar { padding: var(--s-5) var(--s-3); }
+}
+@media (min-width: 1101px) and (max-height: 820px) {
+  .sidebar { padding-top: var(--s-4); padding-bottom: var(--s-4); }
+  .brand { padding-bottom: var(--s-3); }
+  .nav-link { min-height: 44px; padding-top: var(--s-2); padding-bottom: var(--s-2); }
+}
+
+/* home: reaction of the day + chapters stay side by side on laptops */
+@media (min-width: 1101px) and (max-width: 1280px) {
+  .two-col { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+}
+@media (max-width: 1100px) { .two-col { grid-template-columns: 1fr; } }
+
+/* hero: two equal columns, content centred, buttons on one line */
+.hero { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; padding: var(--s-6); gap: var(--s-6); }
+.hero > div:first-child { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.hero .pill { margin-bottom: var(--s-4); }
+.hero h1 { font-size: clamp(30px, 3vw, 46px); }
+.hero p { margin: var(--s-3) 0 var(--s-5); }
+.hero-actions { display: flex; flex-wrap: nowrap; gap: var(--s-2); width: 100%; }
+.hero-actions .btn { flex: 0 1 auto; padding: 0 var(--s-4); height: 46px; min-width: 0; }
+.hero-actions .btn.start { flex: 1 1 auto; }
+.hero-actions .btn.ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.3); }
+.hero-actions .btn.ghost:hover { background: rgba(255,255,255,.08); }
+.hero-meta { margin-top: var(--s-4); }
+.hero-eqs { justify-content: center; }
+.hero .hero-eqs .eq-float { flex: 1 1 0; display: flex; flex-direction: column; justify-content: center; padding: var(--s-4) var(--s-5); }
+@media (max-width: 1100px) {
+  .hero { grid-template-columns: 1fr; padding: var(--s-5); gap: var(--s-5); }
+  .hero .hero-eqs .eq-float { flex: none; }
+}
+@media (max-width: 760px) {
+  .hero-actions { display: grid; grid-template-columns: 1fr 1fr; }
+  .hero-actions .btn.start { grid-column: 1 / -1; }
+  .hero-actions .btn { padding: 0 var(--s-3); }
+}
