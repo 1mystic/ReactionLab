@@ -217,6 +217,7 @@
       if ('{(['.includes(ch)) depth++; else if ('})]'.includes(ch)) depth = Math.max(0, depth - 1);
       if (depth === 0) {
         if (str.startsWith(' + ', i)) { parts.push(cur + ' +'); cur = ''; i += 2; continue; }
+        if (str.startsWith(' or ', i) && cur.trim()) { parts.push(cur + ' or'); cur = ''; i += 3; continue; }
         if (ch === ';' || (ch === ',' && str[i + 1] === ' ')) { parts.push(cur + ch); cur = ''; continue; }
       }
       cur += ch;
@@ -448,7 +449,7 @@
     const cs = getComputedStyle(el);
     const avail = el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 4;
     const w = k.scrollWidth;
-    if (avail > 0 && w > avail) k.style.fontSize = Math.max(0.6, avail / w) * 100 + '%';
+    if (avail > 0 && w > avail) k.style.fontSize = Math.max(innerWidth <= 760 ? 0.82 : 0.6, avail / w) * 100 + '%';
   };
   RL.fitAll = (root = document) => requestAnimationFrame(() => root.querySelectorAll('.eq-fit').forEach(RL.fit));
   window.addEventListener('resize', RL.debounce(() => RL.fitAll(), 150));

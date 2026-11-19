@@ -83,6 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
     $('#blInfo').textContent = `${bl} blacklisted (hidden everywhere) and ${ar} archived (hidden from practice) single reactions. Use Edit & Upload to hide or restore individual problems.`;
   }
 
+  /* theme: also reachable from here, the only place on phones */
+  const syncTheme = () => $$('#themeTabs .tab').forEach((t) => t.classList.toggle('active', t.dataset.theme === RL.theme()));
+  $$('#themeTabs .tab').forEach((t) => (t.onclick = () => { RL.setTheme(t.dataset.theme); syncTheme(); }));
+  syncTheme();
+
   const nameIn = $('#pName');
   nameIn.value = RL.state.name || '';
   nameIn.addEventListener('change', () => { RL.state.name = nameIn.value.trim(); RL.save(); RL.layout(...PAGE); RL.toast('Name saved'); });

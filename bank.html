@@ -11,10 +11,10 @@
   <script defer src="assets/vendor/katex/mhchem.min.js"></script>
   <script defer src="assets/vendor/fuse.min.js"></script>
   <script>try{var d=document.documentElement,t=localStorage.getItem('rl.theme')||'dark';d.dataset.theme=t;if(localStorage.getItem('rl.sb')==='1')d.classList.add('sb-collapsed')}catch(e){}document.documentElement.classList.add('loading');setTimeout(function(){document.documentElement.classList.remove('loading')},1200)</script>
-  <link rel="stylesheet" href="assets/css/style.css?v=202611191202">
-  <script defer src="data/reactions.js?v=202611191202"></script>
-  <script defer src="assets/js/core.js?v=202611191202"></script>
-  <script defer src="assets/js/bank.js?v=202611191202"></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=202611191205">
+  <script defer src="data/reactions.js?v=202611191205"></script>
+  <script defer src="assets/js/core.js?v=202611191205"></script>
+  <script defer src="assets/js/bank.js?v=202611191205"></script>
 </head>
 <body>
   <div class="app">
@@ -23,7 +23,7 @@
       <section class="panel">
         <div class="panel-head">
           <h2>Reaction bank <span class="muted" style="font-size:18px" id="countLbl"></span></h2>
-          <label class="search-box"><span id="sIcon" style="width:20px;display:grid"></span><input id="q" type="search" placeholder="Search name, reagent, product, tag…  (press / )"></label>
+          <label class="search-box"><span id="sIcon" style="width:20px;display:grid"></span><input id="q" type="search" placeholder="Search reactions, reagents, tags"></label>
           <div class="tabs" id="viewTabs"><button class="tab active" data-v="grid" title="Grid"></button><button class="tab" data-v="list" title="List"></button><button class="tab" data-v="stack" title="Stacks by chapter"></button></div>
         </div>
         <div class="chips" id="catChips" style="margin-bottom:12px"></div>

@@ -877,3 +877,33 @@ html[data-theme="dark"] .cselect-opt.sel .tick { color: #fff; }
   #freeMode .panel-head h2 { margin-right: auto; }
   html, body { overflow-x: hidden; }
 }
+
+/* ---- Phones: theme lives in Profile & filters, so no floating button ---- */
+@media (max-width: 760px) { .sb-tools { display: none !important; } }
+#themeTabs { max-width: 320px; }
+
+/* =========================================================
+   v6: mobile fixes (clipped equations, tabs, filters)
+   ========================================================= */
+/* centred content must never clip its left edge when it overflows: scroll from the start instead */
+.equation-box { place-items: safe center; }
+.equation-box.eq-fit { justify-content: safe center; }
+.eq-inline, .eq-mini { justify-content: flex-start; }
+.ce-chunk { max-width: 100%; }
+@media (max-width: 760px) {
+  /* tabs: single scrollable row, labels never spill out of the pill */
+  .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; max-width: 100%; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; white-space: nowrap; padding: 0 var(--s-4); }
+  /* filter dropdowns: two per row instead of one tall stack */
+  .filter-bar { gap: var(--s-2); }
+  .filter-bar .cselect { flex: 1 1 calc(50% - var(--s-2)) !important; min-width: 0; }
+  .filter-bar .cselect.grow { flex: 1 1 100% !important; }
+  .filter-bar .tabs, .filter-bar .chip { flex: 1 1 100%; }
+  .filter-bar .btn.sm { margin-left: 0 !important; flex: 1 1 auto; }
+  /* answer cards: reagent chunks wrap and shrink slightly */
+  .note-card .wrap-chem { font-size: 1em !important; line-height: 1.8; }
+  .note-card .ce-chunk { font-size: .94em; }
+  .equation-box { overflow-x: auto; }
+  .panel-head { align-items: center; }
+}
