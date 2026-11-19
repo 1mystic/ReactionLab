@@ -1,0 +1,2837 @@
+[
+ {
+  "aliases": [
+   "Halogen exchange (iodide)",
+   "Alkyl iodide from alkyl chloride/bromide"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "dry acetone, \\Delta",
+  "catalyst": "",
+  "reference": "https://www.organic-chemistry.org/namedreactions/finkelstein-reaction.shtm",
+  "id": "finkelstein-reaction",
+  "name": "Finkelstein Reaction",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "Named reaction",
+  "difficulty": "easy",
+  "reactants": "R-Cl + NaI",
+  "reagents": "NaI",
+  "products": "R-I + NaCl v",
+  "reagentKeywords": [
+   "NaI",
+   "sodium iodide",
+   "dry acetone",
+   "acetone",
+   "halogen exchange"
+  ],
+  "productName": "Alkyl iodide",
+  "summary": "Alkyl chlorides or bromides are converted to alkyl iodides by heating with NaI in dry acetone; NaCl/NaBr precipitates and drives the equilibrium forward.",
+  "mechanism": "Single-step SN2 attack of I- on the carbon bearing Cl/Br with inversion. NaI is soluble in acetone but NaCl and NaBr are not, so their precipitation (Le Chatelier) pulls the reversible exchange to completion.",
+  "keyPoints": [
+   "SN2 reaction: 1° > 2° >> 3° (3° does not react)",
+   "Dry acetone is essential: NaCl/NaBr must be insoluble",
+   "Equilibrium driven by precipitation of NaCl/NaBr",
+   "Used to make alkyl iodides, which are hard to make by direct routes"
+  ],
+  "whenUsed": "Preparation of alkyl iodides from the cheaper chlorides/bromides.",
+  "applications": [
+   "Making alkyl iodides for Grignard or Wurtz-type work",
+   "Halogen exchange to activate substrates for SN2"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2Br + NaI ->[\\text{dry acetone}] CH3CH2I + NaBr v",
+    "note": "Ethyl iodide; NaBr precipitates"
+   },
+   {
+    "eq": "CH3CH2CH2Cl + NaI ->[\\text{dry acetone}][\\Delta] CH3CH2CH2I + NaCl v",
+    "note": "1-Iodopropane"
+   },
+   {
+    "eq": "C6H5CH2Cl + NaI ->[\\text{acetone}] C6H5CH2I + NaCl v",
+    "note": "Benzylic halides react very fast"
+   }
+  ],
+  "jeeTips": "Aryl and vinyl halides do not undergo Finkelstein under these conditions. Do not confuse with Swarts (fluorides, using AgF/Hg2F2/SbF3). Reactivity: allyl/benzyl > 1° > 2°; 3° halides prefer elimination.",
+  "tags": [
+   "SN2",
+   "halogen exchange",
+   "alkyl iodide",
+   "acetone"
+  ]
+ },
+ {
+  "aliases": [
+   "Swarts fluorination",
+   "Halogen exchange (fluoride)"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "",
+  "catalyst": "",
+  "reference": "",
+  "id": "swarts-reaction",
+  "name": "Swarts Reaction",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "Named reaction",
+  "difficulty": "easy",
+  "reactants": "2 CH3Br",
+  "reagents": "Hg2F2",
+  "products": "2 CH3F + Hg2Br2 v",
+  "reagentKeywords": [
+   "AgF",
+   "Hg2F2",
+   "SbF3",
+   "CoF2",
+   "metallic fluoride",
+   "fluorination"
+  ],
+  "productName": "Alkyl fluoride",
+  "summary": "Alkyl chlorides or bromides are converted to alkyl fluorides by heating with a heavy-metal fluoride such as AgF, Hg2F2, CoF2 or SbF3.",
+  "mechanism": "Nucleophilic halogen exchange (SN2-type): the covalent, sparingly soluble metal fluoride delivers F- while the metal captures the departing Cl-/Br- as an insoluble halide. Alkali fluorides (NaF, KF) are too ionic and poorly reactive in non-polar media.",
+  "keyPoints": [
+   "Reagents: AgF, Hg2F2, CoF2, SbF3 (SbCl5 catalyst for polyhalides)",
+   "Direct fluorination with F2 is violent, so Swarts is the practical route to R-F",
+   "Gives CFCs such as Freon-12 from CCl4",
+   "Alkyl fluorides cannot be made by HF or the Finkelstein reaction"
+  ],
+  "whenUsed": "Laboratory and industrial preparation of alkyl fluorides and chlorofluorocarbons (freons).",
+  "applications": [
+   "Freon-12 (CCl2F2) refrigerant",
+   "Fluorinated organic intermediates"
+  ],
+  "examples": [
+   {
+    "eq": "CH3Br + AgF -> CH3F + AgBr v",
+    "note": "Methyl fluoride"
+   },
+   {
+    "eq": "3 CCl4 + 2 SbF3 ->[SbCl5] 3 CCl2F2 + 2 SbCl3",
+    "note": "Freon-12"
+   },
+   {
+    "eq": "2 CH3CH2Cl + Hg2F2 -> 2 CH3CH2F + Hg2Cl2 v",
+    "note": "Ethyl fluoride"
+   }
+  ],
+  "jeeTips": "Memorise the reagent list AgF / Hg2F2 / CoF2 / SbF3. Finkelstein gives iodides, Swarts gives fluorides. Freon-12 from CCl4 + SbF3 is a favourite one-liner.",
+  "tags": [
+   "fluorination",
+   "halogen exchange",
+   "freon",
+   "alkyl fluoride"
+  ]
+ },
+ {
+  "aliases": [
+   "Borodin-Hunsdiecker reaction",
+   "Decarboxylative halogenation"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "CCl4, \\Delta",
+  "catalyst": "",
+  "reference": "https://www.organic-chemistry.org/namedreactions/hunsdiecker-reaction.shtm",
+  "id": "hunsdiecker-reaction",
+  "name": "Hunsdiecker (Borodine) Reaction",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "Named reaction",
+  "difficulty": "medium",
+  "reactants": "RCOOAg + Br2",
+  "reagents": "Br2",
+  "products": "R-Br + CO2 ^ + AgBr v",
+  "reagentKeywords": [
+   "Br2",
+   "silver salt",
+   "CCl4",
+   "RCOOAg",
+   "decarboxylation"
+  ],
+  "productName": "Alkyl bromide (one carbon fewer)",
+  "summary": "Silver salt of a carboxylic acid on heating with bromine in CCl4 gives an alkyl bromide having one carbon less than the parent acid.",
+  "mechanism": "RCOOAg + Br2 gives an acyl hypobromite RCOOBr, which undergoes homolysis of the O-Br bond. The acyloxy radical RCOO. loses CO2 to give R., which abstracts Br from another RCOOBr in a radical chain, giving R-Br.",
+  "keyPoints": [
+   "Step-down series: one carbon less than the acid",
+   "Free-radical chain mechanism",
+   "Yield order of R-X: 1° > 2° > 3°",
+   "Dry silver salt is needed; Cl2 and I2 can also be used"
+  ],
+  "whenUsed": "Descending the homologous series; making alkyl/aryl halides not accessible directly.",
+  "applications": [
+   "Conversion of RCOOH to R-Br with loss of one carbon",
+   "Preparation of bromoarenes from aromatic acids"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2COOAg + Br2 ->[CCl4][\\Delta] CH3CH2Br + CO2 ^ + AgBr v",
+    "note": "Propanoic acid gives bromoethane"
+   },
+   {
+    "eq": "CH3COOAg + Br2 ->[CCl4] CH3Br + CO2 ^ + AgBr v",
+    "note": "Acetic acid gives bromomethane"
+   },
+   {
+    "eq": "C6H5COOAg + Br2 ->[CCl4] C6H5Br + CO2 ^ + AgBr v",
+    "note": "Bromobenzene from benzoic acid"
+   }
+  ],
+  "jeeTips": "Product has ONE CARBON LESS than the acid. Compare: Kolbe electrolysis (alkane, R-R), soda-lime decarboxylation (alkane, one C less), Hunsdiecker (R-X, one C less).",
+  "tags": [
+   "decarboxylation",
+   "radical",
+   "step-down",
+   "silver salt"
+  ]
+ },
+ {
+  "aliases": [
+   "Darzens halogenation",
+   "Thionyl chloride method",
+   "SOCl2 on alcohols"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "pyridine (optional), reflux",
+  "catalyst": "Pyridine (optional)",
+  "reference": "",
+  "id": "alcohol-socl2-darzens",
+  "name": "Alcohol to Alkyl Chloride with SOCl2 (Darzens Procedure)",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "difficulty": "easy",
+  "reactants": "R-OH",
+  "reagents": "SOCl2",
+  "products": "R-Cl + SO2 ^ + HCl ^",
+  "reagentKeywords": [
+   "SOCl2",
+   "thionyl chloride",
+   "pyridine",
+   "Darzens"
+  ],
+  "productName": "Alkyl chloride",
+  "summary": "Thionyl chloride converts alcohols into alkyl chlorides; the by-products SO2 and HCl are gases, so the product is obtained pure. This is the best method for R-Cl from R-OH.",
+  "mechanism": "The alcohol attacks S of SOCl2 to give an alkyl chlorosulphite ROS(O)Cl and HCl. Without base, Cl- delivered from the same face (SNi) gives retention. With pyridine, HCl is removed and free Cl- attacks from the back (SN2), giving inversion.",
+  "keyPoints": [
+   "Gaseous by-products SO2 and HCl: easy work-up, high purity",
+   "SNi (retention) without pyridine; inversion with pyridine",
+   "No carbocation rearrangement",
+   "Preferred over PCl5/PCl3 and HCl/ZnCl2"
+  ],
+  "whenUsed": "Clean laboratory preparation of alkyl chlorides, including from chiral alcohols with stereochemical control.",
+  "applications": [
+   "Making R-Cl for Grignard reagents",
+   "Stereospecific substitution of chiral alcohols"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2OH + SOCl2 -> CH3CH2Cl + SO2 ^ + HCl ^",
+    "note": "Chloroethane"
+   },
+   {
+    "eq": "(CH3)2CHOH + SOCl2 ->[\\text{pyridine}] (CH3)2CHCl + SO2 ^ + HCl ^",
+    "note": "2-Chloropropane"
+   },
+   {
+    "eq": "C6H5CH2OH + SOCl2 -> C6H5CH2Cl + SO2 ^ + HCl ^",
+    "note": "Benzyl chloride"
+   }
+  ],
+  "jeeTips": "Stereochemistry trap: SOCl2 alone = retention (SNi); SOCl2 + pyridine = inversion. Phenols do NOT give aryl chlorides with SOCl2. Preferred reagent because both by-products are gases.",
+  "tags": [
+   "SNi",
+   "retention",
+   "thionyl chloride",
+   "alcohol to halide"
+  ]
+ },
+ {
+  "aliases": [
+   "Phosphorus halides on alcohols",
+   "PX3 / PX5 reaction with alcohols"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "",
+  "catalyst": "",
+  "reference": "",
+  "id": "alcohol-to-alkyl-halide-pcl5-pcl3-pbr3",
+  "name": "Alcohol to Alkyl Halide with PCl5 / PCl3 / PBr3",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "difficulty": "easy",
+  "reactants": "3 R-OH",
+  "reagents": "PCl3 (or PBr3)",
+  "products": "3 R-Cl + H3PO3",
+  "reagentKeywords": [
+   "PCl5",
+   "PCl3",
+   "PBr3",
+   "red P",
+   "Br2",
+   "P/I2",
+   "phosphorus halide"
+  ],
+  "productName": "Alkyl chloride / bromide / iodide",
+  "summary": "Alcohols react with PCl5, PCl3 or PBr3 to give the corresponding alkyl halide. Bromides and iodides are made in situ from red P with Br2 or I2.",
+  "mechanism": "The alcohol O attacks P and displaces halide to form a good leaving group R-O-PX2; the displaced X- then attacks carbon in an SN2 step (inversion at chiral 1°/2° carbons) with no free carbocation, hence no rearrangement.",
+  "keyPoints": [
+   "PCl5 gives POCl3 + HCl (steamy HCl fumes are a test for -OH)",
+   "PCl3 and PBr3 give H3PO3",
+   "Red P + Br2 or I2 generates PBr3 / PI3 in situ",
+   "SN2-like, so inversion and no rearrangement"
+  ],
+  "whenUsed": "Conversion of 1° and 2° alcohols to chlorides, bromides and iodides without rearrangement.",
+  "applications": [
+   "Preparation of R-Br for Grignard, Gabriel and Williamson steps",
+   "Test for -OH group using PCl5"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2OH + PCl5 -> CH3CH2Cl + POCl3 + HCl ^",
+    "note": "Chloroethane"
+   },
+   {
+    "eq": "3 CH3CH2OH + PCl3 -> 3 CH3CH2Cl + H3PO3",
+    "note": "With PCl3"
+   },
+   {
+    "eq": "3 CH3CH2CH2OH + PBr3 -> 3 CH3CH2CH2Br + H3PO3",
+    "note": "1-Bromopropane"
+   },
+   {
+    "eq": "6 CH3OH + 2 P + 3 I2 -> 6 CH3I + 2 H3PO3",
+    "note": "Red P / I2 in situ"
+   }
+  ],
+  "jeeTips": "PCl5 also reacts with carboxylic acids (gives acid chlorides). Phenols give aryl chlorides only in very low yield. PX3 avoids carbocation rearrangement, unlike HX.",
+  "tags": [
+   "alcohol to halide",
+   "SN2",
+   "phosphorus"
+  ]
+ },
+ {
+  "aliases": [
+   "Groove's process",
+   "Lucas reagent halogenation",
+   "Alcohol + HCl / ZnCl2"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "\\Delta",
+  "catalyst": "Anhydrous ZnCl2 (Lewis acid)",
+  "reference": "",
+  "id": "grooves-process",
+  "name": "Groove's Process (ZnCl2 / HCl)",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "difficulty": "medium",
+  "reactants": "R-OH + HCl",
+  "reagents": "anhyd. ZnCl2",
+  "products": "R-Cl + H2O",
+  "reagentKeywords": [
+   "ZnCl2",
+   "HCl",
+   "conc. HCl",
+   "Lucas",
+   "Groove"
+  ],
+  "productName": "Alkyl chloride",
+  "summary": "Alcohols are converted into alkyl chlorides by conc. HCl in the presence of anhydrous ZnCl2 (a Lewis acid that activates the OH).",
+  "mechanism": "ZnCl2 coordinates to the oxygen, converting -OH into a better leaving group. 3° and 2° alcohols then ionise to carbocations (SN1) which are captured by Cl-; 1° alcohols react by SN2 and need heating.",
+  "keyPoints": [
+   "Reactivity of alcohols: 3° > 2° > 1° (carbocation stability)",
+   "3° alcohols react even without ZnCl2",
+   "Carbocation rearrangement possible for 2° / neopentyl systems",
+   "HI > HBr > HCl in reactivity"
+  ],
+  "whenUsed": "Simple conversion of alcohols to chlorides; the basis of the Lucas test for classifying alcohols.",
+  "applications": [
+   "Preparation of t-butyl chloride",
+   "Basis of Lucas test"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2OH + HCl ->[\\text{ZnCl2}][\\Delta] CH3CH2Cl + H2O",
+    "note": "1° alcohol: slow, needs heat"
+   },
+   {
+    "eq": "(CH3)3COH + HCl -> (CH3)3CCl + H2O",
+    "note": "3° alcohol: fast, at room temp"
+   },
+   {
+    "eq": "(CH3)2CHOH + HCl ->[\\text{ZnCl2}] (CH3)2CHCl + H2O",
+    "note": "2° alcohol"
+   }
+  ],
+  "jeeTips": "Alcohol order 3° > 2° > 1° but halogen acid order HI > HBr > HCl. Primary alcohols need ZnCl2 AND heating. Rearrangement is possible, unlike SOCl2/PX3.",
+  "tags": [
+   "Lewis acid",
+   "SN1",
+   "alcohol to halide",
+   "ZnCl2"
+  ]
+ },
+ {
+  "aliases": [
+   "Bimolecular nucleophilic substitution",
+   "SN2",
+   "Walden inversion"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "polar aprotic solvent (DMSO, DMF, acetone)",
+  "catalyst": "",
+  "reference": "",
+  "id": "sn2-walden-inversion",
+  "name": "SN2 Reaction (Walden Inversion)",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "difficulty": "medium",
+  "reactants": "R-X + Nu-",
+  "reagents": "Nu- (strong nucleophile)",
+  "products": "R-Nu + X-",
+  "reagentKeywords": [
+   "OH-",
+   "CN-",
+   "aprotic",
+   "DMSO",
+   "DMF",
+   "acetone",
+   "backside attack",
+   "inversion"
+  ],
+  "productName": "Substituted product with inverted configuration",
+  "summary": "One-step bimolecular substitution in which the nucleophile attacks from the side opposite to the leaving group, inverting the configuration at the carbon.",
+  "mechanism": "Nu- attacks the carbon from the back face; a pentacoordinate transition state with partial Nu...C...X bonds forms, and the leaving group departs as the other three substituents flip like an umbrella (Walden inversion). Rate = k[RX][Nu-].",
+  "keyPoints": [
+   "Second order kinetics: rate = k[RX][Nu-]",
+   "Complete inversion of configuration",
+   "Reactivity: CH3X > 1° > 2° >> 3° (steric hindrance)",
+   "Favoured by strong nucleophiles and polar aprotic solvents",
+   "Leaving group ability: I- > Br- > Cl- >> F-"
+  ],
+  "whenUsed": "Methyl and primary halides; stereospecific synthesis of alcohols, nitriles, ethers, amines.",
+  "applications": [
+   "Williamson ether synthesis",
+   "Gabriel phthalimide synthesis",
+   "Finkelstein reaction"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2Br + OH- -> CH3CH2OH + Br-",
+    "note": "1° halide: SN2"
+   },
+   {
+    "eq": "CH3Br + CN- -> CH3CN + Br-",
+    "note": "Methyl bromide: fastest"
+   },
+   {
+    "eq": "CH3CHBrC2H5 + OH- -> CH3CH(OH)C2H5 + Br-",
+    "note": "(R)-2-bromobutane gives (S)-butan-2-ol: inversion"
+   }
+  ],
+  "jeeTips": "Inversion of geometry does not always flip the (R)/(S) label: it depends on CIP priorities. Neopentyl halides are 1° but extremely slow in SN2. Allyl and benzyl halides react fast. Polar PROTIC solvents slow SN2 (they solvate Nu-).",
+  "tags": [
+   "SN2",
+   "inversion",
+   "stereochemistry",
+   "kinetics"
+  ]
+ },
+ {
+  "aliases": [
+   "Unimolecular nucleophilic substitution",
+   "SN1"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "polar protic solvent",
+  "catalyst": "",
+  "reference": "",
+  "id": "sn1-racemisation",
+  "name": "SN1 Reaction (Racemisation)",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "difficulty": "medium",
+  "reactants": "(CH3)3C-Br",
+  "reagents": "H2O (weak nucleophile / solvolysis)",
+  "products": "(CH3)3C-OH + HBr",
+  "reagentKeywords": [
+   "H2O",
+   "solvolysis",
+   "carbocation",
+   "polar protic",
+   "racemisation",
+   "ROH",
+   "aq. ethanol"
+  ],
+  "productName": "Substituted product (racemic if the carbon is chiral)",
+  "summary": "Two-step unimolecular substitution through a planar carbocation, giving a racemic mixture when the substrate carbon is chiral.",
+  "mechanism": "Slow ionisation R-X to R+ + X- is the rate-determining step. The planar sp2 carbocation is attacked by the nucleophile from either face with nearly equal probability, giving both enantiomers (racemic, usually with slight inversion excess from ion-pair effects).",
+  "keyPoints": [
+   "First order: rate = k[RX], independent of [Nu]",
+   "Reactivity: 3° > 2° >> 1°; allyl and benzyl also high",
+   "Racemisation (retention + inversion) at a stereocentre",
+   "Polar protic solvents accelerate; carbocation rearrangement possible",
+   "Competes with E1 on heating"
+  ],
+  "whenUsed": "Tertiary, allylic and benzylic halides in polar protic solvents (solvolysis).",
+  "applications": [
+   "Hydrolysis of t-butyl bromide",
+   "Basis for comparing carbocation stabilities"
+  ],
+  "examples": [
+   {
+    "eq": "(CH3)3CBr ->[\\text{slow}] (CH3)3C+ + Br-",
+    "note": "Rate-determining ionisation"
+   },
+   {
+    "eq": "(CH3)3C+ + H2O -> (CH3)3COH + H+",
+    "note": "Fast capture by water"
+   },
+   {
+    "eq": "C6H5CH(CH3)Cl + H2O -> C6H5CH(CH3)OH + HCl",
+    "note": "Chiral benzylic halide gives racemic alcohol"
+   }
+  ],
+  "jeeTips": "Racemisation is rarely 100%: some inversion predominates (ion pair). SN1 reactivity: allyl, benzyl, 3° > 2° > 1°. Vinyl/aryl halides do not do SN1. Optically inactive product from an optically active substrate points to SN1.",
+  "tags": [
+   "SN1",
+   "carbocation",
+   "racemisation",
+   "solvolysis"
+  ]
+ },
+ {
+  "aliases": [
+   "Preparation of Grignard reagent",
+   "Organomagnesium halide formation"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "dry ether (or THF)",
+  "catalyst": "Trace I2 to initiate",
+  "reference": "https://www.organic-chemistry.org/namedreactions/grignard-reaction.shtm",
+  "id": "grignard-reagent-formation",
+  "name": "Grignard Reagent Formation",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "Named reaction",
+  "difficulty": "easy",
+  "reactants": "R-X + Mg",
+  "reagents": "Mg turnings",
+  "products": "R-MgX",
+  "reagentKeywords": [
+   "Mg",
+   "magnesium",
+   "dry ether",
+   "THF",
+   "RMgX",
+   "anhydrous"
+  ],
+  "productName": "Alkylmagnesium halide (Grignard reagent)",
+  "summary": "Alkyl or aryl halides react with magnesium metal in dry ether to form organomagnesium halides, which are strongly nucleophilic and basic carbanion sources.",
+  "mechanism": "Single-electron transfer from the Mg surface to R-X gives a radical pair R. and MgX., which combine on the metal surface to give R-MgX; ether molecules coordinate to Mg and solubilise the reagent.",
+  "keyPoints": [
+   "Strictly anhydrous: RMgX + H2O gives R-H",
+   "Reactivity of halides: RI > RBr > RCl (RF does not react)",
+   "Aryl/vinyl chlorides need THF",
+   "Reacts with acidic H (OH, NH, SH, terminal alkyne, COOH) to give hydrocarbon",
+   "The C-Mg carbon is nucleophilic (umpolung)"
+  ],
+  "whenUsed": "Most versatile organometallic reagent; C-C bond formation (alcohols, acids, hydrocarbons).",
+  "applications": [
+   "Alcohols from carbonyls",
+   "Carboxylic acids with CO2",
+   "Hydrocarbons by protonolysis"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2Br + Mg ->[\\text{dry ether}] CH3CH2MgBr",
+    "note": "Ethylmagnesium bromide"
+   },
+   {
+    "eq": "C6H5Br + Mg ->[\\text{dry THF}] C6H5MgBr",
+    "note": "Phenylmagnesium bromide"
+   },
+   {
+    "eq": "CH3MgI + H2O -> CH4 ^ + Mg(OH)I",
+    "note": "Reaction with water (why dryness matters)"
+   }
+  ],
+  "jeeTips": "Never use alcohol, water or acidic solvent. A Grignard cannot coexist with -OH, -COOH, -NH2 or terminal alkyne H in the same molecule. CH3MgI + compound gives CH4: moles of CH4 = moles of active H (Zerewitinoff).",
+  "tags": [
+   "organometallic",
+   "umpolung",
+   "ether",
+   "Mg"
+  ]
+ },
+ {
+  "aliases": [
+   "Dow process",
+   "Hydrolysis of chlorobenzene"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "623 K, 300 atm",
+  "catalyst": "",
+  "reference": "",
+  "id": "dow-process",
+  "name": "Dow's Process (Chlorobenzene to Phenol)",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "Industrial process",
+  "difficulty": "medium",
+  "reactants": "C6H5Cl + 2 NaOH",
+  "reagents": "NaOH",
+  "products": "C6H5ONa + NaCl + H2O",
+  "reagentKeywords": [
+   "NaOH",
+   "623 K",
+   "300 atm",
+   "high pressure",
+   "phenol",
+   "sodium phenoxide"
+  ],
+  "productName": "Sodium phenoxide, then phenol on acidification",
+  "summary": "Chlorobenzene, being unreactive, is hydrolysed only under drastic conditions: NaOH at 623 K and 300 atm gives sodium phenoxide, which on acidification yields phenol.",
+  "mechanism": "Under these extreme conditions hydroxide attacks the ring carbon bearing Cl (partly via a benzyne-type elimination-addition path), Cl- leaves, and the phenol formed is deprotonated by excess NaOH. Acidification with HCl liberates phenol.",
+  "keyPoints": [
+   "Aryl C-Cl bond is strong: partial double bond character (resonance) and sp2 carbon",
+   "Needs 623 K and 300 atm (two NaOH per ArCl)",
+   "Product is phenoxide; acidify to get phenol",
+   "o/p-NO2 groups make the hydrolysis far easier"
+  ],
+  "whenUsed": "Historic commercial production of phenol (largely replaced by the cumene process).",
+  "applications": [
+   "Industrial phenol",
+   "Illustrates low reactivity of haloarenes"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5Cl + 2 NaOH ->[623 K][300 atm] C6H5ONa + NaCl + H2O",
+    "note": "Sodium phenoxide"
+   },
+   {
+    "eq": "C6H5ONa + HCl -> C6H5OH + NaCl",
+    "note": "Acidification liberates phenol"
+   },
+   {
+    "eq": "C6H3Cl(NO2)2 + NaOH ->[368 K] C6H3(OH)(NO2)2 + NaCl",
+    "note": "2,4-Dinitrochlorobenzene reacts at only 368 K"
+   }
+  ],
+  "jeeTips": "Remember: 623 K, 300 atm. With o/p-NO2 groups: one NO2 needs 433 K, two NO2 need 368 K, three NO2 react at room temperature. Product after NaOH is phenoxide, not phenol.",
+  "tags": [
+   "haloarene",
+   "phenol",
+   "industrial",
+   "low reactivity"
+  ]
+ },
+ {
+  "aliases": [
+   "SNAr",
+   "Bimolecular displacement of aryl halide",
+   "Meisenheimer complex route"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "433 K",
+  "catalyst": "",
+  "reference": "",
+  "id": "snar-addition-elimination",
+  "name": "Nucleophilic Aromatic Substitution Activated by NO2 (Addition-Elimination)",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "difficulty": "hard",
+  "reactants": "C6H4Cl(NO2) + NaOH",
+  "reagents": "aq. NaOH",
+  "products": "C6H4(OH)(NO2) + NaCl",
+  "reagentKeywords": [
+   "NaOH",
+   "NO2",
+   "nitro",
+   "Meisenheimer",
+   "addition-elimination",
+   "SNAr",
+   "electron-withdrawing"
+  ],
+  "productName": "o/p-Nitrophenol, 2,4-dinitrophenol, picric acid",
+  "summary": "A haloarene bearing strongly electron-withdrawing groups (NO2) at ortho/para positions undergoes nucleophilic substitution by addition-elimination through a resonance-stabilised carbanion (Meisenheimer complex).",
+  "mechanism": "Nu- adds to the ring carbon carrying Cl, forming a cyclohexadienyl carbanion (Meisenheimer complex) whose negative charge is delocalised onto o/p-NO2 groups. Loss of Cl- restores aromaticity.",
+  "keyPoints": [
+   "NO2 must be ortho or para (not meta) to the halide",
+   "More NO2 groups mean milder conditions: 1 NO2 at 433 K; 2 NO2 at 368 K; 3 NO2 at 298 K",
+   "Leaving group order in SNAr: F > Cl > Br > I (rate-determining addition)",
+   "Two steps: addition (slow), then elimination (fast)"
+  ],
+  "whenUsed": "Preparing nitrophenols, picric acid, nitroanilines; basis of Sanger's reagent (2,4-dinitrofluorobenzene) for N-terminal amino acid labelling.",
+  "applications": [
+   "Picric acid from 2,4,6-trinitrochlorobenzene",
+   "Sanger's reagent in protein sequencing"
+  ],
+  "examples": [
+   {
+    "eq": "C6H4Cl(NO2) + NaOH ->[433 K] C6H4(OH)(NO2) + NaCl",
+    "note": "p-Chloronitrobenzene to p-nitrophenol"
+   },
+   {
+    "eq": "C6H3Cl(NO2)2 + NaOH ->[368 K] C6H3(OH)(NO2)2 + NaCl",
+    "note": "2,4-Dinitrochlorobenzene"
+   },
+   {
+    "eq": "C6H2Cl(NO2)3 + H2O -> C6H2(OH)(NO2)3 + HCl",
+    "note": "Picryl chloride gives picric acid at room temperature"
+   }
+  ],
+  "jeeTips": "m-Nitrochlorobenzene is NOT activated. SNAr halogen order is F > Cl > Br > I (opposite to SN2). Do not confuse with benzyne (elimination-addition), which needs no activating group but a very strong base.",
+  "tags": [
+   "SNAr",
+   "Meisenheimer",
+   "haloarene",
+   "nitro"
+  ]
+ },
+ {
+  "aliases": [
+   "Elimination-addition",
+   "Aryne mechanism",
+   "Benzyne intermediate"
+  ],
+  "exam": [
+   "JEE Advanced"
+  ],
+  "conditions": "liq. NH3, 240 K",
+  "catalyst": "",
+  "reference": "",
+  "id": "benzyne-mechanism",
+  "name": "Benzyne Mechanism (Chlorobenzene + NaNH2 / liq. NH3)",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "difficulty": "hard",
+  "reactants": "C6H5Cl",
+  "reagents": "NaNH2",
+  "products": "C6H5NH2 + NaCl",
+  "reagentKeywords": [
+   "NaNH2",
+   "KNH2",
+   "liq. NH3",
+   "benzyne",
+   "aryne",
+   "strong base",
+   "elimination-addition"
+  ],
+  "productName": "Aniline (via benzyne)",
+  "summary": "Unactivated aryl halides react with a very strong base like NaNH2 in liquid NH3 by elimination of HX to give the highly strained benzyne, which is then attacked by the nucleophile.",
+  "mechanism": "NH2- removes the ortho H (rate-determining) and Cl- leaves from the carbanion to give benzyne (a strained triple bond in the plane of the ring from sp2-sp2 overlap). NH2- (or NH3) adds to either carbon of the aryne; protonation gives aniline.",
+  "keyPoints": [
+   "Requires an ortho hydrogen; no ortho H, no benzyne",
+   "Substituted haloarenes give mixtures (cine substitution)",
+   "Chlorobenzene labelled with 14C at C-1 gives about 50:50 labelled aniline at C-1 and C-2",
+   "Benzyne is also made from o-fluorobromobenzene + Mg or from benzenediazonium-2-carboxylate"
+  ],
+  "whenUsed": "Amination of unactivated haloarenes; mechanistic proof of arynes.",
+  "applications": [
+   "Aniline from chlorobenzene",
+   "Diels-Alder trapping of benzyne with furan / anthracene"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5Cl + NH2- -> C6H4 + NH3 + Cl-",
+    "note": "Benzyne formation"
+   },
+   {
+    "eq": "C6H4 + NH3 -> C6H5NH2",
+    "note": "Addition of nucleophile to benzyne"
+   },
+   {
+    "eq": "C6H5Cl + NaNH2 ->[\\text{liq. NH3}] C6H5NH2 + NaCl",
+    "note": "Overall"
+   }
+  ],
+  "jeeTips": "Advanced trap: p-chlorotoluene gives BOTH m- and p-toluidine (cine substitution); o-chlorotoluene gives o- and m-toluidine. 2,6-Disubstituted aryl halides (no ortho H) do not react. Contrast with SNAr (needs NO2, no cine substitution).",
+  "tags": [
+   "benzyne",
+   "aryne",
+   "cine substitution",
+   "elimination-addition"
+  ]
+ },
+ {
+  "aliases": [
+   "Cyanide vs isocyanide formation",
+   "Ambident nucleophile CN-"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "ethanol",
+  "catalyst": "",
+  "reference": "",
+  "id": "kcn-vs-agcn-ambident",
+  "name": "Alkyl Halide with KCN vs AgCN (Ambident Nucleophile)",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "difficulty": "medium",
+  "reactants": "R-X + KCN",
+  "reagents": "KCN (alcoholic)",
+  "products": "R-CN + KX",
+  "reagentKeywords": [
+   "KCN",
+   "AgCN",
+   "alcoholic KCN",
+   "nitrile",
+   "isocyanide",
+   "ambident",
+   "cyanide",
+   "isonitrile"
+  ],
+  "productName": "Alkyl cyanide (KCN); alkyl isocyanide (AgCN)",
+  "summary": "Cyanide is an ambident nucleophile (can attack through C or N). Ionic KCN gives alkyl cyanide (R-CN), while covalent AgCN gives alkyl isocyanide (R-NC).",
+  "mechanism": "KCN is largely ionic, so free CN- attacks through carbon (the more nucleophilic end) to form a C-C bond (nitrile). AgCN is covalent: carbon is tied to Ag, so the lone pair on N attacks the alkyl halide, giving the isocyanide.",
+  "keyPoints": [
+   "KCN (ionic): R-C#N nitrile",
+   "AgCN (covalent): R-N#C isocyanide (carbylamine)",
+   "Isocyanides have a foul smell; acid hydrolysis gives amine + HCOOH",
+   "Nitrile adds one carbon; hydrolysis gives RCOOH"
+  ],
+  "whenUsed": "Chain extension by one carbon (nitrile) or preparing isocyanides.",
+  "applications": [
+   "R-X to RCOOH (one C more)",
+   "Preparation of isocyanides"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2Br + KCN ->[\\text{EtOH}] CH3CH2CN + KBr",
+    "note": "Propanenitrile"
+   },
+   {
+    "eq": "CH3CH2Br + AgCN -> CH3CH2NC + AgBr v",
+    "note": "Ethyl isocyanide"
+   },
+   {
+    "eq": "CH3CH2CN + 2 H2O ->[H+] CH3CH2COOH + NH3",
+    "note": "Hydrolysis of the nitrile"
+   }
+  ],
+  "jeeTips": "Memorise the pair: KCN gives R-CN, AgCN gives R-NC. Same logic: KNO2 gives R-O-N=O but AgNO2 gives R-NO2. Isocyanide + H2/Ni gives R-NH-CH3 (secondary amine); nitrile gives RCH2NH2 (primary). Use alcoholic KCN: aqueous KCN gives some alcohol.",
+  "tags": [
+   "ambident",
+   "nitrile",
+   "isocyanide",
+   "SN2"
+  ]
+ },
+ {
+  "aliases": [
+   "Nitroalkane vs alkyl nitrite",
+   "Ambident nucleophile NO2-"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "ethanol",
+  "catalyst": "",
+  "reference": "",
+  "id": "agno2-vs-kno2",
+  "name": "Alkyl Halide with AgNO2 vs KNO2",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "difficulty": "medium",
+  "reactants": "R-X + AgNO2",
+  "reagents": "AgNO2",
+  "products": "R-NO2 + AgX v",
+  "reagentKeywords": [
+   "AgNO2",
+   "KNO2",
+   "nitroalkane",
+   "alkyl nitrite",
+   "ambident",
+   "nitrite"
+  ],
+  "productName": "Nitroalkane (AgNO2); alkyl nitrite (KNO2)",
+  "summary": "Nitrite is an ambident nucleophile. Covalent AgNO2 delivers N and gives nitroalkanes, while ionic KNO2 (or NaNO2) delivers O and gives alkyl nitrites.",
+  "mechanism": "In AgNO2 the O atoms are involved in bonding with Ag, leaving the lone pair on N as the attacking centre, giving R-NO2. In ionic KNO2 the free NO2- reacts through the more electronegative, more negatively charged O (kinetic control), giving R-O-N=O.",
+  "keyPoints": [
+   "AgNO2: R-NO2 (nitroalkane), N-attack",
+   "KNO2 / NaNO2: R-O-N=O (alkyl nitrite), O-attack",
+   "Alkyl nitrite is hydrolysed by alkali to ROH; nitroalkane is not",
+   "Nitroalkane reduces to R-NH2 (Sn/HCl); nitrite reduces to ROH + NH3",
+   "AgNO2 step is used in the Victor Meyer test"
+  ],
+  "whenUsed": "Preparation of nitroalkanes; distinguishing structure by reduction products.",
+  "applications": [
+   "Nitroalkane synthesis",
+   "Victor Meyer test"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2Br + AgNO2 -> CH3CH2NO2 + AgBr v",
+    "note": "Nitroethane"
+   },
+   {
+    "eq": "CH3CH2Br + KNO2 -> CH3CH2-O-N=O + KBr",
+    "note": "Ethyl nitrite"
+   },
+   {
+    "eq": "CH3CH2NO2 + 6 [H] ->[Sn/HCl] CH3CH2NH2 + 2 H2O",
+    "note": "Nitroalkane gives primary amine"
+   }
+  ],
+  "jeeTips": "Mirror image of cyanide: ionic KNO2 gives R-ONO (via O) while covalent AgNO2 gives R-NO2 (via N); for cyanide ionic KCN gives R-CN (via C) and covalent AgCN gives R-NC (via N). Reduction products identify which isomer formed.",
+  "tags": [
+   "ambident",
+   "nitroalkane",
+   "nitrite",
+   "SN2"
+  ]
+ },
+ {
+  "aliases": [
+   "Chloroform decomposition in air",
+   "Phosgene formation"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "sunlight (light)",
+  "catalyst": "Light",
+  "reference": "",
+  "id": "oxidation-chloroform-phosgene",
+  "name": "Oxidation of Chloroform to Phosgene",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "Oxidation",
+  "difficulty": "easy",
+  "reactants": "2 CHCl3 + O2",
+  "reagents": "O2 (air)",
+  "products": "2 COCl2 + 2 HCl",
+  "reagentKeywords": [
+   "air",
+   "O2",
+   "light",
+   "sunlight",
+   "phosgene",
+   "COCl2",
+   "brown bottle",
+   "ethanol"
+  ],
+  "productName": "Phosgene (carbonyl chloride) + HCl",
+  "summary": "On exposure to air and sunlight, chloroform is slowly oxidised to the highly toxic gas phosgene (carbonyl chloride) and HCl.",
+  "mechanism": "Light-initiated free-radical autoxidation: the C-H bond of CHCl3 is abstracted to give .CCl3, which traps O2 to form a peroxy radical; the chain gives trichloromethyl hydroperoxide, which decomposes to COCl2 + HCl.",
+  "keyPoints": [
+   "Phosgene COCl2 is a poisonous gas (used as war gas)",
+   "Chloroform is stored in dark brown, completely filled bottles to exclude air and light",
+   "About 1% ethanol is added as stabiliser: it converts phosgene to harmless diethyl carbonate",
+   "Test for decomposed chloroform: AgNO3 gives white AgCl (from HCl)"
+  ],
+  "whenUsed": "Safe storage of chloroform (anaesthetic historically, solvent).",
+  "applications": [
+   "Explains why chloroform is stored in dark bottles",
+   "Phosgene is an industrial reagent for polycarbonates"
+  ],
+  "examples": [
+   {
+    "eq": "2 CHCl3 + O2 ->[h\\nu] 2 COCl2 + 2 HCl",
+    "note": "Phosgene formation"
+   },
+   {
+    "eq": "COCl2 + 2 C2H5OH -> (C2H5O)2CO + 2 HCl",
+    "note": "Ethanol stabiliser destroys phosgene"
+   },
+   {
+    "eq": "COCl2 + 4 NH3 -> (NH2)2CO + 2 NH4Cl",
+    "note": "Phosgene with ammonia gives urea"
+   }
+  ],
+  "jeeTips": "Reason questions: dark brown bottles AND filled to the brim AND 1% ethanol. Do not confuse with the Carbylamine reaction (CHCl3 + RNH2 + KOH gives RNC).",
+  "tags": [
+   "chloroform",
+   "phosgene",
+   "storage",
+   "autoxidation"
+  ]
+ },
+ {
+  "aliases": [
+   "Chloroform from ethanol and bleaching powder",
+   "Industrial chloroform preparation",
+   "Haloform reaction"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "\\Delta, H2O",
+  "catalyst": "",
+  "reference": "https://www.organic-chemistry.org/namedreactions/haloform-reaction.shtm",
+  "id": "chloroform-from-bleaching-powder",
+  "name": "Haloform Reaction: Preparation of Chloroform (Bleaching Powder + Ethanol)",
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "Named reaction",
+  "difficulty": "medium",
+  "reactants": "CH3CH2OH + CaOCl2",
+  "reagents": "CaOCl2 (bleaching powder)",
+  "products": "CHCl3 + (HCOO)2Ca + Ca(OH)2",
+  "reagentKeywords": [
+   "bleaching powder",
+   "CaOCl2",
+   "ethanol",
+   "acetone",
+   "chloroform",
+   "haloform"
+  ],
+  "productName": "Chloroform (trichloromethane)",
+  "summary": "Ethanol (or acetone) is heated with a paste of bleaching powder in water; the haloform sequence of oxidation, chlorination and alkaline cleavage gives CHCl3.",
+  "mechanism": "Bleaching powder supplies Cl2 and Ca(OH)2. Ethanol is oxidised to CH3CHO, which is exhaustively chlorinated at the alpha carbon to chloral CCl3CHO. Hydroxide attacks C=O, expelling CCl3- (stabilised by three Cl), which picks up a proton to give CHCl3 and formate.",
+  "keyPoints": [
+   "Three steps: oxidation, chlorination, hydrolysis",
+   "Substrate must have CH3CO- or CH3CH(OH)- group (haloform-positive)",
+   "Acetone also gives CHCl3 + calcium acetate",
+   "Ethanol gives calcium formate; acetone gives calcium acetate"
+  ],
+  "whenUsed": "Classical laboratory/industrial preparation of chloroform; the same sequence with I2/NaOH is the iodoform test.",
+  "applications": [
+   "Making chloroform",
+   "Iodoform test for CH3CO- / CH3CH(OH)- groups"
+  ],
+  "examples": [
+   {
+    "eq": "CaOCl2 + H2O -> Ca(OH)2 + Cl2",
+    "note": "Bleaching powder generates chlorine"
+   },
+   {
+    "eq": "CH3CH2OH + Cl2 -> CH3CHO + 2 HCl",
+    "note": "Oxidation of ethanol"
+   },
+   {
+    "eq": "CH3CHO + 3 Cl2 -> CCl3CHO + 3 HCl",
+    "note": "Chlorination to chloral"
+   },
+   {
+    "eq": "2 CCl3CHO + Ca(OH)2 -> 2 CHCl3 + (HCOO)2Ca",
+    "note": "Hydrolysis gives chloroform and calcium formate"
+   }
+  ],
+  "jeeTips": "Methanol, and any compound lacking CH3CO or CH3CH(OH) group, does not give haloform. Ethanol is the only primary alcohol to respond. By-product with ethanol is calcium FORMATE; with acetone it is calcium ACETATE.",
+  "tags": [
+   "chloroform",
+   "bleaching powder",
+   "haloform",
+   "chloral"
+  ]
+ },
+ {
+  "aliases": [
+   "Reimer Tiemann",
+   "Formylation of phenol"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "340 K",
+  "catalyst": "",
+  "reference": "https://www.organic-chemistry.org/namedreactions/reimer-tiemann-reaction.shtm",
+  "id": "reimer-tiemann-reaction",
+  "name": "Reimer-Tiemann Reaction",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Named reaction",
+  "difficulty": "medium",
+  "reactants": "C6H5OH + CHCl3",
+  "reagents": "NaOH (aq.)",
+  "products": "C6H4(OH)CHO + 3 NaCl + 2 H2O",
+  "reagentKeywords": [
+   "CHCl3",
+   "NaOH",
+   "chloroform",
+   "dichlorocarbene",
+   "340 K",
+   "salicylaldehyde"
+  ],
+  "productName": "Salicylaldehyde (o-hydroxybenzaldehyde)",
+  "summary": "Phenol on heating with chloroform and aqueous NaOH, followed by acidification, gives salicylaldehyde (ortho-formylation); with CCl4 the product is salicylic acid.",
+  "mechanism": "NaOH and CHCl3 generate dichlorocarbene :CCl2 (electrophile) via CCl3- and loss of Cl-. Phenoxide (a very activated ring) attacks :CCl2 at the ortho position to give a dichloromethyl intermediate, which is hydrolysed by alkali to the aldehyde.",
+  "keyPoints": [
+   "Electrophile: dichlorocarbene :CCl2 (neutral, electron-deficient)",
+   "Major product: ortho (salicylaldehyde); minor: para",
+   "CHCl3 + NaOH gives -CHO; CCl4 + NaOH gives -COOH",
+   "Biphasic; heating needed (340 K)"
+  ],
+  "whenUsed": "Introducing -CHO on phenols and naphthols.",
+  "applications": [
+   "Salicylaldehyde synthesis",
+   "Intermediate in coumarin and aspirin-type chemistry"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5OH + CHCl3 + 3 NaOH ->[340 K] C6H4(OH)CHO + 3 NaCl + 2 H2O",
+    "note": "Salicylaldehyde (after acidification)"
+   },
+   {
+    "eq": "C6H5OH + CCl4 + 4 NaOH -> C6H4(OH)COONa + 4 NaCl + 2 H2O",
+    "note": "CCl4 gives salicylate; acidification gives salicylic acid"
+   },
+   {
+    "eq": "CHCl3 + OH- -> CCl3- + H2O",
+    "note": "Step 1: carbanion; then CCl3- gives :CCl2 + Cl-"
+   }
+  ],
+  "jeeTips": "Key intermediate is :CCl2 (dichlorocarbene), NOT a carbocation. Not to be confused with Gattermann-Koch (benzene + CO/HCl/AlCl3 gives benzaldehyde) or Kolbe-Schmitt (gives -COOH with CO2). Ortho product predominates because of ion-pair interaction of Na+ phenoxide.",
+  "tags": [
+   "phenol",
+   "carbene",
+   "ortho-formylation",
+   "electrophilic substitution"
+  ]
+ },
+ {
+  "aliases": [
+   "Kolbe Schmitt",
+   "Kolbe reaction",
+   "Carboxylation of phenoxide"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "400 K, 4-7 atm",
+  "catalyst": "",
+  "reference": "https://www.organic-chemistry.org/namedreactions/kolbe-schmitt-reaction.shtm",
+  "id": "kolbe-schmitt-reaction",
+  "name": "Kolbe-Schmitt Reaction",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Named reaction",
+  "difficulty": "medium",
+  "reactants": "C6H5ONa + CO2",
+  "reagents": "CO2 (then H+)",
+  "products": "C6H4(OH)COONa",
+  "reagentKeywords": [
+   "CO2",
+   "sodium phenoxide",
+   "400 K",
+   "4-7 atm",
+   "salicylic acid",
+   "H+"
+  ],
+  "productName": "Sodium salicylate, then salicylic acid",
+  "summary": "Sodium phenoxide heated with CO2 under pressure gives sodium salicylate; acidification gives salicylic acid (o-hydroxybenzoic acid), the precursor of aspirin.",
+  "mechanism": "Phenoxide ion is a strongly activated nucleophile; ortho carbon attacks the weak electrophile CO2 (via a chelated Na+ complex), forming a cyclohexadienone carboxylate which tautomerises to the aromatic o-hydroxybenzoate.",
+  "keyPoints": [
+   "Phenoxide (not phenol) is required, because the ring must be strongly activated for CO2",
+   "Na+ at ~400 K gives ortho; K+ at higher T (>500 K) gives para-hydroxybenzoic acid",
+   "Ortho product is stabilised by chelation of Na+ / intramolecular H-bond",
+   "Final acidification with H+"
+  ],
+  "whenUsed": "Industrial route to salicylic acid, hence aspirin and methyl salicylate.",
+  "applications": [
+   "Aspirin (acetylsalicylic acid) from salicylic acid + (CH3CO)2O",
+   "Methyl salicylate (oil of wintergreen)"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5ONa + CO2 ->[400 K][4-7 atm] C6H4(OH)COONa",
+    "note": "Sodium salicylate"
+   },
+   {
+    "eq": "C6H4(OH)COONa + HCl -> C6H4(OH)COOH + NaCl",
+    "note": "Salicylic acid"
+   },
+   {
+    "eq": "C6H4(OH)COOH + (CH3CO)2O -> C6H4(OCOCH3)COOH + CH3COOH",
+    "note": "Aspirin"
+   }
+  ],
+  "jeeTips": "Remember: Reimer-Tiemann gives -CHO (CHCl3), Kolbe-Schmitt gives -COOH (CO2). Temperature/cation controls ortho vs para. Salicylic acid is more acidic than benzoic acid (ortho effect, intramolecular H-bond stabilises the anion).",
+  "tags": [
+   "phenol",
+   "carboxylation",
+   "salicylic acid",
+   "aspirin"
+  ]
+ },
+ {
+  "aliases": [
+   "Williamson synthesis",
+   "Williamson reaction"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "\\Delta",
+  "catalyst": "",
+  "reference": "https://www.organic-chemistry.org/namedreactions/williamson-synthesis.shtm",
+  "id": "williamson-ether-synthesis",
+  "name": "Williamson Ether Synthesis",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Named reaction",
+  "difficulty": "medium",
+  "reactants": "R-ONa + R'-X",
+  "reagents": "R'-X (primary alkyl halide)",
+  "products": "R-O-R' + NaX",
+  "reagentKeywords": [
+   "sodium alkoxide",
+   "alkyl halide",
+   "RONa",
+   "RX",
+   "SN2",
+   "ether",
+   "sodium phenoxide"
+  ],
+  "productName": "Ether (symmetrical or unsymmetrical)",
+  "summary": "A sodium alkoxide or phenoxide reacts with a primary alkyl halide by SN2 to give an ether.",
+  "mechanism": "The alkoxide O- is a strong nucleophile; it attacks the carbon of R'-X from the backside (SN2), displacing X-. With 3° halide the alkoxide acts as a base and E2 elimination gives alkene.",
+  "keyPoints": [
+   "SN2: use methyl or 1° alkyl halide",
+   "3° halide + alkoxide gives alkene (E2), not ether",
+   "Make the bulky group part of the alkoxide, the simple group the halide: (CH3)3CONa + CH3Br gives t-butyl methyl ether",
+   "Phenoxide + alkyl halide gives alkyl aryl ether; aryl halides cannot be used"
+  ],
+  "whenUsed": "The most general lab method for symmetrical and unsymmetrical ethers.",
+  "applications": [
+   "Anisole and phenetole",
+   "MTBE-type ethers"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2ONa + CH3CH2Br -> CH3CH2OCH2CH3 + NaBr",
+    "note": "Diethyl ether"
+   },
+   {
+    "eq": "C6H5ONa + CH3I -> C6H5OCH3 + NaI",
+    "note": "Anisole (methyl phenyl ether)"
+   },
+   {
+    "eq": "(CH3)3CBr + CH3ONa -> (CH3)2C=CH2 + CH3OH + NaBr",
+    "note": "Wrong choice: 3° halide gives alkene"
+   }
+  ],
+  "jeeTips": "Classic trap: to make t-butyl ethyl ether use (CH3)3CONa + C2H5Br, never (CH3)3CBr + C2H5ONa. Alkyl halide must be 1° (or methyl). Aryl halides do not undergo SN2, so Ar-O-R from ArONa + RX only.",
+  "tags": [
+   "SN2",
+   "ether",
+   "alkoxide",
+   "elimination competition"
+  ]
+ },
+ {
+  "aliases": [
+   "Lucas reagent test",
+   "ZnCl2/HCl test for alcohols"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "room temperature",
+  "catalyst": "Anhydrous ZnCl2",
+  "reference": "",
+  "id": "lucas-test",
+  "name": "Lucas Test",
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "difficulty": "easy",
+  "reactants": "R-OH",
+  "reagents": "conc. HCl + anhyd. ZnCl2 (Lucas reagent)",
+  "products": "R-Cl (turbidity) + H2O",
+  "reagentKeywords": [
+   "Lucas reagent",
+   "ZnCl2",
+   "conc. HCl",
+   "turbidity",
+   "3 alcohol",
+   "immediately"
+  ],
+  "productName": "Alkyl chloride (insoluble, cloudy layer)",
+  "summary": "Distinguishes 1°, 2° and 3° alcohols (soluble up to C5-C6) by the rate at which turbidity of alkyl chloride appears with HCl/ZnCl2.",
+  "mechanism": "ZnCl2 activates -OH as a leaving group; the alcohol ionises to a carbocation (SN1) which is captured by Cl-. The insoluble R-Cl separates as a cloudy layer. Rate is governed by carbocation stability.",
+  "keyPoints": [
+   "3° alcohol: turbidity immediately",
+   "2° alcohol: turbidity in about 5 minutes (on warming)",
+   "1° alcohol: no turbidity at room temperature (only on heating)",
+   "Allyl and benzyl alcohols (1°) respond immediately",
+   "Alcohol must be soluble in the reagent (C3-C6)"
+  ],
+  "whenUsed": "Quick laboratory classification of alcohols as 1°, 2° or 3°.",
+  "applications": [
+   "Classification of alcohols",
+   "Differentiating butan-1-ol, butan-2-ol and 2-methylpropan-2-ol"
+  ],
+  "examples": [
+   {
+    "eq": "(CH3)3COH + HCl ->[\\text{ZnCl2}] (CH3)3CCl + H2O",
+    "note": "3°: cloudy immediately"
+   },
+   {
+    "eq": "CH3CH(OH)CH2CH3 + HCl ->[\\text{ZnCl2}] CH3CHClCH2CH3 + H2O",
+    "note": "2°: cloudy in ~5 min"
+   },
+   {
+    "eq": "CH3CH2CH2CH2OH + HCl ->[\\text{ZnCl2}] CH3CH2CH2CH2Cl + H2O",
+    "note": "1°: no turbidity at room temperature"
+   }
+  ],
+  "jeeTips": "Order 3° > 2° > 1° (carbocation stability). Do not apply to alcohols insoluble in the reagent (more than C6). Benzylic/allylic 1° alcohols behave like 3°. Methanol and ethanol give no turbidity. Primary alcohols can be tested by Victor Meyer instead.",
+  "tags": [
+   "SN1",
+   "alcohol classification",
+   "ZnCl2",
+   "test"
+  ]
+ },
+ {
+  "aliases": [
+   "Hock process",
+   "Cumene-phenol process",
+   "Cumene hydroperoxide rearrangement"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "383-393 K",
+  "catalyst": "H+ for rearrangement step",
+  "reference": "",
+  "id": "cumene-process",
+  "name": "Cumene Process (Phenol + Acetone)",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Industrial process",
+  "difficulty": "medium",
+  "reactants": "C6H5CH(CH3)2 + O2",
+  "reagents": "O2 (air), then dil. H2SO4",
+  "products": "C6H5OH + CH3COCH3",
+  "reagentKeywords": [
+   "cumene",
+   "O2",
+   "air",
+   "hydroperoxide",
+   "H+",
+   "dil. H2SO4",
+   "propene",
+   "benzene",
+   "phenol",
+   "acetone"
+  ],
+  "productName": "Phenol and acetone",
+  "summary": "Benzene is alkylated with propene to cumene (isopropylbenzene), which is autoxidised to cumene hydroperoxide and cleaved with acid to phenol and acetone - the main industrial phenol route.",
+  "mechanism": "Friedel-Crafts alkylation of benzene gives cumene. Radical autoxidation at the tertiary benzylic C-H gives cumene hydroperoxide. Acid protonates the OOH, water leaves with simultaneous 1,2-phenyl shift to O (carbocation on O), the resulting oxocarbenium ion adds water and fragments to phenol + acetone.",
+  "keyPoints": [
+   "Overall: benzene + propene + O2 gives phenol + acetone",
+   "Tertiary benzylic C-H is easily oxidised (stable radical)",
+   "Acid-catalysed rearrangement involves migration of phenyl to oxygen",
+   "Valuable co-product: acetone"
+  ],
+  "whenUsed": "Large-scale manufacture of phenol (over 90 per cent) and acetone.",
+  "applications": [
+   "Phenol for bakelite, aspirin, dyes",
+   "Acetone as solvent"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + CH3CH=CH2 ->[H3PO4][523 K] C6H5CH(CH3)2",
+    "note": "Cumene by Friedel-Crafts alkylation"
+   },
+   {
+    "eq": "C6H5CH(CH3)2 + O2 ->[\\text{air}] C6H5C(CH3)2OOH",
+    "note": "Cumene hydroperoxide"
+   },
+   {
+    "eq": "C6H5C(CH3)2OOH + H2O ->[H+] C6H5OH + CH3COCH3 + H2O",
+    "note": "Acid cleavage"
+   }
+  ],
+  "jeeTips": "Typical sequence question: benzene -> cumene -> cumene hydroperoxide -> phenol + acetone. The step with the phenyl shift to oxygen resembles Baeyer-Villiger. Oxygen of phenol comes from O2 (hydroperoxide).",
+  "tags": [
+   "industrial",
+   "phenol",
+   "acetone",
+   "hydroperoxide"
+  ]
+ },
+ {
+  "aliases": [
+   "Alkali fusion of sulphonates",
+   "Sulphonation route to phenol"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "573 K (fusion)",
+  "catalyst": "",
+  "reference": "",
+  "id": "phenol-from-benzenesulphonic-acid",
+  "name": "Phenol from Benzenesulphonic Acid (Alkali Fusion)",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Industrial process",
+  "difficulty": "easy",
+  "reactants": "C6H5SO3Na + 2 NaOH",
+  "reagents": "NaOH (fused)",
+  "products": "C6H5ONa + Na2SO3 + H2O",
+  "reagentKeywords": [
+   "NaOH",
+   "fusion",
+   "benzenesulphonic acid",
+   "sodium benzenesulphonate",
+   "573 K",
+   "H2SO4"
+  ],
+  "productName": "Phenol (via sodium phenoxide)",
+  "summary": "Benzene is sulphonated with oleum to benzenesulphonic acid, converted to its sodium salt, fused with NaOH to sodium phenoxide, and acidified to phenol.",
+  "mechanism": "Hydroxide attacks the ipso carbon bearing SO3- (nucleophilic aromatic substitution at high temperature), displacing sulphite; the product phenol is deprotonated by excess alkali to phenoxide, which is acidified.",
+  "keyPoints": [
+   "Sequence: sulphonation, neutralisation, NaOH fusion, acidification",
+   "Fusion at about 573 K",
+   "Na2SO3 is the by-product; phenol obtained on adding acid (even CO2/H2O is not enough for complete release, so use HCl)",
+   "Older industrial process, now replaced by cumene"
+  ],
+  "whenUsed": "Historical commercial phenol synthesis; also converts naphthalenesulphonic acids to naphthols.",
+  "applications": [
+   "Phenol, 2-naphthol manufacture"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + H2SO4 ->[\\text{oleum}] C6H5SO3H + H2O",
+    "note": "Sulphonation"
+   },
+   {
+    "eq": "C6H5SO3H + 2 NaOH -> C6H5SO3Na + 2 H2O",
+    "note": "Neutralisation to the sodium salt (1:1 with NaOH; subsequent fusion uses 2 more NaOH)"
+   },
+   {
+    "eq": "C6H5SO3Na + 2 NaOH ->[573 K] C6H5ONa + Na2SO3 + H2O",
+    "note": "Alkali fusion"
+   },
+   {
+    "eq": "C6H5ONa + HCl -> C6H5OH + NaCl",
+    "note": "Phenol liberated"
+   }
+  ],
+  "jeeTips": "Product of fusion is sodium phenoxide; phenol appears only on acid work-up. Sulphonation is reversible: do not confuse with desulphonation using dilute acid and steam, which regenerates benzene.",
+  "tags": [
+   "sulphonation",
+   "phenol",
+   "fusion",
+   "industrial"
+  ]
+ },
+ {
+  "aliases": [
+   "Fries rearrangement of phenolic esters"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "low T gives para; high T gives ortho",
+  "catalyst": "AlCl3 (Lewis acid)",
+  "reference": "https://www.organic-chemistry.org/namedreactions/fries-rearrangement.shtm",
+  "id": "fries-rearrangement",
+  "name": "Fries Rearrangement",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Rearrangement",
+  "difficulty": "hard",
+  "reactants": "C6H5OCOCH3",
+  "reagents": "anhyd. AlCl3",
+  "products": "C6H4(OH)COCH3",
+  "reagentKeywords": [
+   "AlCl3",
+   "phenyl acetate",
+   "phenolic ester",
+   "hydroxyacetophenone",
+   "acyl migration"
+  ],
+  "productName": "o- and p-Hydroxyacetophenone",
+  "summary": "A phenolic ester rearranges in the presence of a Lewis acid (AlCl3) to ortho- and para-hydroxyaryl ketones through migration of the acyl group from O to the ring.",
+  "mechanism": "AlCl3 complexes with the ester carbonyl and cleaves the acyl-oxygen bond to give an acylium ion (RCO+) and an aluminium phenoxide. The acylium ion attacks the activated ring (Friedel-Crafts acylation) at ortho or para, and hydrolysis gives the hydroxyketone.",
+  "keyPoints": [
+   "Product: hydroxyaryl ketone (o and p)",
+   "Low temperature (<= 333 K) favours para (kinetic); high temperature (>= 433 K) favours ortho (thermodynamic, chelated with AlCl3)",
+   "Intermolecular acylium ion transfer",
+   "Overall alternative to direct acylation of phenol (which gives mainly the ester)"
+  ],
+  "whenUsed": "Preparing o-/p-hydroxyaryl ketones.",
+  "applications": [
+   "Hydroxyacetophenones",
+   "Pharmaceutical intermediates"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5OCOCH3 ->[AlCl3][\\text{low T}] p-HOC6H4COCH3",
+    "note": "Para at low temperature"
+   },
+   {
+    "eq": "C6H5OCOCH3 ->[AlCl3][\\text{high T}] o-HOC6H4COCH3",
+    "note": "Ortho at high temperature"
+   },
+   {
+    "eq": "C6H5OH + CH3COCl -> C6H5OCOCH3 + HCl",
+    "note": "Ester precursor (acylation of phenol)"
+   }
+  ],
+  "jeeTips": "Temperature rule: low T para, high T ortho. Starting material is an ester, not an ether (Claisen: ether). No reaction if ring is strongly deactivated. Related: Fries = acyl migration O to C.",
+  "tags": [
+   "rearrangement",
+   "Friedel-Crafts",
+   "Lewis acid",
+   "phenolic ester"
+  ]
+ },
+ {
+  "aliases": [
+   "Aromatic Claisen",
+   "[3,3]-sigmatropic rearrangement of allyl aryl ethers"
+  ],
+  "exam": [
+   "JEE Advanced"
+  ],
+  "conditions": "473 K (about 200 \\degree C), no catalyst",
+  "catalyst": "",
+  "reference": "https://www.organic-chemistry.org/namedreactions/claisen-rearrangement.shtm",
+  "id": "claisen-rearrangement",
+  "name": "Claisen Rearrangement (Allyl Phenyl Ether)",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Rearrangement",
+  "difficulty": "hard",
+  "reactants": "C6H5OCH2CH=CH2",
+  "reagents": "heat",
+  "products": "C6H4(OH)CH2CH=CH2",
+  "reagentKeywords": [
+   "heat",
+   "473 K",
+   "allyl phenyl ether",
+   "[3,3]",
+   "sigmatropic",
+   "o-allylphenol",
+   "pericyclic"
+  ],
+  "productName": "2-Allylphenol (o-allylphenol)",
+  "summary": "Heating allyl phenyl ether causes a concerted [3,3]-sigmatropic shift to give 2-allylphenol, with the allyl group inverted (the terminal carbon bonds to the ring).",
+  "mechanism": "A concerted, intramolecular, six-membered cyclic chair-like transition state in which the C-O bond breaks while a new C-C bond forms between the terminal carbon of the allyl group and the ortho carbon. The resulting non-aromatic dienone tautomerises (enolisation) to the aromatic phenol.",
+  "keyPoints": [
+   "[3,3]-sigmatropic (pericyclic, concerted)",
+   "Allyl group is attached through its gamma carbon (inversion of allyl): O-CH2-CH=CH2 becomes ring-CH2-CH=CH2 but allyl label (crotyl ethers) shows rearranged connectivity",
+   "Goes to ortho; if both ortho positions are blocked, goes to para via successive Claisen then Cope",
+   "Tautomerisation of the cyclohexadienone restores aromaticity"
+  ],
+  "whenUsed": "Synthesis of o-allylphenols from phenol and allyl bromide.",
+  "applications": [
+   "o-Allylphenols",
+   "Natural product synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5ONa + CH2=CHCH2Br -> C6H5OCH2CH=CH2 + NaBr",
+    "note": "Allyl phenyl ether (Williamson)"
+   },
+   {
+    "eq": "C6H5OCH2CH=CH2 ->[\\Delta][473 K] C6H4(OH)CH2CH=CH2",
+    "note": "2-Allylphenol"
+   },
+   {
+    "eq": "C6H5OCH2CH=CHCH3 ->[\\Delta] C6H4(OH)CH(CH3)CH=CH2",
+    "note": "Crotyl phenyl ether gives branched product: inversion of the allyl unit"
+   }
+  ],
+  "jeeTips": "Advanced favourite: with a crotyl (but-2-enyl) ether the ring ends up attached to the former gamma carbon, giving a branched chain. Blocked ortho positions give the para product. No Lewis acid needed - just heat; contrast with Fries (ester + AlCl3).",
+  "tags": [
+   "sigmatropic",
+   "pericyclic",
+   "rearrangement",
+   "allyl ether"
+  ]
+ },
+ {
+  "aliases": [
+   "Pinacol rearrangement",
+   "Dehydration of vicinal diols"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "\\Delta",
+  "catalyst": "H+",
+  "reference": "https://www.organic-chemistry.org/namedreactions/pinacol-rearrangement.shtm",
+  "id": "pinacol-pinacolone-rearrangement",
+  "name": "Pinacol-Pinacolone Rearrangement",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Rearrangement",
+  "difficulty": "hard",
+  "reactants": "(CH3)2C(OH)C(OH)(CH3)2",
+  "reagents": "dil. H2SO4 (H+)",
+  "products": "(CH3)3C-CO-CH3 + H2O",
+  "reagentKeywords": [
+   "H2SO4",
+   "acid",
+   "pinacol",
+   "pinacolone",
+   "vicinal diol",
+   "1,2-shift",
+   "glycol"
+  ],
+  "productName": "Pinacolone (3,3-dimethylbutan-2-one)",
+  "summary": "Vicinal diols (1,2-diols) on acid treatment lose water with a 1,2-alkyl/aryl shift to give ketones (or aldehydes).",
+  "mechanism": "Protonation of one OH, loss of water gives a tertiary carbocation; the adjacent carbon bearing OH has a group (CH3) that migrates to the cationic centre in a 1,2-shift, giving an oxygen-stabilised (protonated carbonyl) cation. Loss of H+ gives the ketone.",
+  "keyPoints": [
+   "Carbocation forms at the more stable site (3° or benzylic; the OH leaving from that carbon)",
+   "Migratory aptitude: H > aryl (Ph, p-OMe-Ph > Ph) > 3° alkyl > 2° alkyl > 1° alkyl (CH3)",
+   "Driving force: resonance-stabilised oxocarbenium ion",
+   "Pinacol is prepared by reduction of acetone with Mg-Hg (bimolecular reduction)"
+  ],
+  "whenUsed": "Preparing ketones with quaternary carbons (e.g., pinacolone, spiro/ring-expanded ketones).",
+  "applications": [
+   "Pinacolone",
+   "Ring-expansion of cyclic diols"
+  ],
+  "examples": [
+   {
+    "eq": "(CH3)2C(OH)C(OH)(CH3)2 ->[H+] (CH3)3C-CO-CH3 + H2O",
+    "note": "Pinacol to pinacolone"
+   },
+   {
+    "eq": "2 CH3COCH3 ->[Mg-Hg][H2O] (CH3)2C(OH)C(OH)(CH3)2",
+    "note": "Pinacol from acetone"
+   },
+   {
+    "eq": "(C6H5)2C(OH)C(OH)(C6H5)2 ->[H+] (C6H5)3C-CO-C6H5",
+    "note": "Benzopinacol to benzopinacolone (phenyl migrates)"
+   }
+  ],
+  "jeeTips": "Decide which OH leaves (gives more stable carbocation) and then which group migrates (aptitude order). With unsymmetrical diols the answer depends on both choices. Ring-expansion case: cyclobutyl/cyclopentyl carbinol type questions in Advanced.",
+  "tags": [
+   "rearrangement",
+   "carbocation",
+   "1,2-shift",
+   "diol"
+  ]
+ },
+ {
+  "aliases": [
+   "Phenol + bromine water",
+   "2,4,6-Tribromophenol formation"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "room temperature",
+  "catalyst": "",
+  "reference": "",
+  "id": "bromination-of-phenol",
+  "name": "Bromination of Phenol",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "General reaction",
+  "difficulty": "easy",
+  "reactants": "C6H5OH + 3 Br2",
+  "reagents": "Br2 / H2O (bromine water)",
+  "products": "C6H2Br3OH v + 3 HBr",
+  "reagentKeywords": [
+   "bromine water",
+   "Br2",
+   "CS2",
+   "H2O",
+   "tribromophenol",
+   "white precipitate",
+   "low temperature",
+   "non-polar solvent"
+  ],
+  "productName": "2,4,6-Tribromophenol (white ppt) / o- and p-bromophenol",
+  "summary": "Phenol is so activated that bromine water gives a white precipitate of 2,4,6-tribromophenol without any catalyst, whereas Br2 in CS2 or CHCl3 at low temperature gives mainly monobromophenols (p > o).",
+  "mechanism": "In water, phenol ionises partly to phenoxide, whose strong +M effect activates all o/p positions; Br2 attacks successively (electrophilic substitution) at 2, 4 and 6. In non-polar CS2, ionisation is suppressed, so the ring is less activated and Br2 substitutes only once, mainly para.",
+  "keyPoints": [
+   "Bromine water: 2,4,6-tribromophenol, white ppt (a test for phenol)",
+   "Br2 in CS2 / CHCl3 at about 273 K: p-bromophenol (major), o-bromophenol (minor)",
+   "No Lewis acid (FeBr3) needed",
+   "Excess Br2 can give 2,4,4,6-tetrabromocyclohexa-2,5-dienone (yellow)"
+  ],
+  "whenUsed": "Qualitative detection of phenol and aniline-type activated rings; preparation of bromophenols.",
+  "applications": [
+   "Test for phenol",
+   "Synthesis of p-bromophenol"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5OH + 3 Br2 ->[H2O] C6H2Br3OH v + 3 HBr",
+    "note": "2,4,6-Tribromophenol, white ppt"
+   },
+   {
+    "eq": "C6H5OH + Br2 ->[CS2][273 K] p-BrC6H4OH + HBr",
+    "note": "p-Bromophenol (major)"
+   },
+   {
+    "eq": "C6H5OH + Br2 ->[CHCl3][273 K] o-BrC6H4OH + HBr",
+    "note": "o-Bromophenol (minor)"
+   }
+  ],
+  "jeeTips": "Solvent decides the degree of substitution: polar (water) = tri, non-polar (CS2) = mono. HBr is a by-product (3 equiv. in the tri case). Same behaviour as aniline with bromine water.",
+  "tags": [
+   "electrophilic substitution",
+   "phenol",
+   "bromination",
+   "solvent effect"
+  ]
+ },
+ {
+  "aliases": [
+   "Phenol nitration",
+   "Picric acid formation"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "298 K",
+  "catalyst": "",
+  "reference": "",
+  "id": "nitration-of-phenol",
+  "name": "Nitration of Phenol (Dilute vs Concentrated HNO3)",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "General reaction",
+  "difficulty": "medium",
+  "reactants": "C6H5OH",
+  "reagents": "dil. HNO3",
+  "products": "o-O2NC6H4OH + p-O2NC6H4OH",
+  "reagentKeywords": [
+   "dil. HNO3",
+   "conc. HNO3",
+   "H2SO4",
+   "picric acid",
+   "nitrophenol",
+   "steam distillation",
+   "298 K"
+  ],
+  "productName": "o- and p-Nitrophenol (dil. HNO3); 2,4,6-trinitrophenol (conc. HNO3)",
+  "summary": "Dilute HNO3 at room temperature gives a mixture of o- and p-nitrophenol. Concentrated HNO3 (with conc. H2SO4) gives 2,4,6-trinitrophenol (picric acid).",
+  "mechanism": "Electrophilic aromatic substitution by NO2+ (generated in situ). The -OH group is a strong activator and o/p-director; with conc. acid the ring is nitrated three times at both ortho and the para position. Phenol is partly oxidised (tarry products) under harsh conditions, so picric acid is often made via sulphonation first.",
+  "keyPoints": [
+   "Dilute HNO3, 298 K: o- (volatile, intramolecular H-bond) + p- (intermolecular H-bond, less volatile)",
+   "Separation by steam distillation: o-nitrophenol is steam volatile",
+   "Conc. HNO3 gives picric acid (strongly acidic, pKa about 0.4)",
+   "Oxidation gives tarry side products and some benzoquinone"
+  ],
+  "whenUsed": "Preparation of nitrophenols and picric acid (explosive, dye).",
+  "applications": [
+   "Picric acid (explosive, dye)",
+   "p-Nitrophenol for paracetamol / parathion"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5OH + HNO3 ->[\\text{dil.}][298 K] o-O2NC6H4OH + p-O2NC6H4OH + H2O",
+    "note": "Mixture of o- and p-"
+   },
+   {
+    "eq": "C6H5OH + 3 HNO3 ->[\\text{conc. H2SO4}] C6H2(NO2)3OH + 3 H2O",
+    "note": "Picric acid"
+   },
+   {
+    "eq": "C6H5OH + HNO3 ->[\\text{dil.}] C6H4(OH)NO2 + H2O",
+    "note": "General mono-nitration"
+   }
+  ],
+  "jeeTips": "o-Nitrophenol is steam volatile and has lower boiling point and lower solubility in water because of intramolecular H-bonding; p- has intermolecular H-bonding. Picric acid is more acidic than carboxylic acids (three NO2 groups).",
+  "tags": [
+   "nitration",
+   "electrophilic substitution",
+   "picric acid",
+   "H-bonding"
+  ]
+ },
+ {
+  "aliases": [
+   "Fischer esterification",
+   "Fischer-Speier esterification",
+   "Acylation of alcohols"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "\\Delta, remove water",
+  "catalyst": "H+ (conc. H2SO4 or dry HCl)",
+  "reference": "https://www.organic-chemistry.org/namedreactions/fischer-esterification.shtm",
+  "id": "fischer-esterification",
+  "name": "Esterification (Fischer) of Alcohols",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Named reaction",
+  "difficulty": "easy",
+  "reactants": "R-COOH + R'-OH",
+  "reagents": "conc. H2SO4 (catalytic)",
+  "products": "R-COOR' + H2O",
+  "reagentKeywords": [
+   "conc. H2SO4",
+   "acid catalyst",
+   "carboxylic acid",
+   "ester",
+   "reflux",
+   "acid chloride",
+   "anhydride",
+   "pyridine"
+  ],
+  "productName": "Ester",
+  "summary": "A carboxylic acid and an alcohol heated with a strong acid catalyst reach equilibrium with the ester and water; alcohols also form esters irreversibly with acid chlorides and anhydrides.",
+  "mechanism": "Protonation of the C=O makes the carbonyl carbon more electrophilic; the alcohol O adds to give a tetrahedral intermediate. Proton transfer, loss of water and deprotonation give the ester (acyl-oxygen cleavage: the alcohol keeps its O in the ester, shown by 18O labelling).",
+  "keyPoints": [
+   "Reversible: drive by excess alcohol/acid or by removing water",
+   "Alcohol reactivity: CH3OH > 1° > 2° > 3° (steric); acid reactivity HCOOH > CH3COOH > R2CHCOOH > R3CCOOH",
+   "Acyl-oxygen bond cleavage (acid loses OH, alcohol loses H)",
+   "With acid chloride/anhydride + pyridine/base: irreversible acylation (e.g., aspirin)",
+   "Tertiary alcohols dehydrate under the acidic conditions"
+  ],
+  "whenUsed": "Preparation of esters (flavours, solvents); also protection of alcohols as acetates.",
+  "applications": [
+   "Ethyl acetate",
+   "Aspirin from salicylic acid + (CH3CO)2O",
+   "Methyl salicylate (wintergreen)"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOH + C2H5OH <=>[conc. H2SO4] CH3COOC2H5 + H2O",
+    "note": "Ethyl acetate"
+   },
+   {
+    "eq": "C2H5OH + CH3COCl ->[\\text{pyridine}] CH3COOC2H5 + HCl",
+    "note": "Acylation with acid chloride"
+   },
+   {
+    "eq": "C2H5OH + (CH3CO)2O -> CH3COOC2H5 + CH3COOH",
+    "note": "Acylation with anhydride"
+   }
+  ],
+  "jeeTips": "Acyl-oxygen cleavage: with CH3CO-OH + C2H5-18OH, the 18O ends up in the ESTER. Alcohols with HCOOH react fastest. Phenols do not esterify well with RCOOH; use acid chloride/anhydride. Reverse reaction is acid hydrolysis.",
+  "tags": [
+   "ester",
+   "acyl substitution",
+   "equilibrium",
+   "acid catalysed"
+  ]
+ },
+ {
+  "aliases": [
+   "Corey's reagent oxidation",
+   "Pyridinium chlorochromate oxidation",
+   "PCC oxidation"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "CH2Cl2, room temperature",
+  "catalyst": "",
+  "reference": "",
+  "id": "oxidation-with-pcc",
+  "name": "Oxidation of Alcohols with PCC",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Oxidation",
+  "difficulty": "medium",
+  "reactants": "R-CH2OH",
+  "reagents": "PCC (C5H5NH+ CrO3Cl-)",
+  "products": "R-CHO",
+  "reagentKeywords": [
+   "PCC",
+   "pyridinium chlorochromate",
+   "CH2Cl2",
+   "anhydrous",
+   "mild oxidant",
+   "Collins",
+   "aldehyde"
+  ],
+  "productName": "Aldehyde (from 1° alcohol); ketone (from 2° alcohol)",
+  "summary": "PCC is a mild anhydrous oxidant that stops at the aldehyde stage when oxidising primary alcohols, and converts secondary alcohols to ketones; C=C bonds are not affected.",
+  "mechanism": "The alcohol and CrVI form a chromate ester R2CH-O-CrO2Cl-; elimination of H from the carbinol carbon via E2 by pyridine (or Cl-) gives C=O and reduced CrIV. Absence of water prevents formation of the aldehyde hydrate, so no over-oxidation to acid.",
+  "keyPoints": [
+   "Used in anhydrous CH2Cl2: no gem-diol, so no over-oxidation",
+   "1° alcohol gives aldehyde, 2° alcohol gives ketone, 3° no reaction",
+   "Does not attack C=C, C#C or acid-sensitive groups mildly",
+   "Related mild oxidants: PDC, Collins reagent (CrO3.2pyridine), Swern, Dess-Martin, MnO2 (allylic)"
+  ],
+  "whenUsed": "Selective oxidation of 1° alcohols to aldehydes (including unsaturated alcohols).",
+  "applications": [
+   "Citronellal / cinnamaldehyde-type aldehyde synthesis",
+   "Stop-at-aldehyde oxidations"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2OH ->[PCC][CH2Cl2] CH3CHO",
+    "note": "Ethanal; no over-oxidation"
+   },
+   {
+    "eq": "(CH3)2CHOH ->[PCC] (CH3)2CO",
+    "note": "Propanone"
+   },
+   {
+    "eq": "CH2=CHCH2OH ->[PCC] CH2=CHCHO",
+    "note": "Acrolein retains C=C"
+   }
+  ],
+  "jeeTips": "If the question wants aldehyde from primary alcohol choose PCC (or Cu / 573 K dehydrogenation); K2Cr2O7/H+ would give acid. PCC works in CH2Cl2, not water. Allylic and benzylic alcohols are also oxidised selectively by activated MnO2.",
+  "tags": [
+   "oxidation",
+   "chromium",
+   "aldehyde",
+   "mild"
+  ]
+ },
+ {
+  "aliases": [
+   "Chromic acid oxidation",
+   "Jones oxidation",
+   "Acidified dichromate"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "\\Delta (for acid)",
+  "catalyst": "",
+  "reference": "",
+  "id": "oxidation-k2cr2o7-jones",
+  "name": "Oxidation of Alcohols with Acidified K2Cr2O7 / Jones Reagent",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Oxidation",
+  "difficulty": "medium",
+  "reactants": "CH3CH2OH",
+  "reagents": "K2Cr2O7 / H2SO4 (or CrO3 / H2SO4 / acetone = Jones)",
+  "products": "CH3COOH",
+  "reagentKeywords": [
+   "K2Cr2O7",
+   "H2SO4",
+   "acidified dichromate",
+   "Jones reagent",
+   "CrO3",
+   "chromic acid",
+   "orange to green",
+   "KMnO4"
+  ],
+  "productName": "Carboxylic acid (1°), ketone (2°)",
+  "summary": "Strong chromium(VI) oxidants oxidise primary alcohols through the aldehyde to carboxylic acids, secondary alcohols to ketones, and do not oxidise tertiary alcohols under mild conditions.",
+  "mechanism": "The alcohol forms a chromate ester with H2CrO4; E2 loss of the alpha-H gives the C=O compound. The aldehyde hydrates in aqueous acid to RCH(OH)2, which forms a new chromate ester and is oxidised further to RCOOH. CrVI (orange) is reduced to Cr3+ (green).",
+  "keyPoints": [
+   "1° alcohol: aldehyde then carboxylic acid (distil off aldehyde immediately to isolate it)",
+   "2° alcohol: ketone (no further oxidation without C-C cleavage)",
+   "3° alcohol: no reaction under mild conditions (no alpha-H); drastic conditions cleave C-C",
+   "Colour change orange to green (breath analyser basis)",
+   "Jones reagent (CrO3, dil. H2SO4, acetone) oxidises 1° to acid, 2° to ketone quickly at 273 K"
+  ],
+  "whenUsed": "Standard oxidation of alcohols; qualitative colour test for 1°/2° alcohols.",
+  "applications": [
+   "Ethanol to acetic acid",
+   "Breath alcohol test"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2OH ->[K2Cr2O7 / H2SO4][\\Delta] CH3COOH",
+    "note": "Primary alcohol to carboxylic acid"
+   },
+   {
+    "eq": "(CH3)2CHOH ->[CrO3 / H2SO4][\\text{acetone}] (CH3)2CO",
+    "note": "Jones oxidation: ketone"
+   },
+   {
+    "eq": "CH3CH2OH ->[K2Cr2O7 / H2SO4][\\text{distil product}] CH3CHO",
+    "note": "Aldehyde isolated by immediate distillation"
+   }
+  ],
+  "jeeTips": "Stoichiometry: Cr2O7(2-) + 14 H+ + 6e- gives 2 Cr3+. Ketones are stable to dichromate; alkyl groups cleave only with very strong oxidation (KMnO4, hot). 3° alcohols resist oxidation, hence they can be told apart from 1° / 2°.",
+  "tags": [
+   "oxidation",
+   "chromium",
+   "carboxylic acid",
+   "Jones"
+  ]
+ },
+ {
+  "aliases": [
+   "Catalytic dehydrogenation of alcohols",
+   "Cu catalysed dehydrogenation"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "573 K, vapour phase",
+  "catalyst": "Cu",
+  "reference": "",
+  "id": "dehydrogenation-cu-573",
+  "name": "Dehydrogenation of Alcohols with Cu at 573 K",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "General reaction",
+  "difficulty": "medium",
+  "reactants": "R-CH2OH",
+  "reagents": "Cu (heated)",
+  "products": "R-CHO + H2 ^",
+  "reagentKeywords": [
+   "Cu",
+   "573 K",
+   "dehydrogenation",
+   "vapour",
+   "reduced copper",
+   "heated copper"
+  ],
+  "productName": "Aldehyde (1°), ketone (2°), alkene (3°)",
+  "summary": "Alcohol vapours passed over heated copper at 573 K lose H2: 1° gives aldehyde, 2° gives ketone, while 3° alcohols undergo dehydration to alkene instead.",
+  "mechanism": "The alcohol adsorbs on the Cu surface; O-H and the alpha C-H bonds are cleaved, and H2 is desorbed leaving the C=O compound. 3° alcohols lack an alpha-H, so under heat they eliminate water instead.",
+  "keyPoints": [
+   "1° alcohol: aldehyde + H2",
+   "2° alcohol: ketone + H2",
+   "3° alcohol: alkene + H2O (dehydration, no alpha-H)",
+   "Used to distinguish 1°, 2°, 3° alcohols; no over-oxidation to acid"
+  ],
+  "whenUsed": "Manufacture of acetaldehyde and acetone; a route to aldehydes without over-oxidation.",
+  "applications": [
+   "Acetaldehyde from ethanol",
+   "Acetone from isopropanol"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2OH ->[Cu][573 K] CH3CHO + H2 ^",
+    "note": "Primary: aldehyde"
+   },
+   {
+    "eq": "(CH3)2CHOH ->[Cu][573 K] (CH3)2CO + H2 ^",
+    "note": "Secondary: ketone"
+   },
+   {
+    "eq": "(CH3)3COH ->[Cu][573 K] (CH3)2C=CH2 + H2O",
+    "note": "Tertiary: dehydration to alkene"
+   }
+  ],
+  "jeeTips": "With Cu/573 K a tertiary alcohol gives an ALKENE (isobutene), not a ketone. Also Ag or Cu in presence of air (O2) gives oxidation (e.g., methanol to HCHO, formalin industry).",
+  "tags": [
+   "dehydrogenation",
+   "copper",
+   "alcohol classification"
+  ]
+ },
+ {
+  "aliases": [
+   "Victor Meyer's test for 1°, 2°, 3° alcohols"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "",
+  "catalyst": "",
+  "reference": "",
+  "id": "victor-meyer-test",
+  "name": "Victor Meyer Test",
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "difficulty": "medium",
+  "reactants": "R-CH2OH",
+  "reagents": "(i) P / I2 (ii) AgNO2 (iii) HNO2 (iv) NaOH",
+  "products": "RC(NO2)=NOH (red colour with NaOH)",
+  "reagentKeywords": [
+   "P/I2",
+   "AgNO2",
+   "HNO2",
+   "NaOH",
+   "nitrolic acid",
+   "pseudonitrole",
+   "red",
+   "blue",
+   "colourless"
+  ],
+  "productName": "Nitrolic acid (red), pseudonitrole (blue) or no colour",
+  "summary": "The alcohol is converted to alkyl iodide, then to nitroalkane (AgNO2), then treated with HNO2 and made alkaline: 1° gives red colour, 2° gives blue, 3° colourless.",
+  "mechanism": "R-OH gives R-I (P/I2), SN2 with AgNO2 gives R-NO2. HNO2 reacts with the alpha-H of the nitroalkane: 1° (two alpha-H) gives nitrolic acid RC(NO2)=NOH, soluble in NaOH to give red salt; 2° (one alpha-H) gives pseudonitrole R2C(NO2)NO, blue in alkali; 3° nitro compound has no alpha-H and does not react.",
+  "keyPoints": [
+   "1° alcohol: nitrolic acid, red colour with NaOH",
+   "2° alcohol: pseudonitrole, blue colour with NaOH",
+   "3° alcohol: no reaction, colourless",
+   "Depends on number of alpha-hydrogens in the nitroalkane"
+  ],
+  "whenUsed": "Classical distinction between 1°, 2° and 3° alcohols.",
+  "applications": [
+   "Classification of alcohols"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2OH + HI ->[P/I2] CH3CH2I",
+    "note": "Step 1: iodide"
+   },
+   {
+    "eq": "CH3CH2I + AgNO2 -> CH3CH2NO2 + AgI v",
+    "note": "Step 2: nitroalkane"
+   },
+   {
+    "eq": "CH3CH2NO2 + HNO2 -> CH3C(NO2)=NOH + H2O",
+    "note": "Step 3: nitrolic acid, red with NaOH (1°)"
+   },
+   {
+    "eq": "(CH3)2CHNO2 + HNO2 -> (CH3)2C(NO2)NO + H2O",
+    "note": "2°: pseudonitrole, blue with NaOH"
+   }
+  ],
+  "jeeTips": "Memory: 1° Red, 2° Blue, 3° Colourless (RBC). Uses AgNO2 so nitro (not nitrite) compound is the intermediate. Contrast with Lucas test (3° fastest turbidity).",
+  "tags": [
+   "alcohol classification",
+   "nitroalkane",
+   "colour test"
+  ]
+ },
+ {
+  "aliases": [
+   "Ether cleavage with HI",
+   "Zeisel determination of methoxy group"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "\\Delta (373 K)",
+  "catalyst": "",
+  "reference": "",
+  "id": "zeisel-ether-cleavage-hi",
+  "name": "Cleavage of Ethers by HI (Zeisel Method)",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "General reaction",
+  "difficulty": "medium",
+  "reactants": "R-O-R' + HI",
+  "reagents": "HI (conc., excess)",
+  "products": "R-OH + R'-I",
+  "reagentKeywords": [
+   "HI",
+   "hydroiodic acid",
+   "ether cleavage",
+   "CH3I",
+   "AgNO3",
+   "excess HI",
+   "Zeisel"
+  ],
+  "productName": "Alcohol + alkyl iodide; with excess HI two alkyl iodides",
+  "summary": "Ethers are cleaved by hot concentrated HI (HBr less readily, HCl not) to give an alcohol and an alkyl iodide; excess HI converts the alcohol to a second alkyl iodide. Zeisel estimates OCH3/OC2H5 groups by this reaction.",
+  "mechanism": "O is protonated to an oxonium ion. I- then attacks the less hindered alkyl carbon by SN2 (1°/methyl) giving the iodide of the smaller group, while the bulkier part leaves as alcohol. If one group is 3° / benzylic, the C-O bond breaks by SN1 and the iodide forms on the 3° group.",
+  "keyPoints": [
+   "SN2: iodide goes on the smaller / less hindered alkyl group (CH3I from methyl ethers)",
+   "SN1 with tertiary alkyl: (CH3)3C-O-CH3 gives (CH3)3C-I + CH3OH",
+   "Aryl alkyl ether: gives phenol + R-I (never aryl iodide + ROH; Ar-O bond stronger due to resonance)",
+   "Excess HI: alcohol further converted to RI",
+   "Zeisel method: CH3I is distilled into AgNO3 / ethanol and AgI is weighed"
+  ],
+  "whenUsed": "Structure determination (count of methoxy groups) and ether cleavage.",
+  "applications": [
+   "Estimation of OCH3 / OC2H5 groups",
+   "Cleavage of anisole to phenol"
+  ],
+  "examples": [
+   {
+    "eq": "C2H5OC2H5 + HI -> C2H5OH + C2H5I",
+    "note": "Diethyl ether"
+   },
+   {
+    "eq": "C6H5OCH3 + HI -> C6H5OH + CH3I",
+    "note": "Anisole: phenol + methyl iodide"
+   },
+   {
+    "eq": "(CH3)3COCH3 + HI -> (CH3)3CI + CH3OH",
+    "note": "3° ether: SN1, iodide on the tertiary carbon"
+   }
+  ],
+  "jeeTips": "Rule: 1°/1° or 1°/2° ethers: I- attacks the less substituted carbon (SN2). 3° alkyl ethers: I- ends on the 3° carbon (SN1). Aryl alkyl ethers: phenol + alkyl iodide, never aryl iodide. Diaryl ethers do not cleave.",
+  "tags": [
+   "ether",
+   "SN1",
+   "SN2",
+   "HI",
+   "structure determination"
+  ]
+ },
+ {
+  "aliases": [
+   "Zn dust distillation of phenol",
+   "Phenol to benzene"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "distillation (\\Delta)",
+  "catalyst": "",
+  "reference": "",
+  "id": "phenol-zn-dust-reduction",
+  "name": "Reduction of Phenol with Zinc Dust",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Reduction",
+  "difficulty": "easy",
+  "reactants": "C6H5OH + Zn",
+  "reagents": "Zn dust",
+  "products": "C6H6 + ZnO",
+  "reagentKeywords": [
+   "Zn dust",
+   "zinc",
+   "benzene",
+   "heat",
+   "distillation",
+   "reduction"
+  ],
+  "productName": "Benzene",
+  "summary": "Phenol, when distilled over zinc dust, is deoxygenated to benzene (zinc takes the oxygen as ZnO).",
+  "mechanism": "At high temperature zinc, a strong oxophile, abstracts the oxygen from the C-O bond of phenol (via zinc phenoxide), giving benzene and ZnO.",
+  "keyPoints": [
+   "Zn dust distillation: C-O bond cleaved, ZnO formed",
+   "Same reagent converts other oxygenated aromatics, e.g., cresols to toluene",
+   "Establishes that the -OH is attached directly to the benzene ring"
+  ],
+  "whenUsed": "Converting phenols to arenes; structure confirmation.",
+  "applications": [
+   "Identification of the aromatic nucleus of phenolic natural products",
+   "Phenol to benzene"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5OH + Zn ->[\\Delta] C6H6 + ZnO",
+    "note": "Phenol to benzene"
+   },
+   {
+    "eq": "CH3C6H4OH + Zn ->[\\Delta] C6H5CH3 + ZnO",
+    "note": "Cresol to toluene"
+   },
+   {
+    "eq": "C10H7OH + Zn ->[\\Delta] C10H8 + ZnO",
+    "note": "Naphthol to naphthalene"
+   }
+  ],
+  "jeeTips": "Not the same as Clemmensen (Zn-Hg/HCl for C=O to CH2). Zn dust distillation also reduces other oxygenated compounds such as quinones and phenolphthalein to hydrocarbon skeletons.",
+  "tags": [
+   "reduction",
+   "zinc dust",
+   "phenol",
+   "benzene"
+  ]
+ },
+ {
+  "aliases": [
+   "Phenol to p-benzoquinone"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "",
+  "catalyst": "",
+  "reference": "",
+  "id": "phenol-oxidation-chromic-acid",
+  "name": "Oxidation of Phenol with Chromic Acid (Benzoquinone)",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Oxidation",
+  "difficulty": "medium",
+  "reactants": "C6H5OH",
+  "reagents": "Na2Cr2O7 / H2SO4 (chromic acid)",
+  "products": "C6H4O2 (p-benzoquinone)",
+  "reagentKeywords": [
+   "chromic acid",
+   "Na2Cr2O7",
+   "H2SO4",
+   "benzoquinone",
+   "oxidation",
+   "yellow"
+  ],
+  "productName": "p-Benzoquinone (cyclohexa-2,5-diene-1,4-dione)",
+  "summary": "Phenol is oxidised by chromic acid (acidified dichromate) to the yellow conjugated diketone p-benzoquinone.",
+  "mechanism": "Chromic acid hydroxylates the ring at the para position (electron rich), giving hydroquinone that is oxidised further to the quinone, formally replacing two C-H/O-H hydrogens with C=O groups.",
+  "keyPoints": [
+   "Product is p-benzoquinone, a yellow solid",
+   "Phenol autoxidises slowly in air giving pink / red colour (quinones)",
+   "Hydroquinone is easily oxidised to quinone and reversibly reduced back (quinone-hydroquinone redox couple)",
+   "Oxidant also converts catechol to o-quinone"
+  ],
+  "whenUsed": "Preparation of benzoquinone; understanding phenol's sensitivity to oxidation.",
+  "applications": [
+   "Quinone chemistry",
+   "Hydroquinone as photographic developer"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5OH ->[Na2Cr2O7 / H2SO4] C6H4O2",
+    "note": "p-Benzoquinone"
+   },
+   {
+    "eq": "C6H4(OH)2 ->[\\text{oxidant}] C6H4O2 + 2 H+ + 2 e-",
+    "note": "Hydroquinone to quinone"
+   },
+   {
+    "eq": "C6H4O2 + 2 H+ + 2 e- -> C6H4(OH)2",
+    "note": "Quinone back to hydroquinone"
+   }
+  ],
+  "jeeTips": "Phenol with chromic acid gives p-benzoquinone, not a carboxylic acid. Colour: pure phenol turns pink in air due to traces of quinones. Aniline with the same reagent also gives quinone.",
+  "tags": [
+   "oxidation",
+   "quinone",
+   "phenol",
+   "redox"
+  ]
+ },
+ {
+  "aliases": [
+   "Alcoholic fermentation",
+   "Ethanol from molasses",
+   "Zymase fermentation"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "298-303 K, anaerobic",
+  "catalyst": "Zymase enzyme (from yeast)",
+  "reference": "",
+  "id": "fermentation-sugar-ethanol",
+  "name": "Fermentation of Sugar to Ethanol",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Industrial process",
+  "difficulty": "easy",
+  "reactants": "C6H12O6",
+  "reagents": "zymase (yeast)",
+  "products": "2 C2H5OH + 2 CO2",
+  "reagentKeywords": [
+   "yeast",
+   "zymase",
+   "invertase",
+   "diastase",
+   "maltase",
+   "molasses",
+   "298 K",
+   "fermentation",
+   "enzyme"
+  ],
+  "productName": "Ethanol (+ CO2)",
+  "summary": "Sugar (molasses) is hydrolysed by invertase to glucose + fructose, and zymase in yeast converts them to ethanol and CO2 at about 298-303 K.",
+  "mechanism": "Enzyme-catalysed glycolysis: glucose is converted to pyruvate (via glycolytic intermediates), pyruvate is decarboxylated to acetaldehyde, and acetaldehyde is reduced to ethanol by NADH (alcohol dehydrogenase). Net: C6H12O6 gives 2 C2H5OH + 2 CO2.",
+  "keyPoints": [
+   "Invertase: sucrose to glucose + fructose",
+   "Zymase: glucose / fructose to ethanol + CO2",
+   "Starch route: diastase (starch to maltose), maltase (maltose to glucose), zymase",
+   "Wash contains about 8-10 per cent ethanol; above 14 per cent the enzyme is killed",
+   "Fractional distillation gives 95.6 per cent rectified spirit (azeotrope)"
+  ],
+  "whenUsed": "Industrial production of ethanol from molasses, grain and potatoes; bioethanol.",
+  "applications": [
+   "Beverage alcohol",
+   "Power alcohol / gasohol",
+   "Absolute alcohol by azeotropic distillation with benzene"
+  ],
+  "examples": [
+   {
+    "eq": "C12H22O11 + H2O ->[\\text{invertase}] C6H12O6 + C6H12O6",
+    "note": "Sucrose to glucose + fructose"
+   },
+   {
+    "eq": "C6H12O6 ->[\\text{zymase}] 2 C2H5OH + 2 CO2 ^",
+    "note": "Fermentation"
+   },
+   {
+    "eq": "2 (C6H10O5)n + n H2O ->[\\text{diastase}] n C12H22O11",
+    "note": "Starch to maltose"
+   }
+  ],
+  "jeeTips": "Enzymes: invertase (sucrose), zymase (glucose to ethanol), diastase (starch to maltose), maltase (maltose to glucose). Ethanol cannot exceed ~95.6% by simple distillation (azeotrope). Maximum alcohol content of wash about 14%.",
+  "tags": [
+   "enzyme",
+   "fermentation",
+   "ethanol",
+   "industrial"
+  ]
+ },
+ {
+  "aliases": [
+   "Industrial methanol synthesis",
+   "Methanol from syngas"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "573-673 K, 200-300 atm",
+  "catalyst": "ZnO-Cr2O3",
+  "reference": "",
+  "id": "methanol-from-water-gas",
+  "name": "Methanol from Water Gas (Synthesis Gas)",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Industrial process",
+  "difficulty": "easy",
+  "reactants": "CO + 2 H2",
+  "reagents": "ZnO-Cr2O3 catalyst",
+  "products": "CH3OH",
+  "reagentKeywords": [
+   "CO",
+   "H2",
+   "water gas",
+   "syngas",
+   "ZnO",
+   "Cr2O3",
+   "573 K",
+   "200 atm",
+   "300 atm"
+  ],
+  "productName": "Methanol (wood spirit)",
+  "summary": "Water gas / synthesis gas (CO + H2, from coal or natural gas) is converted to methanol over a ZnO-Cr2O3 catalyst at 573-673 K and 200-300 atm.",
+  "mechanism": "CO is chemisorbed on the oxide surface and is hydrogenated stepwise through formyl and methoxide surface species to give CH3OH. High pressure favours the product (4 mol gas to 1 mol gas in the pressure-volume sense, Le Chatelier).",
+  "keyPoints": [
+   "CO + 2 H2 gives CH3OH",
+   "Catalyst ZnO-Cr2O3 (older); Cu-ZnO-Al2O3 at lower T/P (modern)",
+   "Conditions: 573-673 K, 200-300 atm",
+   "Water gas is made by passing steam over red-hot coke: C + H2O gives CO + H2"
+  ],
+  "whenUsed": "Industrial manufacture of methanol (formaldehyde, acetic acid, MTBE, fuel).",
+  "applications": [
+   "Formaldehyde",
+   "Acetic acid (Monsanto process)",
+   "Fuel additive"
+  ],
+  "examples": [
+   {
+    "eq": "C + H2O ->[1273 K] CO + H2",
+    "note": "Water gas formation"
+   },
+   {
+    "eq": "CO + 2 H2 ->[ZnO-Cr2O3][573-673 K, 200-300 atm] CH3OH",
+    "note": "Methanol synthesis"
+   },
+   {
+    "eq": "CH3OH + CO ->[\\text{Rh / I-}] CH3COOH",
+    "note": "Carbonylation of methanol to acetic acid (Monsanto)"
+   }
+  ],
+  "jeeTips": "Learn conditions: ZnO/Cr2O3, 573-673 K, 200-300 atm. Methanol is toxic (blindness, death); wood spirit is the old name (destructive distillation of wood). Denatured alcohol is ethanol + methanol + pyridine.",
+  "tags": [
+   "industrial",
+   "methanol",
+   "syngas",
+   "catalyst"
+  ]
+ },
+ {
+  "aliases": [
+   "Hydration of alkenes",
+   "Alkene to alcohol (Markovnikov)"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "room temp - mild heat",
+  "catalyst": "H+",
+  "reference": "",
+  "id": "acid-catalysed-hydration-of-alkenes",
+  "name": "Acid-Catalysed Hydration of Alkenes",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "General reaction",
+  "difficulty": "medium",
+  "reactants": "R-CH=CH2 + H2O",
+  "reagents": "dil. H2SO4 (H+)",
+  "products": "R-CH(OH)-CH3",
+  "reagentKeywords": [
+   "H2O",
+   "dil. H2SO4",
+   "H3PO4",
+   "H+",
+   "Markovnikov",
+   "hydration",
+   "carbocation",
+   "alkene"
+  ],
+  "productName": "Alcohol (Markovnikov)",
+  "summary": "Alkenes add water in the presence of dilute strong acid to give alcohols following Markovnikov's rule; ethene gives ethanol, propene gives propan-2-ol.",
+  "mechanism": "H+ protonates the C=C to give the more stable carbocation (Markovnikov). Water attacks the carbocation and the oxonium ion loses H+ to give the alcohol and regenerate the catalyst.",
+  "keyPoints": [
+   "Markovnikov orientation (OH to more substituted carbon)",
+   "Carbocation intermediate - rearrangement possible",
+   "Ethene gives ethanol (industrial, H3PO4 on silica, 573 K, 70 atm); only ethene gives a primary alcohol",
+   "Anti-Markovnikov alcohol needs hydroboration-oxidation (BH3, then H2O2/OH-)",
+   "Oxymercuration-demercuration: Markovnikov alcohol with no rearrangement"
+  ],
+  "whenUsed": "Industrial manufacture of ethanol, propan-2-ol and t-butanol.",
+  "applications": [
+   "Industrial ethanol, isopropanol",
+   "Contrast with hydroboration for 1° alcohols"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CH2 + H2O ->[H3PO4][573 K, 60-70 atm] CH3CH2OH",
+    "note": "Industrial ethanol"
+   },
+   {
+    "eq": "CH3CH=CH2 + H2O ->[H+] CH3CH(OH)CH3",
+    "note": "Propan-2-ol (Markovnikov)"
+   },
+   {
+    "eq": "(CH3)3CCH=CH2 + H2O ->[H+] (CH3)2C(OH)CH(CH3)2",
+    "note": "Rearrangement: methyl shift gives 2,3-dimethylbutan-2-ol"
+   }
+  ],
+  "jeeTips": "Rearrangement is the trap: 3,3-dimethylbut-1-ene gives 2,3-dimethylbutan-2-ol (not the secondary alcohol). For anti-Markovnikov use B2H6, then H2O2/NaOH; for Markovnikov without rearrangement use Hg(OAc)2, H2O then NaBH4.",
+  "tags": [
+   "hydration",
+   "Markovnikov",
+   "carbocation",
+   "alcohol synthesis"
+  ]
+ },
+ {
+  "aliases": [
+   "Hydride reduction of aldehydes and ketones",
+   "LAH reduction"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "EtOH or MeOH (NaBH4); dry ether, then H3O+ (LiAlH4)",
+  "catalyst": "",
+  "reference": "",
+  "id": "reduction-of-carbonyls-nabh4-lialh4",
+  "name": "Reduction of Carbonyls with NaBH4 / LiAlH4 to Alcohols",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Reduction",
+  "difficulty": "medium",
+  "reactants": "R-CHO",
+  "reagents": "NaBH4 (or LiAlH4)",
+  "products": "R-CH2OH",
+  "reagentKeywords": [
+   "NaBH4",
+   "LiAlH4",
+   "LAH",
+   "hydride",
+   "dry ether",
+   "ethanol",
+   "H3O+",
+   "H2/Ni",
+   "reduction"
+  ],
+  "productName": "1° alcohol (aldehyde, acid, ester), 2° alcohol (ketone)",
+  "summary": "Hydride donors reduce aldehydes to primary alcohols and ketones to secondary alcohols. LiAlH4 additionally reduces carboxylic acids, esters and acid chlorides to primary alcohols.",
+  "mechanism": "The nucleophilic H- (from BH4- or AlH4-) adds to the electrophilic carbonyl carbon forming an alkoxide-boron/aluminium complex; aqueous work-up (H2O or dil. acid) protonates the alkoxide to give the alcohol. Up to four hydrides per BH4-/AlH4- can be delivered.",
+  "keyPoints": [
+   "NaBH4: mild, works in protic solvents (EtOH, H2O); reduces aldehydes and ketones only (also acid chlorides)",
+   "LiAlH4: strong, in dry ether/THF only (reacts violently with water); also reduces RCOOH, RCOOR, RCONH2 (to amine), RCN (to amine), nitro",
+   "Neither reduces isolated C=C (NaBH4/LiAlH4); NaBH4 can reduce C=O of enones selectively (1,2)",
+   "Catalytic hydrogenation (H2/Ni) also reduces C=O but would saturate C=C too"
+  ],
+  "whenUsed": "Standard laboratory conversion of C=O compounds to alcohols.",
+  "applications": [
+   "Aldehyde / ketone to alcohol",
+   "Ester to alcohol (LiAlH4)"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CHO ->[NaBH4][EtOH] CH3CH2OH",
+    "note": "Ethanol"
+   },
+   {
+    "eq": "CH3COCH3 ->[LiAlH4][\\text{dry ether; then H3O+}] (CH3)2CHOH",
+    "note": "Propan-2-ol"
+   },
+   {
+    "eq": "CH3COOC2H5 ->[LiAlH4][\\text{dry ether; then H3O+}] 2 CH3CH2OH",
+    "note": "Ester to two alcohols; acid / ester reductions need LiAlH4"
+   }
+  ],
+  "jeeTips": "Selectivity: NaBH4 reduces C=O but NOT esters or acids; LiAlH4 reduces almost everything polar. LiAlH4 does not reduce C=C of isolated alkenes, but with conjugated enones may give mix. Never use water/alcohol solvent with LiAlH4. Diborane reduces COOH in presence of ester.",
+  "tags": [
+   "hydride",
+   "reduction",
+   "carbonyl",
+   "selectivity"
+  ]
+ },
+ {
+  "aliases": [
+   "Grignard addition",
+   "RMgX with aldehydes, ketones and esters"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "0 \\degree C to room temp",
+  "catalyst": "",
+  "reference": "https://www.organic-chemistry.org/namedreactions/grignard-reaction.shtm",
+  "id": "grignard-carbonyl-alcohols",
+  "name": "Grignard Reagent + Carbonyl to Alcohols",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Named reaction",
+  "difficulty": "medium",
+  "reactants": "HCHO + R-MgX",
+  "reagents": "RMgX, dry ether; then H3O+",
+  "products": "R-CH2OH",
+  "reagentKeywords": [
+   "RMgX",
+   "Grignard",
+   "dry ether",
+   "H3O+",
+   "NH4Cl",
+   "formaldehyde",
+   "ketone",
+   "ester",
+   "epoxide"
+  ],
+  "productName": "1° alcohol (HCHO, epoxide), 2° alcohol (RCHO), 3° alcohol (ketone, ester)",
+  "summary": "The nucleophilic carbon of RMgX adds to C=O. HCHO gives a primary alcohol, other aldehydes give secondary, ketones and esters (2 equiv.) give tertiary alcohols; epoxides give a primary alcohol with two extra carbons.",
+  "mechanism": "The carbanion-like R of RMgX attacks the electrophilic carbonyl carbon (Mg coordinating O) to give a magnesium alkoxide. Aqueous acid protonates it to the alcohol. With esters, the first addition expels R'O- to give a ketone, which reacts with a second RMgX.",
+  "keyPoints": [
+   "HCHO gives 1° alcohol (one extra carbon); RCHO gives 2°; R2C=O gives 3°",
+   "Ester or acid chloride + 2 RMgX gives 3° alcohol (two identical R groups from Grignard)",
+   "Epoxide (ethylene oxide) + RMgX gives RCH2CH2OH (two carbons added)",
+   "CO2 + RMgX gives RCOOH; nitrile + RMgX gives ketone",
+   "Quench with H3O+ / NH4Cl"
+  ],
+  "whenUsed": "Preparation of alcohols with increased carbon skeleton; building 1°, 2° and 3° alcohols.",
+  "applications": [
+   "Tertiary alcohols from ketones",
+   "Chain elongation by 2 carbons using ethylene oxide"
+  ],
+  "examples": [
+   {
+    "eq": "HCHO + CH3MgBr ->[\\text{(i) dry ether (ii) H3O+}] CH3CH2OH",
+    "note": "Primary alcohol"
+   },
+   {
+    "eq": "CH3CHO + CH3MgBr ->[\\text{(i) dry ether (ii) H3O+}] (CH3)2CHOH",
+    "note": "Secondary alcohol"
+   },
+   {
+    "eq": "CH3COCH3 + CH3MgBr ->[\\text{(i) dry ether (ii) H3O+}] (CH3)3COH",
+    "note": "Tertiary alcohol"
+   },
+   {
+    "eq": "CH3COOC2H5 + 2 CH3MgBr ->[\\text{(i) dry ether (ii) H3O+}] (CH3)3COH + C2H5OH",
+    "note": "Ester + 2 RMgX gives tertiary alcohol"
+   }
+  ],
+  "jeeTips": "Count the carbons: HCHO (1°), other RCHO (2°), ketone/ester (3°). Ester gives 3° alcohol with TWO identical R groups. The Grignard acts as a base towards any acidic H. Ethylene oxide gives primary alcohol with two extra carbons.",
+  "tags": [
+   "Grignard",
+   "C-C bond formation",
+   "alcohol synthesis",
+   "carbonyl"
+  ]
+ },
+ {
+  "aliases": [
+   "Liebermann's nitroso test",
+   "Liebermann test for phenol"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "",
+  "catalyst": "",
+  "reference": "",
+  "id": "libermann-nitroso-reaction",
+  "name": "Libermann's Nitroso Reaction",
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "difficulty": "medium",
+  "reactants": "C6H5OH + NaNO2",
+  "reagents": "NaNO2, conc. H2SO4",
+  "products": "Indophenol (blue/green) which turns red on dilution",
+  "reagentKeywords": [
+   "NaNO2",
+   "conc. H2SO4",
+   "nitrosophenol",
+   "indophenol",
+   "green",
+   "blue",
+   "red",
+   "NaOH",
+   "phenol test"
+  ],
+  "productName": "Indophenol dye (blue in alkali)",
+  "summary": "Phenol, NaNO2 and conc. H2SO4 give a deep green/blue solution that turns red on dilution with water and blue/green again when made alkaline with NaOH.",
+  "mechanism": "Nitrosation of phenol at the para position by NO+ (from HNO2 / H2SO4) gives p-nitrosophenol. This condenses with a second phenol molecule to give indophenol (quinone-imine dye). Indophenol is red in acid (undissociated form) and blue in alkali (anionic form).",
+  "keyPoints": [
+   "Reagents: NaNO2 + conc. H2SO4",
+   "Deep green or blue colour, red on dilution, blue/green with NaOH",
+   "Test needs a phenol having a free para position",
+   "Red-to-blue change is due to indophenol ionisation (acid-base indicator-like)"
+  ],
+  "whenUsed": "Qualitative identification of phenol (and some phenol derivatives).",
+  "applications": [
+   "Test for phenol"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5OH + HNO2 -> p-HOC6H4NO + H2O",
+    "note": "Nitrosation of phenol"
+   },
+   {
+    "eq": "p-HOC6H4NO + C6H5OH -> HOC6H4-N=C6H4=O + H2O",
+    "note": "Condensation to indophenol"
+   },
+   {
+    "eq": "NaNO2 + H2SO4 -> HNO2 + NaHSO4",
+    "note": "HNO2 generated in situ"
+   }
+  ],
+  "jeeTips": "Colour sequence: Green/blue (conc. H2SO4), Red (diluted), Blue/green (alkaline). Needs a phenol with a free para position. Do not confuse with FeCl3 test (violet) or Br2 water test (white ppt).",
+  "tags": [
+   "phenol test",
+   "nitroso",
+   "indophenol",
+   "colour test"
+  ]
+ },
+ {
+  "aliases": [
+   "Neutral FeCl3 test",
+   "FeCl3 test"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "room temperature",
+  "catalyst": "",
+  "reference": "",
+  "id": "ferric-chloride-test-phenols",
+  "name": "Ferric Chloride Test for Phenols",
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "difficulty": "easy",
+  "reactants": "6 C6H5OH + FeCl3",
+  "reagents": "neutral FeCl3 (aqueous / ethanolic)",
+  "products": "[Fe(OC6H5)6]^3- + 6 H+ + 3 Cl- (violet)",
+  "reagentKeywords": [
+   "FeCl3",
+   "neutral ferric chloride",
+   "violet",
+   "purple",
+   "complex",
+   "enol",
+   "salicylic acid",
+   "phenol"
+  ],
+  "productName": "Violet iron(III) phenoxide complex",
+  "summary": "Phenols give an intense violet, blue, green or red colour with neutral FeCl3 due to the formation of a coloured iron(III)-phenoxide complex.",
+  "mechanism": "Phenolic OH (weakly acidic) coordinates to Fe3+, losing H+ to form an octahedral Fe(III) complex with phenoxide ligands; charge-transfer (ligand-to-metal) absorption in the visible region causes the colour.",
+  "keyPoints": [
+   "Phenol: violet",
+   "o-Cresol: blue; m-/p-Cresol: blue; catechol: green; resorcinol: violet / dark blue; salicylic acid: violet; alpha-naphthol: violet ppt; beta-naphthol: green",
+   "Enols (e.g., acetoacetic ester) also respond",
+   "Alcohols, carboxylic acids (except hydroxy acids) do not respond (benzoic acid gives buff ppt)",
+   "Reagent must be NEUTRAL (acidic FeCl3 gives no colour)"
+  ],
+  "whenUsed": "Quick test for a phenolic -OH (or enolic -OH) group.",
+  "applications": [
+   "Detection of phenols",
+   "Test for aspirin purity (free salicylic acid)"
+  ],
+  "examples": [
+   {
+    "eq": "6 C6H5OH + FeCl3 -> [Fe(OC6H5)6]^3- + 6 H+ + 3 Cl-",
+    "note": "Violet complex with phenol"
+   },
+   {
+    "eq": "3 C6H5OH + FeCl3 -> Fe(OC6H5)3 + 3 HCl",
+    "note": "Simplified view of the complex"
+   },
+   {
+    "eq": "C6H4(OH)COOH + FeCl3 -> \\text{violet complex}",
+    "note": "Salicylic acid also gives violet"
+   }
+  ],
+  "jeeTips": "Positive also for enols (acetoacetic ester, 1,3-diketones) and salicylic acid, not for aspirin (until hydrolysed). Neutral FeCl3 only. Benzoic acid gives a buff-coloured precipitate of ferric benzoate, not violet.",
+  "tags": [
+   "phenol test",
+   "FeCl3",
+   "complex",
+   "colour test"
+  ]
+ },
+ {
+  "aliases": [
+   "Azo coupling",
+   "Diazo coupling with phenol"
+  ],
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "conditions": "273-278 K",
+  "catalyst": "",
+  "reference": "",
+  "id": "coupling-phenol-diazonium",
+  "name": "Coupling of Phenol with Benzenediazonium (Azo Dye)",
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Named reaction",
+  "difficulty": "medium",
+  "reactants": "C6H5N2+ Cl- + C6H5OH",
+  "reagents": "NaOH (mildly alkaline, pH 9-10)",
+  "products": "C6H5-N=N-C6H4-OH + HCl",
+  "reagentKeywords": [
+   "benzenediazonium chloride",
+   "NaOH",
+   "273 K",
+   "azo dye",
+   "p-hydroxyazobenzene",
+   "orange",
+   "coupling",
+   "pH 9"
+  ],
+  "productName": "p-Hydroxyazobenzene (orange dye)",
+  "summary": "Benzenediazonium chloride couples with phenol in mildly alkaline medium at the para position to give the orange azo dye p-hydroxyazobenzene.",
+  "mechanism": "The diazonium ion is a weak electrophile; in alkali phenol is present as the strongly activated phenoxide, which attacks the terminal nitrogen of Ar-N2+ (electrophilic aromatic substitution) at the para position, giving the azo compound after loss of H+.",
+  "keyPoints": [
+   "Electrophile: Ar-N2+; nucleophile: phenoxide (pH 9-10)",
+   "Para position attacked (ortho only if para blocked)",
+   "With 2-naphthol gives scarlet-red dye (test for aromatic primary amine)",
+   "With aniline (pH 4-5) gives p-aminoazobenzene (yellow)",
+   "Too high pH (> 11) converts diazonium to inert diazotate; too low pH suppresses phenoxide"
+  ],
+  "whenUsed": "Azo dye synthesis; confirmatory test for aromatic primary amines (via diazotisation then coupling with 2-naphthol).",
+  "applications": [
+   "Azo dyes (e.g., methyl orange, Sudan dyes)",
+   "Test for aromatic primary amines"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N2+ Cl- + C6H5OH ->[NaOH][273-278 K] C6H5-N=N-C6H4-OH + HCl",
+    "note": "p-Hydroxyazobenzene (orange)"
+   },
+   {
+    "eq": "C6H5N2+ Cl- + C6H5NH2 ->[\\text{pH 4-5}] C6H5-N=N-C6H4-NH2 + HCl",
+    "note": "p-Aminoazobenzene (yellow)"
+   },
+   {
+    "eq": "C6H5N2+ Cl- + C10H7OH ->[NaOH] C6H5-N=N-C10H6-OH + HCl",
+    "note": "2-Naphthol coupling gives red-orange dye"
+   }
+  ],
+  "jeeTips": "pH: phenols couple in mild alkali (pH 9-10), anilines in weakly acidic medium (pH 4-5). Coupling at para; if blocked then ortho. No nitrogen is lost in coupling (azo group retained) - unlike Sandmeyer, where N2 is evolved. Product has -N=N- chromophore.",
+  "tags": [
+   "azo dye",
+   "diazonium",
+   "coupling",
+   "electrophilic substitution"
+  ]
+ }
+]

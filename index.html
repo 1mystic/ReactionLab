@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#d8ddd4">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>ReactionLab — JEE Organic Reaction Bank</title>
+  <meta name="description" content="Practise every organic reaction for JEE Main & Advanced: random reaction drills, similarity-scored answers, MCQ quizzes and a searchable reaction bank.">
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+  <script defer src="assets/vendor/katex/katex.min.js"></script>
+  <script defer src="assets/vendor/katex/mhchem.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="data/reactions.js"></script>
+  <script defer src="assets/js/core.js"></script>
+  <script defer src="assets/js/home.js"></script>
+</head>
+<body>
+  <div class="app">
+    <main class="main">
+      <div id="topbar"></div>
+
+      <section class="hero">
+        <div>
+          <span class="pill lav" style="margin-bottom:18px">JEE Main · JEE Advanced · Organic</span>
+          <h1>Every organic reaction,<br><em>one random click</em> away.</h1>
+          <p style="margin:18px 0 28px">Get a random reaction, type its name, reagents and products, and get an instant similarity score. Reveal rich answer cards, drill MCQs, and grow your own bank.</p>
+          <div class="chips">
+            <a class="btn green" href="practice.html">Start practising <span id="heroCount"></span></a>
+            <a class="btn" style="background:transparent;color:#fff;border-color:#3a3a3a" href="practice.html?mode=mcq">Quick MCQ quiz</a>
+            <a class="btn" style="background:transparent;color:#fff;border-color:#3a3a3a" href="bank.html">Browse bank</a>
+          </div>
+        </div>
+        <div id="heroEqs"></div>
+      </section>
+
+      <div class="grid stats-grid" id="stats"></div>
+
+      <div class="grid two-col" id="twoCol">
+        <section class="panel">
+          <div class="panel-head"><h2>Reaction of the day</h2><a class="icon-btn" href="practice.html" title="Random" id="rotdBtn"></a></div>
+          <div id="rotd"></div>
+          <div class="grid quick-grid" style="margin-top:22px">
+            <a class="note-card lav quick" href="practice.html?mode=mcq"><span class="small" style="opacity:.8">2 minutes</span><h3>10-question MCQ sprint</h3><div class="foot">Name it · reagent · product →</div></a>
+            <a class="note-card green quick" href="practice.html" id="weakLink"><span class="small" style="opacity:.7">Adaptive</span><h3>Drill your weak spots</h3><div class="foot" id="weakFoot">Low-scoring reactions come up more often →</div></a>
+          </div>
+        </section>
+        <section class="panel">
+          <div class="panel-head"><h2>Chapters</h2><a class="btn sm" href="bank.html">View all</a></div>
+          <div class="rows" id="chapters"></div>
+        </section>
+      </div>
+
+      <section class="panel soft">
+        <div class="panel-head"><h2>How it works</h2></div>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
+          <div class="note-card green"><h3>1 · Get a problem</h3><p style="margin:0">A random reaction appears with its reagent hidden. Filter by chapter, exam or difficulty.</p><div class="foot">Shortcut: <kbd>N</kbd> next</div></div>
+          <div class="note-card lav"><h3>2 · Answer & score</h3><p style="margin:0">Type the name, reagents/catalyst, product and anything else. Fuzzy similarity matching scores you instantly.</p><div class="foot"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> check</div></div>
+          <div class="note-card white"><h3>3 · Reveal cards</h3><p style="margin:0">Mechanism, key points, where it's used, examples, applications and JEE traps.</p><div class="foot"><kbd>R</kbd> reveal</div></div>
+          <div class="note-card amber"><h3>4 · Build your bank</h3><p style="margin:0">Archive, blacklist, edit or add reactions. Use the LLM prompt to convert any image/notes into importable JSON.</p><div class="foot">Edit &amp; Upload page</div></div>
+        </div>
+      </section>
+
+      <section class="panel" id="weakPanel">
+        <div class="panel-head"><h2>Your recent attempts</h2><a class="btn sm" href="practice.html">Practise more</a></div>
+        <div class="rows" id="recent"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

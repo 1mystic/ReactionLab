@@ -1,0 +1,2674 @@
+[
+ {
+  "id": "wurtz-reaction",
+  "name": "Wurtz Reaction",
+  "aliases": [
+   "Wurtz coupling",
+   "Wurtz synthesis of alkanes"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "2 R-X",
+  "reagents": "Na",
+  "conditions": "\\text{dry ether}",
+  "products": "R-R + 2 NaX",
+  "catalyst": "Na metal (dry ether)",
+  "reagentKeywords": [
+   "Na",
+   "sodium",
+   "dry ether",
+   "anhydrous ether"
+  ],
+  "productName": "Higher symmetrical alkane (R–R)",
+  "summary": "Alkyl halides couple with sodium metal in dry ether to form a symmetrical alkane with double the number of carbons.",
+  "mechanism": "Na transfers an electron to R–X giving an alkyl radical/organosodium (R–Na) species. The carbanion-like R–Na attacks a second R–X in an SN2 step, expelling X- and forming the C–C bond.",
+  "keyPoints": [
+   "Gives only symmetrical alkanes (R–R) cleanly; a mixture of two different RX gives three alkanes (R–R, R–R'', R''–R'') that are hard to separate",
+   "Methane cannot be prepared (needs at least 2 C in product)",
+   "Tertiary halides undergo elimination to alkene instead",
+   "Dry ether is essential because Na reacts with water",
+   "Product has twice the carbon count of the alkyl halide"
+  ],
+  "whenUsed": "Laboratory preparation of symmetrical higher alkanes with an even number of carbon atoms.",
+  "applications": [
+   "Ethane from CH3Br",
+   "n-Butane from C2H5Br",
+   "Chain lengthening"
+  ],
+  "examples": [
+   {
+    "eq": "2 CH3Br + 2 Na ->[\\text{dry ether}] CH3-CH3 + 2 NaBr",
+    "note": "Ethane from bromomethane"
+   },
+   {
+    "eq": "2 CH3CH2Cl + 2 Na ->[\\text{dry ether}] CH3CH2CH2CH3 + 2 NaCl",
+    "note": "n-Butane"
+   },
+   {
+    "eq": "CH3Cl + C2H5Cl + 2 Na ->[\\text{dry ether}] CH3CH2CH3 + 2 NaCl",
+    "note": "Unsymmetrical coupling gives mixture (also ethane + butane)"
+   }
+  ],
+  "jeeTips": "To make an odd-carbon alkane such as propane you cannot use Wurtz cleanly. Product carbon count = 2 x carbon of RX. Using Li or Zn instead is Frankland-type; do not confuse with Wurtz–Fittig (aryl halide + alkyl halide).",
+  "reference": "https://www.organic-chemistry.org/namedreactions/wurtz-reaction.shtm",
+  "tags": [
+   "C–C bond formation",
+   "alkane",
+   "sodium",
+   "coupling"
+  ]
+ },
+ {
+  "id": "corey-house-synthesis",
+  "name": "Corey–House Synthesis",
+  "aliases": [
+   "Corey–Posner–Whitesides–House synthesis",
+   "Gilman reagent coupling",
+   "Lithium dialkylcuprate coupling"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "R-X",
+  "reagents": "1) Li, \\text{dry ether}; 2) CuI; 3) R''-X",
+  "conditions": "",
+  "products": "R-R'' + R''Cu + LiX",
+  "catalyst": "CuI (forms Gilman reagent R2CuLi)",
+  "reagentKeywords": [
+   "Li",
+   "CuI",
+   "lithium dialkylcuprate",
+   "Gilman reagent",
+   "R2CuLi",
+   "dry ether"
+  ],
+  "productName": "Alkane R–R'' (unsymmetrical possible)",
+  "summary": "An alkyl halide is converted to lithium dialkylcuprate (Gilman reagent), which couples with a second alkyl halide to give an unsymmetrical alkane in good yield.",
+  "mechanism": "R-X + 2 Li gives R-Li; 2 R-Li + CuI gives R2CuLi. The cuprate then undergoes SN2-type coupling with R''-X forming R-R'' and R-Cu.",
+  "keyPoints": [
+   "Preferred over Wurtz for preparing unsymmetrical alkanes (odd or even carbon count)",
+   "R''X should preferably be primary (methyl/1° halide); R in the cuprate can be 1°, 2° or 3°",
+   "Overall: R–X to R2CuLi to R–R''",
+   "Also couples with aryl and vinyl halides"
+  ],
+  "whenUsed": "Clean synthesis of unsymmetrical alkanes where Wurtz would give a mixture.",
+  "applications": [
+   "Propane from CH3Br + C2H5Br",
+   "Alkylbenzenes via aryl halides",
+   "Methylation of complex halides"
+  ],
+  "examples": [
+   {
+    "eq": "2 CH3CH2Br + 4 Li ->[\\text{dry ether}] 2 CH3CH2Li + 2 LiBr",
+    "note": "Step 1: alkyllithium"
+   },
+   {
+    "eq": "2 CH3CH2Li + CuI -> (CH3CH2)2CuLi + LiI",
+    "note": "Step 2: Gilman reagent"
+   },
+   {
+    "eq": "(CH3CH2)2CuLi + CH3I -> CH3CH2CH3 + CH3CH2Cu + LiI",
+    "note": "Step 3: coupling gives propane"
+   }
+  ],
+  "jeeTips": "Asked as a better alternative to Wurtz: the answer is Corey–House (R2CuLi + R''X). Remember it is R2CuLi, not R–MgX; Grignard reagents do not give this clean coupling with alkyl halides.",
+  "reference": "",
+  "tags": [
+   "C–C bond formation",
+   "organocopper",
+   "Gilman reagent",
+   "alkane"
+  ]
+ },
+ {
+  "id": "kolbe-electrolysis",
+  "name": "Kolbe's Electrolysis",
+  "aliases": [
+   "Kolbe electrolytic synthesis",
+   "Kolbe electrolysis of carboxylate salts"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "2 RCOO- Na+",
+  "reagents": "\\text{electrolysis}",
+  "conditions": "\\text{conc. aq. solution}",
+  "products": "R-R + 2 CO2 + 2 Na+ + 2 e-",
+  "catalyst": "",
+  "reagentKeywords": [
+   "electrolysis",
+   "aq. sodium or potassium salt",
+   "conc. solution",
+   "anode"
+  ],
+  "productName": "Alkane R–R (at anode)",
+  "summary": "Electrolysis of concentrated aqueous sodium or potassium salt of a carboxylic acid gives a symmetrical alkane at the anode, with CO2 and, at the cathode, H2 and NaOH.",
+  "mechanism": "At the anode RCOO- loses an electron to give RCOO. which loses CO2 to form R.; two R. radicals dimerise to R–R. At the cathode water is reduced giving H2 and OH-.",
+  "keyPoints": [
+   "Anode: 2 RCOO- -> R-R + 2 CO2 + 2 e-",
+   "Cathode: 2 H2O + 2 e- -> H2 + 2 OH-",
+   "Sodium acetate gives ethane; sodium succinate gives ethene; sodium maleate/fumarate gives ethyne",
+   "Mixture of two salts gives three alkanes",
+   "Number of C in alkane = 2 x (C in R)"
+  ],
+  "whenUsed": "Synthesis of even-carbon symmetrical alkanes, alkenes (from dicarboxylates) and alkynes.",
+  "applications": [
+   "Ethane from CH3COONa",
+   "Ethene from sodium succinate",
+   "Ethyne from potassium fumarate"
+  ],
+  "examples": [
+   {
+    "eq": "2 CH3COO- ->[\\text{anode}] CH3-CH3 + 2 CO2 + 2 e-",
+    "note": "Ethane at anode"
+   },
+   {
+    "eq": "-OOC-CH2CH2-COO- ->[-2 e-] CH2=CH2 + 2 CO2",
+    "note": "Succinate gives ethene"
+   },
+   {
+    "eq": "-OOC-CH=CH-COO- ->[-2 e-] HC#CH + 2 CO2",
+    "note": "Maleate/fumarate gives ethyne"
+   }
+  ],
+  "jeeTips": "Products at the anode: alkane + CO2; at the cathode: H2 (not the alkane). For HCOONa you get H2 and CO2 only. Dicarboxylate with n carbons between gives alkene/alkyne - count carbons carefully.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/kolbe-electrolysis.shtm",
+  "tags": [
+   "electrolysis",
+   "decarboxylation",
+   "radical",
+   "alkane"
+  ]
+ },
+ {
+  "id": "decarboxylation-soda-lime",
+  "name": "Decarboxylation with Soda Lime",
+  "aliases": [
+   "Decarboxylation of carboxylic acid salts",
+   "Soda lime decarboxylation",
+   "Dumas method"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "RCOONa",
+  "reagents": "NaOH + CaO (soda lime)",
+  "conditions": "\\Delta",
+  "products": "R-H + Na2CO3",
+  "catalyst": "CaO (keeps NaOH dry)",
+  "reagentKeywords": [
+   "soda lime",
+   "NaOH/CaO",
+   "heat",
+   "NaOH CaO",
+   "sodalime"
+  ],
+  "productName": "Alkane with one carbon less (R–H)",
+  "summary": "Heating sodium salt of a carboxylic acid with soda lime removes the carboxylate as carbonate, giving an alkane with one carbon fewer.",
+  "mechanism": "Hydroxide attacks the carboxylate carbon region; heterolytic loss of CO3 2- generates a carbanion R- that is protonated by water/NaOH to give R–H.",
+  "keyPoints": [
+   "Descent of the series: lowers carbon count by one (step-down)",
+   "Soda lime = NaOH + CaO (3:1); CaO keeps NaOH from absorbing moisture and prevents fusing/attacking glass",
+   "Free acid itself does not decarboxylate this way",
+   "Sodium acetate gives methane",
+   "Dicarboxylate salts give alkane after losing both CO2 groups as carbonate"
+  ],
+  "whenUsed": "Laboratory preparation of methane and for converting a carboxylic acid into the alkane with one carbon fewer.",
+  "applications": [
+   "Methane preparation in the lab",
+   "Step-down in carbon chain",
+   "Benzene from sodium benzoate"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COONa + NaOH ->[CaO, \\Delta] CH4 + Na2CO3",
+    "note": "Methane"
+   },
+   {
+    "eq": "CH3CH2COONa + NaOH ->[CaO, \\Delta] CH3CH3 + Na2CO3",
+    "note": "Ethane from sodium propanoate"
+   },
+   {
+    "eq": "C6H5COONa + NaOH ->[CaO, \\Delta] C6H6 + Na2CO3",
+    "note": "Benzene from sodium benzoate"
+   }
+  ],
+  "jeeTips": "Compare: Kolbe gives R–R (even carbon, aqueous electrolysis); soda lime gives R–H (carbon minus 1). Reaction needs the sodium salt, not the acid.",
+  "reference": "",
+  "tags": [
+   "decarboxylation",
+   "methane",
+   "step-down",
+   "alkane"
+  ]
+ },
+ {
+  "id": "sabatier-senderens-reduction",
+  "name": "Sabatier–Senderens Reduction",
+  "aliases": [
+   "Catalytic hydrogenation of alkenes and alkynes",
+   "Sabatier–Senderens hydrogenation"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH2=CH2 + H2",
+  "reagents": "Ni (or Pt/Pd)",
+  "conditions": "473–573 K",
+  "products": "CH3-CH3",
+  "catalyst": "Finely divided Ni (Sabatier–Senderens); Pt, Pd at room temp",
+  "reagentKeywords": [
+   "Ni",
+   "Pt",
+   "Pd",
+   "H2",
+   "473 K",
+   "hydrogenation",
+   "catalytic"
+  ],
+  "productName": "Alkane",
+  "summary": "Alkenes and alkynes add hydrogen over finely divided Ni (at 200–300 °C) or Pt/Pd (room temp) to give the saturated alkane.",
+  "mechanism": "H2 is adsorbed on the metal surface and dissociates into atoms; the alkene is also adsorbed and both H atoms are delivered to the same face, giving syn addition.",
+  "keyPoints": [
+   "Syn addition of H2 from the metal surface",
+   "Ni needs 200–300 °C (Sabatier–Senderens); Pt/Pd work at ordinary temperature",
+   "Alkyne goes through alkene to alkane with excess H2",
+   "Exothermic: heat of hydrogenation measures alkene stability",
+   "Also reduces C=O, NO2, CN groups under suitable conditions"
+  ],
+  "whenUsed": "Industrial hydrogenation of vegetable oils (to vanaspati), and laboratory preparation of alkanes.",
+  "applications": [
+   "Ethane from ethene",
+   "Propane from propyne (excess H2)",
+   "Hardening of oils"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CH2 + H2 ->[Ni][473 K] CH3-CH3",
+    "note": "Ethene to ethane"
+   },
+   {
+    "eq": "HC#CH + 2 H2 ->[Ni][\\Delta] CH3-CH3",
+    "note": "Ethyne to ethane with excess H2"
+   },
+   {
+    "eq": "CH3CH=CH2 + H2 ->[Pt] CH3CH2CH3",
+    "note": "Propene to propane"
+   }
+  ],
+  "jeeTips": "Heat of hydrogenation: more substituted/trans alkene is more stable so has lower value. Excess H2/Ni takes alkyne all the way to alkane, only Lindlar or Na/NH3 stop at alkene.",
+  "reference": "",
+  "tags": [
+   "hydrogenation",
+   "Ni",
+   "syn addition",
+   "alkane"
+  ]
+ },
+ {
+  "id": "reduction-alkyl-halides-zn-hcl",
+  "name": "Reduction of Alkyl Halides with Zn/HCl",
+  "aliases": [
+   "Reduction of RX to alkane",
+   "Nascent hydrogen reduction of haloalkanes"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "R-X + 2 [H]",
+  "reagents": "Zn / HCl",
+  "conditions": "",
+  "products": "R-H + HX",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Zn",
+   "HCl",
+   "Zn/HCl",
+   "nascent hydrogen",
+   "Zn-Cu couple",
+   "LiAlH4"
+  ],
+  "productName": "Alkane (R–H)",
+  "summary": "Alkyl halides are reduced to alkanes with the same carbon skeleton by nascent hydrogen from Zn and dilute HCl.",
+  "mechanism": "Zn donates electrons to the C–X bond (single electron transfer) producing carbanion/radical equivalents which are protonated by H+ from the acid.",
+  "keyPoints": [
+   "Carbon skeleton is unchanged; X is replaced by H",
+   "Other reducing agents: LiAlH4, Zn–Cu/C2H5OH, red P + HI, H2/Pd",
+   "Zn/HCl on carbonyl compounds is Clemmensen reduction, not this reaction",
+   "Ease of reduction: R–I > R–Br > R–Cl > R–F"
+  ],
+  "whenUsed": "Preparation of alkane from alkyl halide with no change in carbon count.",
+  "applications": [
+   "Ethane from chloroethane",
+   "Methane from CH3I"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2Cl + 2 [H] ->[Zn, HCl] CH3CH3 + HCl",
+    "note": "Ethane"
+   },
+   {
+    "eq": "CH3I + Zn + HCl -> CH4 + ZnICl",
+    "note": "Methane"
+   },
+   {
+    "eq": "(CH3)2CHBr + 2 [H] ->[Zn/HCl] CH3CH2CH3 + HBr",
+    "note": "Propane"
+   }
+  ],
+  "jeeTips": "Remember trio: Wurtz (R–R, carbon doubled), Kolbe (R–R), Zn/HCl (R–H, same carbons), soda lime (R–H, one carbon less).",
+  "reference": "",
+  "tags": [
+   "reduction",
+   "alkyl halide",
+   "nascent hydrogen",
+   "alkane"
+  ]
+ },
+ {
+  "id": "free-radical-halogenation",
+  "name": "Free-Radical Halogenation of Alkanes",
+  "aliases": [
+   "Halogenation of alkanes",
+   "Photochemical chlorination of methane"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH4 + Cl2",
+  "reagents": "\\text{hv}",
+  "conditions": "\\text{UV light or 573 K}",
+  "products": "CH3Cl + HCl",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Cl2",
+   "Br2",
+   "hv",
+   "UV light",
+   "heat",
+   "light",
+   "free radical"
+  ],
+  "productName": "Haloalkane (mixture of polyhalides)",
+  "summary": "Alkanes react with Cl2 or Br2 in UV light or at high temperature in a radical chain substitution, replacing H by halogen.",
+  "mechanism": "Initiation: X2 splits into 2 X. by light. Propagation: X. + R–H gives R. + HX; R. + X2 gives R–X + X.. Termination: radical pairs combine (X–X, R–X, R–R).",
+  "keyPoints": [
+   "Reactivity of H: 3° > 2° > 1° (stability of radicals)",
+   "Reactivity of halogen: F2 > Cl2 > Br2 > I2 (I2 is reversible and does not react)",
+   "Bromination is much more selective than chlorination",
+   "Relative rates of Cl2: 3°:2°:1° = 5:3.8:1; Br2: 1600:82:1",
+   "Polysubstitution happens unless alkane is in large excess",
+   "Radical intermediate is planar so chiral centre racemises"
+  ],
+  "whenUsed": "Industrial production of CH2Cl2, CHCl3, CCl4; mechanism-based selectivity questions.",
+  "applications": [
+   "Chloromethane to CCl4 stepwise",
+   "Isobutane bromination (selective)",
+   "Propane chlorination products"
+  ],
+  "examples": [
+   {
+    "eq": "CH4 + Cl2 ->[\\text{hv}] CH3Cl + HCl",
+    "note": "First substitution"
+   },
+   {
+    "eq": "CH3Cl + Cl2 ->[\\text{hv}] CH2Cl2 + HCl",
+    "note": "Further substitution to CCl4 possible"
+   },
+   {
+    "eq": "(CH3)3CH + Br2 ->[\\text{hv}] (CH3)3CBr + HBr",
+    "note": "Br2 highly selective for 3° H"
+   }
+  ],
+  "jeeTips": "Count monochloro isomers (including stereoisomers) by multiplying number of distinct H types with reactivity weights. Br2 gives mainly 3° product; Cl2 gives a mixture. I2 reaction is endothermic so does not occur.",
+  "reference": "",
+  "tags": [
+   "radical",
+   "chain reaction",
+   "alkane",
+   "substitution"
+  ]
+ },
+ {
+  "id": "dehydrohalogenation-saytzeff",
+  "name": "Dehydrohalogenation (Saytzeff Rule)",
+  "aliases": [
+   "Zaitsev elimination",
+   "Saytzeff elimination",
+   "E2 elimination of alkyl halides",
+   "β-Elimination of HX"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH2CH(Br)CH3",
+  "reagents": "alc. KOH",
+  "conditions": "\\Delta",
+  "products": "CH3CH=CHCH3 + KBr + H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "alc KOH",
+   "alcoholic KOH",
+   "KOH ethanol",
+   "heat",
+   "E2",
+   "Saytzeff"
+  ],
+  "productName": "But-2-ene (major, Saytzeff alkene)",
+  "summary": "Heating an alkyl halide with alcoholic KOH removes HX in a β-elimination to give the more substituted (more stable) alkene as the major product.",
+  "mechanism": "E2: base removes the β-H while X- leaves simultaneously from the anti-periplanar position, forming the C=C. The transition state resembles the alkene, so the more substituted alkene is favoured.",
+  "keyPoints": [
+   "Saytzeff rule: more highly substituted alkene is major",
+   "Aqueous KOH gives substitution (alcohol); alcoholic KOH gives elimination",
+   "Order of ease: 3° > 2° > 1° halide; R–I > R–Br > R–Cl",
+   "Anti-periplanar geometry decides cis/trans or stereospecific alkene in rigid rings",
+   "Trans-alkene is usually major over cis"
+  ],
+  "whenUsed": "Common route to alkenes from haloalkanes; vicinal dihalide with alc. KOH/NaNH2 gives alkynes.",
+  "applications": [
+   "2-Bromobutane to 2-butene",
+   "Chlorocyclohexane to cyclohexene"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2CH(Br)CH3 ->[\\text{alc. KOH}][\\Delta] CH3CH=CHCH3 + HBr",
+    "note": "But-2-ene major (about 80%)"
+   },
+   {
+    "eq": "CH3CH2CH(Br)CH3 ->[\\text{alc. KOH}][\\Delta] CH3CH2CH=CH2 + HBr",
+    "note": "But-1-ene minor"
+   },
+   {
+    "eq": "C6H11Cl ->[\\text{alc. KOH}] C6H10 + HCl",
+    "note": "Cyclohexene"
+   }
+  ],
+  "jeeTips": "KOH(aq) = SN; KOH(alc) = E. The main trap: bulky base (t-BuOK) reverses to Hofmann product. Also check for rearrangement-free E2 vs E1 in tertiary substrates.",
+  "reference": "",
+  "tags": [
+   "elimination",
+   "E2",
+   "alkene",
+   "Saytzeff"
+  ]
+ },
+ {
+  "id": "hofmann-elimination-bulky-base",
+  "name": "Hofmann Elimination Preference with Bulky Base (t-BuOK)",
+  "aliases": [
+   "Hofmann product with t-BuOK",
+   "Anti-Saytzeff elimination",
+   "Hofmann rule"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH3CH2CH(Br)CH3",
+  "reagents": "t-BuOK",
+  "conditions": "\\text{t-BuOH, heat}",
+  "products": "CH3CH2CH=CH2 + t-BuOH + KBr",
+  "catalyst": "",
+  "reagentKeywords": [
+   "t-BuOK",
+   "potassium tert-butoxide",
+   "bulky base",
+   "Hofmann",
+   "tBuOK"
+  ],
+  "productName": "But-1-ene (less substituted, Hofmann product)",
+  "summary": "With a sterically hindered base such as potassium tert-butoxide the less hindered β-hydrogen is removed, giving the less substituted alkene (Hofmann product) as the major product.",
+  "mechanism": "The bulky base cannot easily approach the internal, more crowded β-hydrogen, so abstracts the more accessible terminal β-H in an E2 step to give the terminal alkene.",
+  "keyPoints": [
+   "Hofmann rule: less substituted alkene is major",
+   "Also seen in elimination of quaternary ammonium hydroxides (Hofmann elimination) and with large leaving groups (F-, NR3+, SR2+)",
+   "Base size controls selectivity, not just substrate",
+   "Small bases (OEt-, OH-) give Saytzeff"
+  ],
+  "whenUsed": "Used to obtain terminal alkenes selectively from secondary/tertiary halides.",
+  "applications": [
+   "2-Bromobutane to 1-butene",
+   "2-Bromo-2-methylbutane to 2-methylbut-1-ene"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2CH(Br)CH3 ->[\\text{t-BuOK}][\\Delta] CH3CH2CH=CH2 + HBr",
+    "note": "But-1-ene major"
+   },
+   {
+    "eq": "(CH3CH2)(CH3)2C-Br ->[\\text{t-BuOK}] CH2=C(CH3)CH2CH3 + HBr",
+    "note": "2-Methylbut-1-ene major"
+   },
+   {
+    "eq": "CH3CH2CH(Br)CH3 ->[\\text{alc. KOH}] CH3CH=CHCH3 + HBr",
+    "note": "Contrast: small base gives Saytzeff"
+   }
+  ],
+  "jeeTips": "Questions compare alc. KOH (Saytzeff) vs t-BuOK (Hofmann). Also remember Hofmann elimination of R4N+ OH- gives least substituted alkene.",
+  "reference": "",
+  "tags": [
+   "elimination",
+   "bulky base",
+   "alkene",
+   "Hofmann rule"
+  ]
+ },
+ {
+  "id": "dehydration-alcohols-alkenes",
+  "name": "Dehydration of Alcohols (Conc. H2SO4)",
+  "aliases": [
+   "Acid-catalysed dehydration of alcohols",
+   "Alcohol to alkene dehydration"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH2OH",
+  "reagents": "conc. H2SO4",
+  "conditions": "443 K",
+  "products": "CH2=CH2 + H2O",
+  "catalyst": "H2SO4 (or H3PO4, Al2O3)",
+  "reagentKeywords": [
+   "conc H2SO4",
+   "H2SO4",
+   "443 K",
+   "170 C",
+   "H3PO4",
+   "Al2O3",
+   "heat"
+  ],
+  "productName": "Alkene",
+  "summary": "Alcohols lose water on heating with conc. H2SO4 (or H3PO4, alumina at 623 K) to give alkenes, following Saytzeff orientation.",
+  "mechanism": "The OH is protonated to –OH2+; water leaves giving a carbocation (E1) which loses a β-H to form the alkene. Carbocation may rearrange (hydride/methyl shift) before elimination.",
+  "keyPoints": [
+   "Ease of dehydration: 3° > 2° > 1°",
+   "Temperature matters: ethanol at 443 K gives ethene; at 413 K gives diethyl ether (intermolecular)",
+   "Major alkene is the more substituted (Saytzeff)",
+   "Carbocation rearrangement possible for 1° and 2° alcohols",
+   "Needs β-hydrogen"
+  ],
+  "whenUsed": "Laboratory ethene; industrial route to alkenes; route in multi-step synthesis.",
+  "applications": [
+   "Ethene from ethanol",
+   "2-Methylpropene from t-butanol",
+   "But-2-ene from butan-2-ol"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2OH ->[\\text{conc. H2SO4}][443 K] CH2=CH2 + H2O",
+    "note": "Ethene"
+   },
+   {
+    "eq": "CH3CH2CH(OH)CH3 ->[\\text{conc. H2SO4}][\\Delta] CH3CH=CHCH3 + H2O",
+    "note": "But-2-ene major"
+   },
+   {
+    "eq": "2 CH3CH2OH ->[\\text{conc. H2SO4}][413 K] CH3CH2OCH2CH3 + H2O",
+    "note": "At lower temp ether forms"
+   }
+  ],
+  "jeeTips": "Temperature switch: 443 K alkene vs 413 K ether (excess alcohol). Neopentyl-type alcohols rearrange. Cyclic examples frequently involve ring expansion.",
+  "reference": "",
+  "tags": [
+   "dehydration",
+   "E1",
+   "alkene",
+   "carbocation"
+  ]
+ },
+ {
+  "id": "markovnikov-addition-hx",
+  "name": "Markovnikov Addition of HX",
+  "aliases": [
+   "Electrophilic addition of HX to alkenes",
+   "Markovnikov rule"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH=CH2 + HBr",
+  "reagents": "HBr",
+  "conditions": "\\text{dark, no peroxide}",
+  "products": "CH3CH(Br)CH3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "HBr",
+   "HCl",
+   "HI",
+   "HX",
+   "Markovnikov",
+   "no peroxide",
+   "dark"
+  ],
+  "productName": "2-Bromopropane",
+  "summary": "Hydrogen halides add across an unsymmetrical alkene so that H goes to the carbon with more hydrogens and X to the more substituted carbon.",
+  "mechanism": "The π bond attacks H+ to give the more stable carbocation (3° > 2° > 1°); halide ion then attacks the carbocation. Because a free carbocation forms, rearrangement can occur.",
+  "keyPoints": [
+   "Markovnikov: negative part goes to the carbon with fewer H",
+   "Order of reactivity of HX: HI > HBr > HCl",
+   "Rearrangement of carbocation possible (e.g. 3-methylbut-1-ene to 2-bromo-2-methylbutane)",
+   "Product with chiral centre is racemic (planar carbocation)",
+   "Ethene + HX gives only one product"
+  ],
+  "whenUsed": "Synthesis of secondary and tertiary haloalkanes from alkenes.",
+  "applications": [
+   "Propene + HBr",
+   "2-Methylpropene + HCl",
+   "3,3-Dimethylbut-1-ene + HCl (shift)"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH=CH2 + HBr -> CH3CHBrCH3",
+    "note": "2-Bromopropane"
+   },
+   {
+    "eq": "(CH3)2C=CH2 + HCl -> (CH3)3CCl",
+    "note": "tert-Butyl chloride"
+   },
+   {
+    "eq": "(CH3)3C-CH=CH2 + HCl -> (CH3)2C(Cl)CH(CH3)2",
+    "note": "Methyl shift gives rearranged product"
+   }
+  ],
+  "jeeTips": "Look for rearrangement in carbocation questions. Anti-Markovnikov occurs only with HBr + peroxide, not with HCl or HI. For CF3CH=CH2 and similar –I groups, addition is anti-Markovnikov.",
+  "reference": "",
+  "tags": [
+   "electrophilic addition",
+   "Markovnikov",
+   "carbocation",
+   "alkene"
+  ]
+ },
+ {
+  "id": "peroxide-effect-kharasch",
+  "name": "Peroxide Effect (Kharasch Anti-Markovnikov Addition of HBr)",
+  "aliases": [
+   "Kharasch effect",
+   "Anti-Markovnikov addition",
+   "Free-radical addition of HBr"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH=CH2 + HBr",
+  "reagents": "\\text{R2O2 (peroxide)}",
+  "conditions": "",
+  "products": "CH3CH2CH2Br",
+  "catalyst": "Benzoyl peroxide / ROOR",
+  "reagentKeywords": [
+   "peroxide",
+   "benzoyl peroxide",
+   "H2O2",
+   "ROOR",
+   "HBr",
+   "anti-Markovnikov",
+   "Kharasch"
+  ],
+  "productName": "1-Bromopropane",
+  "summary": "In the presence of peroxides, HBr adds to unsymmetrical alkenes against Markovnikov orientation through a free-radical chain.",
+  "mechanism": "Peroxide gives RO. which abstracts H from HBr to give Br.. Br. adds to the alkene at the less substituted carbon to form the more stable carbon radical, which abstracts H from another HBr, regenerating Br..",
+  "keyPoints": [
+   "Works only with HBr (HCl: H–Cl bond too strong; HI: I. adds reversibly/H–I step endothermic overall)",
+   "Br adds to the terminal (less substituted) carbon",
+   "Free-radical chain mechanism with more stable radical",
+   "Symmetrical alkenes show no difference",
+   "Alkynes also show peroxide effect with HBr"
+  ],
+  "whenUsed": "Prepares primary alkyl bromides from terminal alkenes.",
+  "applications": [
+   "Propene to 1-bromopropane",
+   "Styrene to 2-bromoethylbenzene",
+   "Anti-Markovnikov hydration alternatives"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH=CH2 + HBr ->[\\text{(C6H5COO)2}] CH3CH2CH2Br",
+    "note": "1-Bromopropane"
+   },
+   {
+    "eq": "C6H5CH=CH2 + HBr ->[\\text{peroxide}] C6H5CH2CH2Br",
+    "note": "2-Bromoethylbenzene"
+   },
+   {
+    "eq": "CH3CH=CH2 + HCl ->[\\text{peroxide}] CH3CHClCH3",
+    "note": "No peroxide effect for HCl: still Markovnikov"
+   }
+  ],
+  "jeeTips": "Peroxide effect: only HBr. If question gives HCl or HI with peroxide, product is Markovnikov. Peroxide-free conditions also described as \"dark\" in older papers.",
+  "reference": "",
+  "tags": [
+   "radical addition",
+   "anti-Markovnikov",
+   "HBr",
+   "peroxide"
+  ]
+ },
+ {
+  "id": "hydroboration-oxidation",
+  "name": "Hydroboration–Oxidation",
+  "aliases": [
+   "Brown hydroboration",
+   "Anti-Markovnikov hydration of alkenes",
+   "BH3-THF then H2O2/NaOH"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH=CH2",
+  "reagents": "1) B2H6 (or BH3·THF); 2) H2O2, OH-",
+  "conditions": "",
+  "products": "CH3CH2CH2OH",
+  "catalyst": "BH3 / diborane",
+  "reagentKeywords": [
+   "B2H6",
+   "BH3",
+   "BH3.THF",
+   "diborane",
+   "H2O2",
+   "NaOH",
+   "hydroboration"
+  ],
+  "productName": "Propan-1-ol (anti-Markovnikov alcohol)",
+  "summary": "Diborane adds to alkenes syn and anti-Markovnikov to give trialkylboranes, which on oxidation with alkaline H2O2 give the alcohol with net anti-Markovnikov hydration.",
+  "mechanism": "BH3 adds in a concerted four-centre step: B to the less hindered carbon, H to the more substituted carbon, on the same face. Then H2O2/OH- replaces C–B with C–OH with retention.",
+  "keyPoints": [
+   "Anti-Markovnikov regiochemistry",
+   "Syn addition; no carbocation so no rearrangement",
+   "Terminal alkenes give primary alcohols; terminal alkynes (via R2BH) give aldehydes",
+   "Stereochemistry retained in oxidation step",
+   "Net: syn addition of H and OH"
+  ],
+  "whenUsed": "Method to prepare primary alcohols from terminal alkenes without rearrangement.",
+  "applications": [
+   "Propene to propan-1-ol",
+   "1-Methylcyclopentene to trans-2-methylcyclopentanol",
+   "Oct-1-yne to octanal"
+  ],
+  "examples": [
+   {
+    "eq": "6 CH3CH=CH2 + B2H6 -> 2 (CH3CH2CH2)3B",
+    "note": "Trialkylborane"
+   },
+   {
+    "eq": "(CH3CH2CH2)3B + 3 H2O2 + 3 NaOH -> 3 CH3CH2CH2OH + Na3BO3 + 3 H2O",
+    "note": "Oxidation step gives propan-1-ol"
+   },
+   {
+    "eq": "CH3C#CH ->[1) \\text{R2BH}; 2) \\text{H2O2, OH-}] CH3CH2CHO",
+    "note": "Terminal alkyne gives aldehyde"
+   }
+  ],
+  "jeeTips": "Compare three hydration routes: H3O+ (Markovnikov, rearranges), Hg(OAc)2/NaBH4 (Markovnikov, no rearrangement), BH3/H2O2 (anti-Markovnikov, syn, no rearrangement).",
+  "reference": "",
+  "tags": [
+   "hydration",
+   "anti-Markovnikov",
+   "syn addition",
+   "boron"
+  ]
+ },
+ {
+  "id": "oxymercuration-demercuration",
+  "name": "Oxymercuration–Demercuration",
+  "aliases": [
+   "Markovnikov hydration without rearrangement",
+   "Hg(OAc)2 / NaBH4 hydration"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH=CH2",
+  "reagents": "1) Hg(OAc)2, H2O/THF; 2) NaBH4",
+  "conditions": "",
+  "products": "CH3CH(OH)CH3",
+  "catalyst": "Hg(OAc)2 (or Hg(O2CCF3)2)",
+  "reagentKeywords": [
+   "Hg(OAc)2",
+   "mercuric acetate",
+   "NaBH4",
+   "H2O",
+   "oxymercuration",
+   "demercuration"
+  ],
+  "productName": "Propan-2-ol (Markovnikov alcohol)",
+  "summary": "Alkenes add water in a Markovnikov sense without carbocation rearrangement by treatment with mercuric acetate in water followed by NaBH4 reduction.",
+  "mechanism": "Hg(OAc)+ forms a cyclic mercurinium ion; water attacks the more substituted carbon (anti addition) to give a β-hydroxy organomercurial; NaBH4 then replaces Hg by H.",
+  "keyPoints": [
+   "Markovnikov regiochemistry",
+   "No carbocation rearrangement (bridged mercurinium ion)",
+   "Anti addition of OH and Hg in step 1",
+   "NaBH4 replaces HgOAc by H (stereochemistry lost)",
+   "In alcohol solvent gives ethers (alkoxymercuration)"
+  ],
+  "whenUsed": "Clean Markovnikov hydration of alkenes that would rearrange under H2O/H+.",
+  "applications": [
+   "3,3-Dimethylbut-1-ene to 3,3-dimethylbutan-2-ol",
+   "Propene to propan-2-ol",
+   "Alkoxymercuration to ethers"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH=CH2 + H2O ->[1) \\text{Hg(OAc)2}; 2) \\text{NaBH4}] CH3CH(OH)CH3",
+    "note": "Propan-2-ol"
+   },
+   {
+    "eq": "(CH3)3C-CH=CH2 + H2O ->[1) \\text{Hg(OAc)2}; 2) \\text{NaBH4}] (CH3)3C-CH(OH)CH3",
+    "note": "No methyl shift: 3,3-dimethylbutan-2-ol"
+   },
+   {
+    "eq": "(CH3)3C-CH=CH2 + H2O ->[\\text{H+}] (CH3)2C(OH)CH(CH3)2",
+    "note": "Acid hydration rearranges instead"
+   }
+  ],
+  "jeeTips": "Key contrast: H2O/H+ gives rearranged alcohol; oxymercuration gives unrearranged Markovnikov alcohol; hydroboration gives anti-Markovnikov alcohol.",
+  "reference": "",
+  "tags": [
+   "hydration",
+   "Markovnikov",
+   "mercury",
+   "alcohol"
+  ]
+ },
+ {
+  "id": "ozonolysis-alkenes",
+  "name": "Ozonolysis",
+  "aliases": [
+   "Ozonolysis of alkenes",
+   "Harries ozonide reaction",
+   "Reductive and oxidative ozonolysis"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "R2C=CHR''",
+  "reagents": "1) O3; 2) Zn/H2O (reductive) or H2O2 (oxidative)",
+  "conditions": "",
+  "products": "R2C=O + R''CHO",
+  "catalyst": "",
+  "reagentKeywords": [
+   "O3",
+   "ozone",
+   "Zn",
+   "H2O",
+   "H2O2",
+   "DMS",
+   "ozonide",
+   "CH2Cl2"
+  ],
+  "productName": "Carbonyl compounds (aldehydes/ketones; acids if oxidative)",
+  "summary": "Ozone cleaves the C=C bond to an ozonide; reductive work-up (Zn/H2O or Me2S) gives aldehydes/ketones, oxidative work-up (H2O2) converts aldehydes to carboxylic acids.",
+  "mechanism": "O3 adds to C=C to form a molozonide, which rearranges to the ozonide. Zn/H2O destroys H2O2 formed so aldehydes survive; H2O2 oxidises aldehyde fragments to RCOOH.",
+  "keyPoints": [
+   "Each =CH2 gives HCHO (or HCOOH/CO2 on oxidative work-up)",
+   "=CHR gives RCHO (reductive) or RCOOH (oxidative); =CR2 gives ketone in both",
+   "Locates position of double bond in structure determination",
+   "Alkynes give 1,2-diketones / acids",
+   "Zn prevents over-oxidation by H2O2"
+  ],
+  "whenUsed": "Structure elucidation of unknown alkenes and in synthesis of carbonyl compounds.",
+  "applications": [
+   "Propene to CH3CHO + HCHO",
+   "2-Methylbut-2-ene to acetone + acetaldehyde",
+   "Oxidative work-up of but-2-ene"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH=CH2 ->[1) \\text{O3}; 2) \\text{Zn/H2O}] CH3CHO + HCHO",
+    "note": "Reductive work-up"
+   },
+   {
+    "eq": "(CH3)2C=CHCH3 ->[1) \\text{O3}; 2) \\text{Zn/H2O}] (CH3)2C=O + CH3CHO",
+    "note": "Acetone + acetaldehyde"
+   },
+   {
+    "eq": "CH3CH=CHCH3 ->[1) \\text{O3}; 2) \\text{H2O2}] 2 CH3COOH",
+    "note": "Oxidative work-up gives acids"
+   }
+  ],
+  "jeeTips": "Reverse-engineer alkene from fragments: join C=O carbons. Cyclic alkenes give dicarbonyl/diacid. Terminal =CH2 gives HCHO under reductive, CO2 under strong oxidative.",
+  "reference": "",
+  "tags": [
+   "cleavage",
+   "ozone",
+   "carbonyl",
+   "structure elucidation"
+  ]
+ },
+ {
+  "id": "baeyers-test-cold-kmno4",
+  "name": "Baeyer's Test (Syn-Dihydroxylation with Cold Dilute KMnO4)",
+  "aliases": [
+   "Baeyer reagent",
+   "Cold alkaline KMnO4 hydroxylation",
+   "Test for unsaturation"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH2=CH2",
+  "reagents": "cold dil. alkaline KMnO4",
+  "conditions": "273 K",
+  "products": "HOCH2CH2OH + MnO2",
+  "catalyst": "KMnO4",
+  "reagentKeywords": [
+   "KMnO4",
+   "Baeyer",
+   "cold",
+   "dilute",
+   "alkaline",
+   "MnO4-",
+   "OH-",
+   "purple decolourised"
+  ],
+  "productName": "Ethane-1,2-diol (glycol) + brown MnO2",
+  "summary": "Cold, dilute, alkaline KMnO4 converts alkenes to cis-1,2-diols; the purple colour disappears and brown MnO2 precipitates, a test for C=C or C≡C unsaturation.",
+  "mechanism": "Alkene attacks MnO4- forming a cyclic manganate(V) ester via concerted syn addition; hydrolysis releases the cis-diol and MnO2.",
+  "keyPoints": [
+   "Syn addition gives cis-diol (cyclohexene gives cis-cyclohexane-1,2-diol)",
+   "Purple colour fades, brown MnO2 forms - positive test for unsaturation",
+   "Needs cold, dilute, neutral/alkaline medium; hot or acidic cleaves",
+   "Also given by alkynes (more slowly), aldehydes, phenols, etc. so not specific",
+   "Alkene + MnO4- stoichiometry: 3 C=C : 2 MnO4-"
+  ],
+  "whenUsed": "Qualitative test for unsaturation; synthesis of 1,2-diols.",
+  "applications": [
+   "Ethene to ethylene glycol",
+   "Propene to propane-1,2-diol",
+   "Cyclohexene to cis-diol"
+  ],
+  "examples": [
+   {
+    "eq": "3 CH2=CH2 + 2 KMnO4 + 4 H2O -> 3 HOCH2CH2OH + 2 MnO2 + 2 KOH",
+    "note": "Ethylene glycol"
+   },
+   {
+    "eq": "CH3CH=CH2 ->[\\text{cold dil. KMnO4}][\\text{OH-}] CH3CH(OH)CH2OH",
+    "note": "Propane-1,2-diol"
+   },
+   {
+    "eq": "C6H10 ->[\\text{cold dil. KMnO4}] cis-C6H10(OH)2",
+    "note": "Cyclohexene gives cis-1,2-diol"
+   }
+  ],
+  "jeeTips": "Syn (cis) diol with KMnO4/OsO4; anti (trans) diol with peracid then H3O+. Test is positive for any readily oxidisable group, not only C=C.",
+  "reference": "",
+  "tags": [
+   "syn addition",
+   "unsaturation test",
+   "diol",
+   "permanganate"
+  ]
+ },
+ {
+  "id": "hot-kmno4-oxidative-cleavage",
+  "name": "Hot KMnO4 Oxidative Cleavage of Alkenes",
+  "aliases": [
+   "Oxidative cleavage of alkenes",
+   "Acidic KMnO4 cleavage",
+   "Hot concentrated KMnO4 oxidation"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "R2C=CHR''",
+  "reagents": "hot conc. KMnO4 / H+",
+  "conditions": "\\Delta",
+  "products": "R2C=O + R''COOH",
+  "catalyst": "KMnO4",
+  "reagentKeywords": [
+   "KMnO4",
+   "H+",
+   "hot",
+   "acidic",
+   "concentrated",
+   "K2Cr2O7",
+   "heat"
+  ],
+  "productName": "Ketones and/or carboxylic acids (CO2 from =CH2)",
+  "summary": "Hot, acidic or concentrated KMnO4 breaks the C=C bond completely: =CR2 becomes ketone, =CHR becomes carboxylic acid, =CH2 becomes CO2 + H2O.",
+  "mechanism": "Initial diol/manganate ester formed as in Baeyer test is further oxidised: the glycol C–C bond is cleaved to carbonyls and aldehydes are oxidised to acids.",
+  "keyPoints": [
+   "=CH2 → CO2, =CHR → RCOOH, =CR2 → R2C=O",
+   "Alkynes give two carboxylic acids (terminal alkyne: RCOOH + CO2)",
+   "Cyclic alkenes give dicarboxylic acids (cyclohexene gives adipic acid)",
+   "Purple KMnO4 decolourised",
+   "Compare with ozonolysis (reductive gives aldehydes)"
+  ],
+  "whenUsed": "Structure determination of alkenes/alkynes; preparation of acids.",
+  "applications": [
+   "Cyclohexene to adipic acid",
+   "2-Methylbut-2-ene to acetone + acetic acid",
+   "Propyne to CH3COOH + CO2"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH=CHCH3 ->[\\text{KMnO4, H+}][\\Delta] 2 CH3COOH",
+    "note": "But-2-ene to acetic acid"
+   },
+   {
+    "eq": "(CH3)2C=CH2 ->[\\text{KMnO4, H+}][\\Delta] (CH3)2C=O + CO2 + H2O",
+    "note": "Isobutene to acetone + CO2"
+   },
+   {
+    "eq": "C6H10 ->[\\text{KMnO4, H+}][\\Delta] HOOC-(CH2)4-COOH",
+    "note": "Cyclohexene to adipic acid"
+   }
+  ],
+  "jeeTips": "Differentiate: cold dilute (diol) vs hot/acidic (cleavage). For hot KMnO4 with R–CH=CH2, CO2 evolves (limewater turns milky).",
+  "reference": "",
+  "tags": [
+   "cleavage",
+   "permanganate",
+   "oxidation",
+   "carboxylic acid"
+  ]
+ },
+ {
+  "id": "prilezhaev-epoxidation",
+  "name": "Epoxidation with Peracid (Prilezhaev Reaction)",
+  "aliases": [
+   "Prilezhaev reaction",
+   "Epoxidation of alkenes",
+   "mCPBA epoxidation"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH2=CH2",
+  "reagents": "RCO3H (peracid, e.g. mCPBA)",
+  "conditions": "\\text{CH2Cl2}",
+  "products": "C2H4O (oxirane) + RCOOH",
+  "catalyst": "Peroxy acid",
+  "reagentKeywords": [
+   "mCPBA",
+   "peracid",
+   "perbenzoic acid",
+   "peracetic acid",
+   "RCO3H",
+   "epoxide",
+   "oxirane"
+  ],
+  "productName": "Epoxide (oxirane)",
+  "summary": "Alkenes react with peroxy acids in a single concerted step to give epoxides (oxiranes) with retention of alkene geometry.",
+  "mechanism": "The terminal O of the peracid is transferred to C=C through a cyclic \"butterfly\" transition state; the acid hydrogen goes to the carbonyl oxygen, giving the epoxide and carboxylic acid.",
+  "keyPoints": [
+   "Stereospecific syn addition of O: cis-alkene gives cis-epoxide; trans-alkene gives trans-epoxide",
+   "Hydrolysis of epoxide with H3O+ gives trans-1,2-diol (anti)",
+   "Ethene + O2 over Ag at 520 K gives ethylene oxide (industrial)",
+   "Electron-rich alkenes react faster",
+   "Common peracids: mCPBA, peracetic acid, perbenzoic acid"
+  ],
+  "whenUsed": "Epoxide synthesis, then ring-opening to diols, amino alcohols, etc.",
+  "applications": [
+   "Ethene to oxirane",
+   "Cyclohexene oxide then trans-cyclohexane-1,2-diol",
+   "Propene to methyloxirane"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CH2 + C6H5CO3H -> C2H4O + C6H5COOH",
+    "note": "Oxirane (ethylene oxide)"
+   },
+   {
+    "eq": "2 CH2=CH2 + O2 ->[Ag][520 K] 2 C2H4O",
+    "note": "Industrial ethylene oxide"
+   },
+   {
+    "eq": "C6H10 + RCO3H -> C6H10O + RCOOH",
+    "note": "Cyclohexene oxide"
+   }
+  ],
+  "jeeTips": "Peracid then H3O+ gives anti (trans) diol, whereas OsO4 or cold KMnO4 gives syn (cis) diol - favourite comparison.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/prilezhaev-reaction.shtm",
+  "tags": [
+   "epoxide",
+   "peracid",
+   "stereospecific",
+   "oxidation"
+  ]
+ },
+ {
+  "id": "osmium-tetroxide-dihydroxylation",
+  "name": "OsO4 Dihydroxylation",
+  "aliases": [
+   "Upjohn dihydroxylation",
+   "Syn-dihydroxylation with OsO4",
+   "OsO4/NMO"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH2=CH2",
+  "reagents": "1) OsO4; 2) NaHSO3/H2O (or OsO4 cat., NMO)",
+  "conditions": "",
+  "products": "HOCH2CH2OH",
+  "catalyst": "OsO4 (catalytic with NMO co-oxidant)",
+  "reagentKeywords": [
+   "OsO4",
+   "osmium tetroxide",
+   "NMO",
+   "NaHSO3",
+   "H2O2",
+   "syn dihydroxylation"
+  ],
+  "productName": "cis-1,2-Diol",
+  "summary": "OsO4 adds to alkenes to give a cyclic osmate ester that is cleaved by NaHSO3 (or H2O/NMO) to give cis-1,2-diols in high yield.",
+  "mechanism": "Concerted [3+2] addition of OsO4 to C=C forms a cyclic osmate(VI) ester; reductive hydrolysis liberates the diol and Os(IV).",
+  "keyPoints": [
+   "Syn addition of two OH groups (cis-diol)",
+   "Cleaner than cold KMnO4 with less over-oxidation",
+   "Toxic and costly so used catalytically with NMO or H2O2",
+   "Stereospecific: cis-2-butene gives meso-diol; trans-2-butene gives racemic (±) diol",
+   "Both OsO4 and KMnO4 are syn; peracid/H3O+ is anti"
+  ],
+  "whenUsed": "Reliable synthesis of cis-diols and stereochemistry problems.",
+  "applications": [
+   "Cyclohexene to cis-diol",
+   "cis-2-Butene to meso-butane-2,3-diol",
+   "trans-2-Butene to racemic diol"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CH2 ->[1) \\text{OsO4}; 2) \\text{NaHSO3, H2O}] HOCH2CH2OH",
+    "note": "Ethylene glycol"
+   },
+   {
+    "eq": "cis-CH3CH=CHCH3 ->[\\text{OsO4, NMO}] meso-CH3CH(OH)CH(OH)CH3",
+    "note": "meso-Butane-2,3-diol"
+   },
+   {
+    "eq": "trans-CH3CH=CHCH3 ->[\\text{OsO4, NMO}] (±)-CH3CH(OH)CH(OH)CH3",
+    "note": "Racemic diol"
+   }
+  ],
+  "jeeTips": "Stereochem trick: syn addition to cis alkene gives meso, to trans alkene gives racemic (for symmetrical 2-butene). Anti addition (peracid/H3O+) gives the opposite.",
+  "reference": "",
+  "tags": [
+   "syn addition",
+   "diol",
+   "osmium",
+   "stereochemistry"
+  ]
+ },
+ {
+  "id": "lindlar-reduction-alkynes",
+  "name": "Lindlar's Catalyst Reduction",
+  "aliases": [
+   "Partial hydrogenation of alkynes to cis-alkenes",
+   "Lindlar hydrogenation",
+   "Pd/CaCO3 poisoned catalyst"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3C#CCH3 + H2",
+  "reagents": "Lindlar's catalyst",
+  "conditions": "",
+  "products": "cis-CH3CH=CHCH3",
+  "catalyst": "Pd/CaCO3 poisoned with Pb(OAc)2 and quinoline",
+  "reagentKeywords": [
+   "Lindlar",
+   "Pd/CaCO3",
+   "quinoline",
+   "Pd/BaSO4",
+   "poisoned catalyst",
+   "H2",
+   "Pd-BaSO4"
+  ],
+  "productName": "cis-But-2-ene (Z-alkene)",
+  "summary": "Alkynes are hydrogenated only to the alkene stage over poisoned palladium (Lindlar) with syn addition, giving cis (Z)-alkenes.",
+  "mechanism": "Both H atoms are delivered from the catalyst surface to the same face of the adsorbed alkyne (syn addition). Poisoning reduces Pd activity so the alkene desorbs before further reduction.",
+  "keyPoints": [
+   "Syn addition gives cis (Z)-alkene",
+   "Pd/BaSO4 + quinoline (Rosenmund-type poisoning) is equivalent also called P-2 Ni (Ni2B) catalyst",
+   "Prevents over-reduction to alkane",
+   "Contrast: Na/liq NH3 gives trans (E)-alkene",
+   "Terminal alkyne gives terminal alkene"
+  ],
+  "whenUsed": "Stereoselective synthesis of cis-alkenes, e.g. pheromones and vitamin intermediates.",
+  "applications": [
+   "But-2-yne to cis-but-2-ene",
+   "Ethyne to ethene",
+   "Hex-3-yne to cis-hex-3-ene"
+  ],
+  "examples": [
+   {
+    "eq": "CH3C#CCH3 + H2 ->[\\text{Lindlar}] cis-CH3CH=CHCH3",
+    "note": "cis-But-2-ene"
+   },
+   {
+    "eq": "HC#CH + H2 ->[\\text{Pd/CaCO3, quinoline}] CH2=CH2",
+    "note": "Ethene"
+   },
+   {
+    "eq": "CH3CH2C#CCH2CH3 + H2 ->[\\text{Pd/BaSO4, quinoline}] cis-CH3CH2CH=CHCH2CH3",
+    "note": "cis-Hex-3-ene"
+   }
+  ],
+  "jeeTips": "Lindlar = cis; Na/NH3 = trans. H2/Pd-C (unpoisoned) or Ni goes to alkane. Alkenes are not reduced by Na/NH3 at all.",
+  "reference": "",
+  "tags": [
+   "syn addition",
+   "cis-alkene",
+   "poisoned catalyst",
+   "alkyne"
+  ]
+ },
+ {
+  "id": "birch-reduction-alkynes",
+  "name": "Birch Reduction of Alkynes (Na/liq. NH3)",
+  "aliases": [
+   "Dissolving metal reduction of alkynes",
+   "Na/NH3 trans reduction",
+   "Anti-hydrogenation of alkynes"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3C#CCH3",
+  "reagents": "Na / liq. NH3",
+  "conditions": "198–240 K",
+  "products": "trans-CH3CH=CHCH3",
+  "catalyst": "Na (dissolving metal)",
+  "reagentKeywords": [
+   "Na",
+   "liq NH3",
+   "liquid ammonia",
+   "sodium ammonia",
+   "Li/NH3",
+   "trans",
+   "dissolving metal"
+  ],
+  "productName": "trans-But-2-ene (E-alkene)",
+  "summary": "Sodium (or Li) in liquid ammonia reduces internal alkynes to trans (E)-alkenes through radical anion/vinyl radical intermediates with overall anti addition of H2.",
+  "mechanism": "Na gives an electron forming a radical anion; it is protonated by NH3 to a vinyl radical, which accepts another electron to form a trans-vinyl anion (more stable); second protonation gives the trans alkene.",
+  "keyPoints": [
+   "Gives trans (E)-alkene with internal alkynes",
+   "Terminal alkynes are deprotonated by NaNH2 (formed) so do not reduce well",
+   "Alkenes themselves are not reduced under these conditions",
+   "Complementary to Lindlar (cis)",
+   "Ethanol or NH4Cl can be added as proton source"
+  ],
+  "whenUsed": "Stereoselective synthesis of trans-alkenes.",
+  "applications": [
+   "But-2-yne to trans-but-2-ene",
+   "Hex-3-yne to trans-hex-3-ene",
+   "Pent-2-yne to trans-pent-2-ene"
+  ],
+  "examples": [
+   {
+    "eq": "CH3C#CCH3 + 2 [H] ->[\\text{Na, liq. NH3}] trans-CH3CH=CHCH3",
+    "note": "trans-But-2-ene"
+   },
+   {
+    "eq": "CH3CH2C#CCH2CH3 ->[\\text{Na, liq. NH3}][2 [H]] trans-CH3CH2CH=CHCH2CH3",
+    "note": "trans-Hex-3-ene"
+   },
+   {
+    "eq": "CH3C#CCH3 ->[\\text{H2, Lindlar}] cis-CH3CH=CHCH3",
+    "note": "Contrast: cis product"
+   }
+  ],
+  "jeeTips": "Na/NH3 (alkyne) = trans-alkene; Birch on benzene (Na/NH3, ROH) gives 1,4-cyclohexadiene. Same reagent, different substrates - do not confuse.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/birch-reduction.shtm",
+  "tags": [
+   "anti addition",
+   "trans-alkene",
+   "dissolving metal",
+   "alkyne"
+  ]
+ },
+ {
+  "id": "acidic-hydration-alkynes-kucherov",
+  "name": "Acidic Hydration of Alkynes (Kucherov Reaction)",
+  "aliases": [
+   "Kucherov reaction",
+   "HgSO4/H2SO4 hydration of alkynes",
+   "Hydration of ethyne"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "HC#CH + H2O",
+  "reagents": "HgSO4, dil. H2SO4",
+  "conditions": "333 K",
+  "products": "CH3CHO",
+  "catalyst": "HgSO4 (Hg2+)",
+  "reagentKeywords": [
+   "HgSO4",
+   "H2SO4",
+   "Hg2+",
+   "333 K",
+   "Kucherov",
+   "H2O",
+   "dil H2SO4"
+  ],
+  "productName": "Acetaldehyde (from ethyne); methyl ketones from other alkynes",
+  "summary": "Alkynes add water in the presence of Hg2+ and dil. H2SO4 to give an enol that tautomerises to the carbonyl compound by Markovnikov addition.",
+  "mechanism": "Hg2+ activates the triple bond; water attacks the more substituted carbon (Markovnikov) to give a vinyl alcohol (enol), which undergoes keto–enol tautomerism to aldehyde or ketone.",
+  "keyPoints": [
+   "Ethyne gives acetaldehyde (only alkyne giving an aldehyde)",
+   "All terminal alkynes (RC≡CH) give methyl ketones RCOCH3",
+   "Internal unsymmetrical alkynes give mixture of ketones",
+   "Enol intermediate is unstable (keto–enol tautomerism)",
+   "Contrast: hydroboration–oxidation of terminal alkyne gives aldehyde"
+  ],
+  "whenUsed": "Industrial route to acetaldehyde (older) and laboratory synthesis of ketones.",
+  "applications": [
+   "Ethyne to ethanal",
+   "Propyne to propanone",
+   "But-1-yne to butan-2-one"
+  ],
+  "examples": [
+   {
+    "eq": "HC#CH + H2O ->[\\text{HgSO4, H2SO4}][333 K] CH3CHO",
+    "note": "Acetaldehyde"
+   },
+   {
+    "eq": "CH3C#CH + H2O ->[\\text{HgSO4, H2SO4}] CH3COCH3",
+    "note": "Acetone"
+   },
+   {
+    "eq": "CH3CH2C#CH + H2O ->[\\text{HgSO4, H2SO4}] CH3CH2COCH3",
+    "note": "Butan-2-one"
+   }
+  ],
+  "jeeTips": "Only ethyne gives an aldehyde via Kucherov; hydroboration–oxidation of terminal alkyne also gives aldehyde (anti-Markovnikov). Know both.",
+  "reference": "",
+  "tags": [
+   "hydration",
+   "alkyne",
+   "keto-enol",
+   "mercury"
+  ]
+ },
+ {
+  "id": "cyclic-polymerisation-ethyne",
+  "name": "Cyclic Polymerisation of Ethyne",
+  "aliases": [
+   "Trimerisation of ethyne",
+   "Ethyne to benzene",
+   "Berthelot synthesis of benzene"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "3 HC#CH",
+  "reagents": "red-hot iron tube",
+  "conditions": "873 K",
+  "products": "C6H6",
+  "catalyst": "Fe tube",
+  "reagentKeywords": [
+   "red hot iron tube",
+   "873 K",
+   "Fe",
+   "heat",
+   "Ni(CO)2(PPh3)2",
+   "trimerisation"
+  ],
+  "productName": "Benzene",
+  "summary": "Three molecules of ethyne trimerise when passed through a red-hot iron tube at 873 K to give benzene.",
+  "mechanism": "Pericyclic/metal-surface assisted cyclotrimerisation: three C≡C units link through successive coupling and aromatisation (each triple bond converts to a double bond in the ring).",
+  "keyPoints": [
+   "3 C2H2 gives C6H6 (carbon count conserved)",
+   "Propyne similarly gives mesitylene (1,3,5-trimethylbenzene)",
+   "Ni(CO)2(PPh3)2 catalyst gives cyclooctatetraene from 4 C2H2 at 60–70 °C under pressure (Reppe)",
+   "Historical first synthesis of benzene from inorganic precursors"
+  ],
+  "whenUsed": "Synthesis of benzene from ethyne; synthetic link between aliphatic and aromatic series.",
+  "applications": [
+   "Ethyne to benzene",
+   "Propyne to mesitylene",
+   "4 C2H2 to cyclooctatetraene (Reppe)"
+  ],
+  "examples": [
+   {
+    "eq": "3 HC#CH ->[\\text{red-hot Fe tube}][873 K] C6H6",
+    "note": "Benzene"
+   },
+   {
+    "eq": "3 CH3C#CH ->[\\text{red-hot tube}] 1,3,5-(CH3)3C6H3",
+    "note": "Mesitylene"
+   },
+   {
+    "eq": "4 HC#CH ->[\\text{Ni(CN)2}][\\text{pressure}] C8H8",
+    "note": "Cyclooctatetraene"
+   }
+  ],
+  "jeeTips": "Ethyne to benzene: red-hot iron tube, 873 K. Not to be confused with CH≡CH + H2O (Kucherov) or acetylene + CuCl (vinylacetylene).",
+  "reference": "",
+  "tags": [
+   "polymerisation",
+   "benzene",
+   "alkyne",
+   "trimerisation"
+  ]
+ },
+ {
+  "id": "acidity-terminal-alkynes",
+  "name": "Acidity of Terminal Alkynes (NaNH2 and Tollens'' Test)",
+  "aliases": [
+   "Acetylide formation",
+   "Silver acetylide test",
+   "Ammoniacal AgNO3 test for terminal alkynes"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "R-C#C-H",
+  "reagents": "NaNH2 (or Tollens'' reagent)",
+  "conditions": "\\text{liq. NH3}",
+  "products": "R-C#C- Na+ + NH3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NaNH2",
+   "sodamide",
+   "Na",
+   "Tollens",
+   "ammoniacal AgNO3",
+   "Cu2Cl2",
+   "ammoniacal cuprous chloride",
+   "white ppt",
+   "red ppt"
+  ],
+  "productName": "Sodium acetylide / silver or copper acetylide precipitate",
+  "summary": "The sp C–H of terminal alkynes (pKa about 25) is acidic enough to be removed by NaNH2, and to give white silver acetylide or red copper acetylide precipitates with ammoniacal AgNO3 or Cu2Cl2.",
+  "mechanism": "The sp-hybridised carbon (50% s-character) stabilises the lone pair in the conjugate base, so the proton is removed by strong bases (NH2-) or replaced by Ag+/Cu+.",
+  "keyPoints": [
+   "Acidity order: HC≡CH > CH2=CH2 > CH3–CH3 (sp > sp2 > sp3)",
+   "Acetylide + RX gives higher alkynes (SN2 with 1° RX)",
+   "HC≡CH + 2 Ag(NH3)2+ gives white ppt of Ag2C2",
+   "R–C≡CH + Cu(NH3)2+ gives red ppt of R–C≡C–Cu",
+   "Internal alkynes (R–C≡C–R) do not react; metal acetylides explode when dry",
+   "Not acidic enough for NaOH or water to deprotonate"
+  ],
+  "whenUsed": "Distinguishing 1-alkynes from 2-alkynes and alkenes; chain extension via acetylides.",
+  "applications": [
+   "Ethyne + NaNH2",
+   "Propyne + ammoniacal AgNO3",
+   "Acetylide alkylation"
+  ],
+  "examples": [
+   {
+    "eq": "HC#CH + NaNH2 ->[\\text{liq. NH3}] HC#C- Na+ + NH3",
+    "note": "Sodium acetylide"
+   },
+   {
+    "eq": "HC#CH + 2 [Ag(NH3)2]+ + 2 OH- -> AgC#CAg + 4 NH3 + 2 H2O",
+    "note": "Silver acetylide (white ppt)"
+   },
+   {
+    "eq": "HC#C- Na+ + CH3Br -> CH3C#CH + NaBr",
+    "note": "Chain extension to propyne"
+   }
+  ],
+  "jeeTips": "Ethene/ethane do not react with Tollens. 1-Butyne gives ppt; 2-butyne does not. Remember pKa order and sp s-character (50%).",
+  "reference": "",
+  "tags": [
+   "acidity",
+   "acetylide",
+   "distinguishing test",
+   "sp hybridisation"
+  ]
+ },
+ {
+  "id": "diels-alder-reaction",
+  "name": "Diels–Alder Reaction",
+  "aliases": [
+   "[4+2] cycloaddition",
+   "Diene synthesis",
+   "Diels–Alder cycloaddition"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH2=CH-CH=CH2 + CH2=CH2",
+  "reagents": "\\Delta (heat)",
+  "conditions": "",
+  "products": "C6H10 (cyclohexene)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "diene",
+   "dienophile",
+   "heat",
+   "[4+2]",
+   "cycloaddition",
+   "maleic anhydride"
+  ],
+  "productName": "Cyclohexene derivative",
+  "summary": "A conjugated diene reacts with a dienophile (alkene/alkyne, usually electron poor) in a concerted [4+2] cycloaddition to form a six-membered ring.",
+  "mechanism": "The 4π electrons of the s-cis diene and 2π electrons of the dienophile reorganise in a single cyclic transition state forming two new σ bonds and one new π bond; thermal, suprafacial and stereospecific.",
+  "keyPoints": [
+   "Diene must adopt s-cis conformation (cyclopentadiene is very reactive; locked s-trans dienes do not react)",
+   "Dienophile substituents (C=O, CN, NO2) speed the reaction",
+   "Stereospecific syn: cis substituents on dienophile remain cis in product",
+   "Endo rule: endo product is favoured kinetically (cyclic dienes)",
+   "Product with cyclic diene is bicyclic"
+  ],
+  "whenUsed": "Synthesis of six-membered rings, bicyclic compounds and in natural product synthesis.",
+  "applications": [
+   "Butadiene + maleic anhydride",
+   "Cyclopentadiene + maleic anhydride (endo)",
+   "Butadiene + acrolein"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CH-CH=CH2 + CH2=CH2 ->[\\Delta] C6H10",
+    "note": "Cyclohexene"
+   },
+   {
+    "eq": "CH2=CH-CH=CH2 + CH2=CHCHO ->[\\Delta] 3-cyclohexenecarbaldehyde",
+    "note": "Aldehyde-substituted cyclohexene"
+   },
+   {
+    "eq": "C5H6 + C4H2O3 -> C9H8O3",
+    "note": "Cyclopentadiene + maleic anhydride (endo adduct)"
+   }
+  ],
+  "jeeTips": "Check s-cis requirement and electron demand. Product ring is 6-membered: total carbons = 4 (diene) + 2 (dienophile). Maleic anhydride is the standard dienophile; used as a test for conjugated dienes.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/diels-alder-reaction.shtm",
+  "tags": [
+   "cycloaddition",
+   "pericyclic",
+   "diene",
+   "ring formation"
+  ]
+ },
+ {
+  "id": "allylic-bromination-nbs",
+  "name": "Allylic Bromination with NBS (Wohl–Ziegler)",
+  "aliases": [
+   "Wohl–Ziegler bromination",
+   "NBS bromination",
+   "Allylic substitution with NBS"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH=CH2",
+  "reagents": "NBS",
+  "conditions": "\\text{hv or peroxide, CCl4}",
+  "products": "BrCH2CH=CH2 + succinimide",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NBS",
+   "N-bromosuccinimide",
+   "CCl4",
+   "hv",
+   "peroxide",
+   "light",
+   "allylic bromination",
+   "Br2 low concentration"
+  ],
+  "productName": "Allyl bromide (3-bromopropene)",
+  "summary": "N-Bromosuccinimide substitutes allylic (and benzylic) hydrogens by bromine under radical conditions without attacking the C=C.",
+  "mechanism": "NBS provides a very low steady concentration of Br2 (from HBr + NBS). Br. abstracts allylic H to give a resonance-stabilised allyl radical which reacts with Br2 to give allyl bromide and regenerates Br..",
+  "keyPoints": [
+   "Low Br2 concentration prevents addition to C=C",
+   "Allylic and benzylic radical resonance stabilisation drives selectivity",
+   "Resonance can give rearranged product mixtures (allylic shift)",
+   "Benzylic bromination of toluene works the same way",
+   "Cyclohexene gives 3-bromocyclohexene"
+  ],
+  "whenUsed": "Selective introduction of Br at allylic/benzylic positions for further substitution/elimination (e.g. dienes).",
+  "applications": [
+   "Propene to allyl bromide",
+   "Cyclohexene to 3-bromocyclohexene",
+   "Toluene to benzyl bromide"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH=CH2 + NBS ->[\\text{hv, CCl4}] BrCH2CH=CH2 + succinimide",
+    "note": "Allyl bromide"
+   },
+   {
+    "eq": "C6H10 + NBS ->[\\text{peroxide, CCl4}] 3-C6H9Br + succinimide",
+    "note": "3-Bromocyclohexene"
+   },
+   {
+    "eq": "C6H5CH3 + NBS ->[\\text{hv, CCl4}] C6H5CH2Br + succinimide",
+    "note": "Benzylic bromination"
+   }
+  ],
+  "jeeTips": "Br2/CCl4 (dark) adds to C=C but NBS (low Br2) substitutes at allylic position. Resonance can place Br at the other end of the allyl system - watch for unsymmetrical alkenes.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/wohl-ziegler-bromination.shtm",
+  "tags": [
+   "radical substitution",
+   "allylic",
+   "NBS",
+   "bromination"
+  ]
+ },
+ {
+  "id": "friedel-crafts-alkylation",
+  "name": "Friedel–Crafts Alkylation",
+  "aliases": [
+   "Friedel–Crafts alkylation of benzene",
+   "FC alkylation"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H6 + CH3CH2Cl",
+  "reagents": "anhyd. AlCl3",
+  "conditions": "",
+  "products": "C6H5CH2CH3 + HCl",
+  "catalyst": "AlCl3 (Lewis acid); FeCl3, BF3, HF also",
+  "reagentKeywords": [
+   "AlCl3",
+   "anhydrous AlCl3",
+   "RX",
+   "alkyl halide",
+   "FeCl3",
+   "Lewis acid",
+   "Friedel Crafts"
+  ],
+  "productName": "Alkylbenzene (e.g. ethylbenzene)",
+  "summary": "Benzene reacts with alkyl halides (or alkenes/alcohols with acid) in the presence of anhydrous AlCl3 to give alkylbenzenes by electrophilic aromatic substitution.",
+  "mechanism": "AlCl3 helps form R+ (or R–Cl···AlCl3 complex); the benzene π electrons attack R+ forming a sigma complex (arenium ion); loss of H+ restores aromaticity and regenerates AlCl3.",
+  "keyPoints": [
+   "Carbocation rearrangement: n-propyl chloride gives isopropylbenzene as major product",
+   "Polyalkylation is common because alkyl is activating - use excess benzene",
+   "Fails with strongly deactivated rings (NO2, SO3H, COR, CN) and with –NH2/–NHR (complex with AlCl3)",
+   "Not possible with aryl or vinyl halides",
+   "Reversible: can transalkylate"
+  ],
+  "whenUsed": "Industrial manufacture of ethylbenzene (styrene), cumene (phenol + acetone).",
+  "applications": [
+   "Benzene + CH3Cl to toluene",
+   "n-Propyl chloride giving cumene by rearrangement",
+   "Benzene + propene/H+ to cumene"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + CH3Cl ->[\\text{anhyd. AlCl3}] C6H5CH3 + HCl",
+    "note": "Toluene"
+   },
+   {
+    "eq": "C6H6 + CH3CH2CH2Cl ->[\\text{anhyd. AlCl3}] C6H5CH(CH3)2 + HCl",
+    "note": "Rearranged product isopropylbenzene (major)"
+   },
+   {
+    "eq": "C6H6 + CH3CH=CH2 ->[\\text{H3PO4}][523 K] C6H5CH(CH3)2",
+    "note": "Cumene (industrial)"
+   }
+  ],
+  "jeeTips": "To make n-propylbenzene use acylation then Clemmensen/Wolff–Kishner reduction. Nitrobenzene and aniline do not undergo F–C. Rearrangement: 1° R+ shifts to 2°/3°.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/friedel-crafts-reaction.shtm",
+  "tags": [
+   "electrophilic substitution",
+   "carbocation",
+   "Lewis acid",
+   "arene"
+  ]
+ },
+ {
+  "id": "friedel-crafts-acylation",
+  "name": "Friedel–Crafts Acylation",
+  "aliases": [
+   "FC acylation",
+   "Acylation of benzene"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H6 + CH3COCl",
+  "reagents": "anhyd. AlCl3",
+  "conditions": "",
+  "products": "C6H5COCH3 + HCl",
+  "catalyst": "AlCl3 (stoichiometric amount)",
+  "reagentKeywords": [
+   "AlCl3",
+   "acid chloride",
+   "acyl chloride",
+   "CH3COCl",
+   "acid anhydride",
+   "RCOCl",
+   "(CH3CO)2O"
+  ],
+  "productName": "Aryl ketone (acetophenone)",
+  "summary": "Benzene is acylated by acid chlorides or anhydrides with anhydrous AlCl3 to give aryl ketones through an acylium ion electrophile.",
+  "mechanism": "RCOCl + AlCl3 gives the acylium ion RC≡O+, which attacks benzene; loss of H+ gives the ketone (complexed to AlCl3, liberated on aqueous work-up).",
+  "keyPoints": [
+   "No rearrangement (acylium ion is resonance stabilised)",
+   "No polyacylation (C=O deactivates ring)",
+   "At least one equivalent of AlCl3 needed (ketone product complexes it)",
+   "Fails with deactivated rings and amines/phenol –OH complexation",
+   "Reduction (Clemmensen or Wolff–Kishner) of ketone gives n-alkylbenzene",
+   "Benzoyl chloride + benzene gives benzophenone"
+  ],
+  "whenUsed": "Preparation of aromatic ketones and straight-chain alkylbenzenes (two-step).",
+  "applications": [
+   "Acetophenone from benzene + CH3COCl",
+   "Benzophenone from benzoyl chloride",
+   "n-Propylbenzene via propanoylation then reduction"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + CH3COCl ->[\\text{anhyd. AlCl3}] C6H5COCH3 + HCl",
+    "note": "Acetophenone"
+   },
+   {
+    "eq": "C6H6 + C6H5COCl ->[\\text{anhyd. AlCl3}] C6H5COC6H5 + HCl",
+    "note": "Benzophenone"
+   },
+   {
+    "eq": "C6H6 + (CH3CO)2O ->[\\text{AlCl3}] C6H5COCH3 + CH3COOH",
+    "note": "Using acid anhydride"
+   }
+  ],
+  "jeeTips": "Preferred over alkylation for straight-chain alkylbenzene: acylation then Zn(Hg)/HCl. HCOCl is unstable - use Gattermann–Koch (CO + HCl) for benzaldehyde.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/friedel-crafts-reaction.shtm",
+  "tags": [
+   "electrophilic substitution",
+   "acylium",
+   "ketone",
+   "arene"
+  ]
+ },
+ {
+  "id": "nitration-benzene",
+  "name": "Nitration of Benzene",
+  "aliases": [
+   "Aromatic nitration",
+   "Nitrating mixture reaction"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "C6H6 + HNO3",
+  "reagents": "conc. HNO3 + conc. H2SO4",
+  "conditions": "323–333 K",
+  "products": "C6H5NO2 + H2O",
+  "catalyst": "H2SO4 (generates NO2+)",
+  "reagentKeywords": [
+   "HNO3",
+   "H2SO4",
+   "nitrating mixture",
+   "NO2+",
+   "323 K",
+   "50 C",
+   "nitronium"
+  ],
+  "productName": "Nitrobenzene",
+  "summary": "Benzene is nitrated by a mixture of conc. HNO3 and conc. H2SO4 at 50–60 °C through attack of the nitronium ion (NO2+).",
+  "mechanism": "HNO3 + 2 H2SO4 gives NO2+ + H3O+ + 2 HSO4-; benzene attacks NO2+ to form the arenium ion; loss of H+ gives nitrobenzene.",
+  "keyPoints": [
+   "Electrophile is NO2+ (nitronium ion)",
+   "Further nitration (100 °C, fuming HNO3) gives m-dinitrobenzene",
+   "–NO2 is deactivating and meta directing",
+   "Nitrobenzene is the starting material for aniline (Sn/HCl)",
+   "Phenol nitrates readily with dilute HNO3 (o- and p-)"
+  ],
+  "whenUsed": "Synthesis of nitroarenes, dyes, explosives (TNT, picric acid) and aniline.",
+  "applications": [
+   "Benzene to nitrobenzene",
+   "Nitrobenzene to m-dinitrobenzene",
+   "Toluene to o- and p-nitrotoluene"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + HNO3 ->[\\text{conc. H2SO4}][323 K] C6H5NO2 + H2O",
+    "note": "Nitrobenzene"
+   },
+   {
+    "eq": "C6H5NO2 + HNO3 ->[\\text{fuming HNO3, conc. H2SO4}][373 K] m-C6H4(NO2)2 + H2O",
+    "note": "m-Dinitrobenzene"
+   },
+   {
+    "eq": "C6H5CH3 + HNO3 ->[\\text{conc. H2SO4}] o- + p-CH3C6H4NO2 + H2O",
+    "note": "o- and p-Nitrotoluene"
+   }
+  ],
+  "jeeTips": "Role of H2SO4: acid generating NO2+, not just dehydrating agent. Nitration of aniline in strongly acidic conditions gives significant meta product (anilinium ion).",
+  "reference": "",
+  "tags": [
+   "electrophilic substitution",
+   "nitration",
+   "meta director",
+   "arene"
+  ]
+ },
+ {
+  "id": "sulphonation-benzene",
+  "name": "Sulphonation of Benzene",
+  "aliases": [
+   "Aromatic sulphonation",
+   "Sulfonation of benzene"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "C6H6 + H2SO4",
+  "reagents": "fuming H2SO4 (oleum) or conc. H2SO4",
+  "conditions": "\\Delta",
+  "products": "C6H5SO3H + H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "oleum",
+   "fuming H2SO4",
+   "SO3",
+   "H2SO4",
+   "heat",
+   "conc H2SO4",
+   "ClSO3H"
+  ],
+  "productName": "Benzenesulphonic acid",
+  "summary": "Benzene reacts with fuming sulphuric acid (oleum) or hot conc. H2SO4 to give benzenesulphonic acid by electrophilic attack of SO3.",
+  "mechanism": "SO3 (or HSO3+) is the electrophile; it attacks benzene to give an arenium ion, which loses H+. The final step gives the sulphonate, which is protonated to –SO3H.",
+  "keyPoints": [
+   "Electrophile: SO3 (neutral but strongly electrophilic S)",
+   "Reversible reaction (desulphonation in hot dilute acid/steam)",
+   "–SO3H is meta directing and deactivating",
+   "Used as blocking group to protect the para position",
+   "Toluene sulphonation at higher temp gives p-isomer (thermodynamic)"
+  ],
+  "whenUsed": "Making detergents (alkylbenzenesulphonates), phenol (fusion with NaOH), and blocking groups.",
+  "applications": [
+   "Benzene to benzenesulphonic acid",
+   "Toluene to p-toluenesulphonic acid",
+   "Benzenesulphonic acid to phenol (NaOH fusion)"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + H2SO4 ->[\\text{oleum}][\\Delta] C6H5SO3H + H2O",
+    "note": "Benzenesulphonic acid"
+   },
+   {
+    "eq": "C6H6 + SO3 -> C6H5SO3H",
+    "note": "Direct with SO3"
+   },
+   {
+    "eq": "C6H5CH3 + H2SO4 ->[\\Delta] p-CH3C6H4SO3H + H2O",
+    "note": "p-Toluenesulphonic acid (major)"
+   }
+  ],
+  "jeeTips": "Sulphonation is reversible - classic for blocking/ipso questions. SO3H group is a good leaving group under steam.",
+  "reference": "",
+  "tags": [
+   "electrophilic substitution",
+   "sulphonation",
+   "reversible",
+   "arene"
+  ]
+ },
+ {
+  "id": "halogenation-benzene",
+  "name": "Halogenation of Benzene (FeBr3)",
+  "aliases": [
+   "Aromatic bromination",
+   "Aromatic chlorination",
+   "Electrophilic halogenation"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "C6H6 + Br2",
+  "reagents": "FeBr3 (or Fe)",
+  "conditions": "\\text{dark}",
+  "products": "C6H5Br + HBr",
+  "catalyst": "FeBr3 / FeCl3 / AlCl3",
+  "reagentKeywords": [
+   "Br2",
+   "Cl2",
+   "FeBr3",
+   "FeCl3",
+   "Fe",
+   "AlCl3",
+   "Lewis acid",
+   "dark"
+  ],
+  "productName": "Bromobenzene",
+  "summary": "Benzene undergoes electrophilic substitution with Br2 or Cl2 in the presence of a Lewis acid such as FeBr3, FeCl3 or AlCl3 to give halobenzenes.",
+  "mechanism": "Lewis acid polarises Br–Br to give Br+ (as FeBr4- Br+); benzene attacks the electrophile forming a sigma complex which loses H+ to FeBr4-, regenerating FeBr3 and giving HBr.",
+  "keyPoints": [
+   "Lewis acid is needed since benzene does not react with Br2 alone (no addition)",
+   "Halogens are deactivating but o,p-directing (-I > +M)",
+   "Fe + Br2 gives FeBr3 in situ",
+   "I2 requires an oxidising agent (HNO3 or HIO3); F2 is too violent",
+   "With UV light and excess Cl2, addition gives BHC/gammexane (C6H6Cl6) instead"
+  ],
+  "whenUsed": "Preparation of aryl halides for Grignard, Ullmann, Fittig reactions.",
+  "applications": [
+   "Benzene to bromobenzene",
+   "Benzene to chlorobenzene",
+   "Bromobenzene to p-dibromobenzene"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + Br2 ->[\\text{FeBr3}] C6H5Br + HBr",
+    "note": "Bromobenzene"
+   },
+   {
+    "eq": "C6H6 + Cl2 ->[\\text{FeCl3}] C6H5Cl + HCl",
+    "note": "Chlorobenzene"
+   },
+   {
+    "eq": "C6H6 + 3 Cl2 ->[\\text{UV}] C6H6Cl6",
+    "note": "Addition (BHC) under UV light, not substitution"
+   }
+  ],
+  "jeeTips": "FeBr3/dark = substitution; UV/excess Cl2 = addition (BHC); Cl2 hv on toluene = side chain. These three conditions are classic traps.",
+  "reference": "",
+  "tags": [
+   "electrophilic substitution",
+   "halogenation",
+   "Lewis acid",
+   "arene"
+  ]
+ },
+ {
+  "id": "birch-reduction-benzene",
+  "name": "Birch Reduction of Benzene",
+  "aliases": [
+   "Birch reduction of arenes",
+   "Na/NH3/ROH reduction of benzene"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H6",
+  "reagents": "Na, liq. NH3, ROH",
+  "conditions": "",
+  "products": "1,4-C6H8",
+  "catalyst": "Na (dissolving metal), alcohol as proton source",
+  "reagentKeywords": [
+   "Na",
+   "liq NH3",
+   "Li",
+   "ethanol",
+   "ROH",
+   "dissolving metal",
+   "1,4-cyclohexadiene"
+  ],
+  "productName": "Cyclohexa-1,4-diene",
+  "summary": "Benzene is partially reduced by Na (or Li) in liquid NH3 with an alcohol as proton source to 1,4-cyclohexadiene, leaving two isolated C=C bonds.",
+  "mechanism": "Na transfers an electron to the ring giving a radical anion; ROH protonates it to a cyclohexadienyl radical; a second electron gives the carbanion that is protonated to give the 1,4-diene (non-conjugated).",
+  "keyPoints": [
+   "Anti-addition pattern gives non-conjugated 1,4-diene (not 1,3)",
+   "Electron-donating groups (OMe, alkyl) end up on the sp2 carbons of the product (2,5 positions)",
+   "Electron-withdrawing groups (COOH) end up on sp3 carbon",
+   "Alcohol (EtOH) needed as proton source",
+   "Anisole gives 1-methoxycyclohexa-1,4-diene"
+  ],
+  "whenUsed": "Convert aromatic rings to dienes, e.g. in steroid synthesis.",
+  "applications": [
+   "Benzene to 1,4-cyclohexadiene",
+   "Anisole to 1-methoxy-1,4-cyclohexadiene",
+   "Benzoic acid to 1,4-dihydrobenzoic acid"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + 2 [H] ->[\\text{Na, liq. NH3, EtOH}] 1,4-C6H8",
+    "note": "Cyclohexa-1,4-diene"
+   },
+   {
+    "eq": "C6H5OCH3 ->[\\text{Na, liq. NH3, ROH}] 1-methoxycyclohexa-1,4-diene",
+    "note": "Donor group stays on C=C"
+   },
+   {
+    "eq": "C6H5COOH ->[\\text{Na, liq. NH3, ROH}] 1,4-dihydrobenzoic acid",
+    "note": "Acceptor group on sp3 carbon"
+   }
+  ],
+  "jeeTips": "Not the same as H2/Ni (complete reduction to cyclohexane). Rule: EDG on C=C, EWG on sp3 C in product.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/birch-reduction.shtm",
+  "tags": [
+   "dissolving metal",
+   "reduction",
+   "diene",
+   "arene"
+  ]
+ },
+ {
+  "id": "side-chain-oxidation-kmno4",
+  "name": "Side-Chain Oxidation with KMnO4",
+  "aliases": [
+   "Benzylic oxidation",
+   "Toluene to benzoic acid",
+   "Alkylbenzene oxidation"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5CH3",
+  "reagents": "KMnO4 / OH- (or K2Cr2O7/H+)",
+  "conditions": "\\Delta",
+  "products": "C6H5COOH",
+  "catalyst": "KMnO4",
+  "reagentKeywords": [
+   "KMnO4",
+   "alkaline KMnO4",
+   "acidic KMnO4",
+   "K2Cr2O7",
+   "CrO3",
+   "hot",
+   "oxidation"
+  ],
+  "productName": "Benzoic acid",
+  "summary": "Any alkyl side chain with at least one benzylic H is oxidised by hot KMnO4 (or K2Cr2O7/H+) all the way to –COOH, irrespective of chain length.",
+  "mechanism": "Benzylic C–H is abstracted (benzylic radical/cation stabilised by the ring) and oxidation proceeds via alcohol and carbonyl stages to the carboxylic acid; the rest of the side chain is cleaved.",
+  "keyPoints": [
+   "Needs at least one benzylic H: tert-butylbenzene does not oxidise",
+   "Ethylbenzene, propylbenzene etc. all give benzoic acid",
+   "Controlled oxidation: CrO2Cl2 (Etard) or CrO3/(CH3CO)2O gives benzaldehyde; MnO2 gives benzaldehyde",
+   "Alkaline KMnO4 gives potassium benzoate; acidify to get acid",
+   "Ring is not attacked"
+  ],
+  "whenUsed": "Preparation of benzoic acids from alkylbenzenes (e.g. terephthalic acid from p-xylene).",
+  "applications": [
+   "Toluene to benzoic acid",
+   "Ethylbenzene to benzoic acid",
+   "p-Xylene to terephthalic acid"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5CH3 + 3 [O] ->[\\text{KMnO4, OH-}][\\Delta] C6H5COOH + H2O",
+    "note": "Benzoic acid"
+   },
+   {
+    "eq": "C6H5CH2CH3 ->[\\text{KMnO4, H+}][\\Delta] C6H5COOH + CO2",
+    "note": "Ethylbenzene to benzoic acid"
+   },
+   {
+    "eq": "p-CH3C6H4CH3 ->[\\text{KMnO4}][\\Delta] p-HOOCC6H4COOH",
+    "note": "Terephthalic acid"
+   }
+  ],
+  "jeeTips": "Trap: tert-butylbenzene (no benzylic H) is inert. Two different side chains: both oxidised to –COOH (e.g. p-xylene to terephthalic acid). Etard/CrO3-Ac2O stop at aldehyde.",
+  "reference": "",
+  "tags": [
+   "oxidation",
+   "benzylic",
+   "side chain",
+   "benzoic acid"
+  ]
+ },
+ {
+  "id": "side-chain-chlorination-toluene",
+  "name": "Side-Chain Chlorination of Toluene (Cl2/hv)",
+  "aliases": [
+   "Benzylic chlorination",
+   "Free-radical chlorination of toluene"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5CH3 + Cl2",
+  "reagents": "Cl2, \\text{hv} (or boiling)",
+  "conditions": "\\text{no catalyst, UV light, 373 K}",
+  "products": "C6H5CH2Cl + HCl",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Cl2",
+   "hv",
+   "UV",
+   "light",
+   "boiling",
+   "heat",
+   "no Lewis acid",
+   "free radical"
+  ],
+  "productName": "Benzyl chloride (then benzal chloride, benzotrichloride)",
+  "summary": "Toluene undergoes free-radical substitution at the methyl group (not the ring) with Cl2 in sunlight or at boiling point to give benzyl chloride, then benzal chloride and benzotrichloride.",
+  "mechanism": "Cl2 splits under hv; Cl. abstracts a benzylic H to give the resonance-stabilised benzyl radical, which abstracts Cl from Cl2 to continue the chain.",
+  "keyPoints": [
+   "Light/heat, no catalyst gives side-chain substitution",
+   "FeCl3/dark (cold) gives ring substitution (o- and p-chlorotoluene)",
+   "Stepwise: C6H5CH2Cl, C6H5CHCl2, C6H5CCl3",
+   "Hydrolysis of C6H5CHCl2 gives benzaldehyde; C6H5CCl3 gives benzoic acid",
+   "Benzylic radical is stabilised by resonance"
+  ],
+  "whenUsed": "Industrial synthesis of benzaldehyde and benzoic acid from toluene.",
+  "applications": [
+   "Toluene to benzyl chloride",
+   "Benzal chloride to benzaldehyde",
+   "Benzotrichloride to benzoic acid"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5CH3 + Cl2 ->[\\text{hv}] C6H5CH2Cl + HCl",
+    "note": "Benzyl chloride"
+   },
+   {
+    "eq": "C6H5CHCl2 + H2O ->[\\text{aq. NaOH}] C6H5CHO + 2 HCl",
+    "note": "Benzal chloride to benzaldehyde"
+   },
+   {
+    "eq": "C6H5CCl3 + 2 H2O -> C6H5COOH + 3 HCl",
+    "note": "Benzotrichloride to benzoic acid"
+   }
+  ],
+  "jeeTips": "Memorise: hv/heat = side chain; Lewis acid/dark = ring. Same pairing for bromination (NBS = benzylic).",
+  "reference": "",
+  "tags": [
+   "radical",
+   "benzylic",
+   "toluene",
+   "side chain"
+  ]
+ },
+ {
+  "id": "wurtz-fittig-reaction",
+  "name": "Wurtz–Fittig Reaction",
+  "aliases": [
+   "Wurtz–Fittig synthesis",
+   "Alkylbenzene from aryl halide and alkyl halide"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5Br + CH3Br",
+  "reagents": "Na",
+  "conditions": "\\text{dry ether}",
+  "products": "C6H5CH3 + 2 NaBr",
+  "catalyst": "Na metal",
+  "reagentKeywords": [
+   "Na",
+   "dry ether",
+   "aryl halide",
+   "alkyl halide",
+   "sodium"
+  ],
+  "productName": "Alkylbenzene (toluene)",
+  "summary": "An aryl halide and an alkyl halide couple in the presence of sodium in dry ether to give an alkylbenzene.",
+  "mechanism": "Sodium reacts with both halides to give ArNa and RNa type species (radical or organosodium); the more nucleophilic aryl species attacks the alkyl halide in an SN2-like step forming Ar–R.",
+  "keyPoints": [
+   "Mixed coupling gives also biphenyl (Ar–Ar) and alkane (R–R) as by-products",
+   "Aryl halide + alkyl halide gives Ar–R",
+   "Extension of Wurtz reaction",
+   "Fittig reaction (two aryl halides) gives biaryl",
+   "Dry ether essential",
+   "Avoid tertiary alkyl halides (elimination)"
+  ],
+  "whenUsed": "Preparation of alkylbenzenes such as ethylbenzene and toluene.",
+  "applications": [
+   "Bromobenzene + CH3Br to toluene",
+   "Bromobenzene + C2H5Br to ethylbenzene",
+   "Chlorobenzene + CH3Cl to toluene"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5Br + CH3Br + 2 Na ->[\\text{dry ether}] C6H5CH3 + 2 NaBr",
+    "note": "Toluene"
+   },
+   {
+    "eq": "C6H5Br + C2H5Br + 2 Na ->[\\text{dry ether}] C6H5C2H5 + 2 NaBr",
+    "note": "Ethylbenzene"
+   },
+   {
+    "eq": "C6H5Cl + CH3Cl + 2 Na ->[\\text{dry ether}] C6H5CH3 + 2 NaCl",
+    "note": "Toluene from chlorides"
+   }
+  ],
+  "jeeTips": "Ar–X + R–X = Wurtz–Fittig; Ar–X + Ar–X = Fittig; Ar–X + Cu = Ullmann. Do not mix these up.",
+  "reference": "",
+  "tags": [
+   "C–C bond formation",
+   "sodium",
+   "aryl halide",
+   "alkylbenzene"
+  ]
+ },
+ {
+  "id": "fittig-reaction",
+  "name": "Fittig Reaction",
+  "aliases": [
+   "Fittig coupling",
+   "Synthesis of biphenyl from aryl halide"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "2 C6H5Br",
+  "reagents": "Na",
+  "conditions": "\\text{dry ether}",
+  "products": "C6H5-C6H5 + 2 NaBr",
+  "catalyst": "Na metal",
+  "reagentKeywords": [
+   "Na",
+   "dry ether",
+   "aryl halide",
+   "sodium",
+   "biphenyl"
+  ],
+  "productName": "Biphenyl",
+  "summary": "Two molecules of an aryl halide couple with sodium in dry ether to give a biaryl such as biphenyl.",
+  "mechanism": "Na gives aryl radical / aryl-sodium species which attacks a second aryl halide forming the Ar–Ar bond with loss of NaX.",
+  "keyPoints": [
+   "Aryl halide with Na in ether gives biaryl",
+   "Differs from Wurtz–Fittig which uses ArX + RX",
+   "Substituted aryl halides give substituted biaryls",
+   "Ullmann reaction uses Cu and heat instead of Na",
+   "Used for symmetrical biaryls only (mixed halides give mixtures)"
+  ],
+  "whenUsed": "Laboratory synthesis of biaryls and polyphenyl compounds.",
+  "applications": [
+   "Bromobenzene to biphenyl",
+   "4-Bromotoluene to 4,4''-dimethylbiphenyl"
+  ],
+  "examples": [
+   {
+    "eq": "2 C6H5Br + 2 Na ->[\\text{dry ether}] C6H5-C6H5 + 2 NaBr",
+    "note": "Biphenyl"
+   },
+   {
+    "eq": "2 p-CH3C6H4Br + 2 Na ->[\\text{dry ether}] p-CH3C6H4-C6H4CH3-p + 2 NaBr",
+    "note": "4,4''-Dimethylbiphenyl"
+   },
+   {
+    "eq": "2 C6H5I + 2 Na ->[\\text{dry ether}] C6H5-C6H5 + 2 NaI",
+    "note": "Biphenyl from iodobenzene"
+   }
+  ],
+  "jeeTips": "Product has no alkyl chain (unlike Wurtz–Fittig). Answer for \"chlorobenzene + sodium in dry ether\" is biphenyl.",
+  "reference": "",
+  "tags": [
+   "C–C bond formation",
+   "biaryl",
+   "sodium",
+   "aryl halide"
+  ]
+ },
+ {
+  "id": "ullmann-reaction",
+  "name": "Ullmann Reaction",
+  "aliases": [
+   "Ullmann biaryl synthesis",
+   "Ullmann coupling"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "2 C6H5I",
+  "reagents": "Cu powder",
+  "conditions": "\\Delta (about 500 K)",
+  "products": "C6H5-C6H5 + CuI2",
+  "catalyst": "Cu (copper bronze)",
+  "reagentKeywords": [
+   "Cu",
+   "copper",
+   "copper powder",
+   "heat",
+   "aryl iodide",
+   "biaryl"
+  ],
+  "productName": "Biphenyl",
+  "summary": "Aryl halides (best iodides) heated with copper powder give biaryls through coupling of two aryl groups.",
+  "mechanism": "Cu inserts into the C–X bond to give an aryl copper(I) species, which reacts with a second ArX through oxidative addition and reductive elimination forming Ar–Ar.",
+  "keyPoints": [
+   "Aryl iodide or bromide coupled with Cu powder at high temperature",
+   "Electron-withdrawing o-substituent (e.g. NO2) speeds the reaction",
+   "Used for symmetrical biaryls (unsymmetrical gives mixtures)",
+   "Alternative to Fittig (Na, ether)",
+   "Cu is converted to CuX2 / Cu halide"
+  ],
+  "whenUsed": "Synthesis of biphenyls, including hindered or nitro-substituted ones.",
+  "applications": [
+   "Iodobenzene to biphenyl",
+   "2-Chloronitrobenzene to 2,2''-dinitrobiphenyl",
+   "Bromobenzene to biphenyl"
+  ],
+  "examples": [
+   {
+    "eq": "2 C6H5I + 2 Cu ->[\\Delta] C6H5-C6H5 + 2 CuI",
+    "note": "Biphenyl"
+   },
+   {
+    "eq": "2 o-O2NC6H4Cl + 2 Cu ->[\\Delta] o-O2NC6H4-C6H4NO2-o + 2 CuCl",
+    "note": "2,2''-Dinitrobiphenyl"
+   },
+   {
+    "eq": "2 C6H5Br + 2 Cu ->[\\Delta] C6H5-C6H5 + 2 CuBr",
+    "note": "Biphenyl from bromobenzene"
+   }
+  ],
+  "jeeTips": "Cu powder = Ullmann; Na/ether = Fittig; Na + RX = Wurtz–Fittig. The reaction is distinct from the Gattermann (Cu powder + HX on diazonium salts).",
+  "reference": "https://www.organic-chemistry.org/namedreactions/ullmann-reaction.shtm",
+  "tags": [
+   "C–C bond formation",
+   "copper",
+   "biaryl",
+   "coupling"
+  ]
+ },
+ {
+  "id": "hydrogenation-benzene",
+  "name": "Hydrogenation of Benzene to Cyclohexane",
+  "aliases": [
+   "Catalytic hydrogenation of benzene",
+   "Benzene to cyclohexane"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "C6H6 + 3 H2",
+  "reagents": "Ni (or Pt/Pd)",
+  "conditions": "473 K (or Pt, room temp, high pressure)",
+  "products": "C6H12",
+  "catalyst": "Ni, Pt or Pd",
+  "reagentKeywords": [
+   "Ni",
+   "H2",
+   "Pt",
+   "Pd",
+   "473 K",
+   "high pressure",
+   "hydrogenation"
+  ],
+  "productName": "Cyclohexane",
+  "summary": "Benzene adds three moles of hydrogen over a Ni catalyst at about 200 °C (or Pt/Pd under pressure) giving cyclohexane; no partial reduction stops at cyclohexene.",
+  "mechanism": "H2 is activated on the metal surface; the adsorbed aromatic ring is hydrogenated stepwise with syn addition, but intermediate cyclohexadiene and cyclohexene are more reactive and hydrogenate immediately.",
+  "keyPoints": [
+   "Heat of hydrogenation of benzene (−208 kJ/mol) is less than 3 × cyclohexene (−360) - resonance energy about 152 kJ/mol",
+   "Needs vigorous conditions vs alkenes (room temp)",
+   "Cannot be stopped at cyclohexene",
+   "Substituted benzenes give cyclohexane derivatives",
+   "Compare with Birch (partial, 1,4-diene)"
+  ],
+  "whenUsed": "Industrial manufacture of cyclohexane (for adipic acid/nylon).",
+  "applications": [
+   "Benzene to cyclohexane",
+   "Toluene to methylcyclohexane",
+   "Phenol to cyclohexanol"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + 3 H2 ->[Ni][473 K] C6H12",
+    "note": "Cyclohexane"
+   },
+   {
+    "eq": "C6H5CH3 + 3 H2 ->[Ni][\\Delta] C6H11CH3",
+    "note": "Methylcyclohexane"
+   },
+   {
+    "eq": "C6H5OH + 3 H2 ->[Ni][\\Delta] C6H11OH",
+    "note": "Cyclohexanol"
+   }
+  ],
+  "jeeTips": "Resonance energy from heats of hydrogenation is a standard numerical: 3 x 120 - 208 = 152 kJ/mol.",
+  "reference": "",
+  "tags": [
+   "hydrogenation",
+   "resonance energy",
+   "cyclohexane",
+   "arene"
+  ]
+ },
+ {
+  "id": "ozonolysis-benzene",
+  "name": "Ozonolysis of Benzene",
+  "aliases": [
+   "Ozonolysis of aromatic ring",
+   "Benzene triozonide to glyoxal"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H6 + 3 O3",
+  "reagents": "1) O3; 2) Zn/H2O",
+  "conditions": "",
+  "products": "3 OHC-CHO",
+  "catalyst": "",
+  "reagentKeywords": [
+   "O3",
+   "ozone",
+   "Zn",
+   "H2O",
+   "triozonide",
+   "glyoxal"
+  ],
+  "productName": "Glyoxal (ethanedial), 3 molecules",
+  "summary": "Benzene reacts with three moles of ozone to give a triozonide, which on hydrolytic work-up (Zn/H2O) gives three molecules of glyoxal, supporting the Kekulé structure.",
+  "mechanism": "Each of the three C=C of the Kekulé structure adds ozone to form an ozonide; reductive cleavage of all three ozonide rings gives 3 OHC–CHO.",
+  "keyPoints": [
+   "Gives only glyoxal: 3 mol from benzene; o-xylene gives glyoxal + methylglyoxal + diacetyl in 1:2:3 ratio",
+   "Supports equal C–C bond lengths via mesomerism (Kekulé structures)",
+   "Ratio from o-xylene proves oscillation/resonance of double bonds",
+   "Benzene needs more drastic conditions than alkenes (resonance stability)"
+  ],
+  "whenUsed": "Structural proof for benzene (Kekulé structure); problems on o-xylene ozonolysis ratio.",
+  "applications": [
+   "Benzene to 3 glyoxal",
+   "o-Xylene to glyoxal + methylglyoxal + biacetyl",
+   "Naphthalene ozonolysis"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + 3 O3 -> C6H6(O3)3",
+    "note": "Benzene triozonide"
+   },
+   {
+    "eq": "C6H6(O3)3 + 3 H2O ->[\\text{Zn}] 3 OHC-CHO + 3 H2O2",
+    "note": "Hydrolysis to glyoxal"
+   },
+   {
+    "eq": "o-C6H4(CH3)2 ->[1) \\text{O3}; 2) \\text{Zn/H2O}] OHC-CHO + CH3COCHO + CH3COCOCH3",
+    "note": "o-Xylene: ratio 1:2:3"
+   }
+  ],
+  "jeeTips": "o-Xylene ozonolysis products in 1:2:3 ratio (glyoxal : methylglyoxal : biacetyl) is a standard Advanced question to justify two Kekulé structures.",
+  "reference": "",
+  "tags": [
+   "ozonolysis",
+   "Kekulé structure",
+   "resonance",
+   "glyoxal"
+  ]
+ },
+ {
+  "id": "desulphonation-benzene",
+  "name": "Desulphonation (Ipso Substitution)",
+  "aliases": [
+   "Hydrolysis of sulphonic acids",
+   "Protodesulphonation",
+   "Steam desulphonation"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5SO3H + H2O",
+  "reagents": "dil. H2SO4 / superheated steam",
+  "conditions": "\\Delta (about 473 K)",
+  "products": "C6H6 + H2SO4",
+  "catalyst": "H+",
+  "reagentKeywords": [
+   "steam",
+   "dil H2SO4",
+   "superheated steam",
+   "heat",
+   "H+",
+   "desulphonation"
+  ],
+  "productName": "Benzene (parent arene)",
+  "summary": "Aromatic sulphonic acids are desulphonated by heating with dilute acid or superheated steam, replacing –SO3H by H (ipso substitution) - the reverse of sulphonation.",
+  "mechanism": "H+ attacks the ipso carbon bearing SO3H to give an arenium ion, which expels SO3 (as H2SO4 with water) to restore aromaticity.",
+  "keyPoints": [
+   "Reversible electrophilic substitution (ipso attack by H+)",
+   "–SO3H used as a blocking group: sulphonate para, substitute ortho, then desulphonate",
+   "Thermodynamic vs kinetic: sulphonation favours stable product at high T",
+   "Conc. acid favours sulphonation; dilute hot acid favours desulphonation"
+  ],
+  "whenUsed": "Removing a blocking group to make ortho-substituted arenes selectively.",
+  "applications": [
+   "Benzenesulphonic acid to benzene",
+   "p-Toluenesulphonic acid to toluene",
+   "Ortho-bromination via SO3H blocking"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5SO3H + H2O ->[\\text{dil. H2SO4}][\\Delta] C6H6 + H2SO4",
+    "note": "Benzene"
+   },
+   {
+    "eq": "p-CH3C6H4SO3H + H2O ->[\\text{steam}][\\Delta] C6H5CH3 + H2SO4",
+    "note": "Toluene"
+   },
+   {
+    "eq": "C6H5SO3H ->[\\text{superheated steam}][473 K] C6H6 + SO3",
+    "note": "Direct reverse reaction"
+   }
+  ],
+  "jeeTips": "Blocking group strategy: SO3H at para -> new group goes ortho -> remove SO3H with steam. Know the ipso concept.",
+  "reference": "",
+  "tags": [
+   "ipso substitution",
+   "blocking group",
+   "sulphonic acid",
+   "reversible"
+  ]
+ }
+]

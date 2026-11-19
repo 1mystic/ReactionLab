@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#d8ddd4">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>Reaction Bank — ReactionLab</title>
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+  <script defer src="assets/vendor/katex/katex.min.js"></script>
+  <script defer src="assets/vendor/katex/mhchem.min.js"></script>
+  <script defer src="assets/vendor/fuse.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="data/reactions.js"></script>
+  <script defer src="assets/js/core.js"></script>
+  <script defer src="assets/js/bank.js"></script>
+</head>
+<body>
+  <div class="app">
+    <main class="main">
+      <div id="topbar"></div>
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Reaction bank <span class="muted" style="font-size:18px" id="countLbl"></span></h2>
+          <label class="search-box"><span id="sIcon" style="width:20px;display:grid"></span><input id="q" type="search" placeholder="Search name, reagent, product, tag…  (press / )"></label>
+          <div class="tabs" id="viewTabs"><button class="tab active" data-v="grid" title="Grid"></button><button class="tab" data-v="list" title="List"></button><button class="tab" data-v="stack" title="Stacks by chapter"></button></div>
+        </div>
+        <div class="chips" id="catChips" style="margin-bottom:12px"></div>
+        <div class="filter-bar" style="margin-bottom:22px">
+          <select class="select" id="fKind"></select>
+          <select class="select" id="fExam"><option value="all">Both exams</option><option>JEE Main</option><option>JEE Advanced</option></select>
+          <select class="select" id="fDiff"><option value="all">Any difficulty</option><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select>
+          <select class="select" id="fSort"><option value="cat">Sort: chapter</option><option value="az">Sort: A → Z</option><option value="weak">Sort: weakest first</option><option value="new">Sort: custom first</option></select>
+          <label class="chip" style="cursor:pointer"><input type="checkbox" id="showArchived" style="accent-color:#141414"> Show archived</label>
+          <button class="btn sm" id="practiceFiltered" style="margin-left:auto"></button>
+        </div>
+        <div id="results"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

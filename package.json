@@ -1,0 +1,14 @@
+{
+  "name": "reactionlab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static JEE organic reaction practice site: random drills, similarity scoring, MCQ quizzes, searchable bank.",
+  "scripts": {
+    "build:data": "node tools/build-data.mjs",
+    "check:data": "node tools/build-data.mjs --check-only",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "katex": "^0.16.11"
+  }
+}

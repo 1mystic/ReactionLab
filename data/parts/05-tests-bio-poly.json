@@ -1,0 +1,2540 @@
+[
+ {
+  "id": "lassaigne-test-nitrogen",
+  "name": "Lassaigne's Test for Nitrogen (Prussian Blue)",
+  "aliases": [
+   "Sodium fusion extract test for N",
+   "Prussian blue test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Na + C + N -> NaCN (organic compound fused with Na)",
+  "reagents": "FeSO4, NaOH, then FeCl3 / conc. HCl",
+  "conditions": "Na fusion extract boiled with FeSO4, then acidified",
+  "products": "Fe4[Fe(CN)6]3 (Prussian blue)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Na fusion",
+   "FeSO4",
+   "FeCl3",
+   "NaOH",
+   "Prussian blue",
+   "sodium extract"
+  ],
+  "productName": "Ferric ferrocyanide (Prussian blue ppt.)",
+  "summary": "Organic compound is fused with sodium to convert covalent N into ionic NaCN. The extract is boiled with FeSO4, acidified (conc. HCl or H2SO4) and FeCl3 added; a Prussian blue colour shows nitrogen.",
+  "mechanism": "$\\ce{Na + C + N -> NaCN}$; $\\ce{FeSO4 + 6NaCN -> Na4[Fe(CN)6] + Na2SO4}$; the ferrocyanide reacts with Fe3+ (from FeCl3 / air oxidation) to give Prussian blue.",
+  "keyPoints": [
+   "Prussian blue (deep blue) ppt. or colour confirms N",
+   "Green/blue-green colour = trace N; no blue = N absent",
+   "Acidify with conc. HCl or H2SO4 to dissolve Fe(OH)2/Fe(OH)3 ppt. before judging colour",
+   "If S is also present, blood-red colour may appear instead (use the N+S test)"
+  ],
+  "whenUsed": "Detection of nitrogen in organic compounds, including amines, amides, nitro and heterocyclic compounds.",
+  "applications": [
+   "Qualitative analysis of organic compounds",
+   "Identification of nitrogenous drugs"
+  ],
+  "examples": [
+   {
+    "eq": "Na + C + N -> NaCN",
+    "note": "Sodium cyanide formed on fusion"
+   },
+   {
+    "eq": "6NaCN + FeSO4 -> Na4[Fe(CN)6] + Na2SO4",
+    "note": "Sodium ferrocyanide"
+   },
+   {
+    "eq": "3Na4[Fe(CN)6] + 4FeCl3 -> Fe4[Fe(CN)6]3 + 12NaCl",
+    "note": "Prussian blue ppt."
+   }
+  ],
+  "jeeTips": "Prussian blue is Fe4[Fe(CN)6]3 (ferric ferrocyanide). Hydrazine (N2H4, NH2NH2) and compounds with no C (e.g. NH2OH.HCl) do not give the test because NaCN cannot form. Diazonium salts lose N2 on heating and may fail the test.",
+  "reference": "",
+  "tags": [
+   "Lassaigne",
+   "nitrogen",
+   "Prussian blue",
+   "qualitative"
+  ]
+ },
+ {
+  "id": "lassaigne-test-sulphur",
+  "name": "Lassaigne's Test for Sulphur",
+  "aliases": [
+   "Sodium nitroprusside test for S",
+   "Lead acetate test for S"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "2Na + S -> Na2S (sodium fusion extract)",
+  "reagents": "Sodium nitroprusside Na2[Fe(CN)5NO] or (CH3COO)2Pb",
+  "conditions": "Fusion extract, alkaline / acetic acid medium",
+  "products": "Na4[Fe(CN)5NOS] (violet) or PbS (black ppt.)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "sodium nitroprusside",
+   "lead acetate",
+   "Na fusion",
+   "violet colour",
+   "black ppt",
+   "Na2S"
+  ],
+  "productName": "Violet complex / black lead sulphide",
+  "summary": "Sulphur is converted into Na2S by sodium fusion. Na2S gives a violet colour with sodium nitroprusside, or a black precipitate of PbS with lead acetate after acidifying with acetic acid.",
+  "mechanism": "$\\ce{2Na + S -> Na2S}$; sulphide ion attacks nitroprusside to form a thionitroprusside complex (violet). With Pb2+, $\\ce{S^2- + Pb^2+ -> PbS}$.",
+  "keyPoints": [
+   "Violet/purple colour with sodium nitroprusside = S",
+   "Black ppt. with (CH3COO)2Pb in acetic acid = S",
+   "Do not use nitroprusside on the acidified extract; it needs alkaline medium",
+   "Using Pb acetate: acidify with CH3COOH first"
+  ],
+  "whenUsed": "Detection of sulphur in thiols, thioethers, sulphonic acids, thioureas.",
+  "applications": [
+   "Qualitative analysis",
+   "Identify S-containing compounds"
+  ],
+  "examples": [
+   {
+    "eq": "Na2S + Na2[Fe(CN)5NO] -> Na4[Fe(CN)5NOS]",
+    "note": "Violet colour"
+   },
+   {
+    "eq": "Na2S + (CH3COO)2Pb -> PbS + 2CH3COONa",
+    "note": "Black ppt. of lead sulphide"
+   }
+  ],
+  "jeeTips": "Violet colour = nitroprusside; black = lead acetate. If N and S are both present the extract contains NaSCN, which gives a blood-red colour with FeCl3 and not the nitroprusside test (the sulphide is absent).",
+  "reference": "",
+  "tags": [
+   "Lassaigne",
+   "sulphur",
+   "nitroprusside",
+   "qualitative"
+  ]
+ },
+ {
+  "id": "lassaigne-test-halogens",
+  "name": "Lassaigne's Test for Halogens (AgNO3 Test)",
+  "aliases": [
+   "Silver nitrate test for halogens",
+   "Halide test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Na + X -> NaX (fusion extract)",
+  "reagents": "HNO3 (boil), then AgNO3",
+  "conditions": "Boil extract with dil. HNO3 (to expel NaCN / Na2S), then add AgNO3 solution",
+  "products": "AgCl (white) / AgBr (pale yellow) / AgI (yellow)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "AgNO3",
+   "dil HNO3",
+   "Na fusion",
+   "white ppt",
+   "curdy",
+   "yellow ppt",
+   "NH4OH"
+  ],
+  "productName": "Silver halide precipitate",
+  "summary": "Halogens are converted into NaX by fusion. After boiling with HNO3 (removes CN- and S2-), AgNO3 gives a precipitate: white (Cl), pale yellow (Br), yellow (I).",
+  "mechanism": "$\\ce{Ag+ + X- -> AgX v}$. Boiling with HNO3 removes $\\ce{NaCN}$ and $\\ce{Na2S}$ as HCN and H2S, which would otherwise give Ag2S or AgCN.",
+  "keyPoints": [
+   "AgCl: white curdy ppt., soluble in NH4OH",
+   "AgBr: pale yellow, sparingly soluble in NH4OH",
+   "AgI: yellow, insoluble in NH4OH",
+   "F is not detected (AgF is soluble)"
+  ],
+  "whenUsed": "Detection and identification of Cl, Br and I in organic compounds.",
+  "applications": [
+   "Qualitative analysis",
+   "Halogen identification"
+  ],
+  "examples": [
+   {
+    "eq": "NaCl + AgNO3 -> AgCl v + NaNO3",
+    "note": "White ppt., soluble in dil. NH4OH"
+   },
+   {
+    "eq": "NaBr + AgNO3 -> AgBr v + NaNO3",
+    "note": "Pale yellow ppt., partly soluble in conc. NH4OH"
+   },
+   {
+    "eq": "NaI + AgNO3 -> AgI v + NaNO3",
+    "note": "Yellow ppt., insoluble in NH4OH"
+   }
+  ],
+  "jeeTips": "Always boil with HNO3 first if N or S are present. AgF is soluble, so fluorine cannot be detected by this test. Organic halides do not give AgX directly with AgNO3 (covalent) except alkyl halides on warming with alcoholic AgNO3.",
+  "reference": "",
+  "tags": [
+   "Lassaigne",
+   "halogen",
+   "AgNO3",
+   "qualitative"
+  ]
+ },
+ {
+  "id": "test-n-and-s-together",
+  "name": "Test for Nitrogen and Sulphur Together (Blood-Red Colour)",
+  "aliases": [
+   "Thiocyanate test",
+   "Ferric thiocyanate test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Na + C + N + S -> NaSCN",
+  "reagents": "FeCl3",
+  "conditions": "Na fusion extract, acidified; no FeSO4 added",
+  "products": "[Fe(SCN)]^2+ (blood red)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "FeCl3",
+   "Na fusion",
+   "NaSCN",
+   "blood red",
+   "thiocyanate"
+  ],
+  "productName": "Ferric thiocyanate (blood-red colour)",
+  "summary": "When both N and S are present, sodium fusion gives sodium thiocyanate (NaSCN) instead of NaCN and Na2S. Adding FeCl3 gives a blood-red colour.",
+  "mechanism": "$\\ce{Na + C + N + S -> NaSCN}$; $\\ce{Fe^3+ + SCN- -> [Fe(SCN)]^2+}$ (blood red).",
+  "keyPoints": [
+   "Blood-red colour = both N and S",
+   "No Prussian blue is formed (no free CN-)",
+   "If fusion is done with excess Na, NaSCN decomposes to NaCN and Na2S and separate tests then work",
+   "Test is carried out without adding FeSO4"
+  ],
+  "whenUsed": "Detecting N and S together in compounds like thiourea, thioamides, thiocyanates.",
+  "applications": [
+   "Qualitative analysis"
+  ],
+  "examples": [
+   {
+    "eq": "Na + C + N + S -> NaSCN",
+    "note": "Thiocyanate formed"
+   },
+   {
+    "eq": "3NaSCN + FeCl3 -> Fe(SCN)3 + 3NaCl",
+    "note": "Blood red"
+   }
+  ],
+  "jeeTips": "Blood-red ferric thiocyanate is not a precipitate, it is a colour. If excess sodium is used, SCN- breaks up and Prussian blue plus sulphide tests are obtained instead.",
+  "reference": "",
+  "tags": [
+   "Lassaigne",
+   "thiocyanate",
+   "N and S"
+  ]
+ },
+ {
+  "id": "beilstein-test",
+  "name": "Beilstein Test",
+  "aliases": [
+   "Copper wire test for halogens",
+   "Flame test for halogens"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "R-X + CuO -> CuX2",
+  "reagents": "Clean Cu wire (oxidised) in flame",
+  "conditions": "Heat Cu wire dipped in the compound in Bunsen flame",
+  "products": "CuX2 (volatile) - green or blue-green flame",
+  "catalyst": "",
+  "reagentKeywords": [
+   "copper wire",
+   "Cu wire",
+   "flame",
+   "green flame",
+   "CuO",
+   "Beilstein"
+  ],
+  "productName": "Green/blue-green flame (copper halide)",
+  "summary": "A clean copper wire is heated to form CuO, dipped in the organic compound and reheated. Volatile copper halide gives a green or bluish-green flame, showing a halogen is present.",
+  "mechanism": "The organic halide reacts with CuO to form volatile cupric halide $\\ce{CuX2}$, which colours the flame.",
+  "keyPoints": [
+   "Green or blue-green flame = halogen (Cl, Br, I) present",
+   "Does not tell which halogen",
+   "Not reliable: gives false positives with some N compounds (e.g. urea, pyridine, acid amides)",
+   "Fluorides do not give the test (CuF2 not volatile)"
+  ],
+  "whenUsed": "Quick preliminary test for halogens.",
+  "applications": [
+   "Preliminary qualitative analysis"
+  ],
+  "examples": [
+   {
+    "eq": "2R-X + CuO -> CuX2 + R-O-R",
+    "note": "Volatile CuX2, green flame (schematic)"
+   },
+   {
+    "eq": "CuO + 2HCl -> CuCl2 + H2O",
+    "note": "Green flame from CuCl2"
+   }
+  ],
+  "jeeTips": "Beilstein is a preliminary, non-confirmatory test. It cannot identify the halogen and fails for F. Confirmation needs Lassaigne's test.",
+  "reference": "",
+  "tags": [
+   "halogen",
+   "flame",
+   "preliminary"
+  ]
+ },
+ {
+  "id": "bromine-water-test",
+  "name": "Bromine Water Test for Unsaturation",
+  "aliases": [
+   "Decolourisation of bromine water",
+   "Bromine water test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH2=CH2 + Br2",
+  "reagents": "Br2 water (or Br2 in CCl4)",
+  "conditions": "Room temperature, dark",
+  "products": "BrCH2CH2Br",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Br2 water",
+   "bromine water",
+   "CCl4",
+   "decolourise",
+   "orange to colourless",
+   "unsaturation"
+  ],
+  "productName": "1,2-Dibromoethane (colourless)",
+  "summary": "Alkenes and alkynes add Br2 and rapidly decolourise orange-brown bromine water (or red-brown Br2 in CCl4). Alkanes do not react in the dark.",
+  "mechanism": "Br2 polarised by the pi bond gives a cyclic bromonium ion, opened by $\\ce{Br-}$ from the anti side to give the trans-dibromide.",
+  "keyPoints": [
+   "Rapid decolourisation = C=C or C#C",
+   "Phenol / aniline give white ppt. of 2,4,6-tribromo derivative",
+   "Aldehydes decolourise Br2 water by oxidation, not addition",
+   "Benzene, alkanes: no decolourisation in dark"
+  ],
+  "whenUsed": "Distinguishing unsaturated from saturated hydrocarbons.",
+  "applications": [
+   "Test for alkenes/alkynes",
+   "Distinguishing alkanes from alkenes"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CH2 + Br2 -> BrCH2CH2Br",
+    "note": "Alkene, orange colour disappears"
+   },
+   {
+    "eq": "C6H5OH + 3Br2 -> C6H2Br3OH v + 3HBr",
+    "note": "Phenol: white ppt. 2,4,6-tribromophenol"
+   },
+   {
+    "eq": "C6H5NH2 + 3Br2 -> C6H2Br3NH2 v + 3HBr",
+    "note": "Aniline: white ppt."
+   }
+  ],
+  "jeeTips": "Aromatic benzene does not decolourise Br2 water. Phenol and aniline also decolourise it but via substitution giving white ppt., HBr evolved. Baeyer's reagent (cold dilute alkaline KMnO4, purple to brown) is the other unsaturation test.",
+  "reference": "",
+  "tags": [
+   "unsaturation",
+   "alkene",
+   "bromination"
+  ]
+ },
+ {
+  "id": "ceric-ammonium-nitrate-test",
+  "name": "Ceric Ammonium Nitrate Test for Alcohols",
+  "aliases": [
+   "CAN test",
+   "Ceric ammonium nitrate test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "ROH + (NH4)2[Ce(NO3)6]",
+  "reagents": "Ceric ammonium nitrate (yellow)",
+  "conditions": "Room temp., dil. HNO3 medium",
+  "products": "(NH4)2[Ce(OR)(NO3)5] (red)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "ceric ammonium nitrate",
+   "CAN",
+   "yellow to red",
+   "alcohol",
+   "Ce(IV)"
+  ],
+  "productName": "Red alcohol-cerium complex",
+  "summary": "Alcohols (and polyhydroxy compounds) turn the yellow solution of ceric ammonium nitrate to red (or pink/orange-red), by forming a Ce(IV)-alkoxide complex.",
+  "mechanism": "$\\ce{(NH4)2[Ce(NO3)6] + ROH -> (NH4)2[Ce(OR)(NO3)5] + HNO3}$, a ligand exchange giving a red complex.",
+  "keyPoints": [
+   "Yellow to red/pink colour = alcoholic -OH (up to ~C10)",
+   "Phenols give a brown to greenish-brown ppt. instead",
+   "Aldehydes, ketones, ethers: no colour change",
+   "Sugars (polyhydroxy) also positive"
+  ],
+  "whenUsed": "Test for alcohols and distinction of alcohols from ethers and carbonyls.",
+  "applications": [
+   "Alcohol detection"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2OH + (NH4)2[Ce(NO3)6] -> (NH4)2[Ce(OC2H5)(NO3)5] + HNO3",
+    "note": "Red colour"
+   },
+   {
+    "eq": "C6H5OH + Ce^4+ -> \\text{brown ppt.}",
+    "note": "Phenol gives brown/green ppt."
+   }
+  ],
+  "jeeTips": "Phenols do not give the red colour of alcohols; they give a brown or greenish-brown ppt. Do not confuse with Lucas test (differentiates 1°, 2°, 3° alcohols).",
+  "reference": "",
+  "tags": [
+   "alcohol",
+   "Ce(IV)",
+   "colour change"
+  ]
+ },
+ {
+  "id": "iodine-test-starch",
+  "name": "Iodine Test for Starch",
+  "aliases": [
+   "Starch-iodine test",
+   "Blue-black test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "Starch + I2/KI",
+  "reagents": "I2 in KI solution",
+  "conditions": "Room temperature; colour disappears on heating, returns on cooling",
+  "products": "Starch-iodine complex (blue-black)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "I2",
+   "iodine",
+   "KI",
+   "blue colour",
+   "starch",
+   "amylose"
+  ],
+  "productName": "Blue-black starch-iodine complex",
+  "summary": "A drop of iodine solution (I2/KI) gives an intense blue-black colour with starch. The colour is due to I3-/I5- chains trapped inside the helical amylose.",
+  "mechanism": "$\\ce{I2 + I- <=> I3-}$ is held inside the amylose helix, forming a charge-transfer complex.",
+  "keyPoints": [
+   "Blue-black colour = starch (amylose)",
+   "Amylopectin gives a purple-red colour",
+   "Colour vanishes on heating and reappears on cooling",
+   "Glycogen gives red-brown; cellulose gives no colour"
+  ],
+  "whenUsed": "Detecting starch in foods and in iodometric titrations.",
+  "applications": [
+   "Starch detection",
+   "Iodometry endpoint indicator"
+  ],
+  "examples": [
+   {
+    "eq": "(C6H10O5)_n + I3- -> \\text{blue-black complex}",
+    "note": "Starch (amylose)"
+   },
+   {
+    "eq": "2Cu^2+ + 4I- -> 2CuI + I2",
+    "note": "Liberated I2 detected with starch in iodometry"
+   }
+  ],
+  "jeeTips": "Disappearance on heating is reversible; the colour is not due to a chemical bond. Iodine does not give blue with simple sugars like glucose or sucrose.",
+  "reference": "",
+  "tags": [
+   "starch",
+   "iodine",
+   "carbohydrate"
+  ]
+ },
+ {
+  "id": "ninhydrin-test",
+  "name": "Ninhydrin Test",
+  "aliases": [
+   "Ruhemann's purple test",
+   "Amino acid test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "R-CH(NH2)COOH + 2 Ninhydrin",
+  "reagents": "Ninhydrin (2 percent soln.)",
+  "conditions": "Heat in boiling water bath",
+  "products": "\\text{Ruhemann purple} + RCHO + CO2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "ninhydrin",
+   "blue violet",
+   "purple",
+   "amino acid",
+   "protein",
+   "heat"
+  ],
+  "productName": "Ruhemann's purple",
+  "summary": "α-Amino acids, peptides and proteins heated with ninhydrin give a blue-violet colour (Ruhemann's purple). Proline and hydroxyproline give a yellow colour.",
+  "mechanism": "Ninhydrin oxidatively deaminates and decarboxylates the amino acid, releasing $\\ce{CO2}$ and an aldehyde, and the reduced ninhydrin condenses with NH3 and a second ninhydrin to give the purple dye.",
+  "keyPoints": [
+   "Blue-violet = free α-NH2 group",
+   "Proline / hydroxyproline (secondary amine): yellow",
+   "Also given by primary amines and ammonia",
+   "Used for amino acid detection on chromatograms"
+  ],
+  "whenUsed": "Detection of amino acids and proteins in TLC/paper chromatography.",
+  "applications": [
+   "Chromatography spray reagent",
+   "Amino acid detection"
+  ],
+  "examples": [
+   {
+    "eq": "RCH(NH2)COOH + 2\\text{ninhydrin} -> \\text{Ruhemann's purple} + RCHO + CO2 + 3H2O",
+    "note": "Typical amino acid"
+   },
+   {
+    "eq": "NH3 + 2\\text{ninhydrin} -> \\text{purple dye}",
+    "note": "Ammonia also positive"
+   }
+  ],
+  "jeeTips": "Ninhydrin is positive for ammonia, primary amines too. Proline gives yellow, not purple. Not a test specific for protein (Biuret is for peptide bonds).",
+  "reference": "",
+  "tags": [
+   "amino acid",
+   "protein",
+   "ninhydrin"
+  ]
+ },
+ {
+  "id": "biuret-test",
+  "name": "Biuret Test",
+  "aliases": [
+   "Peptide bond test",
+   "Biuret reaction"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "Protein + Cu^2+",
+  "reagents": "NaOH + dil. CuSO4",
+  "conditions": "Alkaline medium, room temperature",
+  "products": "Violet / purple Cu^2+-peptide complex",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NaOH",
+   "CuSO4",
+   "violet",
+   "purple",
+   "peptide bond",
+   "protein",
+   "biuret"
+  ],
+  "productName": "Violet copper-peptide complex",
+  "summary": "Compounds having two or more peptide bonds (proteins, tripeptides and longer) give a violet or purple colour with dilute CuSO4 in alkaline medium.",
+  "mechanism": "Cu2+ is chelated by the nitrogen atoms of at least two adjacent peptide (-CO-NH-) groups in alkali to form a coloured coordination complex.",
+  "keyPoints": [
+   "Violet/pink-purple = 2 or more peptide bonds",
+   "Free amino acids and dipeptides: negative",
+   "Also given by biuret H2N-CO-NH-CO-NH2 itself",
+   "Needs excess NaOH and only a trace of CuSO4"
+  ],
+  "whenUsed": "General test for proteins and polypeptides.",
+  "applications": [
+   "Protein estimation",
+   "Distinguish protein from amino acid"
+  ],
+  "examples": [
+   {
+    "eq": "Protein + Cu^2+ ->[OH-] \\text{violet complex}",
+    "note": "Positive for protein"
+   },
+   {
+    "eq": "H2N-CO-NH-CO-NH2 + Cu^2+ ->[OH-] \\text{violet}",
+    "note": "Biuret itself"
+   }
+  ],
+  "jeeTips": "Dipeptides have only ONE peptide bond so are biuret-negative. Amino acids are negative. Do not confuse with ninhydrin (free NH2, amino acids positive).",
+  "reference": "",
+  "tags": [
+   "protein",
+   "peptide",
+   "Cu2+"
+  ]
+ },
+ {
+  "id": "xanthoproteic-test",
+  "name": "Xanthoproteic Test",
+  "aliases": [
+   "Nitration test for proteins"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Protein (aromatic amino acid) + HNO3",
+  "reagents": "Conc. HNO3, then NaOH / NH4OH",
+  "conditions": "Heat; then make alkaline",
+  "products": "Yellow nitro-derivative, turns orange in alkali",
+  "catalyst": "",
+  "reagentKeywords": [
+   "conc HNO3",
+   "yellow",
+   "orange",
+   "aromatic",
+   "tyrosine",
+   "tryptophan",
+   "nitration"
+  ],
+  "productName": "Yellow nitrated protein",
+  "summary": "Proteins containing aromatic amino acids (tyrosine, phenylalanine, tryptophan) turn yellow on heating with conc. HNO3 due to nitration of the benzene ring. The yellow colour becomes orange on adding alkali.",
+  "mechanism": "Electrophilic aromatic nitration by $\\ce{NO2+}$ gives yellow nitro compounds; their anions in base are orange.",
+  "keyPoints": [
+   "Yellow on heating, orange with alkali",
+   "Positive for tyrosine, tryptophan, phenylalanine",
+   "Skin turns yellow on contact with HNO3 (keratin)",
+   "Negative for proteins without aromatic residues (e.g. gelatin)"
+  ],
+  "whenUsed": "Detecting aromatic amino acid residues in proteins.",
+  "applications": [
+   "Protein identification"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5-R + HNO3 ->[H2SO4] O2N-C6H4-R + H2O",
+    "note": "Nitration of aromatic ring"
+   },
+   {
+    "eq": "\\text{Tyrosine} + HNO3 -> \\text{yellow nitrotyrosine}",
+    "note": "Positive"
+   }
+  ],
+  "jeeTips": "Test depends on the aromatic ring, not on the peptide bond. Gelatin is negative since it lacks aromatic residues.",
+  "reference": "",
+  "tags": [
+   "protein",
+   "nitration",
+   "aromatic"
+  ]
+ },
+ {
+  "id": "molisch-test",
+  "name": "Molisch's Test",
+  "aliases": [
+   "α-Naphthol test",
+   "Molisch test for carbohydrates"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Carbohydrate + conc. H2SO4",
+  "reagents": "α-Naphthol (alcoholic) + conc. H2SO4",
+  "conditions": "Conc. H2SO4 added down the side of the tube",
+  "products": "Purple / violet ring at the junction",
+  "catalyst": "",
+  "reagentKeywords": [
+   "alpha naphthol",
+   "conc H2SO4",
+   "purple ring",
+   "violet ring",
+   "furfural",
+   "carbohydrate"
+  ],
+  "productName": "Violet ring (furfural condensation product)",
+  "summary": "General test for all carbohydrates. Conc. H2SO4 dehydrates sugars to furfural (pentoses) or hydroxymethylfurfural (hexoses), which condense with α-naphthol to give a purple ring.",
+  "mechanism": "Dehydration: $\\ce{C6H12O6 ->[H2SO4] HMF + 3H2O}$; furfural derivative then condenses with α-naphthol to give a purple-violet coloured product.",
+  "keyPoints": [
+   "Purple/violet ring at the junction = carbohydrate",
+   "Positive for mono-, di-, polysaccharides",
+   "Glycoproteins also positive",
+   "Not specific for reducing sugars"
+  ],
+  "whenUsed": "General preliminary test for carbohydrates.",
+  "applications": [
+   "Detect carbohydrates"
+  ],
+  "examples": [
+   {
+    "eq": "C6H12O6 ->[conc. H2SO4] \\text{HMF} + 3H2O",
+    "note": "Hexose to hydroxymethylfurfural"
+   },
+   {
+    "eq": "C5H10O5 ->[conc. H2SO4] \\text{furfural} + 3H2O",
+    "note": "Pentose to furfural"
+   }
+  ],
+  "jeeTips": "Molisch test does not distinguish reducing from non-reducing sugars or aldoses from ketoses. Do not confuse with Seliwanoff's (ketose-specific).",
+  "reference": "",
+  "tags": [
+   "carbohydrate",
+   "naphthol",
+   "furfural"
+  ]
+ },
+ {
+  "id": "seliwanoff-test",
+  "name": "Seliwanoff's Test",
+  "aliases": [
+   "Resorcinol test for ketoses"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Fructose + HCl",
+  "reagents": "Resorcinol + conc. HCl",
+  "conditions": "Heat for 1-2 min",
+  "products": "Cherry-red condensation product",
+  "catalyst": "",
+  "reagentKeywords": [
+   "resorcinol",
+   "conc HCl",
+   "cherry red",
+   "ketose",
+   "fructose",
+   "heat"
+  ],
+  "productName": "Cherry-red colour",
+  "summary": "Ketoses (fructose) are rapidly dehydrated by HCl to hydroxymethylfurfural which condenses with resorcinol to give a cherry-red colour within 1-2 min. Aldoses react slowly, giving a faint pink.",
+  "mechanism": "Acid-catalysed dehydration of ketose to HMF, followed by condensation with resorcinol to a red coloured complex.",
+  "keyPoints": [
+   "Cherry red in about 1-2 min = ketose (fructose)",
+   "Aldoses (glucose) give red only on prolonged heating",
+   "Sucrose also positive (hydrolyses to fructose)",
+   "Distinguishes ketohexose from aldohexose"
+  ],
+  "whenUsed": "Distinguishing aldoses and ketoses.",
+  "applications": [
+   "Identify fructose",
+   "Distinguish glucose from fructose"
+  ],
+  "examples": [
+   {
+    "eq": "C6H12O6 \\text{(fructose)} ->[HCl] HMF + 3H2O",
+    "note": "Fructose dehydration"
+   },
+   {
+    "eq": "HMF + \\text{resorcinol} -> \\text{cherry-red product}",
+    "note": "Positive"
+   }
+  ],
+  "jeeTips": "Heating glucose for long also gives a colour, so timing is essential. Sucrose is positive because it hydrolyses to glucose + fructose.",
+  "reference": "",
+  "tags": [
+   "ketose",
+   "fructose",
+   "resorcinol"
+  ]
+ },
+ {
+  "id": "barfoed-test",
+  "name": "Barfoed's Test",
+  "aliases": [
+   "Barfoed test for monosaccharides"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "Monosaccharide + Cu(CH3COO)2",
+  "reagents": "Barfoed reagent: Cu(CH3COO)2 in CH3COOH",
+  "conditions": "Boil 1-2 min (weakly acidic)",
+  "products": "Red Cu2O precipitate",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Barfoed",
+   "copper acetate",
+   "acetic acid",
+   "Cu2O",
+   "red ppt",
+   "monosaccharide"
+  ],
+  "productName": "Red cuprous oxide ppt.",
+  "summary": "In weakly acidic medium monosaccharides reduce cupric acetate to red Cu2O within about 2 min. Disaccharides react only on prolonged heating (about 10 min).",
+  "mechanism": "The aldehyde group of the monosaccharide reduces $\\ce{Cu^2+}$ to $\\ce{Cu2O}$ in mildly acid solution.",
+  "keyPoints": [
+   "Red Cu2O in 2-3 min = monosaccharide (glucose, fructose)",
+   "Reducing disaccharides (maltose, lactose): slow, after ~10 min",
+   "Non-reducing sugar (sucrose): negative",
+   "Medium is weakly acidic, unlike Fehling's"
+  ],
+  "whenUsed": "Distinguishing monosaccharides from reducing disaccharides.",
+  "applications": [
+   "Carbohydrate analysis"
+  ],
+  "examples": [
+   {
+    "eq": "RCHO + 2Cu^2+ + H2O -> RCOOH + Cu2O v + 4H+",
+    "note": "Reducing sugar oxidised"
+   },
+   {
+    "eq": "\\text{Glucose} + Cu(CH3COO)2 -> \\text{Cu2O (red ppt.)}",
+    "note": "Positive in 2 min"
+   }
+  ],
+  "jeeTips": "Barfoed is acidic and is a time-dependent test. Fehling/Benedict (alkaline) do not distinguish mono- from disaccharides.",
+  "reference": "",
+  "tags": [
+   "monosaccharide",
+   "reducing sugar",
+   "copper"
+  ]
+ },
+ {
+  "id": "millon-test",
+  "name": "Millon's Test",
+  "aliases": [
+   "Millon reaction",
+   "Test for tyrosine"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Protein (phenolic -OH) + Hg(NO3)2",
+  "reagents": "Millon's reagent: Hg/HNO3 (Hg(NO3)2 + HNO2)",
+  "conditions": "Warm gently",
+  "products": "Red / brick-red ppt. or colour",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Millon",
+   "Hg(NO3)2",
+   "mercury",
+   "red ppt",
+   "tyrosine",
+   "phenol"
+  ],
+  "productName": "Red mercury-tyrosine complex",
+  "summary": "Proteins containing tyrosine (a phenolic -OH group) form a white precipitate with Millon's reagent which turns brick-red on heating.",
+  "mechanism": "Phenolic ring is nitrated and the resulting nitrophenol forms a red mercury complex.",
+  "keyPoints": [
+   "White ppt. turning red on heating = tyrosine / phenol group",
+   "Also given by simple phenols",
+   "Negative for proteins without tyrosine",
+   "Cl- interferes"
+  ],
+  "whenUsed": "Detecting tyrosine and phenolic groups.",
+  "applications": [
+   "Protein test"
+  ],
+  "examples": [
+   {
+    "eq": "\\text{Tyrosine} + Hg(NO3)2 + HNO2 -> \\text{red complex}",
+    "note": "Positive"
+   },
+   {
+    "eq": "C6H5OH + Millon -> \\text{red colour}",
+    "note": "Phenol positive"
+   }
+  ],
+  "jeeTips": "Millon's test identifies the phenolic -OH (tyrosine), whereas xanthoproteic identifies any aromatic ring and Biuret the peptide bond.",
+  "reference": "",
+  "tags": [
+   "tyrosine",
+   "protein",
+   "mercury"
+  ]
+ },
+ {
+  "id": "silver-mirror-formic-acid",
+  "name": "Silver Mirror Test: Formic Acid vs Acetic Acid",
+  "aliases": [
+   "Tollens test on HCOOH",
+   "Formic acid reducing test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "HCOOH + 2[Ag(NH3)2]+",
+  "reagents": "Tollens' reagent [Ag(NH3)2]+",
+  "conditions": "Warm gently",
+  "products": "CO2 + 2Ag v + ...",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Tollens",
+   "ammoniacal AgNO3",
+   "silver mirror",
+   "formic acid",
+   "Fehling",
+   "HgCl2"
+  ],
+  "productName": "Silver mirror (Ag) with CO2",
+  "summary": "Formic acid contains both -COOH and -CHO character, so it reduces Tollens' reagent (silver mirror), Fehling's solution (red ppt.) and HgCl2 (white Hg2Cl2 then grey Hg). Acetic acid and other carboxylic acids do not.",
+  "mechanism": "HCOOH is oxidised to $\\ce{H2CO3 -> CO2 + H2O}$ while $\\ce{Ag+}$ is reduced to metallic Ag.",
+  "keyPoints": [
+   "Only HCOOH among carboxylic acids reduces Tollens'/Fehling's",
+   "Acetic acid and higher acids: negative",
+   "HCOOH also decolourises KMnO4 and reduces HgCl2",
+   "Has CHO group in H-C(=O)-OH"
+  ],
+  "whenUsed": "Distinguishing formic acid from acetic acid and other acids.",
+  "applications": [
+   "Identification of HCOOH"
+  ],
+  "examples": [
+   {
+    "eq": "HCOOH + 2[Ag(NH3)2]+ + 2OH- -> CO2 + 2Ag v + 4NH3 + 2H2O",
+    "note": "Silver mirror"
+   },
+   {
+    "eq": "HCOOH + HgCl2 -> Hg2Cl2 v + CO2 + 2HCl",
+    "note": "White ppt. of calomel (2HgCl2 + HCOOH; schematic)"
+   },
+   {
+    "eq": "HCOOH + 2Cu^2+ + 4OH- -> Cu2O v + CO2 + 3H2O",
+    "note": "Red Cu2O with Fehling's"
+   }
+  ],
+  "jeeTips": "A favourite JEE trap: formic acid is the ONLY carboxylic acid giving Tollens' and Fehling's tests. Also benzoic and acetic acids are negative.",
+  "reference": "",
+  "tags": [
+   "formic acid",
+   "Tollens",
+   "reducing"
+  ]
+ },
+ {
+  "id": "kjeldahl-method",
+  "name": "Kjeldahl's Method (Estimation of Nitrogen)",
+  "aliases": [
+   "Kjeldahl method",
+   "Kjeldahl digestion"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Organic N + conc. H2SO4 -> (NH4)2SO4",
+  "reagents": "Conc. H2SO4, K2SO4 / CuSO4; then NaOH",
+  "conditions": "Digest (heat); then distil NH3 into std. H2SO4",
+  "products": "(NH4)2SO4 -> 2NH3 (absorbed in H2SO4)",
+  "catalyst": "CuSO4 / HgO (catalyst)",
+  "reagentKeywords": [
+   "conc H2SO4",
+   "K2SO4",
+   "CuSO4",
+   "NaOH",
+   "NH3",
+   "(NH4)2SO4",
+   "digestion"
+  ],
+  "productName": "Ammonia, estimated by titration",
+  "summary": "Nitrogen in the organic compound is converted into (NH4)2SO4 by heating with conc. H2SO4, then NH3 is liberated with excess NaOH and absorbed in a known volume of standard H2SO4. Unused acid is titrated.",
+  "mechanism": "$\\ce{N ->[H2SO4] (NH4)2SO4}$; $\\ce{(NH4)2SO4 + 2NaOH -> Na2SO4 + 2NH3 + 2H2O}$; $\\ce{2NH3 + H2SO4 -> (NH4)2SO4}$.",
+  "keyPoints": [
+   "%N = (1.4 x M x 2 x V)/w, where V is mL of acid neutralised (M = molarity of H2SO4, w = mass of compound)",
+   "K2SO4 raises boiling point; CuSO4 is catalyst",
+   "NOT applicable to nitro, azo, azoxy compounds and N in ring (pyridine)",
+   "Used for amines, amides, proteins"
+  ],
+  "whenUsed": "Estimation of nitrogen in food, fertiliser, protein analysis.",
+  "applications": [
+   "Protein content in food",
+   "Fertiliser analysis"
+  ],
+  "examples": [
+   {
+    "eq": "2NH3 + H2SO4 -> (NH4)2SO4",
+    "note": "Absorption in standard acid"
+   },
+   {
+    "eq": "\\%N = \\frac{1.4 \\times N_{acid} \\times V_{acid}}{w}",
+    "note": "Formula (V in mL, N normality)"
+   }
+  ],
+  "jeeTips": "Kjeldahl fails for nitro, azo and ring-nitrogen compounds (these need Duma's method). Use meq of acid used = meq of NH3: %N = 1.4 x normality x volume (mL)/mass.",
+  "reference": "",
+  "tags": [
+   "nitrogen estimation",
+   "quantitative",
+   "Kjeldahl"
+  ]
+ },
+ {
+  "id": "dumas-method",
+  "name": "Duma's Method (Estimation of Nitrogen)",
+  "aliases": [
+   "Dumas method"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Organic N + CuO -> N2",
+  "reagents": "CuO, CO2 atmosphere; KOH (to absorb CO2)",
+  "conditions": "Heat in combustion tube; collect N2 over KOH solution",
+  "products": "N2 (volume measured at STP)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "CuO",
+   "CO2",
+   "KOH",
+   "N2",
+   "nitrometer",
+   "combustion"
+  ],
+  "productName": "Dinitrogen gas (volume measured)",
+  "summary": "The compound is heated with CuO in an atmosphere of CO2. Carbon and hydrogen form CO2 and H2O, nitrogen is converted into N2 (with small oxides reduced by hot Cu gauze). N2 is collected over KOH and measured.",
+  "mechanism": "$\\ce{C_xH_yN_z + CuO -> CO2 + H2O + N2 + Cu}$; nitrogen oxides are reduced to N2 by hot copper gauze.",
+  "keyPoints": [
+   "%N = (28/22400) x (V at STP / w) x 100",
+   "V is volume of N2 at STP in mL",
+   "Applicable to all nitrogen compounds",
+   "N2 collected over 40% KOH (absorbs CO2)"
+  ],
+  "whenUsed": "Estimation of N in all organic compounds, including nitro and ring N.",
+  "applications": [
+   "Quantitative analysis"
+  ],
+  "examples": [
+   {
+    "eq": "2C_xH_yN_z + CuO -> CO2 + H2O + N2 + Cu",
+    "note": "Schematic"
+   },
+   {
+    "eq": "2NO + 2Cu -> N2 + 2CuO",
+    "note": "Reduction of N oxides on Cu gauze"
+   }
+  ],
+  "jeeTips": "Duma's works for all N compounds (unlike Kjeldahl). The pressure correction uses aqueous tension. %N = 28 x V(STP)/(22400 x w) x 100.",
+  "reference": "",
+  "tags": [
+   "nitrogen estimation",
+   "quantitative",
+   "Dumas"
+  ]
+ },
+ {
+  "id": "carius-method",
+  "name": "Carius Method (Estimation of Halogens)",
+  "aliases": [
+   "Carius halogen estimation"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "R-X + HNO3 + AgNO3",
+  "reagents": "Fuming HNO3, AgNO3",
+  "conditions": "Heat in sealed Carius tube at 500-530 K",
+  "products": "AgX (weighed)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "fuming HNO3",
+   "AgNO3",
+   "Carius tube",
+   "sealed tube",
+   "AgX",
+   "gravimetric"
+  ],
+  "productName": "Silver halide (weighed)",
+  "summary": "A known mass of the compound is heated in a sealed (Carius) tube with fuming HNO3 and AgNO3. Carbon and hydrogen are oxidised to CO2 and H2O while the halogen is precipitated as AgX, which is filtered, dried and weighed.",
+  "mechanism": "$\\ce{R-X + HNO3 -> HX + ...}$; $\\ce{HX + AgNO3 -> AgX v + HNO3}$.",
+  "keyPoints": [
+   "%Cl = (35.5/143.5) x (mass of AgCl/mass of compound) x 100",
+   "%Br = (80/188) x (m AgBr/m) x 100",
+   "%I = (127/235) x (m AgI/m) x 100",
+   "For S: H2SO4 precipitated as BaSO4, %S = (32/233) x (m BaSO4/m) x 100"
+  ],
+  "whenUsed": "Gravimetric estimation of halogens and sulphur (S via BaSO4) and phosphorus.",
+  "applications": [
+   "Quantitative organic analysis"
+  ],
+  "examples": [
+   {
+    "eq": "HCl + AgNO3 -> AgCl v + HNO3",
+    "note": "Halogen estimation"
+   },
+   {
+    "eq": "H2SO4 + BaCl2 -> BaSO4 v + 2HCl",
+    "note": "Sulphur estimation"
+   }
+  ],
+  "jeeTips": "Learn the molar mass ratios: Cl/AgCl = 35.5/143.5, Br/AgBr = 80/188, I/AgI = 127/235, S/BaSO4 = 32/233, P (as Mg2P2O7) = 62/222.",
+  "reference": "",
+  "tags": [
+   "halogen estimation",
+   "Carius",
+   "quantitative"
+  ]
+ },
+ {
+  "id": "glucose-hi",
+  "name": "Glucose + HI (Reduction to n-Hexane)",
+  "aliases": [
+   "Reduction of glucose with HI",
+   "Glucose structure proof"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H12O6",
+  "reagents": "HI (excess), red P",
+  "conditions": "Prolonged heating",
+  "products": "CH3CH2CH2CH2CH2CH3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "HI",
+   "red P",
+   "heat",
+   "n-hexane",
+   "reduction"
+  ],
+  "productName": "n-Hexane",
+  "summary": "Prolonged heating of glucose with HI converts it to n-hexane, proving the six carbons are in a straight, unbranched chain.",
+  "mechanism": "All -OH and the C=O group are reduced stepwise by HI (a strong reducing agent), forming the saturated alkane: $\\ce{C6H12O6 + 12HI -> C6H14 + 6H2O + 6I2}$.",
+  "keyPoints": [
+   "Proves unbranched six-carbon chain",
+   "Fructose also gives n-hexane (partly 2-iodohexane)",
+   "Glucose has 5 -OH and 1 -CHO"
+  ],
+  "whenUsed": "Structure elucidation of glucose.",
+  "applications": [
+   "Structure of glucose"
+  ],
+  "examples": [
+   {
+    "eq": "C6H12O6 + 12HI -> C6H14 + 6H2O + 6I2",
+    "note": "Glucose to n-hexane"
+   },
+   {
+    "eq": "C6H12O6 ->[HI, \\Delta] CH3CH2CH2CH2CH(I)CH3",
+    "note": "Partial: 2-iodohexane"
+   }
+  ],
+  "jeeTips": "A prolonged HI reduction gives n-hexane; with limited HI the product is 2-iodohexane. These prove a straight chain.",
+  "reference": "",
+  "tags": [
+   "glucose",
+   "structure",
+   "reduction"
+  ]
+ },
+ {
+  "id": "glucose-bromine-water",
+  "name": "Glucose + Bromine Water (Gluconic Acid)",
+  "aliases": [
+   "Oxidation of glucose by Br2 water"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH2OH(CHOH)4CHO + Br2 + H2O",
+  "reagents": "Br2 water",
+  "conditions": "Mild oxidant; room temperature",
+  "products": "CH2OH(CHOH)4COOH + 2HBr",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Br2 water",
+   "bromine water",
+   "gluconic acid",
+   "mild oxidation"
+  ],
+  "productName": "Gluconic acid",
+  "summary": "Bromine water, a mild oxidising agent, selectively oxidises the -CHO group of glucose to -COOH, giving gluconic acid. This proves the carbonyl is an aldehyde and not a ketone.",
+  "mechanism": "Br2/H2O oxidises aldehyde to carboxylic acid: $\\ce{RCHO + Br2 + H2O -> RCOOH + 2HBr}$.",
+  "keyPoints": [
+   "Confirms aldehyde (CHO) group in glucose",
+   "Fructose (ketose) is not oxidised by Br2 water",
+   "Product has same number of carbons (6C acid)",
+   "Mild oxidant gives monocarboxylic acid; HNO3 gives dicarboxylic acid"
+  ],
+  "whenUsed": "Distinguishing aldoses from ketoses; structure of glucose.",
+  "applications": [
+   "Distinguish glucose from fructose"
+  ],
+  "examples": [
+   {
+    "eq": "CH2OH(CHOH)4CHO + Br2 + H2O -> CH2OH(CHOH)4COOH + 2HBr",
+    "note": "Glucose to gluconic acid"
+   },
+   {
+    "eq": "C6H12O6 (\\text{fructose}) + Br2 -> \\text{no reaction}",
+    "note": "Ketose not oxidised"
+   }
+  ],
+  "jeeTips": "Br2 water: aldose gives -onic acid. HNO3: aldose gives -aric acid (dicarboxylic). Fructose resists Br2 water but isomerises in alkaline Tollens/Fehling.",
+  "reference": "",
+  "tags": [
+   "glucose",
+   "gluconic acid",
+   "oxidation"
+  ]
+ },
+ {
+  "id": "glucose-nitric-acid",
+  "name": "Glucose + HNO3 (Saccharic Acid)",
+  "aliases": [
+   "Oxidation of glucose with nitric acid",
+   "Glucaric acid formation"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH2OH(CHOH)4CHO",
+  "reagents": "Conc. HNO3",
+  "conditions": "Warm",
+  "products": "HOOC(CHOH)4COOH",
+  "catalyst": "",
+  "reagentKeywords": [
+   "conc HNO3",
+   "saccharic acid",
+   "glucaric acid",
+   "strong oxidation"
+  ],
+  "productName": "Saccharic acid (glucaric acid)",
+  "summary": "Strong oxidation of glucose with conc. HNO3 oxidises both the -CHO and terminal primary -CH2OH to -COOH, giving saccharic acid (dicarboxylic). This shows the presence of a primary alcohol.",
+  "mechanism": "Both ends are oxidised: $\\ce{CHO -> COOH}$ and $\\ce{CH2OH -> COOH}$, giving $\\ce{HOOC(CHOH)4COOH}$.",
+  "keyPoints": [
+   "Product is dicarboxylic acid, retains 6 carbons",
+   "Proves a primary alcoholic group",
+   "Galactose gives insoluble mucic acid",
+   "Without C-C cleavage"
+  ],
+  "whenUsed": "Structure elucidation of glucose.",
+  "applications": [
+   "Structure of glucose"
+  ],
+  "examples": [
+   {
+    "eq": "CH2OH(CHOH)4CHO ->[HNO3] HOOC(CHOH)4COOH",
+    "note": "Saccharic acid"
+   },
+   {
+    "eq": "CH2OH(CHOH)4CH2OH ->[HNO3] \\text{...}",
+    "note": "Not relevant to sorbitol (schematic)"
+   }
+  ],
+  "jeeTips": "Br2 water gives gluconic acid (monobasic); HNO3 gives saccharic acid (dibasic). Not to be confused with sorbitol (from reduction with Na/Hg or H2/Ni).",
+  "reference": "",
+  "tags": [
+   "glucose",
+   "saccharic acid",
+   "oxidation"
+  ]
+ },
+ {
+  "id": "glucose-hydroxylamine",
+  "name": "Glucose + Hydroxylamine (Oxime Formation)",
+  "aliases": [
+   "Glucose oxime"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH2OH(CHOH)4CHO + NH2OH",
+  "reagents": "NH2OH",
+  "conditions": "Mild, neutral / weakly acidic",
+  "products": "CH2OH(CHOH)4CH=NOH + H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NH2OH",
+   "hydroxylamine",
+   "oxime",
+   "carbonyl"
+  ],
+  "productName": "Glucose oxime",
+  "summary": "Glucose reacts with hydroxylamine to form glucose oxime, showing the presence of a carbonyl (C=O) group.",
+  "mechanism": "Nucleophilic addition-elimination at C=O: $\\ce{RCHO + NH2OH -> RCH=NOH + H2O}$.",
+  "keyPoints": [
+   "Shows carbonyl group",
+   "Open-chain form reacts (though only small amount is free)",
+   "Similar reaction with HCN shows carbonyl",
+   "Glucose does not give NaHSO3 and Schiff's tests despite carbonyl"
+  ],
+  "whenUsed": "Evidence for carbonyl group in glucose.",
+  "applications": [
+   "Structure of glucose"
+  ],
+  "examples": [
+   {
+    "eq": "CH2OH(CHOH)4CHO + NH2OH -> CH2OH(CHOH)4CH=NOH + H2O",
+    "note": "Glucose oxime"
+   },
+   {
+    "eq": "CH3CHO + NH2OH -> CH3CH=NOH + H2O",
+    "note": "Acetaldoxime"
+   }
+  ],
+  "jeeTips": "Glucose gives an oxime but fails Schiff's test and NaHSO3 addition because it exists mainly as cyclic hemiacetal, with very little free CHO.",
+  "reference": "",
+  "tags": [
+   "glucose",
+   "oxime",
+   "carbonyl"
+  ]
+ },
+ {
+  "id": "glucose-acetic-anhydride",
+  "name": "Glucose + Acetic Anhydride (Pentaacetate)",
+  "aliases": [
+   "Acetylation of glucose",
+   "Glucose pentaacetate"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H12O6 + 5(CH3CO)2O",
+  "reagents": "(CH3CO)2O (acetic anhydride)",
+  "conditions": "Pyridine / ZnCl2 or CH3COONa, heat",
+  "products": "C6H7O(OCOCH3)5 + 5CH3COOH",
+  "catalyst": "",
+  "reagentKeywords": [
+   "acetic anhydride",
+   "Ac2O",
+   "pyridine",
+   "acetylation",
+   "pentaacetate"
+  ],
+  "productName": "Glucose pentaacetate",
+  "summary": "Glucose reacts with excess acetic anhydride to give glucose pentaacetate, showing the presence of five -OH groups.",
+  "mechanism": "Acetylation (nucleophilic acyl substitution): each -OH group is converted to -OCOCH3, with CH3COOH as by-product.",
+  "keyPoints": [
+   "Five acetyl groups = five -OH groups",
+   "Pentaacetate does not reduce Tollens' reagent (no free CHO; fixed cyclic form)",
+   "Also confirms the cyclic structure",
+   "Fructose also gives pentaacetate"
+  ],
+  "whenUsed": "Determination of the number of hydroxyl groups.",
+  "applications": [
+   "Structure of glucose"
+  ],
+  "examples": [
+   {
+    "eq": "C6H12O6 + 5(CH3CO)2O -> C6H7O(OCOCH3)5 + 5CH3COOH",
+    "note": "Glucose pentaacetate"
+   },
+   {
+    "eq": "ROH + (CH3CO)2O -> ROCOCH3 + CH3COOH",
+    "note": "General"
+   }
+  ],
+  "jeeTips": "Count: 5 -OH groups in glucose (4 secondary + 1 primary); the CHO is not acetylated. Pentaacetate does not give Tollens' test, evidence of the cyclic hemiacetal form.",
+  "reference": "",
+  "tags": [
+   "glucose",
+   "acetylation",
+   "hydroxyl"
+  ]
+ },
+ {
+  "id": "glucose-hcn",
+  "name": "Glucose + HCN (Cyanohydrin)",
+  "aliases": [
+   "Glucose cyanohydrin formation"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH2OH(CHOH)4CHO + HCN",
+  "reagents": "HCN",
+  "conditions": "Trace base; room temperature",
+  "products": "CH2OH(CHOH)4CH(OH)CN",
+  "catalyst": "",
+  "reagentKeywords": [
+   "HCN",
+   "cyanohydrin",
+   "carbonyl",
+   "nucleophilic addition"
+  ],
+  "productName": "Glucose cyanohydrin",
+  "summary": "Glucose adds HCN to give a cyanohydrin, a characteristic reaction of a carbonyl group; this shows the presence of an aldehyde group.",
+  "mechanism": "CN- adds to C=O (nucleophilic addition) and the alkoxide is protonated: $\\ce{RCHO + HCN -> RCH(OH)CN}$.",
+  "keyPoints": [
+   "Shows presence of carbonyl group",
+   "Hydrolysis then gives a seven-carbon acid (chain lengthening, Kiliani)",
+   "Gives a mixture of epimers at new centre",
+   "Used for chain extension of aldoses"
+  ],
+  "whenUsed": "Evidence for carbonyl group; Kiliani-Fischer synthesis.",
+  "applications": [
+   "Structure of glucose",
+   "Chain lengthening"
+  ],
+  "examples": [
+   {
+    "eq": "CH2OH(CHOH)4CHO + HCN -> CH2OH(CHOH)4CH(OH)CN",
+    "note": "Cyanohydrin"
+   },
+   {
+    "eq": "CH2OH(CHOH)4CH(OH)CN ->[H3O+] CH2OH(CHOH)4CH(OH)COOH",
+    "note": "Hydrolysis to heptonic acid"
+   }
+  ],
+  "jeeTips": "HCN adding to glucose demonstrates a carbonyl; gluconic acid from Br2 water shows it is an aldehyde, and n-hexane with HI shows a straight chain.",
+  "reference": "",
+  "tags": [
+   "glucose",
+   "cyanohydrin",
+   "carbonyl"
+  ]
+ },
+ {
+  "id": "osazone-formation",
+  "name": "Osazone Formation (Phenylhydrazine)",
+  "aliases": [
+   "Glucosazone formation",
+   "Fischer osazone reaction"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "Glucose + 3C6H5NHNH2",
+  "reagents": "Phenylhydrazine (excess, 3 equiv.)",
+  "conditions": "Heat on boiling water bath, CH3COOH",
+  "products": "Glucosazone (yellow crystals) + C6H5NH2 + NH3 + 2H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "phenylhydrazine",
+   "PhNHNH2",
+   "osazone",
+   "yellow crystals",
+   "3 equivalents",
+   "boil"
+  ],
+  "productName": "Glucosazone (yellow needles)",
+  "summary": "Reducing sugars (aldoses and ketoses) react with excess (3 mol) phenylhydrazine to form yellow crystalline osazones, involving only C-1 and C-2. Glucose, fructose and mannose give the same osazone.",
+  "mechanism": "First, a phenylhydrazone forms at C-1; the C-2 -OH is oxidised by a second equivalent (giving aniline and NH3), then C-2 carbonyl condenses with a third equivalent to give the bis-phenylhydrazone (osazone).",
+  "keyPoints": [
+   "3 moles of phenylhydrazine per mole of sugar",
+   "Only C-1 and C-2 are involved",
+   "Glucose, fructose, mannose give identical osazone",
+   "Sucrose (non-reducing) gives no osazone",
+   "Used to identify sugars by crystal shape and time of formation"
+  ],
+  "whenUsed": "Identification of sugars; proves C-3 to C-6 configuration is same in glucose, fructose, mannose.",
+  "applications": [
+   "Distinguish sugars",
+   "Structure proofs"
+  ],
+  "examples": [
+   {
+    "eq": "C6H12O6 + 3C6H5NHNH2 -> C6H10O4(=NNHC6H5)2 + C6H5NH2 + NH3 + 2H2O",
+    "note": "Glucosazone"
+   },
+   {
+    "eq": "CH3CHO + C6H5NHNH2 -> CH3CH=NNHC6H5 + H2O",
+    "note": "Hydrazone (simple carbonyl)"
+   }
+  ],
+  "jeeTips": "Glucose, fructose and mannose give the same osazone. Glucose/mannose are C-2 epimers. 3 equivalents of PhNHNH2 are used. Sucrose does not form osazone unless first hydrolysed.",
+  "reference": "",
+  "tags": [
+   "sugar",
+   "osazone",
+   "phenylhydrazine"
+  ]
+ },
+ {
+  "id": "sucrose-inversion",
+  "name": "Hydrolysis (Inversion) of Sucrose",
+  "aliases": [
+   "Invert sugar formation",
+   "Inversion of cane sugar"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C12H22O11 + H2O",
+  "reagents": "Dil. HCl / H2SO4 or invertase",
+  "conditions": "Warm / aqueous",
+  "products": "C6H12O6 (glucose) + C6H12O6 (fructose)",
+  "catalyst": "H+ or invertase enzyme",
+  "reagentKeywords": [
+   "dil HCl",
+   "H+",
+   "invertase",
+   "invert sugar",
+   "specific rotation",
+   "hydrolysis"
+  ],
+  "productName": "Glucose + fructose (invert sugar)",
+  "summary": "Sucrose, dextrorotatory (+66.5°), on hydrolysis gives an equimolar mixture of D-(+)-glucose (+52.5°) and D-(-)-fructose (-92.4°), with net levorotatory (-20°) rotation. The mixture is called invert sugar.",
+  "mechanism": "Acid (or invertase) cleaves the glycosidic C1(α-glucose)-C2(β-fructose) linkage: $\\ce{C12H22O11 + H2O -> C6H12O6 + C6H12O6}$.",
+  "keyPoints": [
+   "Sucrose: +66.5°; glucose: +52.5°; fructose: -92.4°",
+   "Resulting mixture: -20°, rotation changes sign (inversion)",
+   "Sucrose is non-reducing; after hydrolysis, the product is reducing",
+   "Glycosidic linkage C1 (glucose)-C2 (fructose); both anomeric C's involved"
+  ],
+  "whenUsed": "Industrial / confectionery use: honey is largely invert sugar; used to prevent crystallisation.",
+  "applications": [
+   "Honey",
+   "Confectionery",
+   "Distinguishing sucrose from maltose"
+  ],
+  "examples": [
+   {
+    "eq": "C12H22O11 + H2O ->[H+] C6H12O6 + C6H12O6",
+    "note": "Glucose + fructose"
+   },
+   {
+    "eq": "C12H22O11 + H2O ->[\\text{invertase}] \\text{glucose} + \\text{fructose}",
+    "note": "Enzyme-catalysed"
+   }
+  ],
+  "jeeTips": "Inversion = sign of optical rotation changes from + to -. Sucrose gives no Tollens/Fehling and no osazone. Fructose is more levorotatory than glucose is dextrorotatory.",
+  "reference": "",
+  "tags": [
+   "sucrose",
+   "invert sugar",
+   "optical rotation"
+  ]
+ },
+ {
+  "id": "peptide-bond-formation",
+  "name": "Peptide Bond Formation",
+  "aliases": [
+   "Peptide linkage",
+   "Condensation of amino acids"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "H2N-CHR-COOH + H2N-CHR'-COOH",
+  "reagents": "Condensation (-H2O); DCC in lab",
+  "conditions": "Heat / coupling agent",
+  "products": "H2N-CHR-CO-NH-CHR'-COOH + H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "DCC",
+   "condensation",
+   "dehydration",
+   "peptide",
+   "amide linkage",
+   "-H2O"
+  ],
+  "productName": "Dipeptide",
+  "summary": "The -COOH of one amino acid condenses with the -NH2 of another with loss of water to give an amide (-CO-NH-) bond, called a peptide bond. Repetition gives polypeptides and proteins.",
+  "mechanism": "Nucleophilic acyl substitution: amine N attacks the carbonyl C of the activated carboxyl group, $\\ce{-COOH + H2N- -> -CO-NH- + H2O}$.",
+  "keyPoints": [
+   "A peptide of n amino acids has (n-1) peptide bonds",
+   "Amide bond is planar with partial double-bond character",
+   "N-terminal at left and C-terminal at right",
+   "Biuret test is positive for 2 or more peptide bonds (tripeptide+)"
+  ],
+  "whenUsed": "Protein synthesis in nature; peptide synthesis in lab with protecting groups.",
+  "applications": [
+   "Protein structure",
+   "Peptide synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "H2NCH2COOH + H2NCH(CH3)COOH -> H2NCH2CO-NHCH(CH3)COOH + H2O",
+    "note": "Gly-Ala dipeptide"
+   },
+   {
+    "eq": "3 H2N-CHR-COOH -> \\text{tripeptide} + 2H2O",
+    "note": "3 amino acids: 2 peptide bonds"
+   }
+  ],
+  "jeeTips": "n amino acids in a chain give n-1 peptide bonds and n-1 H2O lost. Gly-Ala and Ala-Gly are different dipeptides. N-terminal is written on the left.",
+  "reference": "",
+  "tags": [
+   "peptide",
+   "amino acid",
+   "protein"
+  ]
+ },
+ {
+  "id": "zwitterion-formation",
+  "name": "Zwitterion Formation in Amino Acids",
+  "aliases": [
+   "Dipolar ion of amino acids",
+   "Isoelectric point"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "H2N-CHR-COOH",
+  "reagents": "Internal proton transfer",
+  "conditions": "Aqueous solution at the isoelectric point",
+  "products": "H3N+-CHR-COO-",
+  "catalyst": "",
+  "reagentKeywords": [
+   "zwitterion",
+   "dipolar ion",
+   "isoelectric point",
+   "internal salt",
+   "pI"
+  ],
+  "productName": "Zwitterion (dipolar ion)",
+  "summary": "In aqueous solution, the acidic -COOH transfers a proton to the basic -NH2 in the same molecule, forming the dipolar ion (zwitterion) H3N+-CHR-COO-.",
+  "mechanism": "Intramolecular proton transfer: $\\ce{H2N-CHR-COOH <=> H3N+-CHR-COO-}$. In acid, it becomes the cation; in base, the anion.",
+  "keyPoints": [
+   "Net charge zero at isoelectric point (pI)",
+   "In acid: H3N+-CHR-COOH (cation); in base: H2N-CHR-COO- (anion)",
+   "Explains high m.p. and solubility in water, low solubility in organic solvents",
+   "Amino acids behave like salts, amphoteric"
+  ],
+  "whenUsed": "Explains physical properties and electrophoresis of amino acids.",
+  "applications": [
+   "Amino acid properties",
+   "Electrophoresis"
+  ],
+  "examples": [
+   {
+    "eq": "H2N-CH2-COOH <=> H3N+-CH2-COO-",
+    "note": "Glycine zwitterion"
+   },
+   {
+    "eq": "H3N+-CHR-COO- + H+ -> H3N+-CHR-COOH",
+    "note": "In acid: cation"
+   },
+   {
+    "eq": "H3N+-CHR-COO- + OH- -> H2N-CHR-COO- + H2O",
+    "note": "In base: anion"
+   }
+  ],
+  "jeeTips": "At pH below pI amino acids migrate to the cathode; above pI to the anode; at pI there is no migration. pI = average of the two pKa values for neutral amino acids.",
+  "reference": "",
+  "tags": [
+   "amino acid",
+   "zwitterion",
+   "pI"
+  ]
+ },
+ {
+  "id": "ziegler-natta-hdpe",
+  "name": "Polymerisation of Ethene: Ziegler-Natta (HDPE)",
+  "aliases": [
+   "High-density polyethylene",
+   "HDPE synthesis",
+   "Ziegler-Natta polymerisation"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nCH2=CH2",
+  "reagents": "Ziegler-Natta catalyst: TiCl4 + Al(C2H5)3",
+  "conditions": "333-343 K, 6-7 atm, hydrocarbon solvent",
+  "products": "[-CH2-CH2-]_n",
+  "catalyst": "TiCl4 / triethylaluminium",
+  "reagentKeywords": [
+   "Ziegler-Natta",
+   "TiCl4",
+   "Al(C2H5)3",
+   "triethylaluminium",
+   "HDPE",
+   "low pressure",
+   "coordination polymerisation"
+  ],
+  "productName": "High density polyethylene (HDPE)",
+  "summary": "In the presence of Ziegler-Natta catalyst at low temperature and pressure, ethene gives high-density polyethylene, which has linear chains with close packing.",
+  "mechanism": "Coordination (insertion) polymerisation at the Ti-C bond: ethene coordinates to the Ti centre and inserts into the Ti-alkyl bond, repeated many times; $\\ce{nCH2=CH2 -> [-CH2-CH2-]_n}$.",
+  "keyPoints": [
+   "Linear, unbranched chains",
+   "Density 0.95-0.97 g/cm3, high m.p., more rigid and crystalline",
+   "Used for buckets, bottles, pipes, toys",
+   "Catalyst: TiCl4 + Al(C2H5)3; low pressure process"
+  ],
+  "whenUsed": "Industrial production of HDPE.",
+  "applications": [
+   "Containers, pipes, toys",
+   "Bottles and drums"
+  ],
+  "examples": [
+   {
+    "eq": "nCH2=CH2 ->[TiCl4/Al(C2H5)3] [-CH2-CH2-]_n",
+    "note": "HDPE"
+   },
+   {
+    "eq": "nCH3CH=CH2 ->[\\text{Ziegler-Natta}] [-CH(CH3)-CH2-]_n",
+    "note": "Isotactic polypropylene"
+   }
+  ],
+  "jeeTips": "HDPE: linear, Ziegler-Natta, 333-343 K, 6-7 atm. LDPE: branched, free-radical, high pressure (1000-2000 atm), 350-570 K, peroxide. Do not interchange.",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "HDPE",
+   "Ziegler-Natta",
+   "addition polymer"
+  ]
+ },
+ {
+  "id": "free-radical-ldpe",
+  "name": "Free-Radical Polymerisation of Ethene (LDPE)",
+  "aliases": [
+   "Low-density polyethylene",
+   "LDPE synthesis",
+   "Polythene"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nCH2=CH2",
+  "reagents": "Peroxide initiator (benzoyl peroxide / O2 traces)",
+  "conditions": "350-570 K, 1000-2000 atm",
+  "products": "[-CH2-CH2-]_n",
+  "catalyst": "Peroxide / trace O2",
+  "reagentKeywords": [
+   "peroxide",
+   "benzoyl peroxide",
+   "high pressure",
+   "free radical",
+   "LDPE",
+   "1000-2000 atm"
+  ],
+  "productName": "Low density polyethylene (LDPE)",
+  "summary": "Ethene heated at high pressure (1000-2000 atm) and 350-570 K with a trace of dioxygen or peroxide initiator gives branched, low-density polyethylene by a free-radical chain mechanism.",
+  "mechanism": "Initiation: $\\ce{R-O-O-R -> 2RO.}$; propagation: $\\ce{RO. + CH2=CH2 -> RO-CH2-CH2.}$ and repeated addition; chain transfer causes branching; termination by coupling.",
+  "keyPoints": [
+   "Branched chains, low density (0.92 g/cm3), flexible",
+   "Chain-growth (addition) polymerisation",
+   "Initiation, propagation, termination steps",
+   "Uses: squeeze bottles, toys, flexible pipes, insulation"
+  ],
+  "whenUsed": "Industrial manufacture of polythene film and bags.",
+  "applications": [
+   "Plastic bags, films",
+   "Insulation of wires"
+  ],
+  "examples": [
+   {
+    "eq": "nCH2=CH2 ->[\\text{peroxide}, 1500 atm, 500 K] [-CH2-CH2-]_n",
+    "note": "LDPE"
+   },
+   {
+    "eq": "nCH2=CHCl ->[\\text{peroxide}] [-CH2-CHCl-]_n",
+    "note": "PVC by same free-radical route"
+   }
+  ],
+  "jeeTips": "LDPE (branched, free radical, high P) vs HDPE (linear, Ziegler-Natta, low P). Polythene is a homopolymer; branching lowers density and m.p.",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "LDPE",
+   "free radical"
+  ]
+ },
+ {
+  "id": "nylon-66",
+  "name": "Nylon-6,6 Synthesis",
+  "aliases": [
+   "Nylon 66",
+   "Polyhexamethylene adipamide"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nHOOC(CH2)4COOH + nH2N(CH2)6NH2",
+  "reagents": "Adipic acid + hexamethylenediamine",
+  "conditions": "553 K, high pressure",
+  "products": "[-NH(CH2)6NH-CO(CH2)4CO-]_n + 2nH2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "adipic acid",
+   "hexamethylenediamine",
+   "condensation polymer",
+   "polyamide",
+   "553 K",
+   "high pressure"
+  ],
+  "productName": "Nylon-6,6 (polyamide)",
+  "summary": "Condensation polymerisation of adipic acid (hexanedioic acid, 6C) with hexamethylenediamine (hexane-1,6-diamine, 6C) at 553 K under high pressure gives nylon-6,6, a polyamide, with loss of water.",
+  "mechanism": "Step-growth: $\\ce{-COOH + H2N- -> -CO-NH- + H2O}$, repeated at both ends of each monomer, forming amide linkages.",
+  "keyPoints": [
+   "Both monomers have 6 carbons (hence 6,6)",
+   "Condensation polymer, polyamide",
+   "Fibre with high tensile strength",
+   "Uses: sheets, bristles, textile fibres, ropes, tyre cords"
+  ],
+  "whenUsed": "Production of synthetic fibres.",
+  "applications": [
+   "Textile",
+   "Rope",
+   "Bristles"
+  ],
+  "examples": [
+   {
+    "eq": "nHOOC(CH2)4COOH + nH2N(CH2)6NH2 -> [-NH(CH2)6NH-CO(CH2)4CO-]_n + 2nH2O",
+    "note": "Nylon-6,6"
+   },
+   {
+    "eq": "nHOOC(CH2)4COOH + nH2N(CH2)6NH2 -> \\text{salt} \\to \\text{polymer}",
+    "note": "Nylon salt route"
+   }
+  ],
+  "jeeTips": "Nylon-6,6: adipic acid + hexamethylenediamine (condensation, polyamide). Nylon-6: caprolactam (ring opening). Biodegradable polyamide is Nylon-2-nylon-6.",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "nylon",
+   "polyamide",
+   "condensation"
+  ]
+ },
+ {
+  "id": "nylon-6",
+  "name": "Nylon-6 from Caprolactam",
+  "aliases": [
+   "Perlon",
+   "Nylon 6 polymerisation"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nC6H11NO (caprolactam)",
+  "reagents": "H2O (trace), heat",
+  "conditions": "530 K",
+  "products": "[-NH-(CH2)5-CO-]_n",
+  "catalyst": "H2O (initiator)",
+  "reagentKeywords": [
+   "caprolactam",
+   "water",
+   "heat",
+   "530 K",
+   "ring opening",
+   "polyamide"
+  ],
+  "productName": "Nylon-6 (polycaprolactam)",
+  "summary": "Caprolactam (cyclic amide, 6C) heated with a small amount of water at about 533 K undergoes hydrolytic ring-opening polymerisation to give nylon-6.",
+  "mechanism": "Water hydrolyses caprolactam to 6-aminohexanoic acid; the amino acid then undergoes self-condensation, and ring-opening chain growth follows.",
+  "keyPoints": [
+   "Only one monomer (caprolactam)",
+   "Product is a polyamide fibre",
+   "Caprolactam from cyclohexanone oxime (Beckmann rearrangement)",
+   "Nylon-6 is a condensation-type polymer by ring opening"
+  ],
+  "whenUsed": "Production of nylon-6 fibres and plastics (Perlon).",
+  "applications": [
+   "Fibres",
+   "Tyre cords",
+   "Ropes, fishing nets"
+  ],
+  "examples": [
+   {
+    "eq": "nC6H11NO ->[H2O, 530 K] [-NH(CH2)5CO-]_n",
+    "note": "Nylon-6"
+   },
+   {
+    "eq": "C6H10=NOH ->[H2SO4] C6H11NO",
+    "note": "Beckmann rearrangement to caprolactam (schematic)"
+   }
+  ],
+  "jeeTips": "Nylon-6 has one repeating unit with 6 C; caprolactam comes from cyclohexanone oxime via Beckmann rearrangement. Do not mistake the monomer for hexamethylenediamine.",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "nylon-6",
+   "caprolactam"
+  ]
+ },
+ {
+  "id": "terylene-dacron",
+  "name": "Terylene / Dacron (Polyethylene Terephthalate)",
+  "aliases": [
+   "PET",
+   "Polyester fibre",
+   "Dacron"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nHOCH2CH2OH + nHOOC-C6H4-COOH",
+  "reagents": "Ethylene glycol + terephthalic acid",
+  "conditions": "420-460 K, Zn(OAc)2 / Sb2O3 catalyst",
+  "products": "[-OCH2CH2-O-CO-C6H4-CO-]_n + 2nH2O",
+  "catalyst": "Zn(OAc)2 / Sb2O3",
+  "reagentKeywords": [
+   "ethylene glycol",
+   "terephthalic acid",
+   "polyester",
+   "PET",
+   "Dacron",
+   "condensation"
+  ],
+  "productName": "Terylene (Dacron, polyester)",
+  "summary": "Condensation of ethylene glycol with terephthalic acid (or its dimethyl ester) at 420-460 K in the presence of Zn(OAc)2-Sb2O3 gives terylene, a polyester.",
+  "mechanism": "Esterification: $\\ce{-OH + HOOC- -> -O-CO- + H2O}$ repeated at both ends to give the polyester chain.",
+  "keyPoints": [
+   "Polyester: ester linkages",
+   "Condensation polymer",
+   "Uses: wash-and-wear fabrics, ropes, PET bottles",
+   "Monomers: HOCH2CH2OH and 1,4-benzenedicarboxylic acid"
+  ],
+  "whenUsed": "Synthetic fibres (polyester) and PET bottles.",
+  "applications": [
+   "Textiles, PET bottles",
+   "Films, ropes"
+  ],
+  "examples": [
+   {
+    "eq": "nHOCH2CH2OH + nHOOC-C6H4-COOH -> [-OCH2CH2OCO-C6H4-CO-]_n + 2nH2O",
+    "note": "Terylene"
+   },
+   {
+    "eq": "nHOCH2CH2OH + nCH3OOC-C6H4-COOCH3 -> \\text{Terylene} + 2nCH3OH",
+    "note": "Via dimethyl terephthalate"
+   }
+  ],
+  "jeeTips": "Terylene: ethylene glycol + terephthalic acid. Glyptal: ethylene glycol + phthalic acid. Do not confuse the two (para vs ortho acid).",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "polyester",
+   "condensation"
+  ]
+ },
+ {
+  "id": "bakelite",
+  "name": "Bakelite (Phenol-Formaldehyde Resin)",
+  "aliases": [
+   "Phenol-formaldehyde polymer",
+   "Novolac",
+   "PF resin"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nC6H5OH + nHCHO",
+  "reagents": "HCHO; acid (novolac) or base (resol)",
+  "conditions": "Heat; then more HCHO for cross-linking",
+  "products": "Bakelite (cross-linked network) + H2O",
+  "catalyst": "H+ or OH-",
+  "reagentKeywords": [
+   "phenol",
+   "formaldehyde",
+   "HCHO",
+   "novolac",
+   "cross-linked",
+   "thermosetting",
+   "bakelite"
+  ],
+  "productName": "Bakelite",
+  "summary": "Phenol condenses with formaldehyde in acidic or basic medium: o- and p-hydroxymethylphenols form first and then condense into linear novolac; heating with extra HCHO gives cross-linked, hard, infusible Bakelite.",
+  "mechanism": "Electrophilic aromatic substitution at o/p positions gives $\\ce{o-HOCH2-C6H4-OH}$, then condensation by loss of water forms $\\ce{-CH2-}$ bridges between rings.",
+  "keyPoints": [
+   "Thermosetting polymer, hard and infusible",
+   "Linear novolac is the first stage (acid medium)",
+   "Condensation polymer, cross-linked, three-dimensional",
+   "Uses: electrical switches, handles of utensils, combs"
+  ],
+  "whenUsed": "Plastics for electrical fittings, handles.",
+  "applications": [
+   "Electrical switches",
+   "Handles"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5OH + HCHO -> o-HOCH2-C6H4-OH + p-HOCH2-C6H4-OH",
+    "note": "Hydroxymethylphenols"
+   },
+   {
+    "eq": "nC6H5OH + nHCHO -> [-C6H3(OH)-CH2-]_n + nH2O",
+    "note": "Novolac / Bakelite (schematic)"
+   }
+  ],
+  "jeeTips": "Bakelite is thermosetting; polythene is thermoplastic. Novolac is formed by acid and phenol in excess; cross-linked via -CH2- bridges after heating with HCHO or hexamine.",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "thermosetting",
+   "phenol"
+  ]
+ },
+ {
+  "id": "melamine-formaldehyde",
+  "name": "Melamine-Formaldehyde Polymer",
+  "aliases": [
+   "Melamine resin",
+   "Melmac"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nC3H6N6 + 3nHCHO",
+  "reagents": "Melamine + HCHO",
+  "conditions": "Heat, condensation",
+  "products": "[-NH-C3N3(NH-)-NH-CH2-]_n + nH2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "melamine",
+   "formaldehyde",
+   "HCHO",
+   "crockery",
+   "condensation",
+   "thermosetting"
+  ],
+  "productName": "Melamine-formaldehyde resin",
+  "summary": "Melamine (1,3,5-triazine-2,4,6-triamine) condenses with formaldehyde via -NH2 and HCHO to give a cross-linked thermosetting polymer with -CH2-NH- linkages.",
+  "mechanism": "$\\ce{-NH2 + HCHO -> -NH-CH2OH}$, followed by condensation: $\\ce{-NH-CH2OH + H2N- -> -NH-CH2-NH- + H2O}$.",
+  "keyPoints": [
+   "Condensation, thermosetting, cross-linked",
+   "Monomers: melamine and formaldehyde",
+   "Unbreakable crockery, laminates",
+   "Heat resistant, hard"
+  ],
+  "whenUsed": "Unbreakable crockery, laminated sheets, fire-resistant materials.",
+  "applications": [
+   "Crockery",
+   "Laminates"
+  ],
+  "examples": [
+   {
+    "eq": "C3N3(NH2)3 + 3HCHO -> C3N3(NHCH2OH)3",
+    "note": "Hydroxymethylmelamine"
+   },
+   {
+    "eq": "nC3N3(NH2)3 + 3nHCHO -> \\text{cross-linked resin} + nH2O",
+    "note": "Polymer (schematic)"
+   }
+  ],
+  "jeeTips": "Melamine-formaldehyde: crockery, thermosetting. Do not confuse with urea-formaldehyde. Melamine has 3 -NH2 on a triazine ring (C3N3).",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "melamine",
+   "thermosetting"
+  ]
+ },
+ {
+  "id": "buna-s",
+  "name": "Buna-S (SBR)",
+  "aliases": [
+   "Styrene-butadiene rubber",
+   "GR-S"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nCH2=CH-CH=CH2 + nC6H5CH=CH2",
+  "reagents": "1,3-Butadiene + styrene, Na catalyst",
+  "conditions": "Emulsion polymerisation, 5 °C",
+  "products": "[-CH2-CH=CH-CH2-CH(C6H5)-CH2-]_n",
+  "catalyst": "Na (hence Bu-na) / peroxide",
+  "reagentKeywords": [
+   "butadiene",
+   "styrene",
+   "sodium",
+   "copolymer",
+   "SBR",
+   "Na catalyst"
+  ],
+  "productName": "Buna-S (styrene-butadiene rubber)",
+  "summary": "Buna-S is a copolymer of 1,3-butadiene (75%) and styrene (25%) formed by addition polymerisation in the presence of sodium (Bu = butadiene, na = sodium, S = styrene).",
+  "mechanism": "Free-radical copolymerisation: the radical adds across the diene (1,4 addition) and styrene to form a random copolymer.",
+  "keyPoints": [
+   "Copolymer: butadiene + styrene",
+   "Used for tyres, footwear soles",
+   "Buna = butadiene + sodium; S = styrene",
+   "Synthetic rubber, addition (chain-growth) polymer"
+  ],
+  "whenUsed": "Automobile tyres and floor tiles.",
+  "applications": [
+   "Tyres",
+   "Footwear soles"
+  ],
+  "examples": [
+   {
+    "eq": "nCH2=CH-CH=CH2 + nC6H5CH=CH2 -> [-CH2-CH=CH-CH2-CH(C6H5)-CH2-]_n",
+    "note": "Buna-S"
+   },
+   {
+    "eq": "nCH2=CH-CH=CH2 ->[Na] [-CH2-CH=CH-CH2-]_n",
+    "note": "Polybutadiene (Buna)"
+   }
+  ],
+  "jeeTips": "Buna-S is a copolymer made from butadiene and styrene (addition polymer). Buna-N has acrylonitrile instead of styrene.",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "rubber",
+   "copolymer"
+  ]
+ },
+ {
+  "id": "buna-n",
+  "name": "Buna-N (Nitrile Rubber)",
+  "aliases": [
+   "NBR",
+   "Nitrile rubber",
+   "GR-A"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nCH2=CH-CH=CH2 + nCH2=CH-CN",
+  "reagents": "1,3-Butadiene + acrylonitrile, peroxide",
+  "conditions": "Emulsion polymerisation",
+  "products": "[-CH2-CH=CH-CH2-CH(CN)-CH2-]_n",
+  "catalyst": "Peroxide",
+  "reagentKeywords": [
+   "butadiene",
+   "acrylonitrile",
+   "vinyl cyanide",
+   "peroxide",
+   "copolymer",
+   "NBR"
+  ],
+  "productName": "Buna-N (nitrile rubber)",
+  "summary": "Buna-N is a copolymer of 1,3-butadiene and acrylonitrile (CH2=CHCN) formed in the presence of peroxide catalyst. It is resistant to oils and solvents.",
+  "mechanism": "Free-radical copolymerisation of the diene and vinyl cyanide gives alternating or random units.",
+  "keyPoints": [
+   "Copolymer of butadiene and acrylonitrile",
+   "Resistant to petrol, oils and organic solvents",
+   "Used for oil seals, tank linings, hoses",
+   "Addition polymer"
+  ],
+  "whenUsed": "Oil seals, gaskets, tank linings.",
+  "applications": [
+   "Oil seals",
+   "Hoses"
+  ],
+  "examples": [
+   {
+    "eq": "nCH2=CH-CH=CH2 + nCH2=CH-CN -> [-CH2-CH=CH-CH2-CH2-CH(CN)-]_n",
+    "note": "Buna-N"
+   },
+   {
+    "eq": "CH2=CH-CN \\text{(acrylonitrile)} ->[\\text{peroxide}] [-CH2-CH(CN)-]_n",
+    "note": "Polyacrylonitrile (Orlon)"
+   }
+  ],
+  "jeeTips": "Buna-S (styrene) vs Buna-N (acrylonitrile). Both are copolymers of 1,3-butadiene. Buna-N is oil resistant.",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "rubber",
+   "copolymer"
+  ]
+ },
+ {
+  "id": "neoprene",
+  "name": "Neoprene (Polychloroprene)",
+  "aliases": [
+   "Polychloroprene",
+   "Synthetic rubber"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nCH2=C(Cl)-CH=CH2",
+  "reagents": "Free-radical initiator (peroxide)",
+  "conditions": "Emulsion polymerisation",
+  "products": "[-CH2-C(Cl)=CH-CH2-]_n",
+  "catalyst": "Peroxide",
+  "reagentKeywords": [
+   "chloroprene",
+   "2-chlorobuta-1,3-diene",
+   "peroxide",
+   "synthetic rubber"
+  ],
+  "productName": "Neoprene (polychloroprene)",
+  "summary": "Neoprene is formed by free-radical polymerisation of chloroprene (2-chlorobuta-1,3-diene). It is a synthetic rubber resistant to oils, vegetable and mineral oils, and light.",
+  "mechanism": "Radical addition occurs mainly in 1,4 fashion leaving a C=C in the chain: $\\ce{nCH2=C(Cl)-CH=CH2 -> [-CH2-C(Cl)=CH-CH2-]_n}$.",
+  "keyPoints": [
+   "Monomer: chloroprene (2-chlorobuta-1,3-diene)",
+   "Addition polymer, homopolymer",
+   "Better resistance to oils and heat than natural rubber",
+   "Used for conveyor belts, gaskets, hoses, wet suits"
+  ],
+  "whenUsed": "Conveyor belts, gaskets, hoses.",
+  "applications": [
+   "Hoses",
+   "Gaskets"
+  ],
+  "examples": [
+   {
+    "eq": "nCH2=C(Cl)-CH=CH2 -> [-CH2-C(Cl)=CH-CH2-]_n",
+    "note": "Neoprene"
+   },
+   {
+    "eq": "nCH2=C(CH3)-CH=CH2 -> [-CH2-C(CH3)=CH-CH2-]_n",
+    "note": "Polyisoprene (natural rubber analogue)"
+   }
+  ],
+  "jeeTips": "Neoprene: chloroprene, a Cl analogue of isoprene (natural rubber is 2-methylbuta-1,3-diene).",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "rubber",
+   "chloroprene"
+  ]
+ },
+ {
+  "id": "vulcanisation-of-rubber",
+  "name": "Vulcanisation of Rubber",
+  "aliases": [
+   "Sulphur cross-linking of rubber",
+   "Goodyear process"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Natural rubber (polyisoprene) + S8",
+  "reagents": "Sulphur (S8), accelerator (ZnO)",
+  "conditions": "373-415 K",
+  "products": "Cross-linked rubber (S-S / C-S bridges)",
+  "catalyst": "S8 / ZnO accelerator",
+  "reagentKeywords": [
+   "sulphur",
+   "S8",
+   "373-415 K",
+   "cross-links",
+   "ZnO",
+   "Goodyear",
+   "heat"
+  ],
+  "productName": "Vulcanised rubber",
+  "summary": "Natural rubber is heated with sulphur (3-5%) and an additive such as ZnO at 373-415 K. Sulphur forms cross-links between chains at the double bonds / adjacent allylic C, increasing hardness, elasticity and strength.",
+  "mechanism": "Sulphur adds at the allylic positions of the polyisoprene chain and forms S-S bridges between chains.",
+  "keyPoints": [
+   "Raw rubber is soft, sticky, weak",
+   "Sulphur cross-links bridge the polymer chains",
+   "3-5% sulphur gives tyre rubber; about 30% gives ebonite (hard)",
+   "Improves elasticity, tensile strength, resistance to abrasion"
+  ],
+  "whenUsed": "Manufacture of tyres and hoses.",
+  "applications": [
+   "Tyres",
+   "Hoses",
+   "Ebonite (30% S)"
+  ],
+  "examples": [
+   {
+    "eq": "[-CH2-C(CH3)=CH-CH2-]_n + S8 ->[373-415 K] \\text{cross-linked rubber}",
+    "note": "Vulcanised rubber"
+   },
+   {
+    "eq": "\\text{Rubber} + 30\\%\\ S -> \\text{ebonite}",
+    "note": "Hard rubber"
+   }
+  ],
+  "jeeTips": "Natural rubber is cis-1,4-polyisoprene; vulcanisation introduces S cross-links; Gutta-percha is the trans isomer.",
+  "reference": "",
+  "tags": [
+   "rubber",
+   "vulcanisation",
+   "sulphur"
+  ]
+ },
+ {
+  "id": "teflon",
+  "name": "Teflon (PTFE)",
+  "aliases": [
+   "Polytetrafluoroethene",
+   "PTFE"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "nCF2=CF2",
+  "reagents": "Persulphate catalyst",
+  "conditions": "High pressure",
+  "products": "[-CF2-CF2-]_n",
+  "catalyst": "(NH4)2S2O8 / persulphate",
+  "reagentKeywords": [
+   "tetrafluoroethene",
+   "persulphate",
+   "high pressure",
+   "PTFE",
+   "free radical"
+  ],
+  "productName": "Teflon (polytetrafluoroethene)",
+  "summary": "Free-radical polymerisation of tetrafluoroethene (TFE) with a persulphate catalyst at high pressure gives Teflon (PTFE), which is chemically inert and heat resistant.",
+  "mechanism": "Free-radical chain addition: $\\ce{nCF2=CF2 -> [-CF2-CF2-]_n}$.",
+  "keyPoints": [
+   "Monomer: tetrafluoroethene (CF2=CF2)",
+   "Strong C-F bond, very inert; resists heat and chemicals",
+   "Non-stick cookware, gaskets, oil seals",
+   "Addition polymer"
+  ],
+  "whenUsed": "Non-stick cookware, insulation, seals.",
+  "applications": [
+   "Non-stick pans",
+   "Gaskets"
+  ],
+  "examples": [
+   {
+    "eq": "nCF2=CF2 ->[\\text{persulphate, high P}] [-CF2-CF2-]_n",
+    "note": "Teflon"
+   },
+   {
+    "eq": "CHClF2 ->[\\Delta, 870 K] CF2=CF2 + HCl",
+    "note": "Monomer by pyrolysis (via CHClF2)"
+   }
+  ],
+  "jeeTips": "Monomer for Teflon is CF2=CF2. Do not confuse with PVC (CH2=CHCl) or Freons.",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "Teflon",
+   "fluorine"
+  ]
+ },
+ {
+  "id": "pvc",
+  "name": "PVC (Polyvinyl Chloride)",
+  "aliases": [
+   "Polyvinyl chloride",
+   "Poly(chloroethene)"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "nCH2=CHCl",
+  "reagents": "Peroxide / free-radical initiator",
+  "conditions": "Heat, pressure",
+  "products": "[-CH2-CHCl-]_n",
+  "catalyst": "Peroxide",
+  "reagentKeywords": [
+   "vinyl chloride",
+   "chloroethene",
+   "peroxide",
+   "free radical",
+   "PVC"
+  ],
+  "productName": "Polyvinyl chloride",
+  "summary": "Vinyl chloride (chloroethene) undergoes free-radical addition polymerisation to PVC, a rigid thermoplastic widely used in pipes, cable insulation and flooring.",
+  "mechanism": "Free-radical chain: $\\ce{nCH2=CHCl -> [-CH2-CHCl-]_n}$.",
+  "keyPoints": [
+   "Monomer: vinyl chloride (CH2=CHCl)",
+   "Addition polymer, thermoplastic",
+   "Plasticisers make it flexible",
+   "Uses: pipes, raincoats, hose, electrical insulation"
+  ],
+  "whenUsed": "Pipes, flooring, cable insulation, raincoats.",
+  "applications": [
+   "Pipes",
+   "Wire insulation"
+  ],
+  "examples": [
+   {
+    "eq": "nCH2=CHCl ->[\\text{peroxide}] [-CH2-CHCl-]_n",
+    "note": "PVC"
+   },
+   {
+    "eq": "HC#CH + HCl ->[HgCl2] CH2=CHCl",
+    "note": "Monomer from ethyne"
+   }
+  ],
+  "jeeTips": "Do not confuse PVC (vinyl chloride) with PVA or PAN (acrylonitrile). PVC is thermoplastic, addition polymer.",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "PVC",
+   "addition"
+  ]
+ },
+ {
+  "id": "glyptal",
+  "name": "Glyptal (Alkyd Resin)",
+  "aliases": [
+   "Glycerol phthalate polymer",
+   "Alkyd resin"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "nHOCH2CH2OH + nC6H4(COOH)2",
+  "reagents": "Ethylene glycol + phthalic acid",
+  "conditions": "Heat, condensation",
+  "products": "[-OCH2CH2-O-CO-C6H4-CO-]_n + 2nH2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "ethylene glycol",
+   "phthalic acid",
+   "polyester",
+   "glyptal",
+   "paints",
+   "lacquers"
+  ],
+  "productName": "Glyptal (polyester)",
+  "summary": "Glyptal is a polyester obtained by condensation of ethylene glycol with phthalic acid (benzene-1,2-dicarboxylic acid). It is used in paints and lacquers.",
+  "mechanism": "Step-growth esterification between -OH and -COOH, eliminating water.",
+  "keyPoints": [
+   "Monomers: ethylene glycol and phthalic acid",
+   "Condensation polymer, polyester, with ortho acid",
+   "Used in paints and lacquers",
+   "Compare Terylene: terephthalic (para) acid"
+  ],
+  "whenUsed": "Paints, lacquers and coatings.",
+  "applications": [
+   "Paints",
+   "Lacquers"
+  ],
+  "examples": [
+   {
+    "eq": "nHOCH2CH2OH + nC6H4(COOH)2 -> [-OCH2CH2OCO-C6H4-CO-]_n + 2nH2O",
+    "note": "Glyptal"
+   },
+   {
+    "eq": "C6H4(COOH)2 ->[\\Delta] C6H4(CO)2O + H2O",
+    "note": "Phthalic anhydride from phthalic acid"
+   }
+  ],
+  "jeeTips": "Glyptal: phthalic acid (ortho) + ethylene glycol; Terylene: terephthalic acid (para) + ethylene glycol. With glycerol, cross-linked alkyd resin results.",
+  "reference": "",
+  "tags": [
+   "polymer",
+   "polyester",
+   "glyptal"
+  ]
+ }
+]

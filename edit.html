@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#d8ddd4">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>Edit &amp; Upload — ReactionLab</title>
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+  <script defer src="assets/vendor/katex/katex.min.js"></script>
+  <script defer src="assets/vendor/katex/mhchem.min.js"></script>
+  <script defer src="assets/vendor/fuse.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="data/reactions.js"></script>
+  <script defer src="assets/js/core.js"></script>
+  <script defer src="assets/js/edit.js"></script>
+</head>
+<body>
+  <div class="app">
+    <main class="main">
+      <div id="topbar"></div>
+      <section class="panel soft" style="padding:16px 20px">
+        <div class="tabs" id="tabs" style="max-width:100%">
+          <button class="tab active" data-tab="manage">Manage bank</button>
+          <button class="tab" data-tab="add">Add / edit reaction</button>
+          <button class="tab" data-tab="import">Import (LLM / JSON)</button>
+          <button class="tab" data-tab="data">Saved data</button>
+        </div>
+      </section>
+
+      <!-- MANAGE -->
+      <section class="panel" data-pane="manage">
+        <div class="panel-head">
+          <h2>Manage bank</h2>
+          <label class="search-box"><span class="sicon" style="width:20px;display:grid"></span><input id="mq" type="search" placeholder="Filter reactions…"></label>
+        </div>
+        <div class="chips" id="statusChips" style="margin-bottom:16px"></div>
+        <p class="small muted" style="margin-top:0"><b>Archive</b> = hidden from practice &amp; quizzes but still listed (dimmed) in the bank. <b>Blacklist</b> = hidden everywhere except here.</p>
+        <div class="rows" id="manageList"></div>
+      </section>
+
+      <!-- ADD / EDIT -->
+      <section class="panel hidden" data-pane="add">
+        <div class="panel-head"><h2 id="formTitle">Add a new reaction</h2><button class="btn sm" id="resetForm">Clear form</button></div>
+        <div class="grid split-2" id="addGrid">
+          <form id="rForm" class="grid" style="gap:14px" autocomplete="off">
+            <div class="grid form-2" style="gap:14px">
+              <div class="field" style="grid-column:span 2"><label>Name *</label><input class="input" name="name" required placeholder="e.g. Reimer–Tiemann reaction"></div>
+              <div class="field"><label>Category *</label><select class="select" name="category"></select></div>
+              <div class="field"><label>Type</label><select class="select" name="kind"></select></div>
+              <div class="field"><label>Exam</label><select class="select" name="exam"><option value="JEE Main,JEE Advanced">Main + Advanced</option><option value="JEE Main">Main only</option><option value="JEE Advanced">Advanced only</option></select></div>
+              <div class="field"><label>Difficulty</label><select class="select" name="difficulty"><option>easy</option><option selected>medium</option><option>hard</option></select></div>
+            </div>
+            <div class="field"><label>Aliases <span class="muted">(separate with ;)</span></label><input class="input" name="aliases" placeholder="Reimer Tiemann; Reimer-Tiemann formylation"></div>
+            <div class="card" style="background:var(--panel);border:0;display:grid;gap:12px">
+              <div class="small muted">Equation — <a href="https://mhchem.github.io/MathJax-mhchem/" target="_blank" rel="noopener" style="text-decoration:underline">mhchem syntax</a>, e.g. <code>C6H5OH</code>, <code>Ar-N2+ Cl-</code>, <code>CH2=CH2</code>, <code>\Delta</code></div>
+              <div class="grid form-2" style="gap:12px">
+                <div class="field"><label>Reactants *</label><input class="input mono" name="reactants" required placeholder="C6H5OH + CHCl3"></div>
+                <div class="field"><label>Products *</label><input class="input mono" name="products" required placeholder="o-HOC6H4CHO"></div>
+                <div class="field"><label>Reagents (above arrow)</label><input class="input mono" name="reagents" placeholder="aq. NaOH"></div>
+                <div class="field"><label>Conditions (below arrow)</label><input class="input mono" name="conditions" placeholder="340 K, then H3O+"></div>
+              </div>
+            </div>
+            <div class="grid form-2" style="gap:14px">
+              <div class="field"><label>Catalyst</label><input class="input" name="catalyst"></div>
+              <div class="field"><label>Main product name</label><input class="input" name="productName" placeholder="Salicylaldehyde"></div>
+            </div>
+            <div class="field"><label>Reagent keywords for scoring <span class="muted">(;)</span></label><input class="input" name="reagentKeywords" placeholder="CHCl3; NaOH; chloroform"></div>
+            <div class="field"><label>Summary *</label><textarea class="textarea" name="summary" required style="min-height:64px"></textarea></div>
+            <div class="field"><label>Mechanism</label><textarea class="textarea" name="mechanism"></textarea></div>
+            <div class="field"><label>Key points <span class="muted">(one per line; inline chem as $\ce{...}$)</span></label><textarea class="textarea" name="keyPoints"></textarea></div>
+            <div class="field"><label>When &amp; where used</label><textarea class="textarea" name="whenUsed" style="min-height:64px"></textarea></div>
+            <div class="field"><label>Applications <span class="muted">(one per line)</span></label><textarea class="textarea" name="applications" style="min-height:64px"></textarea></div>
+            <div class="field"><label>Examples <span class="muted">(one per line: <code>equation || note</code>)</span></label><textarea class="textarea mono" name="examples" placeholder="CH3CHO ->[NaOH] CH3CH(OH)CH2CHO || aldol"></textarea></div>
+            <div class="field"><label>JEE tips</label><textarea class="textarea" name="jeeTips" style="min-height:64px"></textarea></div>
+            <div class="grid form-2" style="gap:14px">
+              <div class="field"><label>Tags <span class="muted">(;)</span></label><input class="input" name="tags"></div>
+              <div class="field"><label>Reference URL</label><input class="input" name="reference" type="url"></div>
+            </div>
+            <div class="field"><label>Image <span class="muted">(optional — URL, or upload; stored in your browser)</span></label>
+              <div style="display:flex;gap:8px"><input class="input" name="image" placeholder="https://… or upload →"><label class="btn" style="flex:none"><span id="upIcon" style="display:grid"></span> Upload<input type="file" accept="image/*" id="imgFile" hidden></label></div></div>
+            <div class="chips"><button class="btn dark" type="submit" id="saveBtn">Save reaction</button><button class="btn" type="button" id="cancelEdit" hidden>Cancel edit</button></div>
+          </form>
+          <div style="position:sticky;top:16px">
+            <div class="small muted" style="margin-bottom:8px">Live preview</div>
+            <div class="equation-box" id="pvEq" style="margin-bottom:14px"></div>
+            <div id="pvCard"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPORT -->
+      <section class="panel hidden" data-pane="import">
+        <div class="panel-head"><h2>Import reactions</h2></div>
+        <div class="grid split-2" id="impGrid">
+          <div class="note-card lav" style="min-height:0">
+            <h3>Step 1 · Convert your material with any LLM</h3>
+            <p style="margin:0;opacity:.9">Have a photo of notes, a PDF page or a list of reactions? Copy this prompt into ChatGPT, Claude, Gemini etc., attach your image/text, and it will return JSON in exactly the format this site needs.</p>
+            <textarea class="textarea mono" id="llmPrompt" readonly style="min-height:240px;background:rgba(255,255,255,.95);color:#222;margin-top:6px"></textarea>
+            <div class="chips"><button class="btn" id="copyPrompt"></button><button class="btn" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.5)" id="dlTemplate">Download empty template</button></div>
+          </div>
+          <div class="card">
+            <h3>Step 2 · Paste or upload the JSON</h3>
+            <p class="small muted">Accepts a JSON array of reactions, a single object, or text containing a <code>```json</code> block (the LLM's full reply works).</p>
+            <textarea class="textarea mono" id="impText" style="min-height:220px" placeholder='[{ "name": "...", "reactants": "...", ... }]'></textarea>
+            <div class="chips" style="margin-top:12px">
+              <button class="btn dark" id="parseBtn">Validate &amp; preview</button>
+              <label class="btn"><span id="upIcon2" style="display:grid"></span> Upload .json<input type="file" accept=".json,application/json,.txt" id="impFile" hidden></label>
+            </div>
+            <div id="impPreview" style="margin-top:16px"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SAVED DATA -->
+      <section class="panel hidden" data-pane="data">
+        <div class="panel-head"><h2>Saved data</h2><span class="pill gray" id="storeKind"></span></div>
+        <p class="muted" style="margin-top:-8px">All your progress, custom reactions, edits, archive &amp; blacklist live in this browser's local storage. Export a backup to move between devices or browsers. (Cloud sync with sign-in is planned.)</p>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin:18px 0" id="dataStats"></div>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+          <div class="note-card green"><h3>Export backup</h3><p style="margin:0">Download everything as one <code>.json</code> file.</p>
+            <div class="chips" style="margin-top:auto"><button class="btn dark" id="expAll"></button><button class="btn" id="expCustom">Custom reactions only</button></div></div>
+          <div class="note-card white"><h3>Import backup</h3><p style="margin:0">Restore a backup file. <b>Merge</b> keeps current data; <b>Replace</b> overwrites it.</p>
+            <div class="chips" style="margin-top:auto">
+              <label class="btn dark">Merge file…<input type="file" accept=".json" id="impMerge" hidden></label>
+              <label class="btn">Replace with file…<input type="file" accept=".json" id="impReplace" hidden></label></div></div>
+          <div class="note-card" style="background:var(--red-soft);color:#4a120c"><h3>Danger zone</h3><p style="margin:0">Delete saved data from this browser. Export first if you might need it.</p>
+            <div class="chips" style="margin-top:auto">
+              <button class="btn" id="clrAttempts">Clear practice history</button>
+              <button class="btn" id="clrLists">Reset archive/blacklist</button>
+              <button class="btn" style="background:#a3261a;color:#fff;border-color:#a3261a" id="clrAll">Delete ALL local data</button></div></div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

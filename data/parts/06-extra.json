@@ -1,0 +1,1725 @@
+[
+ {
+  "id": "frankland-reaction",
+  "name": "Frankland Reaction",
+  "aliases": [
+   "Frankland synthesis",
+   "Alkyl halide with zinc",
+   "Dialkylzinc formation"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "2 C2H5I",
+  "reagents": "Zn",
+  "conditions": "dry ether / heat",
+  "products": "(C2H5)2Zn + ZnI2",
+  "catalyst": "Zinc metal",
+  "reagentKeywords": [
+   "Zn",
+   "zinc",
+   "dry ether",
+   "zinc dust"
+  ],
+  "productName": "Diethylzinc (organozinc); alkane R-R with excess halide/heat",
+  "summary": "Alkyl iodides react with zinc to give dialkylzinc compounds, the first organometallics discovered; with heating or excess halide they can give alkanes R-R (Wurtz-like).",
+  "mechanism": "Zinc inserts into the C-I bond to give RZnI, which disproportionates to R2Zn and ZnI2. R2Zn is a weak carbanion source and can couple with R-X to give R-R.",
+  "keyPoints": [
+   "Zn is less reactive than Mg: R2Zn is less basic than Grignard reagents",
+   "Dry conditions needed as R2Zn is spontaneously flammable in air and destroyed by water"
+  ],
+  "whenUsed": "Historic route to organometallics; precursor of Reformatsky-type reagents",
+  "applications": [
+   "Dialkylzincs as mild alkylating agents",
+   "Historical discovery of valence concept (Frankland)"
+  ],
+  "examples": [
+   {
+    "eq": "2 C2H5I + 2 Zn ->[\\text{dry ether}][\\Delta] C2H5ZnI + ZnI2 + C4H10",
+    "note": "Zinc-mediated coupling gives butane in part"
+   },
+   {
+    "eq": "2 C2H5ZnI ->[\\Delta] (C2H5)2Zn + ZnI2",
+    "note": "Disproportionation to diethylzinc"
+   },
+   {
+    "eq": "(C2H5)2Zn + 2 H2O -> 2 C2H6 + Zn(OH)2",
+    "note": "Water destroys dialkylzinc"
+   }
+  ],
+  "jeeTips": "Compare with Wurtz (Na, gives only R-R) and Corey-House. Dialkylzinc reacts with acid chlorides to give ketones. Do not confuse with Reformatsky (alpha-bromo ester + Zn).",
+  "reference": "",
+  "tags": [
+   "organozinc",
+   "C-C bond formation",
+   "alkanes"
+  ]
+ },
+ {
+  "id": "isomerisation-of-alkanes",
+  "name": "Isomerisation of Alkanes",
+  "aliases": [
+   "Isomerization of alkanes",
+   "n-Butane to isobutane",
+   "Hydroisomerisation"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "n-C4H10",
+  "reagents": "anhyd. AlCl3 / HCl",
+  "conditions": "200 K-300 K (low temperature)",
+  "products": "(CH3)3CH",
+  "catalyst": "Anhydrous AlCl3 + HCl",
+  "reagentKeywords": [
+   "AlCl3",
+   "HCl",
+   "anhydrous aluminium chloride",
+   "isomerisation",
+   "isomerization",
+   "Pt"
+  ],
+  "productName": "Isobutane (2-methylpropane)",
+  "summary": "Straight-chain alkanes rearrange to branched isomers in presence of anhydrous AlCl3 and HCl; branched alkanes have higher octane number.",
+  "mechanism": "AlCl3/HCl generates a carbocation by hydride abstraction. The carbocation undergoes 1,2-hydride and 1,2-methyl shifts to a more stable branched cation, which abstracts hydride from another alkane to give the isomer (chain process).",
+  "keyPoints": [
+   "Proceeds through carbocation intermediates via H- and CH3- shifts",
+   "Equilibrium favours more branched/stable isomer at low temperature"
+  ],
+  "whenUsed": "Petroleum refining to raise octane rating; industrial alkylation feed",
+  "applications": [
+   "Isobutane for alkylate gasoline",
+   "Production of branched hydrocarbons"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2CH2CH3 ->[AlCl3, HCl] (CH3)2CHCH3",
+    "note": "n-Butane to isobutane"
+   },
+   {
+    "eq": "CH3(CH2)4CH3 ->[AlCl3, HCl] (CH3)2CHCH2CH2CH3 + CH3CH2CH(CH3)CH2CH3",
+    "note": "n-Hexane to branched isomers"
+   },
+   {
+    "eq": "CH3(CH2)3CH3 ->[AlCl3, HCl] (CH3)2CHCH2CH3",
+    "note": "n-Pentane to isopentane"
+   }
+  ],
+  "jeeTips": "Reagent is anhydrous AlCl3 with HCl, not Friedel-Crafts. Industrial refinery version uses Pt/Al2O3 (reforming). Expect 'which alkane isomerises' - n-alkane gives its branched isomer.",
+  "reference": "",
+  "tags": [
+   "isomerisation",
+   "carbocation",
+   "petroleum"
+  ]
+ },
+ {
+  "id": "aromatisation-of-n-hexane",
+  "name": "Aromatisation of n-Hexane",
+  "aliases": [
+   "Hydroforming",
+   "Dehydrocyclisation",
+   "Catalytic reforming of alkanes"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "n-C6H14",
+  "reagents": "Cr2O3 / Al2O3",
+  "conditions": "773 K, 10-20 atm",
+  "products": "C6H6 + 4 H2",
+  "catalyst": "Cr2O3-Al2O3 (or V2O5 / Mo2O3)",
+  "reagentKeywords": [
+   "Cr2O3",
+   "Al2O3",
+   "773 K",
+   "dehydrogenation",
+   "cyclisation",
+   "aromatization",
+   "aromatisation"
+  ],
+  "productName": "Benzene",
+  "summary": "Alkanes with six or more carbons undergo dehydrogenation and cyclisation over metal oxide catalyst at high temperature and pressure to give arenes.",
+  "mechanism": "Adsorbed hexane is dehydrogenated and ring-closes (dehydrocyclisation) to cyclohexane, which is further dehydrogenated to benzene with loss of hydrogen.",
+  "keyPoints": [
+   "n-Hexane gives benzene; n-heptane gives toluene; n-octane gives xylenes",
+   "Also called hydroforming; catalysts Cr2O3, V2O5, Mo2O3 on alumina"
+  ],
+  "whenUsed": "Industrial source of benzene, toluene, xylenes from petroleum",
+  "applications": [
+   "BTX production",
+   "Improving octane rating"
+  ],
+  "examples": [
+   {
+    "eq": "C6H14 ->[Cr2O3/Al2O3][773 K, 10-20 atm] C6H6 + 4 H2",
+    "note": "Benzene from n-hexane"
+   },
+   {
+    "eq": "CH3(CH2)5CH3 ->[Cr2O3/Al2O3][773 K] C6H5CH3 + 4 H2",
+    "note": "Toluene from n-heptane"
+   },
+   {
+    "eq": "CH3(CH2)6CH3 ->[Cr2O3/Al2O3][773 K] C6H4(CH3)2 + 4 H2",
+    "note": "Xylene from n-octane"
+   }
+  ],
+  "jeeTips": "Four H2 molecules are lost per ring formed (loss of 4 H2 for hexane: C6H14 to C6H6). Cr2O3-Al2O3 at 773 K is the key pairing to remember.",
+  "reference": "",
+  "tags": [
+   "aromatisation",
+   "industrial",
+   "petroleum"
+  ]
+ },
+ {
+  "id": "fischer-indole-synthesis",
+  "name": "Fischer Indole Synthesis",
+  "aliases": [
+   "Fischer indolisation"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H5NHN=C(CH3)2",
+  "reagents": "H+ (ZnCl2 / PPA / HCl)",
+  "conditions": "\\Delta",
+  "products": "2-Methylindole + NH3",
+  "catalyst": "Brønsted or Lewis acid",
+  "reagentKeywords": [
+   "ZnCl2",
+   "PPA",
+   "acid",
+   "heat",
+   "phenylhydrazone",
+   "HCl"
+  ],
+  "productName": "2-Methylindole",
+  "summary": "An aryl hydrazone of an aldehyde or ketone bearing alpha-H cyclises under acid to an indole with loss of NH3.",
+  "mechanism": "Hydrazone tautomerises to an ene-hydrazine, which undergoes [3,3]-sigmatropic rearrangement to give a C-C bond. Rearomatisation, cyclisation to an aminal and loss of NH3 give the indole.",
+  "keyPoints": [
+   "Needs alpha-CH2 on the carbonyl partner",
+   "Acetaldehyde does not work, so indole itself is made from pyruvic acid then decarboxylation",
+   "N from the aryl N-N is lost as NH3 (the NH attached to the ring's ortho carbon carries over)"
+  ],
+  "whenUsed": "Synthesis of indoles, tryptamines, triptan drugs",
+  "applications": [
+   "Indole derivatives",
+   "Tryptophan analogues",
+   "Indomethacin synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NHNH2 + CH3COCH3 -> C6H5NHN=C(CH3)2 + H2O",
+    "note": "Hydrazone formation"
+   },
+   {
+    "eq": "C6H5NHN=C(CH3)2 ->[ZnCl2][\\Delta] 2-Methylindole + NH3",
+    "note": "Cyclisation (indole N-H, methyl at C-2)"
+   },
+   {
+    "eq": "C6H5NHNH2 + cyclohexanone ->[H+] Tetrahydrocarbazole + NH3 + H2O",
+    "note": "Cyclic ketone gives tetrahydrocarbazole"
+   }
+  ],
+  "jeeTips": "Key step is [3,3] shift; ammonia is lost. Count ring atoms: indole = benzene fused with pyrrole.",
+  "reference": "",
+  "tags": [
+   "heterocycle",
+   "sigmatropic",
+   "hydrazone"
+  ]
+ },
+ {
+  "id": "gomberg-bachmann-reaction",
+  "name": "Gomberg-Bachmann Reaction",
+  "aliases": [
+   "Gomberg Bachmann biaryl synthesis"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H5N2+ Cl- + C6H6",
+  "reagents": "NaOH (aq)",
+  "conditions": "two-phase, base",
+  "products": "C6H5-C6H5 + N2 + NaCl + H2O",
+  "catalyst": "Base (generates aryl radical)",
+  "reagentKeywords": [
+   "NaOH",
+   "base",
+   "diazonium",
+   "arene",
+   "aryl radical"
+  ],
+  "productName": "Biphenyl",
+  "summary": "Aryl diazonium salt couples with an arene in presence of base to form a biaryl through aryl radicals.",
+  "mechanism": "Base converts the diazonium salt to a diazoanhydride, which homolyses to aryl radical + N2. The aryl radical adds to the arene, and loss of H gives biaryl.",
+  "keyPoints": [
+   "Radical mechanism; mixtures of o-, m-, p- isomers from substituted arenes",
+   "Yields low (below 40%) due to side reactions"
+  ],
+  "whenUsed": "Unsymmetrical biaryl synthesis",
+  "applications": [
+   "Biphenyls from anilines",
+   "Meerwein-type arylations"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N2+ Cl- + C6H6 ->[NaOH] C6H5-C6H5 + N2 + NaCl + H2O",
+    "note": "Biphenyl"
+   },
+   {
+    "eq": "4-CH3C6H4N2+ Cl- + C6H6 ->[NaOH] 4-CH3C6H4-C6H5 + N2 + NaCl + H2O",
+    "note": "4-Methylbiphenyl"
+   }
+  ],
+  "jeeTips": "Compare with Ullmann (Cu, ArI), Fittig (Na, ArX) and Wurtz-Fittig. Azo coupling does not occur here because base conditions generate radicals, not ArN2+ electrophile with activated arenes.",
+  "reference": "",
+  "tags": [
+   "radical",
+   "biaryl",
+   "diazonium"
+  ]
+ },
+ {
+  "id": "sharpless-epoxidation",
+  "name": "Sharpless Asymmetric Epoxidation",
+  "aliases": [
+   "Sharpless epoxidation",
+   "Asymmetric epoxidation of allylic alcohols"
+  ],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH2=CH-CH2OH",
+  "reagents": "Ti(OiPr)4, (+)- or (-)-DET, t-BuOOH",
+  "conditions": "CH2Cl2, -20 C, molecular sieves",
+  "products": "Chiral 2,3-epoxypropan-1-ol (glycidol)",
+  "catalyst": "Ti(OiPr)4 / diethyl tartrate",
+  "reagentKeywords": [
+   "Ti(OiPr)4",
+   "DET",
+   "tartrate",
+   "TBHP",
+   "t-BuOOH",
+   "titanium",
+   "asymmetric"
+  ],
+  "productName": "Enantioenriched epoxy alcohol",
+  "summary": "Allylic alcohols are converted to 2,3-epoxy alcohols with high enantioselectivity using titanium tetraisopropoxide, a chiral tartrate and tert-butyl hydroperoxide.",
+  "mechanism": "The allylic alcohol, tartrate and TBHP bind to titanium in a chiral complex; peroxide oxygen is delivered to one face of the C=C, giving the epoxide with predictable stereochemistry.",
+  "keyPoints": [
+   "Works only on allylic alcohols (OH needed for Ti binding)",
+   "Choice of (+)-DET or (-)-DET fixes which face is epoxidised",
+   "Syn-addition of O, retains alkene geometry"
+  ],
+  "whenUsed": "Asymmetric synthesis of chiral building blocks; Nobel 2001 (Sharpless)",
+  "applications": [
+   "Chiral epoxy alcohols",
+   "Synthesis of glycidol, natural products"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CHCH2OH + (CH3)3COOH ->[Ti(OiPr)4, (+)-DET] Epoxy alcohol (glycidol) + (CH3)3COH",
+    "note": "Glycidol, enantioenriched"
+   },
+   {
+    "eq": "(E)-CH3CH=CHCH2OH + (CH3)3COOH ->[Ti(OiPr)4, (-)-DET] trans-Epoxy alcohol + (CH3)3COH",
+    "note": "Geometry retained: trans stays trans"
+   }
+  ],
+  "jeeTips": "Differs from Prilezhaev (achiral, any alkene, peracid). Chirality induced by tartrate, oxidant is TBHP, not H2O2.",
+  "reference": "",
+  "tags": [
+   "asymmetric",
+   "epoxide",
+   "titanium"
+  ]
+ },
+ {
+  "id": "clauson-kaas-pyrrole-synthesis",
+  "name": "Clauson-Kaas Pyrrole Synthesis",
+  "aliases": [
+   "Clauson Kaas reaction",
+   "Paal-Knorr via 2,5-dimethoxytetrahydrofuran"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "2,5-(CH3O)2-C4H6O + RNH2",
+  "reagents": "AcOH",
+  "conditions": "\\Delta",
+  "products": "N-Substituted pyrrole + 2 CH3OH + H2O",
+  "catalyst": "Acid (acetic acid)",
+  "reagentKeywords": [
+   "acetic acid",
+   "AcOH",
+   "2,5-dimethoxytetrahydrofuran",
+   "amine",
+   "primary amine",
+   "heat"
+  ],
+  "productName": "N-Substituted pyrrole",
+  "summary": "A primary amine condenses with 2,5-dimethoxytetrahydrofuran in acid to give an N-substituted pyrrole.",
+  "mechanism": "Acid hydrolyses the acetal to succinaldehyde (butane-1,4-dial equivalent). The amine condenses twice with the two aldehyde groups, cyclisation and loss of water gives the aromatic pyrrole.",
+  "keyPoints": [
+   "The dialdehyde equivalent is cyclic acetal; amine must be primary",
+   "Related to Paal-Knorr (1,4-dicarbonyl + amine gives pyrrole)"
+  ],
+  "whenUsed": "Pyrrole N-aryl and N-alkyl derivatives",
+  "applications": [
+   "N-Aryl pyrrole synthesis",
+   "Heterocycle building"
+  ],
+  "examples": [
+   {
+    "eq": "2,5-Dimethoxytetrahydrofuran + C6H5NH2 ->[AcOH][\\Delta] N-Phenylpyrrole + 2 CH3OH + H2O",
+    "note": "N-Phenylpyrrole"
+   },
+   {
+    "eq": "OHC-CH2CH2-CHO + CH3NH2 ->[H+] N-Methylpyrrole + 2 H2O",
+    "note": "Paal-Knorr analogue"
+   }
+  ],
+  "jeeTips": "Remember pyrrole is aromatic (6 pi e-, N lone pair in sextet). Amine nitrogen becomes ring nitrogen.",
+  "reference": "",
+  "tags": [
+   "heterocycle",
+   "pyrrole",
+   "acetal"
+  ]
+ },
+ {
+  "id": "vilsmeier-haack-reaction",
+  "name": "Vilsmeier-Haack Reaction",
+  "aliases": [
+   "Vilsmeier reaction",
+   "Vilsmeier formylation"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5N(CH3)2",
+  "reagents": "POCl3, DMF",
+  "conditions": "0 C to 80 C, then H2O",
+  "products": "4-(CH3)2N-C6H4-CHO",
+  "catalyst": "POCl3 / DMF (Vilsmeier reagent)",
+  "reagentKeywords": [
+   "POCl3",
+   "DMF",
+   "dimethylformamide",
+   "formylation",
+   "Vilsmeier"
+  ],
+  "productName": "4-(Dimethylamino)benzaldehyde",
+  "summary": "Electron-rich arenes are formylated by the chloroiminium (Vilsmeier) reagent from DMF and POCl3, followed by hydrolysis.",
+  "mechanism": "DMF + POCl3 gives chloroiminium ion [Me2N=CHCl]+. This weak electrophile attacks the electron-rich ring (SEAr); the resulting iminium salt is hydrolysed to the aldehyde.",
+  "keyPoints": [
+   "Only activated arenes (phenols, anilines, pyrroles, furans) react",
+   "Para product favoured for anilines"
+  ],
+  "whenUsed": "Alternative to Gattermann-Koch for activated rings",
+  "applications": [
+   "Formylation of anilines, indoles, pyrroles"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N(CH3)2 + HCON(CH3)2 ->[POCl3][\\text{then }H2O] 4-(CH3)2NC6H4CHO + HN(CH3)2",
+    "note": "p-Dimethylaminobenzaldehyde"
+   },
+   {
+    "eq": "Pyrrole + HCON(CH3)2 ->[POCl3] Pyrrole-2-carbaldehyde + HN(CH3)2",
+    "note": "Position 2 formylation"
+   },
+   {
+    "eq": "C6H5OCH3 + HCON(CH3)2 ->[POCl3] 4-CH3OC6H4CHO + HN(CH3)2",
+    "note": "Anisole (activated)"
+   }
+  ],
+  "jeeTips": "Not applicable for benzene or deactivated rings. Formyl C comes from DMF. Compare Gattermann-Koch (CO/HCl, AlCl3) and Reimer-Tiemann.",
+  "reference": "",
+  "tags": [
+   "formylation",
+   "SEAr",
+   "POCl3"
+  ]
+ },
+ {
+  "id": "willgerodt-kindler-reaction",
+  "name": "Willgerodt-Kindler Reaction",
+  "aliases": [
+   "Willgerodt reaction",
+   "Kindler modification"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H5COCH3",
+  "reagents": "S8, morpholine",
+  "conditions": "reflux, then hydrolysis",
+  "products": "C6H5CH2COOH (via thioamide)",
+  "catalyst": "Sulphur, secondary amine",
+  "reagentKeywords": [
+   "sulphur",
+   "S8",
+   "morpholine",
+   "thioamide",
+   "ammonium polysulfide"
+  ],
+  "productName": "Phenylacetic acid (via phenylthioacetmorpholide)",
+  "summary": "Aryl alkyl ketones are converted to the terminal thioamide (or amide) of the same carbon number, by heating with sulphur and an amine; hydrolysis gives a carboxylic acid.",
+  "mechanism": "Ketone forms an enamine with amine, which reacts with sulphur to give a thioamide; the carbonyl effectively migrates along the chain to the terminal position through repeated enamine/thioketone shifts.",
+  "keyPoints": [
+   "Carbonyl oxygen moves to terminal carbon without changing carbon count",
+   "Willgerodt: (NH4)2Sx; Kindler: S8 + amine"
+  ],
+  "whenUsed": "Chain-end functionalisation of aryl alkyl ketones",
+  "applications": [
+   "Arylacetic acids from acetophenones",
+   "Phenylacetamide synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5COCH3 + S8 + HN(C2H4)2O ->[\\Delta] C6H5CH2C(=S)N(C2H4)2O",
+    "note": "Thiomorpholide"
+   },
+   {
+    "eq": "C6H5CH2C(=S)N(C2H4)2O + 2 H2O ->[H+] C6H5CH2COOH + H2S + HN(C2H4)2O",
+    "note": "Hydrolysis to acid"
+   },
+   {
+    "eq": "C6H5COCH2CH3 ->[(NH4)2S_x] C6H5CH2CH2CONH2",
+    "note": "Chain-end amide"
+   }
+  ],
+  "jeeTips": "Product acid has same carbon count as ketone. Acetophenone gives phenylacetic acid, not benzoic acid.",
+  "reference": "",
+  "tags": [
+   "sulphur",
+   "thioamide",
+   "chain migration"
+  ]
+ },
+ {
+  "id": "stobbe-condensation",
+  "name": "Stobbe Condensation",
+  "aliases": [
+   "Stobbe reaction"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "(CH3)2C=O + C2H5OOC-CH2CH2-COOC2H5",
+  "reagents": "t-BuOK",
+  "conditions": "t-BuOH, reflux",
+  "products": "(CH3)2C=C(COOC2H5)CH2COOH (alkylidene succinic half-ester)",
+  "catalyst": "Base (t-BuOK / NaOEt)",
+  "reagentKeywords": [
+   "t-BuOK",
+   "potassium tert-butoxide",
+   "NaOEt",
+   "diethyl succinate",
+   "succinic ester"
+  ],
+  "productName": "Alkylidene succinic acid half-ester",
+  "summary": "Diethyl succinate condenses with aldehydes or ketones in presence of a strong base to give alkylidene succinic acid half-esters.",
+  "mechanism": "Enolate of succinate adds to carbonyl (aldol); the alkoxide attacks the neighbouring ester to form a gamma-lactone intermediate, which opens by E1cB to the unsaturated acid-ester.",
+  "keyPoints": [
+   "Only one ester group is hydrolysed (half-ester)",
+   "Succinic ester is essential; lactone intermediate",
+   "Uses 1 mol base, not catalytic"
+  ],
+  "whenUsed": "Synthesis of unsaturated acids, extension of carbon chain",
+  "applications": [
+   "Alkylidene succinates",
+   "Naphthalene derivatives via cyclisation"
+  ],
+  "examples": [
+   {
+    "eq": "(CH3)2CO + C2H5OOC(CH2)2COOC2H5 ->[t-BuOK] (CH3)2C=C(COOC2H5)CH2COOH + C2H5OH",
+    "note": "Acetone with diethyl succinate"
+   },
+   {
+    "eq": "C6H5CHO + C2H5OOC(CH2)2COOC2H5 ->[t-BuOK] C6H5CH=C(COOC2H5)CH2COOH + C2H5OH",
+    "note": "Benzaldehyde with diethyl succinate"
+   }
+  ],
+  "jeeTips": "Remember product is half-ester, free COOH on the CH2 side. Compare with Perkin and Knoevenagel (different active methylene).",
+  "reference": "",
+  "tags": [
+   "C-C bond formation",
+   "condensation",
+   "lactone"
+  ]
+ },
+ {
+  "id": "pechmann-condensation",
+  "name": "Pechmann Condensation",
+  "aliases": [
+   "Pechmann coumarin synthesis"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "Resorcinol + CH3COCH2COOC2H5",
+  "reagents": "conc. H2SO4",
+  "conditions": "rt",
+  "products": "7-Hydroxy-4-methylcoumarin + C2H5OH + H2O",
+  "catalyst": "Conc. H2SO4",
+  "reagentKeywords": [
+   "H2SO4",
+   "sulphuric acid",
+   "ethyl acetoacetate",
+   "phenol",
+   "coumarin",
+   "AlCl3"
+  ],
+  "productName": "7-Hydroxy-4-methylcoumarin",
+  "summary": "A phenol condenses with a beta-keto ester in presence of acid to give a coumarin (benzopyran-2-one).",
+  "mechanism": "Transesterification of phenol OH with the ester, then intramolecular electrophilic attack (hydroxyalkylation) of the ketone on the ortho position of the ring, and dehydration give the coumarin.",
+  "keyPoints": [
+   "Activated phenols (resorcinol, phloroglucinol) react easily",
+   "Acid catalyst: H2SO4, AlCl3, ion exchange",
+   "Beta-keto ester supplies C2-C4 of the coumarin"
+  ],
+  "whenUsed": "Coumarin dyes and fragrances, 4-methylumbelliferone",
+  "applications": [
+   "Umbelliferone derivatives",
+   "Fluorescent dyes"
+  ],
+  "examples": [
+   {
+    "eq": "C6H4(OH)2 + CH3COCH2COOC2H5 ->[H2SO4] 7-Hydroxy-4-methylcoumarin + C2H5OH + H2O",
+    "note": "m-Dihydroxybenzene (resorcinol)"
+   },
+   {
+    "eq": "C6H5OH + CH3COCH2COOC2H5 ->[H2SO4][\\Delta] 4-Methylcoumarin + C2H5OH + H2O",
+    "note": "Phenol (slow)"
+   }
+  ],
+  "jeeTips": "Compare with Perkin (salicylaldehyde + Ac2O gives coumarin). Two different routes to coumarin: Perkin and Pechmann.",
+  "reference": "",
+  "tags": [
+   "coumarin",
+   "heterocycle",
+   "phenol"
+  ]
+ },
+ {
+  "id": "bouveault-blanc-reduction",
+  "name": "Bouveault-Blanc Reduction",
+  "aliases": [
+   "Bouveault Blanc reduction"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH2COOC2H5",
+  "reagents": "Na, C2H5OH",
+  "conditions": "absolute ethanol, reflux",
+  "products": "CH3CH2CH2OH + C2H5OH",
+  "catalyst": "Sodium metal (dissolving metal)",
+  "reagentKeywords": [
+   "Na",
+   "sodium",
+   "ethanol",
+   "absolute alcohol",
+   "dissolving metal"
+  ],
+  "productName": "Propan-1-ol (primary alcohol)",
+  "summary": "Esters are reduced to primary alcohols by sodium metal in absolute ethanol, without affecting isolated C=C bonds.",
+  "mechanism": "Sodium transfers electrons to the ester carbonyl, giving a radical anion; protonation by ethanol and repetition give an aldehyde that is reduced further to the primary alcohol.",
+  "keyPoints": [
+   "Does not reduce isolated C=C",
+   "Cheaper alternative to LiAlH4",
+   "Ester gives two alcohols: one from acid part and the one from alkoxy part"
+  ],
+  "whenUsed": "Old industrial route to fatty alcohols",
+  "applications": [
+   "Fatty alcohol synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOC2H5 + 4 [H] ->[Na, C2H5OH] 2 C2H5OH",
+    "note": "Ethyl acetate to ethanol"
+   },
+   {
+    "eq": "C17H33COOC2H5 + 4 [H] ->[Na, C2H5OH] C17H33CH2OH + C2H5OH",
+    "note": "Oleyl alcohol (C=C retained)"
+   }
+  ],
+  "jeeTips": "Compare LiAlH4 (reduces C=C only when conjugated slightly) and Birch. Reducing agent is Na/EtOH; acyloin condensation uses Na in aprotic solvent.",
+  "reference": "",
+  "tags": [
+   "dissolving metal",
+   "ester",
+   "reduction"
+  ]
+ },
+ {
+  "id": "meerwein-arylation",
+  "name": "Meerwein Arylation",
+  "aliases": [
+   "Meerwein reaction"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H5N2+ Cl- + CH2=CH-COOCH3",
+  "reagents": "CuCl2 (cat.), acetone",
+  "conditions": "rt",
+  "products": "C6H5CH2CHClCOOCH3 + N2",
+  "catalyst": "Cu(II) / Cu(I) salts",
+  "reagentKeywords": [
+   "CuCl2",
+   "copper",
+   "diazonium",
+   "acetone",
+   "alkene",
+   "acrylate"
+  ],
+  "productName": "Methyl 2-chloro-3-phenylpropanoate",
+  "summary": "An aryl diazonium salt adds an aryl radical across an activated alkene (acrylate, acrylonitrile, styrene) under copper catalysis, giving chloroarylalkane or, after loss of HCl, the arylalkene.",
+  "mechanism": "Cu(I) reduces ArN2+ to Ar radical + N2. The aryl radical adds to the alkene to form a stabilised radical, which abstracts Cl from CuCl2 (or loses H) to give the product.",
+  "keyPoints": [
+   "Radical addition; alkene needs electron-withdrawing group or conjugation",
+   "Elimination of HCl can follow, giving cinnamate",
+   "Ar adds to the CH2 end"
+  ],
+  "whenUsed": "Arylation of alkenes without Pd",
+  "applications": [
+   "Cinnamic acid derivatives",
+   "Aryl-alkyl chlorides"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N2+ Cl- + CH2=CHCN ->[CuCl2][\\text{acetone}] C6H5CH2CHClCN + N2",
+    "note": "Acrylonitrile"
+   },
+   {
+    "eq": "C6H5N2+ Cl- + CH2=CHCOOCH3 ->[CuCl2] C6H5CH2CHClCOOCH3 + N2",
+    "note": "Methyl acrylate"
+   }
+  ],
+  "jeeTips": "Compare with Sandmeyer (ArN2+ to ArX) and Gomberg-Bachmann (arene partner). Meerwein = alkene partner.",
+  "reference": "",
+  "tags": [
+   "radical",
+   "copper",
+   "diazonium"
+  ]
+ },
+ {
+  "id": "simmons-smith-cyclopropanation",
+  "name": "Simmons-Smith Reaction",
+  "aliases": [
+   "Simmons Smith cyclopropanation",
+   "Furukawa modification"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH2=CH2 + CH2I2",
+  "reagents": "Zn(Cu)",
+  "conditions": "dry ether",
+  "products": "Cyclopropane (C3H6) + ZnI2",
+  "catalyst": "Zn-Cu couple (ICH2ZnI carbenoid)",
+  "reagentKeywords": [
+   "Zn-Cu",
+   "zinc copper couple",
+   "CH2I2",
+   "diiodomethane",
+   "carbenoid",
+   "Et2Zn"
+  ],
+  "productName": "Cyclopropane",
+  "summary": "Alkenes react with diiodomethane and zinc-copper couple to give cyclopropanes stereospecifically through a zinc carbenoid.",
+  "mechanism": "Zn(Cu) inserts into CH2I2 to give ICH2ZnI, a carbenoid. It transfers CH2 to the alkene in a concerted syn manner via a three-centre transition state.",
+  "keyPoints": [
+   "Stereospecific syn addition: cis alkene gives cis-disubstituted cyclopropane",
+   "Free carbene is not involved (carbenoid)",
+   "Allylic OH directs addition to the same face"
+  ],
+  "whenUsed": "Cyclopropane ring construction",
+  "applications": [
+   "Cyclopropanation of cyclohexene to norcarane"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CH2 + CH2I2 ->[Zn(Cu)][\\text{ether}] C3H6 + ZnI2",
+    "note": "Cyclopropane"
+   },
+   {
+    "eq": "Cyclohexene + CH2I2 ->[Zn(Cu)] Bicyclo[4.1.0]heptane + ZnI2",
+    "note": "Norcarane"
+   },
+   {
+    "eq": "cis-CH3CH=CHCH3 + CH2I2 ->[Zn(Cu)] cis-1,2-Dimethylcyclopropane + ZnI2",
+    "note": "Stereospecific"
+   }
+  ],
+  "jeeTips": "Distinguish from dichlorocarbene addition (gives gem-dihalo ring). Stereospecific syn addition; the reagent is a carbenoid not free :CH2.",
+  "reference": "",
+  "tags": [
+   "carbenoid",
+   "cyclopropane",
+   "stereospecific"
+  ]
+ },
+ {
+  "id": "dichlorocarbene-addition",
+  "name": "Dichlorocarbene Addition (alpha-Elimination of CHCl3)",
+  "aliases": [
+   "Dichlorocarbene formation",
+   "Alpha elimination of chloroform",
+   "Carbene addition to alkenes"
+  ],
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CHCl3 + CH3CH=CH2",
+  "reagents": "KOH or t-BuOK",
+  "conditions": "non-aqueous / PTC",
+  "products": "1,1-Dichloro-2-methylcyclopropane + KCl + H2O",
+  "catalyst": "Strong base",
+  "reagentKeywords": [
+   "KOH",
+   "t-BuOK",
+   "tBuOK",
+   "CHCl3",
+   "chloroform",
+   "carbene",
+   "dichlorocarbene",
+   "alpha elimination"
+  ],
+  "productName": "gem-Dichlorocyclopropane",
+  "summary": "Strong base abstracts H from chloroform, and the CCl3- anion loses Cl- (alpha-elimination) giving electrophilic singlet :CCl2, which adds to C=C to give gem-dichlorocyclopropanes.",
+  "mechanism": "Step 1: CHCl3 + OH- -> CCl3- + H2O. Step 2: CCl3- -> :CCl2 + Cl-. Step 3: concerted stereospecific syn addition of :CCl2 to alkene.",
+  "keyPoints": [
+   "Alpha-elimination: both H and Cl from the same carbon",
+   "Dichlorocarbene is electrophilic (six electrons on C)",
+   "Also the electrophile in Reimer-Tiemann and the carbylamine reaction"
+  ],
+  "whenUsed": "Stereospecific addition to alkenes",
+  "applications": [
+   "Reimer-Tiemann electrophile",
+   "Isocyanide formation with RNH2"
+  ],
+  "examples": [
+   {
+    "eq": "CHCl3 + OH- -> CCl3- + H2O",
+    "note": "Deprotonation"
+   },
+   {
+    "eq": "CCl3- -> :CCl2 + Cl-",
+    "note": "Alpha elimination giving carbene"
+   },
+   {
+    "eq": "Cyclohexene + CHCl3 ->[t-BuOK] 7,7-Dichlorobicyclo[4.1.0]heptane + KCl + t-BuOH",
+    "note": "Cyclopropanation"
+   }
+  ],
+  "jeeTips": "Same :CCl2 explains Reimer-Tiemann (phenol to salicylaldehyde) and carbylamine (RNH2 to RNC). Trap: 3-membered ring formed.",
+  "reference": "",
+  "tags": [
+   "carbene",
+   "reactive intermediate",
+   "chloroform"
+  ]
+ },
+ {
+  "id": "strecker-synthesis",
+  "name": "Strecker Amino Acid Synthesis",
+  "aliases": [
+   "Strecker synthesis",
+   "Strecker reaction"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CHO",
+  "reagents": "NH4Cl, KCN; then H3O+",
+  "conditions": "stepwise",
+  "products": "CH3CH(NH2)COOH",
+  "catalyst": "NH3 / HCN (alpha-aminonitrile)",
+  "reagentKeywords": [
+   "NH4Cl",
+   "KCN",
+   "NH3",
+   "HCN",
+   "hydrolysis",
+   "H3O+",
+   "alpha-aminonitrile"
+  ],
+  "productName": "Alanine (racemic)",
+  "summary": "An aldehyde with ammonia and cyanide gives an alpha-aminonitrile, hydrolysed to a racemic alpha-amino acid.",
+  "mechanism": "Aldehyde + NH3 forms an imine/iminium; cyanide adds to give alpha-aminonitrile. Acid hydrolysis of the CN group gives the carboxylic acid.",
+  "keyPoints": [
+   "Product has one more carbon than the aldehyde",
+   "Racemic mixture of amino acid",
+   "Ketones give alpha,alpha-disubstituted amino acids"
+  ],
+  "whenUsed": "Laboratory synthesis of amino acids",
+  "applications": [
+   "Alanine, glycine, phenylglycine synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CHO + NH3 + HCN -> CH3CH(NH2)CN + H2O",
+    "note": "Aminonitrile formation"
+   },
+   {
+    "eq": "CH3CH(NH2)CN + 2 H2O + H+ -> CH3CH(NH3+)COOH + NH4+",
+    "note": "Hydrolysis, alanine"
+   },
+   {
+    "eq": "HCHO + NH3 + HCN ->[H3O+] H2NCH2COOH",
+    "note": "Glycine from methanal"
+   }
+  ],
+  "jeeTips": "Aldehyde C becomes alpha-carbon. HCHO gives glycine (optically inactive), others racemic. Compare Gabriel and Hell-Volhard-Zelinsky amination for amino acids.",
+  "reference": "",
+  "tags": [
+   "amino acid",
+   "cyanide",
+   "imine"
+  ]
+ },
+ {
+  "id": "kiliani-fischer-synthesis",
+  "name": "Kiliani-Fischer Synthesis",
+  "aliases": [
+   "Kiliani Fischer chain extension",
+   "Kiliani cyanohydrin synthesis"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CHO-(CHOH)4-CH2OH (glucose-type aldose)",
+  "reagents": "HCN; then H2O, then H2 / Pd-BaSO4",
+  "conditions": "stepwise",
+  "products": "Chain-extended aldose (two epimers)",
+  "catalyst": "Cyanide, Pd/BaSO4 (poisoned)",
+  "reagentKeywords": [
+   "HCN",
+   "KCN",
+   "H2/Pd-BaSO4",
+   "cyanohydrin",
+   "lactone",
+   "Na-Hg"
+  ],
+  "productName": "Aldose with one more carbon (C2 epimers)",
+  "summary": "An aldose is lengthened by one carbon via cyanohydrin formation, hydrolysis to aldonic acid/lactone and reduction to the aldose.",
+  "mechanism": "HCN adds to the aldehyde to give two epimeric cyanohydrins; hydrolysis gives aldonic acids (lactones); reduction (H2/Pd-BaSO4 or Na-Hg) converts them to aldoses.",
+  "keyPoints": [
+   "Creates a new stereocentre at C-2: mixture of two C-2 epimers",
+   "Reverse of Ruff degradation",
+   "Pentose gives two hexoses"
+  ],
+  "whenUsed": "Ascent of the sugar series, synthesis of rare sugars",
+  "applications": [
+   "Arabinose to glucose + mannose",
+   "Confirmation of Fischer configuration"
+  ],
+  "examples": [
+   {
+    "eq": "D-Arabinose + HCN -> Cyanohydrins",
+    "note": "Addition"
+   },
+   {
+    "eq": "Cyanohydrin ->[H2O, H+] Aldonic acid (lactone)",
+    "note": "Hydrolysis"
+   },
+   {
+    "eq": "Lactone ->[H2, Pd/BaSO4] D-Glucose + D-Mannose",
+    "note": "Reduction; epimers at C-2"
+   }
+  ],
+  "jeeTips": "Product pair are C-2 epimers. Ascending = Kiliani-Fischer; descending = Ruff/Wohl.",
+  "reference": "",
+  "tags": [
+   "carbohydrate",
+   "chain extension",
+   "epimers"
+  ]
+ },
+ {
+  "id": "ruff-degradation",
+  "name": "Ruff Degradation",
+  "aliases": [
+   "Ruff degradation of aldoses"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "Aldose (e.g. D-Glucose)",
+  "reagents": "Br2 water; then Fe(OAc)3 / H2O2",
+  "conditions": "stepwise",
+  "products": "Aldose with one fewer carbon (D-Arabinose) + CO2",
+  "catalyst": "Fenton type: Fe3+ / H2O2",
+  "reagentKeywords": [
+   "Br2 water",
+   "Fe3+",
+   "H2O2",
+   "Fenton",
+   "calcium gluconate",
+   "oxidative decarboxylation"
+  ],
+  "productName": "Next lower aldose (D-Arabinose from D-Glucose)",
+  "summary": "An aldose is shortened by one carbon: oxidise to aldonic acid, then oxidative decarboxylation gives the lower aldose.",
+  "mechanism": "Bromine water oxidises CHO to COOH (calcium aldonate). Fe(III)/H2O2 oxidises C-2 OH, decarboxylation gives CO2 and the lower aldose.",
+  "keyPoints": [
+   "Loses the C-1 as CO2",
+   "Descending the sugar series",
+   "Reverse of Kiliani-Fischer"
+  ],
+  "whenUsed": "Structure determination of sugars",
+  "applications": [
+   "Glucose to arabinose",
+   "Establishing relative configurations"
+  ],
+  "examples": [
+   {
+    "eq": "C5H11O5CHO + Br2 + H2O -> C5H11O5COOH + 2 HBr",
+    "note": "Aldonic acid formation"
+   },
+   {
+    "eq": "Calcium gluconate ->[Fe3+, H2O2] D-Arabinose + CO2",
+    "note": "Oxidative decarboxylation"
+   }
+  ],
+  "jeeTips": "D-Glucose gives D-Arabinose (C-2 epimers D-glucose and D-mannose give same pentose). Hexose to pentose.",
+  "reference": "",
+  "tags": [
+   "carbohydrate",
+   "degradation",
+   "decarboxylation"
+  ]
+ },
+ {
+  "id": "cope-rearrangement",
+  "name": "Cope Rearrangement",
+  "aliases": [
+   "[3,3]-Sigmatropic rearrangement of 1,5-dienes",
+   "Cope shift"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Rearrangement",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH2=CH-CH2-CH2-CH=CH2 (1,5-hexadiene)",
+  "reagents": "heat",
+  "conditions": "\\Delta (150-260 C)",
+  "products": "Isomeric 1,5-diene",
+  "catalyst": "Thermal, no reagent",
+  "reagentKeywords": [
+   "heat",
+   "thermal",
+   "sigmatropic",
+   "[3,3]",
+   "1,5-diene",
+   "chair transition state"
+  ],
+  "productName": "Rearranged 1,5-diene",
+  "summary": "Thermal [3,3]-sigmatropic shift of a 1,5-diene in which the central sigma bond (C3-C4) breaks and a new sigma bond (C1-C6) forms.",
+  "mechanism": "Concerted pericyclic via a six-membered chair-like transition state; position of equilibrium favours the more substituted/conjugated alkene.",
+  "keyPoints": [
+   "Concerted, suprafacial, intramolecular",
+   "Chair TS controls stereochemistry (meso-3,4-dimethylhexa-1,5-diene gives E,Z-octa-2,6-diene)",
+   "Reversible; goes to thermodynamically more stable diene"
+  ],
+  "whenUsed": "Ring expansion, stereocontrolled diene synthesis",
+  "applications": [
+   "Oxy-Cope, Claisen variants"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CHCH(CH3)CH2CH=CH2 ->[\\Delta] CH3CH=CHCH2CH=CH2",
+    "note": "Substituent ends up on a terminal-bonded alkene"
+   },
+   {
+    "eq": "3-Methylhexa-1,5-diene ->[\\Delta] Hepta-1,5-diene",
+    "note": "Equilibrium shifts to disubstituted alkene"
+   }
+  ],
+  "jeeTips": "Claisen is the oxygen analogue (allyl aryl ether). Count 1-2-3-4-5-6 atoms: bond 3-4 breaks, 1-6 forms.",
+  "reference": "",
+  "tags": [
+   "pericyclic",
+   "sigmatropic",
+   "thermal"
+  ]
+ },
+ {
+  "id": "cope-elimination",
+  "name": "Cope Elimination",
+  "aliases": [
+   "Cope elimination of amine oxides",
+   "Amine oxide pyrolysis"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "(CH3)2N(O)-CH2CH3 (amine oxide)",
+  "reagents": "heat",
+  "conditions": "\\Delta (100-150 C), syn elimination",
+  "products": "CH2=CH2 + (CH3)2NOH",
+  "catalyst": "Thermal (no base)",
+  "reagentKeywords": [
+   "amine oxide",
+   "heat",
+   "pyrolysis",
+   "H2O2",
+   "syn elimination",
+   "Ei"
+  ],
+  "productName": "Alkene + N,N-dialkylhydroxylamine",
+  "summary": "A tertiary amine oxide on heating undergoes intramolecular syn elimination (Ei) to give an alkene and a hydroxylamine.",
+  "mechanism": "The N-oxide oxygen abstracts a beta-H through a five-membered cyclic TS while the C-N bond breaks, giving alkene and R2NOH.",
+  "keyPoints": [
+   "Syn elimination via 5-membered cyclic TS",
+   "Amine oxide is made from tertiary amine + H2O2 or peracid",
+   "Hofmann-like orientation (less substituted alkene), no base needed"
+  ],
+  "whenUsed": "Mild alkene formation from amines",
+  "applications": [
+   "Alkene from tertiary amine"
+  ],
+  "examples": [
+   {
+    "eq": "(CH3)2NC2H5 + H2O2 -> (CH3)2N(O)C2H5 + H2O",
+    "note": "Amine oxide formation"
+   },
+   {
+    "eq": "(CH3)2N(O)CH2CH3 ->[\\Delta] CH2=CH2 + (CH3)2NOH",
+    "note": "Cope elimination"
+   },
+   {
+    "eq": "(CH3)2N(O)CH(CH3)CH2CH3 ->[\\Delta] CH2=CHCH2CH3",
+    "note": "Hofmann-like selectivity"
+   }
+  ],
+  "jeeTips": "Syn elimination, unlike E2 (anti) of Hofmann with quaternary hydroxide. Trap: no external base.",
+  "reference": "",
+  "tags": [
+   "elimination",
+   "amine oxide",
+   "pericyclic"
+  ]
+ },
+ {
+  "id": "dakin-reaction",
+  "name": "Dakin Reaction",
+  "aliases": [
+   "Dakin oxidation"
+  ],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "2-HOC6H4CHO (salicylaldehyde)",
+  "reagents": "H2O2, NaOH",
+  "conditions": "aq. base",
+  "products": "Catechol (1,2-C6H4(OH)2) + HCOO-",
+  "catalyst": "H2O2 / NaOH",
+  "reagentKeywords": [
+   "H2O2",
+   "NaOH",
+   "hydrogen peroxide",
+   "base",
+   "hydroxybenzaldehyde"
+  ],
+  "productName": "Catechol (from o-) / hydroquinone (from p-)",
+  "summary": "ortho- or para-hydroxybenzaldehydes (or hydroxyacetophenones) are oxidised by alkaline H2O2 to dihydric phenols, with loss of formate.",
+  "mechanism": "HOO- adds to the carbonyl, the aryl group migrates to O (Baeyer-Villiger-like), giving an aryl formate that hydrolyses to the phenol.",
+  "keyPoints": [
+   "Needs ortho or para OH (electron donating)",
+   "m-Hydroxybenzaldehyde does not undergo it",
+   "Aryl migrates, formate lost"
+  ],
+  "whenUsed": "Synthesis of catechol, hydroquinone, from hydroxy-aldehydes",
+  "applications": [
+   "Catechol from salicylaldehyde",
+   "Hydroquinone from p-hydroxybenzaldehyde"
+  ],
+  "examples": [
+   {
+    "eq": "2-HOC6H4CHO + H2O2 ->[NaOH] 1,2-C6H4(OH)2 + HCOOH",
+    "note": "Catechol"
+   },
+   {
+    "eq": "4-HOC6H4CHO + H2O2 ->[NaOH] 1,4-C6H4(OH)2 + HCOOH",
+    "note": "Hydroquinone"
+   },
+   {
+    "eq": "4-HOC6H4COCH3 + H2O2 ->[NaOH] 1,4-C6H4(OH)2 + CH3COOH",
+    "note": "Hydroxyacetophenone gives acetate"
+   }
+  ],
+  "jeeTips": "Think Baeyer-Villiger on aromatic carbonyl: aryl migrates. Product is diphenol, not carboxylic acid.",
+  "reference": "",
+  "tags": [
+   "oxidation",
+   "phenol",
+   "migration"
+  ]
+ },
+ {
+  "id": "prins-reaction",
+  "name": "Prins Reaction",
+  "aliases": [
+   "Prins condensation",
+   "Prins cyclisation"
+  ],
+  "category": "Aldehydes & Ketones",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH2=CH2 + HCHO",
+  "reagents": "H+ (H2SO4 aq.)",
+  "conditions": "aq. acid",
+  "products": "HOCH2CH2CH2OH (propane-1,3-diol) / 1,3-dioxane",
+  "catalyst": "Acid (H+)",
+  "reagentKeywords": [
+   "H2SO4",
+   "acid",
+   "formaldehyde",
+   "HCHO",
+   "alkene",
+   "1,3-diol",
+   "1,3-dioxane"
+  ],
+  "productName": "1,3-Diol or 1,3-dioxane",
+  "summary": "An alkene adds to a protonated aldehyde (often formaldehyde) under acid to give 1,3-diols, 1,3-dioxanes or allylic alcohols, depending on conditions.",
+  "mechanism": "Acid activates the aldehyde; the alkene pi bond attacks the carbonyl carbon to give a carbocation, which is captured by water (diol) or a second aldehyde (dioxane), or loses H+ (allylic alcohol).",
+  "keyPoints": [
+   "Product depends on water, temperature, acid",
+   "Excess HCHO gives 1,3-dioxane",
+   "Carbon-carbon bond formation using alkenes and carbonyls"
+  ],
+  "whenUsed": "Isoprene industry (from isobutene and HCHO)",
+  "applications": [
+   "Isoprene synthesis",
+   "1,3-Diols"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CH2 + HCHO + H2O ->[H+] HOCH2CH2CH2OH",
+    "note": "1,3-Diol"
+   },
+   {
+    "eq": "(CH3)2C=CH2 + 2 HCHO ->[H+] 4,4-Dimethyl-1,3-dioxane",
+    "note": "Dioxane from excess HCHO"
+   },
+   {
+    "eq": "(CH3)2C=CH2 + HCHO ->[H+][-H+] CH2=C(CH3)CH2CH2OH",
+    "note": "Loss of H+ gives homoallylic alcohol"
+   }
+  ],
+  "jeeTips": "Alkene as nucleophile attacking carbonyl (reverse of usual roles). Markovnikov-type cation stability decides regiochemistry.",
+  "reference": "",
+  "tags": [
+   "acid catalysed",
+   "C-C bond formation",
+   "alkene"
+  ]
+ },
+ {
+  "id": "grignard-hydrolysis-active-h",
+  "name": "Hydrolysis of Grignard Reagent (Active-H Compounds)",
+  "aliases": [
+   "Grignard reagent with water",
+   "Grignard as strong base",
+   "Zerewitinoff determination"
+  ],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH3MgBr + H2O",
+  "reagents": "H2O (or ROH, NH3, RC≡CH, RCOOH)",
+  "conditions": "dry ether then aq. work-up",
+  "products": "CH4 + Mg(OH)Br",
+  "catalyst": "Active hydrogen compound",
+  "reagentKeywords": [
+   "H2O",
+   "water",
+   "ROH",
+   "NH3",
+   "alkyne",
+   "active hydrogen",
+   "acidic hydrogen",
+   "D2O"
+  ],
+  "productName": "Alkane RH + Mg(OH)X",
+  "summary": "Grignard reagents are strong bases and react with any compound containing acidic hydrogen (water, alcohols, acids, terminal alkynes, amines) to give the alkane RH.",
+  "mechanism": "The carbanion-like carbon of R-MgX abstracts a proton from the acid H-Y; R-H forms and MgXY is left.",
+  "keyPoints": [
+   "RMgX + HY -> RH + Mg(X)Y",
+   "D2O gives R-D (deuterium labelling)",
+   "Zerewitinoff method counts active H by methane evolved"
+  ],
+  "whenUsed": "Why Grignard needs dry ether; alkane from halide; labelling",
+  "applications": [
+   "Conversion of RX to RH",
+   "Making deuterated hydrocarbons"
+  ],
+  "examples": [
+   {
+    "eq": "C2H5MgBr + H2O -> C2H6 + Mg(OH)Br",
+    "note": "Hydrolysis"
+   },
+   {
+    "eq": "CH3MgI + C2H5OH -> CH4 + Mg(OC2H5)I",
+    "note": "Alcohol"
+   },
+   {
+    "eq": "CH3MgBr + HC#CH -> CH4 + HC#CMgBr",
+    "note": "Terminal alkyne forms acetylide"
+   }
+  ],
+  "jeeTips": "Frequent trap: RMgX destroyed by water, alcohol, acid, NH3, terminal alkyne. It does not react with ethers. Fate: RMgX + D2O gives R-D.",
+  "reference": "",
+  "tags": [
+   "Grignard",
+   "acidic H",
+   "base"
+  ]
+ },
+ {
+  "id": "pinner-reaction",
+  "name": "Pinner Reaction",
+  "aliases": [
+   "Pinner synthesis",
+   "Pinner salt formation",
+   "Nitrile with alcohol and HCl"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH3CN + C2H5OH",
+  "reagents": "dry HCl",
+  "conditions": "anhydrous, 0 C",
+  "products": "[CH3C(=NH2+)OC2H5] Cl-",
+  "catalyst": "Anhydrous HCl",
+  "reagentKeywords": [
+   "dry HCl",
+   "HCl",
+   "ethanol",
+   "nitrile",
+   "imidate",
+   "imino ether",
+   "anhydrous"
+  ],
+  "productName": "Ethyl acetimidate hydrochloride (Pinner salt)",
+  "summary": "A nitrile reacts with an alcohol in presence of dry HCl to give an imidate hydrochloride (Pinner salt), which can be converted to esters, amidines or orthoesters.",
+  "mechanism": "HCl protonates the nitrile N, making C electrophilic; the alcohol adds, and proton transfer gives the imidate salt. Water hydrolyses it to an ester + NH4Cl.",
+  "keyPoints": [
+   "Strictly anhydrous: water gives ester directly",
+   "Imidate + NH3 gives amidine; + excess ROH gives orthoester",
+   "Alcohol should be unhindered"
+  ],
+  "whenUsed": "Conversion of nitriles to esters/amidines",
+  "applications": [
+   "Ester from nitrile",
+   "Amidine synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CN + C2H5OH + HCl -> [CH3C(=NH2)OC2H5]+ Cl-",
+    "note": "Pinner salt"
+   },
+   {
+    "eq": "[CH3C(=NH2)OC2H5]+ Cl- + H2O -> CH3COOC2H5 + NH4Cl",
+    "note": "Hydrolysis to ester"
+   },
+   {
+    "eq": "[CH3C(=NH2)OC2H5]+ Cl- + NH3 -> CH3C(=NH)NH2 + C2H5OH + HCl",
+    "note": "Amidine"
+   }
+  ],
+  "jeeTips": "Compare nitrile hydrolysis (acid or base, gives acid). Pinner uses dry HCl + alcohol and stops at imidate.",
+  "reference": "",
+  "tags": [
+   "nitrile",
+   "imidate",
+   "ester"
+  ]
+ },
+ {
+  "id": "haworth-synthesis",
+  "name": "Haworth Synthesis (Naphthalene)",
+  "aliases": [
+   "Haworth reaction",
+   "Haworth naphthalene synthesis"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H6 + Succinic anhydride",
+  "reagents": "AlCl3; Zn-Hg/HCl; H2SO4; Pd (dehydrogenation)",
+  "conditions": "multi-step",
+  "products": "Naphthalene",
+  "catalyst": "AlCl3 / Zn-Hg",
+  "reagentKeywords": [
+   "AlCl3",
+   "succinic anhydride",
+   "Zn-Hg",
+   "Clemmensen",
+   "H2SO4",
+   "Pd",
+   "Se",
+   "dehydrogenation"
+  ],
+  "productName": "Naphthalene",
+  "summary": "A second ring is built on benzene using succinic anhydride: acylation, Clemmensen reduction, cyclisation and aromatisation give naphthalene (or phenanthrene analogues).",
+  "mechanism": "Step 1: Friedel-Crafts acylation gives 3-benzoylpropanoic acid. Step 2: Clemmensen gives 4-phenylbutanoic acid. Step 3: intramolecular acylation (conc. H2SO4) gives alpha-tetralone. Step 4: Clemmensen gives tetralin; Pd or Se dehydrogenates it to naphthalene.",
+  "keyPoints": [
+   "Ring is fused by intramolecular Friedel-Crafts acylation",
+   "Zn-Hg/HCl converts C=O to CH2",
+   "Final dehydrogenation (Pd/Se) aromatises tetralin"
+  ],
+  "whenUsed": "Preparing polycyclic aromatic hydrocarbons",
+  "applications": [
+   "Naphthalene, phenanthrene synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "C6H6 + succinic anhydride ->[AlCl3] C6H5COCH2CH2COOH",
+    "note": "Friedel-Crafts acylation"
+   },
+   {
+    "eq": "C6H5COCH2CH2COOH ->[Zn-Hg/HCl] C6H5CH2CH2CH2COOH",
+    "note": "Clemmensen reduction"
+   },
+   {
+    "eq": "C6H5(CH2)3COOH ->[conc. H2SO4] alpha-Tetralone ->[Zn-Hg/HCl] Tetralin ->[Pd, \\Delta] C10H8 + 2 H2",
+    "note": "Cyclisation then aromatisation"
+   }
+  ],
+  "jeeTips": "Know sequence: acylation, Clemmensen, cyclisation, Clemmensen, dehydrogenation. Final step is dehydrogenation with Pd/Se.",
+  "reference": "",
+  "tags": [
+   "polycyclic",
+   "Friedel-Crafts",
+   "naphthalene"
+  ]
+ },
+ {
+  "id": "leuckart-reaction",
+  "name": "Leuckart Reaction",
+  "aliases": [
+   "Leuckart-Wallach reaction",
+   "Leuckart reductive amination"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H5COCH3",
+  "reagents": "HCOONH4 (or HCONH2 / HCOOH)",
+  "conditions": "160-185 C",
+  "products": "C6H5CH(NH2)CH3",
+  "catalyst": "Ammonium formate (hydride donor)",
+  "reagentKeywords": [
+   "ammonium formate",
+   "HCOONH4",
+   "formamide",
+   "formic acid",
+   "reductive amination",
+   "Leuckart"
+  ],
+  "productName": "alpha-Methylbenzylamine (1-phenylethanamine)",
+  "summary": "Aldehydes or ketones are converted to amines by heating with ammonium formate or formamide; formic acid is the reducing agent.",
+  "mechanism": "The carbonyl forms an iminium ion with ammonia; formate transfers hydride to the iminium carbon, giving the N-formyl amine, which is hydrolysed to the amine.",
+  "keyPoints": [
+   "Formate is the hydride source (reductive amination)",
+   "N-Formyl amine intermediate needs hydrolysis",
+   "With N-methylformamide gives N-methylamine"
+  ],
+  "whenUsed": "Preparing primary, secondary, tertiary amines (with HCONR2 / amine formates)",
+  "applications": [
+   "Amphetamine from phenylacetone",
+   "Reductive amination"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5COCH3 + 2 HCOONH4 ->[165 C] C6H5CH(CH3)NHCHO + 2 H2O + NH3 + CO2",
+    "note": "N-Formyl intermediate"
+   },
+   {
+    "eq": "C6H5CH(CH3)NHCHO + H2O ->[HCl][\\Delta] C6H5CH(CH3)NH2 + HCOOH",
+    "note": "Hydrolysis"
+   },
+   {
+    "eq": "(CH3)2CO + HCOONH4 -> (CH3)2CHNH2",
+    "note": "Isopropylamine"
+   }
+  ],
+  "jeeTips": "Related to reductive amination (NaBH3CN) and Eschweiler-Clarke (HCHO/HCOOH, methylation). Mention formate = hydride source.",
+  "reference": "",
+  "tags": [
+   "reductive amination",
+   "formate",
+   "amine"
+  ]
+ },
+ {
+  "id": "nef-reaction",
+  "name": "Nef Reaction",
+  "aliases": [
+   "Nef synthesis",
+   "Nef carbonyl synthesis"
+  ],
+  "category": "Aldehydes & Ketones",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH3CH2NO2",
+  "reagents": "1) NaOH; 2) H2SO4 (aq.)",
+  "conditions": "strong acid, 0 C",
+  "products": "CH3CHO + N2O + H2O",
+  "catalyst": "Base then strong acid",
+  "reagentKeywords": [
+   "NaOH",
+   "H2SO4",
+   "nitronate",
+   "aci-nitro",
+   "nitroalkane",
+   "dilute acid"
+  ],
+  "productName": "Acetaldehyde (aldehyde/ketone)",
+  "summary": "A primary or secondary nitroalkane is converted to an aldehyde or ketone through its nitronate salt and acid hydrolysis.",
+  "mechanism": "Base gives the nitronate (aci-nitro) anion; protonation by strong acid gives the nitronic acid, which hydrolyses to the carbonyl with loss of N2O (as nitroxyl H2N2O2).",
+  "keyPoints": [
+   "Needs alpha-H (primary or secondary nitro)",
+   "Tertiary nitroalkanes do not react",
+   "Nitro group acts as a masked carbonyl (umpolung)"
+  ],
+  "whenUsed": "Converts Henry products into carbonyls",
+  "applications": [
+   "Aldehydes/ketones from nitroalkanes",
+   "Synthesis of diketones"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2NO2 + NaOH -> CH3CH=NO2- Na+ + H2O",
+    "note": "Nitronate formation"
+   },
+   {
+    "eq": "CH3CH=NO2- Na+ + H2SO4 (aq) -> CH3CHO + N2O + Na2SO4 + H2O",
+    "note": "Acid hydrolysis"
+   },
+   {
+    "eq": "(CH3)2CHNO2 ->[1) NaOH; 2) H2SO4] (CH3)2C=O + N2O",
+    "note": "Ketone from secondary nitro"
+   }
+  ],
+  "jeeTips": "Contrast with nitroalkane reduction (gives amines). Tertiary nitro: no alpha-H, no Nef. Nitroalkane tautomerism (nitro/aci) underpins.",
+  "reference": "",
+  "tags": [
+   "nitroalkane",
+   "umpolung",
+   "carbonyl"
+  ]
+ },
+ {
+  "id": "henry-reaction",
+  "name": "Henry Reaction",
+  "aliases": [
+   "Nitro-aldol reaction",
+   "Nitroaldol",
+   "Henry nitroaldol"
+  ],
+  "category": "Aldehydes & Ketones",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3NO2 + C6H5CHO",
+  "reagents": "base (NaOH, Et3N)",
+  "conditions": "cold, base catalysed",
+  "products": "C6H5CH(OH)CH2NO2",
+  "catalyst": "Base (OH- or amine)",
+  "reagentKeywords": [
+   "NaOH",
+   "base",
+   "nitromethane",
+   "nitroalkane",
+   "nitroaldol",
+   "aldehyde"
+  ],
+  "productName": "2-Nitro-1-phenylethanol (beta-nitro alcohol)",
+  "summary": "A nitroalkane with alpha-H adds to an aldehyde or ketone in base to give a beta-nitro alcohol, the nitro analogue of the aldol reaction.",
+  "mechanism": "Base deprotonates the acidic alpha-H to give a nitronate carbanion, which attacks the carbonyl carbon; protonation gives the beta-nitro alcohol.",
+  "keyPoints": [
+   "Nitro-stabilised carbanion (pKa about 10) is the nucleophile",
+   "Dehydration gives nitroalkene (C6H5CH=CHNO2)",
+   "Products can be reduced to beta-amino alcohols or converted by Nef to carbonyls"
+  ],
+  "whenUsed": "Synthesis of nitroalkenes, beta-amino alcohols",
+  "applications": [
+   "Nitrostyrene",
+   "Ephedrine-type amino alcohols"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5CHO + CH3NO2 ->[NaOH] C6H5CH(OH)CH2NO2",
+    "note": "Henry addition"
+   },
+   {
+    "eq": "C6H5CH(OH)CH2NO2 ->[\\Delta, -H2O] C6H5CH=CHNO2",
+    "note": "Nitrostyrene"
+   },
+   {
+    "eq": "C6H5CH(OH)CH2NO2 ->[H2, Ni] C6H5CH(OH)CH2NH2",
+    "note": "Beta-amino alcohol"
+   }
+  ],
+  "jeeTips": "Aldol analogue with nitro carbanion. Compare Knoevenagel, aldol. The nitro compound supplies the nucleophile.",
+  "reference": "",
+  "tags": [
+   "nitroalkane",
+   "C-C bond formation",
+   "aldol analogue"
+  ]
+ },
+ {
+  "id": "robinson-annulation",
+  "name": "Robinson Annulation",
+  "aliases": [
+   "Robinson ring annulation"
+  ],
+  "category": "Aldehydes & Ketones",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "Cyclohexanone + CH2=CH-COCH3",
+  "reagents": "NaOEt / EtOH (base)",
+  "conditions": "\\Delta",
+  "products": "Octalone (bicyclic enone: 4,4a,5,6,7,8-hexahydronaphthalen-2(3H)-one) + H2O",
+  "catalyst": "Base (NaOEt, KOH)",
+  "reagentKeywords": [
+   "NaOEt",
+   "KOH",
+   "methyl vinyl ketone",
+   "MVK",
+   "Michael",
+   "aldol",
+   "base",
+   "enone"
+  ],
+  "productName": "Fused bicyclic alpha,beta-unsaturated ketone (octalone)",
+  "summary": "A ketone enolate undergoes Michael addition to methyl vinyl ketone, then an intramolecular aldol condensation closes a new six-membered ring to give a cyclohexenone fused to the starting ring.",
+  "mechanism": "Enolate adds 1,4 to the enone (Michael). The resulting 1,5-diketone's methyl ketone enolises and attacks the other carbonyl (intramolecular aldol); dehydration gives the conjugated enone.",
+  "keyPoints": [
+   "Michael addition followed by intramolecular aldol condensation",
+   "Forms a six-membered ring (annulation)",
+   "Steroid and terpenoid ring construction"
+  ],
+  "whenUsed": "Synthesis of steroids, terpenes (Wieland-Miescher ketone)",
+  "applications": [
+   "Steroid skeleton",
+   "Octalone"
+  ],
+  "examples": [
+   {
+    "eq": "Cyclohexanone + CH2=CHCOCH3 ->[NaOEt] 2-(3-Oxobutyl)cyclohexanone",
+    "note": "Michael addition"
+   },
+   {
+    "eq": "2-(3-Oxobutyl)cyclohexanone ->[NaOEt][\\Delta] Octalone + H2O",
+    "note": "Intramolecular aldol condensation and dehydration"
+   }
+  ],
+  "jeeTips": "Two steps: Michael then aldol (Michael + intramolecular aldol). Ring formed has six members.",
+  "reference": "",
+  "tags": [
+   "annulation",
+   "Michael",
+   "aldol"
+  ]
+ }
+]

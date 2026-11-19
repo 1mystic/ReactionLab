@@ -1,0 +1,2722 @@
+[
+ {
+  "id": "hvz-reaction",
+  "name": "Hell–Volhard–Zelinsky (HVZ) Reaction",
+  "aliases": [
+   "HVZ reaction",
+   "α-Halogenation of carboxylic acids"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH2COOH",
+  "reagents": "Br2, red P (cat.), then H2O",
+  "conditions": "heat",
+  "products": "CH3CHBrCOOH + HBr",
+  "catalyst": "Red P (forms PBr3 in situ)",
+  "reagentKeywords": [
+   "Br2",
+   "red P",
+   "PBr3",
+   "Cl2",
+   "P",
+   "halogen"
+  ],
+  "productName": "2-Bromopropanoic acid",
+  "summary": "Carboxylic acids having α-H are halogenated at the α-carbon by Cl2 or Br2 in the presence of red phosphorus; the acyl halide formed in situ enolises and is halogenated, then hydrolysed.",
+  "mechanism": "Red P + Br2 gives PBr3, which converts RCOOH to RCOBr. The acyl bromide enolises readily and the enol attacks Br2 at the α-carbon to give α-bromoacyl bromide. Water (or exchange with more RCOOH) gives the α-bromo acid.",
+  "keyPoints": [
+   "Needs at least one α-hydrogen (HCOOH and (CH3)3CCOOH do not react)",
+   "Only α-substitution; carbon chain is not touched",
+   "Excess halogen can give α,α-dihalo acids",
+   "α-Halo acid + NH3 gives α-amino acid (e.g. glycine, alanine)"
+  ],
+  "whenUsed": "Preparing α-halo acids, a route to α-hydroxy and α-amino acids.",
+  "applications": [
+   "Synthesis of α-amino acids",
+   "Synthesis of α-hydroxy acids",
+   "α,β-unsaturated acids by dehydrohalogenation"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOH + Cl2 ->[\\text{red P}] ClCH2COOH + HCl",
+    "note": "Chloroacetic acid"
+   },
+   {
+    "eq": "CH3CH2COOH + Br2 ->[\\text{red P}] CH3CHBrCOOH + HBr",
+    "note": "2-Bromopropanoic acid"
+   },
+   {
+    "eq": "ClCH2COOH + 2 NH3 -> H2NCH2COOH + NH4Cl",
+    "note": "Glycine from chloroacetic acid"
+   }
+  ],
+  "jeeTips": "Halogenation occurs at α-C, not β. Red P is essential; plain Br2 with acid gives no reaction. Often appears as a step: acid -> α-bromo acid -> amino acid / hydroxy acid.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/hell-volhard-zelinsky-reaction.shtm",
+  "tags": [
+   "α-halogenation",
+   "acids",
+   "red P"
+  ]
+ },
+ {
+  "id": "claisen-condensation",
+  "name": "Claisen Condensation",
+  "aliases": [
+   "Claisen ester condensation"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "2 CH3COOC2H5",
+  "reagents": "C2H5ONa (NaOEt)",
+  "conditions": "then H3O+",
+  "products": "CH3COCH2COOC2H5 + C2H5OH",
+  "catalyst": "Base (sodium ethoxide)",
+  "reagentKeywords": [
+   "NaOEt",
+   "C2H5ONa",
+   "sodium ethoxide",
+   "base",
+   "ester"
+  ],
+  "productName": "Ethyl acetoacetate (ethyl 3-oxobutanoate)",
+  "summary": "Two molecules of an ester having α-H condense in the presence of a strong alkoxide base to give a β-keto ester.",
+  "mechanism": "Ethoxide removes an α-H to give an ester enolate, which attacks the C=O of a second ester (nucleophilic acyl substitution). Loss of ethoxide gives the β-keto ester, which is deprotonated at the doubly activated CH2; this irreversible step drives the equilibrium.",
+  "keyPoints": [
+   "Ester must have at least two α-H for good yield (the product needs an acidic α-H to be deprotonated)",
+   "Use the alkoxide matching the ester alkyl group (NaOEt for ethyl esters) to avoid transesterification",
+   "Crossed Claisen works if one ester has no α-H (e.g. ethyl benzoate, ethyl formate)",
+   "Final acidification liberates the β-keto ester"
+  ],
+  "whenUsed": "Synthesis of β-keto esters and 1,3-diketones (ketone + ester).",
+  "applications": [
+   "Ethyl acetoacetate manufacture",
+   "Precursor to ketones via acetoacetic ester route"
+  ],
+  "examples": [
+   {
+    "eq": "2 CH3COOC2H5 ->[\\text{1. NaOEt}][\\text{2. }H3O+] CH3COCH2COOC2H5 + C2H5OH",
+    "note": "Ethyl acetoacetate"
+   },
+   {
+    "eq": "C6H5COOC2H5 + CH3COOC2H5 ->[\\text{NaOEt}] C6H5COCH2COOC2H5 + C2H5OH",
+    "note": "Crossed Claisen"
+   },
+   {
+    "eq": "CH3COCH3 + CH3COOC2H5 ->[\\text{NaOEt}] CH3COCH2COCH3 + C2H5OH",
+    "note": "Ester + ketone gives 1,3-diketone (acetylacetone)"
+   }
+  ],
+  "jeeTips": "Product is a β-keto ester, not an aldol. A stoichiometric (not catalytic) amount of base is needed. Ester of type R2CHCOOEt (one α-H) fails to condense in the simple Claisen.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/claisen-condensation.shtm",
+  "tags": [
+   "C–C bond formation",
+   "ester",
+   "β-keto ester",
+   "base"
+  ]
+ },
+ {
+  "id": "dieckmann-condensation",
+  "name": "Dieckmann Condensation",
+  "aliases": [
+   "Dieckmann cyclisation",
+   "Intramolecular Claisen condensation"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C2H5OOC(CH2)4COOC2H5",
+  "reagents": "NaOEt",
+  "conditions": "then H3O+",
+  "products": "2-Carbethoxycyclopentanone + C2H5OH",
+  "catalyst": "Base (sodium ethoxide)",
+  "reagentKeywords": [
+   "NaOEt",
+   "C2H5ONa",
+   "base",
+   "intramolecular",
+   "diester"
+  ],
+  "productName": "Ethyl 2-oxocyclopentanecarboxylate",
+  "summary": "Intramolecular Claisen condensation of a 1,6- or 1,7-diester in base giving a cyclic β-keto ester (5- or 6-membered ring).",
+  "mechanism": "Ethoxide forms an enolate at the α-carbon of one ester; it attacks the other ester carbonyl intramolecularly to form a five- or six-membered ring after loss of EtO-. The cyclic β-keto ester is deprotonated to drive the reaction.",
+  "keyPoints": [
+   "Diethyl adipate (1,6-diester) gives a 5-membered ring; diethyl pimelate (1,7) gives a 6-membered ring",
+   "Rings smaller than 5 or larger than 7 form poorly",
+   "Hydrolysis and decarboxylation of the product gives a cyclic ketone",
+   "Needs an α-H on the new carbon bearing the ester for the driving deprotonation"
+  ],
+  "whenUsed": "Synthesis of cyclopentanone and cyclohexanone derivatives.",
+  "applications": [
+   "Cyclic ketones after hydrolysis and decarboxylation",
+   "Ring construction in terpenoid/steroid synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "C2H5OOC(CH2)4COOC2H5 ->[\\text{1. NaOEt}][\\text{2. }H3O+] \\text{2-ethoxycarbonylcyclopentanone} + C2H5OH",
+    "note": "Diethyl adipate cyclises"
+   },
+   {
+    "eq": "\\text{2-ethoxycarbonylcyclopentanone} ->[\\text{1. }H3O+,\\ \\Delta][\\text{2. }-CO2] \\text{cyclopentanone}",
+    "note": "Hydrolysis then decarboxylation"
+   },
+   {
+    "eq": "C2H5OOC(CH2)5COOC2H5 ->[\\text{NaOEt}] \\text{2-ethoxycarbonylcyclohexanone} + C2H5OH",
+    "note": "Diethyl pimelate gives six-membered ring"
+   }
+  ],
+  "jeeTips": "Count the carbons: adipic ester gives cyclopentanone, not cyclohexanone. Remember it is simply the intramolecular version of Claisen condensation.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/dieckmann-condensation.shtm",
+  "tags": [
+   "ring formation",
+   "ester",
+   "β-keto ester",
+   "intramolecular"
+  ]
+ },
+ {
+  "id": "arndt-eistert-homologation",
+  "name": "Arndt–Eistert Homologation",
+  "aliases": [
+   "Arndt–Eistert synthesis",
+   "Wolff rearrangement route"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "RCOOH",
+  "reagents": "(i) SOCl2; (ii) CH2N2; (iii) Ag2O, H2O",
+  "conditions": "",
+  "products": "RCH2COOH",
+  "catalyst": "Ag2O (Wolff rearrangement)",
+  "reagentKeywords": [
+   "SOCl2",
+   "CH2N2",
+   "diazomethane",
+   "Ag2O",
+   "H2O",
+   "Wolff"
+  ],
+  "productName": "Homologous acid (one CH2 longer)",
+  "summary": "Converts a carboxylic acid into its next higher homologue by acid chloride -> diazoketone -> Wolff rearrangement to a ketene, trapped by water.",
+  "mechanism": "RCOCl reacts with CH2N2 to give the diazoketone RCOCHN2 (2 equiv CH2N2 absorb the HCl). With Ag2O/H2O, N2 is lost and R migrates to the carbene carbon (Wolff rearrangement) to give ketene RCH=C=O, which adds water to give RCH2COOH.",
+  "keyPoints": [
+   "Chain lengthened by exactly one carbon",
+   "Two equivalents of CH2N2 are used (one makes diazoketone, one removes HCl as CH3Cl)",
+   "Ketene intermediate; ROH gives ester, NH3 gives amide",
+   "Migrating group retains its configuration"
+  ],
+  "whenUsed": "Chain extension of acids, e.g. conversion of amino acids to β-amino acids.",
+  "applications": [
+   "Homologation of acids",
+   "Synthesis of β-amino acids"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOH ->[\\text{1. SOCl2}][\\text{2. CH2N2}] CH3COCHN2",
+    "note": "Diazoketone"
+   },
+   {
+    "eq": "CH3COCHN2 ->[Ag2O, H2O] CH3CH2COOH + N2",
+    "note": "Wolff rearrangement to propanoic acid"
+   },
+   {
+    "eq": "C6H5COOH ->[\\text{SOCl2; CH2N2; Ag2O, H2O}] C6H5CH2COOH",
+    "note": "Phenylacetic acid from benzoic acid"
+   }
+  ],
+  "jeeTips": "Product has ONE more carbon than the starting acid. Key intermediate is the ketene, not an isocyanate (do not confuse with Curtius/Hofmann which lose carbon).",
+  "reference": "https://www.organic-chemistry.org/namedreactions/arndt-eistert-synthesis.shtm",
+  "tags": [
+   "homologation",
+   "diazomethane",
+   "ketene",
+   "rearrangement"
+  ]
+ },
+ {
+  "id": "schmidt-reaction-acid",
+  "name": "Schmidt Reaction (Carboxylic Acid to Amine)",
+  "aliases": [
+   "Schmidt rearrangement",
+   "Schmidt reaction of acids"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Rearrangement",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "RCOOH",
+  "reagents": "HN3 (NaN3), conc. H2SO4",
+  "conditions": "",
+  "products": "RNH2 + CO2 + N2",
+  "catalyst": "Conc. H2SO4",
+  "reagentKeywords": [
+   "HN3",
+   "NaN3",
+   "hydrazoic acid",
+   "H2SO4",
+   "azide"
+  ],
+  "productName": "Primary amine with one carbon less",
+  "summary": "A carboxylic acid reacts with hydrazoic acid in conc. H2SO4 to give a primary amine having one carbon atom less, with loss of CO2 and N2.",
+  "mechanism": "Protonated RCOOH forms an acyl azide-like species (RCON3 / acylium + HN3). Loss of N2 with R migration from C to N gives the isocyanate RN=C=O, which is hydrolysed to the carbamic acid and then decarboxylated to RNH2.",
+  "keyPoints": [
+   "Carbon count decreases by one",
+   "Ketones with HN3 give amides instead (Schmidt on ketones)",
+   "Same isocyanate pathway as Curtius, but done in one pot in strongly acidic medium",
+   "Migrating group keeps its configuration"
+  ],
+  "whenUsed": "Direct conversion of acids to amines without isolating an acyl azide.",
+  "applications": [
+   "Degradation of acids to amines",
+   "Preparation of aromatic amines from aromatic acids"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOH + HN3 ->[conc. H2SO4] CH3NH2 + CO2 + N2",
+    "note": "Methylamine"
+   },
+   {
+    "eq": "C6H5COOH + HN3 ->[conc. H2SO4] C6H5NH2 + CO2 + N2",
+    "note": "Aniline from benzoic acid"
+   },
+   {
+    "eq": "(CH3)3CCOOH + HN3 ->[conc. H2SO4] (CH3)3CNH2 + CO2 + N2",
+    "note": "tert-Butylamine"
+   }
+  ],
+  "jeeTips": "Amine formed has one carbon less than the acid. Compare: Hofmann (amide + Br2/KOH), Curtius (acyl azide, heat), Schmidt (acid + HN3/H2SO4) all give the same RNH2.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/schmidt-reaction.shtm",
+  "tags": [
+   "rearrangement",
+   "azide",
+   "degradation",
+   "amine"
+  ]
+ },
+ {
+  "id": "curtius-rearrangement",
+  "name": "Curtius Rearrangement",
+  "aliases": [
+   "Curtius reaction",
+   "Curtius degradation"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Rearrangement",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "RCON3",
+  "reagents": "Heat, then H2O",
+  "conditions": "",
+  "products": "RNH2 + CO2 + N2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "heat",
+   "acyl azide",
+   "NaN3",
+   "H2O",
+   "SOCl2",
+   "isocyanate"
+  ],
+  "productName": "Primary amine (via isocyanate)",
+  "summary": "An acyl azide, made from an acid chloride and NaN3, loses N2 on heating to give an isocyanate that is hydrolysed to a primary amine with one carbon less.",
+  "mechanism": "Thermal loss of N2 from RCON3 is concerted with 1,2-shift of R from carbon to nitrogen, giving RN=C=O. Water adds to isocyanate to give an unstable carbamic acid, which loses CO2 to give RNH2. Alcohol instead of water traps the isocyanate as a carbamate (urethane).",
+  "keyPoints": [
+   "RCOOH -> RCOCl -> RCON3 -> RN=C=O -> RNH2",
+   "Amine has one C less than the acid",
+   "Isocyanate can be isolated and trapped with ROH (carbamate) or amine (urea)",
+   "Retention of configuration of the migrating group"
+  ],
+  "whenUsed": "Clean preparation of primary amines from acids.",
+  "applications": [
+   "Amine synthesis",
+   "Carbamates (Boc/Cbz-protected amines)"
+  ],
+  "examples": [
+   {
+    "eq": "RCOCl + NaN3 -> RCON3 + NaCl",
+    "note": "Formation of acyl azide"
+   },
+   {
+    "eq": "RCON3 ->[\\Delta] RN=C=O + N2",
+    "note": "Isocyanate formed"
+   },
+   {
+    "eq": "RN=C=O + H2O -> RNH2 + CO2",
+    "note": "Hydrolysis to amine"
+   }
+  ],
+  "jeeTips": "Intermediate is an isocyanate (R-N=C=O). Net: RCOOH -> RNH2 (loss of one C as CO2). Don't confuse with Wolff (carbon gained).",
+  "reference": "https://www.organic-chemistry.org/namedreactions/curtius-rearrangement.shtm",
+  "tags": [
+   "rearrangement",
+   "isocyanate",
+   "acyl azide",
+   "degradation"
+  ]
+ },
+ {
+  "id": "lossen-rearrangement",
+  "name": "Lossen Rearrangement",
+  "aliases": [
+   "Lossen degradation"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Rearrangement",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "RCONHOCOR'",
+  "reagents": "Base (NaOH) / heat",
+  "conditions": "then H2O",
+  "products": "RNH2 + CO2",
+  "catalyst": "Base",
+  "reagentKeywords": [
+   "NaOH",
+   "hydroxamic acid",
+   "heat",
+   "base",
+   "isocyanate"
+  ],
+  "productName": "Primary amine (via isocyanate)",
+  "summary": "An O-acylated hydroxamic acid rearranges with base to an isocyanate, which is hydrolysed to a primary amine having one carbon less.",
+  "mechanism": "Base removes the N–H proton of RCONH–OCOR'. The anion expels the carboxylate leaving group as R migrates from C to N, giving RN=C=O. Hydrolysis of the isocyanate gives RNH2 + CO2.",
+  "keyPoints": [
+   "Starting material is hydroxamic acid derivative RCONHOH (O-acyl or O-sulfonyl)",
+   "Passes through isocyanate like Hofmann and Curtius",
+   "Amine has one carbon less than the acid derivative",
+   "Migrating group keeps configuration"
+  ],
+  "whenUsed": "Alternative degradation to amine when acyl azide or bromamide route is unsuitable.",
+  "applications": [
+   "Primary amine synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5CONHOCOCH3 ->[\\text{NaOH}] C6H5N=C=O + CH3COO-",
+    "note": "Isocyanate formation"
+   },
+   {
+    "eq": "C6H5N=C=O + H2O -> C6H5NH2 + CO2",
+    "note": "Aniline"
+   },
+   {
+    "eq": "CH3CONHOCOCH3 ->[\\text{NaOH, }\\Delta] CH3NH2 + CO2 + CH3COO-",
+    "note": "Methylamine"
+   }
+  ],
+  "jeeTips": "Memorise the trio giving isocyanates: Hofmann (RCONH2), Curtius (RCON3), Lossen (RCONHOCOR'). All give RNH2 with one C less.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/lossen-rearrangement.shtm",
+  "tags": [
+   "rearrangement",
+   "hydroxamic acid",
+   "isocyanate"
+  ]
+ },
+ {
+  "id": "acid-chloride-formation",
+  "name": "Acid Chloride Formation (SOCl2 / PCl5)",
+  "aliases": [
+   "Conversion of acids to acyl chlorides",
+   "Preparation of acyl chlorides"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH3COOH",
+  "reagents": "SOCl2 (or PCl5 / PCl3)",
+  "conditions": "",
+  "products": "CH3COCl + SO2 + HCl",
+  "catalyst": "Pyridine (optional)",
+  "reagentKeywords": [
+   "SOCl2",
+   "thionyl chloride",
+   "PCl5",
+   "PCl3",
+   "phosphorus chloride"
+  ],
+  "productName": "Acetyl chloride",
+  "summary": "Carboxylic acids are converted into acid chlorides by replacing OH with Cl using SOCl2, PCl5 or PCl3.",
+  "mechanism": "The acid OH attacks sulphur (or phosphorus) to form an acyl chlorosulphite (or acyl-O-PCl4) leaving group. Chloride then attacks the carbonyl carbon and the leaving group departs as SO2 + Cl- (or POCl3).",
+  "keyPoints": [
+   "SOCl2 is preferred: by-products SO2 and HCl are gases, pure product is left",
+   "PCl5 gives POCl3 + HCl; PCl3 gives H3PO3",
+   "Test for –OH group: PCl5 gives steamy fumes of HCl",
+   "Acid chlorides are the most reactive acid derivatives"
+  ],
+  "whenUsed": "Activation of acids for esters, amides, anhydrides and Friedel–Crafts acylation.",
+  "applications": [
+   "Precursors for acylation",
+   "Synthesis of Rosenmund and Arndt–Eistert intermediates"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOH + SOCl2 -> CH3COCl + SO2 + HCl",
+    "note": "Acetyl chloride"
+   },
+   {
+    "eq": "CH3COOH + PCl5 -> CH3COCl + POCl3 + HCl",
+    "note": "With PCl5"
+   },
+   {
+    "eq": "3 CH3COOH + PCl3 -> 3 CH3COCl + H3PO3",
+    "note": "With PCl3"
+   }
+  ],
+  "jeeTips": "SOCl2 is best because by-products are gaseous. Phenol does NOT give aryl chloride with PCl5 cleanly. Formic acid does not give HCOCl (unstable).",
+  "reference": "",
+  "tags": [
+   "acyl chloride",
+   "SOCl2",
+   "activation"
+  ]
+ },
+ {
+  "id": "ester-hydrolysis-saponification",
+  "name": "Ester Hydrolysis / Saponification",
+  "aliases": [
+   "Alkaline hydrolysis of esters",
+   "Saponification",
+   "Acid hydrolysis of esters"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH3COOC2H5",
+  "reagents": "NaOH, H2O (or dil. H2SO4)",
+  "conditions": "heat",
+  "products": "CH3COONa + C2H5OH",
+  "catalyst": "H+ (acidic route) / OH- (base)",
+  "reagentKeywords": [
+   "NaOH",
+   "KOH",
+   "H2O",
+   "H+",
+   "dilute acid",
+   "saponification",
+   "heat"
+  ],
+  "productName": "Sodium acetate (or acetic acid) + ethanol",
+  "summary": "Esters are cleaved by water: reversibly in acid, and irreversibly in base (saponification) to give carboxylate salt and alcohol.",
+  "mechanism": "Base: OH- attacks the ester C=O (BAC2) to form a tetrahedral intermediate that expels RO-; the acid formed is immediately deprotonated, making the reaction irreversible. Acid: protonated ester is attacked by H2O (AAC2), reversible, equilibrium shifted using excess water.",
+  "keyPoints": [
+   "Base hydrolysis is irreversible and goes to completion",
+   "Acid hydrolysis is reversible (reverse of Fischer esterification)",
+   "Fats + NaOH gives soap + glycerol",
+   "Ester hydrolysis with H2(18O) puts 18O in the acid (acyl–oxygen cleavage)"
+  ],
+  "whenUsed": "Manufacture of soap, determination of ester saponification value.",
+  "applications": [
+   "Soap manufacture",
+   "Preparation of acids/alcohols"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOC2H5 + NaOH -> CH3COONa + C2H5OH",
+    "note": "Saponification"
+   },
+   {
+    "eq": "CH3COOC2H5 + H2O <=>[H+] CH3COOH + C2H5OH",
+    "note": "Acid-catalysed, reversible"
+   },
+   {
+    "eq": "(C17H35COO)3C3H5 + 3 NaOH -> 3 C17H35COONa + C3H5(OH)3",
+    "note": "Soap from fat"
+   }
+  ],
+  "jeeTips": "Acid hydrolysis = equilibrium, base = complete. Mechanism cleaves acyl–O bond, not alkyl–O bond (except for tertiary esters in acid).",
+  "reference": "",
+  "tags": [
+   "hydrolysis",
+   "soap",
+   "ester",
+   "nucleophilic acyl substitution"
+  ]
+ },
+ {
+  "id": "transesterification",
+  "name": "Transesterification",
+  "aliases": [
+   "Ester interchange",
+   "Alcoholysis of esters"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3COOC2H5 + CH3OH",
+  "reagents": "H+ or CH3ONa (cat.)",
+  "conditions": "heat; excess CH3OH",
+  "products": "CH3COOCH3 + C2H5OH",
+  "catalyst": "Acid or alkoxide",
+  "reagentKeywords": [
+   "H+",
+   "NaOMe",
+   "CH3OH",
+   "alkoxide",
+   "alcohol",
+   "catalyst"
+  ],
+  "productName": "Methyl acetate",
+  "summary": "An ester reacts with another alcohol in the presence of an acid or base catalyst to exchange its alkoxy group.",
+  "mechanism": "Under base, RO- adds to the ester carbonyl giving a tetrahedral intermediate that expels the original alkoxide. Under acid, the protonated carbonyl is attacked by the new alcohol, followed by proton transfers and loss of the old alcohol. Equilibrium is shifted by excess of one alcohol or removal of the other.",
+  "keyPoints": [
+   "Reversible; use large excess of the incoming alcohol",
+   "Industrial biodiesel: vegetable oil + CH3OH -> fatty acid methyl esters + glycerol",
+   "Use alkoxide matching the ester to avoid mixed products in Claisen",
+   "PET synthesis uses transesterification of dimethyl terephthalate with glycol"
+  ],
+  "whenUsed": "Biodiesel production, polyester manufacture (Terylene/PET).",
+  "applications": [
+   "Biodiesel",
+   "Dacron/Terylene synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOC2H5 + CH3OH <=>[H+] CH3COOCH3 + C2H5OH",
+    "note": "Methyl acetate"
+   },
+   {
+    "eq": "Triglyceride + 3 CH3OH ->[\\text{NaOH}] 3 RCOOCH3 + C3H5(OH)3",
+    "note": "Biodiesel"
+   },
+   {
+    "eq": "n CH3OOC-C6H4-COOCH3 + n HOCH2CH2OH -> [-OC-C6H4-COOCH2CH2O-]n + 2n CH3OH",
+    "note": "Terylene"
+   }
+  ],
+  "jeeTips": "It is an equilibrium; do not call it hydrolysis (no water is involved).",
+  "reference": "",
+  "tags": [
+   "ester",
+   "biodiesel",
+   "equilibrium"
+  ]
+ },
+ {
+  "id": "amide-dehydration-p4o10",
+  "name": "Dehydration of Amides to Nitriles",
+  "aliases": [
+   "Amide dehydration with P4O10",
+   "Nitrile from amide"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH3CONH2",
+  "reagents": "P4O10 (or P2O5 / SOCl2)",
+  "conditions": "heat",
+  "products": "CH3CN + H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "P4O10",
+   "P2O5",
+   "SOCl2",
+   "heat",
+   "dehydrating agent"
+  ],
+  "productName": "Acetonitrile",
+  "summary": "Primary amides lose a molecule of water on heating with a strong dehydrating agent such as P4O10 to give nitriles.",
+  "mechanism": "The amide oxygen attacks phosphorus to give an O-phosphorylated imidate; loss of a proton from N and elimination of the phosphate group (as P-O species) creates the C≡N triple bond.",
+  "keyPoints": [
+   "Only primary amides (–CONH2) give nitriles",
+   "Reverse of nitrile hydrolysis",
+   "Alternatives: SOCl2, POCl3",
+   "Carbon count is unchanged"
+  ],
+  "whenUsed": "Laboratory preparation of nitriles from acids via amides.",
+  "applications": [
+   "Nitrile synthesis",
+   "Preparation of acetonitrile"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CONH2 ->[P4O10][\\Delta] CH3CN + H2O",
+    "note": "Acetonitrile"
+   },
+   {
+    "eq": "C6H5CONH2 ->[P4O10][\\Delta] C6H5CN + H2O",
+    "note": "Benzonitrile"
+   },
+   {
+    "eq": "CH3CH2CONH2 ->[\\text{SOCl2}] CH3CH2CN + SO2 + 2 HCl",
+    "note": "Propanenitrile"
+   }
+  ],
+  "jeeTips": "Amide -> nitrile loses H2O; Hofmann on same amide loses a carbon (amine). Choose reagents carefully in conversion sequences.",
+  "reference": "",
+  "tags": [
+   "dehydration",
+   "nitrile",
+   "amide"
+  ]
+ },
+ {
+  "id": "lialh4-reduction-of-acids",
+  "name": "Reduction of Carboxylic Acids with LiAlH4",
+  "aliases": [
+   "LAH reduction of acids",
+   "Acid to primary alcohol"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "RCOOH",
+  "reagents": "LiAlH4, dry ether",
+  "conditions": "then H3O+",
+  "products": "RCH2OH",
+  "catalyst": "",
+  "reagentKeywords": [
+   "LiAlH4",
+   "LAH",
+   "dry ether",
+   "B2H6",
+   "diborane",
+   "H3O+"
+  ],
+  "productName": "Primary alcohol",
+  "summary": "Carboxylic acids are reduced all the way to primary alcohols by LiAlH4 (or B2H6); NaBH4 does not reduce them.",
+  "mechanism": "The acid first loses H2 giving the carboxylate. Hydride attacks the carboxylate carbon, then an aldehyde is formed via loss of an O–Al species; the aldehyde is reduced faster than the acid, giving the alkoxide, protonated on work-up to RCH2OH.",
+  "keyPoints": [
+   "NaBH4 cannot reduce acids; LiAlH4 and B2H6 can",
+   "B2H6 selectively reduces –COOH in the presence of an ester or nitro group",
+   "Reaction cannot be stopped at the aldehyde stage",
+   "Esters also give 1° alcohols (two alcohols) with LiAlH4; amides give amines"
+  ],
+  "whenUsed": "Converting acids to alcohols.",
+  "applications": [
+   "Alcohol synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOH ->[\\text{1. LiAlH4}][\\text{2. }H3O+] CH3CH2OH",
+    "note": "Ethanol"
+   },
+   {
+    "eq": "C6H5COOH ->[\\text{1. LiAlH4}][\\text{2. }H3O+] C6H5CH2OH",
+    "note": "Benzyl alcohol"
+   },
+   {
+    "eq": "CH3COOC2H5 ->[\\text{1. LiAlH4}][\\text{2. }H3O+] 2 CH3CH2OH",
+    "note": "Ester gives two alcohol molecules"
+   }
+  ],
+  "jeeTips": "LiAlH4 gives alcohol (never aldehyde) from acids. NaBH4 is inert towards acids/esters. B2H6 reduces –COOH faster than an ester.",
+  "reference": "",
+  "tags": [
+   "reduction",
+   "LiAlH4",
+   "alcohol"
+  ]
+ },
+ {
+  "id": "grignard-co2-carboxylation",
+  "name": "Grignard Reagent + CO2 (Carboxylation)",
+  "aliases": [
+   "Carbonation of Grignard reagent",
+   "Acid from Grignard reagent"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "RMgX + CO2",
+  "reagents": "dry ether, then H3O+ (dil. HCl)",
+  "conditions": "dry ice",
+  "products": "RCOOH + Mg(OH)X",
+  "catalyst": "",
+  "reagentKeywords": [
+   "CO2",
+   "dry ice",
+   "Grignard",
+   "RMgX",
+   "H3O+",
+   "ether"
+  ],
+  "productName": "Carboxylic acid with one extra carbon",
+  "summary": "Grignard reagents add to solid CO2 (dry ice) to give magnesium carboxylate, which on acidification gives a carboxylic acid with one more carbon than the alkyl halide.",
+  "mechanism": "The nucleophilic carbon of R-MgX attacks the electrophilic carbon of CO2 to give RCOOMgX. Hydrolysis with dilute acid liberates RCOOH.",
+  "keyPoints": [
+   "Acid has one carbon more than R–X used",
+   "Works for primary, secondary, tertiary and aryl halides",
+   "Reagent must be prepared in dry ether; CO2 is used as dry ice",
+   "Suitable for making 3° acids, which cannot be made by SN2 with CN-"
+  ],
+  "whenUsed": "Chain-lengthening synthesis of acids from halides.",
+  "applications": [
+   "Benzoic acid from bromobenzene",
+   "Pivalic acid from t-BuCl"
+  ],
+  "examples": [
+   {
+    "eq": "CH3MgBr + CO2 ->[\\text{dry ether}] CH3COOMgBr ->[H3O+] CH3COOH",
+    "note": "Acetic acid"
+   },
+   {
+    "eq": "C6H5MgBr + CO2 ->[\\text{1. ether}][\\text{2. }H3O+] C6H5COOH",
+    "note": "Benzoic acid"
+   },
+   {
+    "eq": "(CH3)3CMgCl + CO2 ->[\\text{1. ether}][\\text{2. }H3O+] (CH3)3CCOOH",
+    "note": "Pivalic acid"
+   }
+  ],
+  "jeeTips": "RX -> RMgX -> RCOOH adds one carbon. Moist ether or acidic H (OH, NH, terminal alkyne) destroys the Grignard.",
+  "reference": "",
+  "tags": [
+   "Grignard",
+   "carboxylation",
+   "C–C bond formation"
+  ]
+ },
+ {
+  "id": "nitrile-hydrolysis",
+  "name": "Hydrolysis of Nitriles to Carboxylic Acids",
+  "aliases": [
+   "Nitrile hydrolysis",
+   "Acid hydrolysis of cyanides"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH3CN",
+  "reagents": "H3O+ (dil. HCl) or NaOH, H2O",
+  "conditions": "heat",
+  "products": "CH3COOH + NH4+",
+  "catalyst": "H+ or OH-",
+  "reagentKeywords": [
+   "H3O+",
+   "HCl",
+   "NaOH",
+   "H2O",
+   "heat",
+   "H2SO4"
+  ],
+  "productName": "Acetic acid",
+  "summary": "Nitriles are hydrolysed through the amide to carboxylic acids with aqueous acid or alkali, with loss of NH3 (NH4+).",
+  "mechanism": "Water adds across the C≡N (after protonation or attack by OH-) to form an imidic acid that tautomerises to the amide. The amide is then hydrolysed to acid and NH3/NH4+. Partial hydrolysis (H2O2/OH- or conc. H2SO4, mild) can stop at the amide.",
+  "keyPoints": [
+   "Carbon count same as nitrile; RX + KCN -> RCN -> RCOOH adds one carbon over RX",
+   "In alkali, the carboxylate salt is obtained and NH3 is evolved",
+   "Intermediate amide can be isolated under controlled conditions",
+   "Used for hydrolysis of cyanohydrins to α-hydroxy acids"
+  ],
+  "whenUsed": "Chain extension of halides by one carbon; synthesis of hydroxy acids.",
+  "applications": [
+   "Lactic acid from acetaldehyde cyanohydrin",
+   "Phenylacetic acid from benzyl cyanide"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CN + 2 H2O ->[H+, \\Delta] CH3COOH + NH4+",
+    "note": "Acid hydrolysis"
+   },
+   {
+    "eq": "C6H5CN + OH- + H2O ->[\\Delta] C6H5COO- + NH3",
+    "note": "Alkaline hydrolysis"
+   },
+   {
+    "eq": "CH3CH(OH)CN + 2 H2O ->[H+] CH3CH(OH)COOH + NH4+",
+    "note": "Lactic acid"
+   }
+  ],
+  "jeeTips": "Alkyl halide to acid with ONE extra carbon via CN-. Aryl halides do not react with KCN, so benzonitrile is made from the diazonium route instead.",
+  "reference": "",
+  "tags": [
+   "nitrile",
+   "hydrolysis",
+   "chain extension"
+  ]
+ },
+ {
+  "id": "acetylation",
+  "name": "Acetylation (Acid Chloride / Anhydride + Alcohol or Amine)",
+  "aliases": [
+   "Acylation of alcohols and amines",
+   "Acetylation of aniline",
+   "Acetylation of salicylic acid"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "C6H5NH2",
+  "reagents": "(CH3CO)2O or CH3COCl",
+  "conditions": "pyridine / CH3COONa",
+  "products": "C6H5NHCOCH3 + CH3COOH",
+  "catalyst": "Pyridine (base)",
+  "reagentKeywords": [
+   "(CH3CO)2O",
+   "acetic anhydride",
+   "CH3COCl",
+   "acetyl chloride",
+   "pyridine",
+   "acylation"
+  ],
+  "productName": "Acetanilide",
+  "summary": "Replacement of active H of –OH, –NH2 by an acetyl group using acetyl chloride or acetic anhydride, to give esters and amides.",
+  "mechanism": "Nucleophilic acyl substitution: the lone pair of N or O adds to the acyl carbon to form a tetrahedral intermediate, then Cl- (or acetate) leaves. Pyridine removes the HCl formed and shifts equilibrium.",
+  "keyPoints": [
+   "Reactivity order: acid chloride > anhydride > ester > amide",
+   "Acetylation of aniline protects the NH2 group (lowers its activating strength)",
+   "Salicylic acid + (CH3CO)2O gives aspirin",
+   "Base (pyridine) is needed to neutralise HCl"
+  ],
+  "whenUsed": "Protection of amino groups, synthesis of aspirin, esters and amides.",
+  "applications": [
+   "Aspirin synthesis",
+   "Acetanilide protection step",
+   "Test for –OH/–NH2 groups"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NH2 + (CH3CO)2O -> C6H5NHCOCH3 + CH3COOH",
+    "note": "Acetanilide"
+   },
+   {
+    "eq": "C2H5OH + CH3COCl ->[\\text{pyridine}] CH3COOC2H5 + HCl",
+    "note": "Ethyl acetate"
+   },
+   {
+    "eq": "o-HOC6H4COOH + (CH3CO)2O ->[H+] o-CH3COOC6H4COOH + CH3COOH",
+    "note": "Aspirin"
+   }
+  ],
+  "jeeTips": "3° amines do not get acylated (no N–H). Acylation needs a base; Friedel–Crafts acylation is different (C-acylation of arene).",
+  "reference": "",
+  "tags": [
+   "acylation",
+   "protection",
+   "aspirin",
+   "nucleophilic acyl substitution"
+  ]
+ },
+ {
+  "id": "sodium-bicarbonate-test",
+  "name": "Sodium Bicarbonate Test for Carboxylic Acids",
+  "aliases": [
+   "NaHCO3 test",
+   "Effervescence test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "RCOOH",
+  "reagents": "NaHCO3 solution",
+  "conditions": "",
+  "products": "RCOONa + H2O + CO2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NaHCO3",
+   "bicarbonate",
+   "effervescence",
+   "CO2",
+   "brisk"
+  ],
+  "productName": "Brisk effervescence of CO2",
+  "summary": "Carboxylic acids (pKa about 4–5) are strong enough to decompose sodium bicarbonate with brisk effervescence of CO2; phenols (pKa about 10) do not.",
+  "mechanism": "Proton transfer from RCOOH to HCO3- gives carbonic acid, which breaks down to H2O and CO2 gas. The CO2 turns lime water milky.",
+  "keyPoints": [
+   "Positive for –COOH, also for sulphonic acids and strongly acidic phenols like picric acid",
+   "Phenol, alcohols, ketones: no CO2",
+   "Distinguishes benzoic acid from phenol",
+   "Effervescence tested with lime water"
+  ],
+  "whenUsed": "Quick distinction between acids and phenols.",
+  "applications": [
+   "Detect –COOH group"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOH + NaHCO3 -> CH3COONa + H2O + CO2",
+    "note": "Acetic acid"
+   },
+   {
+    "eq": "C6H5COOH + NaHCO3 -> C6H5COONa + H2O + CO2",
+    "note": "Benzoic acid"
+   },
+   {
+    "eq": "C6H5OH + NaHCO3 -> \\text{no reaction}",
+    "note": "Phenol does not react"
+   }
+  ],
+  "jeeTips": "Phenol is a weaker acid than H2CO3, so no CO2. 2,4,6-trinitrophenol (picric acid) does give CO2. Phenols react with NaOH but not NaHCO3.",
+  "reference": "",
+  "tags": [
+   "qualitative test",
+   "acid",
+   "CO2"
+  ]
+ },
+ {
+  "id": "malonic-ester-synthesis",
+  "name": "Malonic Ester Synthesis",
+  "aliases": [
+   "Diethyl malonate synthesis",
+   "Malonic ester alkylation"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH2(COOC2H5)2",
+  "reagents": "(i) NaOEt; (ii) RX; (iii) H3O+, heat",
+  "conditions": "",
+  "products": "RCH2COOH + CO2 + 2 C2H5OH",
+  "catalyst": "Sodium ethoxide",
+  "reagentKeywords": [
+   "NaOEt",
+   "RX",
+   "alkyl halide",
+   "H3O+",
+   "heat",
+   "diethyl malonate"
+  ],
+  "productName": "Substituted acetic acid",
+  "summary": "Diethyl malonate is deprotonated, alkylated, hydrolysed and decarboxylated to give mono- or di-substituted acetic acids.",
+  "mechanism": "The active methylene (pKa ≈ 13) is removed by ethoxide to give a stabilised enolate, which attacks R–X in an SN2 step. Ester hydrolysis gives the substituted malonic acid, whose β-carboxyl is lost as CO2 on heating through a cyclic six-membered transition state.",
+  "keyPoints": [
+   "Product: R–CH2–COOH (one alkyl) or R2CH–COOH (two alkylations)",
+   "Use primary alkyl halides (SN2); tertiary and aryl halides fail",
+   "Net: RX is converted to RCH2COOH (two carbons added)",
+   "With dihalides gives cyclic acids (e.g. 1,2-dibromoethane -> cyclopropane carboxylic acid)"
+  ],
+  "whenUsed": "Preparation of substituted acetic acids and cycloalkane carboxylic acids.",
+  "applications": [
+   "Synthesis of butanoic acid",
+   "Barbiturate synthesis (with urea)"
+  ],
+  "examples": [
+   {
+    "eq": "CH2(COOC2H5)2 ->[\\text{1. NaOEt}][\\text{2. CH3CH2Br}] CH3CH2CH(COOC2H5)2",
+    "note": "Alkylation"
+   },
+   {
+    "eq": "CH3CH2CH(COOC2H5)2 ->[\\text{1. }H3O+][\\text{2. }\\Delta] CH3CH2CH2COOH + CO2",
+    "note": "Butanoic acid"
+   },
+   {
+    "eq": "CH2(COOC2H5)2 + BrCH2CH2Br ->[\\text{NaOEt (2 equiv)}] \\text{cyclopropane-1,1-dicarboxylate}",
+    "note": "Ring closure"
+   }
+  ],
+  "jeeTips": "With RX you get RCH2COOH (not RCOOH). Aryl halides and 3° halides cannot be used. Dialkylation yields R2CHCOOH.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/malonic-ester-synthesis.shtm",
+  "tags": [
+   "alkylation",
+   "active methylene",
+   "decarboxylation",
+   "C–C bond formation"
+  ]
+ },
+ {
+  "id": "acetoacetic-ester-synthesis",
+  "name": "Acetoacetic Ester Synthesis",
+  "aliases": [
+   "Ethyl acetoacetate synthesis",
+   "Acetoacetic ester alkylation"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH3COCH2COOC2H5",
+  "reagents": "(i) NaOEt; (ii) RX; (iii) dil. NaOH / H3O+, heat",
+  "conditions": "",
+  "products": "CH3COCH2R + CO2 + C2H5OH",
+  "catalyst": "Sodium ethoxide",
+  "reagentKeywords": [
+   "NaOEt",
+   "RX",
+   "alkyl halide",
+   "dil. NaOH",
+   "heat",
+   "ethyl acetoacetate",
+   "ketone"
+  ],
+  "productName": "Substituted methyl ketone",
+  "summary": "Ethyl acetoacetate is alkylated at the active methylene and then hydrolysed and decarboxylated (ketonic hydrolysis) to give a methyl ketone.",
+  "mechanism": "Ethoxide forms the stabilised enolate (pKa ≈ 11), which is alkylated by RX (SN2). Dilute alkali hydrolysis followed by acidification gives the β-keto acid, which decarboxylates on warming to a ketone. Concentrated alkali instead causes acid cleavage to give acids.",
+  "keyPoints": [
+   "Ketonic hydrolysis (dilute NaOH): gives ketone",
+   "Acid hydrolysis (conc. NaOH): gives two molecules of acids",
+   "Final ketone is CH3COCH2R (monoalkyl) or CH3COCHR2",
+   "Use 1° halides; two successive alkylations possible"
+  ],
+  "whenUsed": "Synthesis of methyl ketones, γ-diketones and keto acids.",
+  "applications": [
+   "Making 2-pentanone, 2-hexanone",
+   "Ketone synthesis in side-chain extensions"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COCH2COOC2H5 ->[\\text{1. NaOEt}][\\text{2. CH3I}] CH3COCH(CH3)COOC2H5",
+    "note": "Methylation"
+   },
+   {
+    "eq": "CH3COCH(CH3)COOC2H5 ->[\\text{1. dil. NaOH}][\\text{2. }H3O+,\\Delta] CH3COCH2CH3 + CO2 + C2H5OH",
+    "note": "Butanone"
+   },
+   {
+    "eq": "CH3COCH2COOC2H5 + C2H5Br ->[\\text{NaOEt}] CH3COCH(C2H5)COOC2H5",
+    "note": "Ethylation"
+   }
+  ],
+  "jeeTips": "Dilute base gives ketone, conc. base gives acids (acid hydrolysis). Product ketone always carries CH3CO– unit.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/acetoacetic-ester-synthesis.shtm",
+  "tags": [
+   "alkylation",
+   "β-keto ester",
+   "ketone",
+   "decarboxylation"
+  ]
+ },
+ {
+  "id": "decarboxylation-beta-keto-acids",
+  "name": "Decarboxylation of β-Keto Acids",
+  "aliases": [
+   "Decarboxylation of β-keto acids",
+   "Thermal decarboxylation of β-keto acids",
+   "Decarboxylation of malonic acid"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3COCH2COOH",
+  "reagents": "Heat",
+  "conditions": "40–60 °C, no catalyst",
+  "products": "CH3COCH3 + CO2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "heat",
+   "Δ",
+   "warm",
+   "CO2",
+   "decarboxylation",
+   "β-keto acid"
+  ],
+  "productName": "Acetone",
+  "summary": "β-Keto acids (and malonic acids) lose CO2 readily on gentle heating via a cyclic six-membered transition state to give a ketone (or monocarboxylic acid).",
+  "mechanism": "The carboxyl H is transferred to the β-carbonyl O through a six-membered cyclic transition state while the C–C bond breaks and CO2 is lost, giving an enol which tautomerises to the ketone.",
+  "keyPoints": [
+   "Needs a carbonyl at the β-position (3-oxo) to the COOH",
+   "Malonic acid: HOOCCH2COOH -> CH3COOH + CO2 on heating",
+   "Cyclic TS and enol intermediate",
+   "Bridgehead β-keto acids do not decarboxylate (Bredt's rule; enol cannot form)"
+  ],
+  "whenUsed": "Final step of malonic and acetoacetic ester syntheses.",
+  "applications": [
+   "Ketone formation",
+   "Biosynthesis of ketone bodies"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COCH2COOH ->[\\Delta] CH3COCH3 + CO2",
+    "note": "Acetone"
+   },
+   {
+    "eq": "HOOCCH2COOH ->[\\Delta] CH3COOH + CO2",
+    "note": "Malonic acid"
+   },
+   {
+    "eq": "C6H5COCH2COOH ->[\\Delta] C6H5COCH3 + CO2",
+    "note": "Acetophenone"
+   }
+  ],
+  "jeeTips": "Simple acids such as CH3COOH do not decarboxylate by heat alone; they need soda lime (NaOH/CaO). β-Keto acids lose CO2 at moderate temperature.",
+  "reference": "",
+  "tags": [
+   "decarboxylation",
+   "β-keto acid",
+   "cyclic transition state"
+  ]
+ },
+ {
+  "id": "hofmann-bromamide-degradation",
+  "name": "Hofmann Bromamide Degradation",
+  "aliases": [
+   "Hofmann rearrangement",
+   "Hofmann degradation of amides"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Rearrangement",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "RCONH2",
+  "reagents": "Br2, KOH (aq.)",
+  "conditions": "heat",
+  "products": "RNH2 + K2CO3 + KBr + H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Br2",
+   "KOH",
+   "NaOH",
+   "NaOBr",
+   "bromine",
+   "alkali"
+  ],
+  "productName": "Primary amine with one carbon less",
+  "summary": "A primary amide reacts with Br2 in aqueous KOH (or NaOBr) to give a primary amine containing one carbon atom less than the amide.",
+  "mechanism": "The amide is N-brominated to RCONHBr, deprotonated to the bromoamide anion. R migrates from C to N with loss of Br- to give the isocyanate RN=C=O. Hydrolysis gives carbamate and then RNH2 + CO3 2-.",
+  "keyPoints": [
+   "Amine has one C less than the amide",
+   "Migrating group retains configuration (optically active R gives optically active amine)",
+   "Only primary amides",
+   "Gives pure 1° amine, with no 2°/3° contaminant"
+  ],
+  "whenUsed": "Preparing pure primary amines (including aromatic amines such as aniline).",
+  "applications": [
+   "Aniline from benzamide",
+   "Methylamine from acetamide",
+   "Anthranilic acid from phthalimide"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CONH2 + Br2 + 4 KOH -> CH3NH2 + K2CO3 + 2 KBr + 2 H2O",
+    "note": "Methylamine"
+   },
+   {
+    "eq": "C6H5CONH2 + Br2 + 4 KOH -> C6H5NH2 + K2CO3 + 2 KBr + 2 H2O",
+    "note": "Aniline"
+   },
+   {
+    "eq": "CH3CH2CONH2 ->[\\text{Br2, NaOH}] CH3CH2NH2",
+    "note": "Ethylamine"
+   }
+  ],
+  "jeeTips": "Always one C less. Intermediate: isocyanate. Questions may ask the number of moles of KOH (4) — total equation: RCONH2 + Br2 + 4KOH. Don't confuse with Gabriel (same carbon count).",
+  "reference": "https://www.organic-chemistry.org/namedreactions/hofmann-rearrangement.shtm",
+  "tags": [
+   "rearrangement",
+   "isocyanate",
+   "amide",
+   "degradation"
+  ]
+ },
+ {
+  "id": "gabriel-phthalimide-synthesis",
+  "name": "Gabriel Phthalimide Synthesis",
+  "aliases": [
+   "Gabriel synthesis"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "Phthalimide",
+  "reagents": "(i) KOH; (ii) R–X; (iii) NaOH, H2O (or N2H4)",
+  "conditions": "",
+  "products": "R-NH2 + sodium phthalate",
+  "catalyst": "KOH",
+  "reagentKeywords": [
+   "KOH",
+   "RX",
+   "alkyl halide",
+   "NaOH",
+   "hydrazine",
+   "phthalimide"
+  ],
+  "productName": "Pure primary aliphatic amine",
+  "summary": "Potassium phthalimide, an N-nucleophile, is alkylated by a primary alkyl halide; hydrolysis (or hydrazinolysis) frees the pure primary amine.",
+  "mechanism": "KOH deprotonates phthalimide (pKa ≈ 8.3) to give the nucleophilic phthalimide anion, which displaces halide from R–X by SN2. The N-alkylphthalimide is hydrolysed with aq. NaOH (or N2H4) to RNH2 and phthalate (or phthalhydrazide).",
+  "keyPoints": [
+   "Gives ONLY primary amines (no 2° or 3°)",
+   "Works with primary alkyl halides; fails with aryl halides (no SN2) and with tertiary halides (elimination)",
+   "Aromatic primary amines cannot be made",
+   "Carbon count same as RX"
+  ],
+  "whenUsed": "Clean laboratory synthesis of aliphatic primary amines.",
+  "applications": [
+   "Benzylamine",
+   "Amino acids (via diethyl bromomalonate)"
+  ],
+  "examples": [
+   {
+    "eq": "C6H4(CO)2NH + KOH -> C6H4(CO)2NK + H2O",
+    "note": "Potassium phthalimide"
+   },
+   {
+    "eq": "C6H4(CO)2NK + CH3CH2Br -> C6H4(CO)2NC2H5 + KBr",
+    "note": "N-Ethylphthalimide"
+   },
+   {
+    "eq": "C6H4(CO)2NC2H5 + 2 NaOH + H2O -> C2H5NH2 + C6H4(COONa)2",
+    "note": "Ethylamine"
+   }
+  ],
+  "jeeTips": "Cannot prepare aniline by Gabriel. Product is always 1° amine only. Compare with Hofmann ammonolysis (mixture).",
+  "reference": "https://www.organic-chemistry.org/namedreactions/gabriel-synthesis.shtm",
+  "tags": [
+   "amine",
+   "SN2",
+   "phthalimide",
+   "1° amine"
+  ]
+ },
+ {
+  "id": "carbylamine-reaction",
+  "name": "Carbylamine (Isocyanide) Test",
+  "aliases": [
+   "Carbylamine reaction",
+   "Hofmann isocyanide test",
+   "Isocyanide test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "RNH2 + CHCl3",
+  "reagents": "KOH (alcoholic)",
+  "conditions": "heat",
+  "products": "RNC + 3 KCl + 3 H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "CHCl3",
+   "chloroform",
+   "KOH",
+   "alc. KOH",
+   "heat",
+   "isocyanide"
+  ],
+  "productName": "Alkyl/aryl isocyanide (foul smell)",
+  "summary": "Only primary amines (aliphatic or aromatic) on warming with chloroform and alcoholic KOH give isocyanides (carbylamines) with an extremely offensive smell.",
+  "mechanism": "KOH generates dichlorocarbene (:CCl2) from CHCl3 by α-elimination. The nucleophilic NH2 attacks :CCl2, and two successive eliminations of HCl by KOH give the isocyanide R–N≡C.",
+  "keyPoints": [
+   "Positive only for primary amines",
+   "2° and 3° amines give no foul smell",
+   "Used to detect 1° amino groups, also in aniline",
+   "Intermediate: dichlorocarbene"
+  ],
+  "whenUsed": "Qualitative test for 1° amines.",
+  "applications": [
+   "Distinguish 1° from 2° and 3° amines"
+  ],
+  "examples": [
+   {
+    "eq": "CH3NH2 + CHCl3 + 3 KOH -> CH3NC + 3 KCl + 3 H2O",
+    "note": "Methyl isocyanide"
+   },
+   {
+    "eq": "C6H5NH2 + CHCl3 + 3 KOH -> C6H5NC + 3 KCl + 3 H2O",
+    "note": "Phenyl isocyanide"
+   },
+   {
+    "eq": "(CH3)2NH + CHCl3 + KOH -> \\text{no foul smell}",
+    "note": "2° amine negative"
+   }
+  ],
+  "jeeTips": "Works with aniline too (unlike Hinsberg-type sulphonamide solubility trick). Amides do not give the test. The foul smell is the observation.",
+  "reference": "",
+  "tags": [
+   "qualitative test",
+   "isocyanide",
+   "dichlorocarbene",
+   "1° amine"
+  ]
+ },
+ {
+  "id": "hinsberg-test",
+  "name": "Hinsberg Test",
+  "aliases": [
+   "Hinsberg reagent test",
+   "Benzenesulphonyl chloride test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "RNH2 + C6H5SO2Cl",
+  "reagents": "aq. KOH",
+  "conditions": "",
+  "products": "C6H5SO2NHR (soluble in KOH) + HCl",
+  "catalyst": "",
+  "reagentKeywords": [
+   "C6H5SO2Cl",
+   "benzenesulphonyl chloride",
+   "KOH",
+   "NaOH",
+   "Hinsberg"
+  ],
+  "productName": "Sulphonamide (solubility depends on amine class)",
+  "summary": "Benzenesulphonyl chloride distinguishes 1°, 2° and 3° amines: 1° gives a sulphonamide soluble in alkali, 2° gives an insoluble one, 3° does not react.",
+  "mechanism": "The amine N attacks sulphur of C6H5SO2Cl with loss of Cl-. With 1° amines the N–H of the product is acidic (strongly electron-withdrawing SO2Ph group) and dissolves in KOH as the potassium salt. With 2° amines no N–H remains so the sulphonamide is insoluble.",
+  "keyPoints": [
+   "1° amine: sulphonamide soluble in KOH; on acidification it re-precipitates",
+   "2° amine: insoluble precipitate in KOH",
+   "3° amine: no reaction; remains insoluble amine, soluble in dilute HCl",
+   "Reagent also called Hinsberg reagent"
+  ],
+  "whenUsed": "Separation and identification of 1°, 2°, 3° amines.",
+  "applications": [
+   "Amine classification",
+   "Separation of amine mixtures"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5SO2Cl + CH3NH2 -> C6H5SO2NHCH3 + HCl",
+    "note": "1° amine: soluble in alkali"
+   },
+   {
+    "eq": "C6H5SO2Cl + (CH3)2NH -> C6H5SO2N(CH3)2 + HCl",
+    "note": "2° amine: insoluble in alkali"
+   },
+   {
+    "eq": "C6H5SO2NHCH3 + KOH -> C6H5SO2N^-CH3 K+ + H2O",
+    "note": "Soluble salt of 1° sulphonamide"
+   }
+  ],
+  "jeeTips": "Do not say 'in alkali 1° is insoluble'. 1° = soluble, 2° = insoluble, 3° = no reaction. Basic strength reasoning: N–H acidity from SO2Ph.",
+  "reference": "",
+  "tags": [
+   "qualitative test",
+   "sulphonamide",
+   "amine"
+  ]
+ },
+ {
+  "id": "hofmann-exhaustive-methylation",
+  "name": "Hofmann Exhaustive Methylation and Elimination",
+  "aliases": [
+   "Hofmann elimination",
+   "Hofmann exhaustive methylation",
+   "Hofmann's rule"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH3CH2CH2NH2",
+  "reagents": "(i) excess CH3I; (ii) Ag2O, H2O; (iii) heat",
+  "conditions": "~ 400–450 K",
+  "products": "CH3CH=CH2 + (CH3)3N + H2O",
+  "catalyst": "Ag2O (moist, gives OH-)",
+  "reagentKeywords": [
+   "CH3I",
+   "Ag2O",
+   "H2O",
+   "heat",
+   "quaternary ammonium hydroxide",
+   "AgOH"
+  ],
+  "productName": "Least substituted alkene (Hofmann product)",
+  "summary": "An amine is exhaustively methylated to a quaternary ammonium iodide, converted to the hydroxide with moist Ag2O, and then pyrolysed to give the least substituted alkene.",
+  "mechanism": "Excess CH3I converts the amine to R–N+(CH3)3 I-. Ag2O/H2O replaces I- by OH-. On heating, E2 elimination takes place with OH- removing the most acidic, least hindered β-H (bulky leaving group), forming the less substituted alkene (Hofmann rule).",
+  "keyPoints": [
+   "Gives least substituted alkene (Hofmann product), opposite to Saytzeff",
+   "Number of CH3I equivalents consumed identifies the type of amine (1°: 3, 2°: 2, 3°: 1)",
+   "Bulky NMe3 leaving group and acidity of H cause the regiochemistry",
+   "Used for structure determination of alkaloids"
+  ],
+  "whenUsed": "Structure elucidation of amines and alkaloids; making terminal alkenes.",
+  "applications": [
+   "Alkaloid structure elucidation",
+   "Controlled alkene formation"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2CH2NH2 + 3 CH3I -> CH3CH2CH2N+(CH3)3 I- + 2 HI",
+    "note": "Exhaustive methylation"
+   },
+   {
+    "eq": "CH3CH2CH2N+(CH3)3 I- ->[\\text{Ag2O, H2O}] CH3CH2CH2N+(CH3)3 OH- + AgI",
+    "note": "Quaternary hydroxide"
+   },
+   {
+    "eq": "CH3CH2CH2N+(CH3)3 OH- ->[\\Delta] CH3CH=CH2 + (CH3)3N + H2O",
+    "note": "Propene"
+   }
+  ],
+  "jeeTips": "Hofmann product = LESS substituted alkene; Saytzeff with haloalkanes gives MORE substituted. Ag2O supplies OH-.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/hofmann-elimination.shtm",
+  "tags": [
+   "elimination",
+   "quaternary ammonium",
+   "Hofmann rule"
+  ]
+ },
+ {
+  "id": "mendius-reduction",
+  "name": "Mendius Reduction",
+  "aliases": [
+   "Mendius reaction",
+   "Reduction of nitriles to primary amines"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "RCN",
+  "reagents": "Na / C2H5OH (nascent H)",
+  "conditions": "",
+  "products": "RCH2NH2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Na",
+   "C2H5OH",
+   "ethanol",
+   "sodium",
+   "LiAlH4",
+   "H2/Ni",
+   "nitrile"
+  ],
+  "productName": "Primary amine",
+  "summary": "Nitriles are reduced to primary amines by sodium and alcohol (nascent hydrogen); catalytic hydrogenation or LiAlH4 also work.",
+  "mechanism": "Successive addition of hydrogen across the C≡N triple bond: first to imine RCH=NH (via electron transfer from Na and protonation by ethanol), then to RCH2NH2.",
+  "keyPoints": [
+   "Carbon count unchanged between nitrile and amine; amine has one more C than R–X used to make RCN",
+   "Gives only primary amine",
+   "LiAlH4 or H2/Ni are alternatives; DIBAL-H gives aldehyde",
+   "Isocyanides give 2° amines (RNHCH3) on reduction instead"
+  ],
+  "whenUsed": "Preparation of primary amines with one extra carbon from alkyl halide.",
+  "applications": [
+   "RX -> RCN -> RCH2NH2 chain-extension of amines"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CN + 4 [H] ->[\\text{Na, C2H5OH}] CH3CH2NH2",
+    "note": "Ethylamine"
+   },
+   {
+    "eq": "C6H5CN ->[\\text{LiAlH4}] C6H5CH2NH2",
+    "note": "Benzylamine"
+   },
+   {
+    "eq": "CH3CH2Br ->[\\text{KCN}] CH3CH2CN ->[\\text{Na/C2H5OH}] CH3CH2CH2NH2",
+    "note": "Propylamine"
+   }
+  ],
+  "jeeTips": "Nitrile gives 1° amine; isocyanide gives 2° N-methyl amine; do not mix up. Use of KCN then reduction adds one carbon (vs Gabriel which does not).",
+  "reference": "",
+  "tags": [
+   "reduction",
+   "nitrile",
+   "amine"
+  ]
+ },
+ {
+  "id": "reduction-nitrobenzene-acidic",
+  "name": "Reduction of Nitrobenzene to Aniline (Sn/HCl, Fe/HCl)",
+  "aliases": [
+   "Nitrobenzene to aniline",
+   "Reduction of nitro compounds in acidic medium"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "C6H5NO2",
+  "reagents": "Sn / conc. HCl (or Fe/HCl; H2/Pd)",
+  "conditions": "heat",
+  "products": "C6H5NH2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Sn",
+   "HCl",
+   "Fe",
+   "H2",
+   "Pd",
+   "Ni",
+   "LiAlH4",
+   "acidic medium"
+  ],
+  "productName": "Aniline",
+  "summary": "Nitrobenzene is completely reduced to aniline (via nitroso and hydroxylamine) in strongly acidic medium by metals like Sn, Fe with HCl, or by catalytic hydrogenation.",
+  "mechanism": "Six electrons (and six protons) are transferred: ArNO2 -> ArNO -> ArNHOH -> ArNH2. In HCl, Ar–NHOH is protonated and quickly reduced, so it does not accumulate or condense with nitroso compounds.",
+  "keyPoints": [
+   "Sn/HCl or Fe/HCl: aniline is isolated as the anilinium salt, free amine with NaOH",
+   "Fe/HCl (with little HCl; FeCl2 regenerates acid) is the industrial route",
+   "Catalytic H2/Pd or Ni also gives aniline",
+   "Aromatic nitro group is reduced selectively with Sn/HCl, even in presence of C=O of some ketones"
+  ],
+  "whenUsed": "Principal route to aniline and aromatic amines.",
+  "applications": [
+   "Manufacture of aniline, dyes and drugs (paracetamol)"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NO2 + 6 [H] ->[\\text{Sn, HCl}] C6H5NH2 + 2 H2O",
+    "note": "Aniline"
+   },
+   {
+    "eq": "C6H5NO2 + 3 H2 ->[\\text{Ni or Pd}] C6H5NH2 + 2 H2O",
+    "note": "Catalytic hydrogenation"
+   },
+   {
+    "eq": "4-CH3C6H4NO2 ->[\\text{Fe, HCl}] 4-CH3C6H4NH2",
+    "note": "p-Toluidine"
+   }
+  ],
+  "jeeTips": "Acidic medium always gives amine. Without work-up with base the product is C6H5NH3+ Cl-. m-Dinitrobenzene with (NH4)2S selectively gives m-nitroaniline (Zinin).",
+  "reference": "",
+  "tags": [
+   "reduction",
+   "nitro",
+   "aniline"
+  ]
+ },
+ {
+  "id": "reduction-nitrobenzene-media",
+  "name": "Reduction of Nitrobenzene in Neutral and Alkaline Media",
+  "aliases": [
+   "Nitrobenzene reduction products",
+   "Zn/NH4Cl reduction",
+   "Zn/NaOH reduction"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "2 C6H5NO2",
+  "reagents": "Zn / NH4Cl (neutral); Zn / NaOH (alkaline)",
+  "conditions": "",
+  "products": "C6H5NHOH (neutral); azoxy / azo / hydrazobenzene (alkaline)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Zn",
+   "NH4Cl",
+   "NaOH",
+   "alkaline",
+   "neutral",
+   "azoxybenzene",
+   "azobenzene",
+   "hydrazobenzene"
+  ],
+  "productName": "N-Phenylhydroxylamine / azoxybenzene / azobenzene / hydrazobenzene",
+  "summary": "The product from nitrobenzene depends on the medium: neutral gives phenylhydroxylamine, mildly alkaline gives azoxybenzene, more strongly alkaline azobenzene and then hydrazobenzene; strongly acidic gives aniline.",
+  "mechanism": "Stepwise reduction gives PhNO and PhNHOH. In neutral medium PhNHOH accumulates. In alkaline medium PhNO and PhNHOH condense (bimolecular reduction) to form azoxybenzene, which is progressively reduced to azobenzene and hydrazobenzene.",
+  "keyPoints": [
+   "Neutral (Zn, NH4Cl): C6H5NHOH (N-phenylhydroxylamine)",
+   "Alkaline, mild (Na3AsO3 or NaOH, glucose): azoxybenzene C6H5N(O)=NC6H5",
+   "Alkaline (Zn, NaOH): azobenzene then hydrazobenzene",
+   "Hydrazobenzene in acid gives benzidine (benzidine rearrangement)"
+  ],
+  "whenUsed": "Preparation of azo/hydrazo compounds and benzidine.",
+  "applications": [
+   "Benzidine for dye manufacture (restricted)"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NO2 + 4 [H] ->[\\text{Zn, NH4Cl}] C6H5NHOH + H2O",
+    "note": "Neutral medium"
+   },
+   {
+    "eq": "2 C6H5NO2 + 8 [H] ->[\\text{Zn, NaOH}] C6H5N=NC6H5 + 4 H2O",
+    "note": "Azobenzene"
+   },
+   {
+    "eq": "C6H5N=NC6H5 + 2 [H] ->[\\text{Zn, NaOH}] C6H5NH-NHC6H5",
+    "note": "Hydrazobenzene"
+   }
+  ],
+  "jeeTips": "Memorise medium -> product: acidic -> aniline; neutral -> phenylhydroxylamine; alkaline -> azoxy -> azo -> hydrazo. Hydrazobenzene + H+ gives benzidine.",
+  "reference": "",
+  "tags": [
+   "reduction",
+   "nitro",
+   "medium dependence"
+  ]
+ },
+ {
+  "id": "hofmann-ammonolysis",
+  "name": "Ammonolysis of Alkyl Halides (Hofmann Ammonolysis)",
+  "aliases": [
+   "Hofmann ammonolysis",
+   "Alkylation of ammonia"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "R-X + NH3",
+  "reagents": "Excess alcoholic NH3",
+  "conditions": "heated in sealed tube, 373 K",
+  "products": "RNH2 + R2NH + R3N + R4N+ X-",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NH3",
+   "alcoholic ammonia",
+   "sealed tube",
+   "heat",
+   "alkyl halide"
+  ],
+  "productName": "Mixture of 1°, 2°, 3° amines and quaternary salt",
+  "summary": "Alkyl halides react with ammonia in a sealed tube to give a mixture of primary, secondary, tertiary amines and the quaternary ammonium salt through repeated SN2 reactions.",
+  "mechanism": "NH3 attacks R–X by SN2 to give RNH3+ X-, which is deprotonated by excess NH3 to RNH2. The more nucleophilic amines react again with R–X successively until the quaternary salt forms.",
+  "keyPoints": [
+   "Product is a mixture; excess NH3 favours the primary amine",
+   "Reactivity of halides: RI > RBr > RCl",
+   "Basicity (aqueous): 2° > 3° > 1° (alkyl), ordering depends on R",
+   "Separation of mixture by fractional distillation or Hinsberg reagent"
+  ],
+  "whenUsed": "Preparation of aliphatic amines (poor selectivity).",
+  "applications": [
+   "Industrial manufacture of methylamines"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2Br + NH3 -> CH3CH2NH2 + HBr",
+    "note": "1° amine"
+   },
+   {
+    "eq": "CH3CH2NH2 + CH3CH2Br -> (CH3CH2)2NH + HBr",
+    "note": "2° amine"
+   },
+   {
+    "eq": "(CH3CH2)3N + CH3CH2Br -> (CH3CH2)4N+ Br-",
+    "note": "Quaternary ammonium salt"
+   }
+  ],
+  "jeeTips": "Gives a mixture. For pure 1° amine use Gabriel or Hofmann bromamide. Aryl halides do not undergo ammonolysis under normal conditions.",
+  "reference": "",
+  "tags": [
+   "SN2",
+   "amine",
+   "alkylation"
+  ]
+ },
+ {
+  "id": "diazotisation",
+  "name": "Diazotisation",
+  "aliases": [
+   "Preparation of benzenediazonium chloride",
+   "Diazotization of aniline"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "C6H5NH2",
+  "reagents": "NaNO2 + HCl",
+  "conditions": "273–278 K (0–5 °C)",
+  "products": "C6H5N2+ Cl- + NaCl + 2 H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NaNO2",
+   "HCl",
+   "HNO2",
+   "0-5 C",
+   "273 K",
+   "ice",
+   "nitrous acid"
+  ],
+  "productName": "Benzenediazonium chloride",
+  "summary": "A primary aromatic amine reacts with nitrous acid (NaNO2 + HCl) at 0–5 °C to give an arenediazonium salt.",
+  "mechanism": "HNO2 (from NaNO2 + HCl) gives NO+ (nitrosonium). The amine N attacks NO+ to form an N-nitrosoammonium ion, which loses H+ to give the N-nitrosamine, tautomerises to diazohydroxide and, with acid, loses water to give Ar–N2+.",
+  "keyPoints": [
+   "Must be kept at 0–5 °C: above this the diazonium salt hydrolyses to phenol and N2",
+   "Aliphatic 1° amines give unstable diazonium salts (alcohols + N2)",
+   "Diazonium salt is stabilised by resonance with the aryl ring",
+   "Used in situ; solid diazonium salts are explosive (except BF4-)"
+  ],
+  "whenUsed": "First step to prepare many aryl derivatives (Cl, Br, CN, I, F, OH, H, azo dyes).",
+  "applications": [
+   "Sandmeyer, Gattermann, coupling reactions"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NH2 + NaNO2 + 2 HCl ->[\\text{273-278 K}] C6H5N2+ Cl- + NaCl + 2 H2O",
+    "note": "Benzenediazonium chloride"
+   },
+   {
+    "eq": "4-CH3C6H4NH2 + NaNO2 + 2 HCl -> 4-CH3C6H4N2+ Cl- + NaCl + 2 H2O",
+    "note": "p-Toluenediazonium chloride"
+   },
+   {
+    "eq": "C6H5N2+ Cl- ->[\\text{H2O, warm}] C6H5OH + N2 + HCl",
+    "note": "Decomposition above 5 °C"
+   }
+  ],
+  "jeeTips": "Temperature 0–5 °C. NaNO2 + HCl generates HNO2 in situ (HNO2 is unstable). Aliphatic amines: no stable diazonium salt.",
+  "reference": "",
+  "tags": [
+   "diazonium",
+   "nitrous acid",
+   "low temperature"
+  ]
+ },
+ {
+  "id": "sandmeyer-reaction",
+  "name": "Sandmeyer Reaction",
+  "aliases": [
+   "Sandmeyer reaction (CuCl, CuBr, CuCN)"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5N2+ Cl-",
+  "reagents": "CuCl / HCl (or CuBr / HBr, CuCN / KCN)",
+  "conditions": "",
+  "products": "C6H5Cl + N2",
+  "catalyst": "Cu(I) salt",
+  "reagentKeywords": [
+   "CuCl",
+   "CuBr",
+   "CuCN",
+   "KCN",
+   "HCl",
+   "HBr",
+   "Cu(I)",
+   "cuprous"
+  ],
+  "productName": "Chlorobenzene / bromobenzene / benzonitrile",
+  "summary": "The diazonium group is replaced by Cl, Br or CN by treating the diazonium salt with the corresponding cuprous salt (CuCl, CuBr, CuCN).",
+  "mechanism": "Single electron transfer from Cu(I) to Ar–N2+ gives Ar• + N2 and Cu(II). The aryl radical abstracts halide (or CN) from the Cu(II) species to give Ar–X and regenerates Cu(I) (radical chain).",
+  "keyPoints": [
+   "Reagents are Cu(I) salts in the corresponding acid (CuCl/HCl, CuBr/HBr, CuCN/KCN)",
+   "Benzonitrile can be hydrolysed to benzoic acid",
+   "Radical mechanism",
+   "Fluoro and iodo compounds are not made this way (Balz–Schiemann, KI)"
+  ],
+  "whenUsed": "Introduction of Cl, Br, CN into the ring at positions where direct substitution fails.",
+  "applications": [
+   "Preparation of m-bromotoluene from toluene",
+   "Benzoic acid from aniline via nitrile"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N2+ Cl- ->[\\text{CuCl/HCl}] C6H5Cl + N2",
+    "note": "Chlorobenzene"
+   },
+   {
+    "eq": "C6H5N2+ Cl- ->[\\text{CuBr/HBr}] C6H5Br + N2",
+    "note": "Bromobenzene"
+   },
+   {
+    "eq": "C6H5N2+ Cl- ->[\\text{CuCN/KCN}] C6H5CN + N2",
+    "note": "Benzonitrile"
+   }
+  ],
+  "jeeTips": "Sandmeyer = Cu(I) salt in solution; Gattermann = Cu powder + HX. Sandmeyer gives higher yield. CuCN gives nitrile only (CN, not isocyanide).",
+  "reference": "https://www.organic-chemistry.org/namedreactions/sandmeyer-reaction.shtm",
+  "tags": [
+   "diazonium",
+   "aryl halide",
+   "Cu",
+   "radical"
+  ]
+ },
+ {
+  "id": "gattermann-reaction",
+  "name": "Gattermann Reaction (Cu / HX)",
+  "aliases": [
+   "Gattermann reaction (halogenation)",
+   "Gattermann diazonium halide replacement"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5N2+ Cl-",
+  "reagents": "Cu powder / HBr (or HCl)",
+  "conditions": "",
+  "products": "C6H5Br + N2",
+  "catalyst": "Copper powder",
+  "reagentKeywords": [
+   "Cu",
+   "copper powder",
+   "HCl",
+   "HBr",
+   "Gattermann"
+  ],
+  "productName": "Bromobenzene / chlorobenzene",
+  "summary": "Diazonium salts are converted to aryl chlorides or bromides by warming with copper powder and the corresponding halogen acid (HCl or HBr).",
+  "mechanism": "Copper powder (Cu0) transfers an electron to the diazonium ion giving an aryl radical and N2; the radical combines with halide from the Cu(I)X species formed.",
+  "keyPoints": [
+   "Uses Cu powder and HX, whereas Sandmeyer uses CuX",
+   "Yield is lower than in the Sandmeyer reaction",
+   "Not to be confused with Gattermann–Koch formylation (CO + HCl, AlCl3)",
+   "Gives halides from diazonium salts, not from aromatic rings"
+  ],
+  "whenUsed": "Alternative to Sandmeyer to prepare aryl chlorides/bromides.",
+  "applications": [
+   "Aryl halide synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N2+ Cl- ->[\\text{Cu, HCl}] C6H5Cl + N2",
+    "note": "Chlorobenzene"
+   },
+   {
+    "eq": "C6H5N2+ Cl- ->[\\text{Cu, HBr}] C6H5Br + N2",
+    "note": "Bromobenzene"
+   },
+   {
+    "eq": "4-CH3C6H4N2+ Cl- ->[\\text{Cu, HBr}] 4-CH3C6H4Br + N2",
+    "note": "p-Bromotoluene"
+   }
+  ],
+  "jeeTips": "Cu/HX = Gattermann; CuX/HX = Sandmeyer. Gattermann–Koch (CO, HCl, anhyd. AlCl3/CuCl) gives benzaldehyde — a different reaction.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/gattermann-reaction.shtm",
+  "tags": [
+   "diazonium",
+   "aryl halide",
+   "Cu"
+  ]
+ },
+ {
+  "id": "balz-schiemann-reaction",
+  "name": "Balz–Schiemann Reaction",
+  "aliases": [
+   "Schiemann reaction",
+   "Fluorobenzene from diazonium fluoroborate"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5N2+ Cl-",
+  "reagents": "(i) HBF4; (ii) heat",
+  "conditions": "",
+  "products": "C6H5F + BF3 + N2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "HBF4",
+   "fluoroboric acid",
+   "BF4-",
+   "heat",
+   "NaBF4",
+   "NaNO2",
+   "Cu"
+  ],
+  "productName": "Fluorobenzene",
+  "summary": "An arenediazonium chloride is treated with fluoroboric acid to give the insoluble diazonium tetrafluoroborate, which on heating decomposes to the aryl fluoride, BF3 and N2.",
+  "mechanism": "Ar–N2+ BF4- is isolated as a stable solid. On heating, N2 is lost to give aryl cation (or ion pair) that abstracts F- from BF4-, giving Ar–F and BF3.",
+  "keyPoints": [
+   "Only practical method for aryl fluorides (direct fluorination too violent)",
+   "Diazonium tetrafluoroborate is isolable and stable",
+   "By-products: BF3 and N2",
+   "Diazonium BF4- on heating with NaNO2/Cu gives nitrobenzene (nitro replacement)"
+  ],
+  "whenUsed": "Making fluoroarenes for medicinal chemistry.",
+  "applications": [
+   "Fluorobenzene",
+   "p-Fluorotoluene"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N2+ Cl- + HBF4 -> C6H5N2+ BF4- + HCl",
+    "note": "Insoluble diazonium fluoroborate"
+   },
+   {
+    "eq": "C6H5N2+ BF4- ->[\\Delta] C6H5F + BF3 + N2",
+    "note": "Fluorobenzene"
+   },
+   {
+    "eq": "C6H5N2+ BF4- ->[\\text{NaNO2, Cu, }\\Delta] C6H5NO2 + N2 + BF3",
+    "note": "Nitro replacement"
+   }
+  ],
+  "jeeTips": "Fluorine from HBF4, not from KF/CuF. Aryl iodide from KI, aryl fluoride from HBF4 — popular pair for matching.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/balz-schiemann-reaction.shtm",
+  "tags": [
+   "diazonium",
+   "aryl fluoride",
+   "HBF4"
+  ]
+ },
+ {
+  "id": "diazonium-to-arene-h3po2",
+  "name": "Replacement of Diazo Group by Hydrogen (H3PO2 / C2H5OH)",
+  "aliases": [
+   "Deamination of diazonium salts",
+   "Hypophosphorous acid reduction of diazonium salt"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5N2+ Cl-",
+  "reagents": "H3PO2 + H2O (or C2H5OH)",
+  "conditions": "",
+  "products": "C6H6 + N2 + H3PO3 + HCl",
+  "catalyst": "",
+  "reagentKeywords": [
+   "H3PO2",
+   "hypophosphorous acid",
+   "C2H5OH",
+   "ethanol",
+   "deamination",
+   "phosphinic acid"
+  ],
+  "productName": "Benzene (diazo group removed)",
+  "summary": "Mild reducing agents like hypophosphorous acid or ethanol replace the diazonium group by hydrogen, thereby removing the amino group from the ring.",
+  "mechanism": "Radical pathway: H3PO2 (or ethanol) acts as H-atom donor to the aryl radical/cation formed on loss of N2, giving Ar–H. Ethanol is oxidised to acetaldehyde, H3PO2 to H3PO3.",
+  "keyPoints": [
+   "Used to remove NH2 after it has directed other substituents",
+   "Ethanol also converts diazonium to arene, but may give ether (ArOEt) as by-product",
+   "Useful for making 1,3,5-tribromobenzene from aniline",
+   "Replaces N2+ by H, not by OH"
+  ],
+  "whenUsed": "Synthesis of meta-substituted or 1,3,5-trisubstituted benzenes impossible by direct substitution.",
+  "applications": [
+   "1,3,5-Tribromobenzene from aniline",
+   "m-Bromotoluene from p-toluidine"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N2+ Cl- + H3PO2 + H2O -> C6H6 + N2 + H3PO3 + HCl",
+    "note": "Benzene"
+   },
+   {
+    "eq": "C6H5N2+ Cl- + CH3CH2OH -> C6H6 + N2 + CH3CHO + HCl",
+    "note": "With ethanol"
+   },
+   {
+    "eq": "2,4,6-Br3C6H2N2+ Cl- ->[\\text{H3PO2}] 1,3,5-Br3C6H3 + N2",
+    "note": "1,3,5-Tribromobenzene"
+   }
+  ],
+  "jeeTips": "Key trick: use NH2 as a temporary activating/directing group, then remove with H3PO2. Ethanol gives acetaldehyde in the process.",
+  "reference": "",
+  "tags": [
+   "deamination",
+   "diazonium",
+   "synthetic strategy"
+  ]
+ },
+ {
+  "id": "diazonium-to-phenol",
+  "name": "Diazonium Salt to Phenol (Warm Water)",
+  "aliases": [
+   "Hydrolysis of diazonium salts",
+   "Phenol from diazonium salt"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "C6H5N2+ Cl-",
+  "reagents": "H2O",
+  "conditions": "warm (above 283 K), or dil. H2SO4 heat",
+  "products": "C6H5OH + N2 + HCl",
+  "catalyst": "",
+  "reagentKeywords": [
+   "H2O",
+   "water",
+   "warm",
+   "dil. H2SO4",
+   "heat",
+   "273 K"
+  ],
+  "productName": "Phenol",
+  "summary": "On warming with water (or boiling with dilute H2SO4), arenediazonium salts are hydrolysed to phenols with evolution of N2.",
+  "mechanism": "Loss of N2 gives the very unstable aryl cation (SN1-type), which is captured by water. Loss of proton from the oxonium ion gives ArOH.",
+  "keyPoints": [
+   "Reaction is the reason diazotisation must be done at 0–5 °C",
+   "Strong acid (dil. H2SO4) minimises coupling of phenol with undecomposed diazonium salt",
+   "Aryl cation is highly reactive (no resonance stabilisation by π system)",
+   "Used to prepare phenols where substitution is impossible"
+  ],
+  "whenUsed": "Laboratory synthesis of phenols and substituted phenols.",
+  "applications": [
+   "m-Substituted phenols",
+   "Cresols"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N2+ Cl- + H2O ->[\\text{warm}] C6H5OH + N2 + HCl",
+    "note": "Phenol"
+   },
+   {
+    "eq": "4-CH3C6H4N2+ HSO4- + H2O ->[\\Delta] 4-CH3C6H4OH + N2 + H2SO4",
+    "note": "p-Cresol"
+   },
+   {
+    "eq": "C6H5NH2 ->[\\text{1. NaNO2, HCl, 273 K}][\\text{2. H2O, }\\Delta] C6H5OH",
+    "note": "Aniline to phenol"
+   }
+  ],
+  "jeeTips": "If phenol is formed in presence of diazonium salt it can couple to give azo dyes — use acid and warm to avoid this. Nitrogen gas evolves.",
+  "reference": "",
+  "tags": [
+   "diazonium",
+   "phenol",
+   "hydrolysis"
+  ]
+ },
+ {
+  "id": "diazonium-to-iodobenzene",
+  "name": "Diazonium Salt to Iodobenzene (KI)",
+  "aliases": [
+   "Iodination via diazonium salt",
+   "Sandmeyer-type iodination"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "C6H5N2+ Cl-",
+  "reagents": "KI",
+  "conditions": "",
+  "products": "C6H5I + N2 + KCl",
+  "catalyst": "",
+  "reagentKeywords": [
+   "KI",
+   "potassium iodide",
+   "iodide",
+   "HI"
+  ],
+  "productName": "Iodobenzene",
+  "summary": "Replacing the diazonium group by iodine needs only aqueous KI; no copper catalyst is required.",
+  "mechanism": "I- is a good enough reducing agent/nucleophile: electron transfer to Ar–N2+ gives Ar• + I•, N2 is lost and Ar–I forms (or direct nucleophilic displacement of N2).",
+  "keyPoints": [
+   "No Cu catalyst needed (unlike Cl, Br, CN)",
+   "Direct iodination of benzene with I2 is reversible and fails; this route is used instead",
+   "Iodine is not introduced by Sandmeyer's CuI",
+   "Evolves N2 gas"
+  ],
+  "whenUsed": "Synthesis of aryl iodides.",
+  "applications": [
+   "Iodobenzene",
+   "p-Iodotoluene"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N2+ Cl- + KI -> C6H5I + N2 + KCl",
+    "note": "Iodobenzene"
+   },
+   {
+    "eq": "4-CH3C6H4N2+ Cl- + KI -> 4-CH3C6H4I + N2 + KCl",
+    "note": "p-Iodotoluene"
+   },
+   {
+    "eq": "C6H5NH2 ->[\\text{1. NaNO2, HCl, 273 K}][\\text{2. KI}] C6H5I",
+    "note": "Aniline to iodobenzene"
+   }
+  ],
+  "jeeTips": "Remember: Cl/Br/CN need Cu(I); F needs HBF4; I needs only KI.",
+  "reference": "",
+  "tags": [
+   "diazonium",
+   "aryl iodide",
+   "KI"
+  ]
+ },
+ {
+  "id": "azo-coupling-aniline",
+  "name": "Diazonium Coupling with Aniline (Aminoazobenzene)",
+  "aliases": [
+   "Azo coupling with aniline",
+   "Aniline yellow synthesis"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5N2+ Cl- + C6H5NH2",
+  "reagents": "Weakly acidic (pH 4–5)",
+  "conditions": "273–278 K",
+  "products": "C6H5-N=N-C6H4-NH2 (p) + HCl",
+  "catalyst": "",
+  "reagentKeywords": [
+   "pH 4-5",
+   "weakly acidic",
+   "C6H5NH2",
+   "aniline",
+   "coupling",
+   "273 K"
+  ],
+  "productName": "p-Aminoazobenzene (aniline yellow)",
+  "summary": "Benzenediazonium chloride couples with aniline at the para position in weakly acidic medium to give p-aminoazobenzene, a yellow azo dye.",
+  "mechanism": "The diazonium ion is a weak electrophile and attacks the electron-rich para position of aniline (electrophilic aromatic substitution). Loss of H+ gives the azo compound, Ar–N=N–Ar', which has an extended conjugated chromophore (colour).",
+  "keyPoints": [
+   "pH 4–5 (weakly acidic) for amines; pH 9–10 (mildly alkaline) for phenols",
+   "Para position attacked; ortho if para is blocked",
+   "–N=N– (azo) group is the chromophore",
+   "Product is yellow; with 2-naphthol an orange-red dye is formed"
+  ],
+  "whenUsed": "Azo dyes and indicators (methyl orange).",
+  "applications": [
+   "Aniline yellow",
+   "Methyl orange"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5N2+ Cl- + C6H5NH2 -> C6H5-N=N-C6H4-NH2 + HCl",
+    "note": "p-Aminoazobenzene (yellow)"
+   },
+   {
+    "eq": "C6H5N2+ Cl- + C6H5NMe2 -> C6H5-N=N-C6H4-NMe2 + HCl",
+    "note": "Dimethylaminoazobenzene (butter yellow)"
+   },
+   {
+    "eq": "C6H5N2+ Cl- + C6H5NH2 -> C6H5NH-N=N-C6H5 + HCl",
+    "note": "Kinetic N-coupling: diazoaminobenzene (rearranges)"
+   }
+  ],
+  "jeeTips": "Coupling with phenols in alkaline medium, with amines in weakly acidic medium. Para position preferred. Product always has –N=N–.",
+  "reference": "",
+  "tags": [
+   "azo coupling",
+   "diazonium",
+   "dye",
+   "electrophilic substitution"
+  ]
+ },
+ {
+  "id": "schotten-baumann-reaction",
+  "name": "Schotten–Baumann Reaction",
+  "aliases": [
+   "Benzoylation of amines and alcohols",
+   "Benzoylation"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5NH2 + C6H5COCl",
+  "reagents": "aq. NaOH (or pyridine)",
+  "conditions": "",
+  "products": "C6H5NHCOC6H5 + HCl",
+  "catalyst": "NaOH / pyridine",
+  "reagentKeywords": [
+   "C6H5COCl",
+   "benzoyl chloride",
+   "NaOH",
+   "pyridine",
+   "aq. alkali",
+   "benzoylation"
+  ],
+  "productName": "Benzanilide",
+  "summary": "Amines (or phenols/alcohols) react with benzoyl chloride in the presence of aqueous NaOH or pyridine to give N-benzoyl amides or benzoate esters.",
+  "mechanism": "Nucleophilic attack of the amine N (or phenoxide O) at the carbonyl of C6H5COCl gives a tetrahedral intermediate; chloride is expelled. The base neutralises HCl and drives the reaction forward.",
+  "keyPoints": [
+   "Base removes HCl (shifts equilibrium) and prevents amine protonation",
+   "Works with 1° and 2° amines, phenols and alcohols; 3° amines do not form amides",
+   "Product from aniline: benzanilide (N-phenylbenzamide)",
+   "Used to prepare crystalline derivatives for identification"
+  ],
+  "whenUsed": "Protection of –NH2 and –OH and for preparing esters/amides.",
+  "applications": [
+   "Benzanilide, phenyl benzoate"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NH2 + C6H5COCl ->[\\text{aq. NaOH}] C6H5NHCOC6H5 + HCl",
+    "note": "Benzanilide"
+   },
+   {
+    "eq": "C6H5OH + C6H5COCl ->[\\text{aq. NaOH}] C6H5COOC6H5 + HCl",
+    "note": "Phenyl benzoate"
+   },
+   {
+    "eq": "CH3NH2 + C6H5COCl ->[\\text{NaOH}] C6H5CONHCH3 + HCl",
+    "note": "N-Methylbenzamide"
+   }
+  ],
+  "jeeTips": "Benzoylation = Schotten–Baumann (benzoyl chloride + NaOH). Acetylation uses acetyl chloride/acetic anhydride + pyridine. 3° amines do not react.",
+  "reference": "https://www.organic-chemistry.org/namedreactions/schotten-baumann-reaction.shtm",
+  "tags": [
+   "acylation",
+   "benzoylation",
+   "amine"
+  ]
+ },
+ {
+  "id": "nitrous-acid-test-amines",
+  "name": "Nitrous Acid Test for 1°, 2° and 3° Amines",
+  "aliases": [
+   "HNO2 test for amines",
+   "Nitrous acid test",
+   "Liebermann nitroso test (2° amines)"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "RNH2 / R2NH / R3N",
+  "reagents": "NaNO2 + HCl (HNO2)",
+  "conditions": "273–278 K",
+  "products": "ROH + N2 (1°) / R2N-N=O (2°) / R3NH+ NO2- (3°)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NaNO2",
+   "HCl",
+   "HNO2",
+   "nitrous acid",
+   "273 K",
+   "N2",
+   "N-nitrosamine",
+   "yellow oil"
+  ],
+  "productName": "Alcohol + N2 / nitrosamine / ammonium salt",
+  "summary": "Nitrous acid distinguishes amine classes: aliphatic 1° gives N2 gas and alcohol; 2° gives a yellow oily N-nitrosamine; 3° gives a soluble nitrite salt; aromatic 1° gives a diazonium salt.",
+  "mechanism": "1° aliphatic: unstable diazonium salt decomposes (N2 + carbocation + products). 2°: N attacks NO+ and loses H+, giving stable R2N–N=O. 3°: no N–H to lose, so only protonation (salt) or ring nitrosation (aromatic 3°, e.g. p-nitroso-N,N-dimethylaniline, green).",
+  "keyPoints": [
+   "Aliphatic 1° amine: brisk effervescence of N2 + alcohol",
+   "Aromatic 1° amine: diazonium salt at 273–278 K (couples with 2-naphthol to give red dye)",
+   "2° amine (aliphatic or aromatic): yellow oily nitrosamine (Liebermann)",
+   "3° aliphatic: dissolves as R3NH+ NO2-; 3° aromatic: ring nitrosation, green solid"
+  ],
+  "whenUsed": "Qualitative separation of 1°, 2° and 3° amines.",
+  "applications": [
+   "Amine classification"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2NH2 + HNO2 -> CH3CH2OH + N2 + H2O",
+    "note": "Aliphatic 1°: N2 evolved"
+   },
+   {
+    "eq": "(CH3)2NH + HNO2 -> (CH3)2N-N=O + H2O",
+    "note": "2°: yellow nitrosamine"
+   },
+   {
+    "eq": "(CH3)3N + HNO2 -> (CH3)3NH+ NO2-",
+    "note": "3°: soluble salt"
+   }
+  ],
+  "jeeTips": "1° aliphatic gives N2 (effervescence); 1° aromatic gives diazonium at 0–5 °C (no gas), then coupling test. Don't write nitrosamine for 1° amines.",
+  "reference": "",
+  "tags": [
+   "qualitative test",
+   "nitrosamine",
+   "diazonium",
+   "amine"
+  ]
+ },
+ {
+  "id": "azo-dye-test",
+  "name": "Azo Dye Test (Coupling with 2-Naphthol)",
+  "aliases": [
+   "Orange-red dye test",
+   "Aromatic primary amine test (dye test)",
+   "Diazotisation-coupling test"
+  ],
+  "category": "Qualitative Tests",
+  "kind": "Distinguishing test",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "ArNH2",
+  "reagents": "(i) NaNO2 + HCl, 273–278 K; (ii) alkaline 2-naphthol",
+  "conditions": "",
+  "products": "Ar-N=N-C10H6-OH (orange-red dye)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NaNO2",
+   "HCl",
+   "2-naphthol",
+   "β-naphthol",
+   "NaOH",
+   "0-5 C",
+   "azo dye"
+  ],
+  "productName": "Orange-red 1-arylazo-2-naphthol",
+  "summary": "Aromatic primary amines are diazotised at 0–5 °C and the cold solution is added to alkaline 2-naphthol; a brilliant orange-red azo dye precipitates.",
+  "mechanism": "ArNH2 gives Ar–N2+ (diazotisation). The electrophilic diazonium ion couples with the electron-rich 1-position of the 2-naphthoxide ion (electrophilic aromatic substitution), giving the azo dye.",
+  "keyPoints": [
+   "Positive only for aromatic primary amines",
+   "Aliphatic 1° amines give no dye (diazonium decomposes)",
+   "Alkaline medium needed for naphthoxide",
+   "Dye colour due to extended conjugation of –N=N–"
+  ],
+  "whenUsed": "Confirmatory test for aromatic primary amino group.",
+  "applications": [
+   "Detection of aniline"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NH2 + NaNO2 + 2 HCl -> C6H5N2+ Cl- + NaCl + 2 H2O",
+    "note": "Diazotisation"
+   },
+   {
+    "eq": "C6H5N2+ Cl- + C10H7O- Na+ -> C6H5-N=N-C10H6OH + NaCl",
+    "note": "Orange-red dye"
+   },
+   {
+    "eq": "C2H5NH2 ->[\\text{NaNO2, HCl}] \\text{no dye}",
+    "note": "Aliphatic amine negative"
+   }
+  ],
+  "jeeTips": "Test positive for aniline but NOT for CH3NH2. Always cold (273–278 K); coupling with phenol gives yellow/orange-yellow dyes, naphthol gives red-orange.",
+  "reference": "",
+  "tags": [
+   "qualitative test",
+   "azo",
+   "diazonium",
+   "naphthol"
+  ]
+ },
+ {
+  "id": "bromination-aniline-acetanilide",
+  "name": "Bromination of Aniline (2,4,6-Tribromoaniline) and Protection via Acetanilide",
+  "aliases": [
+   "Aniline + bromine water",
+   "Monobromination of aniline via acetanilide"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5NH2",
+  "reagents": "Br2 / H2O (bromine water)",
+  "conditions": "room temperature",
+  "products": "2,4,6-Br3C6H2NH2 + 3 HBr",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Br2",
+   "bromine water",
+   "H2O",
+   "acetanilide",
+   "CH3COCl",
+   "(CH3CO)2O",
+   "protection"
+  ],
+  "productName": "2,4,6-Tribromoaniline (white ppt)",
+  "summary": "Aniline is so strongly activated that bromine water gives 2,4,6-tribromoaniline at once; to make p-bromoaniline the NH2 group is first acetylated (acetanilide), brominated, then hydrolysed.",
+  "mechanism": "The lone pair on N is delocalised into the ring (+M), strongly activating o- and p-positions for electrophilic substitution. In acetanilide the lone pair is also delocalised on the C=O, so activation is moderated, leaving mainly para substitution (steric hindrance reduces ortho).",
+  "keyPoints": [
+   "Aniline + Br2/H2O: white ppt of 2,4,6-tribromoaniline, no catalyst needed",
+   "Protection: aniline -> acetanilide -> p-bromoacetanilide -> p-bromoaniline",
+   "Acetylation reduces activation and prevents oxidation",
+   "Test used to detect aniline"
+  ],
+  "whenUsed": "Preparing monobromoanilines and controlling reactivity.",
+  "applications": [
+   "p-Bromoaniline",
+   "Qualitative detection of aniline"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NH2 + 3 Br2 ->[\\text{H2O}] 2,4,6-Br3C6H2NH2 + 3 HBr",
+    "note": "Tribromoaniline"
+   },
+   {
+    "eq": "C6H5NH2 ->[\\text{(CH3CO)2O}] C6H5NHCOCH3 ->[\\text{Br2, CH3COOH}] 4-BrC6H4NHCOCH3",
+    "note": "Controlled bromination"
+   },
+   {
+    "eq": "4-BrC6H4NHCOCH3 ->[\\text{H3O+, }\\Delta] 4-BrC6H4NH2 + CH3COOH",
+    "note": "p-Bromoaniline"
+   }
+  ],
+  "jeeTips": "Without protection you cannot stop at mono-bromo. Acetyl group is a weaker activator; major product para. Order: protect -> brominate -> deprotect.",
+  "reference": "",
+  "tags": [
+   "electrophilic substitution",
+   "protection",
+   "activating group"
+  ]
+ },
+ {
+  "id": "nitration-aniline",
+  "name": "Nitration of Aniline (Meta via Anilinium, Para via Acetanilide)",
+  "aliases": [
+   "Nitration of aniline",
+   "Nitration of acetanilide"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H5NH2",
+  "reagents": "conc. HNO3 + conc. H2SO4",
+  "conditions": "",
+  "products": "4-O2NC6H4NH2 + 3-O2NC6H4NH2 + 2-O2NC6H4NH2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "HNO3",
+   "H2SO4",
+   "nitrating mixture",
+   "acetanilide",
+   "(CH3CO)2O",
+   "protection",
+   "anilinium"
+  ],
+  "productName": "m- and p-Nitroaniline",
+  "summary": "Direct nitration of aniline gives a mixture with large meta product (anilinium ion is meta-directing) and tarry oxidation products; protection as acetanilide gives mainly p-nitroaniline.",
+  "mechanism": "In the strongly acidic nitrating mixture aniline is protonated to anilinium, –NH3+, which is strongly deactivating and meta-directing. Unprotonated aniline reacts at o/p. Acetanilide is not protonated, and the amide N still activates o/p positions, with para dominant for steric reasons.",
+  "keyPoints": [
+   "Direct nitration: significant (~47%) meta-nitroaniline along with para and tar",
+   "Protect by acetylation: aniline -> acetanilide -> p-nitroacetanilide -> p-nitroaniline",
+   "Also protects NH2 from oxidation by HNO3",
+   "Anilinium ion: –NH3+ is –I, meta director"
+  ],
+  "whenUsed": "Preparing p-nitroaniline selectively; understanding substituent effects.",
+  "applications": [
+   "p-Nitroaniline for dyes",
+   "m-Nitroaniline via direct nitration"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NH2 ->[\\text{HNO3, H2SO4}] 4-O2NC6H4NH2 + 3-O2NC6H4NH2",
+    "note": "Mixture (para + meta)"
+   },
+   {
+    "eq": "C6H5NHCOCH3 ->[\\text{HNO3, H2SO4, 288 K}] 4-O2NC6H4NHCOCH3",
+    "note": "p-Nitroacetanilide"
+   },
+   {
+    "eq": "4-O2NC6H4NHCOCH3 ->[\\text{1. H3O+, }\\Delta] 4-O2NC6H4NH2 + CH3COOH",
+    "note": "p-Nitroaniline"
+   }
+  ],
+  "jeeTips": "Famous trap: aniline is o/p-directing, yet direct nitration gives about 47 percent meta due to anilinium. Use acetanilide for para. m-Nitroaniline is better made by partial reduction of m-dinitrobenzene.",
+  "reference": "",
+  "tags": [
+   "electrophilic substitution",
+   "anilinium",
+   "meta directing",
+   "protection"
+  ]
+ },
+ {
+  "id": "sulphonation-aniline",
+  "name": "Sulphonation of Aniline (Sulphanilic Acid, Zwitterion)",
+  "aliases": [
+   "Sulphanilic acid synthesis",
+   "Baking process"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5NH2",
+  "reagents": "conc. H2SO4",
+  "conditions": "453–473 K (heating, ‘baking’)",
+  "products": "4-H2NC6H4SO3H (sulphanilic acid)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "conc. H2SO4",
+   "H2SO4",
+   "heat",
+   "453 K",
+   "473 K",
+   "sulphonation",
+   "oleum"
+  ],
+  "productName": "Sulphanilic acid (p-aminobenzenesulphonic acid)",
+  "summary": "Aniline heated with conc. H2SO4 at 453–473 K forms anilinium hydrogen sulphate which rearranges on heating to p-aminobenzenesulphonic acid (sulphanilic acid), existing as a dipolar ion.",
+  "mechanism": "Aniline + H2SO4 gives anilinium hydrogen sulphate. On heating, dehydration and rearrangement by electrophilic sulphonation (SO3 attack) at para position gives sulphanilic acid. The –NH2 proton transfers to –SO3H to give the zwitterion H3N+–C6H4–SO3-.",
+  "keyPoints": [
+   "Para product is formed on strong heating (thermodynamic)",
+   "Sulphanilic acid exists as a zwitterion (inner salt)",
+   "It has high melting point and is poorly soluble in organic solvents; insoluble in water but soluble in alkali",
+   "Diazotised sulphanilic acid is used to make methyl orange"
+  ],
+  "whenUsed": "Dye manufacture (methyl orange), sulpha drugs (via sulphanilamide).",
+  "applications": [
+   "Methyl orange synthesis",
+   "Sulpha drug precursors"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NH2 + H2SO4 -> C6H5NH3+ HSO4-",
+    "note": "Anilinium hydrogen sulphate"
+   },
+   {
+    "eq": "C6H5NH3+ HSO4- ->[\\text{453-473 K}] 4-H3N+C6H4SO3- + H2O",
+    "note": "Sulphanilic acid (zwitterion)"
+   },
+   {
+    "eq": "4-H3N+C6H4SO3- + NaNO2 + HCl -> 4-N2+C6H4SO3- + NaCl + 2 H2O",
+    "note": "Diazotised sulphanilic acid"
+   }
+  ],
+  "jeeTips": "Para-sulphonic acid, existing as a zwitterion (dipolar ion), hence high m.p. and low solubility in organic solvents. Not meta, despite anilinium intermediate.",
+  "reference": "",
+  "tags": [
+   "sulphonation",
+   "zwitterion",
+   "sulphanilic acid"
+  ]
+ },
+ {
+  "id": "reductive-amination",
+  "name": "Reductive Amination",
+  "aliases": [
+   "Reductive alkylation of amines",
+   "Leuckart reductive amination"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "RCHO + NH3",
+  "reagents": "H2 / Ni (or NaBH3CN)",
+  "conditions": "",
+  "products": "RCH2NH2 + H2O",
+  "catalyst": "Ni (catalyst)",
+  "reagentKeywords": [
+   "H2",
+   "Ni",
+   "NaBH3CN",
+   "NH3",
+   "NaBH4",
+   "amine",
+   "reductive amination"
+  ],
+  "productName": "Primary amine (from aldehyde)",
+  "summary": "A carbonyl compound reacts with ammonia or an amine to form an imine/iminium that is reduced in situ (H2/Ni or NaBH3CN) to a 1°, 2° or 3° amine.",
+  "mechanism": "Nucleophilic addition of NH3 (or RNH2/R2NH) to C=O gives a hemiaminal which loses water to give an imine (or iminium). The C=N is then reduced by H2/Ni or hydride (NaBH3CN, which selectively reduces C=N over C=O).",
+  "keyPoints": [
+   "NH3 gives 1° amine; 1° amine gives 2°; 2° amine gives 3°",
+   "NaBH3CN reduces iminium ion faster than C=O, enabling one-pot reaction",
+   "Ketones give α-branched amines (e.g. acetone + NH3 -> isopropylamine)",
+   "Avoids poly-alkylation seen in ammonolysis"
+  ],
+  "whenUsed": "Clean synthesis of substituted amines from carbonyl compounds.",
+  "applications": [
+   "Amphetamine synthesis",
+   "N-alkylation of amines"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CHO + NH3 + H2 ->[Ni] CH3CH2NH2 + H2O",
+    "note": "Ethylamine"
+   },
+   {
+    "eq": "CH3COCH3 + NH3 + H2 ->[Ni] (CH3)2CHNH2 + H2O",
+    "note": "Isopropylamine"
+   },
+   {
+    "eq": "C6H5CHO + CH3NH2 ->[\\text{NaBH3CN}] C6H5CH2NHCH3 + H2O",
+    "note": "N-Methylbenzylamine"
+   }
+  ],
+  "jeeTips": "Carbon skeleton unchanged: the C=O carbon becomes CH–N. Choose the carbonyl and amine partners carefully for 2° and 3° amine targets.",
+  "reference": "",
+  "tags": [
+   "amine",
+   "imine",
+   "reduction",
+   "carbonyl"
+  ]
+ }
+]

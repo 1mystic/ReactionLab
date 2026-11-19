@@ -1,0 +1,2886 @@
+[
+ {
+  "id": "catalytic-hydrogenation-alkenes",
+  "name": "Catalytic Hydrogenation of Alkenes",
+  "aliases": [
+   "Hydrogenation of alkenes"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH2=CH2",
+  "reagents": "H2",
+  "conditions": "Ni (473-573 K) or Pt / Pd at room temp.",
+  "products": "CH3CH3",
+  "catalyst": "Ni / Pt / Pd",
+  "reagentKeywords": [
+   "H2",
+   "Ni",
+   "Pt",
+   "Pd",
+   "catalyst"
+  ],
+  "productName": "Alkane",
+  "summary": "Alkenes add H2 over finely divided Ni, Pt or Pd to give alkanes.",
+  "mechanism": "H2 is adsorbed on the metal surface and both H atoms are delivered to the same face of the double bond (syn addition).",
+  "keyPoints": [
+   "Syn addition of H2",
+   "Exothermic; heat of hydrogenation measures alkene stability",
+   "Less substituted / less hindered alkene hydrogenates faster",
+   "Ni needs heat; Pt, Pd work at room temperature (Sabatier-Senderens)"
+  ],
+  "whenUsed": "Conversion of unsaturated hydrocarbons to saturated ones, hydrogenation of vegetable oils.",
+  "applications": [
+   "Vanaspati ghee from oils",
+   "Alkene to alkane"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH=CH2 ->[H2][Ni] CH3CH2CH3",
+    "note": "Propene to propane"
+   },
+   {
+    "eq": "CH3CH=CHCH3 ->[H2][Pd/C] CH3CH2CH2CH3",
+    "note": "But-2-ene to butane"
+   },
+   {
+    "eq": "C6H5CH=CH2 ->[H2][Pd/C, 1 atm] C6H5CH2CH3",
+    "note": "Ring survives mild conditions"
+   }
+  ],
+  "jeeTips": "Heats of hydrogenation: trans-alkene < cis-alkene (more stable trans releases less heat). Benzene needs harsher conditions than alkenes. Syn addition on cyclic alkenes gives cis products, e.g. 1,2-dimethylcyclohexene gives cis-1,2-dimethylcyclohexane.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "hydrogenation",
+   "syn addition",
+   "alkene"
+  ]
+ },
+ {
+  "id": "halogen-addition-alkenes",
+  "name": "Addition of Halogens to Alkenes (Bromine Test)",
+  "aliases": [
+   "Bromination of alkenes"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH2=CH2",
+  "reagents": "Br2",
+  "conditions": "CCl4, dark, room temp.",
+  "products": "BrCH2CH2Br",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Br2",
+   "CCl4",
+   "bromine",
+   "bromine water"
+  ],
+  "productName": "1,2-Dibromoethane",
+  "summary": "Br2 or Cl2 adds across a C=C bond to form vicinal dihalides; the red-brown colour of bromine is discharged.",
+  "mechanism": "Alkene attacks Br2 to give a cyclic bromonium ion; Br- opens it from the back side, giving overall anti addition.",
+  "keyPoints": [
+   "Anti addition via bromonium ion",
+   "Br2/CCl4 decolourisation = test for unsaturation",
+   "No rearrangement because of cyclic bromonium ion",
+   "I2 does not add (vicinal diiodide unstable)"
+  ],
+  "whenUsed": "Test for C=C / C≡C; synthesis of vicinal dihalides.",
+  "applications": [
+   "Unsaturation test",
+   "Route to alkynes via double dehydrohalogenation"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CH2 + Br2 -> BrCH2CH2Br",
+    "note": "Ethene"
+   },
+   {
+    "eq": "CH3CH=CH2 + Cl2 -> CH3CHClCH2Cl",
+    "note": "Propene"
+   },
+   {
+    "eq": "C6H10 + Br2 -> C6H10Br2",
+    "note": "Cyclohexene gives trans-1,2-dibromocyclohexane"
+   }
+  ],
+  "jeeTips": "Cyclohexene + Br2 gives trans (anti) product; cis-but-2-ene gives racemic (2R,3R)/(2S,3S), trans-but-2-ene gives meso. Benzene does not decolourise bromine without FeBr3.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "anti addition",
+   "bromonium",
+   "unsaturation test"
+  ]
+ },
+ {
+  "id": "halohydrin-formation",
+  "name": "Halohydrin Formation (Br2 / H2O)",
+  "aliases": [
+   "Bromohydrin formation"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH=CH2",
+  "reagents": "Br2, H2O",
+  "conditions": "",
+  "products": "CH3CH(OH)CH2Br",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Br2/H2O",
+   "bromine water",
+   "NBS/H2O",
+   "HOBr"
+  ],
+  "productName": "1-Bromopropan-2-ol",
+  "summary": "Alkene with halogen in water gives a halohydrin: OH goes to the more substituted carbon, halogen to the less substituted.",
+  "mechanism": "Bromonium ion forms; water (solvent, in large excess) attacks the more substituted carbon (greater positive character) from the back, then loses H+.",
+  "keyPoints": [
+   "Anti addition",
+   "Markovnikov regiochemistry: OH on more substituted C",
+   "Water out-competes Br- as nucleophile",
+   "Halohydrin + base gives epoxide"
+  ],
+  "whenUsed": "Making epoxides and glycols via bromohydrin.",
+  "applications": [
+   "Epoxide synthesis (halohydrin + NaOH)"
+  ],
+  "examples": [
+   {
+    "eq": "CH2=CH2 + Br2 + H2O -> BrCH2CH2OH + HBr",
+    "note": "Bromoethanol"
+   },
+   {
+    "eq": "CH3CH=CH2 ->[Br2/H2O] CH3CH(OH)CH2Br",
+    "note": "Markovnikov OH"
+   },
+   {
+    "eq": "BrCH2CH2OH ->[NaOH] C2H4O + NaBr + H2O",
+    "note": "Ring closure to ethylene oxide"
+   }
+  ],
+  "jeeTips": "Remember OH goes on the carbon bearing more alkyl groups; Br on the CH2. With Br2 in non-aqueous CCl4 you get the dibromide instead.",
+  "reference": "",
+  "tags": [
+   "bromonium",
+   "regioselectivity",
+   "epoxide"
+  ]
+ },
+ {
+  "id": "alkyne-from-vicinal-dihalide",
+  "name": "Alkynes by Double Dehydrohalogenation of Dihalides",
+  "aliases": [
+   "Dehydrohalogenation of vicinal dihalides"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CHBrCH2Br",
+  "reagents": "alc. KOH (excess) / NaNH2",
+  "conditions": "Heat",
+  "products": "CH3C#CH",
+  "catalyst": "",
+  "reagentKeywords": [
+   "alc. KOH",
+   "NaNH2",
+   "double dehydrohalogenation",
+   "excess base"
+  ],
+  "productName": "Propyne",
+  "summary": "Vicinal or geminal dihalides lose two molecules of HX with strong base to give an alkyne.",
+  "mechanism": "Two successive E2 eliminations; the vinyl halide intermediate needs a stronger base (NaNH2) for the second step.",
+  "keyPoints": [
+   "Both vicinal and gem-dihalides work",
+   "Alc. KOH gives internal alkyne; NaNH2 / excess forces terminal alkyne isomerisation to acetylide",
+   "Route: alkene + Br2 then base = alkyne"
+  ],
+  "whenUsed": "Laboratory synthesis of alkynes from alkenes.",
+  "applications": [
+   "Ethyne from 1,2-dibromoethane"
+  ],
+  "examples": [
+   {
+    "eq": "BrCH2CH2Br + 2KOH ->[alc.][\\Delta] HC#CH + 2KBr + 2H2O",
+    "note": "Ethyne"
+   },
+   {
+    "eq": "CH3CCl2CH3 + 2NaNH2 -> CH3C#CH + 2NaCl + 2NH3",
+    "note": "Gem dihalide"
+   },
+   {
+    "eq": "CH3CHBrCHBrCH3 ->[alc. KOH] CH3C#CCH3",
+    "note": "2-Butyne"
+   }
+  ],
+  "jeeTips": "With NaNH2 a terminal alkyne is deprotonated; water work-up regenerates it. Count 2 equivalents of base (3 if terminal acetylide forms).",
+  "reference": "",
+  "tags": [
+   "elimination",
+   "alkyne",
+   "E2"
+  ]
+ },
+ {
+  "id": "calcium-carbide-acetylene",
+  "name": "Preparation of Ethyne from Calcium Carbide",
+  "aliases": [
+   "Acetylene from carbide"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CaC2",
+  "reagents": "H2O",
+  "conditions": "",
+  "products": "HC#CH + Ca(OH)2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "water",
+   "hydrolysis",
+   "CaC2",
+   "calcium carbide"
+  ],
+  "productName": "Ethyne (acetylene)",
+  "summary": "Calcium carbide reacts with water to release ethyne; CaC2 itself is made from CaO and coke at 2273 K.",
+  "mechanism": "The ionic C2^2- (acetylide) ion is a very strong base and is protonated twice by water.",
+  "keyPoints": [
+   "CaO + 3C -> CaC2 + CO (electric furnace, 2273 K)",
+   "Commercial gas has PH3 / H2S impurities (garlic smell)",
+   "Acetylide ion C2^2- is isoelectronic with N2"
+  ],
+  "whenUsed": "Oxy-acetylene welding, ethyne feedstock for other chemicals.",
+  "applications": [
+   "Welding, lamps",
+   "Source of vinyl chloride (older route)"
+  ],
+  "examples": [
+   {
+    "eq": "CaC2 + 2H2O -> Ca(OH)2 + HC#CH",
+    "note": "Lab preparation"
+   },
+   {
+    "eq": "CaO + 3C ->[2273 K] CaC2 + CO",
+    "note": "Making carbide"
+   },
+   {
+    "eq": "CaC2 + N2 ->[1273 K] CaNCN + C",
+    "note": "Nitrolim (CaNCN) fertiliser"
+   }
+  ],
+  "jeeTips": "Mg2C3 + H2O gives propyne (CH3C#CH), a favourite trap. Al4C3 + H2O gives methane.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "calcium carbide",
+   "acetylene"
+  ]
+ },
+ {
+  "id": "alkylation-terminal-alkynes",
+  "name": "Alkylation of Terminal Alkynes (Acetylide + RX)",
+  "aliases": [
+   "Acetylide alkylation"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3C#CH",
+  "reagents": "1) NaNH2  2) CH3CH2Br",
+  "conditions": "liq. NH3",
+  "products": "CH3C#CCH2CH3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NaNH2",
+   "RX",
+   "alkyl halide",
+   "acetylide",
+   "SN2"
+  ],
+  "productName": "Pent-2-yne",
+  "summary": "Terminal alkyne is deprotonated by NaNH2 and the acetylide displaces halide from a primary alkyl halide, lengthening the chain.",
+  "mechanism": "$\\ce{RC#CH + NH2- -> RC#C- + NH3}$ then SN2 on RX.",
+  "keyPoints": [
+   "Only 1° (or methyl) halides work; 2°/3° give elimination",
+   "Builds internal alkynes",
+   "Terminal alkyne pKa about 25, so NaNH2 (pKa NH3 about 38) is sufficient; NaOH is not"
+  ],
+  "whenUsed": "Carbon-chain extension in alkyne synthesis.",
+  "applications": [
+   "Chain building"
+  ],
+  "examples": [
+   {
+    "eq": "HC#CH ->[NaNH2] HC#CNa",
+    "note": "Sodium acetylide"
+   },
+   {
+    "eq": "HC#CNa + CH3Br -> CH3C#CH + NaBr",
+    "note": "Propyne"
+   },
+   {
+    "eq": "CH3C#CNa + CH3CH2Br -> CH3C#CCH2CH3 + NaBr",
+    "note": "Pent-2-yne"
+   }
+  ],
+  "jeeTips": "Use tert-alkyl halide and you get alkene, not alkyne. Alkyne + Na gives NaC#C and H2 gas.",
+  "reference": "",
+  "tags": [
+   "C–C bond formation",
+   "alkyne",
+   "SN2"
+  ]
+ },
+ {
+  "id": "hydrohalogenation-alkynes",
+  "name": "Addition of HX to Alkynes",
+  "aliases": [
+   "Hydrohalogenation of alkynes"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3C#CH",
+  "reagents": "HBr (2 mol)",
+  "conditions": "",
+  "products": "CH3CBr2CH3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "HBr",
+   "HX",
+   "Markovnikov",
+   "gem-dihalide"
+  ],
+  "productName": "2,2-Dibromopropane",
+  "summary": "Alkynes add one or two moles of HX following Markovnikov's rule, giving vinyl halides then geminal dihalides.",
+  "mechanism": "Protonation gives a vinyl cation (more substituted), halide adds; second HX adds at the same carbon.",
+  "keyPoints": [
+   "Markovnikov: both X on same C (gem-dihalide)",
+   "HC#CH + HCl (HgCl2, 333-343 K) gives vinyl chloride",
+   "With peroxide, HBr adds anti-Markovnikov"
+  ],
+  "whenUsed": "Making vinyl halides and gem-dihalides.",
+  "applications": [
+   "Vinyl chloride monomer for PVC"
+  ],
+  "examples": [
+   {
+    "eq": "HC#CH + HCl ->[HgCl2] CH2=CHCl",
+    "note": "Vinyl chloride"
+   },
+   {
+    "eq": "CH3C#CH + 2HBr -> CH3CBr2CH3",
+    "note": "Gem dihalide"
+   },
+   {
+    "eq": "CH3C#CH + HBr -> CH3C(Br)=CH2",
+    "note": "One mole"
+   }
+  ],
+  "jeeTips": "Gem- not vicinal dihalide results; do not confuse with Br2 addition, which gives vicinal tetrabromides.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "Markovnikov",
+   "alkyne"
+  ]
+ },
+ {
+  "id": "pyrolysis-cracking-alkanes",
+  "name": "Pyrolysis (Cracking) of Alkanes",
+  "aliases": [
+   "Cracking",
+   "Thermal decomposition of alkanes"
+  ],
+  "category": "Hydrocarbons",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C12H26",
+  "reagents": "Heat",
+  "conditions": "773-973 K, high pressure, Pt/Pd/Ni",
+  "products": "C6H14 + C6H12",
+  "catalyst": "",
+  "reagentKeywords": [
+   "pyrolysis",
+   "cracking",
+   "heat",
+   "773 K"
+  ],
+  "productName": "Smaller alkanes + alkenes",
+  "summary": "Higher alkanes decompose at high temperature into mixtures of lower alkanes, alkenes and H2.",
+  "mechanism": "Radical chain: C-C bond homolysis, then beta-scission of the radicals.",
+  "keyPoints": [
+   "Gives alkane + alkene mixtures",
+   "Basis of petroleum refining",
+   "Used to boost gasoline yield"
+  ],
+  "whenUsed": "Refinery production of petrol and petrochemical alkenes.",
+  "applications": [
+   "Gasoline from kerosene / diesel"
+  ],
+  "examples": [
+   {
+    "eq": "C12H26 ->[\\Delta] C6H14 + C6H12",
+    "note": "Dodecane cracking"
+   },
+   {
+    "eq": "C2H6 ->[1273 K] CH2=CH2 + H2",
+    "note": "Ethane cracker"
+   },
+   {
+    "eq": "C4H10 ->[\\Delta] CH4 + CH3CH=CH2",
+    "note": "One pathway"
+   }
+  ],
+  "jeeTips": "Pyrolysis of alkanes proceeds by free-radicals; formation of alkenes + alkanes, not just fragments. Decane gives pentane + pentene as typical question.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "pyrolysis",
+   "cracking",
+   "radical"
+  ]
+ },
+ {
+  "id": "nitration-nitrobenzene-meta",
+  "name": "Nitration of Nitrobenzene (m-Dinitrobenzene)",
+  "aliases": [
+   "Dinitration of benzene"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "C6H5NO2",
+  "reagents": "conc. HNO3 + conc. H2SO4 (fuming)",
+  "conditions": "373 K (forcing)",
+  "products": "m-C6H4(NO2)2",
+  "catalyst": "H2SO4",
+  "reagentKeywords": [
+   "fuming HNO3",
+   "H2SO4",
+   "nitrating mixture",
+   "meta",
+   "373 K"
+  ],
+  "productName": "1,3-Dinitrobenzene",
+  "summary": "NO2 deactivates the ring and directs the incoming NO2+ to the meta position; forcing conditions are required.",
+  "mechanism": "NO2+ attacks the meta carbon because ortho/para attack puts positive charge next to the electron-withdrawing N+.",
+  "keyPoints": [
+   "NO2 is meta-directing and deactivating",
+   "Needs fuming HNO3, 373 K",
+   "TNT-type polynitro compounds need more forcing steps"
+  ],
+  "whenUsed": "Preparation of m-dinitrobenzene, then m-nitroaniline via selective reduction (Na2S/(NH4)2S).",
+  "applications": [
+   "m-Nitroaniline route"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NO2 + HNO3 ->[H2SO4][373 K] C6H4(NO2)2 + H2O",
+    "note": "m-Dinitrobenzene"
+   },
+   {
+    "eq": "C6H4(NO2)2 ->[(NH4)2S] C6H4(NO2)NH2",
+    "note": "Zinin partial reduction"
+   },
+   {
+    "eq": "C6H5CH3 ->[HNO3/H2SO4] C6H4(CH3)NO2",
+    "note": "Toluene gives o/p mixture"
+   }
+  ],
+  "jeeTips": "Meta directors: NO2, CN, CHO, COOH, SO3H, NR3+. Ring activation order and directing effect appear in assertion-reason items.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "EAS",
+   "meta-directing",
+   "nitration"
+  ]
+ },
+ {
+  "id": "eas-chlorobenzene",
+  "name": "Electrophilic Substitution of Chlorobenzene",
+  "aliases": [
+   "Electrophilic substitution in haloarenes"
+  ],
+  "category": "Aromatic Compounds",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5Cl",
+  "reagents": "HNO3 / H2SO4 (or Cl2 / FeCl3, RCOCl / AlCl3)",
+  "conditions": "",
+  "products": "o- and p-ClC6H4NO2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "nitration",
+   "FeCl3",
+   "AlCl3",
+   "ortho para"
+  ],
+  "productName": "o- and p-Chloronitrobenzene (p major)",
+  "summary": "Halogen is deactivating by -I yet ortho/para-directing by +M, so chlorobenzene gives mainly para-substituted products.",
+  "mechanism": "Resonance donation of lone pair stabilises ortho and para arenium ions; inductive withdrawal slows the ring overall.",
+  "keyPoints": [
+   "Deactivating but o,p-directing",
+   "Para major due to steric hindrance",
+   "Reactivity less than benzene"
+  ],
+  "whenUsed": "Synthesis of p-substituted chlorobenzenes such as DDT.",
+  "applications": [
+   "p-Chloronitrobenzene, DDT"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5Cl + HNO3 ->[H2SO4] 4-ClC6H4NO2 + 2-ClC6H4NO2",
+    "note": "p major"
+   },
+   {
+    "eq": "C6H5Cl + Cl2 ->[FeCl3] 1,4-C6H4Cl2 + 1,2-C6H4Cl2",
+    "note": "p-Dichlorobenzene, higher mp"
+   },
+   {
+    "eq": "C6H5Cl + CH3COCl ->[AlCl3] 4-ClC6H4COCH3",
+    "note": "FC acylation"
+   }
+  ],
+  "jeeTips": "p-isomer has higher m.p. than o-isomer (better crystal packing) and is separated by fractional crystallisation; o-isomer has higher dipole moment.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "haloarene",
+   "EAS"
+  ]
+ },
+ {
+  "id": "ddt-synthesis",
+  "name": "Synthesis of DDT (Chlorobenzene + Chloral)",
+  "aliases": [
+   "DDT"
+  ],
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "2 C6H5Cl + CCl3CHO",
+  "reagents": "conc. H2SO4",
+  "conditions": "",
+  "products": "(ClC6H4)2CHCCl3 + H2O",
+  "catalyst": "H2SO4",
+  "reagentKeywords": [
+   "conc. H2SO4",
+   "chloral",
+   "chlorobenzene",
+   "DDT"
+  ],
+  "productName": "p,p'-Dichlorodiphenyltrichloroethane (DDT)",
+  "summary": "Two molecules of chlorobenzene condense with chloral under conc. H2SO4 to give DDT.",
+  "mechanism": "Protonated chloral is the electrophile; EAS at the para position of chlorobenzene twice, with loss of water.",
+  "keyPoints": [
+   "DDT: first synthetic insecticide",
+   "Banned: non-biodegradable, bioaccumulates",
+   "Chloral = trichloroacetaldehyde"
+  ],
+  "whenUsed": "Historical insecticide; classic NCERT haloarene example.",
+  "applications": [
+   "Insecticide (banned)"
+  ],
+  "examples": [
+   {
+    "eq": "2 C6H5Cl + CCl3CHO ->[H2SO4] (ClC6H4)2CH-CCl3 + H2O",
+    "note": "DDT"
+   },
+   {
+    "eq": "CCl3CHO + NaOH -> CHCl3 + HCOONa",
+    "note": "Chloral hydrolysis (haloform)"
+   },
+   {
+    "eq": "CH3CH2OH + 4Cl2 -> CCl3CHO + 5HCl",
+    "note": "Chloral from ethanol"
+   }
+  ],
+  "jeeTips": "Know the structure and that both rings have Cl at para positions. Chlorobenzene reacts at the para position.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "DDT",
+   "insecticide"
+  ]
+ },
+ {
+  "id": "chloral-from-ethanol",
+  "name": "Chlorination of Ethanol (Chloral and Chloral Hydrate)",
+  "aliases": [
+   "Chloral preparation"
+  ],
+  "category": "Aldehydes & Ketones",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CH2OH",
+  "reagents": "Cl2 (excess)",
+  "conditions": "",
+  "products": "CCl3CHO + 5HCl",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Cl2",
+   "excess chlorine",
+   "chlorination",
+   "oxidation"
+  ],
+  "productName": "Chloral (trichloroacetaldehyde)",
+  "summary": "Excess chlorine oxidises ethanol to acetaldehyde and then chlorinates the alpha carbon, giving chloral; chloral forms a stable hydrate.",
+  "mechanism": "Cl2 oxidises ethanol to CH3CHO, then successive enolisation/alpha-chlorination gives CCl3CHO.",
+  "keyPoints": [
+   "Chloral hydrate CCl3CH(OH)2 is stable due to -I of CCl3",
+   "Chloral + NaOH gives CHCl3 + HCOONa",
+   "Chloral hydrate is a hypnotic"
+  ],
+  "whenUsed": "Precursor for DDT; chloroform from chloral.",
+  "applications": [
+   "DDT",
+   "Chloral hydrate drug"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2OH + 4Cl2 -> CCl3CHO + 5HCl",
+    "note": "Overall"
+   },
+   {
+    "eq": "CCl3CHO + H2O -> CCl3CH(OH)2",
+    "note": "Chloral hydrate"
+   },
+   {
+    "eq": "CCl3CHO + NaOH -> CHCl3 + HCOONa",
+    "note": "Cleavage"
+   }
+  ],
+  "jeeTips": "Gem-diol is stable here because of electron-withdrawing CCl3 (a favourite stability question, with ninhydrin and ethyl glyoxylate).",
+  "reference": "",
+  "tags": [
+   "chloral",
+   "gem-diol"
+  ]
+ },
+ {
+  "id": "alcohol-to-ether-dehydration",
+  "name": "Intermolecular Dehydration of Alcohols to Ethers",
+  "aliases": [
+   "Ether from alcohols"
+  ],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "2 CH3CH2OH",
+  "reagents": "conc. H2SO4",
+  "conditions": "413 K (excess alcohol)",
+  "products": "CH3CH2OCH2CH3 + H2O",
+  "catalyst": "H2SO4",
+  "reagentKeywords": [
+   "conc. H2SO4",
+   "413 K",
+   "excess alcohol",
+   "dehydration"
+  ],
+  "productName": "Diethyl ether",
+  "summary": "Primary alcohols heated with conc. H2SO4 at 413 K (alcohol in excess) give symmetrical ethers; at 443 K the alkene forms instead.",
+  "mechanism": "Alcohol is protonated; a second alcohol molecule attacks in an SN2 step, then loses H+.",
+  "keyPoints": [
+   "413 K ether; 443 K ethene",
+   "Works only for primary alcohols (2°/3° give alkenes)",
+   "Symmetrical ethers only"
+  ],
+  "whenUsed": "Preparation of diethyl ether.",
+  "applications": [
+   "Diethyl ether, solvent"
+  ],
+  "examples": [
+   {
+    "eq": "2 CH3CH2OH ->[H2SO4][413 K] C2H5OC2H5 + H2O",
+    "note": "Ether"
+   },
+   {
+    "eq": "CH3CH2OH ->[H2SO4][443 K] CH2=CH2 + H2O",
+    "note": "Alkene at higher T"
+   },
+   {
+    "eq": "2 CH3OH ->[Al2O3][523 K] CH3OCH3 + H2O",
+    "note": "Dimethyl ether"
+   }
+  ],
+  "jeeTips": "Temperature decides the product. For unsymmetrical ethers use Williamson synthesis rather than mixing two alcohols.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "ether",
+   "dehydration"
+  ]
+ },
+ {
+  "id": "epoxide-grignard",
+  "name": "Ethylene Oxide + Grignard Reagent (Primary Alcohol, Two-Carbon Extension)",
+  "aliases": [
+   "Epoxide ring opening with RMgX"
+  ],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C2H4O",
+  "reagents": "1) RMgX  2) H3O+",
+  "conditions": "dry ether",
+  "products": "RCH2CH2OH",
+  "catalyst": "",
+  "reagentKeywords": [
+   "RMgX",
+   "ethylene oxide",
+   "epoxide",
+   "dry ether",
+   "H3O+"
+  ],
+  "productName": "Primary alcohol (two carbons longer)",
+  "summary": "Grignard reagents open the strained ethylene oxide ring at the CH2 carbon, giving a primary alcohol with two extra carbons after hydrolysis.",
+  "mechanism": "R- attacks the epoxide carbon in an SN2 step, ring opens to alkoxide-MgX, which is hydrolysed.",
+  "keyPoints": [
+   "Gives RCH2CH2OH",
+   "Formaldehyde gives RCH2OH (1 carbon); ethylene oxide gives 2 carbons",
+   "Unsymmetrical epoxide: attack at less hindered C under basic conditions"
+  ],
+  "whenUsed": "Synthesis of primary alcohols with chain extension.",
+  "applications": [
+   "Phenylethanol"
+  ],
+  "examples": [
+   {
+    "eq": "C2H4O + CH3MgBr -> CH3CH2CH2OMgBr",
+    "note": "Alkoxide"
+   },
+   {
+    "eq": "CH3CH2CH2OMgBr + H2O -> CH3CH2CH2OH + Mg(OH)Br",
+    "note": "Propan-1-ol"
+   },
+   {
+    "eq": "C6H5MgBr + C2H4O -> C6H5CH2CH2OMgBr",
+    "note": "then H3O+ gives 2-phenylethanol"
+   }
+  ],
+  "jeeTips": "Count carbons: HCHO + RMgX = RCH2OH; ethylene oxide + RMgX = RCH2CH2OH; aldehyde gives 2°; ketone gives 3°.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "Grignard",
+   "epoxide"
+  ]
+ },
+ {
+  "id": "anisole-eas",
+  "name": "Electrophilic Substitution of Anisole",
+  "aliases": [
+   "Reactions of anisole"
+  ],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5OCH3",
+  "reagents": "Br2 / CH3COOH; or CH3COCl / anhyd. AlCl3",
+  "conditions": "",
+  "products": "p-BrC6H4OCH3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Br2",
+   "ethanoic acid",
+   "AlCl3",
+   "FC",
+   "nitration"
+  ],
+  "productName": "p-Bromoanisole (major)",
+  "summary": "The alkoxy group strongly activates the ring and directs ortho/para; bromination needs no Lewis acid.",
+  "mechanism": "Resonance donation of oxygen lone pair stabilises o/p arenium ions.",
+  "keyPoints": [
+   "OCH3 is a strong o/p activator",
+   "Para major (sterics)",
+   "FC alkylation / acylation works (use more AlCl3)",
+   "HI cleavage gives phenol + CH3I only"
+  ],
+  "whenUsed": "Prep of p-substituted anisoles.",
+  "applications": [
+   "p-Methoxyacetophenone"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5OCH3 + Br2 ->[CH3COOH] 4-BrC6H4OCH3 + HBr",
+    "note": "No FeBr3 needed"
+   },
+   {
+    "eq": "C6H5OCH3 + CH3COCl ->[AlCl3] 4-CH3COC6H4OCH3 + HCl",
+    "note": "FC acylation"
+   },
+   {
+    "eq": "C6H5OCH3 + HNO3 ->[H2SO4] 4-O2NC6H4OCH3 + 2-O2NC6H4OCH3",
+    "note": "o/p nitroanisoles"
+   }
+  ],
+  "jeeTips": "Anisole + HI gives phenol + CH3I (O-aryl bond never breaks). Anisole is more reactive than benzene but less than phenol in some cases.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "EAS",
+   "ether"
+  ]
+ },
+ {
+  "id": "alcohol-sodium",
+  "name": "Reaction of Alcohols with Sodium (Acidity of Alcohols)",
+  "aliases": [
+   "Sodium alkoxide formation"
+  ],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "2 CH3CH2OH",
+  "reagents": "2 Na",
+  "conditions": "",
+  "products": "2 CH3CH2ONa + H2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Na",
+   "sodium metal",
+   "active metal",
+   "acid",
+   "H2"
+  ],
+  "productName": "Sodium ethoxide",
+  "summary": "Alcohols react with active metals (Na, K) to evolve H2 and give alkoxides, showing their weak acidity.",
+  "mechanism": "O-H heterolysis assisted by electropositive metal.",
+  "keyPoints": [
+   "Acidity: 1° > 2° > 3° alcohols (+I of alkyl groups)",
+   "Alcohols are weaker acids than water; phenol is stronger",
+   "Alkoxide is a strong base",
+   "Reactivity with Na: methanol > ethanol > ..."
+  ],
+  "whenUsed": "Alkoxide formation for Williamson synthesis; test for OH group.",
+  "applications": [
+   "Sodium alkoxides"
+  ],
+  "examples": [
+   {
+    "eq": "2 CH3CH2OH + 2Na -> 2 CH3CH2ONa + H2",
+    "note": "Sodium ethoxide"
+   },
+   {
+    "eq": "2 (CH3)3COH + 2K -> 2 (CH3)3COK + H2",
+    "note": "Potassium tert-butoxide"
+   },
+   {
+    "eq": "CH3CH2ONa + H2O -> CH3CH2OH + NaOH",
+    "note": "Alkoxide is hydrolysed: alcohol is a weaker acid than water"
+   }
+  ],
+  "jeeTips": "Acidity order: water > ROH (1° > 2° > 3°) > alkynes > NH3 > alkanes. Alcohol does not react with NaOH, phenol does.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "acidity",
+   "alkoxide"
+  ]
+ },
+ {
+  "id": "glycerol-to-acrolein",
+  "name": "Dehydration of Glycerol to Acrolein",
+  "aliases": [
+   "Glycerol test"
+  ],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH2(OH)CH(OH)CH2OH",
+  "reagents": "KHSO4 (or conc. H2SO4)",
+  "conditions": "Heat",
+  "products": "CH2=CHCHO + 2H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "KHSO4",
+   "dehydrating agent",
+   "heat",
+   "acrolein"
+  ],
+  "productName": "Acrolein (propenal)",
+  "summary": "Glycerol on heating with a dehydrating agent such as KHSO4 loses two molecules of water to give acrolein, a pungent-smelling aldehyde used to identify fats and glycerol.",
+  "mechanism": "First dehydration gives an enol that tautomerises to 3-hydroxypropanal, which loses a second H2O.",
+  "keyPoints": [
+   "Acrolein test for glycerol / fats (acrid smell)",
+   "Acrolein is an alpha,beta-unsaturated aldehyde"
+  ],
+  "whenUsed": "Detection of glycerol; lab preparation of acrolein.",
+  "applications": [
+   "Fats and oils test"
+  ],
+  "examples": [
+   {
+    "eq": "CH2OHCHOHCH2OH ->[KHSO4][\\Delta] CH2=CHCHO + 2H2O",
+    "note": "Acrolein"
+   },
+   {
+    "eq": "CH2=CHCHO + H2 ->[Ni] CH3CH2CHO",
+    "note": "Hydrogenation of C=C"
+   },
+   {
+    "eq": "CH2=CHCHO + HBr -> BrCH2CH2CHO",
+    "note": "Anti-Markovnikov (Michael type)"
+   }
+  ],
+  "jeeTips": "HBr adds to acrolein at the beta-carbon (conjugate addition) giving 3-bromopropanal, anti-Markovnikov looking.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "glycerol",
+   "test"
+  ]
+ },
+ {
+  "id": "nitroglycerine-synthesis",
+  "name": "Nitration of Glycerol (Nitroglycerine, Dynamite)",
+  "aliases": [
+   "Nitroglycerin"
+  ],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH2(OH)CH(OH)CH2OH",
+  "reagents": "conc. HNO3 + conc. H2SO4",
+  "conditions": "Cold (below 283 K)",
+  "products": "CH2(ONO2)CH(ONO2)CH2ONO2",
+  "catalyst": "H2SO4",
+  "reagentKeywords": [
+   "HNO3",
+   "H2SO4",
+   "nitrating mixture",
+   "cold"
+  ],
+  "productName": "Glyceryl trinitrate (nitroglycerine)",
+  "summary": "All three OH groups of glycerol are esterified by the nitrating mixture, giving an explosive nitrate ester.",
+  "mechanism": "Acid-catalysed esterification with nitric acid (O-nitration).",
+  "keyPoints": [
+   "It is a nitrate ester (not nitro compound)",
+   "Absorbed on kieselguhr = dynamite (Nobel)",
+   "Used as vasodilator in angina"
+  ],
+  "whenUsed": "Explosives and medicine.",
+  "applications": [
+   "Dynamite"
+  ],
+  "examples": [
+   {
+    "eq": "C3H5(OH)3 + 3HNO3 ->[H2SO4] C3H5(ONO2)3 + 3H2O",
+    "note": "Nitroglycerine"
+   },
+   {
+    "eq": "4 C3H5(ONO2)3 -> 12CO2 + 10H2O + 6N2 + O2",
+    "note": "Explosive decomposition"
+   },
+   {
+    "eq": "C2H4(OH)2 + 2HNO3 ->[H2SO4] C2H4(ONO2)2 + 2H2O",
+    "note": "EGDN"
+   }
+  ],
+  "jeeTips": "Nitrate ester (R-O-NO2) vs nitro compound (R-NO2) distinction is tested.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "explosive",
+   "esterification"
+  ]
+ },
+ {
+  "id": "aspirin-synthesis",
+  "name": "Synthesis of Aspirin (Acetylation of Salicylic Acid)",
+  "aliases": [
+   "Acetylsalicylic acid"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "o-HOC6H4COOH",
+  "reagents": "(CH3CO)2O",
+  "conditions": "H+ (cat.), heat",
+  "products": "o-CH3COOC6H4COOH + CH3COOH",
+  "catalyst": "H2SO4 / H3PO4",
+  "reagentKeywords": [
+   "acetic anhydride",
+   "(CH3CO)2O",
+   "acetylation",
+   "H+"
+  ],
+  "productName": "Acetylsalicylic acid (aspirin)",
+  "summary": "Phenolic OH of salicylic acid is acetylated by acetic anhydride to give aspirin, an analgesic, antipyretic and anti-platelet drug.",
+  "mechanism": "Nucleophilic acyl substitution of phenolic oxygen on the anhydride.",
+  "keyPoints": [
+   "Aspirin hydrolyses back to salicylic acid (vinegar smell)",
+   "Salicylic acid made by Kolbe-Schmitt",
+   "Methyl salicylate (oil of wintergreen) from esterification of COOH with CH3OH"
+  ],
+  "whenUsed": "Drugs (chemistry in everyday life).",
+  "applications": [
+   "Analgesic, antipyretic"
+  ],
+  "examples": [
+   {
+    "eq": "o-HOC6H4COOH + (CH3CO)2O -> o-CH3COOC6H4COOH + CH3COOH",
+    "note": "Aspirin"
+   },
+   {
+    "eq": "o-HOC6H4COOH + CH3OH ->[H+] o-HOC6H4COOCH3 + H2O",
+    "note": "Oil of wintergreen"
+   },
+   {
+    "eq": "o-CH3COOC6H4COOH + H2O -> o-HOC6H4COOH + CH3COOH",
+    "note": "Hydrolysis"
+   }
+  ],
+  "jeeTips": "FeCl3 test: salicylic acid gives violet colour; pure aspirin does not (no free phenolic OH).",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "drug",
+   "acetylation"
+  ]
+ },
+ {
+  "id": "benzal-chloride-hydrolysis",
+  "name": "Benzaldehyde from Benzal Chloride (Side-Chain Chlorination then Hydrolysis)",
+  "aliases": [
+   "Hydrolysis of benzal chloride"
+  ],
+  "category": "Aldehydes & Ketones",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C6H5CHCl2",
+  "reagents": "H2O",
+  "conditions": "373 K (or aq. alkali, then acid)",
+  "products": "C6H5CHO + 2HCl",
+  "catalyst": "",
+  "reagentKeywords": [
+   "H2O",
+   "hydrolysis",
+   "373 K",
+   "benzal chloride"
+  ],
+  "productName": "Benzaldehyde",
+  "summary": "Toluene is chlorinated at the methyl group (Cl2, hv) to benzal chloride, which on hydrolysis gives benzaldehyde.",
+  "mechanism": "Gem-dihalide hydrolyses to gem-diol (hydrate) which loses H2O to the aldehyde.",
+  "keyPoints": [
+   "C6H5CH3 + Cl2 (2 mol, hv) -> C6H5CHCl2",
+   "Benzotrichloride C6H5CCl3 hydrolyses to benzoic acid",
+   "Gem-diols are unstable and lose water"
+  ],
+  "whenUsed": "Industrial route to benzaldehyde.",
+  "applications": [
+   "Benzaldehyde, benzoic acid"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5CH3 + 2Cl2 ->[hv] C6H5CHCl2 + 2HCl",
+    "note": "Benzal chloride"
+   },
+   {
+    "eq": "C6H5CHCl2 + H2O ->[373 K] C6H5CHO + 2HCl",
+    "note": "Benzaldehyde"
+   },
+   {
+    "eq": "C6H5CCl3 + 2H2O -> C6H5COOH + 3HCl",
+    "note": "Benzoic acid"
+   }
+  ],
+  "jeeTips": "Number of Cl on the benzylic carbon decides: 1 Cl gives alcohol, 2 Cl gives aldehyde, 3 Cl gives acid.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "benzaldehyde"
+  ]
+ },
+ {
+  "id": "ketones-from-calcium-salts",
+  "name": "Ketones by Dry Distillation of Calcium Salts of Acids",
+  "aliases": [
+   "Pyrolysis of Ca salts"
+  ],
+  "category": "Aldehydes & Ketones",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "(CH3COO)2Ca",
+  "reagents": "Heat (dry distillation)",
+  "conditions": "",
+  "products": "CH3COCH3 + CaCO3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "dry distillation",
+   "calcium acetate",
+   "heat",
+   "Ca salt"
+  ],
+  "productName": "Acetone",
+  "summary": "Heating calcium salt of a carboxylic acid gives a ketone; with calcium formate as co-reactant an aldehyde is obtained.",
+  "mechanism": "Thermal decarboxylative coupling of the two acyl groups.",
+  "keyPoints": [
+   "Ca acetate gives acetone",
+   "Ca formate + Ca acetate gives CH3CHO",
+   "Ca formate alone gives HCHO",
+   "Ca benzoate + Ca formate gives benzaldehyde"
+  ],
+  "whenUsed": "Lab preparation of ketones and aldehydes.",
+  "applications": [
+   "Acetone (older route)"
+  ],
+  "examples": [
+   {
+    "eq": "(CH3COO)2Ca ->[\\Delta] CH3COCH3 + CaCO3",
+    "note": "Acetone"
+   },
+   {
+    "eq": "(HCOO)2Ca + (CH3COO)2Ca ->[\\Delta] 2CH3CHO + 2CaCO3",
+    "note": "Acetaldehyde"
+   },
+   {
+    "eq": "(C6H5COO)2Ca + (HCOO)2Ca ->[\\Delta] 2C6H5CHO + 2CaCO3",
+    "note": "Benzaldehyde"
+   }
+  ],
+  "jeeTips": "Mixed salts give three products (statistical); pairing with formate favours aldehydes. Count C atoms carefully.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "dry distillation"
+  ]
+ },
+ {
+  "id": "ester-grignard-tertiary-alcohol",
+  "name": "Esters + Grignard Reagent (Tertiary Alcohols)",
+  "aliases": [
+   "Esters and Grignard"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3COOC2H5",
+  "reagents": "1) 2 RMgX  2) H3O+",
+  "conditions": "dry ether",
+  "products": "CH3C(R)2OH + C2H5OH",
+  "catalyst": "",
+  "reagentKeywords": [
+   "RMgX",
+   "2 equivalents",
+   "excess Grignard",
+   "H3O+"
+  ],
+  "productName": "Tertiary alcohol",
+  "summary": "Esters react with two equivalents of RMgX; the ketone formed is more reactive than ester so a tertiary alcohol with two identical R groups results.",
+  "mechanism": "First addition-elimination gives ketone, second addition gives alkoxide.",
+  "keyPoints": [
+   "Two identical R groups from Grignard",
+   "Formate esters give secondary alcohols",
+   "Acid chlorides also give 3° alcohols (excess RMgX)"
+  ],
+  "whenUsed": "Preparation of tertiary alcohols.",
+  "applications": [
+   "2-Methylpropan-2-ol type"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOC2H5 + 2CH3MgBr -> (CH3)3COMgBr + C2H5OMgBr",
+    "note": "Then H3O+ gives t-BuOH"
+   },
+   {
+    "eq": "HCOOC2H5 + 2C2H5MgBr ->[H3O+] (C2H5)2CHOH",
+    "note": "Secondary alcohol"
+   },
+   {
+    "eq": "CH3COCl + 2CH3MgBr ->[H3O+] (CH3)3COH",
+    "note": "Acid chloride"
+   }
+  ],
+  "jeeTips": "Formate esters give secondary; all others tertiary. Reaction with RCN stops at ketone (after hydrolysis).",
+  "reference": "",
+  "tags": [
+   "Grignard",
+   "ester"
+  ]
+ },
+ {
+  "id": "amide-formation-ammonium-salt",
+  "name": "Amides from Carboxylic Acids (Ammonium Salt Pyrolysis) and Amide Hydrolysis",
+  "aliases": [
+   "Preparation of amides"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH3COOH",
+  "reagents": "NH3, then heat",
+  "conditions": "",
+  "products": "CH3CONH2 + H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NH3",
+   "ammonium salt",
+   "heat",
+   "ammonia"
+  ],
+  "productName": "Acetamide",
+  "summary": "Carboxylic acid with ammonia gives ammonium salt which on heating dehydrates to the amide; amides hydrolyse back with acid or alkali.",
+  "mechanism": "Acid-base reaction gives RCOO- NH4+, then thermal nucleophilic acyl substitution loses H2O.",
+  "keyPoints": [
+   "Alternative: acid chloride/ester/anhydride + NH3",
+   "Amides are neutral (lone pair delocalised)",
+   "Hydrolysis: H3O+ gives acid + NH4+; NaOH gives carboxylate + NH3",
+   "P2O5 dehydrates amide to nitrile"
+  ],
+  "whenUsed": "Preparation of amides, intermediate for Hofmann bromamide.",
+  "applications": [
+   "Acetamide",
+   "Nylon-type amide bond"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COOH + NH3 -> CH3COONH4",
+    "note": "Salt"
+   },
+   {
+    "eq": "CH3COONH4 ->[\\Delta] CH3CONH2 + H2O",
+    "note": "Amide"
+   },
+   {
+    "eq": "CH3CONH2 + NaOH ->[\\Delta] CH3COONa + NH3",
+    "note": "Alkaline hydrolysis"
+   }
+  ],
+  "jeeTips": "Amide is much less basic than amine; N lone pair delocalised onto C=O. Hydrolysis rate order: acid chloride > anhydride > ester > amide.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "amide"
+  ]
+ },
+ {
+  "id": "anhydride-formation",
+  "name": "Preparation of Carboxylic Acid Anhydrides",
+  "aliases": [
+   "Acetic anhydride"
+  ],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "2 CH3COOH",
+  "reagents": "P2O5 or heat",
+  "conditions": "",
+  "products": "(CH3CO)2O + H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "P2O5",
+   "dehydration",
+   "acid chloride",
+   "carboxylate"
+  ],
+  "productName": "Acetic anhydride",
+  "summary": "Dehydration of carboxylic acids (or acid chloride + carboxylate) gives anhydrides.",
+  "mechanism": "Nucleophilic acyl substitution of RCOCl by RCOO-.",
+  "keyPoints": [
+   "Succinic and phthalic acids cyclise on heating",
+   "Acid chloride + sodium carboxylate is general route",
+   "Anhydrides are acylating agents"
+  ],
+  "whenUsed": "Making acylating agents; phthalic anhydride from phthalic acid.",
+  "applications": [
+   "Acetylation reagents"
+  ],
+  "examples": [
+   {
+    "eq": "2CH3COOH ->[P2O5] (CH3CO)2O + H2O",
+    "note": "Acetic anhydride"
+   },
+   {
+    "eq": "CH3COCl + CH3COONa -> (CH3CO)2O + NaCl",
+    "note": "Via acid chloride"
+   },
+   {
+    "eq": "o-C6H4(COOH)2 ->[\\Delta] C6H4(CO)2O + H2O",
+    "note": "Phthalic anhydride"
+   }
+  ],
+  "jeeTips": "Mixed anhydride from CH3COCl + HCOONa is unstable. 1,4- and 1,5-dicarboxylic acids form 5/6-membered cyclic anhydrides.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "anhydride"
+  ]
+ },
+ {
+  "id": "aldehyde-pcl5",
+  "name": "Reaction of Aldehydes and Ketones with PCl5",
+  "aliases": [
+   "Gem-dichloride formation"
+  ],
+  "category": "Aldehydes & Ketones",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH3CHO",
+  "reagents": "PCl5",
+  "conditions": "",
+  "products": "CH3CHCl2 + POCl3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "PCl5",
+   "phosphorus pentachloride"
+  ],
+  "productName": "1,1-Dichloroethane (ethylidene chloride)",
+  "summary": "The carbonyl O is replaced by two Cl atoms, giving geminal dichlorides.",
+  "mechanism": "Oxygen attacks P, chloride adds to C+; second Cl- displaces OPCl4-.",
+  "keyPoints": [
+   "Gives gem-dihalide",
+   "Ketone gives R2CCl2",
+   "Evidence for C=O group"
+  ],
+  "whenUsed": "Convert carbonyl to gem-dihalide.",
+  "applications": [
+   "Alkyne from gem-dichloride"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CHO + PCl5 -> CH3CHCl2 + POCl3",
+    "note": "Ethylidene chloride"
+   },
+   {
+    "eq": "CH3COCH3 + PCl5 -> (CH3)2CCl2 + POCl3",
+    "note": "2,2-Dichloropropane"
+   },
+   {
+    "eq": "C6H5CHO + PCl5 -> C6H5CHCl2 + POCl3",
+    "note": "Benzal chloride"
+   }
+  ],
+  "jeeTips": "Compare: alcohol + PCl5 gives RCl + POCl3 + HCl; acid + PCl5 gives acid chloride.",
+  "reference": "",
+  "tags": [
+   "carbonyl",
+   "PCl5"
+  ]
+ },
+ {
+  "id": "formaldehyde-polymerisation-urotropine",
+  "name": "Formaldehyde: Polymerisation and Urotropine Formation",
+  "aliases": [
+   "Hexamine"
+  ],
+  "category": "Aldehydes & Ketones",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "HCHO",
+  "reagents": "NH3",
+  "conditions": "",
+  "products": "(CH2)6N4 + 6H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NH3",
+   "ammonia",
+   "urotropine",
+   "hexamine",
+   "trioxane",
+   "paraformaldehyde"
+  ],
+  "productName": "Hexamethylenetetramine (urotropine)",
+  "summary": "Formaldehyde with ammonia gives urotropine; on its own it polymerises to trioxane or paraformaldehyde. 40% aqueous HCHO is formalin.",
+  "mechanism": "Repeated addition of NH3 to C=O then condensation forms the cage compound.",
+  "keyPoints": [
+   "6HCHO + 4NH3 -> (CH2)6N4 + 6H2O",
+   "Formalin preserves biological specimens",
+   "Paraldehyde is CH3CHO trimer (acid catalysed)",
+   "Nitration of urotropine gives RDX"
+  ],
+  "whenUsed": "Preservative, urinary antiseptic, resins.",
+  "applications": [
+   "Formalin",
+   "Hexamine fuel tablets",
+   "RDX"
+  ],
+  "examples": [
+   {
+    "eq": "6HCHO + 4NH3 -> (CH2)6N4 + 6H2O",
+    "note": "Urotropine"
+   },
+   {
+    "eq": "3HCHO ->[\\Delta] (CH2O)3",
+    "note": "Trioxane"
+   },
+   {
+    "eq": "3CH3CHO ->[H+] (CH3CHO)3",
+    "note": "Paraldehyde"
+   }
+  ],
+  "jeeTips": "Formalin is a 40% solution; HCHO + NH3 does NOT give an imine because it condenses further.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "formaldehyde",
+   "urotropine"
+  ]
+ },
+ {
+  "id": "nitrile-amide-reduction-amines",
+  "name": "Reduction of Nitriles and Amides to Amines",
+  "aliases": [
+   "Nitrile reduction"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "CH3CN",
+  "reagents": "LiAlH4 (or H2 / Ni)",
+  "conditions": "dry ether",
+  "products": "CH3CH2NH2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "LiAlH4",
+   "H2/Ni",
+   "Na/C2H5OH",
+   "reduction"
+  ],
+  "productName": "Ethylamine",
+  "summary": "Nitriles, amides and isonitriles are reduced to amines; nitriles/amides keep the same carbon count, isonitriles give N-methylamines.",
+  "mechanism": "Successive hydride additions to the C#N or C=O carbon then protonation.",
+  "keyPoints": [
+   "Nitrile to 1° amine (carbon count same as nitrile)",
+   "Amide RCONH2 to RCH2NH2 (LiAlH4)",
+   "Isocyanide RNC to RNHCH3 (H2/Ni, LiAlH4)",
+   "Hofmann bromamide, in contrast, removes one carbon"
+  ],
+  "whenUsed": "Preparing 1° amines with ascending carbon series (RX to RCN to RCH2NH2).",
+  "applications": [
+   "Mendius reduction, chain extension"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CN + 4[H] ->[LiAlH4] CH3CH2NH2",
+    "note": "Nitrile reduction"
+   },
+   {
+    "eq": "CH3CONH2 ->[LiAlH4] CH3CH2NH2",
+    "note": "Amide reduction"
+   },
+   {
+    "eq": "CH3NC + 4[H] ->[H2/Ni] CH3NHCH3",
+    "note": "Isocyanide gives secondary amine"
+   }
+  ],
+  "jeeTips": "RCN / RCONH2 -> amine retains carbons, Hofmann gives one carbon less. LiAlH4 reduces amide to amine, but NaBH4 doesn't.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "reduction",
+   "amine"
+  ]
+ },
+ {
+  "id": "aq-vs-alc-koh-haloalkane",
+  "name": "Haloalkanes with Aqueous vs Alcoholic KOH (Substitution vs Elimination)",
+  "aliases": [
+   "Substitution vs elimination"
+  ],
+  "category": "Haloalkanes & Haloarenes",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH3CH2Br",
+  "reagents": "aq. KOH vs alc. KOH",
+  "conditions": "",
+  "products": "CH3CH2OH vs CH2=CH2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "aq. KOH",
+   "alc. KOH",
+   "substitution",
+   "elimination"
+  ],
+  "productName": "Alcohol (aq.) or alkene (alc.)",
+  "summary": "In aqueous KOH, OH- is a nucleophile and gives an alcohol; in alcoholic KOH, the stronger base RO-/OH- favours E2 elimination to alkene.",
+  "mechanism": "Aq: SN2 / SN1; Alc: E2 (anti-periplanar H).",
+  "keyPoints": [
+   "Aq KOH: substitution",
+   "Alc KOH: elimination (Saytzeff rule)",
+   "Tertiary halides eliminate even in aq. KOH",
+   "Heat favours elimination"
+  ],
+  "whenUsed": "Choosing between alcohol and alkene synthesis.",
+  "applications": [
+   "Alcohols from halides",
+   "Alkenes from halides"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2Br + KOH ->[aq.] CH3CH2OH + KBr",
+    "note": "Substitution"
+   },
+   {
+    "eq": "CH3CH2Br + KOH ->[alc.][\\Delta] CH2=CH2 + KBr + H2O",
+    "note": "Elimination"
+   },
+   {
+    "eq": "(CH3)3CBr + KOH ->[alc.] (CH3)2C=CH2 + KBr + H2O",
+    "note": "3° gives elimination"
+   }
+  ],
+  "jeeTips": "Aq. KOH has OH- but is also solvated by water so less basic; alcoholic KOH contains RO- (stronger base).",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "SN vs E"
+  ]
+ },
+ {
+  "id": "amine-salt-formation",
+  "name": "Basicity of Amines: Salt Formation and Liberation",
+  "aliases": [
+   "Amine basicity"
+  ],
+  "category": "Amines & Diazonium Salts",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "CH3NH2",
+  "reagents": "HCl",
+  "conditions": "",
+  "products": "CH3NH3+ Cl-",
+  "catalyst": "",
+  "reagentKeywords": [
+   "HCl",
+   "salt",
+   "NaOH",
+   "basic"
+  ],
+  "productName": "Methylammonium chloride",
+  "summary": "Amines are basic and form water-soluble ammonium salts with mineral acids; strong base regenerates the free amine.",
+  "mechanism": "Lone pair on N accepts H+.",
+  "keyPoints": [
+   "Basic order in aqueous medium (alkylamines): 2° > 3° > 1° (R = CH3: 2° > 1° > 3°; R = C2H5: 2° > 3° > 1°)",
+   "Aniline is weaker base than NH3 (lone pair delocalised)",
+   "Salts with chloroplatinic acid for estimation of N",
+   "Basic strength tested via pKb"
+  ],
+  "whenUsed": "Separation of amines from neutral compounds; purification.",
+  "applications": [
+   "Salt formation, extraction"
+  ],
+  "examples": [
+   {
+    "eq": "CH3NH2 + HCl -> CH3NH3+ + Cl-",
+    "note": "Salt"
+   },
+   {
+    "eq": "CH3NH3+ Cl- + NaOH -> CH3NH2 + NaCl + H2O",
+    "note": "Liberation"
+   },
+   {
+    "eq": "C6H5NH2 + HCl -> C6H5NH3+ Cl-",
+    "note": "Anilinium chloride"
+   }
+  ],
+  "jeeTips": "Gas-phase order is 3° > 2° > 1° > NH3; aqueous order differs because of solvation. EWG on aniline decreases basicity, EDG increases it.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "basicity",
+   "amine"
+  ]
+ },
+ {
+  "id": "mutarotation-glucose",
+  "name": "Mutarotation of Glucose",
+  "aliases": [
+   "Anomerisation"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "alpha-D-Glucose",
+  "reagents": "H2O (aqueous solution)",
+  "conditions": "",
+  "products": "beta-D-Glucose (equilibrium)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "mutarotation",
+   "anomers",
+   "equilibrium",
+   "open chain"
+  ],
+  "productName": "Equilibrium mixture (alpha 36%, beta 64%)",
+  "summary": "Anomers of glucose interconvert via the open-chain aldehyde form in water, so the specific rotation changes from +111 or +19.2 to +52.5 degrees.",
+  "mechanism": "Ring opens via hemiacetal, rotates about C1-C2, recloses to the other anomer.",
+  "keyPoints": [
+   "alpha: +111 degrees; beta: +19.2; equilibrium +52.7",
+   "Anomers differ only at C-1 (anomeric carbon)",
+   "Open-chain has free CHO",
+   "Pyranose six-membered ring"
+  ],
+  "whenUsed": "Explains why glucose lacks some typical aldehyde reactions (NaHSO3, Schiff).",
+  "applications": [
+   "Specific rotation questions"
+  ],
+  "examples": [
+   {
+    "eq": "alpha-D-glucose <=> open-chain glucose <=> beta-D-glucose",
+    "note": "Equilibrium"
+   },
+   {
+    "eq": "alpha-D-glucose (+111) -> +52.5",
+    "note": "Final rotation"
+   },
+   {
+    "eq": "beta-D-glucose (+19.2) -> +52.5",
+    "note": "Final rotation"
+   }
+  ],
+  "jeeTips": "Anomers are diastereomers (epimers at C-1), not enantiomers. Glucose does not give Schiff's test or NaHSO3 addition.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "carbohydrate",
+   "anomer"
+  ]
+ },
+ {
+  "id": "hydrolysis-disaccharides-starch",
+  "name": "Hydrolysis of Maltose, Lactose and Starch",
+  "aliases": [
+   "Sugar hydrolysis"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "C12H22O11 (maltose)",
+  "reagents": "H2O, dil. HCl or maltase",
+  "conditions": "",
+  "products": "2 C6H12O6",
+  "catalyst": "",
+  "reagentKeywords": [
+   "H+",
+   "maltase",
+   "hydrolysis",
+   "diastase",
+   "lactase"
+  ],
+  "productName": "D-Glucose",
+  "summary": "Maltose gives two glucose units; lactose gives glucose + galactose; starch gives maltose and then glucose.",
+  "mechanism": "Acid or enzymatic cleavage of glycosidic (acetal) bonds.",
+  "keyPoints": [
+   "Maltose: alpha-1,4 glucose-glucose; reducing sugar",
+   "Lactose: beta-1,4 galactose-glucose; reducing",
+   "Sucrose non-reducing, gives invert sugar",
+   "Starch = amylose (alpha-1,4) + amylopectin (alpha-1,6 branches)"
+  ],
+  "whenUsed": "Digestion, brewing, industrial glucose production.",
+  "applications": [
+   "Brewing, digestion"
+  ],
+  "examples": [
+   {
+    "eq": "C12H22O11 + H2O ->[H+] 2C6H12O6",
+    "note": "Maltose"
+   },
+   {
+    "eq": "C12H22O11 + H2O ->[lactase] C6H12O6 + C6H12O6",
+    "note": "Glucose + galactose"
+   },
+   {
+    "eq": "(C6H10O5)n + nH2O ->[H+] nC6H12O6",
+    "note": "Starch hydrolysis"
+   }
+  ],
+  "jeeTips": "Reducing vs non-reducing: only sucrose among the common disaccharides is non-reducing (no free anomeric OH).",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "carbohydrate",
+   "glycosidic"
+  ]
+ },
+ {
+  "id": "polystyrene",
+  "name": "Polystyrene (Addition Polymerisation of Styrene)",
+  "aliases": [
+   "Thermocol"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "n C6H5CH=CH2",
+  "reagents": "Benzoyl peroxide (radical initiator)",
+  "conditions": "Heat",
+  "products": "[-CH(C6H5)CH2-]n",
+  "catalyst": "",
+  "reagentKeywords": [
+   "peroxide",
+   "radical",
+   "initiator",
+   "styrene"
+  ],
+  "productName": "Polystyrene",
+  "summary": "Styrene polymerises by free-radical addition to a transparent thermoplastic.",
+  "mechanism": "Initiation, propagation, termination radical chain.",
+  "keyPoints": [
+   "Addition polymer",
+   "Expanded polystyrene = thermocol",
+   "Brittle, good insulator",
+   "Copolymer with butadiene = SBR"
+  ],
+  "whenUsed": "Packaging, insulation, disposable ware.",
+  "applications": [
+   "Thermocol"
+  ],
+  "examples": [
+   {
+    "eq": "nC6H5CH=CH2 ->[(C6H5COO)2][\\Delta] [-CH(C6H5)-CH2-]n",
+    "note": "Polystyrene"
+   },
+   {
+    "eq": "C6H6 + CH2=CH2 ->[AlCl3] C6H5C2H5",
+    "note": "Ethylbenzene for styrene"
+   },
+   {
+    "eq": "C6H5C2H5 ->[Fe2O3, 873 K] C6H5CH=CH2 + H2",
+    "note": "Dehydrogenation"
+   }
+  ],
+  "jeeTips": "Know the monomer: phenylethene. Polystyrene is an addition polymer with no heteroatom.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "polymer"
+  ]
+ },
+ {
+  "id": "pmma-polymerisation",
+  "name": "PMMA (Perspex / Plexiglass)",
+  "aliases": [
+   "Perspex"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "n CH2=C(CH3)COOCH3",
+  "reagents": "Peroxide (initiator)",
+  "conditions": "Heat",
+  "products": "[-CH2-C(CH3)(COOCH3)-]n",
+  "catalyst": "",
+  "reagentKeywords": [
+   "peroxide",
+   "radical",
+   "methyl methacrylate"
+  ],
+  "productName": "Polymethyl methacrylate",
+  "summary": "Methyl methacrylate undergoes radical addition polymerisation to give transparent plastic.",
+  "mechanism": "Radical chain, tertiary radical stabilised by ester.",
+  "keyPoints": [
+   "Lucite / Plexiglas / Perspex",
+   "Glass substitute",
+   "Addition polymer"
+  ],
+  "whenUsed": "Optical lenses, aircraft windows.",
+  "applications": [
+   "Organic glass"
+  ],
+  "examples": [
+   {
+    "eq": "nCH2=C(CH3)COOCH3 ->[peroxide] [-CH2-C(CH3)(COOCH3)-]n",
+    "note": "PMMA"
+   },
+   {
+    "eq": "CH3COCH3 + HCN -> (CH3)2C(OH)CN",
+    "note": "Acetone cyanohydrin, starting point for the monomer"
+   },
+   {
+    "eq": "nCH2=CHCOOCH3 -> [-CH2-CH(COOCH3)-]n",
+    "note": "Polyacrylate"
+   }
+  ],
+  "jeeTips": "Monomer is methyl 2-methylpropenoate. Tertiary carbon on chain.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "polymer"
+  ]
+ },
+ {
+  "id": "polyacrylonitrile",
+  "name": "Polyacrylonitrile (Orlon / Acrilan)",
+  "aliases": [
+   "Orlon"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "Industrial process",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "easy",
+  "reactants": "n CH2=CHCN",
+  "reagents": "Peroxide",
+  "conditions": "Heat, high pressure",
+  "products": "[-CH2-CH(CN)-]n",
+  "catalyst": "",
+  "reagentKeywords": [
+   "peroxide",
+   "acrylonitrile",
+   "radical"
+  ],
+  "productName": "Polyacrylonitrile (PAN)",
+  "summary": "Acrylonitrile polymerises through free-radical addition to a fibre used as artificial wool.",
+  "mechanism": "Radical chain.",
+  "keyPoints": [
+   "Orlon / Acrilan",
+   "Used as substitute for wool",
+   "Copolymer with butadiene = Buna-N"
+  ],
+  "whenUsed": "Synthetic fibre for sweaters, blankets.",
+  "applications": [
+   "Artificial wool"
+  ],
+  "examples": [
+   {
+    "eq": "nCH2=CHCN ->[peroxide] [-CH2-CH(CN)-]n",
+    "note": "PAN"
+   },
+   {
+    "eq": "CH2=CHCN + 2H2 ->[Ni] CH3CH2CH2NH2",
+    "note": "Reduction"
+   },
+   {
+    "eq": "HC#CH + HCN -> CH2=CHCN",
+    "note": "Acrylonitrile prep"
+   }
+  ],
+  "jeeTips": "Monomer is vinyl cyanide (propenenitrile). Don't confuse with nylon (condensation).",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "polymer"
+  ]
+ },
+ {
+  "id": "phbv-polymer",
+  "name": "PHBV (Poly-beta-hydroxybutyrate-co-beta-hydroxyvalerate)",
+  "aliases": [
+   "Biodegradable polyester"
+  ],
+  "category": "Biomolecules & Polymers",
+  "kind": "General reaction",
+  "exam": [
+   "JEE Main",
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "3-hydroxybutanoic acid + 3-hydroxypentanoic acid",
+  "reagents": "Condensation",
+  "conditions": "",
+  "products": "PHBV",
+  "catalyst": "",
+  "reagentKeywords": [
+   "copolymer",
+   "biodegradable",
+   "condensation",
+   "polyester"
+  ],
+  "productName": "PHBV (biodegradable polyester)",
+  "summary": "Condensation copolymerisation of 3-hydroxybutanoic acid and 3-hydroxypentanoic acid gives a biodegradable polyester.",
+  "mechanism": "Intermolecular esterification between OH and COOH.",
+  "keyPoints": [
+   "Biodegradable",
+   "Used in packaging, orthopaedic devices",
+   "Aliphatic polyester",
+   "Nylon-2-nylon-6 is another biodegradable polymer"
+  ],
+  "whenUsed": "Biodegradable polymers.",
+  "applications": [
+   "Specialty packaging"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH(OH)CH2COOH + CH3CH2CH(OH)CH2COOH -> PHBV + H2O",
+    "note": "Condensation"
+   },
+   {
+    "eq": "H2NCH2COOH + H2N(CH2)5COOH -> nylon 2-nylon 6",
+    "note": "Biodegradable polyamide"
+   },
+   {
+    "eq": "nHO-CH(CH3)COOH -> [-O-CH(CH3)-CO-]n + nH2O",
+    "note": "PLA"
+   }
+  ],
+  "jeeTips": "Monomers: 3-hydroxybutanoic and 3-hydroxypentanoic acids; know that it is biodegradable.",
+  "reference": "",
+  "tags": [
+   "NCERT",
+   "polymer",
+   "biodegradable"
+  ]
+ },
+ {
+  "id": "hydroboration-alkynes",
+  "name": "Hydroboration-Oxidation of Alkynes",
+  "aliases": [],
+  "category": "Hydrocarbons",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH3CH2C#CH",
+  "reagents": "1) R2BH (disiamylborane / 9-BBN)  2) H2O2, NaOH",
+  "conditions": "THF",
+  "products": "CH3CH2CH2CHO",
+  "catalyst": "",
+  "reagentKeywords": [
+   "disiamylborane",
+   "9-BBN",
+   "H2O2",
+   "NaOH",
+   "BH3"
+  ],
+  "productName": "Butanal",
+  "summary": "Terminal alkynes give aldehydes (anti-Markovnikov hydration) via bulky borane then H2O2/NaOH; internal alkynes give ketones.",
+  "mechanism": "Syn addition of H and B (B on terminal C); enol formed on oxidation tautomerises to aldehyde.",
+  "keyPoints": [
+   "Anti-Markovnikov: aldehyde from terminal alkyne",
+   "Bulky borane prevents double addition",
+   "Contrast Kucherov (HgSO4) gives methyl ketone"
+  ],
+  "whenUsed": "Converting alkyne to aldehyde.",
+  "applications": [
+   "Aldehyde from terminal alkyne"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2C#CH ->[1) R2BH][2) H2O2/NaOH] CH3CH2CH2CHO",
+    "note": "Aldehyde"
+   },
+   {
+    "eq": "CH3C#CCH3 ->[1) R2BH][2) H2O2/NaOH] CH3CH2COCH3",
+    "note": "Ketone"
+   },
+   {
+    "eq": "CH3C#CH ->[HgSO4/H2SO4] CH3COCH3",
+    "note": "Compare Markovnikov"
+   }
+  ],
+  "jeeTips": "HgSO4 route: ketone; borane route: aldehyde. Syn addition of H-B.",
+  "reference": "",
+  "tags": [
+   "hydroboration",
+   "alkyne",
+   "tautomerism",
+   "potential"
+  ]
+ },
+ {
+  "id": "pinacol-coupling",
+  "name": "Pinacol Coupling of Ketones (Mg-Hg / Mg)",
+  "aliases": [],
+  "category": "Aldehydes & Ketones",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "2 CH3COCH3",
+  "reagents": "Mg-Hg (or Mg / TiCl4), then H2O",
+  "conditions": "benzene",
+  "products": "(CH3)2C(OH)C(OH)(CH3)2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Mg-Hg",
+   "Mg amalgam",
+   "reductive coupling",
+   "Zn"
+  ],
+  "productName": "Pinacol (2,3-dimethylbutane-2,3-diol)",
+  "summary": "Bimolecular reduction of ketones/aldehydes by Mg amalgam gives vicinal diols (pinacols).",
+  "mechanism": "Single electron transfer forms ketyl radical anions which dimerise (C-C bond), hydrolysis gives diol.",
+  "keyPoints": [
+   "Starting material for pinacol-pinacolone rearrangement",
+   "Aldehydes also couple",
+   "Reductive coupling, not simple reduction"
+  ],
+  "whenUsed": "Making vicinal diols; sets up pinacol rearrangement questions.",
+  "applications": [
+   "Diols"
+  ],
+  "examples": [
+   {
+    "eq": "2 CH3COCH3 ->[Mg-Hg][H2O] (CH3)2C(OH)C(OH)(CH3)2",
+    "note": "Pinacol"
+   },
+   {
+    "eq": "2 C6H5COCH3 ->[Mg][H2O] C6H5C(CH3)(OH)C(CH3)(OH)C6H5",
+    "note": "Diaryl pinacol"
+   },
+   {
+    "eq": "(CH3)2C(OH)C(OH)(CH3)2 ->[H+] (CH3)3CCOCH3",
+    "note": "Pinacolone"
+   }
+  ],
+  "jeeTips": "Pair with pinacol-pinacolone rearrangement: a two-step ketone to rearranged ketone question.",
+  "reference": "",
+  "tags": [
+   "ketyl",
+   "diol",
+   "reduction",
+   "potential"
+  ]
+ },
+ {
+  "id": "acyloin-condensation",
+  "name": "Acyloin Condensation",
+  "aliases": [],
+  "category": "Carboxylic Acids & Derivatives",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "2 CH3CH2COOC2H5",
+  "reagents": "1) Na (dry toluene/xylene)  2) H3O+",
+  "conditions": "reflux",
+  "products": "CH3CH2CH(OH)COCH2CH3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Na",
+   "sodium",
+   "xylene",
+   "ester"
+  ],
+  "productName": "Propioin (4-hydroxyhexan-3-one)",
+  "summary": "Esters are reductively coupled by sodium metal to alpha-hydroxy ketones (acyloins); intramolecular version closes rings.",
+  "mechanism": "Radical anion dimerisation, loss of alkoxide gives 1,2-diketone, further reduction gives ene-diolate then acyloin.",
+  "keyPoints": [
+   "Gives alpha-hydroxy ketone",
+   "Intramolecular: ring formation from diesters (C5 and up)",
+   "Contrast Bouveault-Blanc: Na/EtOH gives alcohols"
+  ],
+  "whenUsed": "Forming alpha-hydroxy ketones and medium rings.",
+  "applications": [
+   "Ring construction"
+  ],
+  "examples": [
+   {
+    "eq": "2 CH3CH2COOC2H5 ->[Na] CH3CH2CH(OH)COCH2CH3",
+    "note": "Acyloin"
+   },
+   {
+    "eq": "C2H5OOC(CH2)4COOC2H5 ->[Na] 2-hydroxycyclohexanone",
+    "note": "Cyclic acyloin"
+   },
+   {
+    "eq": "2 RCOOR ->[Na] RCH(OH)COR",
+    "note": "General"
+   }
+  ],
+  "jeeTips": "Dry, aprotic solvent essential. Alcohol present gives reduction rather than coupling.",
+  "reference": "",
+  "tags": [
+   "ester",
+   "radical",
+   "ring",
+   "potential"
+  ]
+ },
+ {
+  "id": "swern-oxidation",
+  "name": "Swern Oxidation",
+  "aliases": [],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH3CH(OH)CH3",
+  "reagents": "1) DMSO, (COCl)2  2) Et3N",
+  "conditions": "-78 degC",
+  "products": "CH3COCH3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "DMSO",
+   "oxalyl chloride",
+   "Et3N",
+   "low temperature"
+  ],
+  "productName": "Acetone",
+  "summary": "Primary alcohols give aldehydes and secondary alcohols give ketones under mild, over-oxidation-free conditions using activated DMSO.",
+  "mechanism": "DMSO + oxalyl chloride gives chlorodimethylsulfonium; alcohol adds, base removes alpha-H, ylide collapses to C=O + Me2S.",
+  "keyPoints": [
+   "No over-oxidation to acid",
+   "By-products: Me2S (smelly), CO, CO2, Et3NHCl",
+   "Alternative to PCC, Collins"
+  ],
+  "whenUsed": "Mild oxidation of sensitive alcohols.",
+  "applications": [
+   "Mild oxidation"
+  ],
+  "examples": [
+   {
+    "eq": "CH3CH2CH2OH ->[DMSO, (COCl)2][Et3N] CH3CH2CHO",
+    "note": "Aldehyde, no acid"
+   },
+   {
+    "eq": "(CH3)2CHOH -> (CH3)2C=O",
+    "note": "Ketone"
+   },
+   {
+    "eq": "C6H5CH2OH -> C6H5CHO",
+    "note": "Benzaldehyde"
+   }
+  ],
+  "jeeTips": "Know that Swern stops at the aldehyde, like PCC. Tertiary alcohols are untouched.",
+  "reference": "",
+  "tags": [
+   "oxidation",
+   "DMSO",
+   "potential"
+  ]
+ },
+ {
+  "id": "ritter-reaction",
+  "name": "Ritter Reaction",
+  "aliases": [],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "(CH3)3COH",
+  "reagents": "CH3CN, conc. H2SO4",
+  "conditions": "then H2O",
+  "products": "(CH3)3CNHCOCH3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "nitrile",
+   "conc. H2SO4",
+   "carbocation"
+  ],
+  "productName": "N-tert-Butylacetamide",
+  "summary": "A carbocation (from tertiary alcohol or alkene) is trapped by a nitrile N to give an N-alkyl amide after water work-up.",
+  "mechanism": "Carbocation + RC#N gives nitrilium ion; water adds, tautomerises to amide.",
+  "keyPoints": [
+   "Works through stable carbocations",
+   "Gives N-alkyl amide",
+   "Hydrolysis gives tertiary alkylamine"
+  ],
+  "whenUsed": "Making tert-alkylamines.",
+  "applications": [
+   "Amide / amine synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "(CH3)3COH + CH3CN ->[H2SO4] (CH3)3CNHCOCH3 + H2O",
+    "note": "Amide"
+   },
+   {
+    "eq": "(CH3)2C=CH2 + HCN ->[H2SO4] (CH3)3CNHCHO",
+    "note": "Formamide"
+   },
+   {
+    "eq": "(CH3)3CNHCOCH3 ->[H3O+] (CH3)3CNH2",
+    "note": "Amine"
+   }
+  ],
+  "jeeTips": "Carbocation chemistry in strongly acidic, non-aqueous nitrile solvent. Rearrangements can occur.",
+  "reference": "",
+  "tags": [
+   "carbocation",
+   "nitrilium",
+   "potential"
+  ]
+ },
+ {
+  "id": "tiffeneau-demjanov",
+  "name": "Tiffeneau-Demjanov Ring Expansion",
+  "aliases": [],
+  "category": "Aldehydes & Ketones",
+  "kind": "Rearrangement",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "cyclohexanone",
+  "reagents": "1) HCN  2) LiAlH4  3) HNO2",
+  "conditions": "",
+  "products": "cycloheptanone",
+  "catalyst": "",
+  "reagentKeywords": [
+   "HNO2",
+   "NaNO2/HCl",
+   "cyanohydrin",
+   "LiAlH4",
+   "ring expansion"
+  ],
+  "productName": "Cycloheptanone",
+  "summary": "1-Aminomethylcycloalkanol with HNO2 gives diazonium which loses N2 with ring expansion by one carbon.",
+  "mechanism": "Diazonium leaves, alkyl shift to the electron-deficient CH2, then proton loss gives ketone.",
+  "keyPoints": [
+   "Ring grows by one CH2",
+   "Combines cyanohydrin, reduction and diazotisation of 1deg amine",
+   "Related to pinacol shift"
+  ],
+  "whenUsed": "Ring expansion.",
+  "applications": [
+   "Seven-membered rings"
+  ],
+  "examples": [
+   {
+    "eq": "C6H10O + HCN -> C6H10(OH)CN",
+    "note": "Cyanohydrin"
+   },
+   {
+    "eq": "C6H10(OH)CN ->[LiAlH4] C6H10(OH)CH2NH2",
+    "note": "Amino alcohol"
+   },
+   {
+    "eq": "C6H10(OH)CH2NH2 ->[HNO2] C7H12O + N2 + H2O",
+    "note": "Cycloheptanone"
+   }
+  ],
+  "jeeTips": "Aliphatic primary amine + HNO2 gives N2 and cation, not stable diazonium.",
+  "reference": "",
+  "tags": [
+   "ring expansion",
+   "carbocation",
+   "potential"
+  ]
+ },
+ {
+  "id": "wagner-meerwein-alcohol-dehydration",
+  "name": "Carbocation Rearrangement in Alcohol Dehydration (Wagner-Meerwein)",
+  "aliases": [],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Rearrangement",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "(CH3)3CCH(OH)CH3",
+  "reagents": "conc. H2SO4 / H3PO4",
+  "conditions": "Heat",
+  "products": "(CH3)2C=C(CH3)2",
+  "catalyst": "",
+  "reagentKeywords": [
+   "H2SO4",
+   "H3PO4",
+   "dehydration",
+   "methyl shift"
+  ],
+  "productName": "2,3-Dimethylbut-2-ene",
+  "summary": "A secondary carbocation shifts a methyl (or hydride) group to give a more stable tertiary cation, which loses H+ to the most substituted alkene.",
+  "mechanism": "Protonation, loss of water, 1,2-methyl shift, E1.",
+  "keyPoints": [
+   "Shifts: H or CH3 to cationic centre",
+   "Product follows Saytzeff",
+   "Seen with neopentyl-type and neighbouring tertiary carbons"
+  ],
+  "whenUsed": "Explaining unexpected skeletons.",
+  "applications": [
+   "Predicting major alkene"
+  ],
+  "examples": [
+   {
+    "eq": "(CH3)3CCH(OH)CH3 ->[H+] (CH3)2C=C(CH3)2 + H2O",
+    "note": "Major"
+   },
+   {
+    "eq": "(CH3)3CCH2OH ->[H+] (CH3)2C=CHCH3",
+    "note": "Neopentyl alcohol"
+   },
+   {
+    "eq": "(CH3)2CHCH(OH)CH3 ->[H+] (CH3)2C=CHCH3",
+    "note": "Hydride shift"
+   }
+  ],
+  "jeeTips": "Ask yourself first: is there a more stable cation obtainable by a 1,2-shift? Then apply Saytzeff.",
+  "reference": "",
+  "tags": [
+   "carbocation",
+   "E1",
+   "potential"
+  ]
+ },
+ {
+  "id": "intramolecular-aldol",
+  "name": "Intramolecular Aldol Condensation (Cyclisation of Diketones)",
+  "aliases": [],
+  "category": "Aldehydes & Ketones",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH3COCH2CH2COCH3",
+  "reagents": "dil. NaOH or KOH",
+  "conditions": "Heat",
+  "products": "3-Methylcyclopent-2-en-1-one + H2O",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NaOH",
+   "KOH",
+   "aldol",
+   "cyclisation"
+  ],
+  "productName": "3-Methylcyclopent-2-enone",
+  "summary": "1,4- and 1,5-diketones cyclise via intramolecular aldol to give 5- or 6-membered cyclic enones.",
+  "mechanism": "Enolate of one C=O attacks the other; dehydration gives conjugated enone.",
+  "keyPoints": [
+   "5- and 6-membered rings favoured",
+   "Hexane-2,5-dione gives cyclopentenone",
+   "Heptane-2,6-dione gives cyclohexenone",
+   "Used in Robinson annulation"
+  ],
+  "whenUsed": "Ring formation.",
+  "applications": [
+   "Cyclopentenones"
+  ],
+  "examples": [
+   {
+    "eq": "CH3COCH2CH2COCH3 ->[NaOH] C6H8O + H2O",
+    "note": "Cyclopentenone"
+   },
+   {
+    "eq": "OHC(CH2)4CHO ->[base] 1-formylcyclopentene",
+    "note": "Hexanedial"
+   },
+   {
+    "eq": "CH3CO(CH2)3COCH3 ->[NaOH] 3-methylcyclohex-2-enone",
+    "note": "Cyclohexenone"
+   }
+  ],
+  "jeeTips": "Count rings: 3- and 4-membered rings do not form; pick the ring size 5/6.",
+  "reference": "",
+  "tags": [
+   "aldol",
+   "ring",
+   "cyclisation",
+   "potential"
+  ]
+ },
+ {
+  "id": "intramolecular-cannizzaro",
+  "name": "Intramolecular Cannizzaro Reaction (Glyoxal, Phthalaldehyde)",
+  "aliases": [],
+  "category": "Aldehydes & Ketones",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "medium",
+  "reactants": "OHC-CHO",
+  "reagents": "conc. NaOH",
+  "conditions": "",
+  "products": "HOCH2COO- Na+",
+  "catalyst": "",
+  "reagentKeywords": [
+   "conc. NaOH",
+   "glyoxal",
+   "phthalaldehyde",
+   "hydride shift"
+  ],
+  "productName": "Sodium glycolate",
+  "summary": "Dialdehydes lacking alpha-H undergo internal hydride transfer to give a hydroxy-acid salt.",
+  "mechanism": "Hydroxide adds to one CHO, hydride shifts to adjacent CHO within the same molecule.",
+  "keyPoints": [
+   "Needs no alpha-H",
+   "Gives hydroxy acid",
+   "Phthalaldehyde gives phthalide (2-hydroxymethylbenzoic acid lactone)"
+  ],
+  "whenUsed": "Distinguishing from intermolecular.",
+  "applications": [
+   "Hydroxy-acid synthesis"
+  ],
+  "examples": [
+   {
+    "eq": "OHC-CHO + NaOH -> HOCH2COONa",
+    "note": "Glycolate"
+   },
+   {
+    "eq": "o-C6H4(CHO)2 ->[NaOH] o-HOCH2C6H4COONa",
+    "note": "Phthalaldehyde"
+   },
+   {
+    "eq": "2 HCHO + NaOH -> CH3OH + HCOONa",
+    "note": "Compare intermolecular"
+   }
+  ],
+  "jeeTips": "One molecule gives both acid and alcohol; no second molecule required.",
+  "reference": "",
+  "tags": [
+   "Cannizzaro",
+   "hydride transfer",
+   "potential"
+  ]
+ },
+ {
+  "id": "benzidine-rearrangement",
+  "name": "Benzidine Rearrangement",
+  "aliases": [],
+  "category": "Amines & Diazonium Salts",
+  "kind": "Rearrangement",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H5NHNHC6H5",
+  "reagents": "dil. H2SO4 / HCl",
+  "conditions": "",
+  "products": "H2NC6H4-C6H4NH2 (4,4'-diaminobiphenyl)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "acid",
+   "H+",
+   "hydrazobenzene"
+  ],
+  "productName": "Benzidine",
+  "summary": "Hydrazobenzene rearranges in acid to benzidine (4,4'-diaminobiphenyl) via a [5,5]-type shift.",
+  "mechanism": "Diprotonation then concerted para-para bond formation with N-N cleavage.",
+  "keyPoints": [
+   "Gives para-para C-C bond",
+   "Minor product diphenyline",
+   "Nitrobenzene to azobenzene to hydrazobenzene to benzidine (reduction route)"
+  ],
+  "whenUsed": "Dye intermediates.",
+  "applications": [
+   "Benzidine dyes"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5NHNHC6H5 ->[H+] H2NC6H4C6H4NH2",
+    "note": "Benzidine"
+   },
+   {
+    "eq": "2 C6H5NO2 ->[Zn/NaOH] C6H5N=NC6H5",
+    "note": "Azobenzene"
+   },
+   {
+    "eq": "C6H5N=NC6H5 ->[Zn/NaOH] C6H5NHNHC6H5",
+    "note": "Hydrazobenzene"
+   }
+  ],
+  "jeeTips": "Nitrobenzene + Zn/NaOH goes to hydrazobenzene; then acid gives benzidine.",
+  "reference": "",
+  "tags": [
+   "rearrangement",
+   "hydrazobenzene",
+   "potential"
+  ]
+ },
+ {
+  "id": "periodate-diol-cleavage",
+  "name": "Oxidative Cleavage of 1,2-Diols (HIO4 / Pb(OAc)4)",
+  "aliases": [],
+  "category": "Alcohols, Phenols & Ethers",
+  "kind": "Oxidation",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "HOCH2CH2OH",
+  "reagents": "HIO4",
+  "conditions": "",
+  "products": "2 HCHO",
+  "catalyst": "",
+  "reagentKeywords": [
+   "HIO4",
+   "periodic acid",
+   "Pb(OAc)4",
+   "Malaprade"
+  ],
+  "productName": "Two carbonyl fragments",
+  "summary": "Periodic acid or lead tetraacetate cleaves vicinal diols (and alpha-hydroxy carbonyls) at the C-C bond giving aldehydes/ketones.",
+  "mechanism": "A cyclic periodate ester forms and fragments.",
+  "keyPoints": [
+   "Also cleaves alpha-hydroxy ketones, 1,2-diketones",
+   "Glycerol gives 2 HCHO + HCOOH",
+   "Used to determine sugar structure",
+   "No cleavage of 1,3-diols"
+  ],
+  "whenUsed": "Structure determination of carbohydrates.",
+  "applications": [
+   "Carbohydrate structure"
+  ],
+  "examples": [
+   {
+    "eq": "HOCH2CH2OH + HIO4 -> 2HCHO + HIO3 + H2O",
+    "note": "Glycol"
+   },
+   {
+    "eq": "CH3CH(OH)CH(OH)CH3 ->[HIO4] 2 CH3CHO",
+    "note": "Butane-2,3-diol"
+   },
+   {
+    "eq": "HOCH2CH(OH)CH2OH ->[HIO4] 2HCHO + HCOOH",
+    "note": "Glycerol"
+   }
+  ],
+  "jeeTips": "Count moles of HIO4 consumed: one per C-C bond broken. Cyclic cis-diols cleave faster.",
+  "reference": "",
+  "tags": [
+   "diol",
+   "carbohydrate",
+   "potential"
+  ]
+ },
+ {
+  "id": "lobry-de-bruyn-epimerisation",
+  "name": "Lobry de Bruyn-van Ekenstein Transformation (Glucose-Fructose-Mannose)",
+  "aliases": [],
+  "category": "Biomolecules & Polymers",
+  "kind": "Rearrangement",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "D-Glucose",
+  "reagents": "dil. NaOH (aq.)",
+  "conditions": "",
+  "products": "D-Fructose + D-Mannose (equilibrium)",
+  "catalyst": "",
+  "reagentKeywords": [
+   "alkali",
+   "enediol",
+   "dil. NaOH",
+   "epimerisation"
+  ],
+  "productName": "Mixture of glucose, mannose and fructose",
+  "summary": "In dilute alkali an aldose tautomerises through an enediol to its C-2 epimer and the isomeric ketose.",
+  "mechanism": "Base removes alpha-H, enediol formed, reprotonation either face.",
+  "keyPoints": [
+   "Glucose and mannose are C-2 epimers",
+   "Explains why fructose gives Tollens' and Fehling's positive",
+   "Concentrated alkali causes decomposition"
+  ],
+  "whenUsed": "Why ketoses behave as reducing sugars.",
+  "applications": [
+   "Fructose reducing property"
+  ],
+  "examples": [
+   {
+    "eq": "D-glucose <=>[OH-] enediol <=>[OH-] D-fructose",
+    "note": "Via enediol"
+   },
+   {
+    "eq": "D-glucose <=>[OH-] D-mannose",
+    "note": "C-2 epimers"
+   },
+   {
+    "eq": "D-fructose + 2[Ag(NH3)2]+ -> gluconic-type acids + Ag",
+    "note": "Why Tollens works"
+   }
+  ],
+  "jeeTips": "Fructose is a ketose but gives Tollens test due to this isomerisation.",
+  "reference": "",
+  "tags": [
+   "carbohydrate",
+   "enediol",
+   "potential"
+  ]
+ },
+ {
+  "id": "wohl-degradation",
+  "name": "Wohl Degradation of Aldoses",
+  "aliases": [],
+  "category": "Biomolecules & Polymers",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "D-Glucose",
+  "reagents": "1) NH2OH  2) (CH3CO)2O, NaOAc  3) NaOCH3",
+  "conditions": "",
+  "products": "D-Arabinose",
+  "catalyst": "",
+  "reagentKeywords": [
+   "NH2OH",
+   "acetic anhydride",
+   "sodium methoxide",
+   "chain shortening"
+  ],
+  "productName": "D-Arabinose (aldopentose)",
+  "summary": "An aldose is shortened by one carbon: oxime, acetylation/dehydration to cyanide, then loss of HCN.",
+  "mechanism": "Oxime dehydrates to cyanohydrin acetate, base removes HCN regenerating CHO.",
+  "keyPoints": [
+   "Reverse of Kiliani-Fischer",
+   "Chain shortened by one carbon",
+   "Ruff is oxidative equivalent"
+  ],
+  "whenUsed": "Descending a sugar series.",
+  "applications": [
+   "Sugar chain shortening"
+  ],
+  "examples": [
+   {
+    "eq": "RCH(OH)CHO + NH2OH -> RCH(OH)CH=NOH + H2O",
+    "note": "Oxime"
+   },
+   {
+    "eq": "RCH(OH)CH=NOH ->[Ac2O] RCH(OAc)CN",
+    "note": "Cyanohydrin ester"
+   },
+   {
+    "eq": "RCH(OAc)CN ->[NaOCH3] RCHO + HCN",
+    "note": "Shortened aldose"
+   }
+  ],
+  "jeeTips": "Opposite of Kiliani-Fischer (ascending). Glucose to arabinose.",
+  "reference": "",
+  "tags": [
+   "carbohydrate",
+   "chain shortening",
+   "potential"
+  ]
+ },
+ {
+  "id": "gilman-conjugate-addition",
+  "name": "Conjugate Addition of Gilman Reagent to Enones",
+  "aliases": [],
+  "category": "Aldehydes & Ketones",
+  "kind": "Named reaction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "CH2=CHCOCH3",
+  "reagents": "1) (CH3)2CuLi  2) H3O+",
+  "conditions": "ether",
+  "products": "CH3CH2CH2COCH3",
+  "catalyst": "",
+  "reagentKeywords": [
+   "R2CuLi",
+   "Gilman reagent",
+   "organocuprate",
+   "1,4-addition"
+  ],
+  "productName": "Pentan-2-one",
+  "summary": "Lithium dialkylcuprates add to alpha,beta-unsaturated carbonyls at the beta carbon (1,4-addition), whereas Grignards/RLi favour 1,2-addition.",
+  "mechanism": "R transfers from Cu to beta carbon giving enolate; protonation gives saturated ketone.",
+  "keyPoints": [
+   "Soft nucleophile: 1,4",
+   "Grignard/RLi: 1,2 (alcohol)",
+   "R2CuLi from 2 RLi + CuI",
+   "Compare Corey-House coupling"
+  ],
+  "whenUsed": "Beta-alkylation of enones.",
+  "applications": [
+   "C-C bond formation"
+  ],
+  "examples": [
+   {
+    "eq": "2 CH3Li + CuI -> (CH3)2CuLi + LiI",
+    "note": "Gilman reagent"
+   },
+   {
+    "eq": "CH2=CHCOCH3 + (CH3)2CuLi -> CH3CH2CH2COCH3",
+    "note": "After workup"
+   },
+   {
+    "eq": "cyclohex-2-enone ->[1) R2CuLi][2) H3O+] 3-alkylcyclohexanone",
+    "note": "Ring enone"
+   }
+  ],
+  "jeeTips": "Choose the reagent by regiochemistry: R2CuLi gives conjugate addition product, RMgX gives allylic alcohol.",
+  "reference": "",
+  "tags": [
+   "organocopper",
+   "Michael",
+   "potential"
+  ]
+ },
+ {
+  "id": "birch-substituted-benzenes",
+  "name": "Birch Reduction of Substituted Benzenes (EDG vs EWG)",
+  "aliases": [],
+  "category": "Aromatic Compounds",
+  "kind": "Reduction",
+  "exam": [
+   "JEE Advanced"
+  ],
+  "difficulty": "hard",
+  "reactants": "C6H5OCH3",
+  "reagents": "Na, liq. NH3, C2H5OH",
+  "conditions": "",
+  "products": "1-methoxycyclohexa-1,4-diene",
+  "catalyst": "",
+  "reagentKeywords": [
+   "Na",
+   "liq. NH3",
+   "ethanol",
+   "Birch"
+  ],
+  "productName": "1-Methoxycyclohexa-1,4-diene",
+  "summary": "EDG (OCH3, CH3) remain on the double bond (sp2 carbon) while EWG (COOH) end up on an sp3 carbon in the 1,4-diene.",
+  "mechanism": "Electron transfer gives radical anion, protonation and repeat; protonation occurs at positions that avoid placing negative charge next to EDG.",
+  "keyPoints": [
+   "EDG: substituent on sp2 carbon",
+   "EWG: substituent on sp3 carbon",
+   "Product is 1,4-diene not 1,3",
+   "Benzoic acid gives cyclohexa-2,5-dienecarboxylic acid"
+  ],
+  "whenUsed": "Making non-conjugated dienes.",
+  "applications": [
+   "Ring partial reduction"
+  ],
+  "examples": [
+   {
+    "eq": "C6H5OCH3 ->[Na/NH3, EtOH] 1-methoxycyclohexa-1,4-diene",
+    "note": "EDG on sp2"
+   },
+   {
+    "eq": "C6H5COOH ->[Na/NH3, EtOH] cyclohexa-2,5-diene-1-carboxylic acid",
+    "note": "EWG on sp3"
+   },
+   {
+    "eq": "C6H5CH3 ->[Na/NH3, EtOH] 1-methylcyclohexa-1,4-diene",
+    "note": "Toluene"
+   }
+  ],
+  "jeeTips": "Alkyl/alkoxy stays on double bond; COOH on saturated C. Extends the benzene Birch reaction.",
+  "reference": "",
+  "tags": [
+   "Birch",
+   "EDG",
+   "EWG",
+   "potential"
+  ]
+ }
+]
