@@ -1133,7 +1133,7 @@
    "Reduction of glucose with HI",
    "Glucose structure proof"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Reduction",
   "exam": [
    "JEE Main",
@@ -1188,7 +1188,7 @@
   "aliases": [
    "Oxidation of glucose by Br2 water"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Oxidation",
   "exam": [
    "JEE Main",
@@ -1244,7 +1244,7 @@
    "Oxidation of glucose with nitric acid",
    "Glucaric acid formation"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Oxidation",
   "exam": [
    "JEE Main",
@@ -1299,7 +1299,7 @@
   "aliases": [
    "Glucose oxime"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -1355,7 +1355,7 @@
    "Acetylation of glucose",
    "Glucose pentaacetate"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -1411,7 +1411,7 @@
   "aliases": [
    "Glucose cyanohydrin formation"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -1468,7 +1468,7 @@
    "Glucosazone formation",
    "Fischer osazone reaction"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Named reaction",
   "exam": [
    "JEE Main",
@@ -1528,7 +1528,7 @@
    "Invert sugar formation",
    "Inversion of cane sugar"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -1588,7 +1588,7 @@
    "Peptide linkage",
    "Condensation of amino acids"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -1647,7 +1647,7 @@
    "Dipolar ion of amino acids",
    "Isoelectric point"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -1710,7 +1710,7 @@
    "HDPE synthesis",
    "Ziegler-Natta polymerisation"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -1772,7 +1772,7 @@
    "LDPE synthesis",
    "Polythene"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -1831,7 +1831,7 @@
    "Nylon 66",
    "Polyhexamethylene adipamide"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -1892,7 +1892,7 @@
    "Perlon",
    "Nylon 6 polymerisation"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -1953,7 +1953,7 @@
    "Polyester fibre",
    "Dacron"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -2013,7 +2013,7 @@
    "Novolac",
    "PF resin"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -2073,7 +2073,7 @@
    "Melamine resin",
    "Melmac"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -2132,7 +2132,7 @@
    "Styrene-butadiene rubber",
    "GR-S"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -2192,7 +2192,7 @@
    "Nitrile rubber",
    "GR-A"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -2251,7 +2251,7 @@
    "Polychloroprene",
    "Synthetic rubber"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -2308,7 +2308,7 @@
    "Sulphur cross-linking of rubber",
    "Goodyear process"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -2369,7 +2369,7 @@
    "Polytetrafluoroethene",
    "PTFE"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -2427,7 +2427,7 @@
    "Polyvinyl chloride",
    "Poly(chloroethene)"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -2485,7 +2485,7 @@
    "Glycerol phthalate polymer",
    "Alkyd resin"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",

@@ -1707,7 +1707,7 @@
   "aliases": [
    "Anomerisation"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -1766,7 +1766,7 @@
   "aliases": [
    "Sugar hydrolysis"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -1826,7 +1826,7 @@
   "aliases": [
    "Thermocol"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -1884,7 +1884,7 @@
   "aliases": [
    "Perspex"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -1940,7 +1940,7 @@
   "aliases": [
    "Orlon"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -1996,7 +1996,7 @@
   "aliases": [
    "Biodegradable polyester"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -2664,7 +2664,7 @@
   "id": "lobry-de-bruyn-epimerisation",
   "name": "Lobry de Bruyn-van Ekenstein Transformation (Glucose-Fructose-Mannose)",
   "aliases": [],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Rearrangement",
   "exam": [
    "JEE Advanced"
@@ -2719,7 +2719,7 @@
   "id": "wohl-degradation",
   "name": "Wohl Degradation of Aldoses",
   "aliases": [],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Named reaction",
   "exam": [
    "JEE Advanced"

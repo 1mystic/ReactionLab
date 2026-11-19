@@ -5,12 +5,12 @@
 
   /* ================= Constants ================= */
   RL.CATEGORIES = ['Hydrocarbons', 'Aromatic Compounds', 'Haloalkanes & Haloarenes', 'Alcohols, Phenols & Ethers',
-    'Aldehydes & Ketones', 'Carboxylic Acids & Derivatives', 'Amines & Diazonium Salts', 'Biomolecules & Polymers', 'Qualitative Tests'];
+    'Aldehydes & Ketones', 'Carboxylic Acids & Derivatives', 'Amines & Diazonium Salts', 'Biomolecules', 'Polymers', 'Qualitative Tests'];
   RL.KINDS = ['Named reaction', 'Rearrangement', 'Oxidation', 'Reduction', 'Distinguishing test', 'Industrial process', 'General reaction'];
   RL.CAT_COLORS = {
     'Hydrocarbons': '#a6f0a0', 'Aromatic Compounds': '#7fd3f7', 'Haloalkanes & Haloarenes': '#fbc7a4',
     'Alcohols, Phenols & Ethers': '#f7a6c9', 'Aldehydes & Ketones': '#a997f7', 'Carboxylic Acids & Derivatives': '#fbe2a4',
-    'Amines & Diazonium Salts': '#9be3d0', 'Biomolecules & Polymers': '#d4c2a8', 'Qualitative Tests': '#c9cbc6'
+    'Amines & Diazonium Salts': '#9be3d0', 'Biomolecules': '#d4c2a8', 'Polymers': '#f2a88e', 'Qualitative Tests': '#c9cbc6'
   };
 
   /* ================= Icons (inline SVG, lucide-style) ================= */
@@ -94,6 +94,7 @@
   RL.prefs = () => {
     const p = RL.state.prefs && typeof RL.state.prefs === 'object' ? RL.state.prefs : {};
     const out = blankPrefs(); Object.keys(out).forEach((k) => { if (Array.isArray(p[k])) out[k] = p[k].filter((x) => typeof x === 'string'); });
+    if (out.categories.includes('Biomolecules & Polymers')) out.categories = [...new Set([...out.categories.filter((c) => c !== 'Biomolecules & Polymers'), 'Biomolecules', 'Polymers'])];
     return (RL.state.prefs = out);
   };
   RL.prefs();
@@ -158,6 +159,10 @@
     ['aliases', 'exam', 'reagentKeywords', 'keyPoints', 'applications', 'tags'].forEach((k) => {
       if (typeof out[k] === 'string') out[k] = out[k].split(/[\n;|]+/).map((x) => x.trim()).filter(Boolean);
     });
+    if (out.category === 'Biomolecules & Polymers') { // legacy chapter, split in two
+      const t = (out.tags || []).map((x) => String(x).toLowerCase());
+      out.category = t.includes('polymer') || t.includes('rubber') ? 'Polymers' : 'Biomolecules';
+    }
     if (!RL.CATEGORIES.includes(out.category)) out.category = RL.guessCategory(out.category);
     if (!RL.KINDS.includes(out.kind)) out.kind = 'Named reaction';
     return out;
@@ -167,7 +172,7 @@
     const map = [['arom', 'Aromatic Compounds'], ['benz', 'Aromatic Compounds'], ['halo', 'Haloalkanes & Haloarenes'], ['alcohol', 'Alcohols, Phenols & Ethers'],
       ['phenol', 'Alcohols, Phenols & Ethers'], ['ether', 'Alcohols, Phenols & Ethers'], ['aldehyde', 'Aldehydes & Ketones'], ['ketone', 'Aldehydes & Ketones'],
       ['carbonyl', 'Aldehydes & Ketones'], ['acid', 'Carboxylic Acids & Derivatives'], ['ester', 'Carboxylic Acids & Derivatives'], ['amine', 'Amines & Diazonium Salts'],
-      ['diazo', 'Amines & Diazonium Salts'], ['polymer', 'Biomolecules & Polymers'], ['bio', 'Biomolecules & Polymers'], ['test', 'Qualitative Tests'], ['alk', 'Hydrocarbons']];
+      ['diazo', 'Amines & Diazonium Salts'], ['polymer', 'Polymers'], ['rubber', 'Polymers'], ['bio', 'Biomolecules'], ['carbohydrate', 'Biomolecules'], ['protein', 'Biomolecules'], ['amino', 'Biomolecules'], ['test', 'Qualitative Tests'], ['alk', 'Hydrocarbons']];
     return (map.find(([k]) => s.includes(k)) || [, 'Hydrocarbons'])[1];
   };
   /** All reactions = built-in (with user edits applied) + custom. opts.include: 'active' | 'visible' | 'all' */
@@ -309,6 +314,13 @@
     const total = Math.round(100 * (0.5 * nameAny + 0.35 * reagentRes.score + 0.15 * otherRes.score));
     return { total, name: nameAny, reagent: reagentRes, other: otherRes };
   };
+  /** Score a free-text product answer (name or formula) against the record's product(s) */
+  RL.scoreProduct = (r, text) => {
+    const kws = [...RL.tokens(r.productName).filter((t) => t.length > 2 && !/^\d+$/.test(t) && !['on', 'heating', 'heat', 'via', 'then', 'from'].includes(t)),
+      ...chemToks(r.products).filter((t) => t.length > 2 && !t.includes('\\'))];
+    const res = RL.keywordScore(text, kws, 2);
+    return { total: Math.round(100 * res.score), product: res };
+  };
   RL.verdict = (t) => t >= 85 ? ['Excellent!', 'green'] : t >= 65 ? ['Good - almost there', 'green'] : t >= 40 ? ['Partially correct', 'amber'] : ['Needs revision', 'red'];
 
   /* ================= Attempts / stats ================= */
@@ -343,6 +355,23 @@
     }
     return [...cands.filter((x) => x.category === r.category), ...cands.filter((x) => x.category !== r.category)].slice(0, n);
   }
+  /* Answer-leak guard: a question stem may show the reaction name only if the name does not give away what is being asked */
+  const LEAK_STOP = new Set(['reagent', 'reagents', 'product', 'products', 'condition', 'conditions', 'catalyst', 'solvent', 'mixture', 'acid', 'water', 'heat', 'dil', 'conc', 'excess', 'hot', 'cold', 'dry', 'alcohol', 'alcoholic', 'aqueous', 'aq', 'the', 'and', 'with', 'then', 'from', 'reaction', 'test', 'room', 'temp', 'ether', 'solution', 'base', 'oxide', 'chloride', 'bromide']);
+  const wordsOf = (s) => String(s || '').replace(/\$|\\ce\{|\\text\{|[{}]/g, ' ').split(/[^A-Za-z0-9]+/).filter(Boolean);
+  const isFormula = (w) => /\d/.test(w) || (/[A-Z]/.test(w.slice(1)) && /[a-z]/.test(w)) || (w.length > 2 && w === w.toUpperCase());
+  RL.answerTokens = (r, what) => {
+    const out = new Set();
+    const add = (text, minLen, formulasToo) => wordsOf(text).forEach((w) => {
+      const lw = w.toLowerCase();
+      if (w.length < 3 || /^\d+$/.test(w) || LEAK_STOP.has(lw)) return;
+      if ((formulasToo && isFormula(w)) || (w.length >= minLen && !/\d/.test(w))) out.add(lw);
+    });
+    if (what === 'reagent') { add(r.reagents, 7, true); add(r.catalyst, 99, true); (r.reagentKeywords || []).forEach((k) => add(k, 99, true)); }
+    else { add(r.productName, 6, true); add(r.products, 99, true); }
+    return out;
+  };
+  /** true when showing the reaction name would reveal the reagent ('reagent') or the product ('product') */
+  RL.nameLeaks = (r, what) => { const toks = RL.answerTokens(r, what); return wordsOf(r.name).some((w) => toks.has(w.toLowerCase())); };
   RL.makeMCQ = (r, pool, type) => {
     const types = ['name', 'reagent', 'product', 'nameFromReagent'];
     if (!r.reagents) types.splice(types.indexOf('reagent'), 1);
@@ -350,8 +379,8 @@
     let stem, prompt, key, renderOpt, mask = 'none';
     if (type === 'name') { stem = 'Identify the named reaction / test:'; prompt = RL.equation(r, 'none'); key = (x) => x.name; renderOpt = (x) => RL.esc(x.name); }
     else if (type === 'nameFromReagent') { stem = 'Which reaction converts the reactant to the product shown?'; prompt = RL.equation(r, 'reagents'); key = (x) => x.name; renderOpt = (x) => RL.esc(x.name); mask = 'reagents'; }
-    else if (type === 'reagent') { stem = `Which reagent / condition is used in the <b>${RL.esc(r.name)}</b>?`; prompt = RL.equation(r, 'reagents'); key = (x) => x.reagents; renderOpt = (x) => RL.ceWrap(x.reagents + (x.conditions ? `; ${x.conditions}` : '')); mask = 'reagents'; }
-    else { stem = `Predict the product (<b>${RL.esc(r.name)}</b>):`; prompt = RL.equation(r, 'products'); key = (x) => x.products; renderOpt = (x) => RL.ceWrap(x.products); mask = 'products'; }
+    else if (type === 'reagent') { stem = RL.nameLeaks(r, 'reagent') ? 'Which reagent / condition converts the reactant into the product shown?' : `Which reagent / condition is used in the <b>${RL.esc(r.name)}</b>?`; prompt = RL.equation(r, 'reagents'); key = (x) => x.reagents; renderOpt = (x) => RL.ceWrap(x.reagents + (x.conditions ? `; ${x.conditions}` : '')); mask = 'reagents'; }
+    else { stem = RL.nameLeaks(r, 'product') ? 'Predict the major product. The reactant and reagent are given:' : `Predict the major product (<b>${RL.esc(r.name)}</b>). The reactant and reagent are given:`; prompt = RL.equation(r, 'products'); key = (x) => x.products; renderOpt = (x) => RL.ceWrap(x.products); mask = 'products'; }
     const opts = RL.shuffle([r, ...distractors(r, pool, key, 3, type === 'product' || type === 'reagent')]);
     return { id: r.id, type, stem, prompt, mask, options: opts.map((x) => ({ id: x.id, html: renderOpt(x) })), answer: opts.findIndex((x) => x.id === r.id) };
   };

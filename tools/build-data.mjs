@@ -16,7 +16,7 @@ try {
 } catch { console.warn('! katex not found – skipping render validation'); }
 
 const CATEGORIES = ['Hydrocarbons', 'Aromatic Compounds', 'Haloalkanes & Haloarenes', 'Alcohols, Phenols & Ethers',
-  'Aldehydes & Ketones', 'Carboxylic Acids & Derivatives', 'Amines & Diazonium Salts', 'Biomolecules & Polymers', 'Qualitative Tests'];
+  'Aldehydes & Ketones', 'Carboxylic Acids & Derivatives', 'Amines & Diazonium Salts', 'Biomolecules', 'Polymers', 'Qualitative Tests'];
 const KINDS = ['Named reaction', 'Rearrangement', 'Oxidation', 'Reduction', 'Distinguishing test', 'Industrial process', 'General reaction'];
 
 const args = process.argv.slice(2);

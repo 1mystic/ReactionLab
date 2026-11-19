@@ -881,7 +881,7 @@
    "Strecker synthesis",
    "Strecker reaction"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Named reaction",
   "exam": [
    "JEE Main",
@@ -943,7 +943,7 @@
    "Kiliani Fischer chain extension",
    "Kiliani cyanohydrin synthesis"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Named reaction",
   "exam": [
    "JEE Advanced"
@@ -1003,7 +1003,7 @@
   "aliases": [
    "Ruff degradation of aldoses"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Named reaction",
   "exam": [
    "JEE Advanced"

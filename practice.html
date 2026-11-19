@@ -10,10 +10,10 @@
   <script defer src="assets/vendor/katex/katex.min.js"></script>
   <script defer src="assets/vendor/katex/mhchem.min.js"></script>
   <script>document.documentElement.classList.add('loading');setTimeout(function(){document.documentElement.classList.remove('loading')},1200)</script>
-  <link rel="stylesheet" href="assets/css/style.css?v=202611191130">
-  <script defer src="data/reactions.js?v=202611191130"></script>
-  <script defer src="assets/js/core.js?v=202611191130"></script>
-  <script defer src="assets/js/practice.js?v=202611191130"></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=202611191146">
+  <script defer src="data/reactions.js?v=202611191146"></script>
+  <script defer src="assets/js/core.js?v=202611191146"></script>
+  <script defer src="assets/js/practice.js?v=202611191146"></script>
 </head>
 <body>
   <div class="app">
@@ -39,6 +39,10 @@
         <section class="panel">
           <div class="panel-head">
             <h2>Get problem</h2>
+            <div class="tabs" id="askTabs" role="tablist" aria-label="Question style">
+              <button class="tab" data-ask="full" type="button">Name &amp; reagent</button>
+              <button class="tab" data-ask="product" type="button">Predict product</button>
+            </div>
             <button class="btn sm" id="hintBtn"></button>
             <button class="icon-btn dark" id="nextBtn" title="Next random reaction (N)"></button>
           </div>
@@ -51,8 +55,8 @@
             </div>
             <div class="q-right">
           <form id="answerForm" class="grid" style="gap:14px" autocomplete="off">
-            <div class="field"><label for="aName">Reaction name</label><input class="input" id="aName" placeholder="e.g. Aldol condensation"></div>
-            <div class="field"><label for="aReagent">Reagent / catalyst / conditions</label><input class="input" id="aReagent" placeholder="e.g. dil. NaOH, heat"></div>
+            <div class="field" id="fName"><label for="aName">Reaction name</label><input class="input" id="aName" placeholder="e.g. Aldol condensation"></div>
+            <div class="field" id="fReagent"><label for="aReagent">Reagent / catalyst / conditions</label><input class="input" id="aReagent" placeholder="e.g. dil. NaOH, heat"></div>
             <div class="field"><label for="aOther">Product &amp; other important info <span class="muted">(optional)</span></label><textarea class="textarea" id="aOther" placeholder="e.g. β-hydroxy aldehyde; needs α-hydrogen…"></textarea></div>
             <div class="chips">
               <button type="submit" class="btn dark" id="checkBtn"></button>
@@ -83,7 +87,7 @@
             <button class="chip active" data-t="name">Name the reaction</button>
             <button class="chip active" data-t="nameFromReagent">Which reaction (reagent hidden)</button>
             <button class="chip active" data-t="reagent">Pick the reagent</button>
-            <button class="chip active" data-t="product">Predict the product</button>
+            <button class="chip active" data-t="product">Predict the product (reactant + reagent given)</button>
           </div>
           <button class="btn start" id="startQuiz"></button>
         </section>

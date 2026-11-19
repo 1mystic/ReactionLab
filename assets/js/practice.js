@@ -44,6 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
   $('#nextBtn').innerHTML = icon.shuffle;
   $('#checkBtn').innerHTML = `${icon.check} Check answer`;
   $('#revealBtn').innerHTML = `${icon.eye} Reveal answer`;
+  /* question style: 'full' = name + hidden reagent, 'product' = reactant + reagent given, predict the product */
+  let ask = localStorage.getItem('rl.ask') === 'product' ? 'product' : 'full';
+  $$('#askTabs .tab').forEach((t) => (t.onclick = () => {
+    ask = t.dataset.ask; localStorage.setItem('rl.ask', ask); if (cur) show(choose());
+  }));
   let cur = null, mask = 'reagents', hints = 0, checked = false, revealed = false, sessionN = 0, sessionSum = 0;
   const recentIds = [];
 
@@ -61,8 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
     cur = r; hints = 0; checked = false; revealed = false;
     if (!r) { $('#qEq').innerHTML = '<span class="muted">No reactions match these filters.</span>'; $('#answerBox').innerHTML = ''; return; }
     recentIds.push(r.id); if (recentIds.length > Math.min(30, Math.floor(pool().length / 2))) recentIds.shift();
-    mask = r.reagents ? 'reagents' : 'none';
-    $('#qPrompt').innerHTML = mask === 'reagents'
+    const prod = ask === 'product';
+    $$('#askTabs .tab').forEach((t) => t.classList.toggle('active', t.dataset.ask === ask));
+    $('#fName').classList.toggle('hidden', prod); $('#fReagent').classList.toggle('hidden', prod);
+    $('label[for=aOther]').innerHTML = prod ? 'Major product <span class="muted">(name or formula)</span>' : 'Product &amp; other important info <span class="muted">(optional)</span>';
+    $('#aOther').placeholder = prod ? 'e.g. benzoic acid, or C6H5COOH' : 'e.g. β-hydroxy aldehyde; needs α-hydrogen…';
+    mask = prod ? 'products' : r.reagents ? 'reagents' : 'none';
+    if (prod) $('#qPrompt').innerHTML = 'The <b>reactant and reagent</b> are given. Write the <b>major product</b>.';
+    else $('#qPrompt').innerHTML = mask === 'reagents'
       ? 'Identify this reaction, the <b>hidden reagent / catalyst</b>, and anything else you know.'
       : 'Identify this reaction / test and its key reagents & observations.';
     $('#qEq').innerHTML = RL.equation(r, mask);
@@ -78,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h3>Answer hidden</h3><p style="margin:0;opacity:.85;max-width:320px">Give it your best shot, check your score, then reveal the full answer cards.</p>
       </div>`;
     const u = new URL(location); u.searchParams.set('id', r.id); history.replaceState(null, '', u);
-    $('#aName').focus({ preventScroll: true });
+    (prod ? $('#aOther') : $('#aName')).focus({ preventScroll: true });
   }
   const next = () => show(choose());
 
@@ -87,8 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!cur) return; hints++;
     const h = [];
     if (hints >= 1) h.push(`<span class="pill" style="background:${RL.CAT_COLORS[cur.category]}55;color:#222">${esc(cur.category)}</span> <span class="pill gray">${esc(cur.kind)}</span>`);
-    if (hints >= 2) h.push(`Name starts with <b>“${esc(cur.name.slice(0, 3))}…”</b> (${cur.name.split(/\s+/).length} word${cur.name.split(/\s+/).length > 1 ? 's' : ''})`);
-    if (hints >= 3) h.push(`Reagent: ${cur.reagents ? RL.ce(cur.reagents) : '-'}`);
+    if (ask === 'product') {
+      if (hints >= 2) h.push(`Reaction: <b>${esc(cur.name)}</b>`);
+      if (hints >= 3) { const pn = cur.productName || ''; h.push(pn ? `Product name starts with <b>“${esc(pn.slice(0, 3))}…”</b>` : 'Product has ' + cur.products.split(' + ').length + ' species'); }
+    } else if (hints >= 2) h.push(`Name starts with <b>“${esc(cur.name.slice(0, 3))}…”</b> (${cur.name.split(/\s+/).length} word${cur.name.split(/\s+/).length > 1 ? 's' : ''})`);
+    if (ask !== 'product' && hints >= 3) h.push(`Reagent: ${cur.reagents ? RL.ce(cur.reagents) : '-'}`);
     $('#hintBox').innerHTML = h.map((x) => `<div style="margin:6px 0">${x}</div>`).join('') + `<div class="muted small">Each hint costs 10 points.</div>`;
     if (hints >= 3) $('#hintBtn').disabled = true;
     $('#hintBtn').innerHTML = `${icon.bulb} Hint ${Math.min(hints + 1, 3)}/3`;
@@ -117,6 +131,19 @@ document.addEventListener('DOMContentLoaded', () => {
   $('#answerForm').onsubmit = (e) => {
     e.preventDefault(); if (!cur) return;
     const ans = { name: $('#aName').value, reagent: $('#aReagent').value, other: $('#aOther').value };
+    if (ask === 'product') {
+      if (!ans.other.trim()) { RL.toast('Type the product first'); return; }
+      const pr = RL.scoreProduct(cur, ans.other); const pt = Math.max(0, pr.total - hints * 10);
+      const [lbl, col] = RL.verdict(pt);
+      $('#scoreBox').innerHTML = `<div class="card" style="display:flex;gap:22px;align-items:center;flex-wrap:wrap;background:var(--panel);border:0">
+        <div class="score-ring" style="--ring:${col === 'green' ? '#5fbf59' : col === 'amber' ? '#e8b33c' : '#e5776a'}" id="ring"><div><div><b>${pt}</b><div class="small muted">/ 100</div></div></div></div>
+        <div style="flex:1;min-width:220px;display:grid;gap:8px"><h3>${lbl}${hints ? ` <span class="small muted">(−${hints * 10} hints)</span>` : ''}</h3>
+        <div class="small">${[...pr.product.matched.map((k) => `<span class="pill green">✓ ${esc(k)}</span>`), ...pr.product.missed.slice(0, 5).map((k) => `<span class="pill gray">${esc(k)}</span>`)].join(' ')}</div>
+        <div class="small muted">Expected: ${RL.ce(cur.products)}</div></div></div>`;
+      requestAnimationFrame(() => requestAnimationFrame(() => $('#ring').style.setProperty('--p', pt)));
+      if (!checked && !revealed) { RL.logAttempt(cur.id, pt, 'product'); sessionN++; sessionSum += pt; updateSession(); }
+      checked = true; RL.fitAll(); return;
+    }
     if (!ans.name.trim() && !ans.reagent.trim() && !ans.other.trim()) { RL.toast('Type something first 🙂'); return; }
     const res = RL.scoreAttempt(cur, ans);
     const total = Math.max(0, res.total - hints * 10);

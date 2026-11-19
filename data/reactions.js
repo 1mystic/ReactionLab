@@ -12048,7 +12048,7 @@ window.REACTIONS = [
    "Reduction of glucose with HI",
    "Glucose structure proof"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Reduction",
   "exam": [
    "JEE Main",
@@ -12103,7 +12103,7 @@ window.REACTIONS = [
   "aliases": [
    "Oxidation of glucose by Br2 water"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Oxidation",
   "exam": [
    "JEE Main",
@@ -12159,7 +12159,7 @@ window.REACTIONS = [
    "Oxidation of glucose with nitric acid",
    "Glucaric acid formation"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Oxidation",
   "exam": [
    "JEE Main",
@@ -12214,7 +12214,7 @@ window.REACTIONS = [
   "aliases": [
    "Glucose oxime"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -12270,7 +12270,7 @@ window.REACTIONS = [
    "Acetylation of glucose",
    "Glucose pentaacetate"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -12326,7 +12326,7 @@ window.REACTIONS = [
   "aliases": [
    "Glucose cyanohydrin formation"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -12383,7 +12383,7 @@ window.REACTIONS = [
    "Glucosazone formation",
    "Fischer osazone reaction"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Named reaction",
   "exam": [
    "JEE Main",
@@ -12443,7 +12443,7 @@ window.REACTIONS = [
    "Invert sugar formation",
    "Inversion of cane sugar"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -12503,7 +12503,7 @@ window.REACTIONS = [
    "Peptide linkage",
    "Condensation of amino acids"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -12562,7 +12562,7 @@ window.REACTIONS = [
    "Dipolar ion of amino acids",
    "Isoelectric point"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -12625,7 +12625,7 @@ window.REACTIONS = [
    "HDPE synthesis",
    "Ziegler-Natta polymerisation"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -12687,7 +12687,7 @@ window.REACTIONS = [
    "LDPE synthesis",
    "Polythene"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -12746,7 +12746,7 @@ window.REACTIONS = [
    "Nylon 66",
    "Polyhexamethylene adipamide"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -12807,7 +12807,7 @@ window.REACTIONS = [
    "Perlon",
    "Nylon 6 polymerisation"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -12868,7 +12868,7 @@ window.REACTIONS = [
    "Polyester fibre",
    "Dacron"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -12928,7 +12928,7 @@ window.REACTIONS = [
    "Novolac",
    "PF resin"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -12988,7 +12988,7 @@ window.REACTIONS = [
    "Melamine resin",
    "Melmac"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -13047,7 +13047,7 @@ window.REACTIONS = [
    "Styrene-butadiene rubber",
    "GR-S"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -13107,7 +13107,7 @@ window.REACTIONS = [
    "Nitrile rubber",
    "GR-A"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -13166,7 +13166,7 @@ window.REACTIONS = [
    "Polychloroprene",
    "Synthetic rubber"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -13223,7 +13223,7 @@ window.REACTIONS = [
    "Sulphur cross-linking of rubber",
    "Goodyear process"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -13284,7 +13284,7 @@ window.REACTIONS = [
    "Polytetrafluoroethene",
    "PTFE"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -13342,7 +13342,7 @@ window.REACTIONS = [
    "Polyvinyl chloride",
    "Poly(chloroethene)"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -13400,7 +13400,7 @@ window.REACTIONS = [
    "Glycerol phthalate polymer",
    "Alkyd resin"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -14334,7 +14334,7 @@ window.REACTIONS = [
    "Strecker synthesis",
    "Strecker reaction"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Named reaction",
   "exam": [
    "JEE Main",
@@ -14396,7 +14396,7 @@ window.REACTIONS = [
    "Kiliani Fischer chain extension",
    "Kiliani cyanohydrin synthesis"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Named reaction",
   "exam": [
    "JEE Advanced"
@@ -14456,7 +14456,7 @@ window.REACTIONS = [
   "aliases": [
    "Ruff degradation of aldoses"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Named reaction",
   "exam": [
    "JEE Advanced"
@@ -16883,7 +16883,7 @@ window.REACTIONS = [
   "aliases": [
    "Anomerisation"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -16942,7 +16942,7 @@ window.REACTIONS = [
   "aliases": [
    "Sugar hydrolysis"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -17002,7 +17002,7 @@ window.REACTIONS = [
   "aliases": [
    "Thermocol"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -17060,7 +17060,7 @@ window.REACTIONS = [
   "aliases": [
    "Perspex"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -17116,7 +17116,7 @@ window.REACTIONS = [
   "aliases": [
    "Orlon"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "Industrial process",
   "exam": [
    "JEE Main",
@@ -17172,7 +17172,7 @@ window.REACTIONS = [
   "aliases": [
    "Biodegradable polyester"
   ],
-  "category": "Biomolecules & Polymers",
+  "category": "Polymers",
   "kind": "General reaction",
   "exam": [
    "JEE Main",
@@ -17840,7 +17840,7 @@ window.REACTIONS = [
   "id": "lobry-de-bruyn-epimerisation",
   "name": "Lobry de Bruyn-van Ekenstein Transformation (Glucose-Fructose-Mannose)",
   "aliases": [],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Rearrangement",
   "exam": [
    "JEE Advanced"
@@ -17895,7 +17895,7 @@ window.REACTIONS = [
   "id": "wohl-degradation",
   "name": "Wohl Degradation of Aldoses",
   "aliases": [],
-  "category": "Biomolecules & Polymers",
+  "category": "Biomolecules",
   "kind": "Named reaction",
   "exam": [
    "JEE Advanced"

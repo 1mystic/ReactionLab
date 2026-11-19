@@ -45,7 +45,8 @@ Remember: inside JSON every backslash must be doubled (`"$\\ce{CH3CHO}$"`).
 - Aldehydes & Ketones
 - Carboxylic Acids & Derivatives
 - Amines & Diazonium Salts
-- Biomolecules & Polymers
+- Biomolecules
+- Polymers
 - Qualitative Tests
 
 ## KINDS (use exactly)
