@@ -76,7 +76,7 @@ h1 { font-size: 34px; } h2 { font-size: 28px; } h3 { font-size: 19px; }
   display: flex; align-items: center; gap: var(--s-4); padding: 14px 18px; border-radius: var(--radius-md);
   color: var(--ink); font-weight: 500; transition: background .15s;
 }
-.nav-link:hover { background: var(--hover); }
+.nav-link:hover:not(.active) { background: var(--hover); }
 .nav-link.active { background: var(--ink); color: #fff; }
 .nav-link svg { width: 22px; height: 22px; flex: none; }
 .nav-link .badge { margin-left: auto; }
@@ -785,7 +785,7 @@ html[data-theme="dark"] .option.wrong .letter { background: #7a2f27; color: #fff
 html[data-theme="dark"] .mask { color: #fff; }
 html[data-theme="dark"] .score-ring b { color: var(--ink); }
 html[data-theme="dark"] .quiz-progress span.cur { background: var(--ink); }
-html[data-theme="dark"] .nav-link:hover, html[data-theme="dark"] .cselect-opt:hover, html[data-theme="dark"] .cselect-opt.hl { background: var(--hover); }
+html[data-theme="dark"] .nav-link:hover:not(.active), html[data-theme="dark"] .cselect-opt:hover:not(.sel), html[data-theme="dark"] .cselect-opt.hl:not(.sel) { background: var(--hover); }
 html[data-theme="dark"] .katex { color: inherit; }
 html[data-theme="dark"] .note-card.green, html[data-theme="dark"] .note-card.amber, html[data-theme="dark"] .note-card.lav { filter: saturate(.92) brightness(.96); }
 html[data-theme="dark"] .btn.start { color: #0b2f38; }
@@ -988,3 +988,6 @@ html[data-theme="dark"] .cselect-opt.sel .tick { color: #fff; }
 /* lazily rendered equations keep their space, so lists do not jump when they fill in */
 .r-card .eq-mini[data-eq] { min-height: 58px; }
 .row .eq-inline[data-eq] { min-height: 38px; }
+
+/* the active nav item keeps its look on hover (no dark-on-dark flash) */
+.nav-link.active:hover, html[data-theme="dark"] .nav-link.active:hover { background: var(--ink); color: var(--on-ink) !important; }
