@@ -56,6 +56,14 @@
   RL.shuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   RL.pick = (a) => a[Math.floor(Math.random() * a.length)];
   RL.slug = (s) => String(s).toLowerCase().normalize('NFKD').replace(/[^\w\s-]/g, '').trim().replace(/[\s_]+/g, '-').replace(/-+/g, '-');
+  /* Global listeners a page registers (document/window) go through RL.listen, so the client-side router
+     can remove them with RL.pageCleanup() before the next page runs. */
+  const pageListeners = [];
+  RL.listen = (target, type, fn, opts) => { target.addEventListener(type, fn, opts); pageListeners.push([target, type, fn, opts]); };
+  RL.pageCleanup = () => {
+    pageListeners.splice(0).forEach(([t, ty, fn, o]) => t.removeEventListener(ty, fn, o));
+    document.querySelectorAll('.modal-backdrop').forEach((m) => m.remove());
+  };
   RL.debounce = (fn, ms = 150) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
   RL.toast = (msg) => {
     let w = RL.$('.toast-wrap'); if (!w) { w = document.createElement('div'); w.className = 'toast-wrap'; document.body.appendChild(w); }
@@ -268,6 +276,18 @@
     if (charge && syms.length === 1 && /\d$/.test(f) && !/\d/.test(charge[0])) { const d = f.match(/\d+$/)[0]; f = f.slice(0, -d.length); charge = d + charge; }
     return f.replace(/(\d+)/g, '<sub>$1</sub>') + (charge ? `<sup>${charge}</sup>` : '');
   });
+  /** Long lists (bank, manage list) render their KaTeX equations only when they scroll near the viewport.
+      Put `data-eq="<reaction id>"` (and optionally data-kind="reagents") on an empty element, then call this on the container. */
+  RL.lazyEquations = (root = document) => {
+    const els = root.querySelectorAll('[data-eq]'); if (!els.length) return;
+    const fill = (el) => {
+      const r = RL.byId(el.dataset.eq); el.removeAttribute('data-eq'); if (!r) return;
+      el.innerHTML = el.dataset.kind === 'reagents' ? (r.reagents ? RL.ce(r.reagents) : '-') : RL.equation(r, 'none', false);
+    };
+    if (!('IntersectionObserver' in window)) { els.forEach(fill); return; }
+    const io = new IntersectionObserver((entries) => entries.forEach((e) => { if (e.isIntersecting) { io.unobserve(e.target); fill(e.target); } }), { rootMargin: '700px 0px' });
+    els.forEach((el) => io.observe(el));
+  };
   /** Same as rich() but for trusted, app-generated text that may contain <b>/<i> markup */
   RL.richTrusted = (text) => String(text || '').split(/(\$[^$]+\$)/g).map((part) => (/^\$[^$]+\$$/.test(part) ? RL.tex(part.slice(1, -1)) : RL.chemify(part))).join('');
   RL.rich = (text) => {
@@ -501,9 +521,24 @@
     ];
     let aside = RL.$('aside.sidebar'); const fresh = !aside;
     if (fresh) { aside = document.createElement('aside'); aside.className = 'sidebar'; }
+    const after = () => setTimeout(() => { RL.enhanceSelects(); RL.fitAll(); requestAnimationFrame(() => document.documentElement.classList.remove('loading')); }, 0);
+    if (!fresh && aside.querySelector('.sb-foot')) {
+      // sidebar already mounted (client-side navigation or a refresh after saving settings): patch, never rebuild
+      nav.forEach(([, , , key, badge]) => {
+        const a = aside.querySelector(`.nav-link[data-key="${key}"]`); if (!a) return;
+        a.classList.toggle('active', key === active);
+        let b = a.querySelector('.badge');
+        if (badge) { if (!b) { b = document.createElement('span'); b.className = 'badge'; a.appendChild(b); } if (b.textContent !== String(badge)) b.textContent = badge; } else if (b) b.remove();
+      });
+      const nm = RL.state.name || 'Student';
+      const av = aside.querySelector('.sb-user .avatar'); if (av) av.textContent = ((nm[0] || 'S')).toUpperCase();
+      const nb = aside.querySelector('.sb-user-meta b'); if (nb) nb.textContent = nm;
+      const sm = aside.querySelector('.sb-user-meta small'); if (sm) sm.textContent = RL.visibleExams().join(' · ').replace('JEE Main · JEE Advanced', 'JEE Main · Advanced') || 'No exam selected';
+      after(); return;
+    }
     aside.innerHTML = `
       <a class="brand" href="dashboard.html"><div class="brand-logo">${RL.icon.logo}</div><span>ReactionLab</span></a>
-      ${nav.map(([href, ic, label, key, badge]) => `<a class="nav-link ${key === active ? 'active' : ''}" href="${href}" title="${label.replace(/&/g, '&amp;')}">${RL.icon[ic]}<span>${label}</span>${badge ? `<span class="badge">${badge}</span>` : ''}</a>`).join('')}
+      ${nav.map(([href, ic, label, key, badge]) => `<a class="nav-link ${key === active ? 'active' : ''}" data-key="${key}" href="${href}" title="${label.replace(/&/g, '&amp;')}">${RL.icon[ic]}<span>${label}</span>${badge ? `<span class="badge">${badge}</span>` : ''}</a>`).join('')}
       <div class="nav-spacer"></div>
       <a class="nav-link nav-secondary" href="https://www.organic-chemistry.org/namedreactions/" target="_blank" rel="noopener" title="Reference site">${RL.icon.book}<span>Reference site</span></a>
       <div class="sb-foot">
@@ -520,7 +555,7 @@
     RL.$('#collapseBtn', aside).onclick = () => RL.setSidebar(!RL.sidebarCollapsed());
     RL.$('#collapseBtn', aside).title = RL.sidebarCollapsed() ? 'Expand sidebar' : 'Collapse sidebar';
     if (fresh) RL.$('.app').prepend(aside);
-    setTimeout(() => { RL.enhanceSelects(); RL.fitAll(); requestAnimationFrame(() => document.documentElement.classList.remove('loading')); }, 0);
+    after();
   };
 
   /* ================= Custom select (theme-aligned dropdowns) ================= */
@@ -567,7 +602,7 @@
       else if (e.key === 'Escape' || e.key === 'Tab') close();
       else if (e.key.length === 1 && isOpen) { const k = opts().findIndex((o) => o.textContent.trim().toLowerCase().startsWith(e.key.toLowerCase())); if (k >= 0) { hl = k; mark(); menu.children[k].scrollIntoView({ block: 'nearest' }); } }
     };
-    document.addEventListener('click', (e) => { if (!e.composedPath().includes(wrap)) close(); });
+    RL.listen(document, 'click', (e) => { if (!e.composedPath().includes(wrap)) close(); });
     // keep label in sync with programmatic changes
     Object.defineProperty(sel, 'value', { configurable: true, get() { return valueDesc.get.call(this); }, set(v) { valueDesc.set.call(this, v); refresh(); } });
     sel.addEventListener('change', refresh);

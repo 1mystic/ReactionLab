@@ -35,7 +35,7 @@ RL.boot(() => {
           ${r._custom ? ' <span class="pill amber">custom</span>' : ''}${RL.state.edits[r.id] ? ' <span class="pill lav">edited</span>' : ''}
           ${st !== 'active' ? ` <span class="pill ${st === 'blacklisted' ? 'red' : 'gray'}">${st}</span>` : ''}
           <div class="small muted">${esc(r.category)} · ${esc(r.kind)}</div></div>
-        <div class="eq-inline small hide-sm">${RL.equation(r, 'none', false)}</div>
+        <div class="eq-inline small hide-sm" data-eq="${esc(r.id)}"></div>
         <div class="chips" style="flex-wrap:nowrap">
           <button class="btn sm" data-act="archive" title="${st === 'archived' ? 'Unarchive' : 'Archive'}">${icon.archive}<span class="hide-sm">${st === 'archived' ? 'Unarchive' : 'Archive'}</span></button>
           <button class="btn sm ${st === 'blacklisted' ? '' : 'danger'}" data-act="black" title="${st === 'blacklisted' ? 'Remove from blacklist' : 'Blacklist'}">${icon.ban}<span class="hide-sm">${st === 'blacklisted' ? 'Allow' : 'Blacklist'}</span></button>
@@ -43,6 +43,7 @@ RL.boot(() => {
           ${r._custom ? `<button class="btn sm danger" data-act="del" title="Delete">${icon.trash}</button>` : RL.state.edits[r.id] ? `<button class="btn sm" data-act="revert" title="Revert to original">↺</button>` : ''}
         </div></div>`;
     }).join('') : '<p class="muted">Nothing here.</p>';
+    RL.lazyEquations($('#manageList'));
     $$('#manageList [data-act]').forEach((b) => (b.onclick = (e) => {
       e.stopPropagation();
       const id = b.closest('[data-id]').dataset.id, act = b.dataset.act;

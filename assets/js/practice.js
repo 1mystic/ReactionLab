@@ -169,7 +169,7 @@ RL.boot(() => {
   }
   $('#revealBtn').onclick = reveal;
 
-  document.addEventListener('keydown', (e) => {
+  RL.listen(document, 'keydown', (e) => {
     if (mode !== 'free') return;
     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { $('#answerForm').requestSubmit(); return; }
     if (/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) { if (e.key === 'Escape') document.activeElement.blur(); return; }
@@ -254,7 +254,7 @@ RL.boot(() => {
     $('#retry').onclick = () => { qi = 0; answers = []; quiz = quiz.map((q) => RL.makeMCQ(RL.byId(q.id), RL.reactions({ include: 'active' }), q.type)); renderQ(); };
     $$('#mcqRun .row').forEach((row) => (row.onclick = () => RL.openReaction(RL.byId(row.dataset.id))));
   }
-  document.addEventListener('keydown', (e) => {
+  RL.listen(document, 'keydown', (e) => {
     if (mode !== 'mcq' || $('#mcqRun').classList.contains('hidden') || $('.modal-backdrop')) return;
     const k = e.key.toUpperCase();
     if ('ABCD1234'.includes(k) && k.length === 1) { const i = 'ABCD'.includes(k) ? 'ABCD'.indexOf(k) : +k - 1; const b = $$('.option')[i]; if (b && !b.disabled) b.click(); }
@@ -340,7 +340,7 @@ RL.boot(() => {
     $('#chainRetry').onclick = () => { ci = 0; cAns = []; cPicked = null; cOpts = chain.steps.map((s) => RL.shuffle([s.product, ...s.distractors])); renderChain(); };
     RL.fitAll($('#chainPanel'));
   }
-  document.addEventListener('keydown', (e) => {
+  RL.listen(document, 'keydown', (e) => {
     if (mode !== 'chain' || $('.modal-backdrop') || /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) return;
     const k = e.key.toUpperCase();
     if (k === 'N' && !e.ctrlKey && !e.metaKey) { newChain(); return; }

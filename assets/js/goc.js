@@ -187,7 +187,7 @@ RL.boot(() => {
   [['#fTopic', 'topic'], ['#fType', 'type'], ['#fDiff', 'difficulty'], ['#fSource', 'source']].forEach(([s, k]) => $(s).addEventListener('change', (e) => { f[k] = e.target.value; if (quiz) setMode('quiz'); else next(); }));
   $('#nextBtn').onclick = next;
   $('#resetSession').onclick = () => { Object.assign(sess, { right: 0, wrong: 0, score: 0, n: 0, streak: 0 }); updateSession(); };
-  document.addEventListener('keydown', (e) => {
+  RL.listen(document, 'keydown', (e) => {
     if (/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName) || !cur) return;
     if (e.key === 'n' || e.key === 'N') { e.preventDefault(); next(); return; }
     if (e.key === 'Enter' && cur.type === 'order' && !answered) { e.preventDefault(); checkOrder(); return; }

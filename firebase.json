@@ -76,7 +76,8 @@
       }
     ],
     "predeploy": [
-      "node tools/write-firebase-config.mjs"
+      "node tools/write-firebase-config.mjs",
+      "node tools/stamp-build.mjs"
     ]
   },
   "firestore": {

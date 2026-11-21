@@ -969,3 +969,22 @@ html[data-theme="dark"] .cselect-opt.sel .tick { color: #fff; }
 .chain-arrow { display: inline-flex; align-items: center; font-size: .85em; color: var(--ink-2); max-width: 100%; }
 .chain-q { margin: 0 0 var(--s-3); font-size: 16px; line-height: 1.6; }
 @media (max-width: 760px) { .chain-trail { padding: var(--s-3); } .chain-node { min-height: 36px; padding: var(--s-1) var(--s-2); } }
+
+/* =========================================================
+   Client-side page transitions (assets/js/router.js)
+   ========================================================= */
+.main { transition: none; }
+/* old page fades out / new page waits invisibly while it renders; removing .leaving starts the entrance animations */
+.main.leaving > * { opacity: 0; transform: translateY(8px); animation: none !important;
+  transition: opacity .14s ease, transform .14s ease; pointer-events: none; }
+.main:focus { outline: none; }
+/* thin progress bar for slow loads */
+#rl-bar { position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 100; background: linear-gradient(90deg, var(--lav), var(--green));
+  opacity: 0; transition: opacity .2s; pointer-events: none; border-radius: 0 3px 3px 0; }
+#rl-bar.on { opacity: 1; width: 85%; transition: width 6s cubic-bezier(.1, .7, .2, 1), opacity .2s; }
+/* the sidebar persists across pages, so its entrance animation only plays on a fresh load */
+@media (prefers-reduced-motion: reduce) { .main.leaving > * { transition: none; transform: none; } }
+
+/* lazily rendered equations keep their space, so lists do not jump when they fill in */
+.r-card .eq-mini[data-eq] { min-height: 58px; }
+.row .eq-inline[data-eq] { min-height: 38px; }

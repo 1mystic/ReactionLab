@@ -75,6 +75,10 @@ User data is saved per Google account in Firestore (free Spark plan), by `assets
 | `users/{uid}/data/progress` | practice attempts, GOC attempts |
 | `users/{uid}/data/content` | custom reactions, edits to built-in reactions |
 
+**Instant page switches.** `assets/js/router.js` is a small client-side router: links between app pages fetch the next page, keep the sidebar mounted and swap only `<main>` with a short fade/rise (each page is still a complete HTML document, so deep links and refresh work; any problem falls back to a normal page load). Page scripts register global listeners with `RL.listen` so `RL.pageCleanup()` can remove them on navigation. Long equation lists render lazily (`RL.lazyEquations`). `tools/stamp-build.mjs` writes a content-hash build id (`?v=` on assets and `<meta name="rl-build">`); a tab that notices a newer build in the next page does a normal load, so a deploy reaches open tabs on their next click. The stamp runs before every hosting deploy (`npm run stamp` to run it by hand).
+
+**Sync is a merge, never a blind overwrite.** Pages start instantly from the local copy and sync in the background (the first visit on a device waits for the cloud once). For each document the app remembers what the cloud held at the last sync and does a three-way merge: only-local changes are pushed, only-cloud changes (another device) are taken, and if both changed the practice history is merged (union). A cloud document that does not exist yet never blanks local data, and nothing is written unless the cloud copy could be merged first.
+
 A per-account copy in `localStorage` keeps pages instant and usable offline; changes are written to Firestore a few seconds after they happen (and on page hide), and unsynced offline changes are pushed on the next visit. Progress made before the first sign-in on a browser is moved into the account once. `firestore.rules` lets each user read and write only their own documents, with schema and size checks. Pages start through `RL.boot(fn)`, which waits for the signed-in user's data.
 
 ## Structure

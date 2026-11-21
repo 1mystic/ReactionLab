@@ -56,7 +56,7 @@ RL.boot(() => {
   const card = (r) => `
     <article class="r-card ${RL.status(r.id) === 'archived' ? 'archived' : ''}" data-id="${esc(r.id)}" tabindex="0">
       <div class="head"><h4>${esc(r.name)}</h4><span class="cat-dot" style="background:${RL.CAT_COLORS[r.category]};margin-top:5px" title="${esc(r.category)}"></span></div>
-      <div class="eq-mini">${RL.equation(r, 'none', false)}</div>
+      <div class="eq-mini" data-eq="${esc(r.id)}"></div>
       <div class="small muted" style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${RL.rich(r.summary)}</div>
       <div class="meta">
         <span class="pill gray">${esc(r.kind)}</span>
@@ -83,11 +83,12 @@ RL.boot(() => {
       $('#results').innerHTML = `<div class="rows bank-list">
         <div class="rows-head"><span>Reaction</span><span class="hide-sm">Reagent</span><span class="hide-sm">Chapter</span><span class="hide-sm">Type</span><span>Exam</span></div>
         ${list.map((r) => `<div class="row ${RL.status(r.id) === 'archived' ? 'archived' : ''}" style="background:var(--panel)" data-id="${esc(r.id)}" tabindex="0">
-          <b style="font-weight:500">${esc(r.name)}</b><span class="hide-sm eq-inline small">${r.reagents ? RL.ce(r.reagents) : '-'}</span>
+          <b style="font-weight:500">${esc(r.name)}</b><span class="hide-sm eq-inline small" data-eq="${esc(r.id)}" data-kind="reagents"></span>
           <span class="hide-sm small"><span class="cat-dot" style="background:${RL.CAT_COLORS[r.category]}"></span> ${esc(r.category)}</span>
           <span class="hide-sm small muted">${esc(r.kind)}</span>
           <span>${(r.exam || []).map((e) => `<span class="pill ${e.includes('Adv') ? 'lav' : 'green'}">${e.includes('Adv') ? 'Adv' : 'Main'}</span>`).join(' ')}</span></div>`).join('')}</div>`;
     }
+    RL.lazyEquations($('#results'));
     $$('#results [data-id]').forEach((el) => {
       const open = () => RL.openReaction(RL.byId(el.dataset.id));
       el.onclick = open; el.onkeydown = (e) => { if (e.key === 'Enter') open(); };
@@ -101,6 +102,6 @@ RL.boot(() => {
   $('#showArchived').onchange = (e) => { f.archived = e.target.checked; render(); };
   $$('#viewTabs .tab').forEach((t) => (t.onclick = () => { f.view = t.dataset.v; localStorage.setItem('rl.view', f.view); render(); }));
   $('#practiceFiltered').onclick = () => { location.href = `practice.html${f.category !== 'all' ? '?category=' + encodeURIComponent(f.category) : ''}`; };
-  document.addEventListener('keydown', (e) => { if (e.key === '/' && document.activeElement !== $('#q')) { e.preventDefault(); $('#q').focus(); } });
+  RL.listen(document, 'keydown', (e) => { if (e.key === '/' && document.activeElement !== $('#q')) { e.preventDefault(); $('#q').focus(); } });
   render();
 });

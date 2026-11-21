@@ -9,7 +9,8 @@
     "build:goc": "node tools/build-goc.mjs",
     "build:chains": "node tools/build-chains.mjs",
     "serve": "python3 -m http.server 8080",
-    "config": "node tools/write-firebase-config.mjs"
+    "config": "node tools/write-firebase-config.mjs",
+    "stamp": "node tools/stamp-build.mjs"
   },
   "devDependencies": {
     "katex": "^0.16.11"
